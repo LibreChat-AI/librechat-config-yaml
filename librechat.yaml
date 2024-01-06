@@ -11,7 +11,7 @@ endpoints:
     - name: "Mistral"  # Unique name for the endpoint
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
-      apiKey: "${MISTRAL_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
 
       # Models configuration
@@ -60,10 +60,10 @@ endpoints:
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
       # Known issue: you should not use `OPENROUTER_API_KEY` as it will then override the `openAI` endpoint to use OpenRouter as well.
-      apiKey: "${OPENROUTER_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-        default: ["gpt-3.5-turbo"]
+        default: ["01-ai/yi-34b", "01-ai/yi-34b-chat", "01-ai/yi-6b", "alpindale/goliath-120b", "anthropic/claude-2", "anthropic/claude-2.0", "anthropic/claude-instant-v1", "austism/chronos-hermes-13b", "cognitivecomputations/dolphin-mixtral-8x7b", "google/gemini-pro", "google/gemini-pro-vision", "google/palm-2-chat-bison", "google/palm-2-chat-bison-32k", "google/palm-2-codechat-bison", "google/palm-2-codechat-bison-32k", "gryphe/mythomax-l2-13b", "gryphe/mythomax-l2-13b-8k", "gryphe/mythomist-7b", "haotian-liu/llava-13b", "huggingfaceh4/zephyr-7b-beta", "intel/neural-chat-7b", "jebcarter/psyfighter-13b", "jondurbin/airoboros-l2-70b", "jondurbin/bagel-34b", "koboldai/psyfighter-13b-2", "lizpreciatior/lzlv-70b-fp16-hf", "mancer/weaver", "meta-llama/codellama-34b-instruct", "meta-llama/llama-2-13b-chat", "meta-llama/llama-2-70b-chat", "migtissera/synthia-70b", "mistralai/mistral-7b-instruct", "mistralai/mixtral-8x7b", "mistralai/mixtral-8x7b-instruct", "neversleep/noromaid-20b", "neversleep/noromaid-mixtral-8x7b-instruct", "nousresearch/nous-capybara-34b", "nousresearch/nous-capybara-7b", "nousresearch/nous-hermes-2-vision-7b", "nousresearch/nous-hermes-llama2-13b", "nousresearch/nous-hermes-llama2-70b", "nousresearch/nous-hermes-yi-34b", "open-orca/mistral-7b-openorca", "openai/gpt-3.5-turbo", "openai/gpt-3.5-turbo-1106", "openai/gpt-3.5-turbo-16k", "openai/gpt-3.5-turbo-instruct", "openai/gpt-4", "openai/gpt-4-1106-preview", "openai/gpt-4-32k", "openai/gpt-4-vision-preview", "openchat/openchat-7b", "openrouter/auto", "openrouter/cinematika-7b", "perplexity/pplx-70b-chat", "perplexity/pplx-70b-online", "perplexity/pplx-7b-chat", "perplexity/pplx-7b-online", "phind/phind-codellama-34b", "pygmalionai/mythalion-13b", "recursal/rwkv-5-3b-ai-town", "rwkv/rwkv-5-world-3b", "teknium/openhermes-2-mistral-7b", "teknium/openhermes-2.5-mistral-7b", "togethercomputer/stripedhyena-hessian-7b", "togethercomputer/stripedhyena-nous-7b", "undi95/remm-slerp-l2-13b", "undi95/toppy-m-7b", "xwin-lm/xwin-lm-70b"]
         fetch: true
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
