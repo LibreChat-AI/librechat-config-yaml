@@ -72,5 +72,23 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
+    # OpenRouter.ai Example
+    - name: "NagaAI"
+      # For `apiKey` and `baseURL`, you can use environment variables that you define.
+      # recommended environment variables:
+      # Known issue: you should not use `OPENROUTER_API_KEY` as it will then override the `openAI` endpoint to use OpenRouter as well.
+      apiKey: "user_provided"
+      baseURL: "https://api.naga.ac/v1"
+      models:
+        default: ["claude-2", "claude-instant", "code-llama-34b", "falcon-180b-chat", "gemini-pro", "gemini-pro-vision", "gpt-3.5-turbo", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-1106", "gpt-4", "gpt-4-0613", "gpt-4-1106-preview", "gpt-4-vision-preview", "llama-2-13b-chat", "llama-2-70b-chat", "llama-2-7b-chat", "mistral-7b", "mixtral-8x7b"]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "NagaAI"
+      iconURL: "https://cdn.discordapp.com/icons/1145994888006086696/492519a404ff553737f859e2e1861992.webp"
+
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
