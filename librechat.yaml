@@ -72,7 +72,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # OpenRouter.ai Example
+    # NagaAI Example
     - name: "NagaAI"
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
