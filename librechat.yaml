@@ -88,7 +88,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "NagaAI"
-      iconURL: "https://cdn.discordapp.com/icons/1145994888006086696/492519a404ff553737f859e2e1861992.webp"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
