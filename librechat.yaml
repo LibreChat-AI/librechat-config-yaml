@@ -76,11 +76,10 @@ endpoints:
     - name: "NagaAI"
       # For `apiKey` and `baseURL`, you can use environment variables that you define.
       # recommended environment variables:
-      # Known issue: you should not use `OPENROUTER_API_KEY` as it will then override the `openAI` endpoint to use OpenRouter as well.
       apiKey: "user_provided"
       baseURL: "https://api.naga.ac/v1"
       models:
-        default: ["claude-2", "claude-instant", "code-llama-34b", "falcon-180b-chat", "gemini-pro", "gemini-pro-vision", "gpt-3.5-turbo", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-1106", "gpt-4", "gpt-4-0613", "gpt-4-1106-preview", "gpt-4-vision-preview", "llama-2-13b-chat", "llama-2-70b-chat", "llama-2-7b-chat", "mistral-7b", "mixtral-8x7b"]
+        default: ["gpt-4-1106-preview", "gpt-4-vision-preview", "gpt-4-0613", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gemini-pro", "gemini-pro-vision", "llama-2-70b-chat", "llama-2-13b-chat", "llama-2-7b-chat", "code-llama-34b", "mistral-7b", "mixtral-8x7b", "falcon-180b-chat", "claude-2", "claude-instant"]
         fetch: true
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
@@ -89,6 +88,23 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "NagaAI"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
+
+    # Mandrill Example
+    - name: "Mandrill"
+      # For `apiKey` and `baseURL`, you can use environment variables that you define.
+      # recommended environment variables:
+      apiKey: "user_provided"
+      baseURL: "https://api.mandrillai.tech/v1"
+      models:
+        default: ["gpt-4-vision-preview", "gpt-4", "gpt-4-1106-preview", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-0301", "gemini-pro", "gemini-pro-vision",]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "Mandrill"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
