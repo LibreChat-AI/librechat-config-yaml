@@ -121,7 +121,7 @@ endpoints:
       summaryModel: "pai-001-rp"
       forcePrompt: false
       modelDisplayLabel: "Pawan"
-      iconURL: "https://cdn.discordapp.com/icons/1055397662976905229/697778370688d9fbad8d9fe1ec356ac5.web"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
     # Pawan Example
     - name: "Pawan light"
@@ -138,7 +138,7 @@ endpoints:
       summaryModel: "pai-001-light-rp"
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
-      iconURL: "https://cdn.discordapp.com/icons/1055397662976905229/697778370688d9fbad8d9fe1ec356ac5.web"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
