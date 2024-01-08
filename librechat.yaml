@@ -96,7 +96,7 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.mandrillai.tech/v1"
       models:
-        default: ["gpt-4-vision-preview", "gpt-4", "gpt-4-1106-preview", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-0301", "gemini-pro", "gemini-pro-vision",]
+        default: ["gpt-4-vision-preview", "gpt-4", "gpt-4-1106-preview", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-0301", "gemini-pro", "gemini-pro-vision"]
         fetch: true
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
@@ -105,6 +105,40 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Mandrill"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
+
+    # Pawan Example
+    - name: "Pawan"
+      # For `apiKey` and `baseURL`, you can use environment variables that you define.
+      # recommended environment variables:
+      apiKey: "user_provided"
+      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
+      models:
+        default: ["pai-001-rp"]
+        fetch: true
+      titleConvo: true
+      titleModel: "pai-001-rp"
+      summarize: false
+      summaryModel: "pai-001-rp"
+      forcePrompt: false
+      modelDisplayLabel: "Pawan"
+      iconURL: "https://cdn.discordapp.com/icons/1055397662976905229/697778370688d9fbad8d9fe1ec356ac5.web"
+
+    # Pawan Example
+    - name: "Pawan light"
+      # For `apiKey` and `baseURL`, you can use environment variables that you define.
+      # recommended environment variables:
+      apiKey: "user_provided"
+      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
+      models:
+        default: ["pai-001-light-rp"]
+        fetch: true
+      titleConvo: true
+      titleModel: "pai-001-light-rp"
+      summarize: false
+      summaryModel: "pai-001-light-rp"
+      forcePrompt: false
+      modelDisplayLabel: "Pawan light"
+      iconURL: "https://cdn.discordapp.com/icons/1055397662976905229/697778370688d9fbad8d9fe1ec356ac5.web"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
