@@ -51,7 +51,7 @@ endpoints:
       # - temperature
       # - top_p
 
-    # OpenRouter.ai Example
+    # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
@@ -65,7 +65,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # NagaAI Example
+    # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
       baseURL: "https://api.naga.ac/v1"
@@ -80,7 +80,7 @@ endpoints:
       modelDisplayLabel: "NagaAI"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
 
-    # Mandrill Example
+    # Mandrill
     - name: "Mandrill"
       apiKey: "user_provided"
       baseURL: "https://api.mandrillai.tech/v1"
@@ -95,7 +95,7 @@ endpoints:
       modelDisplayLabel: "Mandrill"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
 
-    # Pawan Example
+    # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-rp/v1"
@@ -110,7 +110,7 @@ endpoints:
       modelDisplayLabel: "Pawan"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
-    # Pawan Example
+    # Pawan light
     - name: "Pawan light"
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
