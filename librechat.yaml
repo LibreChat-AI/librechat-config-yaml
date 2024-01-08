@@ -8,17 +8,13 @@ cache: true
 endpoints:
   custom:
     # Mistral AI API
-    - name: "Mistral"  # Unique name for the endpoint
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
+    - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
 
       # Models configuration
       models: 
-        # List of default models to use. At least one value is required.
         default: ["mistral-tiny", "mistral-small", "mistral-medium"]
-        # Fetch option: Set to true to fetch models from API.
         fetch: true  # Defaults to false.
 
       # Optional configurations
@@ -57,9 +53,6 @@ endpoints:
 
     # OpenRouter.ai Example
     - name: "OpenRouter"
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
-      # Known issue: you should not use `OPENROUTER_API_KEY` as it will then override the `openAI` endpoint to use OpenRouter as well.
       apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
       models:
@@ -74,8 +67,6 @@ endpoints:
 
     # NagaAI Example
     - name: "NagaAI"
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
       apiKey: "user_provided"
       baseURL: "https://api.naga.ac/v1"
       models:
@@ -91,8 +82,6 @@ endpoints:
 
     # Mandrill Example
     - name: "Mandrill"
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
       apiKey: "user_provided"
       baseURL: "https://api.mandrillai.tech/v1"
       models:
@@ -108,8 +97,6 @@ endpoints:
 
     # Pawan Example
     - name: "Pawan"
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-rp/v1"
       models:
@@ -125,8 +112,6 @@ endpoints:
 
     # Pawan Example
     - name: "Pawan light"
-      # For `apiKey` and `baseURL`, you can use environment variables that you define.
-      # recommended environment variables:
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
       models:
