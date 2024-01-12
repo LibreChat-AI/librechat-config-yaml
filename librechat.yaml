@@ -42,8 +42,8 @@ endpoints:
       modelDisplayLabel: "Mistral"  # Default is "AI" when not set.
 
       # Add additional parameters to the request. Default params will be overwritten.
-      addParams:
-        safe_mode: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
+      # addParams:
+      #   safe_mode: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
         
       # NOTE: For Mistral, it is necessary to drop the following parameters or you will encounter a 422 Error:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
