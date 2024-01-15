@@ -1,0 +1,36 @@
+version: 1.0.1
+cache: true
+fileStrategy: "firebase" # This is the field and value you need to add
+endpoints:
+  custom:
+    - name: "Mistral"  # Unique name for the endpoint
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
+
+      models: 
+        default: ["mistral-tiny", "mistral-small", "mistral-medium"]
+        fetch: true  # Defaults to false.
+      titleConvo: true  # Set to true to enable title conversation
+      titleMethod: "completion"  # Defaults to "completion" if omitted.
+      titleModel: "mistral-tiny"  # Defaults to "gpt-3.5-turbo" if omitted.
+      summarize: false
+      summaryModel: "mistral-tiny"  # Defaults to "gpt-3.5-turbo" if omitted.
+      forcePrompt: false
+      modelDisplayLabel: "Mistral"  # Default is "AI" when not set.
+      addParams:
+        safe_prompt: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+      
+    # OpenRouter.ai Example
+    - name: "OpenRouter"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default: ["gpt-3.5-turbo"]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "OpenRouter"
