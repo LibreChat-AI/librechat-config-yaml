@@ -62,7 +62,7 @@ endpoints:
     # Fireworks.ai
     - name: "Fireworks"
       apiKey: "user_provided"
-      baseURL: "https://api.fireworks.ai/inference/v1/"
+      baseURL: "https://api.fireworks.ai/inference/v1/chat/completions"
       models:
         default: ["accounts/fireworks/models/llama-v2-7b", "accounts/fireworks/models/llama-v2-7b-chat", "accounts/fireworks/models/llama-v2-13b", "accounts/fireworks/models/llama-v2-13b-chat", "accounts/fireworks/models/llama-v2-34b-code-w8a16", "accounts/fireworks/models/llama-v2-70b-chat", "accounts/fireworks/models/mistral-7b", "accounts/fireworks/models/mistral-7b-instruct-4k", "accounts/fireworks/models/zephyr-7b-beta", "accounts/fireworks/models/mixtral-8x7b", "accounts/fireworks/models/mixtral-8x7b-instruct"]
         fetch: true
