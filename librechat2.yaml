@@ -67,9 +67,9 @@ endpoints:
         default: ["accounts/fireworks/models/llama-v2-7b", "accounts/fireworks/models/llama-v2-7b-chat", "accounts/fireworks/models/llama-v2-13b", "accounts/fireworks/models/llama-v2-13b-chat", "accounts/fireworks/models/llama-v2-34b-code-w8a16", "accounts/fireworks/models/llama-v2-70b-chat", "accounts/fireworks/models/mistral-7b", "accounts/fireworks/models/mistral-7b-instruct-4k", "accounts/fireworks/models/zephyr-7b-beta", "accounts/fireworks/models/mixtral-8x7b", "accounts/fireworks/models/mixtral-8x7b-instruct"]
         fetch: true
       titleConvo: true
-      titleModel: "llama-v2-7b"
+      titleModel: "gpt-3.5-turbo"
       summarize: false
-      summaryModel: "llama-v2-7b"
+      summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
 
