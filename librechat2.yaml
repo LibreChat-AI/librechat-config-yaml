@@ -63,7 +63,7 @@ endpoints:
     # https://app.endpoints.anyscale.com/
     - name: "Anyscale"
       apiKey: "user_provided"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
+      baseURL: "https://api.endpoints.anyscale.com/v1/chat/completions"
       models:
         default: ["meta-llama/Llama-2-7b-chat-hf", "meta-llama/Llama-2-13b-chat-hf", "Meta-Llama/Llama-Guard-7b", "meta-llama/Llama-2-70b-chat-hf", "Open-Orca/Mistral-7B-OpenOrca", "codellama/CodeLlama-34b-Instruct-hf", "HuggingFaceH4/zephyr-7b-beta", "mistralai/Mistral-7B-Instruct-v0.1", "mistralai/Mixtral-8x7B-Instruct-v0.1", "thenlper/gte-large"]
         fetch: true
