@@ -70,7 +70,7 @@ endpoints:
       titleModel: "gpt-3.5-turbo"
       summarize: false
       summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
+      forcePrompt: true
       modelDisplayLabel: "Fireworks"
 
     # NagaAI
