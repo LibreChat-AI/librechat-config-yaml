@@ -59,6 +59,20 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
+    # Fireworks.ai
+    - name: "Fireworks"
+      apiKey: "user_provided"
+      baseURL: "https://api.fireworks.ai/inference/v1/"
+      models:
+        default: ["llama-v2-7b", "llama-v2-7b-chat", "llama-v2-13b", "llama-v2-13b-chat", "llama-v2-34b-code-w8a16", "llama-v2-70b-chat", "mistral-7b", "mistral-7b-instruct-4k", "zephyr-7b-beta", "mixtral-8x7b", "mixtral-8x7b-instruct"]
+        fetch: true
+      titleConvo: true
+      titleModel: "llama-v2-7b"
+      summarize: false
+      summaryModel: "llama-v2-7b"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
