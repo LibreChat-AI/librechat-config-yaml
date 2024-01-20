@@ -135,5 +135,19 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
+    # Pawan light
+    - name: "Custom Endpoint"
+      apiKey: "user_provided"
+      baseURL: "user_provided"
+      models:
+        default: ["user_provided"]
+        fetch: true
+      titleConvo: true
+      titleModel: "user_provided"
+      summarize: false
+      summaryModel: "user_provided"
+      forcePrompt: false
+      modelDisplayLabel: "Custom Endpoint"
+
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
