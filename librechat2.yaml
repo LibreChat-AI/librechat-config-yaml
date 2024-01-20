@@ -135,17 +135,17 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
-    # Pawan light
+    # Custom Endpoint
     - name: "Custom Endpoint"
       apiKey: "user_provided"
       baseURL: "user_provided"
       models:
-        default: ["user_provided"]
+        default: ["gpt-3.5-turbo"]
         fetch: true
       titleConvo: true
-      titleModel: "user_provided"
+      titleModel: "gpt-3.5-turbo"
       summarize: false
-      summaryModel: "user_provided"
+      summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "Custom Endpoint"
 
