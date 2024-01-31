@@ -45,7 +45,6 @@ endpoints:
       # NOTE: For Mistral, it is necessary to drop the following parameters or you will encounter a 422 Error:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
-  custom2:
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "user_provided"
@@ -106,7 +105,6 @@ endpoints:
       modelDisplayLabel: "Mandrill"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
 
-  custom3:
     # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
