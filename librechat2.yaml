@@ -59,22 +59,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # # Anyscale
-    # # https://app.endpoints.anyscale.com/
-    # - name: "Anyscale"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.endpoints.anyscale.com/v1/chat/completions"
-    #   models:
-    #     default: ["meta-llama/Llama-2-7b-chat-hf", "meta-llama/Llama-2-13b-chat-hf", "Meta-Llama/Llama-Guard-7b", "meta-llama/Llama-2-70b-chat-hf", "Open-Orca/Mistral-7B-OpenOrca", "codellama/CodeLlama-34b-Instruct-hf", "HuggingFaceH4/zephyr-7b-beta", "mistralai/Mistral-7B-Instruct-v0.1", "mistralai/Mixtral-8x7B-Instruct-v0.1", "thenlper/gte-large"]
-    #     fetch: true
-    #   titleConvo: false
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "Anyscale"
-    #   iconURL: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBjbGFzcz0ianNzMTEiPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODI5MSAxNS4xNzA4SDI2LjY1MjRDMjcuMzgzNCAxNS4xNzU5IDI4LjA4MjcgMTUuNDY5OCAyOC41OTc4IDE1Ljk4ODVDMjkuMTEzIDE2LjUwNzIgMjkuNDAyMSAxNy4yMDg2IDI5LjQwMiAxNy45Mzk2VjI2LjYzOTVDMjkuNDAwNCAyNy4zNzE2IDI5LjEwODggMjguMDczMyAyOC41OTExIDI4LjU5MUMyOC4wNzM0IDI5LjEwODcgMjcuMzcxOCAyOS40MDAyIDI2LjYzOTcgMjkuNDAxOUgyMS44ODk2QzIxLjE1NzUgMjkuNDAwMiAyMC40NTU4IDI5LjEwODcgMTkuOTM4MiAyOC41OTFDMTkuNDIwNSAyOC4wNzMzIDE5LjEyODkgMjcuMzcxNiAxOS4xMjcyIDI2LjYzOTVWMTYuODY2NEg5LjM1NDA3QzguNjIxOTUgMTYuODY0NyA3LjkyMDMgMTYuNTczMSA3LjQwMjYyIDE2LjA1NTRDNi44ODQ5MyAxNS41Mzc3IDYuNTkzMzUgMTQuODM2MSA2LjU5MTY3IDE0LjEwNFY5LjM1MzkzQzYuNTkzMzUgOC42MjE4MSA2Ljg4NDkzIDcuOTIwMTYgNy40MDI2MiA3LjQwMjQ4QzcuOTIwMyA2Ljg4NDc5IDguNjIxOTUgNi41OTMyMyA5LjM1NDA3IDYuNTkxNTVIMTguMDY2N0MxOC43OTg4IDYuNTkzMjMgMTkuNTAwNSA2Ljg4NDc5IDIwLjAxODIgNy40MDI0OEMyMC41MzU5IDcuOTIwMTYgMjAuODI3NCA4LjYyMTgxIDIwLjgyOTEgOS4zNTM5M1YxNS4xNzA4Wk04LjU5NTIgMTQuODU2NUM4Ljc5NjQ3IDE1LjA1NzggOS4wNjk0NCAxNS4xNzA4IDkuMzU0MDcgMTUuMTcwOFYxNS4xNjQ1SDE5LjEzMzZWOS4zNDc1OUMxOS4xMzM2IDkuMDYyOTYgMTkuMDIwNSA4Ljc4OTk5IDE4LjgxOTIgOC41ODg3MkMxOC42MTggOC4zODc0NiAxOC4zNDUgOC4yNzQzOSAxOC4wNjA0IDguMjc0MzlIOS4zNTQwN0M5LjA2OTQ0IDguMjc0MzkgOC43OTY0NyA4LjM4NzQ2IDguNTk1MiA4LjU4ODcyQzguMzkzOTQgOC43ODk5OSA4LjI4MDg2IDkuMDYyOTYgOC4yODA4NiA5LjM0NzU5VjE0LjA5NzZDOC4yODA4NiAxNC4zODIzIDguMzkzOTQgMTQuNjU1MiA4LjU5NTIgMTQuODU2NVpNMjcuNDExMiAyNy4zOTJDMjcuNjEyNSAyNy4xOTA4IDI3LjcyNTYgMjYuOTE3OCAyNy43MjU2IDI2LjYzMzJWMTcuOTQ1OUMyNy43MjU2IDE3LjY2MTMgMjcuNjEyNSAxNy4zODgzIDI3LjQxMTIgMTcuMTg3MUMyNy4yMSAxNi45ODU4IDI2LjkzNyAxNi44NzI3IDI2LjY1MjQgMTYuODcyN0gyMC44MjkxVjI2LjYzMzJDMjAuODI5MSAyNi45MTc4IDIwLjk0MjIgMjcuMTkwOCAyMS4xNDM0IDI3LjM5MkMyMS4zNDQ3IDI3LjU5MzMgMjEuNjE3NyAyNy43MDY0IDIxLjkwMjMgMjcuNzA2NEgyNi42NTI0QzI2LjkzNyAyNy43MDY0IDI3LjIxIDI3LjU5MzMgMjcuNDExMiAyNy4zOTJaTTkuMzYwNSAxOS4wNTc0SDE0LjE4NjdDMTQuOTE4OSAxOS4wNTkgMTUuNjIwNSAxOS4zNTA2IDE2LjEzODIgMTkuODY4M0MxNi42NTU5IDIwLjM4NiAxNi45NDc1IDIxLjA4NzYgMTYuOTQ5MSAyMS44MTk4VjI2LjY0NkMxNi45NDc1IDI3LjM3ODEgMTYuNjU1OSAyOC4wNzk4IDE2LjEzODIgMjguNTk3NUMxNS42MjA1IDI5LjExNTIgMTQuOTE4OSAyOS40MDY3IDE0LjE4NjcgMjkuNDA4NEg5LjM2MDVDOC42MjgzOCAyOS40MDY3IDcuOTI2NzMgMjkuMTE1MiA3LjQwOTA0IDI4LjU5NzVDNi44OTEzNiAyOC4wNzk4IDYuNTk5NzkgMjcuMzc4MSA2LjU5ODExIDI2LjY0NlYyMS44MTk4QzYuNTk5NzkgMjEuMDg3NiA2Ljg5MTM2IDIwLjM4NiA3LjQwOTA0IDE5Ljg2ODNDNy45MjY3MyAxOS4zNTA2IDguNjI4MzggMTkuMDU5IDkuMzYwNSAxOS4wNTc0Wk0xNC45NDU2IDI3LjQzNjZDMTUuMTQ2OSAyNy4yMzU0IDE1LjI2IDI2Ljk2MjQgMTUuMjYgMjYuNjc3OFYyMS44NTE1QzE1LjI2IDIxLjU2NjkgMTUuMTQ2OSAyMS4yOTM5IDE0Ljk0NTYgMjEuMDkyN0MxNC43NDQ0IDIwLjg5MTQgMTQuNDcxNCAyMC43NzgzIDE0LjE4NjcgMjAuNzc4M0g5LjM2MDVDOS4wNzU4NyAyMC43NzgzIDguODAyODkgMjAuODkxNCA4LjYwMTYzIDIxLjA5MjdDOC40MDAzNiAyMS4yOTM5IDguMjg3MjkgMjEuNTY2OSA4LjI4NzI5IDIxLjg1MTVWMjYuNjc3OEM4LjI4NzI5IDI2Ljk2MjQgOC40MDAzNiAyNy4yMzU0IDguNjAxNjMgMjcuNDM2NkM4LjgwMjg5IDI3LjYzNzkgOS4wNzU4NyAyNy43NTEgOS4zNjA1IDI3Ljc1MUgxNC4xODY3QzE0LjQ3MTQgMjcuNzUxIDE0Ljc0NDQgMjcuNjM3OSAxNC45NDU2IDI3LjQzNjZaIj48L3BhdGg+PC9zdmc+"
-      
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
@@ -135,19 +119,6 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
-    # Custom Endpoint
-    - name: "Custom Endpoint"
-      apiKey: "user_provided"
-      baseURL: "user_provided"
-      models:
-        default: ["gpt-3.5-turbo"]
-        fetch: true
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "Custom Endpoint"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
