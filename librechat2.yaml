@@ -190,7 +190,7 @@ endpoints:
 
     # FreeGPT-4
     - name: "FreeGPT-4"
-      apiKey: "fg4-I-pnie_HbuzWRnJlZUdQVDQq6nT48_UDuy0"
+      apiKey: "user_provided"
       baseURL: "https://api.freegpt4.tech/v1/"
       models:
         default: [
