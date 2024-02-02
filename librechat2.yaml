@@ -192,7 +192,6 @@ endpoints:
     - name: "FreeGPT-4"
       apiKey: "fg4-I-pnie_HbuzWRnJlZUdQVDQq6nT48_UDuy0"
       baseURL: "https://api.freegpt4.tech/v1/"
-      #baseURL: "https://api.convoai.tech/v1/"
       models:
         default: [
           "gpt-4-rp",
