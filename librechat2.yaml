@@ -1,48 +1,31 @@
 version: 1.0.1
-cache: false
-#fileStrategy: "firebase"
 
-# Definition of custom endpoints
+cache: false
+# fileStrategy: "firebase"
+
 endpoints:
   custom:
+
     # Mistral AI API
     - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
-
-      # Models configuration
       models: 
-        default: ["mistral-tiny", "mistral-small", "mistral-medium"]
-        fetch: true  # Defaults to false.
-
-      # Optional configurations
-      
-      # Title Conversation setting
-      titleConvo: true  # Set to true to enable title conversation
-
-      # Title Method: Choose between "completion" or "functions".
-      titleMethod: "completion"  # Defaults to "completion" if omitted.
-
-      # Title Model: Specify the model to use for titles.
-      titleModel: "mistral-tiny"  # Defaults to "gpt-3.5-turbo" if omitted.
-
-      # Summarize setting: Set to true to enable summarization.
+        default: [
+          "mistral-tiny",
+          "mistral-small",
+          "mistral-medium"
+          ]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "mistral-tiny"
       summarize: false
-
-      # Summary Model: Specify the model to use if summarization is enabled.
-      summaryModel: "mistral-tiny"  # Defaults to "gpt-3.5-turbo" if omitted.
-
-      # Force Prompt setting: If true, sends a `prompt` parameter instead of `messages`.
+      summaryModel: "mistral-tiny"
       forcePrompt: false
-
-      # The label displayed for the AI model in messages.
-      modelDisplayLabel: "Mistral"  # Default is "AI" when not set.
-
-      # Add additional parameters to the request. Default params will be overwritten.
+      modelDisplayLabel: "Mistral"
       # addParams:
       #   safe_mode: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
-        
-      # NOTE: For Mistral, it is necessary to drop the following parameters or you will encounter a 422 Error:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
@@ -50,8 +33,95 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-        default: ["nousresearch/nous-capybara-7b:free", "mistralai/mistral-7b-instruct:free", "huggingfaceh4/zephyr-7b-beta:free", "openchat/openchat-7b:free", "gryphe/mythomist-7b:free", "undi95/toppy-m-7b:free", "openrouter/cinematika-7b:free", "openrouter/auto", "nousresearch/nous-capybara-7b", "mistralai/mistral-7b-instruct", "huggingfaceh4/zephyr-7b-beta", "openchat/openchat-7b", "gryphe/mythomist-7b", "openrouter/cinematika-7b", "rwkv/rwkv-5-world-3b", "recursal/rwkv-5-3b-ai-town", "jondurbin/bagel-34b", "jebcarter/psyfighter-13b", "koboldai/psyfighter-13b-2", "neversleep/noromaid-mixtral-8x7b-instruct", "nousresearch/nous-hermes-llama2-13b", "meta-llama/codellama-34b-instruct", "phind/phind-codellama-34b", "intel/neural-chat-7b", "nousresearch/nous-hermes-2-mixtral-8x7b-dpo", "nousresearch/nous-hermes-2-mixtral-8x7b-sft", "haotian-liu/llava-13b", "nousresearch/nous-hermes-2-vision-7b", "meta-llama/llama-2-13b-chat", "gryphe/mythomax-l2-13b", "nousresearch/nous-hermes-llama2-70b", "teknium/openhermes-2-mistral-7b", "teknium/openhermes-2.5-mistral-7b", "undi95/remm-slerp-l2-13b", "undi95/toppy-m-7b", "01-ai/yi-34b-chat", "01-ai/yi-34b", "01-ai/yi-6b", "togethercomputer/stripedhyena-nous-7b", "togethercomputer/stripedhyena-hessian-7b", "mistralai/mixtral-8x7b", "nousresearch/nous-hermes-yi-34b", "open-orca/mistral-7b-openorca", "openai/gpt-3.5-turbo", "openai/gpt-3.5-turbo-1106", "openai/gpt-3.5-turbo-16k", "openai/gpt-4-1106-preview", "openai/gpt-4", "openai/gpt-4-32k", "openai/gpt-4-vision-preview", "openai/gpt-3.5-turbo-instruct", "google/palm-2-chat-bison", "google/palm-2-codechat-bison", "google/palm-2-chat-bison-32k", "google/palm-2-codechat-bison-32k", "google/gemini-pro", "google/gemini-pro-vision", "perplexity/pplx-70b-online", "perplexity/pplx-7b-online", "perplexity/pplx-7b-chat", "perplexity/pplx-70b-chat", "meta-llama/llama-2-70b-chat", "nousresearch/nous-capybara-34b", "jondurbin/airoboros-l2-70b", "austism/chronos-hermes-13b", "migtissera/synthia-70b", "pygmalionai/mythalion-13b", "undi95/remm-slerp-l2-13b-6k", "xwin-lm/xwin-lm-70b", "gryphe/mythomax-l2-13b-8k", "alpindale/goliath-120b	", "lizpreciatior/lzlv-70b-fp16-hf", "neversleep/noromaid-20b", "mistralai/mixtral-8x7b-instruct", "cognitivecomputations/dolphin-mixtral-8x7b", "anthropic/claude-2", "anthropic/claude-2.0", "anthropic/claude-instant-v1", "mancer/weaver", "mistralai/mistral-tiny", "mistralai/mistral-small", "mistralai/mistral-medium"]
-        fetch: true
+        "default": [
+          "nousresearch/nous-capybara-7b:free",
+          "mistralai/mistral-7b-instruct:free",
+          "huggingfaceh4/zephyr-7b-beta:free",
+          "openchat/openchat-7b:free",
+          "gryphe/mythomist-7b:free",
+          "undi95/toppy-m-7b:free",
+          "openrouter/cinematika-7b:free",
+          "openrouter/auto",
+          "nousresearch/nous-capybara-7b",
+          "mistralai/mistral-7b-instruct",
+          "huggingfaceh4/zephyr-7b-beta",
+          "openchat/openchat-7b",
+          "gryphe/mythomist-7b",
+          "openrouter/cinematika-7b",
+          "rwkv/rwkv-5-world-3b",
+          "recursal/rwkv-5-3b-ai-town",
+          "recursal/eagle-7b",
+          "jondurbin/bagel-34b",
+          "jebcarter/psyfighter-13b",
+          "koboldai/psyfighter-13b-2",
+          "neversleep/noromaid-mixtral-8x7b-instruct",
+          "nousresearch/nous-hermes-llama2-13b",
+          "meta-llama/codellama-34b-instruct",
+          "codellama/codellama-70b-instruct",
+          "phind/phind-codellama-34b",
+          "intel/neural-chat-7b",
+          "nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
+          "nousresearch/nous-hermes-2-mixtral-8x7b-sft",
+          "haotian-liu/llava-13b",
+          "nousresearch/nous-hermes-2-vision-7b",
+          "meta-llama/llama-2-13b-chat",
+          "gryphe/mythomax-l2-13b",
+          "nousresearch/nous-hermes-llama2-70b",
+          "teknium/openhermes-2-mistral-7b",
+          "teknium/openhermes-2.5-mistral-7b",
+          "undi95/remm-slerp-l2-13b",
+          "undi95/toppy-m-7b",
+          "01-ai/yi-34b-chat",
+          "01-ai/yi-34b",
+          "01-ai/yi-6b",
+          "togethercomputer/stripedhyena-nous-7b",
+          "togethercomputer/stripedhyena-hessian-7b",
+          "mistralai/mixtral-8x7b",
+          "nousresearch/nous-hermes-yi-34b",
+          "open-orca/mistral-7b-openorca",
+          "openai/gpt-3.5-turbo",
+          "openai/gpt-3.5-turbo-0125",
+          "openai/gpt-3.5-turbo-1106",
+          "openai/gpt-3.5-turbo-16k",
+          "openai/gpt-4-turbo-preview",
+          "openai/gpt-4-1106-preview",
+          "openai/gpt-4",
+          "openai/gpt-4-32k",
+          "openai/gpt-4-vision-preview",
+          "openai/gpt-3.5-turbo-instruct",
+          "google/palm-2-chat-bison",
+          "google/palm-2-codechat-bison",
+          "google/palm-2-chat-bison-32k",
+          "google/palm-2-codechat-bison-32k",
+          "google/gemini-pro",
+          "google/gemini-pro-vision",
+          "perplexity/pplx-70b-online",
+          "perplexity/pplx-7b-online",
+          "perplexity/pplx-7b-chat",
+          "perplexity/pplx-70b-chat",
+          "meta-llama/llama-2-70b-chat",
+          "nousresearch/nous-capybara-34b",
+          "jondurbin/airoboros-l2-70b",
+          "austism/chronos-hermes-13b",
+          "migtissera/synthia-70b",
+          "pygmalionai/mythalion-13b",
+          "undi95/remm-slerp-l2-13b-6k",
+          "xwin-lm/xwin-lm-70b",
+          "gryphe/mythomax-l2-13b-8k",
+          "alpindale/goliath-120b",
+          "lizpreciatior/lzlv-70b-fp16-hf",
+          "neversleep/noromaid-20b",
+          "mistralai/mixtral-8x7b-instruct",
+          "cognitivecomputations/dolphin-mixtral-8x7b",
+          "anthropic/claude-2",
+          "anthropic/claude-2.0",
+          "anthropic/claude-instant-v1",
+          "mancer/weaver",
+          "mistralai/mistral-tiny",
+          "mistralai/mistral-small",
+          "mistralai/mistral-medium"
+          ]
+        fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
       summarize: false
@@ -64,8 +134,27 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.naga.ac/v1"
       models:
-        default: ["gpt-4-1106-preview", "gpt-4-vision-preview", "gpt-4-0613", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gemini-pro", "gemini-pro-vision", "llama-2-70b-chat", "llama-2-13b-chat", "llama-2-7b-chat", "code-llama-34b", "mistral-7b", "mixtral-8x7b", "falcon-180b-chat", "claude-2", "claude-instant"]
-        fetch: true
+        default: [
+          "gpt-4-0125-preview",
+          "gpt-4-turbo-preview",
+          "gpt-4-1106-preview",
+          "gpt-4-vision-preview",
+          "gpt-4-0613",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gemini-pro",
+          "gemini-pro-vision",
+          "llama-2-70b-chat",
+          "llama-2-13b-chat",
+          "llama-2-7b-chat",
+          "code-llama-34b",
+          "mistral-7b",
+          "mixtral-8x7b",
+          "falcon-180b-chat",
+          "claude-2",
+          "claude-instant"
+          ]
+        fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
       summarize: false
@@ -79,8 +168,18 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.mandrillai.tech/v1"
       models:
-        default: ["gpt-4-vision-preview", "gpt-4", "gpt-4-1106-preview", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-0301", "gemini-pro", "gemini-pro-vision"]
-        fetch: true
+        default: [
+          "gpt-4-vision-preview",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo-0301",
+          "gemini-pro",
+          "gemini-pro-vision"
+          ]
+        fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
       summarize: false
@@ -89,13 +188,59 @@ endpoints:
       modelDisplayLabel: "Mandrill"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
 
+    # FreeGPT-4
+    - name: "FreeGPT-4"
+      apiKey: "fg4-I-pnie_HbuzWRnJlZUdQVDQq6nT48_UDuy0"
+      baseURL: "https://api.freegpt4.tech/v1/"
+      #baseURL: "https://api.convoai.tech/v1/"
+      models:
+        default: [
+          "gpt-4-rp",
+          "gpt-3.5-rp",
+          "claude-rp",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-0301",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-0314",
+          "gpt-4-32k",
+          "gpt-4-1106-preview",
+          "llama-2-7b",
+          "llama-2-13b",
+          "llama-2-70b",
+          "code-llama-34b",
+          "gemini-pro",
+          "palm-2",
+          "palm-2-32k",
+          "code-palm-2",
+          "code-palm-2-32k",
+          "claude-instant",
+          "claude-instant-1",
+          "claude-1-100k",
+          "claude-2",
+          "claude-2.1",
+          "claude-1.2",
+          "yi-34b",
+          "falcon-180b",
+          "goliath-120b"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "FreeGPT-4"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
+
     # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-rp/v1"
       models:
         default: ["pai-001-rp"]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "pai-001-rp"
       summarize: false
@@ -110,7 +255,7 @@ endpoints:
       baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
       models:
         default: ["pai-001-light-rp"]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "pai-001-light-rp"
       summarize: false
@@ -119,6 +264,4 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
-
-# See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
