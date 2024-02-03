@@ -1,11 +1,13 @@
+# Configuration version (required)
 version: 1.0.1
 
+# Cache settings: Set to true to enable caching
 cache: false
 # fileStrategy: "firebase"
 
+# Definition of custom endpoints
 endpoints:
   custom:
-
     # Mistral AI API
     - name: "Mistral"
       apiKey: "user_provided"
@@ -24,8 +26,6 @@ endpoints:
       summaryModel: "mistral-tiny"
       forcePrompt: false
       modelDisplayLabel: "Mistral"
-      # addParams:
-      #   safe_mode: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
@@ -129,110 +129,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # NagaAI
-    - name: "NagaAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.naga.ac/v1"
-      models:
-        default: [
-          "gpt-4-0125-preview",
-          "gpt-4-turbo-preview",
-          "gpt-4-1106-preview",
-          "gpt-4-vision-preview",
-          "gpt-4-0613",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0613",
-          "gemini-pro",
-          "gemini-pro-vision",
-          "llama-2-70b-chat",
-          "llama-2-13b-chat",
-          "llama-2-7b-chat",
-          "code-llama-34b",
-          "mistral-7b",
-          "mixtral-8x7b",
-          "falcon-180b-chat",
-          "claude-2",
-          "claude-instant"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "NagaAI"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
-
-    # Mandrill
-    - name: "Mandrill"
-      apiKey: "user_provided"
-      baseURL: "https://api.mandrillai.tech/v1"
-      models:
-        default: [
-          "gpt-4-vision-preview",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0613",
-          "gpt-3.5-turbo-0301",
-          "gemini-pro",
-          "gemini-pro-vision"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "Mandrill"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
-
-    # FreeGPT-4 #NEED TO UPDATE BASE URL AND MODEL LIST
-    - name: "FreeGPT-4"
-      apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
-      models:
-        default: [
-          "gpt-4-rp",
-          "gpt-3.5-rp",
-          "claude-rp",
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-0301",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-0314",
-          "gpt-4-32k",
-          "gpt-4-1106-preview",
-          "llama-2-7b",
-          "llama-2-13b",
-          "llama-2-70b",
-          "code-llama-34b",
-          "gemini-pro",
-          "palm-2",
-          "palm-2-32k",
-          "code-palm-2",
-          "code-palm-2-32k",
-          "claude-instant",
-          "claude-instant-1",
-          "claude-1-100k",
-          "claude-2",
-          "claude-2.1",
-          "claude-1.2",
-          "yi-34b",
-          "falcon-180b",
-          "goliath-120b"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
-
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
@@ -292,13 +188,100 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "together.ai"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1203453238477717514/togetherai.png"
-  
+
+    # NagaAI
+    - name: "NagaAI"
+      apiKey: "user_provided"
+      baseURL: "https://api.naga.ac/v1"
+      models:
+        default: [
+          "gpt-4-0125-preview",
+          "gpt-4-turbo-preview",
+          "gpt-4-1106-preview",
+          "gpt-4-vision-preview",
+          "gpt-4-0613",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gemini-pro",
+          "gemini-pro-vision",
+          "llama-2-70b-chat",
+          "llama-2-13b-chat",
+          "llama-2-7b-chat",
+          "code-llama-34b",
+          "mistral-7b",
+          "mixtral-8x7b",
+          "falcon-180b-chat",
+          "claude-2",
+          "claude-instant"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "NagaAI"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
+
+    # Mandrill
+    - name: "Mandrill"
+      apiKey: "user_provided"
+      baseURL: "https://api.mandrillai.tech/v1"
+      models:
+        default: [
+          "gpt-4-vision-preview",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo-0301",
+          "gemini-pro",
+          "gemini-pro-vision"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "Mandrill"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
+
+    # FreeGPT-4
+    - name: "FreeGPT-4"
+      apiKey: "user_provided"
+      baseURL: "https://api.convoai.tech/v1/"
+      models:
+        default: [
+
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-1106-preview
+          "gpt-4-0125-preview",
+          "claude",
+          "gemini-pro",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "FreeGPT-4"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
+
     # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-rp/v1"
       models:
-        default: ["pai-001-rp"]
+        default: [
+          "pai-001-rp"
+          ]
         fetch: false
       titleConvo: true
       titleModel: "pai-001-rp"
@@ -313,7 +296,9 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
       models:
-        default: ["pai-001-light-rp"]
+        default: [
+          "pai-001-light-rp"
+          ]
         fetch: false
       titleConvo: true
       titleModel: "pai-001-light-rp"
@@ -323,4 +308,5 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
+# See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
