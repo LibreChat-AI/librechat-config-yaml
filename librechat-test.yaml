@@ -241,7 +241,7 @@ endpoints:
         default: [
           "meta-llama/Llama-2-70b-chat-hf",
           "mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "togethercomputer/RedPajama-INCITE-Chat-3B-v1"
+          "togethercomputer/RedPajama-INCITE-Chat-3B-v1",
           "togethercomputer/llama-2-13b-chat"
           ]
         fetch: false
