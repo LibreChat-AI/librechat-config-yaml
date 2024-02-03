@@ -291,6 +291,7 @@ endpoints:
       summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1203453238477717514/togetherai.png"
   
     # Pawan
     - name: "Pawan"
