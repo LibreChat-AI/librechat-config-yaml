@@ -189,26 +189,6 @@ endpoints:
       modelDisplayLabel: "together.ai"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1203453238477717514/togetherai.png"
 
-    # Cohere
-    - name: "Cohere"
-      apiKey: "user_provided"
-      baseURL: "https://api.cohere.ai/v1"
-      models:
-        default: [
-          "command",
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "command"
-      summarize: false
-      summaryModel: "command"
-      forcePrompt: false
-      modelDisplayLabel: "Cohere"
-      addParams:
-        model: "command"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
-      #iconURL: ""
-
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
