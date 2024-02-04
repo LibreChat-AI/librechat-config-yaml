@@ -196,15 +196,17 @@ endpoints:
       models:
         default: [
           "command",
-          "command-light"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "command-light"
+      titleModel: "command"
       summarize: false
-      summaryModel: "command-light"
+      summaryModel: "command"
       forcePrompt: false
       modelDisplayLabel: "Cohere"
+      addParams:
+        model: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
       #iconURL: ""
 
     # NagaAI
