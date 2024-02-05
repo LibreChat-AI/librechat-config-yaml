@@ -2,7 +2,10 @@ version: 1.0.2
 
 cache: false
 fileStrategy: "firebase"
-    
+
+registration:
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+
 endpoints:
   custom:
     # Mistral AI API
@@ -303,9 +306,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
-
-registration:
-  socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
