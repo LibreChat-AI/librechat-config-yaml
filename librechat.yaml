@@ -1,10 +1,7 @@
-version: 1.0.1
+version: 1.0.2
 
-fileStrategy: "firebase"
 cache: false
-
-registration:
-  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+fileStrategy: "firebase"
     
 endpoints:
   custom:
