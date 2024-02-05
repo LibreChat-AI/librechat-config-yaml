@@ -1,7 +1,7 @@
 version: 1.0.1
 
-cache: false
 fileStrategy: "firebase"
+cache: false
 
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
