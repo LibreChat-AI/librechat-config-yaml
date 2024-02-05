@@ -3,8 +3,8 @@ version: 1.0.2
 cache: false
 fileStrategy: "firebase"
 
-registration:
-  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+# registration:
+#   socialLogins: ["discord", "facebook", "github", "google", "openid"]
     
 endpoints:
   custom:
