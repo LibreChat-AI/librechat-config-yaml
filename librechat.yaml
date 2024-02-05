@@ -304,6 +304,9 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
+registration:
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
 # Notes:
