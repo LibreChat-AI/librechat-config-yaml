@@ -1,11 +1,13 @@
-version: 1.0.1
+version: 1.0.2
 
 cache: false
-# fileStrategy: "firebase"
+fileStrategy: "firebase"
+
+registration:
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 endpoints:
   custom:
-
     # Mistral AI API
     - name: "Mistral"
       apiKey: "user_provided"
@@ -24,8 +26,6 @@ endpoints:
       summaryModel: "mistral-tiny"
       forcePrompt: false
       modelDisplayLabel: "Mistral"
-      # addParams:
-      #   safe_mode: true # This field is specific to Mistral AI: https://docs.mistral.ai/api/
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
@@ -129,6 +129,66 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
+    # together.ai
+    - name: "together.ai"
+      apiKey: "user_provided"
+      baseURL: "https://api.together.xyz"
+      models:
+        default: [
+          "zero-one-ai/Yi-34B-Chat",
+          "Austism/chronos-hermes-13b",
+          "DiscoResearch/DiscoLM-mixtral-8x7b-v2",
+          "Gryphe/MythoMax-L2-13b",
+          "lmsys/vicuna-13b-v1.5",
+          "lmsys/vicuna-7b-v1.5",
+          "lmsys/vicuna-13b-v1.5-16k",
+          "codellama/CodeLlama-13b-Instruct-hf",
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "codellama/CodeLlama-70b-Instruct-hf",
+          "codellama/CodeLlama-7b-Instruct-hf",
+          "togethercomputer/llama-2-13b-chat",
+          "togethercomputer/llama-2-70b-chat",
+          "togethercomputer/llama-2-7b-chat",
+          "NousResearch/Nous-Capybara-7B-V1p9",
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-SFT",
+          "NousResearch/Nous-Hermes-Llama2-70b",
+          "NousResearch/Nous-Hermes-llama-2-7b",
+          "NousResearch/Nous-Hermes-Llama2-13b",
+          "NousResearch/Nous-Hermes-2-Yi-34B",
+          "openchat/openchat-3.5-1210",
+          "Open-Orca/Mistral-7B-OpenOrca",
+          "togethercomputer/Qwen-7B-Chat",
+          "snorkelai/Snorkel-Mistral-PairRM-DPO",
+          "togethercomputer/alpaca-7b",
+          "togethercomputer/falcon-40b-instruct",
+          "togethercomputer/falcon-7b-instruct",
+          "togethercomputer/GPT-NeoXT-Chat-Base-20B",
+          "togethercomputer/Llama-2-7B-32K-Instruct",
+          "togethercomputer/Pythia-Chat-Base-7B-v0.16",
+          "togethercomputer/RedPajama-INCITE-Chat-3B-v1",
+          "togethercomputer/RedPajama-INCITE-7B-Chat",
+          "togethercomputer/StripedHyena-Nous-7B",
+          "Undi95/ReMM-SLERP-L2-13B",
+          "Undi95/Toppy-M-7B",
+          "WizardLM/WizardLM-13B-V1.2",
+          "garage-bAInd/Platypus2-70B-instruct",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mistral-7B-Instruct-v0.2",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "teknium/OpenHermes-2-Mistral-7B",
+          "teknium/OpenHermes-2p5-Mistral-7B",
+          "upstage/SOLAR-10.7B-Instruct-v1.0"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "openchat/openchat-3.5-1210"
+      summarize: false
+      summaryModel: "openchat/openchat-3.5-1210"
+      forcePrompt: false
+      modelDisplayLabel: "together.ai"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1203453238477717514/togetherai.png"
+
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
@@ -191,38 +251,18 @@ endpoints:
     # FreeGPT-4
     - name: "FreeGPT-4"
       apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
+      baseURL: "https://api.convoai.tech/v1/"
       models:
         default: [
-          "gpt-4-rp",
-          "gpt-3.5-rp",
-          "claude-rp",
           "gpt-3.5-turbo",
-          "gpt-3.5-turbo-0301",
           "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
           "gpt-3.5-turbo-16k",
           "gpt-4",
-          "gpt-4-0314",
-          "gpt-4-32k",
           "gpt-4-1106-preview",
-          "llama-2-7b",
-          "llama-2-13b",
-          "llama-2-70b",
-          "code-llama-34b",
-          "gemini-pro",
-          "palm-2",
-          "palm-2-32k",
-          "code-palm-2",
-          "code-palm-2-32k",
-          "claude-instant",
-          "claude-instant-1",
-          "claude-1-100k",
-          "claude-2",
-          "claude-2.1",
-          "claude-1.2",
-          "yi-34b",
-          "falcon-180b",
-          "goliath-120b"
+          "gpt-4-0125-preview",
+          "claude",
+          "gemini-pro"
           ]
         fetch: false
       titleConvo: true
@@ -238,7 +278,9 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-rp/v1"
       models:
-        default: ["pai-001-rp"]
+        default: [
+          "pai-001-rp"
+          ]
         fetch: false
       titleConvo: true
       titleModel: "pai-001-rp"
@@ -253,7 +295,9 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
       models:
-        default: ["pai-001-light-rp"]
+        default: [
+          "pai-001-light-rp"
+          ]
         fetch: false
       titleConvo: true
       titleModel: "pai-001-light-rp"
@@ -263,4 +307,29 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
 
+# See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
+# Notes:
+## Legit Offering:
+### Mistral
+#### https://mistral.ai/
+### OpenRouter
+#### https://openrouter.ai/
+### TogetherAI
+#### https://www.together.ai/
+#### lots of open source models
+#### $25 credit
+### Pawan
+#### https://discord.gg/pawan
+#### Custom models (good for roleplay?)
+#### Get API key on discord with the command `/key`
+## Grey Area:
+### NagaAI
+#### https://discord.naga.ac
+#### Get API key on discord with the command `/key get` 
+## Mandrill
+#### https://discord.mandrillai.tech
+#### Get API key on discord with the command `/key get` 
+## FreeGPT-4
+#### https://discord.com/invite/gpt4
+#### Get API key on discord with the command `/key`
