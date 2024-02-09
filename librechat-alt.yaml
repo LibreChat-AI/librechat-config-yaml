@@ -323,7 +323,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       dropParams: ["stream"]
-      iconURL: "https://cdn.discordapp.com/icons/1106520284967735316/a_e5ae9b4603afc77d6c44ea18437cf084.png"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1205592261157457990/zuki.png"
 
     # Pawan
     - name: "Pawan"
