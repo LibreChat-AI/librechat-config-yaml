@@ -273,9 +273,9 @@ endpoints:
       modelDisplayLabel: "FreeGPT-4"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
       
-      # Zukijourney
+    # Zukijourney
     - name: "Zukijourney"
-      apiKey: "user-provided"
+      apiKey: "user_provided"
       baseURL: "https://zukijourney.xyzbot.net/unf/"
       models:
         default: [
@@ -324,6 +324,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Zukijourney"
       iconURL: "https://cdn.discordapp.com/icons/1106520284967735316/a_e5ae9b4603afc77d6c44ea18437cf084.png"
+    
     # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
