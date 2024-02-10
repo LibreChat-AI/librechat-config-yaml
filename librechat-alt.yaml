@@ -251,7 +251,7 @@ endpoints:
     # FreeGPT-4
     - name: "FreeGPT-4"
       apiKey: "user_provided"
-      baseURL: "https://api.convoai.tech/v1/"
+      baseURL: "https://api.freegpt4.tech/v1/"
       models:
         default: [
           "gpt-3.5-turbo",
@@ -272,7 +272,32 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "FreeGPT-4"
       iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
-      
+
+    # ConvoAI
+    - name: "ConvoAI"
+      apiKey: "user_provided"
+      baseURL: "https://api.convoai.tech/v1/"
+      models:
+        default: [
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "claude",
+          "gemini-pro"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "ConvoAI"
+      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
+
     # Zukijourney
     - name: "Zukijourney"
       apiKey: "user_provided"
