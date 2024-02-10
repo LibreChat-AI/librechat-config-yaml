@@ -187,7 +187,7 @@ endpoints:
       summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1203453238477717514/togetherai.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/togetherai.png"
 
     # NagaAI
     - name: "NagaAI"
@@ -221,7 +221,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "NagaAI"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193703134661455932/NagaAI.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
 
     # Mandrill
     - name: "Mandrill"
@@ -246,7 +246,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "Mandrill"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1193980279233187912/Mandrill.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
 
     # FreeGPT-4
     - name: "FreeGPT-4"
@@ -271,7 +271,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
 
     # ConvoAI
     - name: "ConvoAI"
@@ -296,7 +296,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "ConvoAI"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1202029442399219752/FreeGPT-4.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
 
     # Zukijourney
     - name: "Zukijourney"
@@ -348,7 +348,7 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       dropParams: ["stream"]
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1205596357511880734/zuki.png?ex=65d8f21a&is=65c67d1a&hm=e4641407926abab287541b6e5c0b2a75c1d1d39bdc8c9373cddda6e8883c5efc&"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
     # Pawan
     - name: "Pawan"
@@ -365,7 +365,7 @@ endpoints:
       summaryModel: "pai-001-rp"
       forcePrompt: false
       modelDisplayLabel: "Pawan"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
     # Pawan light
     - name: "Pawan light"
@@ -382,7 +382,7 @@ endpoints:
       summaryModel: "pai-001-light-rp"
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
-      iconURL: "https://cdn.discordapp.com/attachments/1171849907812978800/1194032025573797898/Pawan.png"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
