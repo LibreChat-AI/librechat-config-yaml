@@ -191,6 +191,49 @@ endpoints:
       modelDisplayLabel: "together.ai"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/togetherai.png"
 
+    # Fireworks.ai
+    - name: "Fireworks"
+      apiKey: "user_provided"
+      baseURL: "https://api.fireworks.ai/inference/v1"
+      models:
+        default: [
+          "accounts/fireworks/models/devashisht-test-v2",
+          "accounts/fireworks/models/dt-fc-rc-v1",
+          "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firellava-13b",
+          "accounts/devashisht-72fdad/models/function-calling-v11",
+          "accounts/fireworks/models/fw-function-call-34b-v0",
+          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
+          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
+          "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/llama-v2-13b-chat",
+          "accounts/fireworks/models/llama-v2-13b-code-instruct",
+          "accounts/fireworks/models/llama-v2-34b-code-instruct",
+          "accounts/fireworks/models/llama-v2-70b-chat",
+          "accounts/fireworks/models/llama-v2-70b-code-instruct",
+          "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/llava-v15-13b-fireworks",
+          "accounts/fireworks/models/mistral-7b-instruct-4k",
+          "accounts/dev-e24710/models/mistral-spellbound-format",
+          "accounts/fireworks/models/mixtral-8x7b-instruct",
+          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
+          "accounts/fireworks/models/new-mixtral-chat",
+          "accounts/fireworks/models/qwen-14b-chat",
+          "accounts/fireworks/models/qwen-1-8b-chat",
+          "accounts/fireworks/models/qwen-72b-chat",
+          "accounts/stability/models/stablelm-zephyr-3b",
+          "accounts/fireworks/models/yi-34b-200k-capybara",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summarize: false
+      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+      dropParams: ["user"]
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
+
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
@@ -399,6 +442,9 @@ endpoints:
 #### https://www.together.ai/
 #### lots of open source models
 #### $25 credit
+### FireworksAI
+#### https://fireworks.ai/
+#### $1 credit
 ### Pawan
 #### https://discord.gg/pawan
 #### Custom models (good for roleplay?)

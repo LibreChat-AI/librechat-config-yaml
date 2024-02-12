@@ -252,7 +252,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
-      iconURL: ""
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
 
     # NagaAI
     - name: "NagaAI"
@@ -462,6 +462,9 @@ endpoints:
 #### https://www.together.ai/
 #### lots of open source models
 #### $25 credit
+### FireworksAI
+#### https://fireworks.ai/
+#### $1 credit
 ### Pawan
 #### https://discord.gg/pawan
 #### Custom models (good for roleplay?)
