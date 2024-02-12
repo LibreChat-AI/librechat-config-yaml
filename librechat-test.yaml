@@ -194,7 +194,7 @@ endpoints:
     # Fireworks.ai
     - name: "Fireworks"
       apiKey: "user_provided"
-      baseURL: "https://api.fireworks.ai/completions/v1"
+      baseURL: "https://api.fireworks.ai/inference/v1/completions"
       models:
         default: [
           "accounts/fireworks/models/bleat-adapter",
