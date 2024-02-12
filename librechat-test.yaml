@@ -131,7 +131,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # Mistral AI API
+    # Cohere
     - name: "Cohere"
       apiKey: "user_provided"
       baseURL: "https://api.cohere.ai/v1"
