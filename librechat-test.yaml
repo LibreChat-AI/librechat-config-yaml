@@ -1,9 +1,12 @@
-# Configuration version (required)
 version: 1.0.2
 
-# Cache settings: Set to true to enable caching
 cache: false
 # fileStrategy: "firebase"
+
+registration:
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
+#   allowedDomains:
+#     - "gmail.com"
 
 endpoints:
   custom:
