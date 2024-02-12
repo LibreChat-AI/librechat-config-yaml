@@ -134,7 +134,7 @@ endpoints:
     # Cohere
     - name: "Cohere"
       apiKey: "user_provided"
-      baseURL: "https://api.cohere.ai/v1/generate"
+      baseURL: "https://api.cohere.ai/v1"
       models: 
         default: [
           "command-light",
@@ -147,7 +147,6 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "Cohere"
-      dropParams: ["user"]
 
     # together.ai
     - name: "together.ai"
