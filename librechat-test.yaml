@@ -131,6 +131,24 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
+    # Mistral AI API
+    - name: "Cohere"
+      apiKey: "user_provided"
+      baseURL: "https://api.cohere.ai/v1"
+      models: 
+        default: [
+          "command-light",
+          "command"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "Cohere"
+      dropParams: ["user"]
+
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
