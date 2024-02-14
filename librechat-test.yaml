@@ -10,9 +10,9 @@ registration:
 
 endpoints:
   assistants:
-    disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
-    pollIntervalMs: 750  # Polling interval for checking assistant updates
-    timeoutMs: 180000  # Timeout for assistant operations
+    disableBuilder: false
+    pollIntervalMs: 750
+    timeoutMs: 180000
   custom:
     # Mistral AI API
     - name: "Mistral"
