@@ -9,6 +9,10 @@ registration:
 #     - "gmail.com"
 
 endpoints:
+  assistants:
+    disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
+    pollIntervalMs: 750  # Polling interval for checking assistant updates
+    timeoutMs: 180000  # Timeout for assistant operations
   custom:
     # Mistral AI API
     - name: "Mistral"
@@ -449,11 +453,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
-
-  assistants:
-    disableBuilder: false # Disable Assistants Builder Interface by setting to `true`
-    pollIntervalMs: 750  # Polling interval for checking assistant updates
-    timeoutMs: 180000  # Timeout for assistant operations
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
