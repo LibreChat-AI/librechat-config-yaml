@@ -9,6 +9,7 @@ registration:
 #     - "gmail.com"
 
 endpoints:
+  assistants:
   custom:
     # Mistral AI API
     - name: "Mistral"
