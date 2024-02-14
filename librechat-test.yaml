@@ -9,10 +9,6 @@ registration:
 #     - "gmail.com"
 
 endpoints:
-  # assistants:
-  #   disableBuilder: false
-  #   pollIntervalMs: 750
-  #   timeoutMs: 180000
   custom:
     # Mistral AI API
     - name: "Mistral"
