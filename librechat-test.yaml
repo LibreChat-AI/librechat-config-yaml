@@ -265,167 +265,185 @@ endpoints:
       dropParams: ["user"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
 
-    # NagaAI
-    - name: "NagaAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.naga.ac/v1"
+    # DEEPNIGHT
+    - name: "DEEPNIGHT"
+      apiKey: "sk-free1234"
+      baseURL: "https://aiforcause.deepnight.tech/v1"
       models:
         default: [
-          "gpt-4-0125-preview",
-          "gpt-4-turbo-preview",
-          "gpt-4-1106-preview",
-          "gpt-4-vision-preview",
-          "gpt-4-0613",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0613",
-          "gemini-pro",
-          "gemini-pro-vision",
-          "llama-2-70b-chat",
-          "llama-2-13b-chat",
-          "llama-2-7b-chat",
-          "code-llama-34b",
-          "mistral-7b",
-          "mixtral-8x7b",
-          "falcon-180b-chat",
-          "claude-2",
-          "claude-instant"
+          "gpt-35-turbo",
+          "gpt-35-turbo-16k",
+          "gpt-4-turbo"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "openchat/openchat-3.5-1210"
       summarize: false
-      summaryModel: "gpt-3.5-turbo"
+      summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
-      modelDisplayLabel: "NagaAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
+      modelDisplayLabel: "DEEPNIGHT"
+      
+    # # NagaAI
+    # - name: "NagaAI"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.naga.ac/v1"
+    #   models:
+    #     default: [
+    #       "gpt-4-0125-preview",
+    #       "gpt-4-turbo-preview",
+    #       "gpt-4-1106-preview",
+    #       "gpt-4-vision-preview",
+    #       "gpt-4-0613",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0613",
+    #       "gemini-pro",
+    #       "gemini-pro-vision",
+    #       "llama-2-70b-chat",
+    #       "llama-2-13b-chat",
+    #       "llama-2-7b-chat",
+    #       "code-llama-34b",
+    #       "mistral-7b",
+    #       "mixtral-8x7b",
+    #       "falcon-180b-chat",
+    #       "claude-2",
+    #       "claude-instant"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "NagaAI"
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
 
-    # Mandrill
-    - name: "Mandrill"
-      apiKey: "user_provided"
-      baseURL: "https://api.mandrillai.tech/v1"
-      models:
-        default: [
-          "gpt-4-vision-preview",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0613",
-          "gpt-3.5-turbo-0301",
-          "gemini-pro",
-          "gemini-pro-vision"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "Mandrill"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
+    # # Mandrill
+    # - name: "Mandrill"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.mandrillai.tech/v1"
+    #   models:
+    #     default: [
+    #       "gpt-4-vision-preview",
+    #       "gpt-4",
+    #       "gpt-4-1106-preview",
+    #       "gpt-3.5-turbo",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0613",
+    #       "gpt-3.5-turbo-0301",
+    #       "gemini-pro",
+    #       "gemini-pro-vision"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "Mandrill"
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
 
-    # FreeGPT-4
-    - name: "FreeGPT-4"
-      apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "claude",
-          "gemini-pro"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
+    # # FreeGPT-4
+    # - name: "FreeGPT-4"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.freegpt4.tech/v1/"
+    #   models:
+    #     default: [
+    #       "gpt-3.5-turbo",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0125",
+    #       "gpt-3.5-turbo-16k",
+    #       "gpt-4",
+    #       "gpt-4-1106-preview",
+    #       "gpt-4-0125-preview",
+    #       "claude",
+    #       "gemini-pro"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "FreeGPT-4"
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
 
-    # ConvoAI
-    - name: "ConvoAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.convoai.tech/v1/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-0613",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "gpt-4-vision-preview"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "ConvoAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
+    # # ConvoAI
+    # - name: "ConvoAI"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.convoai.tech/v1/"
+    #   models:
+    #     default: [
+    #       "gpt-3.5-turbo",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0125",
+    #       "gpt-3.5-turbo-16k",
+    #       "gpt-4",
+    #       "gpt-4-0613",
+    #       "gpt-4-1106-preview",
+    #       "gpt-4-0125-preview",
+    #       "gpt-4-vision-preview"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "ConvoAI"
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
 
-    # Zukijourney
-    - name: "Zukijourney"
-      apiKey: "user_provided"
-      baseURL: "https://zukijourney.xyzbot.net/unf/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-instruct",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-32k",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "gpt-4-vision-preview",
-          "claude",
-          "claude-2",
-          "claude-2.1",
-          "claude-instant-v1",
-          "claude-instant-v1-100k",
-          "pplx-70b-online",
-          "palm-2",
-          "bard",
-          "gemini-pro",
-          "gemini-pro-vision",
-          "mixtral-8x7b",
-          "mixtral-8x7b-instruct",
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-7b-instruct",
-          "codellama-7b-instruct",
-          "llama-2-7b",
-          "llama-2-70b-chat",
-          "mythomax-l2-13b-8k",
-          "sheep-duck-llama",
-          "goliath-120b",
-          "nous-llama",
-          "yi-34b",
-          "openchat",
-          "solar10-7b",
-          "pi"
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      dropParams: ["stream"]
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
+    # # Zukijourney
+    # - name: "Zukijourney"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://zukijourney.xyzbot.net/unf/"
+    #   models:
+    #     default: [
+    #       "gpt-3.5-turbo",
+    #       "gpt-3.5-turbo-1106",
+    #       "gpt-3.5-turbo-0125",
+    #       "gpt-3.5-turbo-instruct",
+    #       "gpt-3.5-turbo-16k",
+    #       "gpt-4",
+    #       "gpt-4-32k",
+    #       "gpt-4-1106-preview",
+    #       "gpt-4-0125-preview",
+    #       "gpt-4-vision-preview",
+    #       "claude",
+    #       "claude-2",
+    #       "claude-2.1",
+    #       "claude-instant-v1",
+    #       "claude-instant-v1-100k",
+    #       "pplx-70b-online",
+    #       "palm-2",
+    #       "bard",
+    #       "gemini-pro",
+    #       "gemini-pro-vision",
+    #       "mixtral-8x7b",
+    #       "mixtral-8x7b-instruct",
+    #       "mistral-tiny",
+    #       "mistral-small",
+    #       "mistral-medium",
+    #       "mistral-7b-instruct",
+    #       "codellama-7b-instruct",
+    #       "llama-2-7b",
+    #       "llama-2-70b-chat",
+    #       "mythomax-l2-13b-8k",
+    #       "sheep-duck-llama",
+    #       "goliath-120b",
+    #       "nous-llama",
+    #       "yi-34b",
+    #       "openchat",
+    #       "solar10-7b",
+    #       "pi"
+    #       ]
+    #     fetch: true
+    #   titleConvo: true
+    #   titleModel: "gpt-3.5-turbo"
+    #   summarize: false
+    #   summaryModel: "gpt-3.5-turbo"
+    #   forcePrompt: false
+    #   dropParams: ["stream"]
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
     # Pawan
     - name: "Pawan"
