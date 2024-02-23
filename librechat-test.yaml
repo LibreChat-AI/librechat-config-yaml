@@ -277,9 +277,9 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "openchat/openchat-3.5-1210"
+      titleModel: "gpt-35-turbo"
       summarize: false
-      summaryModel: "openchat/openchat-3.5-1210"
+      summaryModel: "gpt-35-turbo"
       forcePrompt: false
       modelDisplayLabel: "DEEPNIGHT"
       
