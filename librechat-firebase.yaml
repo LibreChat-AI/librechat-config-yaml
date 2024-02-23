@@ -36,6 +36,7 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         "default": [
+          "gemma/gemma-7b-it:free",
           "nousresearch/nous-capybara-7b:free",
           "mistralai/mistral-7b-instruct:free",
           "huggingfaceh4/zephyr-7b-beta:free",
@@ -97,6 +98,7 @@ endpoints:
           "google/palm-2-codechat-bison-32k",
           "google/gemini-pro",
           "google/gemini-pro-vision",
+          "gemma/gemma-7b-it",
           "perplexity/pplx-70b-online",
           "perplexity/pplx-7b-online",
           "perplexity/pplx-7b-chat",
