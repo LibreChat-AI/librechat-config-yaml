@@ -268,7 +268,7 @@ endpoints:
     # DEEPNIGHT
     - name: "DEEPNIGHT"
       apiKey: "sk-free1234"
-      baseURL: "https://aiforcause.deepnight.tech/v1"
+      baseURL: "https://aiforcause.deepnight.tech/openai/"
       models:
         default: [
           "gpt-35-turbo",
