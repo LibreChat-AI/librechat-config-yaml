@@ -10,25 +10,25 @@ registration:
 
 endpoints:
   custom:
-    # Mistral AI API
-    - name: "Mistral"
-      apiKey: "user_provided"
-      baseURL: "https://api.mistral.ai/v1"
-      models: 
-        default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium"
-          ]
-        fetch: false
-      titleConvo: true
-      titleMethod: "completion"
-      titleModel: "mistral-tiny"
-      summarize: false
-      summaryModel: "mistral-tiny"
-      forcePrompt: false
-      modelDisplayLabel: "Mistral"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+    # # Mistral AI API
+    # - name: "Mistral"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.mistral.ai/v1"
+    #   models: 
+    #     default: [
+    #       "mistral-tiny",
+    #       "mistral-small",
+    #       "mistral-medium"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleMethod: "completion"
+    #   titleModel: "mistral-tiny"
+    #   summarize: false
+    #   summaryModel: "mistral-tiny"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "Mistral"
+    #   dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
     - name: "OpenRouter"
@@ -282,6 +282,8 @@ endpoints:
       summaryModel: "gpt-35-turbo"
       forcePrompt: false
       modelDisplayLabel: "DEEPNIGHT"
+      addParam:
+        stream: true
       
     # # NagaAI
     # - name: "NagaAI"
