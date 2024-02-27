@@ -106,12 +106,12 @@ endpoints:
           "nousresearch/nous-hermes-2-vision-7b",
           "nousresearch/nous-hermes-yi-34b",
           "------------------------------",
-          "perplexity/pplx-7b-online",
-          "perplexity/pplx-70b-online",
-          "perplexity/pplx-7b-chat",
-          "perplexity/pplx-70b-chat",
-          "perplexity/sonar-medium-online",
-          "------------------------------",
+          # "perplexity/pplx-7b-online",
+          # "perplexity/pplx-70b-online",
+          # "perplexity/pplx-7b-chat",
+          # "perplexity/pplx-70b-chat",
+          # "perplexity/sonar-medium-online",
+          # "------------------------------",
           "gryphe/mythomist-7b",
           "gryphe/mythomax-l2-13b",
           "gryphe/mythomax-l2-13b-8k",
@@ -162,6 +162,28 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
+
+    # OpenRouter.ai - Perplexity
+    - name: "OpenRouter-Perplexity"
+      apiKey: "user_provided"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        "default": [
+          "perplexity/pplx-7b-chat",
+          "perplexity/pplx-70b-chat",
+          "perplexity/pplx-7b-online",
+          "perplexity/pplx-70b-online",
+          "perplexity/sonar-medium-online",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "perplexity/pplx-7b-chat"
+      summarize: false
+      summaryModel: "perplexity/pplx-7b-chat"
+      forcePrompt: false
+      dropParams: ["stop"]
+      modelDisplayLabel: "Perplexity"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
       
     #groq
     - name: "groq"
