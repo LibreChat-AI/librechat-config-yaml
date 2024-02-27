@@ -142,6 +142,24 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
+    #groq
+    - name: "groq"
+      apiKey: "user_provided"
+      baseURL: "https://api.groq.com/openai/v1/"
+      models:
+        default: [
+          "llama2-70b-4096",
+          "mixtral-8x7b-32768"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "mixtral-8x7b-32768"
+      summarize: false
+      summaryModel: "mixtral-8x7b-32768"
+      forcePrompt: false
+      modelDisplayLabel: "groq"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
+
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
@@ -489,6 +507,8 @@ endpoints:
 #### https://mistral.ai/
 ### OpenRouter
 #### https://openrouter.ai/
+### groq
+#### https://console.groq.com/keys
 ### TogetherAI
 #### https://www.together.ai/
 #### lots of open source models
