@@ -19,7 +19,7 @@ endpoints:
           "mistral-tiny",
           "mistral-small",
           "mistral-medium",
-          "mistral-large"
+          "mistral-large-latest"
           ]
         fetch: false
       titleConvo: true
