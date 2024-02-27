@@ -202,6 +202,28 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "groq"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
+
+    # perplexity.ai
+    - name: "perplexity.ai"
+      apiKey: "user_provided"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default: [
+          "mistral-7b-instruct",
+          "sonar-small-chat",
+          "sonar-small-online",
+          "sonar-medium-chat",
+          "sonar-medium-online"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "sonar-small-chat"
+      summarize: false
+      summaryModel: "sonar-small-chat"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
       
     # together.ai
     - name: "together.ai"
