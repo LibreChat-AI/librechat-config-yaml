@@ -201,7 +201,7 @@ endpoints:
       summaryModel: "mixtral-8x7b-32768"
       forcePrompt: false
       modelDisplayLabel: "groq"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
+      # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
 
     # together.ai
     - name: "together.ai"
