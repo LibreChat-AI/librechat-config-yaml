@@ -10,26 +10,18 @@ registration:
 
 endpoints:
   custom:
-    # Mistral AI API
-    - name: "Mistral"
-      apiKey: "user_provided"
-      baseURL: "https://api.mistral.ai/v1"
-      models: 
+    - name: "groq"
+      apiKey: "${GROQ_API_KEY}"
+      baseURL: "https://api.groq.com/openai/v1/"
+      models:
         default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-large-latest"
+          "llama2-70b-4096",
+          "mixtral-8x7b-32768"
           ]
         fetch: false
       titleConvo: true
-      titleMethod: "completion"
-      titleModel: "mistral-tiny"
-      summarize: false
-      summaryModel: "mistral-tiny"
-      forcePrompt: false
-      modelDisplayLabel: "Mistral"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+      titleModel: "mixtral-8x7b-32768"
+      modelDisplayLabel: "groq"
 
     # OpenRouter.ai
     - name: "OpenRouter"
@@ -185,27 +177,59 @@ endpoints:
       modelDisplayLabel: "Perplexity"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
 
-    #groq
-    - name: "groq"
-      apiKey: "user_provided"
-      baseURL: "https://api.groq.com/openai/v1/"
+    - name: "Anyscale"
+      apiKey: "${ANYSCALE_API_KEY}"
+      baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
-          "llama2-70b-4096",
-          "mixtral-8x7b-32768"
+          "meta-llama/Llama-2-7b-chat-hf",
           ]
-        fetch: false
+        fetch: true
       titleConvo: true
-      titleModel: "mixtral-8x7b-32768"
+      titleModel: "meta-llama/Llama-2-7b-chat-hf"
       summarize: false
-      summaryModel: "mixtral-8x7b-32768"
+      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
       forcePrompt: false
-      modelDisplayLabel: "groq"
-      # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
+      modelDisplayLabel: "Anyscale"
 
-    # together.ai
+    - name: "Fireworks"
+      apiKey: "${FIREWORKS_API_KEY}"
+      baseURL: "https://api.fireworks.ai/inference/v1"
+      models:
+        default: [
+          "accounts/fireworks/models/mixtral-8x7b-instruct",
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summarize: false
+      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+      dropParams: ["user"]
+
+    - name: "Perplexity"
+      apiKey: "${PERPLEXITY_API_KEY}"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default: [
+          "mistral-7b-instruct",
+          "sonar-small-chat",
+          "sonar-small-online",
+          "sonar-medium-chat",
+          "sonar-medium-online"
+          ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "sonar-medium-chat"
+      summarize: false
+      summaryModel: "sonar-medium-chat"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
+
     - name: "together.ai"
-      apiKey: "user_provided"
+      apiKey: "${TOGETHERAI_API_KEY}"
       baseURL: "https://api.together.xyz"
       models:
         default: [
@@ -254,77 +278,76 @@ endpoints:
           "teknium/OpenHermes-2p5-Mistral-7B",
           "upstage/SOLAR-10.7B-Instruct-v1.0"
           ]
-        fetch: false
+        fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "openchat/openchat-3.5-1210"
+      titleModel: "togethercomputer/llama-2-7b-chat"
       summarize: false
-      summaryModel: "openchat/openchat-3.5-1210"
+      summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/togetherai.png"
 
-    # Fireworks.ai
-    - name: "Fireworks"
-      apiKey: "user_provided"
-      baseURL: "https://api.fireworks.ai/inference/v1"
-      models:
-        default: [
-          # "accounts/fireworks/models/bleat-adapter",
-          # "accounts/fireworks/models/chinese-llama-2-lora-7b",
-          "accounts/fireworks/models/devashisht-test-v2",
-          "accounts/fireworks/models/dt-fc-rc-v1",
-          "accounts/fireworks/models/firefunction-v1",
-          "accounts/fireworks/models/firellava-13b",
-          "accounts/devashisht-72fdad/models/function-calling-v11",
-          "accounts/fireworks/models/fw-function-call-34b-v0",
-          # "accounts/fireworks/models/japanese-llava-mistral-7b",
-          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
-          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
-          "accounts/fireworks/models/japanese-stable-vlm",
-          # "accounts/fireworks/models/llama-2-13b-fp16-french",
-          # "accounts/fireworks/models/llama-2-13b-guanaco-peft",
-          # "accounts/fireworks/models/llama2-7b-summarize",
-          # "accounts/fireworks/models/llamaguard-7b",
-          # "accounts/fireworks/models/llama-v2-13b",
-          "accounts/fireworks/models/llama-v2-13b-chat",
-          # "accounts/fireworks/models/llama-v2-13b-code",
-          "accounts/fireworks/models/llama-v2-13b-code-instruct",
-          # "accounts/fireworks/models/llama-v2-34b-code",
-          "accounts/fireworks/models/llama-v2-34b-code-instruct",
-          # "accounts/fireworks/models/llama-v2-70b",
-          "accounts/fireworks/models/llama-v2-70b-chat",
-          "accounts/fireworks/models/llama-v2-70b-code-instruct",
-          # "accounts/fireworks/models/llama-v2-7b",
-          "accounts/fireworks/models/llama-v2-7b-chat",
-          "accounts/fireworks/models/llava-v15-13b-fireworks",
-          # "accounts/fireworks/models/mistral-7b",
-          "accounts/fireworks/models/mistral-7b-instruct-4k",
-          "accounts/dev-e24710/models/mistral-spellbound-format",
-          # "accounts/fireworks/models/mixtral-8x7b",
-          "accounts/fireworks/models/mixtral-8x7b-instruct",
-          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-          "accounts/fireworks/models/new-mixtral-chat",
-          "accounts/fireworks/models/qwen-14b-chat",
-          "accounts/fireworks/models/qwen-1-8b-chat",
-          "accounts/fireworks/models/qwen-72b-chat",
-          # "accounts/stability/models/stablecode",
-          "accounts/stability/models/stablelm-zephyr-3b",
-          # "accounts/fireworks/models/starcoder-16b-w8a16",
-          # "accounts/fireworks/models/starcoder-7b-w8a16",
-          # "accounts/fireworks/models/traditional-chinese-qlora-llama2",
-          "accounts/fireworks/models/yi-34b-200k-capybara",
-          # "accounts/fireworks/models/yi-6b",
-          # "accounts/fireworks/models/zephyr-7b-beta"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      forcePrompt: false
-      modelDisplayLabel: "Fireworks"
-      dropParams: ["user"]
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
+    # # Fireworks.ai
+    # - name: "Fireworks"
+    #   apiKey: "user_provided"
+    #   baseURL: "https://api.fireworks.ai/inference/v1"
+    #   models:
+    #     default: [
+    #       # "accounts/fireworks/models/bleat-adapter",
+    #       # "accounts/fireworks/models/chinese-llama-2-lora-7b",
+    #       "accounts/fireworks/models/devashisht-test-v2",
+    #       "accounts/fireworks/models/dt-fc-rc-v1",
+    #       "accounts/fireworks/models/firefunction-v1",
+    #       "accounts/fireworks/models/firellava-13b",
+    #       "accounts/devashisht-72fdad/models/function-calling-v11",
+    #       "accounts/fireworks/models/fw-function-call-34b-v0",
+    #       # "accounts/fireworks/models/japanese-llava-mistral-7b",
+    #       "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
+    #       "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
+    #       "accounts/fireworks/models/japanese-stable-vlm",
+    #       # "accounts/fireworks/models/llama-2-13b-fp16-french",
+    #       # "accounts/fireworks/models/llama-2-13b-guanaco-peft",
+    #       # "accounts/fireworks/models/llama2-7b-summarize",
+    #       # "accounts/fireworks/models/llamaguard-7b",
+    #       # "accounts/fireworks/models/llama-v2-13b",
+    #       "accounts/fireworks/models/llama-v2-13b-chat",
+    #       # "accounts/fireworks/models/llama-v2-13b-code",
+    #       "accounts/fireworks/models/llama-v2-13b-code-instruct",
+    #       # "accounts/fireworks/models/llama-v2-34b-code",
+    #       "accounts/fireworks/models/llama-v2-34b-code-instruct",
+    #       # "accounts/fireworks/models/llama-v2-70b",
+    #       "accounts/fireworks/models/llama-v2-70b-chat",
+    #       "accounts/fireworks/models/llama-v2-70b-code-instruct",
+    #       # "accounts/fireworks/models/llama-v2-7b",
+    #       "accounts/fireworks/models/llama-v2-7b-chat",
+    #       "accounts/fireworks/models/llava-v15-13b-fireworks",
+    #       # "accounts/fireworks/models/mistral-7b",
+    #       "accounts/fireworks/models/mistral-7b-instruct-4k",
+    #       "accounts/dev-e24710/models/mistral-spellbound-format",
+    #       # "accounts/fireworks/models/mixtral-8x7b",
+    #       "accounts/fireworks/models/mixtral-8x7b-instruct",
+    #       "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
+    #       "accounts/fireworks/models/new-mixtral-chat",
+    #       "accounts/fireworks/models/qwen-14b-chat",
+    #       "accounts/fireworks/models/qwen-1-8b-chat",
+    #       "accounts/fireworks/models/qwen-72b-chat",
+    #       # "accounts/stability/models/stablecode",
+    #       "accounts/stability/models/stablelm-zephyr-3b",
+    #       # "accounts/fireworks/models/starcoder-16b-w8a16",
+    #       # "accounts/fireworks/models/starcoder-7b-w8a16",
+    #       # "accounts/fireworks/models/traditional-chinese-qlora-llama2",
+    #       "accounts/fireworks/models/yi-34b-200k-capybara",
+    #       # "accounts/fireworks/models/yi-6b",
+    #       # "accounts/fireworks/models/zephyr-7b-beta"
+    #       ]
+    #     fetch: false
+    #   titleConvo: true
+    #   titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+    #   summarize: false
+    #   summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "Fireworks"
+    #   dropParams: ["user"]
+    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
 
     # DEEPNIGHT
     - name: "DEEPNIGHT"
@@ -345,169 +368,7 @@ endpoints:
       modelDisplayLabel: "DEEPNIGHT"
       addParam:
         stream: true
-      
-    # # NagaAI
-    # - name: "NagaAI"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.naga.ac/v1"
-    #   models:
-    #     default: [
-    #       "gpt-4-0125-preview",
-    #       "gpt-4-turbo-preview",
-    #       "gpt-4-1106-preview",
-    #       "gpt-4-vision-preview",
-    #       "gpt-4-0613",
-    #       "gpt-3.5-turbo-1106",
-    #       "gpt-3.5-turbo-0613",
-    #       "gemini-pro",
-    #       "gemini-pro-vision",
-    #       "llama-2-70b-chat",
-    #       "llama-2-13b-chat",
-    #       "llama-2-7b-chat",
-    #       "code-llama-34b",
-    #       "mistral-7b",
-    #       "mixtral-8x7b",
-    #       "falcon-180b-chat",
-    #       "claude-2",
-    #       "claude-instant"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "NagaAI"
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
-
-    # # Mandrill
-    # - name: "Mandrill"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.mandrillai.tech/v1"
-    #   models:
-    #     default: [
-    #       "gpt-4-vision-preview",
-    #       "gpt-4",
-    #       "gpt-4-1106-preview",
-    #       "gpt-3.5-turbo",
-    #       "gpt-3.5-turbo-1106",
-    #       "gpt-3.5-turbo-0613",
-    #       "gpt-3.5-turbo-0301",
-    #       "gemini-pro",
-    #       "gemini-pro-vision"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "Mandrill"
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
-
-    # # FreeGPT-4
-    # - name: "FreeGPT-4"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.freegpt4.tech/v1/"
-    #   models:
-    #     default: [
-    #       "gpt-3.5-turbo",
-    #       "gpt-3.5-turbo-1106",
-    #       "gpt-3.5-turbo-0125",
-    #       "gpt-3.5-turbo-16k",
-    #       "gpt-4",
-    #       "gpt-4-1106-preview",
-    #       "gpt-4-0125-preview",
-    #       "claude",
-    #       "gemini-pro"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "FreeGPT-4"
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
-
-    # # ConvoAI
-    # - name: "ConvoAI"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.convoai.tech/v1/"
-    #   models:
-    #     default: [
-    #       "gpt-3.5-turbo",
-    #       "gpt-3.5-turbo-1106",
-    #       "gpt-3.5-turbo-0125",
-    #       "gpt-3.5-turbo-16k",
-    #       "gpt-4",
-    #       "gpt-4-0613",
-    #       "gpt-4-1106-preview",
-    #       "gpt-4-0125-preview",
-    #       "gpt-4-vision-preview"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "ConvoAI"
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
-
-    # # Zukijourney
-    # - name: "Zukijourney"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://zukijourney.xyzbot.net/unf/"
-    #   models:
-    #     default: [
-    #       "gpt-3.5-turbo",
-    #       "gpt-3.5-turbo-1106",
-    #       "gpt-3.5-turbo-0125",
-    #       "gpt-3.5-turbo-instruct",
-    #       "gpt-3.5-turbo-16k",
-    #       "gpt-4",
-    #       "gpt-4-32k",
-    #       "gpt-4-1106-preview",
-    #       "gpt-4-0125-preview",
-    #       "gpt-4-vision-preview",
-    #       "claude",
-    #       "claude-2",
-    #       "claude-2.1",
-    #       "claude-instant-v1",
-    #       "claude-instant-v1-100k",
-    #       "pplx-70b-online",
-    #       "palm-2",
-    #       "bard",
-    #       "gemini-pro",
-    #       "gemini-pro-vision",
-    #       "mixtral-8x7b",
-    #       "mixtral-8x7b-instruct",
-    #       "mistral-tiny",
-    #       "mistral-small",
-    #       "mistral-medium",
-    #       "mistral-7b-instruct",
-    #       "codellama-7b-instruct",
-    #       "llama-2-7b",
-    #       "llama-2-70b-chat",
-    #       "mythomax-l2-13b-8k",
-    #       "sheep-duck-llama",
-    #       "goliath-120b",
-    #       "nous-llama",
-    #       "yi-34b",
-    #       "openchat",
-    #       "solar10-7b",
-    #       "pi"
-    #       ]
-    #     fetch: true
-    #   titleConvo: true
-    #   titleModel: "gpt-3.5-turbo"
-    #   summarize: false
-    #   summaryModel: "gpt-3.5-turbo"
-    #   forcePrompt: false
-    #   dropParams: ["stream"]
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
-
+     
     # Pawan
     - name: "Pawan"
       apiKey: "user_provided"
