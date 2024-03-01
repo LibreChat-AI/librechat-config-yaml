@@ -366,8 +366,6 @@ endpoints:
       summaryModel: "gpt-35-turbo"
       forcePrompt: false
       modelDisplayLabel: "DEEPNIGHT"
-      addParam:
-        stream: true
      
     # Pawan
     - name: "Pawan"
