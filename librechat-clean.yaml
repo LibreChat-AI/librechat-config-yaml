@@ -28,7 +28,7 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         "default": [
-          "openai/gpt-3.5-turbo-0125",
+          "openai/gpt-3.5-turbo-0125"
           ]
         fetch: true
       titleConvo: true
@@ -65,7 +65,7 @@ endpoints:
       baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
-          "meta-llama/Llama-2-7b-chat-hf",
+          "meta-llama/Llama-2-7b-chat-hf"
           ]
         fetch: true
       titleConvo: true
@@ -169,69 +169,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
-    # # Fireworks.ai
-    # - name: "Fireworks"
-    #   apiKey: "user_provided"
-    #   baseURL: "https://api.fireworks.ai/inference/v1"
-    #   models:
-    #     default: [
-    #       # "accounts/fireworks/models/bleat-adapter",
-    #       # "accounts/fireworks/models/chinese-llama-2-lora-7b",
-    #       "accounts/fireworks/models/devashisht-test-v2",
-    #       "accounts/fireworks/models/dt-fc-rc-v1",
-    #       "accounts/fireworks/models/firefunction-v1",
-    #       "accounts/fireworks/models/firellava-13b",
-    #       "accounts/devashisht-72fdad/models/function-calling-v11",
-    #       "accounts/fireworks/models/fw-function-call-34b-v0",
-    #       # "accounts/fireworks/models/japanese-llava-mistral-7b",
-    #       "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
-    #       "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
-    #       "accounts/fireworks/models/japanese-stable-vlm",
-    #       # "accounts/fireworks/models/llama-2-13b-fp16-french",
-    #       # "accounts/fireworks/models/llama-2-13b-guanaco-peft",
-    #       # "accounts/fireworks/models/llama2-7b-summarize",
-    #       # "accounts/fireworks/models/llamaguard-7b",
-    #       # "accounts/fireworks/models/llama-v2-13b",
-    #       "accounts/fireworks/models/llama-v2-13b-chat",
-    #       # "accounts/fireworks/models/llama-v2-13b-code",
-    #       "accounts/fireworks/models/llama-v2-13b-code-instruct",
-    #       # "accounts/fireworks/models/llama-v2-34b-code",
-    #       "accounts/fireworks/models/llama-v2-34b-code-instruct",
-    #       # "accounts/fireworks/models/llama-v2-70b",
-    #       "accounts/fireworks/models/llama-v2-70b-chat",
-    #       "accounts/fireworks/models/llama-v2-70b-code-instruct",
-    #       # "accounts/fireworks/models/llama-v2-7b",
-    #       "accounts/fireworks/models/llama-v2-7b-chat",
-    #       "accounts/fireworks/models/llava-v15-13b-fireworks",
-    #       # "accounts/fireworks/models/mistral-7b",
-    #       "accounts/fireworks/models/mistral-7b-instruct-4k",
-    #       "accounts/dev-e24710/models/mistral-spellbound-format",
-    #       # "accounts/fireworks/models/mixtral-8x7b",
-    #       "accounts/fireworks/models/mixtral-8x7b-instruct",
-    #       "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-    #       "accounts/fireworks/models/new-mixtral-chat",
-    #       "accounts/fireworks/models/qwen-14b-chat",
-    #       "accounts/fireworks/models/qwen-1-8b-chat",
-    #       "accounts/fireworks/models/qwen-72b-chat",
-    #       # "accounts/stability/models/stablecode",
-    #       "accounts/stability/models/stablelm-zephyr-3b",
-    #       # "accounts/fireworks/models/starcoder-16b-w8a16",
-    #       # "accounts/fireworks/models/starcoder-7b-w8a16",
-    #       # "accounts/fireworks/models/traditional-chinese-qlora-llama2",
-    #       "accounts/fireworks/models/yi-34b-200k-capybara",
-    #       # "accounts/fireworks/models/yi-6b",
-    #       # "accounts/fireworks/models/zephyr-7b-beta"
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
-    #   summarize: false
-    #   summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
-    #   forcePrompt: false
-    #   modelDisplayLabel: "Fireworks"
-    #   dropParams: ["user"]
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
-
     # DEEPNIGHT
     - name: "DEEPNIGHT"
       apiKey: "sk-free1234"
@@ -283,41 +220,3 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
-
-# See the Custom Configuration Guide for more information:
-# https://docs.librechat.ai/install/configuration/custom_config.html
-# Notes:
-## Legit Offering:
-### Mistral
-#### https://mistral.ai/
-### OpenRouter
-#### https://openrouter.ai/
-### groq
-#### https://console.groq.com/keys
-### TogetherAI
-#### https://www.together.ai/
-#### lots of open source models
-#### $25 credit
-### FireworksAI
-#### https://fireworks.ai/
-#### $1 credit
-### Pawan
-#### https://discord.gg/pawan
-#### Custom models (good for roleplay?)
-#### Get API key on discord with the command `/key`
-## Grey Area:
-### NagaAI
-#### https://discord.naga.ac
-#### Get API key on discord with the command `/key get` 
-## Mandrill
-#### https://discord.mandrillai.tech
-#### Get API key on discord with the command `/key get` 
-## FreeGPT-4
-#### https://discord.com/invite/gpt4
-#### Get API key on discord with the command `/key`
-## ConvoAI
-#### https://discord.gg/taH8UnARwd
-#### Get API key on discord with the command `/key`
-## Zukijourney
-#### https://discord.gg/zukijourney
-#### Get API key on discord with the command `/key`
