@@ -1,7 +1,7 @@
-version: 1.0.3
+version: 1.0.4
 
 cache: true
-# fileStrategy: "firebase"
+fileStrategy: "firebase"
 
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
@@ -85,15 +85,20 @@ endpoints:
           "google/gemini-pro",
           "google/gemini-pro-vision",
           "gemma/gemma-7b-it",
+          "google/gemma-7b-it:nitro",
           "------------------------------",
           "mistralai/mistral-7b-instruct",
+          "mistralai/mistral-7b-instruct:nitro",
           "mistralai/mixtral-8x7b-instruct",
+          "mistralai/mixtral-8x7b-instruct:nitro",
           "mistralai/mixtral-8x7b",
           "mistralai/mistral-tiny",
           "mistralai/mistral-small",
           "mistralai/mistral-medium",
           "mistralai/mistral-large",
           "------------------------------",
+          "anthropic/claude-3-opus",
+          "anthropic/claude-3-sonnet",
           "anthropic/claude-2",
           "anthropic/claude-2.1",
           "anthropic/claude-2.0",
@@ -102,6 +107,8 @@ endpoints:
           "anthropic/claude-instant-1",
           "anthropic/claude-instant-1.0",
           "anthropic/claude-instant-1.2",
+          "anthropic/claude-3-opus:beta",
+          "anthropic/claude-3-sonnet:beta",
           "anthropic/claude-2:beta",
           "anthropic/claude-2.1:beta",
           "anthropic/claude-2.0:beta",
@@ -109,6 +116,7 @@ endpoints:
           "------------------------------",
           "meta-llama/llama-2-13b-chat",
           "meta-llama/llama-2-70b-chat",
+          "meta-llama/llama-2-70b-chat:nitro",
           "phind/phind-codellama-34b",
           "meta-llama/codellama-34b-instruct",
           "codellama/codellama-70b-instruct",
@@ -133,6 +141,7 @@ endpoints:
           "gryphe/mythomist-7b",
           "gryphe/mythomax-l2-13b",
           "gryphe/mythomax-l2-13b-8k",
+          "gryphe/mythomax-l2-13b:nitro",
           "------------------------------",
           "undi95/remm-slerp-l2-13b",
           "undi95/toppy-m-7b",
@@ -171,7 +180,7 @@ endpoints:
           "cognitivecomputations/dolphin-mixtral-8x7b",
           "mancer/weaver",
           "huggingfaceh4/zephyr-7b-beta",
-          "openchat/openchat-7b"
+          "openchat/openchat-7b",
           ]
         fetch: false
       titleConvo: true
@@ -203,27 +212,6 @@ endpoints:
       modelDisplayLabel: "Perplexity"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
 
-    # perplexity.ai
-    - name: "perplexity.ai"
-      apiKey: "user_provided"
-      baseURL: "https://api.perplexity.ai/"
-      models:
-        default: [
-          "mistral-7b-instruct",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "sonar-medium-chat",
-          "sonar-medium-online"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "sonar-small-chat"
-      summarize: false
-      summaryModel: "sonar-small-chat"
-      forcePrompt: false
-      dropParams: ["stop", "frequency_penalty"]
-      modelDisplayLabel: "Perplexity"
-      
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
