@@ -10,6 +10,24 @@ registration:
 
 endpoints:
   custom:
+    #groq
+    - name: "groq"
+      apiKey: "user_provided"
+      baseURL: "https://api.groq.com/openai/v1/"
+      models:
+        default: [
+          "llama2-70b-4096",
+          "mixtral-8x7b-32768",
+          "gemma-7b-it"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "mixtral-8x7b-32768"
+      summarize: false
+      summaryModel: "mixtral-8x7b-32768"
+      forcePrompt: false
+      modelDisplayLabel: "groq"
+      
     # Mistral AI API
     - name: "Mistral"
       apiKey: "user_provided"
@@ -184,24 +202,6 @@ endpoints:
       dropParams: ["stop"]
       modelDisplayLabel: "Perplexity"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
-      
-    #groq
-    - name: "groq"
-      apiKey: "user_provided"
-      baseURL: "https://api.groq.com/openai/v1/"
-      models:
-        default: [
-          "llama2-70b-4096",
-          "mixtral-8x7b-32768"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "mixtral-8x7b-32768"
-      summarize: false
-      summaryModel: "mixtral-8x7b-32768"
-      forcePrompt: false
-      modelDisplayLabel: "groq"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/groq.png"
 
     # perplexity.ai
     - name: "perplexity.ai"
@@ -223,7 +223,6 @@ endpoints:
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
       
     # together.ai
     - name: "together.ai"
@@ -283,7 +282,6 @@ endpoints:
       summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/togetherai.png"
 
     # Fireworks.ai
     - name: "Fireworks"
@@ -326,7 +324,6 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/fireworks.png"
 
     # NagaAI
     - name: "NagaAI"
