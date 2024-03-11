@@ -510,7 +510,7 @@ endpoints:
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
      - name: "Shard"
-      apiKey: "${SHARD_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://shard-ai.xyz/v1/"
       models:
         default: [
