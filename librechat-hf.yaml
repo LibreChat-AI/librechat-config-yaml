@@ -82,6 +82,8 @@ endpoints:
       summaryModel: "shuttle-turbo"
       forcePrompt: false
       modelDisplayLabel: "ShuttleAI"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
+      
     #groq
     - name: "groq"
       apiKey: "user_provided"
