@@ -7,6 +7,7 @@ registration:
 
 endpoints:
   custom:
+    # groq
     - name: "groq"
       apiKey: "${GROQ_API_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
