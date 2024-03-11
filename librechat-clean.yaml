@@ -28,7 +28,7 @@ endpoints:
       baseURL: "https://openrouter.ai/api/v1"
       models:
         "default": [
-          "gemma/gemma-7b-it:free",
+          "google/gemma-7b-it:free",
           "nousresearch/nous-capybara-7b:free",
           "mistralai/mistral-7b-instruct:free",
           "huggingfaceh4/zephyr-7b-beta:free",
