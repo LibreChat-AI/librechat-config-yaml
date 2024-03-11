@@ -5,8 +5,6 @@ fileStrategy: "firebase"
 
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
-  # allowedDomains:
-  #   - "gmail.com"
 
 endpoints:
   custom:
@@ -313,6 +311,40 @@ endpoints:
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
 
+    # Pawan
+    - name: "Pawan"
+      apiKey: "user_provided"
+      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
+      models:
+        default: [
+          "pai-001-rp"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "pai-001-rp"
+      summarize: false
+      summaryModel: "pai-001-rp"
+      forcePrompt: false
+      modelDisplayLabel: "Pawan"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+
+    # Pawan light
+    - name: "Pawan light"
+      apiKey: "user_provided"
+      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
+      models:
+        default: [
+          "pai-001-light-rp"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "pai-001-light-rp"
+      summarize: false
+      summaryModel: "pai-001-light-rp"
+      forcePrompt: false
+      modelDisplayLabel: "Pawan light"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+
     # NagaAI
     - name: "NagaAI"
       apiKey: "user_provided"
@@ -475,39 +507,60 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
-    # Pawan
-    - name: "Pawan"
+     - name: "Shard"
       apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
+      baseURL: "https://shard-ai.xyz/v1/"
       models:
         default: [
-          "pai-001-rp"
+          "gpt-35-turbo",
+          "gpt-35-turbo-16k",
+          "gpt-4-turbo",
+          "mistral-large",
+          "mistral-next",
+          "mistral-small",
+          "gemini-pro",
+          "gemini-pro-latest",
+          "gemini-pro-001",
+          "gemma-7b",
+          "rwkv-5-world-3b",
+          "rwkv-5-3b-ai-town",
+          "eagle-7b",
+          "zephyr-7b",
+          "openchat-7b",
+          "capybara-7b",
+          "mythomist-7b",
+          "toppy-m-7b",
+          "cinematika-7b",
+          "pygmalion",
+          "dolphin",
+          "mixtral-instruct",
+          "mistral-7b-instruct",
+          "mixtral",
+          "lzlv-70b",
+          "airoboros-70b",
+          "airoboros-70b-gpt4",
+          "llama-2-7b",
+          "llama-2-13b",
+          "llama-2-70b",
+          "code-llama-34b",
+          "code-llama-34b-v2",
+          "code-llama-70b-instruct",
+          "yi-6b-200k",
+          "yi-34b-chat",
+          "yi-34b-200k",
+          "pythia-2-8b",
+          "pythia-12b",
+          "mythomax-l2-13b",
+          "gpt-neo-1-3b",
+          "gpt-neo-2-7b",
+          "gpt-j-6b",
+          "gpt-neo-125m",
+          "chronos-hermes-13b-v2"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "pai-001-rp"
-      summarize: false
-      summaryModel: "pai-001-rp"
-      forcePrompt: false
-      modelDisplayLabel: "Pawan"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
-
-    # Pawan light
-    - name: "Pawan light"
-      apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
-      models:
-        default: [
-          "pai-001-light-rp"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "pai-001-light-rp"
-      summarize: false
-      summaryModel: "pai-001-light-rp"
-      forcePrompt: false
-      modelDisplayLabel: "Pawan light"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+      titleModel: "gpt-3.5-turbo"
+      modelDisplayLabel: "shard"
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
@@ -546,3 +599,6 @@ endpoints:
 ## Zukijourney
 #### https://discord.gg/zukijourney
 #### Get API key on discord with the command `/key`
+## Shard
+#### https://discord.com/invite/xNThkunFx8
+#### Get API key on discord with the command `/get-key`
