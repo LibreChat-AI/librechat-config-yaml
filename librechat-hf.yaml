@@ -8,6 +8,80 @@ registration:
 
 endpoints:
   custom:
+    # ShuttleAI API
+    - name: "ShuttleAI"
+      apiKey: "user_provided"
+      baseURL: "https://api.shuttleai.app/v1"
+      models: 
+        default: [
+          "shuttle-turbo",
+          "shuttle-1",
+          "shuttle-tools",
+          "gpt-4-turbo-preview",
+          "gpt-4-0125-preview",
+          "gpt-4-1106-preview",
+          "gpt-4-vision-preview",
+          "gpt-4-32k",
+          "gpt-4-32k-0613",
+          "gpt-4-0613",
+          "gpt-4",
+          "gpt-4-bing-turbo",
+          "gpt-4-bing",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo-0301",
+          "gpt-3.5-turbo-16k",
+          "gpt-3.5-turbo-16k-0613",
+          "chatgpt",
+          "claude-3-opus",
+          "claude-3-sonnet",
+          "claude-2.1",
+          "claude-2.0",
+          "claude-instant-100k",
+          "claude-instant",
+          "mistral-large",
+          "mistral-next",
+          "mistral-medium",
+          "mistral-small",
+          "mistral-7b",
+          "mixtral-8x7b",
+          "dolphin-mixtral-8x7b",
+          "gemini-pro",
+          "gemini-pro-vision",
+          "palm-2",
+          "chronos-hermes-13b",
+          "pplx-70b-online",
+          "pplx-70b-chat",
+          "pplx-7b-online",
+          "pplx-7b-chat",
+          "nous-capybara-34b",
+          "yi-34b-chat",
+          "starcoder-16b",
+          "starcoder-7b",
+          "deepseek-coder",
+          "deepseek-chat",
+          "airoboros-70b",
+          # "falcon-180b", MAINTENANCE
+          "phind-34b",
+          "phind-code-llama-v2-34b",
+          "code-llama-70b",
+          "code-llama-34b",
+          "llama-2-70b-chat",
+          "llama-2-13b-chat",
+          "llama-2-7b-chat",
+          "llama-summarize",
+          "llava-13b"
+          ]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "shuttle-turbo"
+      summarize: false
+      summaryModel: "shuttle-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "ShuttleAI"
     #groq
     - name: "groq"
       apiKey: "user_provided"
@@ -579,6 +653,8 @@ endpoints:
 # https://docs.librechat.ai/install/configuration/custom_config.html
 # Notes:
 ## Legit Offering:
+### ShuttleAI
+#### https://shuttleai.app/
 ### Mistral
 #### https://mistral.ai/
 ### OpenRouter
