@@ -507,7 +507,7 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
-     - name: "Shard"
+    - name: "Shard"
       apiKey: "user_provided"
       baseURL: "https://shard-ai.xyz/v1/"
       models:
