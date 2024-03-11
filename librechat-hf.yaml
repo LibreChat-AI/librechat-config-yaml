@@ -564,6 +564,17 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Shard.jpg"
 
+    - name: "HentAI"
+      apiKey: "user_provided"
+      baseURL: "https://api.hentaigpt.xyz/v1"
+      models:
+        default: ["gpt-3.5-turbo-0301", "gpt-3.5-turbo-0613", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0125", "gpt-3.5-turbo-instruct", "gpt-3.5-turbo-instruct-0914", "gpt-3.5-turbo-16k", "gpt-4-0314", "gpt-4-0613", "gpt-4", "gpt-4-1106-preview", "gpt-4-0125-preview", "claude", "claude-1.2", "claude-2", "claude-2.1", "claude-3-sonnet", "claude-3-opus", "claude-instant-v1", "claude-instant-v1-100k", "palm-2", "gemini-pro", "gemini-1.5-pro", "gemma-7b", "mixtral-8x7b-instruct", "mistral-tiny", "mistral-small", "mistral-medium", "mistral-large", "mistral-next", "mistral-7b-instruct", "llama-2-7b-chat", "llama-2-13b-chat", "llama-2-70b-chat", "yi-34b", "openchat", "pi", "mythomax-l2-13b", "nous-capybara-7b", "sonar-small-chat", "sonar-medium-chat", "sonar-small-online", "sonar-medium-online", "llama-2-7b-chat-fp16", "mistral-7b-instruct-v0.1", "tinyllama-1.1b-chat-v1.0", "orca-2-13b-awq", "codellama-7b-instruct-awq", "discolm-german-7b-v1-awq", "llama-2-7b-chat-int8", "mistral-7b-instruct-v0.1-awq", "openchat_3.5-awq", "qwen1.5-7b-chat-awq", "llama-2-13b-chat-awq", "deepseek-coder-6.7b-base-awq", "openhermes-2.5-mistral-7b-awq", "deepseek-coder-6.7b-instruct-awq", "deepseek-math-7b-instruct", "falcon-7b-instruct", "zephyr-7b-beta-awq", "qwen1.5-1.8b-chat", "sqlcoder-7b-2", "phi-2", "qwen1.5-14b-chat-awq", "openchat-3.5-0106"]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      modelDisplayLabel: "HentAI"
+      iconURL: "https://i.ibb.co/1GSBTn6/a-e3e21e5a84a577cee673f68cdbe97afa-modified.png"
+
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
 # Notes:
@@ -604,3 +615,6 @@ endpoints:
 ## Shard
 #### https://discord.com/invite/xNThkunFx8
 #### Get API key on discord with the command `/get-key`
+## HentAI
+#### https://discord.com/invite/3ZaM7hcGyr
+#### Get API key on discord with the command `/key`
