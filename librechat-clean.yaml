@@ -8,6 +8,7 @@ registration:
 
 endpoints:
   custom:
+    # groq
     - name: "groq"
       apiKey: "${GROQ_API_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
@@ -21,6 +22,27 @@ endpoints:
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
+
+    # Mistral AI API
+    - name: "Mistral"
+      apiKey: "${MISTRAL_API_KEY}"
+      baseURL: "https://api.mistral.ai/v1"
+      models: 
+        default: [
+          "mistral-tiny",
+          "mistral-small",
+          "mistral-medium",
+          "mistral-large-latest"
+          ]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "mistral-tiny"
+      summarize: false
+      summaryModel: "mistral-tiny"
+      forcePrompt: false
+      modelDisplayLabel: "Mistral"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
     - name: "OpenRouter"
@@ -190,9 +212,19 @@ endpoints:
       baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
-          "meta-llama/Llama-2-7b-chat-hf"
+          "meta-llama/Llama-2-7b-chat-hf",
+          "meta-llama/Llama-2-13b-chat-hf",
+          "meta-llama/Llama-2-70b-chat-hf",
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "codellama/CodeLlama-70b-Instruct-hf",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "mlabonne/NeuralHermes-2.5-Mistral-7B",
+          "Open-Orca/Mistral-7B-OpenOrca",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "google/gemma-7b-it"
           ]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "meta-llama/Llama-2-7b-chat-hf"
       summarize: false
@@ -205,9 +237,34 @@ endpoints:
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default: [
+          "accounts/fireworks/models/devashisht-test-v2",
+          "accounts/fireworks/models/dt-fc-rc-v1",
+          "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firellava-13b",
+          "accounts/devashisht-72fdad/models/function-calling-v11",
+          "accounts/fireworks/models/fw-function-call-34b-v0",
+          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
+          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
+          "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/llama-v2-13b-chat",
+          "accounts/fireworks/models/llama-v2-13b-code-instruct",
+          "accounts/fireworks/models/llama-v2-34b-code-instruct",
+          "accounts/fireworks/models/llama-v2-70b-chat",
+          "accounts/fireworks/models/llama-v2-70b-code-instruct",
+          "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/llava-v15-13b-fireworks",
+          "accounts/fireworks/models/mistral-7b-instruct-4k",
+          "accounts/dev-e24710/models/mistral-spellbound-format",
           "accounts/fireworks/models/mixtral-8x7b-instruct",
+          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
+          "accounts/fireworks/models/new-mixtral-chat",
+          "accounts/fireworks/models/qwen-14b-chat",
+          "accounts/fireworks/models/qwen-1-8b-chat",
+          "accounts/fireworks/models/qwen-72b-chat",
+          "accounts/stability/models/stablelm-zephyr-3b",
+          "accounts/fireworks/models/yi-34b-200k-capybara",
           ]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
       summarize: false
@@ -286,14 +343,14 @@ endpoints:
           "teknium/OpenHermes-2p5-Mistral-7B",
           "upstage/SOLAR-10.7B-Instruct-v1.0"
           ]
-        fetch: false # fetching list of models is not supported
+        fetch: false
       titleConvo: true
       titleModel: "togethercomputer/llama-2-7b-chat"
       summarize: false
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-
+     
     # DEEPNIGHT
     - name: "DEEPNIGHT"
       apiKey: "sk-free1234"
@@ -345,3 +402,21 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Pawan light"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+
+# See the Custom Configuration Guide for more information:
+# https://docs.librechat.ai/install/configuration/custom_config.html
+# Notes:
+## Legit Offering:
+### Mistral
+#### https://mistral.ai/
+### OpenRouter
+#### https://openrouter.ai/
+### groq
+#### https://console.groq.com/keys
+### TogetherAI
+#### https://www.together.ai/
+#### lots of open source models
+#### $25 credit
+### FireworksAI
+#### https://fireworks.ai/
+#### $1 credit
