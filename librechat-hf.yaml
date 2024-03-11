@@ -561,6 +561,7 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
       modelDisplayLabel: "shard"
+      dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Shard.jpg"
 
 # See the Custom Configuration Guide for more information:
