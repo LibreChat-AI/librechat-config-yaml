@@ -8,7 +8,7 @@ registration:
 
 endpoints:
   custom:
-      # Anyscale
+    # Anyscale
     - name: "Anyscale"
       apiKey: "user_provided"
       baseURL: "https://api.endpoints.anyscale.com/v1"
