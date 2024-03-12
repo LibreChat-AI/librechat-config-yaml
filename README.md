@@ -16,6 +16,8 @@ Contributions are welcome! Some files are more restrictive than others. Feel fre
 > - Keep the Official APIs alphabetized
 > - Keep the Reverse Proxies alphabetized
 > - Always provide a logo for new endpoints
+> - When adding a new endpoint, always add a comment in the bottom of the document with the name and URL to get an API key
+>   - For reverse proxies on discord, add the invite link and the command to get the API key    
 
 ## File Descriptions
 ### `librechat-hf.yaml`
