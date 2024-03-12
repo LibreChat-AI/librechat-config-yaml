@@ -79,3 +79,6 @@ Configuration used for the Railway one-click install template:
   PERPLEXITY_API_KEY=
   TOGETHERAI_API_KEY=
   ```
+
+### `librechat-test.yaml`
+- Personal file used to test changes and configs
