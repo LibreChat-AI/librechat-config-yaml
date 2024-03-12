@@ -286,6 +286,68 @@ endpoints:
       modelDisplayLabel: "ShuttleAI"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
+    # Fireworks.ai
+    - name: "Fireworks"
+      apiKey: "user_provided"
+      baseURL: "https://api.fireworks.ai/inference/v1"
+      models:
+        default: [
+          "accounts/fireworks/models/devashisht-test-v2",
+          "accounts/fireworks/models/dt-fc-rc-v1",
+          "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firellava-13b",
+          "accounts/devashisht-72fdad/models/function-calling-v11",
+          "accounts/fireworks/models/fw-function-call-34b-v0",
+          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
+          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
+          "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/llama-v2-13b-chat",
+          "accounts/fireworks/models/llama-v2-13b-code-instruct",
+          "accounts/fireworks/models/llama-v2-34b-code-instruct",
+          "accounts/fireworks/models/llama-v2-70b-chat",
+          "accounts/fireworks/models/llama-v2-70b-code-instruct",
+          "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/llava-v15-13b-fireworks",
+          "accounts/fireworks/models/mistral-7b-instruct-4k",
+          "accounts/dev-e24710/models/mistral-spellbound-format",
+          "accounts/fireworks/models/mixtral-8x7b-instruct",
+          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
+          "accounts/fireworks/models/new-mixtral-chat",
+          "accounts/fireworks/models/qwen-14b-chat",
+          "accounts/fireworks/models/qwen-1-8b-chat",
+          "accounts/fireworks/models/qwen-72b-chat",
+          "accounts/stability/models/stablelm-zephyr-3b",
+          "accounts/fireworks/models/yi-34b-200k-capybara",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summarize: false
+      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+      dropParams: ["user"]
+
+    - name: "Perplexity"
+      apiKey: "user_provided"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default: [
+          "mistral-7b-instruct",
+          "sonar-small-chat",
+          "sonar-small-online",
+          "sonar-medium-chat",
+          "sonar-medium-online"
+          ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "sonar-medium-chat"
+      summarize: false
+      summaryModel: "sonar-medium-chat"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
+
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
@@ -345,47 +407,30 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
-    # Fireworks.ai
-    - name: "Fireworks"
+    - name: "Anyscale"
       apiKey: "user_provided"
-      baseURL: "https://api.fireworks.ai/inference/v1"
+      baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
-          "accounts/fireworks/models/devashisht-test-v2",
-          "accounts/fireworks/models/dt-fc-rc-v1",
-          "accounts/fireworks/models/firefunction-v1",
-          "accounts/fireworks/models/firellava-13b",
-          "accounts/devashisht-72fdad/models/function-calling-v11",
-          "accounts/fireworks/models/fw-function-call-34b-v0",
-          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
-          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
-          "accounts/fireworks/models/japanese-stable-vlm",
-          "accounts/fireworks/models/llama-v2-13b-chat",
-          "accounts/fireworks/models/llama-v2-13b-code-instruct",
-          "accounts/fireworks/models/llama-v2-34b-code-instruct",
-          "accounts/fireworks/models/llama-v2-70b-chat",
-          "accounts/fireworks/models/llama-v2-70b-code-instruct",
-          "accounts/fireworks/models/llama-v2-7b-chat",
-          "accounts/fireworks/models/llava-v15-13b-fireworks",
-          "accounts/fireworks/models/mistral-7b-instruct-4k",
-          "accounts/dev-e24710/models/mistral-spellbound-format",
-          "accounts/fireworks/models/mixtral-8x7b-instruct",
-          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-          "accounts/fireworks/models/new-mixtral-chat",
-          "accounts/fireworks/models/qwen-14b-chat",
-          "accounts/fireworks/models/qwen-1-8b-chat",
-          "accounts/fireworks/models/qwen-72b-chat",
-          "accounts/stability/models/stablelm-zephyr-3b",
-          "accounts/fireworks/models/yi-34b-200k-capybara",
+          "meta-llama/Llama-2-7b-chat-hf",
+          "meta-llama/Llama-2-13b-chat-hf",
+          "meta-llama/Llama-2-70b-chat-hf",
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "codellama/CodeLlama-70b-Instruct-hf",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "mlabonne/NeuralHermes-2.5-Mistral-7B",
+          "Open-Orca/Mistral-7B-OpenOrca",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "google/gemma-7b-it"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      titleModel: "meta-llama/Llama-2-7b-chat-hf"
       summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
       forcePrompt: false
-      modelDisplayLabel: "Fireworks"
-      dropParams: ["user"]
+      modelDisplayLabel: "Anyscale"
 
     # Pawan
     - name: "Pawan"
