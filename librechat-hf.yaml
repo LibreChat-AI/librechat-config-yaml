@@ -773,9 +773,9 @@ endpoints:
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
-
+#### ---------------####
 ##### OFFICIAL API: ####
-#### -------------------
+#### ---------------####
 ### Anyscale
 #### https://app.endpoints.anyscale.com/credentials
 #### ---
@@ -798,9 +798,9 @@ endpoints:
 #### https://www.together.ai/
 
 
-#### -------------------
+#### ---------------####
 #### REVERSE PROXY: ####
-#### -------------------
+#### ---------------####
 ## ConvoAI
 #### https://discord.gg/taH8UnARwd
 #### Get API key on discord with the command `/key`
