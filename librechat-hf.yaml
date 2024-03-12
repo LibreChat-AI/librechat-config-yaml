@@ -8,6 +8,74 @@ registration:
 
 endpoints:
   custom:
+      # Anyscale
+    - name: "Anyscale"
+      apiKey: "user_provided"
+      baseURL: "https://api.endpoints.anyscale.com/v1"
+      models:
+        default: [
+          "meta-llama/Llama-2-7b-chat-hf",
+          "meta-llama/Llama-2-13b-chat-hf",
+          "meta-llama/Llama-2-70b-chat-hf",
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "codellama/CodeLlama-70b-Instruct-hf",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "mlabonne/NeuralHermes-2.5-Mistral-7B",
+          "Open-Orca/Mistral-7B-OpenOrca",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "google/gemma-7b-it"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "meta-llama/Llama-2-7b-chat-hf"
+      summarize: false
+      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
+      forcePrompt: false
+      modelDisplayLabel: "Anyscale"
+      
+    # Fireworks.ai
+    - name: "Fireworks"
+      apiKey: "user_provided"
+      baseURL: "https://api.fireworks.ai/inference/v1"
+      models:
+        default: [
+          "accounts/fireworks/models/devashisht-test-v2",
+          "accounts/fireworks/models/dt-fc-rc-v1",
+          "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firellava-13b",
+          "accounts/devashisht-72fdad/models/function-calling-v11",
+          "accounts/fireworks/models/fw-function-call-34b-v0",
+          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
+          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
+          "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/llama-v2-13b-chat",
+          "accounts/fireworks/models/llama-v2-13b-code-instruct",
+          "accounts/fireworks/models/llama-v2-34b-code-instruct",
+          "accounts/fireworks/models/llama-v2-70b-chat",
+          "accounts/fireworks/models/llama-v2-70b-code-instruct",
+          "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/llava-v15-13b-fireworks",
+          "accounts/fireworks/models/mistral-7b-instruct-4k",
+          "accounts/dev-e24710/models/mistral-spellbound-format",
+          "accounts/fireworks/models/mixtral-8x7b-instruct",
+          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
+          "accounts/fireworks/models/new-mixtral-chat",
+          "accounts/fireworks/models/qwen-14b-chat",
+          "accounts/fireworks/models/qwen-1-8b-chat",
+          "accounts/fireworks/models/qwen-72b-chat",
+          "accounts/stability/models/stablelm-zephyr-3b",
+          "accounts/fireworks/models/yi-34b-200k-capybara",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summarize: false
+      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+      dropParams: ["user"]
+      
     #groq
     - name: "groq"
       apiKey: "user_provided"
@@ -210,6 +278,27 @@ endpoints:
       modelDisplayLabel: "Perplexity"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
 
+    # Preplexity
+    - name: "Perplexity"
+      apiKey: "user_provided"
+      baseURL: "https://api.perplexity.ai/"
+      models:
+        default: [
+          "mistral-7b-instruct",
+          "sonar-small-chat",
+          "sonar-small-online",
+          "sonar-medium-chat",
+          "sonar-medium-online"
+          ]
+        fetch: false # fetching list of models is not supported
+      titleConvo: true
+      titleModel: "sonar-medium-chat"
+      summarize: false
+      summaryModel: "sonar-medium-chat"
+      forcePrompt: false
+      dropParams: ["stop", "frequency_penalty"]
+      modelDisplayLabel: "Perplexity"
+
     # ShuttleAI API
     - name: "ShuttleAI"
       apiKey: "user_provided"
@@ -286,68 +375,6 @@ endpoints:
       modelDisplayLabel: "ShuttleAI"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
-    # Fireworks.ai
-    - name: "Fireworks"
-      apiKey: "user_provided"
-      baseURL: "https://api.fireworks.ai/inference/v1"
-      models:
-        default: [
-          "accounts/fireworks/models/devashisht-test-v2",
-          "accounts/fireworks/models/dt-fc-rc-v1",
-          "accounts/fireworks/models/firefunction-v1",
-          "accounts/fireworks/models/firellava-13b",
-          "accounts/devashisht-72fdad/models/function-calling-v11",
-          "accounts/fireworks/models/fw-function-call-34b-v0",
-          "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
-          "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
-          "accounts/fireworks/models/japanese-stable-vlm",
-          "accounts/fireworks/models/llama-v2-13b-chat",
-          "accounts/fireworks/models/llama-v2-13b-code-instruct",
-          "accounts/fireworks/models/llama-v2-34b-code-instruct",
-          "accounts/fireworks/models/llama-v2-70b-chat",
-          "accounts/fireworks/models/llama-v2-70b-code-instruct",
-          "accounts/fireworks/models/llama-v2-7b-chat",
-          "accounts/fireworks/models/llava-v15-13b-fireworks",
-          "accounts/fireworks/models/mistral-7b-instruct-4k",
-          "accounts/dev-e24710/models/mistral-spellbound-format",
-          "accounts/fireworks/models/mixtral-8x7b-instruct",
-          "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
-          "accounts/fireworks/models/new-mixtral-chat",
-          "accounts/fireworks/models/qwen-14b-chat",
-          "accounts/fireworks/models/qwen-1-8b-chat",
-          "accounts/fireworks/models/qwen-72b-chat",
-          "accounts/stability/models/stablelm-zephyr-3b",
-          "accounts/fireworks/models/yi-34b-200k-capybara",
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      forcePrompt: false
-      modelDisplayLabel: "Fireworks"
-      dropParams: ["user"]
-
-    - name: "Perplexity"
-      apiKey: "user_provided"
-      baseURL: "https://api.perplexity.ai/"
-      models:
-        default: [
-          "mistral-7b-instruct",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "sonar-medium-chat",
-          "sonar-medium-online"
-          ]
-        fetch: false # fetching list of models is not supported
-      titleConvo: true
-      titleModel: "sonar-medium-chat"
-      summarize: false
-      summaryModel: "sonar-medium-chat"
-      forcePrompt: false
-      dropParams: ["stop", "frequency_penalty"]
-      modelDisplayLabel: "Perplexity"
-
     # together.ai
     - name: "together.ai"
       apiKey: "user_provided"
@@ -407,64 +434,161 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
-    - name: "Anyscale"
-      apiKey: "user_provided"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
-      models:
-        default: [
-          "meta-llama/Llama-2-7b-chat-hf",
-          "meta-llama/Llama-2-13b-chat-hf",
-          "meta-llama/Llama-2-70b-chat-hf",
-          "codellama/CodeLlama-34b-Instruct-hf",
-          "codellama/CodeLlama-70b-Instruct-hf",
-          "mistralai/Mistral-7B-Instruct-v0.1",
-          "mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "mlabonne/NeuralHermes-2.5-Mistral-7B",
-          "Open-Orca/Mistral-7B-OpenOrca",
-          "HuggingFaceH4/zephyr-7b-beta",
-          "google/gemma-7b-it"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "meta-llama/Llama-2-7b-chat-hf"
-      summarize: false
-      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
-      forcePrompt: false
-      modelDisplayLabel: "Anyscale"
 
-    # Pawan
-    - name: "Pawan"
-      apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
-      models:
-        default: [
-          "pai-001-rp"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "pai-001-rp"
-      summarize: false
-      summaryModel: "pai-001-rp"
-      forcePrompt: false
-      modelDisplayLabel: "Pawan"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+# REVERSE PROXY
 
-    # Pawan light
-    - name: "Pawan light"
+    # ConvoAI
+    - name: "ConvoAI"
       apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
+      baseURL: "https://api.convoai.tech/v1/"
       models:
         default: [
-          "pai-001-light-rp"
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-0613",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "gpt-4-vision-preview"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "pai-001-light-rp"
+      titleModel: "gpt-3.5-turbo"
       summarize: false
-      summaryModel: "pai-001-light-rp"
+      summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
-      modelDisplayLabel: "Pawan light"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
+      modelDisplayLabel: "ConvoAI"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
+
+    # FreeGPT-4
+    - name: "FreeGPT-4"
+      apiKey: "user_provided"
+      baseURL: "https://api.freegpt4.tech/v1/"
+      models:
+        default: [
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "claude",
+          "gemini-pro"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "FreeGPT-4"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
+
+    # HentAI
+    - name: "HentAI"
+      apiKey: "user_provided"
+      baseURL: "https://api.hentaigpt.xyz/v1"
+      models:
+        default: [
+          "gpt-3.5-turbo-0301",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-instruct",
+          "gpt-3.5-turbo-instruct-0914",
+          "gpt-3.5-turbo-16k",
+          "gpt-4-0314",
+          "gpt-4-0613",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "claude",
+          "claude-1.2",
+          "claude-2",
+          "claude-2.1",
+          "claude-3-sonnet",
+          "claude-3-opus",
+          "claude-instant-v1",
+          "claude-instant-v1-100k",
+          "palm-2",
+          "gemini-pro",
+          "gemini-1.5-pro",
+          "gemma-7b",
+          "mixtral-8x7b-instruct",
+          "mistral-tiny",
+          "mistral-small",
+          "mistral-medium",
+          "mistral-large",
+          "mistral-next",
+          "mistral-7b-instruct",
+          "llama-2-7b-chat",
+          "llama-2-13b-chat",
+          "llama-2-70b-chat",
+          "yi-34b", "openchat",
+          "pi",
+          "mythomax-l2-13b",
+          "nous-capybara-7b",
+          "sonar-small-chat",
+          "sonar-medium-chat",
+          "sonar-small-online",
+          "sonar-medium-online",
+          "llama-2-7b-chat-fp16",
+          "mistral-7b-instruct-v0.1",
+          "tinyllama-1.1b-chat-v1.0",
+          "orca-2-13b-awq",
+          "codellama-7b-instruct-awq",
+          "discolm-german-7b-v1-awq",
+          "llama-2-7b-chat-int8",
+          "mistral-7b-instruct-v0.1-awq",
+          "openchat_3.5-awq",
+          "qwen1.5-7b-chat-awq",
+          "llama-2-13b-chat-awq",
+          "deepseek-coder-6.7b-base-awq",
+          "openhermes-2.5-mistral-7b-awq",
+          "deepseek-coder-6.7b-instruct-awq",
+          "deepseek-math-7b-instruct",
+          "falcon-7b-instruct",
+          "zephyr-7b-beta-awq",
+          "qwen1.5-1.8b-chat",
+          "sqlcoder-7b-2",
+          "phi-2",
+          "qwen1.5-14b-chat-awq",
+          "openchat-3.5-0106"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      modelDisplayLabel: "HentAI"
+      iconURL: "https://i.ibb.co/1GSBTn6/a-e3e21e5a84a577cee673f68cdbe97afa-modified.png"
+ 
+    # Mandrill
+    - name: "Mandrill"
+      apiKey: "user_provided"
+      baseURL: "https://api.mandrillai.tech/v1"
+      models:
+        default: [
+          "gpt-4-vision-preview",
+          "gpt-4",
+          "gpt-4-1106-preview",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0613",
+          "gpt-3.5-turbo-0301",
+          "gemini-pro",
+          "gemini-pro-vision"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "Mandrill"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
 
     # NagaAI
     - name: "NagaAI"
@@ -499,135 +623,42 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "NagaAI"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
-
-    # Mandrill
-    - name: "Mandrill"
+      
+    # Pawan
+    - name: "Pawan"
       apiKey: "user_provided"
-      baseURL: "https://api.mandrillai.tech/v1"
+      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
       models:
         default: [
-          "gpt-4-vision-preview",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0613",
-          "gpt-3.5-turbo-0301",
-          "gemini-pro",
-          "gemini-pro-vision"
+          "pai-001-rp"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "pai-001-rp"
       summarize: false
-      summaryModel: "gpt-3.5-turbo"
+      summaryModel: "pai-001-rp"
       forcePrompt: false
-      modelDisplayLabel: "Mandrill"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
+      modelDisplayLabel: "Pawan"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
-    # FreeGPT-4
-    - name: "FreeGPT-4"
+    # Pawan light
+    - name: "Pawan light"
       apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
+      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
       models:
         default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "claude",
-          "gemini-pro"
+          "pai-001-light-rp"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "pai-001-light-rp"
       summarize: false
-      summaryModel: "gpt-3.5-turbo"
+      summaryModel: "pai-001-light-rp"
       forcePrompt: false
-      modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
+      modelDisplayLabel: "Pawan light"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
-    # ConvoAI
-    - name: "ConvoAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.convoai.tech/v1/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-0613",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "gpt-4-vision-preview"
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "ConvoAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
-
-    # Zukijourney
-    - name: "Zukijourney"
-      apiKey: "user_provided"
-      baseURL: "https://zukijourney.xyzbot.net/unf/"
-      models:
-        default: [
-          "gpt-3.5-turbo",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-instruct",
-          "gpt-3.5-turbo-16k",
-          "gpt-4",
-          "gpt-4-32k",
-          "gpt-4-1106-preview",
-          "gpt-4-0125-preview",
-          "gpt-4-vision-preview",
-          "claude",
-          "claude-2",
-          "claude-2.1",
-          "claude-instant-v1",
-          "claude-instant-v1-100k",
-          "pplx-70b-online",
-          "palm-2",
-          "bard",
-          "gemini-pro",
-          "gemini-pro-vision",
-          "mixtral-8x7b",
-          "mixtral-8x7b-instruct",
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-7b-instruct",
-          "codellama-7b-instruct",
-          "llama-2-7b",
-          "llama-2-70b-chat",
-          "mythomax-l2-13b-8k",
-          "sheep-duck-llama",
-          "goliath-120b",
-          "nous-llama",
-          "yi-34b",
-          "openchat",
-          "solar10-7b",
-          "pi"
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      dropParams: ["stream"]
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
-
+    #Shard
     - name: "Shard"
       apiKey: "user_provided"
       baseURL: "https://shard-ai.xyz/v1/"
@@ -685,59 +716,120 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Shard.jpg"
 
-    - name: "HentAI"
+    # Zukijourney
+    - name: "Zukijourney"
       apiKey: "user_provided"
-      baseURL: "https://api.hentaigpt.xyz/v1"
+      baseURL: "https://zukijourney.xyzbot.net/unf/"
       models:
-        default: ["gpt-3.5-turbo-0301", "gpt-3.5-turbo-0613", "gpt-3.5-turbo", "gpt-3.5-turbo-1106", "gpt-3.5-turbo-0125", "gpt-3.5-turbo-instruct", "gpt-3.5-turbo-instruct-0914", "gpt-3.5-turbo-16k", "gpt-4-0314", "gpt-4-0613", "gpt-4", "gpt-4-1106-preview", "gpt-4-0125-preview", "claude", "claude-1.2", "claude-2", "claude-2.1", "claude-3-sonnet", "claude-3-opus", "claude-instant-v1", "claude-instant-v1-100k", "palm-2", "gemini-pro", "gemini-1.5-pro", "gemma-7b", "mixtral-8x7b-instruct", "mistral-tiny", "mistral-small", "mistral-medium", "mistral-large", "mistral-next", "mistral-7b-instruct", "llama-2-7b-chat", "llama-2-13b-chat", "llama-2-70b-chat", "yi-34b", "openchat", "pi", "mythomax-l2-13b", "nous-capybara-7b", "sonar-small-chat", "sonar-medium-chat", "sonar-small-online", "sonar-medium-online", "llama-2-7b-chat-fp16", "mistral-7b-instruct-v0.1", "tinyllama-1.1b-chat-v1.0", "orca-2-13b-awq", "codellama-7b-instruct-awq", "discolm-german-7b-v1-awq", "llama-2-7b-chat-int8", "mistral-7b-instruct-v0.1-awq", "openchat_3.5-awq", "qwen1.5-7b-chat-awq", "llama-2-13b-chat-awq", "deepseek-coder-6.7b-base-awq", "openhermes-2.5-mistral-7b-awq", "deepseek-coder-6.7b-instruct-awq", "deepseek-math-7b-instruct", "falcon-7b-instruct", "zephyr-7b-beta-awq", "qwen1.5-1.8b-chat", "sqlcoder-7b-2", "phi-2", "qwen1.5-14b-chat-awq", "openchat-3.5-0106"]
-        fetch: false
+        default: [
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-1106",
+          "gpt-3.5-turbo-0125",
+          "gpt-3.5-turbo-instruct",
+          "gpt-3.5-turbo-16k",
+          "gpt-4",
+          "gpt-4-32k",
+          "gpt-4-1106-preview",
+          "gpt-4-0125-preview",
+          "gpt-4-vision-preview",
+          "claude",
+          "claude-2",
+          "claude-2.1",
+          "claude-instant-v1",
+          "claude-instant-v1-100k",
+          "pplx-70b-online",
+          "palm-2",
+          "bard",
+          "gemini-pro",
+          "gemini-pro-vision",
+          "mixtral-8x7b",
+          "mixtral-8x7b-instruct",
+          "mistral-tiny",
+          "mistral-small",
+          "mistral-medium",
+          "mistral-7b-instruct",
+          "codellama-7b-instruct",
+          "llama-2-7b",
+          "llama-2-70b-chat",
+          "mythomax-l2-13b-8k",
+          "sheep-duck-llama",
+          "goliath-120b",
+          "nous-llama",
+          "yi-34b",
+          "openchat",
+          "solar10-7b",
+          "pi"
+          ]
+        fetch: true
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
-      modelDisplayLabel: "HentAI"
-      iconURL: "https://i.ibb.co/1GSBTn6/a-e3e21e5a84a577cee673f68cdbe97afa-modified.png"
+      summarize: false
+      summaryModel: "gpt-3.5-turbo"
+      forcePrompt: false
+      dropParams: ["stream"]
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
+
+
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
-# Notes:
-## Legit Offering:
-### Mistral
-#### https://mistral.ai/
-### OpenRouter
-#### https://openrouter.ai/
-### groq
-#### https://console.groq.com/keys
-### ShuttleAI
-#### https://shuttleai.app/
-### TogetherAI
-#### https://www.together.ai/
-#### lots of open source models
-#### $25 credit
+
+##### OFFICIAL API: ####
+#### -------------------
+### Anyscale
+#### https://app.endpoints.anyscale.com/credentials
+#### ---
 ### FireworksAI
 #### https://fireworks.ai/
-#### $1 credit
+#### ---
+### groq
+#### https://console.groq.com/keys
+#### ---
+### Mistral
+#### https://mistral.ai/
+#### ---
+### OpenRouter
+#### https://openrouter.ai/
+#### ---
+### ShuttleAI
+#### https://shuttleai.app/
+#### ---
+### TogetherAI
+#### https://www.together.ai/
+
+
+#### -------------------
+#### REVERSE PROXY: ####
+#### -------------------
+## ConvoAI
+#### https://discord.gg/taH8UnARwd
+#### Get API key on discord with the command `/key`
+#### -----
+## FreeGPT-4
+#### https://discord.com/invite/gpt4
+#### Get API key on discord with the command `/key`
+#### -----
+## HentAI
+#### https://discord.com/invite/3ZaM7hcGyr
+#### Get API key on discord with the command `/key`
+#### -----
+## Mandrill
+#### https://discord.mandrillai.tech
+#### Get API key on discord with the command `/key get` 
+#### -----
+### NagaAI
+#### https://discord.naga.ac
+#### Get API key on discord with the command `/key get` 
+#### -----
 ### Pawan
 #### https://discord.gg/pawan
 #### Custom models (good for roleplay?)
 #### Get API key on discord with the command `/key`
-## Grey Area:
-### NagaAI
-#### https://discord.naga.ac
-#### Get API key on discord with the command `/key get` 
-## Mandrill
-#### https://discord.mandrillai.tech
-#### Get API key on discord with the command `/key get` 
-## FreeGPT-4
-#### https://discord.com/invite/gpt4
-#### Get API key on discord with the command `/key`
-## ConvoAI
-#### https://discord.gg/taH8UnARwd
-#### Get API key on discord with the command `/key`
-## Zukijourney
-#### https://discord.gg/zukijourney
-#### Get API key on discord with the command `/key`
+#### -----
 ## Shard
 #### https://discord.com/invite/xNThkunFx8
 #### Get API key on discord with the command `/get-key`
-## HentAI
-#### https://discord.com/invite/3ZaM7hcGyr
+#### -----
+## Zukijourney
+#### https://discord.gg/zukijourney
 #### Get API key on discord with the command `/key`
