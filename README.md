@@ -38,6 +38,18 @@ Configuration used for the LibreChat Demo:
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-hf.yaml
   ```
 
+### `librechat-aio.yaml`
+Same configuration used for the LibreChat Demo, but with firebase disable:
+
+- Accepts: Official APIs and Reverse Proxies
+- API Keys: Hardcoded as `user_provided`
+- File Strategy: `local`
+- Fetch: false
+- .env config:
+  ```yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-aio.yaml
+  ```
+
 ### `librechat-rw.yaml`
 Configuration used for the Railway one-click install template:
 <p align="left">
