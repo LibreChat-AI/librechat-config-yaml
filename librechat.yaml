@@ -206,6 +206,38 @@ endpoints:
       modelDisplayLabel: "Perplexity"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
 
+    # OpenRouter.ai - Claude
+    - name: "OpenRouter-Anthropic"
+      apiKey: "${OPENROUTER_KEY}"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        "default": [
+          "anthropic/claude-3-opus",
+          "anthropic/claude-3-sonnet",
+          "anthropic/claude-2",
+          "anthropic/claude-2.1",
+          "anthropic/claude-2.0",
+          "anthropic/claude-1.2",
+          "anthropic/claude-1",
+          "anthropic/claude-instant-1",
+          "anthropic/claude-instant-1.0",
+          "anthropic/claude-instant-1.2",
+          "anthropic/claude-3-opus:beta",
+          "anthropic/claude-3-sonnet:beta",
+          "anthropic/claude-2:beta",
+          "anthropic/claude-2.1:beta",
+          "anthropic/claude-2.0:beta",
+          "anthropic/claude-instant-1:beta",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "anthropic/claude-instant-1.2"
+      summarize: false
+      summaryModel: "anthropic/claude-instant-1.2"
+      forcePrompt: false
+      modelDisplayLabel: "Claude"
+      iconURL: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png"
+
     - name: "Anyscale"
       apiKey: "${ANYSCALE_API_KEY}"
       baseURL: "https://api.endpoints.anyscale.com/v1"
