@@ -1,4 +1,5 @@
 # LibreChat Config Files aka `librechat.yaml` Collection
+See the Custom Configuration Guide for more information: [LibreChat Custom Config Guide](https://docs.librechat.ai/install/configuration/custom_config.html)
 
 ## How to use
 - Choose a file that corresponds to your needs
@@ -11,12 +12,13 @@ Contributions are welcome! Some files are more restrictive than others. Feel fre
 - Updates to the model list are always welcome
 - Adding endpoints is restricted on some files
 
-> **Note:**
+> **❗Note:**
 > - Keep the file content organized: Official APIs first, then Reverse Proxies
 > - Keep the Official APIs alphabetized
 > - Keep the Reverse Proxies alphabetized
 > - Always provide a logo for new endpoints
-> - When adding a new endpoint, always add a comment in the bottom of the document with the name and URL to get an API key
+> - When adding a new endpoint, always add a note in the bottom of this README with the name and URL to get an API key
+>   - Use alphabetical order, like in the yaml files
 >   - For reverse proxies on discord, add the invite link and the command to get the API key    
 
 ## File Descriptions
@@ -96,3 +98,67 @@ Configuration used for the Railway one-click install template:
 
 ### `librechat-test.yaml`
 - Personal file used to test changes and configs
+
+---
+
+## Get an API key:
+
+
+### Official APIs:
+
+#### Anyscale
+- https://app.endpoints.anyscale.com/credentials
+
+#### FireworksAI
+- https://fireworks.ai/
+
+#### groq
+- https://console.groq.com/keys
+
+#### Mistral
+- https://mistral.ai/
+
+#### OpenRouter
+- https://openrouter.ai/
+
+#### ShuttleAI
+- https://shuttleai.app/
+
+#### TogetherAI
+- https://www.together.ai/
+
+---
+
+### Reverse Proxies:
+
+#### ConvoAI
+- https://discord.gg/taH8UnARwd
+- Get API key on discord with the command `/key`
+
+#### FreeGPT-4
+- https://discord.com/invite/gpt4
+- Get API key on discord with the command `/key`
+
+#### HentAI
+- https://discord.com/invite/3ZaM7hcGyr
+- Get API key on discord with the command `/key`
+
+#### Mandrill
+- https://discord.mandrillai.tech
+- Get API key on discord with the command `/key get` 
+
+#### NagaAI
+- https://discord.naga.ac
+- Get API key on discord with the command `/key get` 
+
+#### Pawan
+- https://discord.gg/pawan
+- Get API key on discord with the command `/key`
+
+#### Shard
+- https://discord.com/invite/xNThkunFx8
+- Get API key on discord with the command `/get-key`
+
+#### Zukijourney
+- https://discord.gg/zukijourney
+- Get API key on discord with the command `/key`
