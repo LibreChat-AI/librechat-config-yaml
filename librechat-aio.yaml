@@ -779,6 +779,24 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
+          # BrainChat
+    - name: "BrainChat"
+      apiKey: "user_provided"
+      baseURL: "https://aiforcause.deepnight.tech/openai/"
+      models:
+        default: [
+          "gpt-35-turbo",
+          "gpt-35-turbo-16k",
+          "gpt-4-turbo".
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "gpt-4-turbo"
+      summarize: false
+      summaryModel: "gpt-35-turbo"
+      forcePrompt: false
+      iconURL: "https://private-user-images.githubusercontent.com/132274189/313477252-4742ac4a-f963-473f-be4d-830419fd663f.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTA2ODM1NTcsIm5iZiI6MTcxMDY4MzI1NywicGF0aCI6Ii8xMzIyNzQxODkvMzEzNDc3MjUyLTQ3NDJhYzRhLWY5NjMtNDczZi1iZTRkLTgzMDQxOWZkNjYzZi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzE3JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMxN1QxMzQ3MzdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02ZDVjMDYwMDUzYzYxYjUyYjBjY2RhZjg4MmUxNTY1YWVmMjY5YzBhYzI3Y2EyMWY1MTJjZDQ1ZDRlZWM5ZjZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.b3GPWyLCZrrxaBTzj7OVrBf5kZooVg-l-TXvWHUx2JA"
+
 
 
 # See the Custom Configuration Guide for more information:
