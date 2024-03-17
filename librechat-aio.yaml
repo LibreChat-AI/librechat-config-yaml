@@ -789,9 +789,9 @@ endpoints:
           "gpt-35-turbo-16k",
           "gpt-4-turbo",
           ]
-        fetch: true
+        fetch: false
       titleConvo: true
-      titleModel: "gpt-4-turbo"
+      titleModel: "gpt-35-turbo"
       summarize: false
       summaryModel: "gpt-35-turbo"
       forcePrompt: false
