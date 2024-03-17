@@ -790,7 +790,7 @@ endpoints:
           "gpt-35-turbo-16k",
           "gpt-4-turbo",
           ]
-        fetch: true
+        fetch: false
       titleConvo: true
       titleModel: "gpt-4-turbo"
       summarize: false
