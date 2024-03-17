@@ -405,18 +405,26 @@ endpoints:
 
 # See the Custom Configuration Guide for more information:
 # https://docs.librechat.ai/install/configuration/custom_config.html
-# Notes:
-## Legit Offering:
-### Mistral
-#### https://mistral.ai/
-### OpenRouter
-#### https://openrouter.ai/
-### groq
-#### https://console.groq.com/keys
-### TogetherAI
-#### https://www.together.ai/
-#### lots of open source models
-#### $25 credit
+#### ---------------####
+##### OFFICIAL API: ####
+#### ---------------####
+### Anyscale
+#### https://app.endpoints.anyscale.com/credentials
+#### ---
 ### FireworksAI
 #### https://fireworks.ai/
-#### $1 credit
+#### ---
+### groq
+#### https://console.groq.com/keys
+#### ---
+### Mistral
+#### https://mistral.ai/
+#### ---
+### OpenRouter
+#### https://openrouter.ai/
+#### ---
+### ShuttleAI
+#### https://shuttleai.app/
+#### ---
+### TogetherAI
+#### https://www.together.ai/
