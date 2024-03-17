@@ -725,7 +725,7 @@ endpoints:
       titleModel: "gpt-3.5-turbo"
       modelDisplayLabel: "shard"
       dropParams: ["stop", "stream"]
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Shard.jpg"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/shard.png"
 
     # Zukijourney
     - name: "Zukijourney"
