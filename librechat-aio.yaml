@@ -779,7 +779,7 @@ endpoints:
       dropParams: ["stream"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"
 
-          # BrainChat
+    # BrainChat
     - name: "BrainChat"
       apiKey: "user_provided"
       baseURL: "https://aiforcause.deepnight.tech/openai/"
@@ -787,7 +787,7 @@ endpoints:
         default: [
           "gpt-35-turbo",
           "gpt-35-turbo-16k",
-          "gpt-4-turbo".
+          "gpt-4-turbo",
           ]
         fetch: true
       titleConvo: true
