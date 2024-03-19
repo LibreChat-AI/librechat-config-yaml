@@ -387,10 +387,11 @@ endpoints:
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "shuttle-turbo"
+      titleModel: "gemini-pro"
       summarize: false
-      summaryModel: "shuttle-turbo"
+      summaryModel: "llama-summarize"
       forcePrompt: false
+      dropParams: ["user", "frequency_penalty", "presence_penalty"]
       modelDisplayLabel: "ShuttleAI"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
