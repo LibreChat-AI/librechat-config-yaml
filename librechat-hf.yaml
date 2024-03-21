@@ -731,7 +731,7 @@ endpoints:
             "sqlcoder-7b-2",
             "phi-2",
             "openchat-3.5-0106"
-        ]
+            ]
         fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
