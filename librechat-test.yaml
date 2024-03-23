@@ -36,7 +36,7 @@ endpoints:
 
     - name: "Ollama"
       apiKey: "ollama"
-      baseURL: "http://localhost:11434/v1/"
+      baseURL: "http://host.docker.internal:11434/v1/"
       models:
         default: [
           "mistral",
