@@ -34,26 +34,20 @@ endpoints:
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
 
-    # Mistral AI API
-    - name: "Mistral"
-      apiKey: "${MISTRAL_API_KEY}"
-      baseURL: "https://api.mistral.ai/v1"
-      models: 
+    - name: "Ollama"
+      apiKey: "ollama"
+      baseURL: "http://localhost:11434/v1/"
+      models:
         default: [
-          "mistral-tiny",
-          "mistral-small",
-          "mistral-medium",
-          "mistral-large-latest"
+          "mistral",
           ]
         fetch: false
       titleConvo: true
-      titleMethod: "completion"
-      titleModel: "mistral-tiny"
+      titleModel: "mistral"
       summarize: false
-      summaryModel: "mistral-tiny"
+      summaryModel: "mistral"
       forcePrompt: false
-      modelDisplayLabel: "Mistral"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+      modelDisplayLabel: "Ollama"
 
     # OpenRouter.ai
     - name: "OpenRouter"
