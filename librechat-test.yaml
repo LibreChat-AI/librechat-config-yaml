@@ -472,21 +472,3 @@ endpoints:
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-
-# See the Custom Configuration Guide for more information:
-# https://docs.librechat.ai/install/configuration/custom_config.html
-# Notes:
-## Legit Offering:
-### Mistral
-#### https://mistral.ai/
-### OpenRouter
-#### https://openrouter.ai/
-### groq
-#### https://console.groq.com/keys
-### TogetherAI
-#### https://www.together.ai/
-#### lots of open source models
-#### $25 credit
-### FireworksAI
-#### https://fireworks.ai/
-#### $1 credit
