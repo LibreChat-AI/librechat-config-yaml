@@ -311,7 +311,7 @@ endpoints:
 
     # ShuttleAI API
     - name: "ShuttleAI"
-      apiKey: "user_provided"
+      apiKey: "${SHUTTLEAI_API_KEY}"
       baseURL: "https://api.shuttleai.app/v1"
       models: 
         default: [
