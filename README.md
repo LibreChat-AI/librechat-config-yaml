@@ -94,6 +94,7 @@ Configuration used for the Railway one-click install template:
   ANYSCALE_API_KEY=
   FIREWORKS_API_KEY=
   PERPLEXITY_API_KEY=
+  SHUTTLEAI_API_KEY=
   TOGETHERAI_API_KEY=
   ```
 
