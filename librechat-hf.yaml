@@ -676,6 +676,67 @@ endpoints:
       modelDisplayLabel: "Pawan light"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
 
+    #Shard
+    - name: "Shard"
+      apiKey: "user_provided"
+      baseURL: "https://shard-ai.xyz/v1/"
+      models:
+        default: [
+            "pi",
+            "claude",
+            "claude-1.2",
+            "claude-2",
+            "phi-2",
+            "gpt-4",
+            "gpt-4-vision-preview",
+            "mistral-tiny",
+            "openchat",
+            "mistral-small",
+            "openchat-3.5-0106",
+            "mistral-medium",
+            "sonar-small-chat",
+            "sonar-small-online",
+            "mistral-large",
+            "sonar-medium-chat",
+            "sonar-medium-online",
+            "mistral-next",
+            "gemini-pro",
+            "gemini-pro-vision",
+            "gemini-1.5-pro",
+            "mixtral-8x7b-instruct",
+            "mistral-tiny",
+            "mistral-small",
+            "mistral-medium",
+            "mistral-large",
+            "mistral-next",
+            "mistral-7b-instruct",
+            "llama-2-7b-chat",
+            "llama-2-13b-chat",
+            "llama-2-70b-chat",
+            "llama-2-7b-chat-fp16",
+            "yi-34b",
+            "openchat",
+            "pi",
+            "mythomax-12-13b",
+            "nous-capybara-7b",
+            "sonar-small-chat",
+            "sonar-medium-chat",
+            "sonar-small-online",
+            "sonar-medium-online",
+            "deepseek-math-7b-instuct",
+            "falcon-7b-instruct",
+            "qwen1.5-1.8b-chat",
+            "sqlcoder-7b-2",
+            "phi-2",
+            "openchat-3.5-0106"
+            ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      modelDisplayLabel: "shard"
+      dropParams: ["stop", "stream"]
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/shard.png"
+
     # Zukijourney
     - name: "Zukijourney"
       apiKey: "user_provided"
