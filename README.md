@@ -153,6 +153,10 @@ Configuration used for the Railway one-click install template:
 - https://discord.gg/pawan
 - Get API key on discord with the command `/key`
 
+#### Shard
+- https://discord.com/invite/xNThkunFx8
+- Get API key on discord with the command `/get-key`
+
 #### Zukijourney
 - https://discord.gg/zukijourney
 - Get API key on discord with the command `/key`
