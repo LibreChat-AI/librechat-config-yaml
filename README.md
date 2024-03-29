@@ -154,7 +154,7 @@ Configuration used for the Railway one-click install template:
 - Get API key on discord with the command `/key`
 
 #### Shard
-- https://discord.com/invite/xNThkunFx8
+- https://discord.gg/ligma
 - Get API key on discord with the command `/get-key`
 
 #### Zukijourney
