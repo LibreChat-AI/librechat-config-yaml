@@ -679,7 +679,7 @@ endpoints:
     #Shard
     - name: "Shard"
       apiKey: "user_provided"
-      baseURL: "https://shard-ai.xyz/v1/"
+      baseURL: "https://api.shard-ai.xyz/v1/"
       models:
         default: [
             "pi",
