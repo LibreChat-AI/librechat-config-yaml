@@ -34,21 +34,6 @@ endpoints:
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
 
-    - name: "Ollama"
-      apiKey: "ollama"
-      baseURL: "http://host.docker.internal:11434/v1/"
-      models:
-        default: [
-          "mistral",
-          ]
-        fetch: false
-      titleConvo: true
-      titleModel: "mistral"
-      summarize: false
-      summaryModel: "mistral"
-      forcePrompt: false
-      modelDisplayLabel: "Ollama"
-
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
