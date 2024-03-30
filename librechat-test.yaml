@@ -235,6 +235,24 @@ endpoints:
       modelDisplayLabel: "Claude"
       iconURL: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png"
 
+    # DEEPNIGHT
+    - name: "DEEPNIGHT"
+      apiKey: "sk-free1234"
+      baseURL: "https://aiforcause.deepnight.tech/openai/"
+      models:
+        default: [
+          "gpt-35-turbo",
+          "gpt-35-turbo-16k",
+          "gpt-4-turbo"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-35-turbo"
+      summarize: false
+      summaryModel: "gpt-35-turbo"
+      forcePrompt: false
+      modelDisplayLabel: "DEEPNIGHT"
+
     - name: "Anyscale"
       apiKey: "${ANYSCALE_API_KEY}"
       baseURL: "https://api.endpoints.anyscale.com/v1"
