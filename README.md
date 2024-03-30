@@ -133,6 +133,10 @@ Configuration used for the Railway one-click install template:
 
 ### Reverse Proxies:
 
+#### ConvoAI
+- https://discord.gg/taH8UnARwd
+- Get API key on discord with the command `/key`
+
 #### FreeGPT-4
 - https://discord.com/invite/gpt4
 - Get API key on discord with the command `/key`
