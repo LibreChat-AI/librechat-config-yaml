@@ -614,24 +614,36 @@ endpoints:
       baseURL: "https://api.naga.ac/v1"
       models:
         default: [
-          "gpt-4-0125-preview",
-          "gpt-4-turbo-preview",
-          "gpt-4-1106-preview",
+          "gpt-4",
           "gpt-4-vision-preview",
+          "gpt-4-turbo-preview",
+          "gpt-4-0125-preview",
+          "gpt-4-1106-preview",
           "gpt-4-0613",
+          "mistral-large",
+          "mistral-large-2402",
+          "mistral-next",
+          "mistral-small",
+          "mistral-small-2402",
+          "gpt-3.5-turbo",
+          "gpt-3.5-turbo-0125",
           "gpt-3.5-turbo-1106",
           "gpt-3.5-turbo-0613",
+          "claude-3-opus",
+          "claude-3-opus-20240229",
+          "claude-3-sonnet",
+          "claude-3-sonnet-20240229",
+          "claude-3-haiku",
+          "claude-3-haiku-20240307",
+          "claude-2.1",
+          "claude-instant",
           "gemini-pro",
           "gemini-pro-vision",
           "llama-2-70b-chat",
           "llama-2-13b-chat",
           "llama-2-7b-chat",
-          "code-llama-34b",
           "mistral-7b",
-          "mixtral-8x7b",
-          "falcon-180b-chat",
-          "claude-2",
-          "claude-instant"
+          "mixtral-8x7b"
           ]
         fetch: false
       titleConvo: true
