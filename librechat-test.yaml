@@ -211,6 +211,7 @@ endpoints:
         "default": [
           "anthropic/claude-3-opus",
           "anthropic/claude-3-sonnet",
+          "anthropic/claude-3-haiku",
           "anthropic/claude-2",
           "anthropic/claude-2.1",
           "anthropic/claude-2.0",
@@ -221,6 +222,7 @@ endpoints:
           "anthropic/claude-instant-1.2",
           "anthropic/claude-3-opus:beta",
           "anthropic/claude-3-sonnet:beta",
+          "anthropic/claude-3-haiku:beta",
           "anthropic/claude-2:beta",
           "anthropic/claude-2.1:beta",
           "anthropic/claude-2.0:beta",
@@ -228,9 +230,9 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "anthropic/claude-instant-1.2"
+      titleModel: "anthropic/claude-3-haiku"
       summarize: false
-      summaryModel: "anthropic/claude-instant-1.2"
+      summaryModel: "anthropic/claude-3-haiku"
       forcePrompt: false
       modelDisplayLabel: "Claude"
       iconURL: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/claude-ai-icon.png"
