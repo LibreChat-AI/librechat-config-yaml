@@ -192,6 +192,7 @@ endpoints:
           "huggingfaceh4/zephyr-7b-beta",
           "openchat/openchat-7b",
           "sophosympatheia/midnight-rose-70b",
+          "databricks/dbrx-instruct",
           ]
         fetch: false
       titleConvo: true
