@@ -79,7 +79,7 @@ endpoints:
           "google/palm-2-codechat-bison-32k",
           "google/gemini-pro",
           "google/gemini-pro-vision",
-          "gemma/gemma-7b-it",
+          "google/gemma-7b-it",
           "google/gemma-7b-it:nitro",
           "------------------------------",
           "mistralai/mistral-7b-instruct",
@@ -94,6 +94,7 @@ endpoints:
           "------------------------------",
           "anthropic/claude-3-opus",
           "anthropic/claude-3-sonnet",
+          "anthropic/claude-3-haiku",
           "anthropic/claude-2",
           "anthropic/claude-2.1",
           "anthropic/claude-2.0",
@@ -104,6 +105,7 @@ endpoints:
           "anthropic/claude-instant-1.2",
           "anthropic/claude-3-opus:beta",
           "anthropic/claude-3-sonnet:beta",
+          "anthropic/claude-3-haiku:beta",
           "anthropic/claude-2:beta",
           "anthropic/claude-2.1:beta",
           "anthropic/claude-2.0:beta",
@@ -115,6 +117,9 @@ endpoints:
           "phind/phind-codellama-34b",
           "meta-llama/codellama-34b-instruct",
           "codellama/codellama-70b-instruct",
+          "------------------------------",
+          "cohere/command",
+          "cohere/command-r",
           "------------------------------",
           "intel/neural-chat-7b",
           "------------------------------",
@@ -176,6 +181,8 @@ endpoints:
           "mancer/weaver",
           "huggingfaceh4/zephyr-7b-beta",
           "openchat/openchat-7b",
+          "sophosympatheia/midnight-rose-70b",
+          "databricks/dbrx-instruct",
           ]
         fetch: false
       titleConvo: true
