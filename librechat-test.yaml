@@ -34,6 +34,17 @@ endpoints:
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
 
+    #cohere
+    - name: "cohere"
+      apiKey: "${COHERE_API_KEY}"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
