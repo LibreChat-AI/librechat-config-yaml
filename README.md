@@ -22,6 +22,25 @@ Contributions are welcome! Some files are more restrictive than others. Feel fre
 >   - For reverse proxies on discord, add the invite link and the command to get the API key    
 
 ## File Descriptions
+### `librechat.yaml`
+Basic configuration where model fetching is enabled on all endpoints that supports it:
+- API Keys: .env variables
+- File Strategy: `local`
+- Fetch: true
+- .env config:
+  ```yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat.yaml
+  GROQ_API_KEY=
+  MISTRAL_API_KEY=
+  COHERE_API_KEY=
+  OPENROUTER_KEY=
+  ANYSCALE_API_KEY=
+  FIREWORKS_API_KEY=
+  PERPLEXITY_API_KEY=
+  SHUTTLEAI_API_KEY=
+  TOGETHERAI_API_KEY=
+  ```
+
 ### `librechat-hf.yaml`
 Configuration used for the LibreChat Demo:
 <p align="left">
