@@ -43,6 +43,17 @@ endpoints:
       summaryModel: "meta-llama/Llama-2-7b-chat-hf"
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
+
+    # cohere
+    - name: "cohere"
+      apiKey: "user_provided"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperatur
       
     # Fireworks.ai
     - name: "Fireworks"
