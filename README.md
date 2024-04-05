@@ -69,6 +69,7 @@ Configuration used for the Railway one-click install template:
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-rw.yaml
   GROQ_API_KEY=
   MISTRAL_API_KEY=
+  COHERE_API_KEY=
   OPENROUTER_KEY=
   ANYSCALE_API_KEY=
   FIREWORKS_API_KEY=
@@ -89,6 +90,7 @@ Configuration used for the Railway one-click install template:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-f.yaml
   GROQ_API_KEY=
+  COHERE_API_KEY=
   MISTRAL_API_KEY=
   OPENROUTER_KEY=
   ANYSCALE_API_KEY=
