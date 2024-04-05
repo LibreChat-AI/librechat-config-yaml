@@ -121,6 +121,10 @@ endpoints:
           "------------------------------",
           "cohere/command",
           "cohere/command-r",
+          "cohere/command-r-plus",
+          "------------------------------",
+          "databricks/dbrx-instruct",
+          "databricks/dbrx-instruct:nitro",
           "------------------------------",
           "intel/neural-chat-7b",
           "------------------------------",
@@ -183,7 +187,6 @@ endpoints:
           "huggingfaceh4/zephyr-7b-beta",
           "openchat/openchat-7b",
           "sophosympatheia/midnight-rose-70b",
-          "databricks/dbrx-instruct",
           ]
         fetch: false
       titleConvo: true
