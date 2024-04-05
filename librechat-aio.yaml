@@ -44,16 +44,16 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-    # cohere
+    #cohere
     - name: "cohere"
-      apiKey: "user_provided"
+      apiKey: "${COHERE_API_KEY}"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
         fetch: false
       modelDisplayLabel: "cohere"
       titleModel: "command"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperatur
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
       
     # Fireworks.ai
     - name: "Fireworks"
