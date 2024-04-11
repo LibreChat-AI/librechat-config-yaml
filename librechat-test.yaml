@@ -23,7 +23,7 @@ endpoints:
     # ChatGPT
     - name: "ChatGPT"
       apiKey: "anything"
-      baseURL: "https://librechat-free-gpt3.5.hf.space/v1/"
+      baseURL: "http://librechat-free-gpt3.5.hf.space"
       models:
         default: [
           "gpt-3.5-turbo",
