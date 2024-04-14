@@ -522,8 +522,8 @@ endpoints:
       modelDisplayLabel: "FreeGPT-4"
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
 
-    # Hyzen
-    - name: "Hyzen"
+    # Hyzenberg
+    - name: "Hyzenberg"
       apiKey: "user_provided"
       baseURL: "https://api.hyzen.cc/v1"
       models:
@@ -603,7 +603,7 @@ endpoints:
         fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
-      modelDisplayLabel: "Hyzen"
+      modelDisplayLabel: "Hyzenberg"
       iconURL: "https://cdn.discordapp.com/icons/1201188608321794208/a7d14f48767526beaa0593cdf9ae8ed4.webp"
  
     # Mandrill
