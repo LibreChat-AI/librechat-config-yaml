@@ -163,8 +163,8 @@ Configuration used for the Railway one-click install template:
 - Get API key on discord with the command `/key`
 
 #### Hyzenberg
-- https://discord.com/invite/3ZaM7hcGyr
-- Get API key on discord with the command `/key`
+- https://discord.gg/ECUEFQzATa
+- Get API key on discord with the command `/key get`
 
 #### Mandrill
 - https://discord.mandrillai.tech
