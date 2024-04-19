@@ -15,14 +15,16 @@ endpoints:
       models:
         default: [
           "llama2-70b-4096",
+          "llama3-70b-8192",
+          "llama3-8b-8192",
           "mixtral-8x7b-32768",
-          "gemma-7b-it"
+          "gemma-7b-it",
           ]
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
-
+      
     # Mistral AI API
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
@@ -100,6 +102,8 @@ endpoints:
           "mistralai/mixtral-8x7b-instruct",
           "mistralai/mixtral-8x7b-instruct:nitro",
           "mistralai/mixtral-8x7b",
+          "mistralai/mixtral-8x22b",
+          "mistralai/mixtral-8x22b-instruct",
           "mistralai/mistral-tiny",
           "mistralai/mistral-small",
           "mistralai/mistral-medium",
@@ -135,6 +139,10 @@ endpoints:
           "cohere/command-r",
           "cohere/command-r-plus",
           "------------------------------",
+          "microsoft/wizardlm-2-7b",
+          "microsoft/wizardlm-2-8x22b",
+          "microsoft/wizardlm-2-8x22b:nitro",
+          "------------------------------",
           "databricks/dbrx-instruct",
           "databricks/dbrx-instruct:nitro",
           "------------------------------",
@@ -162,6 +170,7 @@ endpoints:
           "------------------------------",
           "undi95/remm-slerp-l2-13b",
           "undi95/toppy-m-7b",
+          "undi95/toppy-m-7b:nitro",
           "undi95/remm-slerp-l2-13b-6k",
           "------------------------------",
           "01-ai/yi-6b",         
@@ -197,6 +206,7 @@ endpoints:
           "cognitivecomputations/dolphin-mixtral-8x7b",
           "mancer/weaver",
           "huggingfaceh4/zephyr-7b-beta",
+          "huggingfaceh4/zephyr-orpo-141b-a35b",
           "openchat/openchat-7b",
           "sophosympatheia/midnight-rose-70b",
           ]
