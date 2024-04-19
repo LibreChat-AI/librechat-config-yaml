@@ -102,15 +102,14 @@ endpoints:
       models:
         default: [
           "llama2-70b-4096",
+          "llama3-70b-8192",
+          "llama3-8b-8192",
           "mixtral-8x7b-32768",
-          "gemma-7b-it"
+          "gemma-7b-it",
           ]
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
-      summarize: false
-      summaryModel: "mixtral-8x7b-32768"
-      forcePrompt: false
       modelDisplayLabel: "groq"
       
     # Mistral AI API
