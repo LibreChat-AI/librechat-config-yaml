@@ -29,6 +29,8 @@ endpoints:
           ]
         fetch: true
       titleConvo: true
+      addParams:
+        "provider": [ "openai" ]
 
     # ChatGPT
     - name: "ChatGPT"
