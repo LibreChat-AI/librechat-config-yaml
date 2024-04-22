@@ -29,11 +29,11 @@ endpoints:
           ]
         fetch: true
       titleConvo: true
-      addParams:
-        "provider": [ "openrouter" ]
-      headers:
-        x-api-key: "${APIPIE_API_KEY}"
-        Accept: "application/json"
+      # addParams:
+      #   "provider": [ "openrouter" ]
+      # headers:
+      #   x-api-key: "${APIPIE_API_KEY}"
+      #   Accept: "application/json"
 
     # ChatGPT
     - name: "ChatGPT"
