@@ -288,6 +288,7 @@ endpoints:
           "huggingfaceh4/zephyr-orpo-141b-a35b",
           "openchat/openchat-7b",
           "sophosympatheia/midnight-rose-70b",
+          "sao10k/fimbulvetr-11b-v2",
           ]
         fetch: false
       titleConvo: true
