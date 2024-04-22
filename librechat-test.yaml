@@ -1,4 +1,4 @@
-version: 1.0.5
+routerversion: 1.0.5
 
 cache: true
 fileStrategy: "firebase"
@@ -30,7 +30,7 @@ endpoints:
         fetch: true
       titleConvo: true
       addParams:
-        "provider": [ "openai" ]
+        "provider": [ "openrouter" ]
       headers:
         x-api-key: "${APIPIE_API_KEY}"
         Accept: "application/json"
