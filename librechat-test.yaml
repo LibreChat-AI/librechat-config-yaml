@@ -33,7 +33,7 @@ endpoints:
         "provider": [ "openai" ]
       headers:
         x-api-key: "${APIPIE_API_KEY}"
-        Content-Type: "application/json"
+        Accept: "application/json"
 
     # ChatGPT
     - name: "ChatGPT"
