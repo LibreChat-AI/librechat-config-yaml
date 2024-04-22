@@ -31,6 +31,9 @@ endpoints:
       titleConvo: true
       addParams:
         "provider": [ "openai" ]
+      headers:
+        x-api-key: "${APIPIE_API_KEY}"
+        Content-Type: "application/json"
 
     # ChatGPT
     - name: "ChatGPT"
