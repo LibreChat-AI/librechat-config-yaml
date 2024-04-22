@@ -19,6 +19,17 @@ registration:
 
 endpoints:
   custom:
+    # APIpie
+    - name: "APIpie"
+      apiKey: "${APIPIE_API_KEY}"
+      baseURL: "https://apipie.ai/v1/"
+      models:
+        default: [
+          "gpt-3.5-turbo",
+          ]
+        fetch: true
+      titleConvo: true
+
     # ChatGPT
     - name: "ChatGPT"
       apiKey: "anything"
