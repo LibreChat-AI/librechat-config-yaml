@@ -1,19 +1,22 @@
 version: 1.0.5
 
 cache: true
+
 fileStrategy: "firebase"
 
 interface:
+  # Privacy policy settings
   privacyPolicy:
     externalUrl: 'https://librechat.ai/privacy-policy'
     openNewTab: true
+  # Terms of service
   termsOfService:
     externalUrl: 'https://librechat.ai/tos'
     openNewTab: true
-
+    
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
-
+  
 endpoints:
   custom:
     # APIpie
@@ -23,13 +26,14 @@ endpoints:
       models:
         default: [
           "gpt-3.5-turbo",
-          "gpt-4-turbo",
-          "gpt-4",
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      modelDisplayLabel: "APIpie"
+      # addParams:
+      #   "provider": [ "openai" ]
+      headers:
+        x-api-key: "${APIPIE_API_KEY}"
+        Accept: "application/json"
 
     # ChatGPT
     - name: "ChatGPT"
