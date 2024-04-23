@@ -23,14 +23,13 @@ endpoints:
       models:
         default: [
           "gpt-3.5-turbo",
-          "gpt-3.5-16k",
-          "gpt-4-turbo", 
-          "gpt-4", 
+          "gpt-4-turbo",
+          "gpt-4",
           ]
         fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
-      modelDisplayLabel: "Coze"
+      modelDisplayLabel: "APIpie"
 
     # ChatGPT
     - name: "ChatGPT"
