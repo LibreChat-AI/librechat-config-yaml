@@ -30,6 +30,7 @@ endpoints:
           ]
         fetch: true
       titleConvo: true
+      titleModel: "gpt-3.5-turbo"
       # addParams:
       #   "provider": [ "openrouter" ]
       # headers:
