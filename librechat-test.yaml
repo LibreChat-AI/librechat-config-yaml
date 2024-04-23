@@ -32,6 +32,7 @@ endpoints:
       # addParams:
       #   "provider": [ "openai" ]
       headers:
+        Content-Type: "application/json"
         x-api-key: "${APIPIE_API_KEY}"
         Accept: "application/json"
 
