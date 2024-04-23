@@ -22,19 +22,30 @@ endpoints:
     # APIpie
     - name: "APIpie"
       apiKey: "${APIPIE_API_KEY}"
-      baseURL: "https://apipie.ai/v1/"
+      # baseURL: "https://apipie.ai/v1/chat/completions"
+      baseURL: "http://host.docker.internal:5000/v1"
       models:
         default: [
-          "gpt-3.5-turbo",
+          "gpt-4",
           "gpt-4-turbo",
+          "gpt-3.5-turbo",
+          "claude-3-opus",
+          "claude-3-sonnet",
+          "claude-3-haiku",
+          "llama-3-70b-instruct",
+          "llama-3-8b-instruct",
+          "gemini-pro-1.5",
+          "gemini-pro",
+          "mistral-large",
+          "mistral-medium",
+          "mistral-small",
+          "mistral-tiny",
+          "mixtral-8x22b",
           ]
-        fetch: true
+        fetch: false
       titleConvo: true
-      addParams:
-        "provider": [ "openrouter" ]
-      headers:
-        x-api-key: "${APIPIE_API_KEY}"
-        Accept: "application/json"
+      titleModel: "mistral-tiny"
+      dropParams: ["stream"]
 
     # ChatGPT
     - name: "ChatGPT"
