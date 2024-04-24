@@ -42,6 +42,39 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
+endpoints:
+  custom:
+    # APIpie
+    - name: "APIpie"
+      apiKey: "user_provided"
+      baseURL: "https://apipie.ai/v1/"
+      models:
+        default: [
+          "gpt-4",
+          "gpt-4-turbo",
+          "gpt-3.5-turbo",
+          "claude-3-opus",
+          "claude-3-sonnet",
+          "claude-3-haiku",
+          "llama-3-70b-instruct",
+          "llama-3-8b-instruct",
+          "gemini-pro-1.5",
+          "gemini-pro",
+          "mistral-large",
+          "mistral-medium",
+          "mistral-small",
+          "mistral-tiny",
+          "mixtral-8x22b",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "claude-3-haiku"
+      summarize: false
+      summaryModel: "claude-3-haiku"
+      dropParams: ["stream"]
+      modelDisplayLabel: "APIpie"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/APIpie.png"
+
     #cohere
     - name: "cohere"
       apiKey: "user_provided"
