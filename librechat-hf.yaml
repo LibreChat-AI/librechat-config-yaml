@@ -42,7 +42,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-# APIpie
+    # APIpie
     - name: "APIpie"
       apiKey: "user_provided"
       baseURL: "https://apipie.ai/v1/"
