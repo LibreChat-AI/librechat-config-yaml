@@ -42,9 +42,7 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Anyscale"
 
-endpoints:
-  custom:
-    # APIpie
+# APIpie
     - name: "APIpie"
       apiKey: "user_provided"
       baseURL: "https://apipie.ai/v1/"
@@ -643,7 +641,7 @@ endpoints:
           "sonar-small-online",
           "sonar-medium-online",
           "perplexity-related"
-        ]
+          ]
         fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
