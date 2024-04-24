@@ -22,8 +22,8 @@ endpoints:
     # APIpie
     - name: "APIpie"
       apiKey: "${APIPIE_API_KEY}"
-      # baseURL: "https://apipie.ai/v1/chat/completions"
-      baseURL: "http://host.docker.internal:5000/v1"
+      baseURL: "https://apipie.ai/v1/"
+      # baseURL: "http://host.docker.internal:5000/v1"
       models:
         default: [
           "gpt-4",
