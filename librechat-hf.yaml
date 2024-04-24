@@ -929,7 +929,7 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
       modelDisplayLabel: "Hyzenberg"
-      iconURL: "https://cdn.discordapp.com/icons/1201188608321794208/a7d14f48767526beaa0593cdf9ae8ed4.webp"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/hyzenberg.webp"
  
     # Mandrill
     - name: "Mandrill"
