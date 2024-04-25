@@ -603,6 +603,7 @@ endpoints:
           "openchat/openchat-7b",
           "sophosympatheia/midnight-rose-70b",
           "sao10k/fimbulvetr-11b-v2",
+          "lynn/soliloquy-l3",
           ]
         fetch: false
       titleConvo: true
