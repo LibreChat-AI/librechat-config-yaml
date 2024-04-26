@@ -44,7 +44,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-tiny"
+      titleModel: "current_model"
       dropParams: ["stream"]
 
     # ChatGPT
