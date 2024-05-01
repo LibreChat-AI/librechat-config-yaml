@@ -1,4 +1,4 @@
-version: 1.0.5
+version: 1.0.8
 
 cache: true
 
@@ -18,6 +18,79 @@ registration:
 
 endpoints:
   custom:
+
+    # Anyscale
+    - name: "Anyscale"
+      apiKey: "${ANYSCALE_API_KEY}"
+      baseURL: "https://api.endpoints.anyscale.com/v1"
+      models:
+        default: [
+          "meta-llama/Llama-2-7b-chat-hf",
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "meta-llama/Llama-2-7b-chat-hf"
+      summarize: false
+      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
+      forcePrompt: false
+      modelDisplayLabel: "Anyscale"
+
+    # APIpie
+    - name: "APIpie"
+      apiKey: "${APIPIE_API_KEY}"
+      baseURL: "https://apipie.ai/v1/"
+      # baseURL: "http://host.docker.internal:5000/v1"
+      models:
+        default: [
+          "gpt-4",
+          "gpt-4-turbo",
+          "gpt-3.5-turbo",
+          "claude-3-opus",
+          "claude-3-sonnet",
+          "claude-3-haiku",
+          "llama-3-70b-instruct",
+          "llama-3-8b-instruct",
+          "gemini-pro-1.5",
+          "gemini-pro",
+          "mistral-large",
+          "mistral-medium",
+          "mistral-small",
+          "mistral-tiny",
+          "mixtral-8x22b",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-3.5-turbo"
+      dropParams: ["stream"]
+
+    #cohere
+    - name: "cohere"
+      apiKey: "${COHERE_API_KEY}"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+
+    # Fireworks
+    - name: "Fireworks"
+      apiKey: "${FIREWORKS_API_KEY}"
+      baseURL: "https://api.fireworks.ai/inference/v1"
+      models:
+        default: [
+          "accounts/fireworks/models/mixtral-8x7b-instruct",
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summarize: false
+      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      forcePrompt: false
+      modelDisplayLabel: "Fireworks"
+      dropParams: ["user"]
+  
     # groq
     - name: "groq"
       apiKey: "${GROQ_API_KEY}"
@@ -52,17 +125,6 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
-    #cohere
-    - name: "cohere"
-      apiKey: "${COHERE_API_KEY}"
-      baseURL: "https://api.cohere.ai/v1"
-      models:
-        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
-        fetch: false
-      modelDisplayLabel: "cohere"
-      titleModel: "command"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
-
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
@@ -76,39 +138,6 @@ endpoints:
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
-
-    # Anyscale
-    - name: "Anyscale"
-      apiKey: "${ANYSCALE_API_KEY}"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
-      models:
-        default: [
-          "meta-llama/Llama-2-7b-chat-hf",
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "meta-llama/Llama-2-7b-chat-hf"
-      summarize: false
-      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
-      forcePrompt: false
-      modelDisplayLabel: "Anyscale"
-
-    # Fireworks
-    - name: "Fireworks"
-      apiKey: "${FIREWORKS_API_KEY}"
-      baseURL: "https://api.fireworks.ai/inference/v1"
-      models:
-        default: [
-          "accounts/fireworks/models/mixtral-8x7b-instruct",
-          ]
-        fetch: true
-      titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
-      forcePrompt: false
-      modelDisplayLabel: "Fireworks"
-      dropParams: ["user"]
 
     # Perplexity
     - name: "Perplexity"
