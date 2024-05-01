@@ -344,6 +344,9 @@ endpoints:
       summaryModel: "gpt-35-turbo"
       forcePrompt: false
       modelDisplayLabel: "DEEPNIGHT"
+      addParams:
+        stream: True
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
 
     - name: "Anyscale"
       apiKey: "${ANYSCALE_API_KEY}"
