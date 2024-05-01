@@ -44,7 +44,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "claude-3-haiku"
+      titleModel: "gpt-3.5-turbo"
       dropParams: ["stream"]
 
     # ChatGPT
