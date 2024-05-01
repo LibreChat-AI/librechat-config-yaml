@@ -30,12 +30,13 @@ Basic configuration where model fetching is enabled on all endpoints that suppor
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat.yaml
+  ANYSCALE_API_KEY=
+  APIPIE_API_KEY=
+  COHERE_API_KEY=
+  FIREWORKS_API_KEY=
   GROQ_API_KEY=
   MISTRAL_API_KEY=
-  COHERE_API_KEY=
   OPENROUTER_KEY=
-  ANYSCALE_API_KEY=
-  FIREWORKS_API_KEY=
   PERPLEXITY_API_KEY=
   SHUTTLEAI_API_KEY=
   TOGETHERAI_API_KEY=
@@ -86,12 +87,13 @@ Configuration used for the Railway one-click install template:
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-rw.yaml
+  ANYSCALE_API_KEY=
+  APIPIE_API_KEY=
+  COHERE_API_KEY=
+  FIREWORKS_API_KEY=
   GROQ_API_KEY=
   MISTRAL_API_KEY=
-  COHERE_API_KEY=
   OPENROUTER_KEY=
-  ANYSCALE_API_KEY=
-  FIREWORKS_API_KEY=
   PERPLEXITY_API_KEY=
   SHUTTLEAI_API_KEY=
   TOGETHERAI_API_KEY=
@@ -108,12 +110,13 @@ Configuration used for the Railway one-click install template:
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-f.yaml
-  GROQ_API_KEY=
+  ANYSCALE_API_KEY=
+  APIPIE_API_KEY=
   COHERE_API_KEY=
+  FIREWORKS_API_KEY=
+  GROQ_API_KEY=
   MISTRAL_API_KEY=
   OPENROUTER_KEY=
-  ANYSCALE_API_KEY=
-  FIREWORKS_API_KEY=
   PERPLEXITY_API_KEY=
   SHUTTLEAI_API_KEY=
   TOGETHERAI_API_KEY=
@@ -131,6 +134,12 @@ Configuration used for the Railway one-click install template:
 
 #### Anyscale
 - https://app.endpoints.anyscale.com/credentials
+
+#### APIpie
+- https://apipie.ai/dashboard/profile/api-keys
+
+#### Cohere
+- https://dashboard.cohere.com/api-keys
 
 #### FireworksAI
 - https://fireworks.ai/
