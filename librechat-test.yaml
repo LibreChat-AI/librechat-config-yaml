@@ -4,15 +4,15 @@ cache: true
 
 fileStrategy: "firebase"
 
-interface:
-  # Privacy policy settings
-  privacyPolicy:
-    externalUrl: 'https://librechat.ai/privacy-policy'
-    openNewTab: true
-  # Terms of service
-  termsOfService:
-    externalUrl: 'https://librechat.ai/tos'
-    openNewTab: true
+# interface:
+#   # Privacy policy settings
+#   privacyPolicy:
+#     externalUrl: 'https://librechat.ai/privacy-policy'
+#     openNewTab: true
+#   # Terms of service
+#   termsOfService:
+#     externalUrl: 'https://librechat.ai/tos'
+#     openNewTab: true
     
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
