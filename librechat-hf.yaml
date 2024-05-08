@@ -460,6 +460,7 @@ endpoints:
           "gryphe/mythomist-7b:free",
           "undi95/toppy-m-7b:free",
           "openrouter/cinematika-7b:free",
+          "llama-3-8b-instruct:free",
           "------------------------------",
           "openrouter/auto",
           "openrouter/cinematika-7b",
