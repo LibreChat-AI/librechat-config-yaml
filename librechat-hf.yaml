@@ -330,9 +330,7 @@ endpoints:
       titleModel: "claude-3-haiku"
       summarize: false
       summaryModel: "claude-3-haiku"
-      dropParams: ["stream"]
       modelDisplayLabel: "APIpie"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/APIpie.png"
 
     #cohere
     - name: "cohere"
