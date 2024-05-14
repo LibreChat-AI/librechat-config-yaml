@@ -154,7 +154,7 @@ Configuration used for the Railway one-click install template:
 - https://openrouter.ai/
 
 #### ShuttleAI
-- https://shuttleai.app/
+- https://shuttleai.app/keys
 
 #### TogetherAI
 - https://www.together.ai/
