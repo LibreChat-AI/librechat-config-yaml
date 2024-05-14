@@ -512,7 +512,7 @@ endpoints:
           "lzlv-70b",
           "figgs-rp",
           "cinematika-7b"
-        ]
+          ]
         fetch: true
       titleConvo: true
       titleMethod: "completion"
