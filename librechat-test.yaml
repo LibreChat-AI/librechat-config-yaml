@@ -593,5 +593,5 @@ endpoints:
       summarize: false
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+      dropParams: ["stream", "top_p"]
       modelDisplayLabel: "WebraftAI"
