@@ -583,7 +583,7 @@ endpoints:
 
     - name: "WebraftAI"
       apiKey: "user_provided"
-      baseURL: "https://api.webraft.in/v1"
+      baseURL: "https://api.webraft.in/freeapi"
       models:
         default: [
           "claude", "claude-2", "claude-2.1", "claude-3", "claude-3-opus", "claude-3-sonnet", "claude-instant-v1", "claude-instant-v1-100k", "gemini-1.5-pro", "gemini-pro-vision", "gemma-2b", "gemma-7b", "gpt-3.5-turbo", "gpt-3.5-turbo-0601", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-16k", "gpt-3.5-turbo-instruct-0914", "gpt-4", "gpt-4-0125-preview", "gpt-4-0314", "gpt-4-32k", "gpt-4-32k-0314", "gpt-4-32k-0613", "gpt-4-turbo", "gpt-4-turbo-2024-04-09", "gpt-4-vision-preview", "gpt-4o",
@@ -593,5 +593,4 @@ endpoints:
       summarize: false
       summaryModel: "gpt-3.5-turbo"
       forcePrompt: false
-      dropParams: ["stream", "top_p"]
       modelDisplayLabel: "WebraftAI"
