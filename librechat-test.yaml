@@ -583,7 +583,7 @@ endpoints:
 
     - name: "WebraftAI"
       apiKey: "user_provided"
-      baseURL: "https://api.webraft.in/freeapi/chat/completions"
+      baseURL: "https://api.webraft.in/freeapi"
       models:
         default: [
           "deepseek-coder-1.3b",
