@@ -583,7 +583,7 @@ endpoints:
 
     - name: "WebraftAI"
       apiKey: "user_provided"
-      baseURL: " https://api.webraft.in/freeapi/"
+      baseURL: "https://api.webraft.in/freeapi/chat/completions"
       models:
         default: [
           "deepseek-coder-1.3b",
@@ -662,7 +662,7 @@ endpoints:
           "openhermes-7b-mistral",
           "dolphin-mixtral-v2.6",
           "dolphin-mistral-v2",
-          "zephyr-7b-alpha ",
+          "zephyr-7b-alpha",
           "mistral-7b-instruct",
           "gorilla-openfunctions-v2",
           "gorilla-openfunctions-v1-mpt",
@@ -679,9 +679,9 @@ endpoints:
           "merlinite-13b",
           "starcoder-3b",
           "gpt-3.5-turbo-16k-0613",
-          "internlm2-chat-7b ",
+          "internlm2-chat-7b",
           "llava-13b",
-          "Magicoder-S-DS-6.7B ",
+          "Magicoder-S-DS-6.7B",
           "gemma-7b",
           "xwinlm-7b-v0.1",
           "nexusraven-13b",
