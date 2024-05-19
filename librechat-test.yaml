@@ -106,6 +106,52 @@ endpoints:
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
+    - name: 'HuggingFace'
+      apiKey: '${HUGGINGFACE_TOKEN}'
+      baseURL: 'https://api-inference.huggingface.co/v1'
+      models:
+        default: [
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "google/gemma-1.1-2b-it",
+          "google/gemma-1.1-7b-it",
+          "HuggingFaceH4/starchat2-15b-v0.1",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "meta-llama/Meta-Llama-3-8B-Instruct",
+          "microsoft/Phi-3-mini-4k-instruct",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mistral-7B-Instruct-v0.2",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+        ]
+        fetch: true
+      titleConvo: true
+      titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+      dropParams: ["top_p"]
+
+    # Ollama
+    - name: "Ollama"
+        apiKey: "ollama"
+        baseURL: "http://host.docker.internal:11434/v1/" 
+        models:
+        default: [
+            "llama3",
+            "mistral",
+            ]
+        fetch: false # fetching list of models is not supported
+        titleConvo: true
+        titleModel: "current_model"
+        summarize: false
+        summaryModel: "current_model"
+        forcePrompt: false
+        modelDisplayLabel: "Ollama"
+        addParams:
+            "stop": [
+                "<|start_header_id|>",
+                "<|end_header_id|>",
+                "<|eot_id|>",
+                "<|reserved_special_token"
+            ]
+
     # OpenRouter.ai
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
@@ -580,17 +626,3 @@ endpoints:
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
-
-    - name: "WebraftAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.webraft.in/freeapi"
-      models:
-        default: [
-          "claude", "claude-2", "claude-2.1", "claude-3", "claude-3-opus", "claude-3-sonnet", "claude-instant-v1", "claude-instant-v1-100k", "gemini-1.5-pro", "gemini-pro-vision", "gemma-2b", "gemma-7b", "gpt-3.5-turbo", "gpt-3.5-turbo-0601", "gpt-3.5-turbo-0613", "gpt-3.5-turbo-16k", "gpt-3.5-turbo-instruct-0914", "gpt-4", "gpt-4-0125-preview", "gpt-4-0314", "gpt-4-32k", "gpt-4-32k-0314", "gpt-4-32k-0613", "gpt-4-turbo", "gpt-4-turbo-2024-04-09", "gpt-4-vision-preview", "gpt-4o",
-          ]
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "WebraftAI"
