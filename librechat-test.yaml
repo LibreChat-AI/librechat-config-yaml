@@ -1,4 +1,4 @@
-version: 1.0.8
+version: 1.0.9
 
 cache: true
 
@@ -122,7 +122,7 @@ endpoints:
           "mistralai/Mistral-7B-Instruct-v0.2",
           "mistralai/Mixtral-8x7B-Instruct-v0.1",
           "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
-        ]
+          ]
         fetch: true
       titleConvo: true
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
@@ -130,27 +130,27 @@ endpoints:
 
     # Ollama
     - name: "Ollama"
-        apiKey: "ollama"
-        baseURL: "http://host.docker.internal:11434/v1/" 
-        models:
+      apiKey: "ollama"
+      baseURL: "http://host.docker.internal:11434/v1/" 
+      models:
         default: [
             "llama3",
             "mistral",
             ]
         fetch: false # fetching list of models is not supported
-        titleConvo: true
-        titleModel: "current_model"
-        summarize: false
-        summaryModel: "current_model"
-        forcePrompt: false
-        modelDisplayLabel: "Ollama"
-        addParams:
-            "stop": [
-                "<|start_header_id|>",
-                "<|end_header_id|>",
-                "<|eot_id|>",
-                "<|reserved_special_token"
-            ]
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "Ollama"
+      addParams:
+          "stop": [
+              "<|start_header_id|>",
+              "<|end_header_id|>",
+              "<|eot_id|>",
+              "<|reserved_special_token"
+           ]
 
     # OpenRouter.ai
     - name: "OpenRouter"
