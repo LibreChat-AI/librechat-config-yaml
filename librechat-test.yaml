@@ -227,7 +227,7 @@ endpoints:
     # MLX
     - name: "MLX"
       apiKey: "mlx"
-      baseURL: "http://localhost:8080/v1/" 
+      baseURL: "http://host.docker.internal:8080/v1/" 
       models:
         default: [
           "Meta-Llama-3-8B-Instruct-4bit"
