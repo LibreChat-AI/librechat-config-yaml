@@ -239,6 +239,7 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "Apple MLX"
+      dropParams: ["temperature"]
       addParams:
             max_tokens: 2000
             "stop": [
