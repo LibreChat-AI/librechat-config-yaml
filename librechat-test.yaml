@@ -26,7 +26,7 @@ registration:
 tts:
   localai:
     url: 'http://host.docker.internal:8080/v1/audio/synthesize'
-    voices: ['voice-en-us-amy-low.onnx', 'voice-en-us-libritts-high.onnx']
+    voices: ['voice-en-us-amy-low','voice-en-us-libritts-high','voice-en-us-amy-low.onnx', 'voice-en-us-libritts-high.onnx']
     backend: 'piper'
 
 stt:
