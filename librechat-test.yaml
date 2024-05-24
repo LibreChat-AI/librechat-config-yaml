@@ -16,6 +16,12 @@ fileStrategy: "firebase"
     
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
+
+tts:
+  elevenlabs:
+    apiKey: '${TTS_API_KEY}'
+    model: 'eleven_multilingual_v2'
+    voices: ['202898wioas09d2', 'addwqr324tesfsf', '3asdasr3qrq44w', 'adsadsa']
   
 endpoints:
   custom:
