@@ -33,7 +33,7 @@ stt:
   openai:
     url: 'http://host.docker.internal:8080/v1/audio/transcriptions'
     apiKey: 'EMPTY'
-    model: 'whisper'
+    model: 'whisper-1'
 
 endpoints:
   custom:
