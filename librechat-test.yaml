@@ -17,12 +17,24 @@ fileStrategy: "firebase"
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
+# tts:
+#   elevenlabs:
+#     apiKey: '${TTS_API_KEY}'
+#     model: 'eleven_multilingual_v2'
+#     voices: ['NFG5qt843uXKj4pFvR7C']
+
 tts:
-  elevenlabs:
-    apiKey: '${TTS_API_KEY}'
-    model: 'eleven_multilingual_v2'
-    voices: ['NFG5qt843uXKj4pFvR7C']
-  
+  localai:
+    url: 'http://host.docker.internal:8080/v1/audio/synthesize'
+    voices: ['voice-1.onnx', 'voice-2.onnx']
+    backend: 'piper'
+
+stt:
+  openai:
+    url: 'http://host.docker.internal:8080/v1/audio/transcriptions'
+    apiKey: 'EMPTY'
+    model: 'whisper'
+
 endpoints:
   custom:
     # Anyscale
