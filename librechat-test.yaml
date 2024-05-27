@@ -683,6 +683,7 @@ endpoints:
       models:
         default: [
           "mistral-7b-instruct-v0.2@fireworks-ai",
+          "claude-3-opus@anthropic",
           ]
         fetch: false
       titleConvo: true
