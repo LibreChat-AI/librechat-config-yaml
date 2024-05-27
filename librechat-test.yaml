@@ -699,7 +699,7 @@ endpoints:
           "gemma-2b-it@together-ai",
           "gemma-7b-it@fireworks-ai",
           "llama-2-7b-chat@replicate",
-          "llama-2-13b-chat@fireworks-ai"
+          "llama-2-13b-chat@fireworks-ai",
           "llama-2-70b-chat@octoai",
           "llama-3-8b-chat@fireworks-ai",
           "llama-3-70b-chat@fireworks-ai",
