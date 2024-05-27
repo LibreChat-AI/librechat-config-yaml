@@ -675,3 +675,15 @@ endpoints:
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
+
+    # Unify
+    - name: "Unify"
+      apiKey: "${UNIFY_API_KEY}"
+      baseURL: "https://api.unify.ai/v0/"
+      models:
+        default: [
+          "mistral-7b-instruct-v0.2@fireworks-ai",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "mistral-7b-instruct-v0.2@fireworks-ai"
