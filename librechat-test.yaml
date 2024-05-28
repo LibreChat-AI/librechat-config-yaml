@@ -682,6 +682,7 @@ endpoints:
       baseURL: "https://api.unify.ai/v0/"
       models:
         default: [
+          "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04"
           "gpt-3.5-turbo@openai",
           "gpt-4o@openai",
           "gpt-4-turbo@openai",
