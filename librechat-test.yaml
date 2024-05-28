@@ -25,15 +25,20 @@ registration:
 
 tts:
   localai:
-    url: 'http://host.docker.internal:8080/v1/audio/synthesize'
-    voices: ['voice-en-us-amy-low','voice-en-us-libritts-high','voice-en-us-amy-low.onnx', 'voice-en-us-libritts-high.onnx']
-    backend: 'piper'
+    url: "http://host.docker.internal:8080/tts"
+    apiKey: "EMPTY"
+    voices: [
+      "en-us-amy-low.onnx",
+      "en-us-danny-low.onnx",
+      "en-us-libritts-high.onnx",
+      "en-us-ryan-high.onnx",
+      ]
+    backend: "piper"
 
 stt:
   openai:
     url: 'http://host.docker.internal:8080/v1/audio/transcriptions'
-    apiKey: 'EMPTY'
-    model: 'whisper-1'
+    model: 'whisper'
 
 endpoints:
   custom:
