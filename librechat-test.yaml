@@ -715,4 +715,4 @@ endpoints:
       titleConvo: true
       titleModel: "mistral-7b-instruct-v0.2@fireworks-ai"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
-      "iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Unify.webp"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Unify.webp"
