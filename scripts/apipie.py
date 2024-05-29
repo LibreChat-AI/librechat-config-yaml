@@ -1,6 +1,8 @@
 import json
 import requests
 
+# Fetch and alphabetize models from APIpie and output the results in apipie.txt
+
 def fetch_and_order_models():
     # API endpoint
     url = "https://apipie.ai/models"
