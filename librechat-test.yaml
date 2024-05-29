@@ -15,8 +15,7 @@ fileStrategy: "firebase"
 #     openNewTab: true
     
 registration:
-  socialLogins: ["discord"]
-  #socialLogins: ["discord", "facebook", "github", "google", "openid"]
+  socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
 # tts:
 #   elevenlabs:
