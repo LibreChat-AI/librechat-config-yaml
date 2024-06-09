@@ -442,7 +442,6 @@ endpoints:
       apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-      models:
         "default": [
             "openrouter/auto",
             "---FREE---",
