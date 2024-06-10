@@ -1,4 +1,4 @@
-version: 1.1.2
+version: 1.1.3
 
 cache: true
 
@@ -17,23 +17,23 @@ fileStrategy: "firebase"
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
-# tts:
-#   elevenlabs:
-#     apiKey: '${TTS_API_KEY}'
-#     model: 'eleven_multilingual_v2'
-#     voices: ['NFG5qt843uXKj4pFvR7C']
-
 tts:
-  localai:
-    url: "http://host.docker.internal:8080/tts"
-    apiKey: "EMPTY"
-    voices: [
-      "en-us-amy-low.onnx",
-      "en-us-danny-low.onnx",
-      "en-us-libritts-high.onnx",
-      "en-us-ryan-high.onnx",
-      ]
-    backend: "piper"
+  elevenlabs:
+    apiKey: '${TTS_API_KEY}'
+    model: 'eleven_multilingual_v2'
+    voices: ['NFG5qt843uXKj4pFvR7C', 'loqNyjaPXFyhIC71Jo8O']
+
+# tts:
+#   localai:
+#     url: "http://host.docker.internal:8080/tts"
+#     apiKey: "EMPTY"
+#     voices: [
+#       "en-us-amy-low.onnx",
+#       "en-us-danny-low.onnx",
+#       "en-us-libritts-high.onnx",
+#       "en-us-ryan-high.onnx",
+#       ]
+#     backend: "piper"
 
 stt:
   openai:
