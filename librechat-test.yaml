@@ -21,7 +21,7 @@ tts:
   elevenlabs:
     apiKey: '${TTS_API_KEY}'
     model: 'eleven_multilingual_v2'
-    voices: ['NFG5qt843uXKj4pFvR7C', 'loqNyjaPXFyhIC71Jo8O']
+    voices: ['Arnj2oksWhysQOG2HGDX']
 
 # tts:
 #   localai:
