@@ -658,10 +658,12 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default: [
-          "mistral-7b-instruct",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "sonar-medium-chat",
+          "llama-3-sonar-small-32k-chat",
+          "llama-3-sonar-small-32k-online",
+          "llama-3-sonar-large-32k-chat",
+          "llama-3-sonar-large-32k-online",
+          "llama-3-8b-instruct",
+          "llama-3-70b-instruct",
           "sonar-medium-online"
           ]
         fetch: false # fetching list of models is not supported
