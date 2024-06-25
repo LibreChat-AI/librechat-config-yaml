@@ -724,6 +724,7 @@ endpoints:
           "claude-3-haiku@anthropic",
           "claude-3-sonnet@anthropic",
           "claude-3-opus@anthropic",
+          "claude-3.5-sonnet@anthropic",
           "mistral-small@mistral-ai",
           "mistral-medium@mistral-ai",
           "mistral-large@mistral-ai",
@@ -748,6 +749,6 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "mistral-7b-instruct-v0.2@fireworks-ai"
+      titleModel: "claude-3-haiku@anthropic"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Unify.webp"
