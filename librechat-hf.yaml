@@ -77,6 +77,7 @@ endpoints:
           "Nous-Hermes-2-Mixtral-8x7B-SFT",
           "Nous-Hermes-Llama2-13b",
           "Nous-Hermes-llama-2-7b",
+          "Phi-3-mini-4k-instruct",
           "ReMM-SLERP-L2-13B",
           "RedPajama-INCITE-7B-Base",
           "RedPajama-INCITE-7B-Chat",
@@ -91,7 +92,6 @@ endpoints:
           "WizardLM-2-8x22B",
           "Yi-34B-Chat",
           "airoboros-70b",
-          "airoboros-l2-70b",
           "albert-base-chinese-cluecorpussmall",
           "albert-base-v1",
           "albert-base-v2",
@@ -125,9 +125,12 @@ endpoints:
           "claude-2",
           "claude-2.0",
           "claude-2.1",
+          "claude-3-5-sonnet-20240620-v1",
+          "claude-3-5-sonnet-20240620-v1:0",
           "claude-3-haiku",
           "claude-3-opus",
           "claude-3-sonnet",
+          "claude-3.5-sonnet",
           "claude-instant-1",
           "claude-instant-1.0",
           "claude-instant-1.1",
@@ -154,6 +157,7 @@ endpoints:
           "distilbert-base-uncased-distilled-squad",
           "dolphin-2.5-mixtral-8x7b",
           "dolphin-2.6-mixtral-8x7b",
+          "dolphin-mixtral-8x22b",
           "dolphin-mixtral-8x7b",
           "eagle-7b",
           "fimbulvetr-11b-v2",
@@ -188,7 +192,6 @@ endpoints:
           "gpt-4-vision-preview",
           "gpt-4o",
           "gpt-4o-2024-05-13",
-          "gpt-4o-test-shared",
           "hermes-2-pro-llama-3-8b",
           "j2-grande-instruct",
           "j2-jumbo-instruct",
@@ -196,7 +199,9 @@ endpoints:
           "j2-mid-v1",
           "j2-ultra",
           "j2-ultra-v1",
+          "jamba-instruct",
           "koelectra-small-v2-distilled-korquad-384",
+          "l3-euryale-70b",
           "large-latest",
           "legal-bert-base-uncased",
           "legal-bert-small-uncased",
@@ -218,7 +223,6 @@ endpoints:
           "llama3-70b-instruct-v1",
           "llama3-8b-instruct-v1",
           "llava-1.5-7b-hf",
-          "llava-13b",
           "llava-yi-34b",
           "lzlv-70b-fp16-hf",
           "lzlv_70b_fp16_hf",
@@ -244,6 +248,7 @@ endpoints:
           "mythalion-13b",
           "mythomax-l2-13b",
           "mythomist-7b",
+          "nemotron-4-340b-instruct",
           "neural-chat-7b",
           "noromaid-20b",
           "noromaid-mixtral-8x7b-instruct",
@@ -259,6 +264,7 @@ endpoints:
           "olympus-premier-v1",
           "openchat-3.5-1210",
           "openchat-7b",
+          "openchat-8b",
           "openchat_3.5",
           "openhermes-2-mistral-7b",
           "openhermes-2.5-mistral-7b",
@@ -266,8 +272,8 @@ endpoints:
           "palm-2-chat-bison-32k",
           "phi-2",
           "phi-3-medium-128k-instruct",
+          "phi-3-medium-4k-instruct",
           "phi-3-mini-128k-instruct",
-          "pplx-70b-chat",
           "pplx-70b-online",
           "pplx-7b-chat",
           "pplx-7b-online",
@@ -276,6 +282,7 @@ endpoints:
           "psyfighter-13b-2",
           "qwen-110b-chat",
           "qwen-14b-chat",
+          "qwen-2-72b-instruct",
           "qwen-32b-chat",
           "qwen-4b-chat",
           "qwen-72b-chat",
@@ -834,6 +841,49 @@ endpoints:
       summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
+
+    # Unify
+    - name: "Unify"
+      apiKey: "user_provided"
+      baseURL: "https://api.unify.ai/v0/"
+      models:
+        default: [
+          "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04",
+          "gpt-3.5-turbo@openai",
+          "gpt-4o@openai",
+          "gpt-4-turbo@openai",
+          "gpt-4@openai",
+          "claude-3-haiku@anthropic",
+          "claude-3-sonnet@anthropic",
+          "claude-3-opus@anthropic",
+          "claude-3.5-sonnet@anthropic",
+          "mistral-small@mistral-ai",
+          "mistral-medium@mistral-ai",
+          "mistral-large@mistral-ai",
+          "mixtral-8x22b-instruct-v0.1@fireworks-ai",
+          "mistral-7b-instruct-v0.2@replicate",
+          "mixtral-8x7b-instruct-v0.1@replicate",
+          "mistral-7b-instruct-v0.1@fireworks-ai",
+          "gemma-2b-it@together-ai",
+          "gemma-7b-it@fireworks-ai",
+          "llama-2-7b-chat@replicate",
+          "llama-2-13b-chat@fireworks-ai",
+          "llama-2-70b-chat@octoai",
+          "llama-3-8b-chat@fireworks-ai",
+          "llama-3-70b-chat@fireworks-ai",
+          "codellama-7b-instruct@octoai",
+          "codellama-13b-instruct@octoai",
+          "codellama-34b-instruct@octoai",
+          "deepseek-coder-33b-instruct@together-ai",
+          "pplx-7b-chat@perplexity-ai",
+          "pplx-70b-chat@perplexity-ai",
+          "yi-34b-chat@deepinfra",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "claude-3-haiku@anthropic"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Unify.webp"
 
 
 # REVERSE PROXY
