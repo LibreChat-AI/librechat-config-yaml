@@ -17,28 +17,29 @@ cache: true
 registration:
   socialLogins: ["discord", "facebook", "github", "google", "openid"]
 
-tts:
-  elevenlabs:
-    apiKey: '${TTS_API_KEY}'
-    model: 'eleven_multilingual_v2'
-    voices: ['Arnj2oksWhysQOG2HGDX']
-
-# tts:
-#   localai:
-#     url: "http://host.docker.internal:8080/tts"
-#     apiKey: "EMPTY"
-#     voices: [
-#       "en-us-amy-low.onnx",
-#       "en-us-danny-low.onnx",
-#       "en-us-libritts-high.onnx",
-#       "en-us-ryan-high.onnx",
-#       ]
-#     backend: "piper"
-
-stt:
-  openai:
-    url: 'http://host.docker.internal:8080/v1/audio/transcriptions'
-    model: 'whisper'
+speech:
+    tts:
+      elevenlabs:
+        apiKey: '${TTS_API_KEY}'
+        model: 'eleven_multilingual_v2'
+        voices: ['Arnj2oksWhysQOG2HGDX']
+    
+    # tts:
+    #   localai:
+    #     url: "http://host.docker.internal:8080/tts"
+    #     apiKey: "EMPTY"
+    #     voices: [
+    #       "en-us-amy-low.onnx",
+    #       "en-us-danny-low.onnx",
+    #       "en-us-libritts-high.onnx",
+    #       "en-us-ryan-high.onnx",
+    #       ]
+    #     backend: "piper"
+    
+    stt:
+      openai:
+        url: 'http://host.docker.internal:8080/v1/audio/transcriptions'
+        model: 'whisper'
 
 endpoints:
   custom:
