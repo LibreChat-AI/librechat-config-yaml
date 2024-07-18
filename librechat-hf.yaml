@@ -1210,6 +1210,8 @@ endpoints:
           "claude-2.1",
           "claude-instant-v1",
           "claude-instant-v1-100k",
+          "claude-3-opus",
+          "claude-3-sonnet",
           "claude-3.5-sonnet",
           "pplx-70b-online",
           "palm-2",
