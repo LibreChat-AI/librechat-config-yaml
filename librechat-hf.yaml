@@ -1,4 +1,4 @@
-version: 1.1.2
+version: 1.1.5
 
 cache: true
 fileStrategy: "firebase"
@@ -334,6 +334,17 @@ endpoints:
     #cohere
     - name: "cohere"
       apiKey: "user_provided"
+      baseURL: "https://api.cohere.ai/v1"
+      models:
+        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
+        fetch: false
+      modelDisplayLabel: "cohere"
+      titleModel: "command"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
+
+    #cohere free
+    - name: "cohere free"
+      apiKey: "${COHERE_API_KEY_FREE}"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
