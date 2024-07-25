@@ -363,7 +363,7 @@ endpoints:
         stream: True
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
       
-    # Fireworks.ai
+    # Fireworks.ai - models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
       apiKey: "user_provided"
       baseURL: "https://api.fireworks.ai/inference/v1"
@@ -372,21 +372,34 @@ endpoints:
           "accounts/fireworks/models/devashisht-test-v2",
           "accounts/fireworks/models/dt-fc-rc-v1",
           "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firefunction-v2",
           "accounts/fireworks/models/firellava-13b",
           "accounts/devashisht-72fdad/models/function-calling-v11",
           "accounts/fireworks/models/fw-function-call-34b-v0",
           "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
           "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
           "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/gemma2-9b-it",
+          "accounts/fireworks/models/llama-v3p1-405b-instruct",
+          "accounts/fireworks/models/llama-v3p1-70b-instruct",
+          "accounts/fireworks/models/llama-v3p1-8b-instruct",
+          "accounts/fireworks/models/llama-v3-70b-instruct",
+          "accounts/fireworks/models/llama-v3-70b-instruct-hf",
+          "accounts/fireworks/models/llama-v3-8b-hf",
+          "accounts/fireworks/models/llama-v3-8b-instruct",
+          "accounts/fireworks/models/llama-v3-8b-instruct-hf",
           "accounts/fireworks/models/llama-v2-13b-chat",
           "accounts/fireworks/models/llama-v2-13b-code-instruct",
           "accounts/fireworks/models/llama-v2-34b-code-instruct",
           "accounts/fireworks/models/llama-v2-70b-chat",
           "accounts/fireworks/models/llama-v2-70b-code-instruct",
           "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/deepseek-coder-v2-instruct",
+          "accounts/fireworks/models/deepseek-coder-v2-lite-instruct",
           "accounts/fireworks/models/llava-v15-13b-fireworks",
           "accounts/fireworks/models/mistral-7b-instruct-4k",
           "accounts/dev-e24710/models/mistral-spellbound-format",
+          "accounts/fireworks/models/mixtral-8x22b-instruct",
           "accounts/fireworks/models/mixtral-8x7b-instruct",
           "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
           "accounts/fireworks/models/new-mixtral-chat",
@@ -405,24 +418,29 @@ endpoints:
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
       
-    #groq
+    #groq - model list: https://console.groq.com/settings/limits
     - name: "groq"
       apiKey: "user_provided"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
-          "llama2-70b-4096",
+          "llama-3.1-405b-reasoning",
+          "llama-3.1-70b-versatile",
+          "llama-3.1-8b-instant",
+          "llama3-groq-70b-8192-tool-use-preview",
+          "llama3-groq-8b-8192-tool-use-preview",
           "llama3-70b-8192",
           "llama3-8b-8192",
           "mixtral-8x7b-32768",
           "gemma-7b-it",
+          "gemma2-9b-it"
           ]
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
       
-    # Mistral AI API
+    # Mistral AI API - models: https://docs.mistral.ai/getting-started/models/
     - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
@@ -431,7 +449,12 @@ endpoints:
           "mistral-tiny",
           "mistral-small",
           "mistral-medium",
-          "mistral-large-latest"
+          "mistral-large-latest",
+          "open-mistral-nemo",
+          "open-mistral-7b",
+          "open-mixtral-8x7b",
+          "open-mixtral-8x22b",
+          "open-codestral-mamba"
           ]
         fetch: false
       titleConvo: true
@@ -443,7 +466,7 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
-    # OpenRouter.ai
+    # OpenRouter.ai - models: https://openrouter.ai/models
     - name: "OpenRouter"
       apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
@@ -451,6 +474,8 @@ endpoints:
         "default": [
             "openrouter/auto",
             "---FREE---",
+            "meta-llama/llama-3.1-8b-instruct:free"
+            "google/gemma-2-9b-it:free"
             "google/gemma-7b-it:free",
             "gryphe/mythomist-7b:free",
             "huggingfaceh4/zephyr-7b-beta:free",
@@ -511,11 +536,16 @@ endpoints:
             "google/gemini-pro-1.5",
             "google/gemini-pro-vision",
             "google/gemma-7b-it",
+            "google/gemma-2-9b-it",
+            "google/gemma-2-27b-it",
             "google/palm-2-chat-bison",
             "google/palm-2-chat-bison-32k",
             "google/palm-2-codechat-bison",
             "google/palm-2-codechat-bison-32k",
             "---META-LLAMA---",
+            "meta-llama/llama-3.1-405b-instruct",
+            "meta-llama/llama-3.1-70b-instruct",
+            "meta-llama/llama-3.1-8b-instruct",
             "meta-llama/codellama-34b-instruct",
             "meta-llama/codellama-70b-instruct",
             "meta-llama/llama-2-13b-chat",
@@ -532,6 +562,8 @@ endpoints:
             "microsoft/wizardlm-2-7b",
             "microsoft/wizardlm-2-8x22b",
             "---MISTRALAI---",
+            "mistralai/codestral-mamba",
+            "mistralai/mistral-nemo",
             "mistralai/mistral-7b-instruct",
             "mistralai/mistral-7b-instruct-v0.1",
             "mistralai/mistral-7b-instruct-v0.2",
@@ -578,6 +610,8 @@ endpoints:
             "openai/gpt-4-vision-preview",
             "openai/gpt-4o",
             "openai/gpt-4o-2024-05-13",
+            "openai/gpt-4o-mini",
+            "openai/gpt-4o-mini-2024-07-18"
             "---PERPLEXITY---",
             "perplexity/llama-3-sonar-large-32k-chat",
             "perplexity/llama-3-sonar-large-32k-online",
