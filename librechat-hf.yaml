@@ -440,7 +440,7 @@ endpoints:
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
       
-    # Mistral AI API
+    # Mistral AI API - models: https://docs.mistral.ai/getting-started/models/
     - name: "Mistral"
       apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
@@ -449,7 +449,12 @@ endpoints:
           "mistral-tiny",
           "mistral-small",
           "mistral-medium",
-          "mistral-large-latest"
+          "mistral-large-latest",
+          "open-mistral-nemo",
+          "open-mistral-7b",
+          "open-mixtral-8x7b",
+          "open-mixtral-8x22b",
+          "open-codestral-mamba"
           ]
         fetch: false
       titleConvo: true
