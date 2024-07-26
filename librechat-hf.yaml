@@ -474,8 +474,8 @@ endpoints:
         "default": [
             "openrouter/auto",
             "---FREE---",
-            "meta-llama/llama-3.1-8b-instruct:free"
-            "google/gemma-2-9b-it:free"
+            "meta-llama/llama-3.1-8b-instruct:free",
+            "google/gemma-2-9b-it:free",
             "google/gemma-7b-it:free",
             "gryphe/mythomist-7b:free",
             "huggingfaceh4/zephyr-7b-beta:free",
@@ -611,7 +611,7 @@ endpoints:
             "openai/gpt-4o",
             "openai/gpt-4o-2024-05-13",
             "openai/gpt-4o-mini",
-            "openai/gpt-4o-mini-2024-07-18"
+            "openai/gpt-4o-mini-2024-07-18",
             "---PERPLEXITY---",
             "perplexity/llama-3-sonar-large-32k-chat",
             "perplexity/llama-3-sonar-large-32k-online",
