@@ -46,7 +46,7 @@ Basic configuration where model fetching is enabled on all endpoints that suppor
 Configuration used for the LibreChat Demo:
 <p align="left">
   <a href="https://demo.librechat.cfd/">
-      <img src="https://github.com/fuegovic/lc-config-yaml/assets/32828263/d3a1e88f-fce0-4a8e-8c1d-5901a3e1c2dd">
+      <img src="https://github.com/LibreChat-AI/librechat-config-yaml/assets/32828263/d3a1e88f-fce0-4a8e-8c1d-5901a3e1c2dd">
   <img href="https://demo.librechat.cfd/">
   </a>
 </p>
@@ -57,7 +57,7 @@ Configuration used for the LibreChat Demo:
 - Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-hf.yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-hf.yaml
   ```
 
 ### `librechat-aio.yaml`
@@ -69,7 +69,7 @@ Same configuration used for the LibreChat Demo, but with firebase disable:
 - Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-aio.yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-aio.yaml
   ```
 
 ### `librechat-rw.yaml`
@@ -86,7 +86,7 @@ Configuration used for the Railway one-click install template:
 - Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-rw.yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-rw.yaml
   ANYSCALE_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
@@ -109,7 +109,7 @@ Configuration used for the Railway one-click install template:
 - Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/librechat-f.yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-f.yaml
   ANYSCALE_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
