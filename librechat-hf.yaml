@@ -593,14 +593,11 @@ endpoints:
           "openai/gpt-4o-mini",
           "openai/gpt-4o-mini-2024-07-18",
           "---PERPLEXITY---",
-          "perplexity/llama-3-sonar-large-32k-chat",
-          "perplexity/llama-3-sonar-large-32k-online",
-          "perplexity/llama-3-sonar-small-32k-chat",
-          "perplexity/llama-3-sonar-small-32k-online",
           "perplexity/llama-3.1-sonar-large-128k-chat",
           "perplexity/llama-3.1-sonar-large-128k-online",
           "perplexity/llama-3.1-sonar-small-128k-chat",
           "perplexity/llama-3.1-sonar-small-128k-online",
+          "perplexity/llama-3.1-sonar-huge-128k-online",
           "---QWEN---",
           "qwen/qwen-110b-chat",
           "qwen/qwen-14b-chat",
@@ -669,13 +666,7 @@ endpoints:
           "llama-3.1-sonar-small-128k-online",
           "llama-3.1-sonar-large-128k-chat",
           "llama-3.1-sonar-large-128k-online",
-          "llama-3-sonar-small-32k-chat", # will be deprecated on August 12 2024
-          "llama-3-sonar-small-32k-online", # will be deprecated on August 12 2024
-          "llama-3-sonar-large-32k-chat", # will be deprecated on August 12 2024
-          "llama-3-sonar-large-32k-online", # will be deprecated on August 12 2024
-          "llama-3-8b-instruct",
-          "llama-3-70b-instruct",
-          "mixtral-8x7b-instruct",
+          "llama-3.1-sonar-huge-128k-online",
           "llama-3.1-8b-instruct",
           "llama-3.1-70b-instruct"
           ]
