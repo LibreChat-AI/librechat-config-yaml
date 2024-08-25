@@ -1,4 +1,4 @@
-version: 1.1.2
+version: 1.1.6
 
 cache: true
 fileStrategy: "firebase"
@@ -9,24 +9,15 @@ registration:
 endpoints:
   custom:
     # Anyscale
+    # # Model list: https://console.anyscale.com/v2/playground
     - name: "Anyscale"
       apiKey: "${ANYSCALE_API_KEY}"
       baseURL: "https://api.endpoints.anyscale.com/v1"
       models:
         default: [
           "meta-llama/Llama-2-7b-chat-hf",
-          "meta-llama/Llama-2-13b-chat-hf",
-          "meta-llama/Llama-2-70b-chat-hf",
-          "codellama/CodeLlama-34b-Instruct-hf",
-          "codellama/CodeLlama-70b-Instruct-hf",
-          "mistralai/Mistral-7B-Instruct-v0.1",
-          "mistralai/Mixtral-8x7B-Instruct-v0.1",
-          "mlabonne/NeuralHermes-2.5-Mistral-7B",
-          "Open-Orca/Mistral-7B-OpenOrca",
-          "HuggingFaceH4/zephyr-7b-beta",
-          "google/gemma-7b-it"
           ]
-        fetch: false
+        fetch: true
       titleConvo: true
       titleModel: "meta-llama/Llama-2-7b-chat-hf"
       summarize: false
@@ -35,322 +26,100 @@ endpoints:
       modelDisplayLabel: "Anyscale"
 
     # APIpie
+    # https://apipie.ai/dashboard/
+    # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
     - name: "APIpie"
       apiKey: "${APIPIE_API_KEY}"
       baseURL: "https://apipie.ai/v1/"
       models:
         default: [
-          "BioM-ELECTRA-Large-SQuAD2",
-          "Bio_ClinicalBERT",
-          "Bio_Discharge_Summary_BERT",
-          "BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext",
-          "GPT-JT-Moderation-6B",
-          "German-MedBERT",
-          "LLaMA-2-7B-32K",
-          "Llama-2-13b-chat-hf",
-          "Llama-2-13b-hf",
-          "Llama-2-70b-chat-hf",
-          "Llama-2-70b-hf",
-          "Llama-2-7B-32K-Instruct",
-          "Llama-2-7b-chat-hf",
-          "Llama-2-7b-hf",
-          "Meta-Llama-3-70B-Instruct",
-          "Meta-Llama-3-8B-Instruct",
-          "Mistral-7B-Instruct-v0.1",
-          "Mistral-7B-Instruct-v0.2",
-          "Mistral-7B-OpenOrca",
-          "Mixtral-8x22B-Instruct-v0.1",
-          "Mixtral-8x22B-v0.1",
-          "Mixtral-8x7B-Instruct-v0.1",
-          "Mixtral-8x7B-v0.1",
-          "MythoMax-L2-13b",
-          "NexusRaven-V2-13B",
-          "Nous-Hermes-2-Mixtral-8x7B-DPO",
-          "Nous-Hermes-2-Mixtral-8x7B-SFT",
-          "Nous-Hermes-Llama2-13b",
-          "Nous-Hermes-llama-2-7b",
-          "ReMM-SLERP-L2-13B",
-          "RedPajama-INCITE-7B-Base",
-          "RedPajama-INCITE-7B-Chat",
-          "RedPajama-INCITE-7B-Instruct",
-          "RedPajama-INCITE-Base-3B-v1",
-          "RedPajama-INCITE-Chat-3B-v1",
-          "RedPajama-INCITE-Instruct-3B-v1",
-          "SecBERT",
-          "TinyLlama-1.1B-Chat-v1.0",
-          "Toppy-M-7B",
-          "WizardLM-2-7B",
-          "WizardLM-2-8x22B",
-          "Yi-34B-Chat",
-          "airoboros-70b",
-          "airoboros-l2-70b",
-          "albert-base-chinese-cluecorpussmall",
-          "albert-base-v1",
-          "albert-base-v2",
-          "alpaca-7b",
-          "babbage-002",
-          "bert-base",
-          "bert-base-arabertv02",
-          "bert-base-cased",
-          "bert-base-chinese",
-          "bert-base-german-cased",
-          "bert-base-multilingual-cased",
-          "bert-base-multilingual-uncased",
-          "bert-base-portuguese-cased",
-          "bert-base-swedish-cased",
-          "bert-base-uncased",
-          "bert-base-uncased-squad-v1",
-          "bert-large-cased",
-          "bert-large-portuguese-cased",
-          "bert-large-uncased",
-          "bert-large-uncased-whole-word-masking-finetuned-squad",
-          "bert-large-uncased-whole-word-masking-squad2",
-          "biobert-base-cased-v1.2",
-          "chat-bison",
-          "chinese-bert-wwm-ext",
-          "chinese-roberta-wwm-ext",
-          "chronos-hermes-13b",
-          "chronos-hermes-13b-v2",
-          "cinematika-7b",
-          "claude-1",
-          "claude-1.2",
-          "claude-2",
-          "claude-2.0",
-          "claude-2.1",
+          "claude-3-5-sonnet",
           "claude-3-haiku",
           "claude-3-opus",
           "claude-3-sonnet",
-          "claude-instant-1",
-          "claude-instant-1.0",
-          "claude-instant-1.1",
-          "claude-instant-1.2",
+          "claude-3.5-sonnet",
           "command",
           "command-light",
-          "command-light-nightly",
-          "command-light-text-v14",
-          "command-nightly",
           "command-r",
           "command-r-plus",
-          "command-r-plus-v1",
-          "command-r-v1",
-          "command-text-v14",
-          "davinci-002",
-          "dbrx-instruct",
-          "deberta-base",
-          "deberta-v2-xlarge",
-          "deberta-v3-base",
           "deepseek-chat",
-          "distilbert-base-cased-distilled-squad",
-          "distilbert-base-multilingual-cased",
-          "distilbert-base-uncased",
-          "distilbert-base-uncased-distilled-squad",
-          "dolphin-2.5-mixtral-8x7b",
-          "dolphin-2.6-mixtral-8x7b",
-          "dolphin-mixtral-8x7b",
-          "eagle-7b",
-          "fimbulvetr-11b-v2",
-          "firellava-13b",
+          "deepseek-coder",
+          "gemini-1.5-flash",
+          "gemini-1.5-pro",
           "gemini-flash-1.5",
           "gemini-pro",
           "gemini-pro-1.5",
           "gemini-pro-vision",
           "gemma-1.1-7b-it",
+          "gemma-2-27b-it",
+          "gemma-2-9b-it",
           "gemma-7b-it",
-          "goliath-120b",
           "gpt-3.5-turbo",
-          "gpt-3.5-turbo-0125",
-          "gpt-3.5-turbo-0301",
-          "gpt-3.5-turbo-0613",
-          "gpt-3.5-turbo-1106",
-          "gpt-3.5-turbo-16k",
-          "gpt-3.5-turbo-16k-0613",
-          "gpt-3.5-turbo-instruct",
-          "gpt-3.5-turbo-instruct-0914",
           "gpt-4",
-          "gpt-4-0125-preview",
-          "gpt-4-0314",
-          "gpt-4-0613",
-          "gpt-4-1106-preview",
-          "gpt-4-1106-vision-preview",
-          "gpt-4-32k",
-          "gpt-4-32k-0314",
           "gpt-4-turbo",
-          "gpt-4-turbo-2024-04-09",
-          "gpt-4-turbo-preview",
-          "gpt-4-vision-preview",
           "gpt-4o",
-          "gpt-4o-2024-05-13",
-          "gpt-4o-test-shared",
-          "hermes-2-pro-llama-3-8b",
-          "j2-grande-instruct",
-          "j2-jumbo-instruct",
-          "j2-mid",
-          "j2-mid-v1",
-          "j2-ultra",
-          "j2-ultra-v1",
-          "koelectra-small-v2-distilled-korquad-384",
-          "large-latest",
-          "legal-bert-base-uncased",
-          "legal-bert-small-uncased",
-          "llama-2-13b-chat",
-          "llama-2-70b-chat",
-          "llama-3-70b",
-          "llama-3-70b-instruct",
-          "llama-3-8b",
-          "llama-3-8b-instruct",
-          "llama-3-lumimaid-70b",
-          "llama-3-lumimaid-8b",
-          "llama-3-sonar-large-32k-chat",
-          "llama-3-sonar-large-32k-online",
-          "llama-3-sonar-small-32k-chat",
-          "llama-3-sonar-small-32k-online",
-          "llama-guard-2-8b",
-          "llama2-13b-chat-v1",
-          "llama2-70b-chat-v1",
-          "llama3-70b-instruct-v1",
-          "llama3-8b-instruct-v1",
-          "llava-1.5-7b-hf",
-          "llava-13b",
-          "llava-yi-34b",
-          "lzlv-70b-fp16-hf",
-          "lzlv_70b_fp16_hf",
-          "medium",
-          "midnight-rose-70b",
-          "minilm-uncased-squad2",
-          "mistral-7b-instruct",
-          "mistral-7b-instruct-v0",
-          "mistral-7b-instruct-v0.1",
-          "mistral-7b-instruct-v0.2",
-          "mistral-7b-instruct-v0.3",
+          "gpt-4o-mini",
+          "llama-3.1-405b",
+          "llama-3.1-405b-instruct",
+          "llama-3.1-70b-instruct",
+          "llama-3.1-8b-instruct",
+          "llama-3.1-sonar-huge-128k-online",
+          "llama-3.1-sonar-large-128k-chat",
+          "llama-3.1-sonar-large-128k-online",
+          "llama-3.1-sonar-small-128k-chat",
+          "llama-3.1-sonar-small-128k-online",
           "mistral-large",
           "mistral-medium",
+          "mistral-nemo",
           "mistral-small",
-          "mistral-small-2402-v1",
           "mistral-tiny",
-          "mixtral-8x22b",
-          "mixtral-8x22b-instruct",
-          "mixtral-8x22b-instruct-preview",
-          "mixtral-8x7b",
-          "mixtral-8x7b-instruct",
-          "mixtral-8x7b-instruct-v0",
-          "mythalion-13b",
-          "mythomax-l2-13b",
-          "mythomist-7b",
-          "neural-chat-7b",
-          "noromaid-20b",
-          "noromaid-mixtral-8x7b-instruct",
-          "nous-capybara-34b",
-          "nous-capybara-7b",
-          "nous-hermes-2-mistral-7b-dpo",
-          "nous-hermes-2-mixtral-8x7b-dpo",
-          "nous-hermes-2-mixtral-8x7b-sft",
-          "nous-hermes-2-vision-7b",
-          "nous-hermes-llama2-13b",
-          "nous-hermes-yi-34b",
-          "olmo-7b-instruct",
-          "olympus-premier-v1",
-          "openchat-3.5-1210",
-          "openchat-7b",
-          "openchat_3.5",
-          "openhermes-2-mistral-7b",
-          "openhermes-2.5-mistral-7b",
-          "palm-2-chat-bison",
-          "palm-2-chat-bison-32k",
-          "phi-2",
-          "phi-3-medium-128k-instruct",
-          "phi-3-mini-128k-instruct",
-          "pplx-70b-chat",
-          "pplx-70b-online",
-          "pplx-7b-chat",
-          "pplx-7b-online",
-          "prot_bert",
-          "prot_bert_bfd",
-          "psyfighter-13b-2",
-          "qwen-110b-chat",
-          "qwen-14b-chat",
-          "qwen-32b-chat",
-          "qwen-4b-chat",
-          "qwen-72b-chat",
-          "qwen-7b-chat",
-          "remm-slerp-l2-13b",
-          "roberta-base-squad2",
-          "roberta-base-squad2-covid",
-          "roberta-large-squad2",
-          "small",
-          "snowflake-arctic-instruct",
-          "soliloquy-l3",
-          "sonar-medium-chat",
-          "sonar-medium-online",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "splade-cocondenser-ensembledistil",
-          "stripedhyena-hessian-7b",
-          "stripedhyena-nous-7b",
-          "synthia-70b",
-          "text-babbage-002",
-          "text-bison",
-          "text-davinci-002",
-          "tiny",
-          "tinyroberta-squad2",
-          "titan-text-express-v1",
-          "titan-text-lite-v1",
-          "titan-text-premier-v1",
-          "titan-tg1-large",
-          "toppy-m-7b",
-          "vicuna-13b-v1.5",
-          "vicuna-7b-v1.5",
-          "weaver",
-          "wizardlm-2-7b",
-          "wizardlm-2-8x22b",
-          "xwin-lm-70b",
-          "yi-34b",
-          "yi-34b-chat",
-          "yi-6b",
-          "zephyr-7b-beta",
-          "zephyr-orpo-141b-A35b-v0.1"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "claude-3-haiku"
-      summarize: false
-      summaryModel: "claude-3-haiku"
-      dropParams: ["stream"]
-      modelDisplayLabel: "APIpie"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/APIpie.png"
- 
-    #cohere
+      titleModel: "gpt-3.5-turbo"
+
+    # cohere
+    # Model list: https://dashboard.cohere.com/playground/chat
     - name: "cohere"
       apiKey: "${COHERE_API_KEY}"
       baseURL: "https://api.cohere.ai/v1"
       models:
-        default: ["command-r","command-r-plus","command-light","command-light-nightly","command","command-nightly"]
+        default: [
+          "c4ai-aya-23-35b",
+          "c4ai-aya-23-8b",
+          "command",
+          "command-light",
+          "command-light-nightly",
+          "command-nightly",
+          "command-r",
+          "command-r-plus",
+          ]
         fetch: false
       modelDisplayLabel: "cohere"
       titleModel: "command"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty", "temperature", "top_p"]
 
-    # DEEPNIGHT
-    - name: "DEEPNIGHT"
-      apiKey: "sk-free1234"
-      baseURL: "https://aiforcause.deepnight.tech/openai/"
+    # deepseek
+    # https://platform.deepseek.com/api_keys
+    # Model list: https://platform.deepseek.com/api-docs/pricing
+    - name: "deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com"
       models:
         default: [
-          "gpt-35-turbo",
-          "gpt-35-turbo-16k",
-          "gpt-4-turbo"
+          "deepseek-chat",
+          "deepseek-coder"
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-35-turbo"
+      titleModel: "deepseek-chat"
       summarize: false
-      summaryModel: "gpt-35-turbo"
+      summaryModel: "deepseek-chat"
       forcePrompt: false
-      modelDisplayLabel: "DEEPNIGHT"
-      addParams:
-        stream: True
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
+      modelDisplayLabel: "DeepSeek"
 
     # Fireworks.ai
+    # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
       apiKey: "${FIREWORKS_API_KEY}"
       baseURL: "https://api.fireworks.ai/inference/v1"
@@ -359,21 +128,34 @@ endpoints:
           "accounts/fireworks/models/devashisht-test-v2",
           "accounts/fireworks/models/dt-fc-rc-v1",
           "accounts/fireworks/models/firefunction-v1",
+          "accounts/fireworks/models/firefunction-v2",
           "accounts/fireworks/models/firellava-13b",
           "accounts/devashisht-72fdad/models/function-calling-v11",
           "accounts/fireworks/models/fw-function-call-34b-v0",
           "accounts/stability/models/japanese-stablelm-instruct-beta-70b",
           "accounts/stability/models/japanese-stablelm-instruct-gamma-7b",
           "accounts/fireworks/models/japanese-stable-vlm",
+          "accounts/fireworks/models/gemma2-9b-it",
+          "accounts/fireworks/models/llama-v3p1-405b-instruct",
+          "accounts/fireworks/models/llama-v3p1-70b-instruct",
+          "accounts/fireworks/models/llama-v3p1-8b-instruct",
+          "accounts/fireworks/models/llama-v3-70b-instruct",
+          "accounts/fireworks/models/llama-v3-70b-instruct-hf",
+          "accounts/fireworks/models/llama-v3-8b-hf",
+          "accounts/fireworks/models/llama-v3-8b-instruct",
+          "accounts/fireworks/models/llama-v3-8b-instruct-hf",
           "accounts/fireworks/models/llama-v2-13b-chat",
           "accounts/fireworks/models/llama-v2-13b-code-instruct",
           "accounts/fireworks/models/llama-v2-34b-code-instruct",
           "accounts/fireworks/models/llama-v2-70b-chat",
           "accounts/fireworks/models/llama-v2-70b-code-instruct",
           "accounts/fireworks/models/llama-v2-7b-chat",
+          "accounts/fireworks/models/deepseek-coder-v2-instruct",
+          "accounts/fireworks/models/deepseek-coder-v2-lite-instruct",
           "accounts/fireworks/models/llava-v15-13b-fireworks",
           "accounts/fireworks/models/mistral-7b-instruct-4k",
           "accounts/dev-e24710/models/mistral-spellbound-format",
+          "accounts/fireworks/models/mixtral-8x22b-instruct",
           "accounts/fireworks/models/mixtral-8x7b-instruct",
           "accounts/fireworks/models/mixtral-8x7b-instruct-hf",
           "accounts/fireworks/models/new-mixtral-chat",
@@ -391,25 +173,56 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
-     
+  
     # groq
+    # Model list: https://console.groq.com/settings/limits
     - name: "groq"
       apiKey: "${GROQ_API_KEY}"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default: [
-          "llama2-70b-4096",
+          "llama-3.1-405b-reasoning",
+          "llama-3.1-70b-versatile",
+          "llama-3.1-8b-instant",
+          "llama3-groq-70b-8192-tool-use-preview",
+          "llama3-groq-8b-8192-tool-use-preview",
           "llama3-70b-8192",
           "llama3-8b-8192",
           "mixtral-8x7b-32768",
           "gemma-7b-it",
+          "gemma2-9b-it"
           ]
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
       modelDisplayLabel: "groq"
-      
+
+    # HuggingFace
+    # https://huggingface.co/settings/tokens
+    - name: 'HuggingFace'
+      apiKey: '${HUGGINGFACE_TOKEN}'
+      baseURL: 'https://api-inference.huggingface.co/v1'
+      models:
+        default: [
+          "codellama/CodeLlama-34b-Instruct-hf",
+          "google/gemma-1.1-2b-it",
+          "google/gemma-1.1-7b-it",
+          "HuggingFaceH4/starchat2-15b-v0.1",
+          "HuggingFaceH4/zephyr-7b-beta",
+          "meta-llama/Meta-Llama-3-8B-Instruct",
+          "microsoft/Phi-3-mini-4k-instruct",
+          "mistralai/Mistral-7B-Instruct-v0.1",
+          "mistralai/Mistral-7B-Instruct-v0.2",
+          "mistralai/Mixtral-8x7B-Instruct-v0.1",
+          "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO",
+          ]
+        fetch: true
+      titleConvo: true
+      titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
+      dropParams: ["top_p"]
+
     # Mistral AI API
+    # Model list: https://docs.mistral.ai/getting-started/models/
     - name: "Mistral"
       apiKey: "${MISTRAL_API_KEY}"
       baseURL: "https://api.mistral.ai/v1"
@@ -431,189 +244,229 @@ endpoints:
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     # OpenRouter.ai
+    # Model list: https://openrouter.ai/models
+    # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
     - name: "OpenRouter"
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-        "default": [
-            "openrouter/auto",
-            "---FREE---",
-            "google/gemma-7b-it:free",
-            "gryphe/mythomist-7b:free",
-            "huggingfaceh4/zephyr-7b-beta:free",
-            "meta-llama/llama-3-8b-instruct:free",
-            "microsoft/phi-3-medium-128k-instruct:free",
-            "microsoft/phi-3-mini-128k-instruct:free",
-            "mistralai/mistral-7b-instruct:free",
-            "nousresearch/nous-capybara-7b:free",
-            "openchat/openchat-7b:free",
-            "openrouter/cinematika-7b:free",
-            "undi95/toppy-m-7b:free",
-            "---NITRO---",
-            "google/gemma-7b-it:nitro",
-            "gryphe/mythomax-l2-13b:nitro",
-            "meta-llama/llama-2-70b-chat:nitro",
-            "meta-llama/llama-3-70b-instruct:nitro",
-            "meta-llama/llama-3-8b-instruct:nitro",
-            "mistralai/mistral-7b-instruct:nitro",
-            "mistralai/mixtral-8x7b-instruct:nitro",
-            "undi95/toppy-m-7b:nitro",
-            "---BETA---",
-            "anthropic/claude-2.0:beta",
-            "anthropic/claude-2.1:beta",
-            "anthropic/claude-2:beta",
-            "anthropic/claude-3-haiku:beta",
-            "anthropic/claude-3-opus:beta",
-            "anthropic/claude-3-sonnet:beta",
-            "anthropic/claude-instant-1:beta",
-            "---EXTENDED---",
-            "gryphe/mythomax-l2-13b:extended",
-            "meta-llama/llama-3-8b-instruct:extended",
-            "neversleep/llama-3-lumimaid-8b:extended",
-            "undi95/remm-slerp-l2-13b:extended",
-            "---01-AI---",
-            "01-ai/yi-34b",
-            "01-ai/yi-34b-chat",
-            "01-ai/yi-6b",
-            "---ANTHROPIC---",
-            "anthropic/claude-1",
-            "anthropic/claude-1.2",
-            "anthropic/claude-2",
-            "anthropic/claude-2.0",
-            "anthropic/claude-2.1",
-            "anthropic/claude-3-haiku",
-            "anthropic/claude-3-opus",
-            "anthropic/claude-3-sonnet",
-            "anthropic/claude-instant-1",
-            "anthropic/claude-instant-1.0",
-            "anthropic/claude-instant-1.1",
-            "---COHERE---",
-            "cohere/command",
-            "cohere/command-r",
-            "cohere/command-r-plus",
-            "---GOOGLE---",
-            "google/gemini-flash-1.5",
-            "google/gemini-pro",
-            "google/gemini-pro-1.5",
-            "google/gemini-pro-vision",
-            "google/gemma-7b-it",
-            "google/palm-2-chat-bison",
-            "google/palm-2-chat-bison-32k",
-            "google/palm-2-codechat-bison",
-            "google/palm-2-codechat-bison-32k",
-            "---META-LLAMA---",
-            "meta-llama/codellama-34b-instruct",
-            "meta-llama/llama-2-13b-chat",
-            "meta-llama/llama-2-70b-chat",
-            "meta-llama/llama-3-70b",
-            "meta-llama/llama-3-70b-instruct",
-            "meta-llama/llama-3-8b",
-            "meta-llama/llama-3-8b-instruct",
-            "meta-llama/llama-guard-2-8b",
-            "---MICROSOFT---",
-            "microsoft/phi-3-medium-128k-instruct",
-            "microsoft/phi-3-mini-128k-instruct",
-            "microsoft/wizardlm-2-7b",
-            "microsoft/wizardlm-2-8x22b",
-            "---MISTRALAI---",
-            "mistralai/mistral-7b-instruct",
-            "mistralai/mistral-7b-instruct-v0.1",
-            "mistralai/mistral-7b-instruct-v0.2",
-            "mistralai/mistral-7b-instruct-v0.3",
-            "mistralai/mistral-large",
-            "mistralai/mistral-medium",
-            "mistralai/mistral-small",
-            "mistralai/mistral-tiny",
-            "mistralai/mixtral-8x22b",
-            "mistralai/mixtral-8x22b-instruct",
-            "mistralai/mixtral-8x7b",
-            "mistralai/mixtral-8x7b-instruct",
-            "---NEVERSLEEP---",
-            "neversleep/llama-3-lumimaid-70b",
-            "neversleep/llama-3-lumimaid-8b",
-            "neversleep/noromaid-20b",
-            "neversleep/noromaid-mixtral-8x7b-instruct",
-            "---NOUSRESEARCH---",
-            "nousresearch/hermes-2-pro-llama-3-8b",
-            "nousresearch/nous-capybara-34b",
-            "nousresearch/nous-capybara-7b",
-            "nousresearch/nous-hermes-2-mistral-7b-dpo",
-            "nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
-            "nousresearch/nous-hermes-2-mixtral-8x7b-sft",
-            "nousresearch/nous-hermes-2-vision-7b",
-            "nousresearch/nous-hermes-llama2-13b",
-            "nousresearch/nous-hermes-yi-34b",
-            "---OPENAI---",
-            "openai/gpt-3.5-turbo",
-            "openai/gpt-3.5-turbo-0125",
-            "openai/gpt-3.5-turbo-0301",
-            "openai/gpt-3.5-turbo-0613",
-            "openai/gpt-3.5-turbo-1106",
-            "openai/gpt-3.5-turbo-16k",
-            "openai/gpt-3.5-turbo-instruct",
-            "openai/gpt-4",
-            "openai/gpt-4-0314",
-            "openai/gpt-4-1106-preview",
-            "openai/gpt-4-32k",
-            "openai/gpt-4-32k-0314",
-            "openai/gpt-4-turbo",
-            "openai/gpt-4-turbo-preview",
-            "openai/gpt-4-vision-preview",
-            "openai/gpt-4o",
-            "openai/gpt-4o-2024-05-13",
-            "---PERPLEXITY---",
-            "perplexity/llama-3-sonar-large-32k-chat",
-            "perplexity/llama-3-sonar-large-32k-online",
-            "perplexity/llama-3-sonar-small-32k-chat",
-            "perplexity/llama-3-sonar-small-32k-online",
-            "---QWEN---",
-            "qwen/qwen-110b-chat",
-            "qwen/qwen-14b-chat",
-            "qwen/qwen-32b-chat",
-            "qwen/qwen-4b-chat",
-            "qwen/qwen-72b-chat",
-            "qwen/qwen-7b-chat",
-            "---OTHERS---",
-            "allenai/olmo-7b-instruct",
-            "alpindale/goliath-120b",
-            "austism/chronos-hermes-13b",
-            "codellama/codellama-70b-instruct",
-            "cognitivecomputations/dolphin-mixtral-8x7b",
-            "databricks/dbrx-instruct",
-            "deepseek/deepseek-chat",
-            "deepseek/deepseek-coder",
-            "fireworks/firellava-13b",
-            "gryphe/mythomax-l2-13b",
-            "gryphe/mythomist-7b",
-            "huggingfaceh4/zephyr-7b-beta",
-            "intel/neural-chat-7b",
-            "jebcarter/psyfighter-13b",
-            "jondurbin/airoboros-l2-70b",
-            "jondurbin/bagel-34b",
-            "koboldai/psyfighter-13b-2",
-            "liuhaotian/llava-13b",
-            "liuhaotian/llava-yi-34b",
-            "lizpreciatior/lzlv-70b-fp16-hf",
-            "lynn/soliloquy-l3",
-            "mancer/weaver",
-            "open-orca/mistral-7b-openorca",
-            "openchat/openchat-7b",
-            "openrouter/cinematika-7b",
-            "phind/phind-codellama-34b",
-            "pygmalionai/mythalion-13b",
-            "recursal/eagle-7b",
-            "recursal/rwkv-5-3b-ai-town",
-            "rwkv/rwkv-5-world-3b",
-            "sao10k/fimbulvetr-11b-v2",
-            "snowflake/snowflake-arctic-instruct",
-            "sophosympatheia/midnight-rose-70b",
-            "teknium/openhermes-2-mistral-7b",
-            "teknium/openhermes-2.5-mistral-7b",
-            "togethercomputer/stripedhyena-hessian-7b",
-            "togethercomputer/stripedhyena-nous-7b",
-            "undi95/remm-slerp-l2-13b",
-            "undi95/toppy-m-7b",
-            "xwin-lm/xwin-lm-70b"
+        default: [
+          "openrouter/auto",
+          "---FREE---",
+          "google/gemma-2-9b-it:free",
+          "google/gemma-7b-it:free",
+          "gryphe/mythomist-7b:free",
+          "huggingfaceh4/zephyr-7b-beta:free",
+          "meta-llama/llama-3-8b-instruct:free",
+          "meta-llama/llama-3.1-8b-instruct:free",
+          "microsoft/phi-3-medium-128k-instruct:free",
+          "microsoft/phi-3-mini-128k-instruct:free",
+          "mistralai/mistral-7b-instruct:free",
+          "nousresearch/nous-capybara-7b:free",
+          "openchat/openchat-7b:free",
+          "qwen/qwen-2-7b-instruct:free",
+          "undi95/toppy-m-7b:free",
+          "---NITRO---",
+          "google/gemma-7b-it:nitro",
+          "gryphe/mythomax-l2-13b:nitro",
+          "meta-llama/llama-3-70b-instruct:nitro",
+          "meta-llama/llama-3-8b-instruct:nitro",
+          "mistralai/mistral-7b-instruct:nitro",
+          "mistralai/mixtral-8x7b-instruct:nitro",
+          "undi95/toppy-m-7b:nitro",
+          "---BETA---",
+          "anthropic/claude-2.0:beta",
+          "anthropic/claude-2.1:beta",
+          "anthropic/claude-2:beta",
+          "anthropic/claude-3-haiku:beta",
+          "anthropic/claude-3-opus:beta",
+          "anthropic/claude-3-sonnet:beta",
+          "anthropic/claude-3.5-sonnet:beta",
+          "anthropic/claude-instant-1:beta",
+          "---EXTENDED---",
+          "gryphe/mythomax-l2-13b:extended",
+          "meta-llama/llama-3-8b-instruct:extended",
+          "neversleep/llama-3-lumimaid-8b:extended",
+          "nousresearch/hermes-3-llama-3.1-405b:extended",
+          "openai/gpt-4o:extended",
+          "undi95/remm-slerp-l2-13b:extended",
+          "---01-AI---",
+          "01-ai/yi-1.5-34b-chat",
+          "01-ai/yi-34b",
+          "01-ai/yi-34b-chat",
+          "01-ai/yi-6b",
+          "01-ai/yi-large",
+          "01-ai/yi-large-fc",
+          "01-ai/yi-large-turbo",
+          "01-ai/yi-vision",
+          "---AI21---",
+          "ai21/jamba-1-5-large",
+          "ai21/jamba-1-5-mini",
+          "ai21/jamba-instruct",
+          "---ANTHROPIC---",
+          "anthropic/claude-1",
+          "anthropic/claude-1.2",
+          "anthropic/claude-2",
+          "anthropic/claude-2.0",
+          "anthropic/claude-2.1",
+          "anthropic/claude-3-haiku",
+          "anthropic/claude-3-opus",
+          "anthropic/claude-3-sonnet",
+          "anthropic/claude-3.5-sonnet",
+          "anthropic/claude-instant-1",
+          "anthropic/claude-instant-1.0",
+          "anthropic/claude-instant-1.1",
+          "---COGNITIVECOMPUTATIONS---",
+          "cognitivecomputations/dolphin-llama-3-70b",
+          "cognitivecomputations/dolphin-mixtral-8x22b",
+          "cognitivecomputations/dolphin-mixtral-8x7b",
+          "---COHERE---",
+          "cohere/command",
+          "cohere/command-r",
+          "cohere/command-r-plus",
+          "---GOOGLE---",
+          "google/gemini-flash-1.5",
+          "google/gemini-pro",
+          "google/gemini-pro-1.5",
+          "google/gemini-pro-1.5-exp",
+          "google/gemini-pro-vision",
+          "google/gemma-2-27b-it",
+          "google/gemma-2-9b-it",
+          "google/gemma-7b-it",
+          "google/palm-2-chat-bison",
+          "google/palm-2-chat-bison-32k",
+          "google/palm-2-codechat-bison",
+          "google/palm-2-codechat-bison-32k",
+          "---META-LLAMA---",
+          "meta-llama/codellama-34b-instruct",
+          "meta-llama/codellama-70b-instruct",
+          "meta-llama/llama-2-13b-chat",
+          "meta-llama/llama-2-70b-chat",
+          "meta-llama/llama-3-70b",
+          "meta-llama/llama-3-70b-instruct",
+          "meta-llama/llama-3-8b",
+          "meta-llama/llama-3-8b-instruct",
+          "meta-llama/llama-3.1-405b",
+          "meta-llama/llama-3.1-405b-instruct",
+          "meta-llama/llama-3.1-70b-instruct",
+          "meta-llama/llama-3.1-8b-instruct",
+          "meta-llama/llama-guard-2-8b",
+          "---MICROSOFT---",
+          "microsoft/phi-3-medium-128k-instruct",
+          "microsoft/phi-3-medium-4k-instruct",
+          "microsoft/phi-3-mini-128k-instruct",
+          "microsoft/phi-3.5-mini-128k-instruct",
+          "microsoft/wizardlm-2-7b",
+          "microsoft/wizardlm-2-8x22b",
+          "---MISTRALAI---",
+          "mistralai/codestral-mamba",
+          "mistralai/mistral-7b-instruct",
+          "mistralai/mistral-7b-instruct-v0.1",
+          "mistralai/mistral-7b-instruct-v0.2",
+          "mistralai/mistral-7b-instruct-v0.3",
+          "mistralai/mistral-large",
+          "mistralai/mistral-medium",
+          "mistralai/mistral-nemo",
+          "mistralai/mistral-small",
+          "mistralai/mistral-tiny",
+          "mistralai/mixtral-8x22b",
+          "mistralai/mixtral-8x22b-instruct",
+          "mistralai/mixtral-8x7b",
+          "mistralai/mixtral-8x7b-instruct",
+          "---NEVERSLEEP---",
+          "neversleep/llama-3-lumimaid-70b",
+          "neversleep/llama-3-lumimaid-8b",
+          "neversleep/noromaid-20b",
+          "---NOUSRESEARCH---",
+          "nousresearch/hermes-2-pro-llama-3-8b",
+          "nousresearch/hermes-2-theta-llama-3-8b",
+          "nousresearch/hermes-3-llama-3.1-405b",
+          "nousresearch/hermes-3-llama-3.1-70b",
+          "nousresearch/nous-capybara-7b",
+          "nousresearch/nous-hermes-2-mistral-7b-dpo",
+          "nousresearch/nous-hermes-2-mixtral-8x7b-dpo",
+          "nousresearch/nous-hermes-2-mixtral-8x7b-sft",
+          "nousresearch/nous-hermes-llama2-13b",
+          "nousresearch/nous-hermes-yi-34b",
+          "---OPENAI---",
+          "openai/chatgpt-4o-latest",
+          "openai/gpt-3.5-turbo",
+          "openai/gpt-3.5-turbo-0125",
+          "openai/gpt-3.5-turbo-0301",
+          "openai/gpt-3.5-turbo-0613",
+          "openai/gpt-3.5-turbo-1106",
+          "openai/gpt-3.5-turbo-16k",
+          "openai/gpt-3.5-turbo-instruct",
+          "openai/gpt-4",
+          "openai/gpt-4-0314",
+          "openai/gpt-4-1106-preview",
+          "openai/gpt-4-32k",
+          "openai/gpt-4-32k-0314",
+          "openai/gpt-4-turbo",
+          "openai/gpt-4-turbo-preview",
+          "openai/gpt-4-vision-preview",
+          "openai/gpt-4o",
+          "openai/gpt-4o-2024-05-13",
+          "openai/gpt-4o-2024-08-06",
+          "openai/gpt-4o-mini",
+          "openai/gpt-4o-mini-2024-07-18",
+          "---PERPLEXITY---",
+          "perplexity/llama-3-sonar-large-32k-chat",
+          "perplexity/llama-3-sonar-large-32k-online",
+          "perplexity/llama-3-sonar-small-32k-chat",
+          "perplexity/llama-3-sonar-small-32k-online",
+          "perplexity/llama-3.1-sonar-huge-128k-online",
+          "perplexity/llama-3.1-sonar-large-128k-chat",
+          "perplexity/llama-3.1-sonar-large-128k-online",
+          "perplexity/llama-3.1-sonar-small-128k-chat",
+          "perplexity/llama-3.1-sonar-small-128k-online",
+          "---QWEN---",
+          "qwen/qwen-110b-chat",
+          "qwen/qwen-14b-chat",
+          "qwen/qwen-2-72b-instruct",
+          "qwen/qwen-2-7b-instruct",
+          "qwen/qwen-32b-chat",
+          "qwen/qwen-4b-chat",
+          "qwen/qwen-72b-chat",
+          "qwen/qwen-7b-chat",
+          "---SAO10K---",
+          "sao10k/fimbulvetr-11b-v2",
+          "sao10k/l3-euryale-70b",
+          "sao10k/l3-lunaris-8b",
+          "sao10k/l3-stheno-8b",
+          "---OTHERS---",
+          "aetherwiing/mn-starcannon-12b",
+          "allenai/olmo-7b-instruct",
+          "alpindale/goliath-120b",
+          "alpindale/magnum-72b",
+          "austism/chronos-hermes-13b",
+          "databricks/dbrx-instruct",
+          "deepseek/deepseek-chat",
+          "deepseek/deepseek-coder",
+          "gryphe/mythomax-l2-13b",
+          "gryphe/mythomist-7b",
+          "jondurbin/airoboros-l2-70b",
+          "lizpreciatior/lzlv-70b-fp16-hf",
+          "mancer/weaver",
+          "nothingiisreal/mn-celeste-12b",
+          "open-orca/mistral-7b-openorca",
+          "openchat/openchat-7b",
+          "openchat/openchat-8b",
+          "openrouter/flavor-of-the-week",
+          "phind/phind-codellama-34b",
+          "pygmalionai/mythalion-13b",
+          "recursal/eagle-7b",
+          "recursal/rwkv-5-3b-ai-town",
+          "rwkv/rwkv-5-world-3b",
+          "snowflake/snowflake-arctic-instruct",
+          "sophosympatheia/midnight-rose-70b",
+          "teknium/openhermes-2-mistral-7b",
+          "teknium/openhermes-2.5-mistral-7b",
+          "togethercomputer/stripedhyena-hessian-7b",
+          "togethercomputer/stripedhyena-nous-7b",
+          "undi95/remm-slerp-l2-13b",
+          "undi95/toppy-m-7b",
+          "xwin-lm/xwin-lm-70b"
           ]
         fetch: false
       dropParams: ["stop"]
@@ -624,44 +477,26 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
-    # # OpenRouter.ai - Perplexity
-    # - name: "OpenRouter-Perplexity"
-    #   apiKey: "${OPENROUTER_KEY}"
-    #   baseURL: "https://openrouter.ai/api/v1"
-    #   models:
-    #     "default": [
-    #       "perplexity/pplx-7b-chat",
-    #       "perplexity/pplx-70b-chat",
-    #       "perplexity/pplx-7b-online",
-    #       "perplexity/pplx-70b-online",
-    #       "perplexity/sonar-medium-online",
-    #       ]
-    #     fetch: false
-    #   titleConvo: true
-    #   titleModel: "perplexity/pplx-7b-chat"
-    #   summarize: false
-    #   summaryModel: "perplexity/pplx-7b-chat"
-    #   forcePrompt: false
-    #   dropParams: ["stop"]
-    #   modelDisplayLabel: "Perplexity"
-    #   iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/perplexityai.png"
-
+    # Preplexity
+    # Model list: https://docs.perplexity.ai/docs/model-cards
     - name: "Perplexity"
       apiKey: "${PERPLEXITY_API_KEY}"
       baseURL: "https://api.perplexity.ai/"
       models:
         default: [
-          "mistral-7b-instruct",
-          "sonar-small-chat",
-          "sonar-small-online",
-          "sonar-medium-chat",
-          "sonar-medium-online"
+          "llama-3.1-sonar-small-128k-chat",
+          "llama-3.1-sonar-small-128k-online",
+          "llama-3.1-sonar-large-128k-chat",
+          "llama-3.1-sonar-large-128k-online",
+          "llama-3.1-sonar-huge-128k-online",
+          "llama-3.1-8b-instruct",
+          "llama-3.1-70b-instruct"
           ]
         fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "sonar-medium-chat"
+      titleModel: "llama-3.1-sonar-small-128k-chat"
       summarize: false
-      summaryModel: "sonar-medium-chat"
+      summaryModel: "llama-3.1-sonar-small-128k-chat"
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
@@ -811,3 +646,47 @@ endpoints:
       summaryModel: "togethercomputer/llama-2-7b-chat"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
+
+    # Unify
+    # Model list: https://unify.ai/chat
+    - name: "Unify"
+      apiKey: "${UNIFY_API_KEY}"
+      baseURL: "https://api.unify.ai/v0/"
+      models:
+        default: [
+          "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04",
+          "gpt-3.5-turbo@openai",
+          "gpt-4o@openai",
+          "gpt-4-turbo@openai",
+          "gpt-4@openai",
+          "claude-3-haiku@anthropic",
+          "claude-3-sonnet@anthropic",
+          "claude-3-opus@anthropic",
+          "claude-3.5-sonnet@anthropic",
+          "mistral-small@mistral-ai",
+          "mistral-medium@mistral-ai",
+          "mistral-large@mistral-ai",
+          "mixtral-8x22b-instruct-v0.1@fireworks-ai",
+          "mistral-7b-instruct-v0.2@replicate",
+          "mixtral-8x7b-instruct-v0.1@replicate",
+          "mistral-7b-instruct-v0.1@fireworks-ai",
+          "gemma-2b-it@together-ai",
+          "gemma-7b-it@fireworks-ai",
+          "llama-2-7b-chat@replicate",
+          "llama-2-13b-chat@fireworks-ai",
+          "llama-2-70b-chat@octoai",
+          "llama-3-8b-chat@fireworks-ai",
+          "llama-3-70b-chat@fireworks-ai",
+          "codellama-7b-instruct@octoai",
+          "codellama-13b-instruct@octoai",
+          "codellama-34b-instruct@octoai",
+          "deepseek-coder-33b-instruct@together-ai",
+          "pplx-7b-chat@perplexity-ai",
+          "pplx-70b-chat@perplexity-ai",
+          "yi-34b-chat@deepinfra",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04"
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/Unify.webp"
