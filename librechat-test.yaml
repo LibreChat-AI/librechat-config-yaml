@@ -142,6 +142,25 @@ endpoints:
         stream: True
       iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
 
+    # deepseek
+    # https://platform.deepseek.com/api_keys
+    # Model list: https://platform.deepseek.com/api-docs/pricing
+    - name: "deepseek"
+      apiKey: "${DEEPSEEK_API_KEY}"
+      baseURL: "https://api.deepseek.com"
+      models:
+        default: [
+          "deepseek-chat",
+          "deepseek-coder"
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "deepseek-chat"
+      summarize: false
+      summaryModel: "deepseek-chat"
+      forcePrompt: false
+      modelDisplayLabel: "DeepSeek"
+
     # Fireworks
     - name: "Fireworks"
       apiKey: "${FIREWORKS_API_KEY}"
