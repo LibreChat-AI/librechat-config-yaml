@@ -169,7 +169,7 @@ Configuration used for the Railway one-click install template:
 - https://openrouter.ai/
 
 #### ShuttleAI
-- https://shuttleai.app/keys
+- https://shuttleai.com/keys
 
 #### TogetherAI
 - https://www.together.ai/
