@@ -577,6 +577,23 @@ endpoints:
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
 
+    # SambaNova
+    # https://cloud.sambanova.ai/apis
+    - name: "SambaNova"
+      apiKey: "${SAMBANOVA_API_KEY}"
+      baseURL: "https://api.sambanova.ai/v1/"
+      models:
+        default: [
+          "Meta-Llama-3.1-405B-Instruct",
+          "Meta-Llama-3.1-70B-Instruct",
+          "Meta-Llama-3.1-8B-Instruct",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "Meta-Llama-3.1-8B-Instruct"
+      modelDisplayLabel: "SambaNova"
+      iconURL: "https://global.discourse-cdn.com/sambanova/original/1X/f5ea7759d23daaad4f91a387079b8a8a71cae3f6.webp"
+
     # ShuttleAI
     - name: "ShuttleAI"
       apiKey: "${SHUTTLEAI_API_KEY}"
