@@ -273,6 +273,27 @@ endpoints:
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
       dropParams: ["top_p"]
 
+    # Hyperbolic
+    - name: 'Hyperbolic'
+      apiKey: '${HYPERBOLIC_API_KEY}'
+      baseURL: 'https://api.hyperbolic.xyz/v1/'
+      models:
+        default: [
+          "deepseek-ai/DeepSeek-V2.5",
+          "meta-llama/Meta-Llama-3.1-405B",
+          "meta-llama/Meta-Llama-3.1-405B-FP8",
+          "NousResearch/Hermes-3-Llama-3.1-70B",
+          "meta-llama/Meta-Llama-3.1-405B-Instruct",
+          "meta-llama/Meta-Llama-3.1-70B-Instruct",
+          "meta-llama/Meta-Llama-3.1-8B-Instruct",
+          "meta-llama/Meta-Llama-3-70B-Instruct",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: "meta-llama/Meta-Llama-3.1-8B-Instruct"
+      modelDisplayLabel: "Hyperbolic"
+      iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
+      
     # MLX
     - name: "MLX"
       apiKey: "mlx"
