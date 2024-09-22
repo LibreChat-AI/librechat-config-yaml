@@ -41,10 +41,10 @@ def main():
             )
 
             # write result to a text file
-            with open("models_togetherai.json", "w") as file:
+            with open("togetherai.txt", "w") as file:
                 json.dump(model_ids, file, indent=2)
             
-            print("Model IDs have been written to models_togetherai.json")
+            print("Model IDs have been written to togetherai.txt")
     else:
         print(f"Request failed with status code: {response.status_code}")
 
