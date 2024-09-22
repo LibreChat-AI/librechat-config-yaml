@@ -849,8 +849,12 @@ endpoints:
       baseURL: "https://api.shuttleai.com/v1"
       models: 
         default: [
+          "shuttleai/s1",
+          "shuttleai/s1-mini",
           "shuttleai/shuttle-2.5",
-          "shuttleai/shuttle-2.5-mini",
+          "shuttleai/shuttle-2.5-mini-2024-09-11",
+          "openai/o1-preview-2024-09-12",
+          "openai/o1-mini-2024-09-12",
           "openai/gpt-4o-mini-2024-07-18",
           "openai/chatgpt-4o-latest",
           "openai/gpt-4o-2024-08-06",
@@ -872,12 +876,19 @@ endpoints:
           "meta-llama/meta-llama-3.1-405b-instruct",
           "meta-llama/meta-llama-3.1-70b-instruct",
           "meta-llama/meta-llama-3.1-8b-instruct",
+          "mattshumer/reflection-llama-3.1-70b",
           "perplexity/llama-3.1-sonar-large-128k-online",
           "perplexity/llama-3.1-sonar-small-128k-online",
           "perplexity/llama-3.1-sonar-large-128k-chat",
           "perplexity/llama-3.1-sonar-small-128k-chat",
           "mistralai/mistral-nemo-instruct-2407",
-          "mistralai/codestral-2405"
+          "mistralai/codestral-2405",
+          "alibaba-cloud/qwen-2.5-72b-instruct",
+          "alibaba-cloud/qwen-2.5-coder-7b",
+          "cohere/command-r-plus-08-2024",
+          "cohere/command-r-plus",
+          "cohere/command-r-08-2024",
+          "cohere/command-r"
           ]
         fetch: true
       titleConvo: true
