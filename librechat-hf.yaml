@@ -538,7 +538,18 @@ endpoints:
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams: ["user"]
-      
+
+    # GitHub 
+    - name: "Github Models"
+      iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
+      apiKey: "user_provided"
+      baseURL: "https://models.inference.ai.azure.com"
+      models:
+        default: ["gpt-4o","Phi-3.5-MoE-instruct","Phi-3.5-mini-instruct","Phi-3.5-vision-instruct"]
+        fetch: false
+      titleConvo: true
+      titleModel: "gpt-4o-mini"
+  
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
