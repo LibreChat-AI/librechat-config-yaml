@@ -650,6 +650,23 @@ endpoints:
             "stop": [
               "<|eot_id|>"
              ]
+             
+    # NeurochainAI
+    - name: "NeurochainAI"
+      apiKey: "<=generated api key=>"
+      baseURL: "https://ncmb.neurochain.io/v1/chat/completions"
+      models:
+        default: [
+          "Mistral-7B-OpenOrca-GPTQ"
+        ]
+        fetch: true
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
+      modelDisplayLabel: "NeurochainAI"
+      iconURL: "https://docs.neurochain.ai/~gitbook/image?url=https%3A%2F%2F3335472737-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FtaQteho8n2eCifpD6IME%252Flogo%252Fg64f69uDmptZnrjgAjA6%252FGroup%25201171275688.png%3Falt%3Dmedia%26token%3D7f876207-ad46-4806-958d-b23a9d5b182c&width=192&dpr=1&quality=100&sign=20a11c21&sv=1"
 
     # Ollama
     - name: "Ollama"
