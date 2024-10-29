@@ -666,7 +666,7 @@ endpoints:
       summaryModel: "current_model"
       forcePrompt: false
       modelDisplayLabel: "NeurochainAI"
-      iconURL: "https://drive.google.com/uc?export=view&id=1T79msEfykXk3655y0Sepj1GgOWD8gZWl"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/NeurochainAI.jpg"
 
     # Ollama
     - name: "Ollama"
