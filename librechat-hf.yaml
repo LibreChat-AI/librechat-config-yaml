@@ -1178,6 +1178,20 @@ endpoints:
       titleModel: "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
+    - name: "xai"
+      apiKey: "user_provided"
+      baseURL: "https://api.x.ai/v1"
+      models:
+        default: ["grok-beta"]
+        fetch: false
+      titleConvo: true
+      titleMethod: "completion"
+      titleModel: "grok-beta"
+      summarize: false
+      summaryModel: "grok-beta"
+      forcePrompt: false
+      modelDisplayLabel: "Grok"
+
 # REVERSE PROXY
 
     # ConvoAI
