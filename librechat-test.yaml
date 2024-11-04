@@ -1257,3 +1257,4 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "xAI"
+      dropParams: ["stream", "user", "frequency_penalty", "presence_penalty"]
