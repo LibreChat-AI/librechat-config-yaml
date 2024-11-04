@@ -658,7 +658,7 @@ endpoints:
       models:
         default: [
           "Mistral-7B-OpenOrca-GPTQ"
-        ]
+          ]
         fetch: true
       titleConvo: true
       titleModel: "current_model"
@@ -1241,7 +1241,7 @@ endpoints:
         fetch: false
       titleConvo: true
       titleModel: "router@q:1|c:2.12e-01|t:5.00e-04|i:2.78e-04"
-      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]\
+      dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
     - name: "xAI"
       apiKey: "${XAI_API_KEY}"
