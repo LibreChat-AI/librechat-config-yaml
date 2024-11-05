@@ -624,6 +624,23 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
+    # https://build.nvidia.com/explore/discover
+    - name: "Nvidia"
+      apiKey: "user_provided"
+      baseURL: "https://integrate.api.nvidia.com/v1/"
+      models:
+        default: [
+          "nvidia/llama-3.1-nemotron-51b-instruct",
+          "nvidia/llama-3.1-nemotron-70b-instruct",
+          "nvidia/nemotron-mini-4b-instruct",
+          "nvidia/nemotron-4-340b-instruct",
+        ]
+        fetch: false
+      titleConvo: true
+      titleModel: "nvidia/nemotron-mini-4b-instruct"
+      modelDisplayLabel: "Nvidia"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
+
     # OpenRouter.ai
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
