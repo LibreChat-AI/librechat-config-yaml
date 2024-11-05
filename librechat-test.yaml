@@ -651,22 +651,22 @@ endpoints:
               "<|eot_id|>"
              ]
              
-    # NeurochainAI
-    - name: "NeurochainAI"
-      apiKey: "<=generated api key=>"
-      baseURL: "https://ncmb.neurochain.io/v1/chat/completions"
+    # https://build.nvidia.com/explore/discover
+    - name: "Nvidia"
+      apiKey: "${NVIDIA_API_KEY}"
+      baseURL: "https://integrate.api.nvidia.com/v1/"
       models:
         default: [
-          "Mistral-7B-OpenOrca-GPTQ"
-          ]
-        fetch: true
+          "nvidia/llama-3.1-nemotron-51b-instruct",
+          "nvidia/llama-3.1-nemotron-70b-instruct",
+          "nvidia/nemotron-mini-4b-instruct",
+          "nvidia/nemotron-4-340b-instruct",
+        ]
+        fetch: false
       titleConvo: true
-      titleModel: "current_model"
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      modelDisplayLabel: "NeurochainAI"
-      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/NeurochainAI.png"
+      titleModel: "nvidia/nemotron-mini-4b-instruct"
+      modelDisplayLabel: "Nvidia"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
 
     # Ollama
     - name: "Ollama"
