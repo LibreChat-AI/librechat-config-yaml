@@ -660,6 +660,7 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
+    # NVIDIA
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
       apiKey: "user_provided"
@@ -670,7 +671,7 @@ endpoints:
           "nvidia/llama-3.1-nemotron-70b-instruct",
           "nvidia/nemotron-mini-4b-instruct",
           "nvidia/nemotron-4-340b-instruct",
-        ]
+          ]
         fetch: false
       titleConvo: true
       titleModel: "nvidia/nemotron-mini-4b-instruct"
@@ -1123,7 +1124,7 @@ endpoints:
           "togethercomputer/llama-2-7b-chat",
           "upstage/SOLAR-10.7B-Instruct-v1.0",
           "zero-one-ai/Yi-34B-Chat"
-        ]
+          ]
         fetch: false
       titleConvo: true
       titleModel: "openchat/openchat-3.5-1210"

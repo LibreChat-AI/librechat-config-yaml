@@ -693,7 +693,8 @@ endpoints:
             "stop": [
               "<|eot_id|>"
              ]
-             
+
+    # NVIDIA         
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
       apiKey: "${NVIDIA_API_KEY}"
@@ -704,7 +705,7 @@ endpoints:
           "nvidia/llama-3.1-nemotron-70b-instruct",
           "nvidia/nemotron-mini-4b-instruct",
           "nvidia/nemotron-4-340b-instruct",
-        ]
+          ]
         fetch: false
       titleConvo: true
       titleModel: "nvidia/nemotron-mini-4b-instruct"
@@ -989,7 +990,7 @@ endpoints:
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
-      
+
     # SambaNova
     # https://cloud.sambanova.ai/apis
     - name: "SambaNova"
@@ -1180,7 +1181,7 @@ endpoints:
           "togethercomputer/llama-2-7b-chat",
           "upstage/SOLAR-10.7B-Instruct-v1.0",
           "zero-one-ai/Yi-34B-Chat"
-        ]
+          ]
         fetch: false
       titleConvo: true
       titleModel: "togethercomputer/llama-2-7b-chat"
