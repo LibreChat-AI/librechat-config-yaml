@@ -596,7 +596,7 @@ endpoints:
           ]
         fetch: false
       titleConvo: true
-      titleModel: "gpt-4o-mini"  
+      titleModel: "current_model"  
       
     # groq
     # Model list: https://console.groq.com/settings/limits
