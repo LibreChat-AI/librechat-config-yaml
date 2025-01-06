@@ -665,7 +665,7 @@ endpoints:
     # Model list: https://nano-gpt.com/api/models
     - name: "NanoGPT"
       apiKey: "user_provided"
-      baseURL: "https://nano-gpt.com/api/v2/"
+      baseURL: "https://nano-gpt.com/api/v2/chat/completions"
       models:
         default: [
           "---nanogpt---",
@@ -814,6 +814,7 @@ endpoints:
           "glm-4-plus",
           ]
         fetch: false
+      directEndpoint: true
       titleConvo: true
       titleModel: "current_model"
       modelDisplayLabel: "NanoGPT"
