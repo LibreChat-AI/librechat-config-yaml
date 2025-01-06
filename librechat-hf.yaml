@@ -665,7 +665,7 @@ endpoints:
     # Model list: https://nano-gpt.com/api/models
     - name: "NanoGPT"
       apiKey: "user_provided"
-      baseURL: "https://nano-gpt.com/api/v1/"
+      baseURL: "https://9b43-146-70-92-30.ngrok-free.app/api/v1/"
       models:
         default: [
           "---nanogpt---",
