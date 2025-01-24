@@ -1122,19 +1122,14 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default: [
-          "llama-3.1-sonar-small-128k-chat",
-          "llama-3.1-sonar-small-128k-online",
-          "llama-3.1-sonar-large-128k-chat",
-          "llama-3.1-sonar-large-128k-online",
-          "llama-3.1-sonar-huge-128k-online",
-          "llama-3.1-8b-instruct",
-          "llama-3.1-70b-instruct"
+          "sonar-pro",
+          "sonar"
           ]
         fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "llama-3.1-sonar-small-128k-chat"
+      titleModel: "sonar"
       summarize: false
-      summaryModel: "llama-3.1-sonar-small-128k-chat"
+      summaryModel: "sonar"
       forcePrompt: false
       dropParams: ["stop", "frequency_penalty"]
       modelDisplayLabel: "Perplexity"
