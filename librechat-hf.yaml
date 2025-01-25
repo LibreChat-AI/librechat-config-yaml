@@ -949,6 +949,11 @@ endpoints:
           "cohere/command-r-plus-04-2024",
           "cohere/command-r-plus-08-2024",
           "cohere/command-r7b-12-2024",
+          "---DEEPSEEK---",
+          "deepseek/deepseek-chat",
+          "deepseek/deepseek-coder",
+          "deepseek/deepseek-r1-distill-llama-70b",
+          "deepseek/deepseek-r1",
           "---GOOGLE---",
           "google/palm-2-chat-bison",
           "google/palm-2-chat-bison-32k",
@@ -1012,6 +1017,7 @@ endpoints:
           "mistralai/mixtral-8x7b-instruct",
           "mistralai/pixtral-12b",
           "mistralai/pixtral-large-2411",
+          "mistralai/codestral-2501",
           "---NEVERSLEEP---",
           "neversleep/llama-3-lumimaid-70b",
           "neversleep/llama-3-lumimaid-8b",
@@ -1050,6 +1056,7 @@ endpoints:
           "openai/o1-mini-2024-09-12",
           "openai/o1-preview",
           "openai/o1-preview-2024-09-12",
+          "openai/o1",
           "---PERPLEXITY---",
           "perplexity/llama-3-sonar-large-32k-chat",
           "perplexity/llama-3-sonar-large-32k-online",
@@ -1082,16 +1089,17 @@ endpoints:
           "cognitivecomputations/dolphin-mixtral-8x22b",
           "cognitivecomputations/dolphin-mixtral-8x7b",
           "databricks/dbrx-instruct",
-          "deepseek/deepseek-chat",
           "eva-unit-01/eva-qwen-2.5-32b",
           "gryphe/mythomax-l2-13b",
           "infermatic/mn-inferor-12b",
           "inflection/inflection-3-pi",
           "inflection/inflection-3-productivity",
           "jondurbin/airoboros-l2-70b",
+          "liquid/lfm-7b",
           "liquid/lfm-40b",
           "lizpreciatior/lzlv-70b-fp16-hf",
           "mancer/weaver",
+          "minimax/minimax-01",
           "nvidia/llama-3.1-nemotron-70b-instruct",
           "openchat/openchat-7b",
           "pygmalionai/mythalion-13b",
@@ -1109,9 +1117,9 @@ endpoints:
         fetch: false
       dropParams: ["stop"]
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "openai/gpt-4o-mini"
       summarize: false
-      summaryModel: "gpt-3.5-turbo"
+      summaryModel: "openai/gpt-4o-mini"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
