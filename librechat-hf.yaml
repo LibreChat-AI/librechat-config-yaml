@@ -431,14 +431,14 @@ endpoints:
       models:
         default: [
           "deepseek-chat",
-          "deepseek-coder"
+          "deepseek-coder",
+          "deepseek-reasoner",
           ]
         fetch: false
       titleConvo: true
       titleModel: "deepseek-chat"
       summarize: false
       summaryModel: "deepseek-chat"
-      forcePrompt: false
       modelDisplayLabel: "DeepSeek"
 
     # Fireworks.ai
