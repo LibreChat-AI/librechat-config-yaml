@@ -576,6 +576,24 @@ endpoints:
       modelDisplayLabel: "Hyperbolic"
       iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
 
+    # kluster.ai
+    # https://platform.kluster.ai/apikeys
+    - name: "Kluster"
+      apiKey: "user_provided"
+      baseURL: "https://api.kluster.ai/v1/"
+      models:
+        default: [
+          "deepseek-ai/DeepSeek-R1",
+          "klusterai/Meta-Llama-3.1-405B-Instruct-Turbo",
+          "klusterai/Meta-Llama-3.1-8B-Instruct-Turbo",
+          "klusterai/Meta-Llama-3.3-70B-Instruct-Turbo",
+          ]
+        fetch: false
+      titleConvo: true
+      titleModel: 'klusterai/Meta-Llama-3.1-8B-Instruct-Turbo'
+      modelDisplayLabel: 'Kluster'
+      iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
+
     # Mistral AI API
     # Model list: https://docs.mistral.ai/getting-started/models/
     - name: "Mistral"
