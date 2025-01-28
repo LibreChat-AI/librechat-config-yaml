@@ -487,6 +487,7 @@ endpoints:
           "accounts/fireworks/models/llama-v2-7b-chat",
           "accounts/fireworks/models/deepseek-coder-v2-instruct",
           "accounts/fireworks/models/deepseek-coder-v2-lite-instruct",
+          "accounts/fireworks/models/deepseek-r1",
           "accounts/fireworks/models/llava-v15-13b-fireworks",
           "accounts/fireworks/models/mistral-7b-instruct-4k",
           "accounts/dev-e24710/models/mistral-spellbound-format",
