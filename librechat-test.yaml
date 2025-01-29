@@ -702,27 +702,27 @@ endpoints:
       modelDisplayLabel: "Mistral"
       dropParams: ["stop", "user", "frequency_penalty", "presence_penalty"]
 
-    # MLX
-    - name: "MLX"
-      apiKey: "mlx"
-      baseURL: "http://host.docker.internal:8080/v1/" 
-      models:
-        default: [
-          "Meta-Llama-3-8B-Instruct-4bit"
-          ]
-        fetch: false # fetching list of models is not supported
-      titleConvo: true
-      titleModel: "current_model"
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      modelDisplayLabel: "Apple MLX"
-      dropParams: ["temperature"]
-      addParams:
-            max_tokens: 2000
-            "stop": [
-              "<|eot_id|>"
-             ]
+    # # MLX
+    # - name: "MLX"
+    #   apiKey: "mlx"
+    #   baseURL: "http://host.docker.internal:8080/v1/" 
+    #   models:
+    #     default: [
+    #       "Meta-Llama-3-8B-Instruct-4bit"
+    #       ]
+    #     fetch: false # fetching list of models is not supported
+    #   titleConvo: true
+    #   titleModel: "current_model"
+    #   summarize: false
+    #   summaryModel: "current_model"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "Apple MLX"
+    #   dropParams: ["temperature"]
+    #   addParams:
+    #         max_tokens: 2000
+    #         "stop": [
+    #           "<|eot_id|>"
+    #          ]
 
     # NanoGPT
     # https://nano-gpt.com/api
@@ -901,29 +901,29 @@ endpoints:
       modelDisplayLabel: "Nvidia"
       iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
 
-    # Ollama
-    - name: "Ollama"
-      apiKey: "ollama"
-      baseURL: "http://host.docker.internal:11434/v1/" 
-      models:
-        default: [
-            "llama3",
-            "mistral",
-            ]
-        fetch: false # fetching list of models is not supported
-      titleConvo: true
-      titleModel: "current_model"
-      summarize: false
-      summaryModel: "current_model"
-      forcePrompt: false
-      modelDisplayLabel: "Ollama"
-      addParams:
-          "stop": [
-              "<|start_header_id|>",
-              "<|end_header_id|>",
-              "<|eot_id|>",
-              "<|reserved_special_token"
-            ]
+    # # Ollama
+    # - name: "Ollama"
+    #   apiKey: "ollama"
+    #   baseURL: "http://host.docker.internal:11434/v1/" 
+    #   models:
+    #     default: [
+    #         "llama3",
+    #         "mistral",
+    #         ]
+    #     fetch: false # fetching list of models is not supported
+    #   titleConvo: true
+    #   titleModel: "current_model"
+    #   summarize: false
+    #   summaryModel: "current_model"
+    #   forcePrompt: false
+    #   modelDisplayLabel: "Ollama"
+    #   addParams:
+    #       "stop": [
+    #           "<|start_header_id|>",
+    #           "<|end_header_id|>",
+    #           "<|eot_id|>",
+    #           "<|reserved_special_token"
+    #         ]
 
     # OpenRouter.ai
     # Model list: https://openrouter.ai/models
@@ -935,6 +935,7 @@ endpoints:
         default: [
           "openrouter/auto",
           "---FREE---",
+          "deepseek/deepseek-r1:free",
           "google/gemini-2.0-flash-exp:free",
           "google/gemini-2.0-flash-thinking-exp-1219:free",
           "google/gemini-2.0-flash-thinking-exp:free",
