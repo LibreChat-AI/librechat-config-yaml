@@ -682,6 +682,7 @@ endpoints:
         default: [
           "openrouter/auto",
           "---FREE---",
+          "deepseek/deepseek-r1:free",
           "google/gemini-2.0-flash-exp:free",
           "google/gemini-2.0-flash-thinking-exp-1219:free",
           "google/gemini-2.0-flash-thinking-exp:free",
