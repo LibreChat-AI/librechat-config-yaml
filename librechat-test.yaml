@@ -587,7 +587,6 @@ endpoints:
         default: [
           "deepseek-r1-distill-llama-70b",
           "gemma2-9b-it",
-          "distil-whisper-large-v3-en",
           "llama-3.1-8b-instant",
           "llama-3.2-11b-vision-preview",
           "llama-3.2-1b-preview",
@@ -596,7 +595,7 @@ endpoints:
           "llama-3.3-70b-specdec",
           "llama-3.3-70b-versatile",
           "llama-guard-3-8b",
-          "Llama3-70b-8192",
+          "llama3-70b-8192",
           "llama3-8b-8192",
           "mixtral-8x7b-32768",
           ]
