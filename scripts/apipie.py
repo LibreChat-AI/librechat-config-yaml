@@ -1,41 +1,65 @@
 import json
 import requests
 
-# Fetch and alphabetize models from APIpie and output the results in apipie.txt
+def sort_models(ids):
+    """Simple sort with free models first."""
+    # Separate free models and others
+    free_models = sorted([id for id in ids if str(id).startswith('free/')])
+    other_models = sorted([id for id in ids if not str(id).startswith('free/')])
+    
+    # Combine with a header for free models if they exist
+    result = []
+    if free_models:
+        result.append('---FREE---')
+        result.extend(free_models)
+    result.extend(other_models)
+    
+    return result
 
 def fetch_and_order_models():
     # API endpoint
     url = "https://apipie.ai/models"
-
-    # headers as per request example
     headers = {"Accept": "application/json"}
+    
+    try:
+        # Make requests for different model types
+        params_types = {
+            "free": {"type": "free"},
+            "vision": {"type": "vision"},
+            "llm": {"type": "llm"}
+        }
+        
+        all_models = set()
+        
+        for param_type in params_types.values():
+            try:
+                response = requests.get(url, headers=headers, params=param_type)
+                response.raise_for_status()
+                data = response.json()
+                
+                if isinstance(data, list):
+                    for model in data:
+                        if isinstance(model, dict) and 'id' in model:
+                            model_id = str(model['id'])
+                            all_models.add(model_id)
+            except requests.exceptions.RequestException as e:
+                print(f"Warning: Error fetching {param_type} models: {e}")
+                continue
+        
+        # Sort the models
+        sorted_models = sort_models(list(all_models))
+        
+        # Write result to a text file
+        with open("apipie.txt", "w", encoding='utf-8') as file:
+            json.dump(sorted_models, file, indent=2)
+            
+        print(f"Successfully saved {len(sorted_models)} models to apipie.txt")
 
-    # request parameters for "vision" models
-    params_vision = {"type": "vision"}
+    except Exception as e:
+        print(f"Unexpected error: {e}")
 
-    # request parameters for "llm" models
-    params_llm = {"type": "llm"}
-
-    # make request for "vision" models
-    response_vision = requests.get(url, headers=headers, params=params_vision)
-
-    # make request for "llm" models
-    response_llm = requests.get(url, headers=headers, params=params_llm)
-
-    # parse JSON responses
-    data_vision = response_vision.json()
-    data_llm = response_llm.json()
-
-    # combine the results
-    data = data_vision + data_llm
-
-    # extract an ordered list of unique model IDs
-    model_ids = sorted(set([model["id"] for model in data]))
-
-    # write result to a text file
-    with open("apipie.txt", "w") as file:
-        json.dump(model_ids, file, indent=2)
-
-# execute the function
-if __name__ == "__main__":
+def main():
     fetch_and_order_models()
+
+if __name__ == "__main__":
+    main()

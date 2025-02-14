@@ -1,1 +1,22 @@
+# Text output files from model fetchers
 *.txt
+!requirements.txt
+
+# Backup files
+*.bak
+*.bak*
+
+# Log files
+scripts/logs/
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Raw JSON responses
+scripts/*_raw.json
+
+# Environment variables
+.env
