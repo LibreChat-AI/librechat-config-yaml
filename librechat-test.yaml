@@ -20,32 +20,6 @@ registration:
 
 endpoints:
   custom:
-    # Anyscale
-    # # Model list: https://console.anyscale.com/v2/playground
-    - name: "Anyscale"
-      apiKey: "${ANYSCALE_API_KEY}"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
-      models:
-        default:
-          - "meta-llama/Llama-2-7b-chat-hf"
-          - "meta-llama/Llama-2-13b-chat-hf"
-          - "meta-llama/Llama-2-70b-chat-hf"
-          - "codellama/CodeLlama-34b-Instruct-hf"
-          - "codellama/CodeLlama-70b-Instruct-hf"
-          - "mistralai/Mistral-7B-Instruct-v0.1"
-          - "mistralai/Mixtral-8x7B-Instruct-v0.1"
-          - "mlabonne/NeuralHermes-2.5-Mistral-7B"
-          - "Open-Orca/Mistral-7B-OpenOrca"
-          - "HuggingFaceH4/zephyr-7b-beta"
-          - "google/gemma-7b-it"
-        fetch: false
-      titleConvo: true
-      titleModel: "meta-llama/Llama-2-7b-chat-hf"
-      summarize: false
-      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
-      forcePrompt: false
-      modelDisplayLabel: "Anyscale"
-
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
@@ -1603,6 +1577,8 @@ endpoints:
         - "frequency_penalty"
         - "presence_penalty"
 
+    # xAI
+    # https://x.ai/api
     - name: "xai"
       apiKey: "${XAI_API_KEY}"
       baseURL: "https://api.x.ai/v1"

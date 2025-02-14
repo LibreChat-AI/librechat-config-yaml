@@ -20,7 +20,6 @@ registration:
 
 endpoints:
   custom:
-
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
@@ -462,6 +461,41 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-4o-mini"
 
+    # glhf.chat 
+    # Model list (auth header required): https://glhf.chat/models
+    - name: "glhf.chat"
+      iconURL: "https://glhf.chat/apple-touch-icon.png"
+      apiKey: "${GLHF_API_KEY}"
+      baseURL: "https://glhf.chat/api/openai/v1"
+      models:
+        default:
+          - hf:NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+          - hf:Qwen/QwQ-32B-Preview
+          - hf:Qwen/Qwen2.5-72B-Instruct
+          - hf:Qwen/Qwen2.5-7B-Instruct
+          - hf:Qwen/Qwen2.5-Coder-32B-Instruct
+          - hf:anthracite-org/magnum-v4-12b
+          - hf:deepseek-ai/DeepSeek-R1
+          - hf:deepseek-ai/DeepSeek-V3
+          - hf:google/gemma-2-27b-it
+          - hf:google/gemma-2-9b-it
+          - hf:huihui-ai/Llama-3.3-70B-Instruct-abliterated
+          - hf:meta-llama/Llama-3.1-405B-Instruct
+          - hf:meta-llama/Llama-3.1-70B-Instruct
+          - hf:meta-llama/Llama-3.1-8B-Instruct
+          - hf:meta-llama/Llama-3.2-11B-Vision-Instruct
+          - hf:meta-llama/Llama-3.2-3B-Instruct
+          - hf:meta-llama/Llama-3.2-90B-Vision-Instruct
+          - hf:meta-llama/Llama-3.3-70B-Instruct
+          - hf:mistralai/Mistral-7B-Instruct-v0.3
+          - hf:mistralai/Mixtral-8x22B-Instruct-v0.1
+          - hf:mistralai/Mixtral-8x7B-Instruct-v0.1
+          - hf:nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - hf:upstage/SOLAR-10.7B-Instruct-v1.0
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
@@ -698,6 +732,166 @@ endpoints:
         - "user"
         - "frequency_penalty"
         - "presence_penalty"
+
+    # NanoGPT
+    # https://nano-gpt.com/api
+    # Model list: https://nano-gpt.com/api/models
+    - name: "NanoGPT"
+      iconURL: "https://nano-gpt.com/logo.png"
+      apiKey: "${NANOGPT_API_KEY}"
+      baseURL: "https://nano-gpt.com/api/v1/"
+      models:
+        default:
+          - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
+          - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
+          - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
+          - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
+          - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
+          - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
+          - GalrionSoftworks/MN-LooseCannon-12B-v1
+          - Gryphe/MythoMax-L2-13b
+          - Infermatic/MN-12B-Inferor-v0.0
+          - Llama-3.1-Tulu-3-405B
+          - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
+          - Llama-3.3-70B-MiraiFanfare
+          - MarinaraSpaghetti/NemoMix-Unleashed-12B
+          - Meta-Llama-3-1-405B-Instruct-FP8
+          - Meta-Llama-3-1-8B-Instruct-FP8
+          - Mistral-Nemo-12B-ArliAI-RPMax-v1.2
+          - NeverSleep/Llama-3-Lumimaid-70B-v0.1
+          - NeverSleep/Lumimaid-v0.2-70B
+          - Nexusflow/Athene-V2-Chat
+          - Qwen/QwQ-32B-Preview
+          - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
+          - Qwen2.5-32B-EVA-v0.2
+          - Sao10K/L3.1-70B-Euryale-v2.2
+          - Sao10K/L3.1-70B-Hanami-x1
+          - Sao10K/L3.3-70B-Euryale-v2.3
+          - Steelskull/L3.3-Damascus-R1
+          - Steelskull/L3.3-MS-Evalebis-70b
+          - Steelskull/L3.3-MS-Evayale-70B
+          - TheDrummer/Anubis-70B-v1
+          - TheDrummer/Rocinante-12B-v1.1
+          - TheDrummer/UnslopNemo-12B-v4.1
+          - VongolaChouko/Starcannon-Unleashed-12B-v1.0
+          - abacusai/Dracarys-72B-Instruct
+          - aion-labs/aion-1.0
+          - aion-labs/aion-1.0-mini
+          - aion-labs/aion-rp-llama-3.1-8b
+          - amazon/nova-lite-v1
+          - amazon/nova-micro-v1
+          - amazon/nova-pro-v1
+          - anthracite-org/magnum-v2-72b
+          - anthracite-org/magnum-v4-72b
+          - azure-gpt-4-turbo
+          - azure-gpt-4o
+          - azure-gpt-4o-mini
+          - azure-o1
+          - azure-o3-mini
+          - chatgpt-4o-latest
+          - claude-3-5-haiku-20241022
+          - claude-3-5-sonnet-20240620
+          - claude-3-5-sonnet-20241022
+          - claude-3-opus-20240229
+          - cognitivecomputations/dolphin-mixtral-8x22b
+          - cohere/command-r
+          - cohere/command-r-plus-08-2024
+          - deep-research
+          - deepclaude
+          - deepseek-ai/DeepSeek-R1-Zero
+          - deepseek-chat
+          - deepseek-r1-llama-70b
+          - deepseek-r1-nano
+          - deepseek-reasoner
+          - deepseek-reasoner-cheaper
+          - dolphin-2.9.2-qwen2-72b
+          - doubao-1.5-pro-256k
+          - doubao-1.5-pro-32k
+          - doubao-1.5-vision-pro-32k
+          - eva-unit-01/eva-qwen-2.5-72b
+          - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
+          - free-model
+          - gemini-2.0-flash-001
+          - gemini-2.0-flash-exp-search
+          - gemini-2.0-flash-lite-preview-02-05
+          - gemini-2.0-flash-thinking-exp-01-21
+          - gemini-2.0-flash-thinking-exp-1219
+          - gemini-2.0-pro-exp-02-05
+          - gemini-exp-1206
+          - gemini-exp-1206
+          - glm-4
+          - glm-4-air
+          - glm-4-air-0111
+          - glm-4-airx
+          - glm-4-flash
+          - glm-4-long
+          - glm-4-plus
+          - glm-4-plus-0111
+          - glm-zero-preview
+          - google/gemini-flash-1.5
+          - gpt-3.5-turbo
+          - gpt-4-turbo-preview
+          - gpt-4o
+          - gpt-4o-2024-08-06
+          - gpt-4o-2024-11-20
+          - gpt-4o-mini
+          - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
+          - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
+          - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
+          - huihui-ai/Llama-3.3-70B-Instruct-abliterated
+          - inflatebot/MN-12B-Mag-Mell-R1
+          - inflection/inflection-3-pi
+          - inflection/inflection-3-productivity
+          - kimi-k1.5-preview
+          - learnlm-1.5-pro-experimental
+          - llama-3.3-70b
+          - meta-llama/llama-3.1-8b-instruct
+          - meta-llama/llama-3.2-3b-instruct
+          - meta-llama/llama-3.2-90b-vision-instruct
+          - microsoft/wizardlm-2-7b
+          - microsoft/wizardlm-2-8x22b
+          - minimax/minimax-01
+          - mistralai/Mistral-Nemo-Instruct-2407
+          - mistralai/mistral-7b-instruct
+          - mistralai/mistral-large
+          - mistralai/mistral-tiny
+          - mlabonne/NeuralDaredevil-8B-abliterated
+          - model-selector
+          - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
+          - nousresearch/hermes-3-llama-3.1-405b
+          - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - o1
+          - o1-plus
+          - o1-preview
+          - o3-mini
+          - qwen-long
+          - qwen-max
+          - qwen-plus
+          - qwen-turbo
+          - qwen/qwen-2.5-72b-instruct
+          - raifle/sorcererlm-8x22b
+          - recommended-model
+          - sonar
+          - sonar-pro
+          - sonar-reasoning
+          - sonar-reasoning-pro
+          - step-2-16k
+          - step-2-16k-exp
+          - step-2-mini
+          - undi95/remm-slerp-l2-13b
+          - x-ai/grok-2-1212
+          - x-ai/grok-beta
+          - yi-34b-chat-0205
+          - yi-34b-chat-200k
+          - yi-large
+          - yi-large-turbo
+          - yi-lightning
+          - yi-medium-200k
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+      modelDisplayLabel: "NanoGPT"
 
     # NVIDIA         
     # https://build.nvidia.com/explore/discover
@@ -1377,6 +1571,8 @@ endpoints:
         - "frequency_penalty"
         - "presence_penalty"
 
+    # xAI
+    # https://x.ai/api
     - name: "xai"
       apiKey: "${XAI_API_KEY}"
       baseURL: "https://api.x.ai/v1"

@@ -1,4 +1,4 @@
-version: 1.1.6
+version: 1.2.1
 
 cache: true
 
@@ -20,32 +20,6 @@ registration:
 
 endpoints:
   custom:
-    # Anyscale
-    # # Model list: https://console.anyscale.com/v2/playground
-    - name: "Anyscale"
-      apiKey: "user_provided"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
-      models:
-        default:
-          - "meta-llama/Llama-2-7b-chat-hf"
-          - "meta-llama/Llama-2-13b-chat-hf"
-          - "meta-llama/Llama-2-70b-chat-hf"
-          - "codellama/CodeLlama-34b-Instruct-hf"
-          - "codellama/CodeLlama-70b-Instruct-hf"
-          - "mistralai/Mistral-7B-Instruct-v0.1"
-          - "mistralai/Mixtral-8x7B-Instruct-v0.1"
-          - "mlabonne/NeuralHermes-2.5-Mistral-7B"
-          - "Open-Orca/Mistral-7B-OpenOrca"
-          - "HuggingFaceH4/zephyr-7b-beta"
-          - "google/gemma-7b-it"
-        fetch: false
-      titleConvo: true
-      titleModel: "meta-llama/Llama-2-7b-chat-hf"
-      summarize: false
-      summaryModel: "meta-llama/Llama-2-7b-chat-hf"
-      forcePrompt: false
-      modelDisplayLabel: "Anyscale"
-
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
@@ -392,28 +366,6 @@ endpoints:
         - "temperature"
         - "top_p"
 
-    # DEEPNIGHT
-    # https://github.com/brahmai-research/aiforcause
-    # Model list: https://aiforcause.deepnight.tech/models
-    - name: "DEEPNIGHT"
-      apiKey: "sk-free1234"
-      baseURL: "https://aiforcause.deepnight.tech/openai/"
-      models:
-        default:
-          - "gpt-35-turbo"
-          - "gpt-35-turbo-16k"
-          - "gpt-4-turbo"
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-35-turbo"
-      summarize: false
-      summaryModel: "gpt-35-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "DEEPNIGHT"
-      addParams:
-        stream: true
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/DEEPNIGHT.png"
-
     # deepseek
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
@@ -477,6 +429,7 @@ endpoints:
         - "user"
 
     # GitHub 
+    # Models: https://models.inference.ai.azure.com/models
     - name: "Github Models"
       iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
       apiKey: "user_provided"
@@ -512,6 +465,41 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-4o-mini"
 
+    # glhf.chat 
+    # Model list (auth header required): https://glhf.chat/models
+    - name: "glhf.chat"
+      iconURL: "https://glhf.chat/apple-touch-icon.png"
+      apiKey: "user_provided"
+      baseURL: "https://glhf.chat/api/openai/v1"
+      models:
+        default:
+          - hf:NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
+          - hf:Qwen/QwQ-32B-Preview
+          - hf:Qwen/Qwen2.5-72B-Instruct
+          - hf:Qwen/Qwen2.5-7B-Instruct
+          - hf:Qwen/Qwen2.5-Coder-32B-Instruct
+          - hf:anthracite-org/magnum-v4-12b
+          - hf:deepseek-ai/DeepSeek-R1
+          - hf:deepseek-ai/DeepSeek-V3
+          - hf:google/gemma-2-27b-it
+          - hf:google/gemma-2-9b-it
+          - hf:huihui-ai/Llama-3.3-70B-Instruct-abliterated
+          - hf:meta-llama/Llama-3.1-405B-Instruct
+          - hf:meta-llama/Llama-3.1-70B-Instruct
+          - hf:meta-llama/Llama-3.1-8B-Instruct
+          - hf:meta-llama/Llama-3.2-11B-Vision-Instruct
+          - hf:meta-llama/Llama-3.2-3B-Instruct
+          - hf:meta-llama/Llama-3.2-90B-Vision-Instruct
+          - hf:meta-llama/Llama-3.3-70B-Instruct
+          - hf:mistralai/Mistral-7B-Instruct-v0.3
+          - hf:mistralai/Mixtral-8x22B-Instruct-v0.1
+          - hf:mistralai/Mixtral-8x7B-Instruct-v0.1
+          - hf:nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - hf:upstage/SOLAR-10.7B-Instruct-v1.0
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
@@ -543,7 +531,7 @@ endpoints:
     # HuggingFace
     # https://huggingface.co/settings/tokens
     - name: 'HuggingFace'
-      apiKey: "user_provided"
+      apiKey: 'user_provided'
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
         default:
@@ -641,6 +629,7 @@ endpoints:
     # Hyperbolic
     # https://app.hyperbolic.xyz/models
     - name: 'Hyperbolic'
+      iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
       apiKey: 'user_provided'
       baseURL: 'https://api.hyperbolic.xyz/v1/'
       models:
@@ -668,11 +657,11 @@ endpoints:
       titleConvo: true
       titleModel: "meta-llama/Meta-Llama-3.1-8B-Instruct"
       modelDisplayLabel: "Hyperbolic"
-      iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
 
     # kluster.ai
     # https://platform.kluster.ai/apikeys
     - name: "Kluster"
+      iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
       apiKey: "user_provided"
       baseURL: "https://api.kluster.ai/v1/"
       models:
@@ -685,7 +674,6 @@ endpoints:
       titleConvo: true
       titleModel: 'klusterai/Meta-Llama-3.1-8B-Instruct-Turbo'
       modelDisplayLabel: 'Kluster'
-      iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
 
     # Mistral AI API
     # Model list: https://docs.mistral.ai/getting-started/models/
@@ -753,9 +741,170 @@ endpoints:
         - "frequency_penalty"
         - "presence_penalty"
 
+    # NanoGPT
+    # https://nano-gpt.com/api
+    # Model list: https://nano-gpt.com/api/models
+    - name: "NanoGPT"
+      iconURL: "https://nano-gpt.com/logo.png"
+      apiKey: "user_provided"
+      baseURL: "https://nano-gpt.com/api/v1/"
+      models:
+        default:
+          - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
+          - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
+          - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
+          - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
+          - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
+          - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
+          - GalrionSoftworks/MN-LooseCannon-12B-v1
+          - Gryphe/MythoMax-L2-13b
+          - Infermatic/MN-12B-Inferor-v0.0
+          - Llama-3.1-Tulu-3-405B
+          - Llama-3.3+3.1-70B-ArliAI-RPMax-v1.3
+          - Llama-3.3-70B-MiraiFanfare
+          - MarinaraSpaghetti/NemoMix-Unleashed-12B
+          - Meta-Llama-3-1-405B-Instruct-FP8
+          - Meta-Llama-3-1-8B-Instruct-FP8
+          - Mistral-Nemo-12B-ArliAI-RPMax-v1.2
+          - NeverSleep/Llama-3-Lumimaid-70B-v0.1
+          - NeverSleep/Lumimaid-v0.2-70B
+          - Nexusflow/Athene-V2-Chat
+          - Qwen/QwQ-32B-Preview
+          - Qwen/Qwen2.5-Coder-32B-Instruct
+          - Qwen2.5-32B-Dazzling-Star-Aurora-32b-v0.0
+          - Qwen2.5-32B-EVA-v0.2
+          - Sao10K/L3.1-70B-Euryale-v2.2
+          - Sao10K/L3.1-70B-Hanami-x1
+          - Sao10K/L3.3-70B-Euryale-v2.3
+          - Steelskull/L3.3-Damascus-R1
+          - Steelskull/L3.3-MS-Evalebis-70b
+          - Steelskull/L3.3-MS-Evayale-70B
+          - TheDrummer/Anubis-70B-v1
+          - TheDrummer/Rocinante-12B-v1.1
+          - TheDrummer/UnslopNemo-12B-v4.1
+          - VongolaChouko/Starcannon-Unleashed-12B-v1.0
+          - abacusai/Dracarys-72B-Instruct
+          - aion-labs/aion-1.0
+          - aion-labs/aion-1.0-mini
+          - aion-labs/aion-rp-llama-3.1-8b
+          - amazon/nova-lite-v1
+          - amazon/nova-micro-v1
+          - amazon/nova-pro-v1
+          - anthracite-org/magnum-v2-72b
+          - anthracite-org/magnum-v4-72b
+          - azure-gpt-4-turbo
+          - azure-gpt-4o
+          - azure-gpt-4o-mini
+          - azure-o1
+          - azure-o3-mini
+          - chatgpt-4o-latest
+          - claude-3-5-haiku-20241022
+          - claude-3-5-sonnet-20240620
+          - claude-3-5-sonnet-20241022
+          - claude-3-opus-20240229
+          - cognitivecomputations/dolphin-mixtral-8x22b
+          - cohere/command-r
+          - cohere/command-r-plus-08-2024
+          - deep-research
+          - deepclaude
+          - deepseek-ai/DeepSeek-R1-Zero
+          - deepseek-chat
+          - deepseek-r1-llama-70b
+          - deepseek-r1-nano
+          - deepseek-reasoner
+          - deepseek-reasoner-cheaper
+          - dolphin-2.9.2-qwen2-72b
+          - doubao-1.5-pro-256k
+          - doubao-1.5-pro-32k
+          - doubao-1.5-vision-pro-32k
+          - eva-unit-01/eva-qwen-2.5-72b
+          - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
+          - free-model
+          - gemini-2.0-flash-001
+          - gemini-2.0-flash-exp-search
+          - gemini-2.0-flash-lite-preview-02-05
+          - gemini-2.0-flash-thinking-exp-01-21
+          - gemini-2.0-flash-thinking-exp-1219
+          - gemini-2.0-pro-exp-02-05
+          - gemini-exp-1206
+          - gemini-exp-1206
+          - glm-4
+          - glm-4-air
+          - glm-4-air-0111
+          - glm-4-airx
+          - glm-4-flash
+          - glm-4-long
+          - glm-4-plus
+          - glm-4-plus-0111
+          - glm-zero-preview
+          - google/gemini-flash-1.5
+          - gpt-3.5-turbo
+          - gpt-4-turbo-preview
+          - gpt-4o
+          - gpt-4o-2024-08-06
+          - gpt-4o-2024-11-20
+          - gpt-4o-mini
+          - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
+          - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
+          - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
+          - huihui-ai/Llama-3.3-70B-Instruct-abliterated
+          - inflatebot/MN-12B-Mag-Mell-R1
+          - inflection/inflection-3-pi
+          - inflection/inflection-3-productivity
+          - kimi-k1.5-preview
+          - learnlm-1.5-pro-experimental
+          - llama-3.3-70b
+          - meta-llama/llama-3.1-8b-instruct
+          - meta-llama/llama-3.2-3b-instruct
+          - meta-llama/llama-3.2-90b-vision-instruct
+          - microsoft/wizardlm-2-7b
+          - microsoft/wizardlm-2-8x22b
+          - minimax/minimax-01
+          - mistralai/Mistral-Nemo-Instruct-2407
+          - mistralai/mistral-7b-instruct
+          - mistralai/mistral-large
+          - mistralai/mistral-tiny
+          - mlabonne/NeuralDaredevil-8B-abliterated
+          - model-selector
+          - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
+          - nousresearch/hermes-3-llama-3.1-405b
+          - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
+          - o1
+          - o1-plus
+          - o1-preview
+          - o3-mini
+          - qwen-long
+          - qwen-max
+          - qwen-plus
+          - qwen-turbo
+          - qwen/qwen-2.5-72b-instruct
+          - raifle/sorcererlm-8x22b
+          - recommended-model
+          - sonar
+          - sonar-pro
+          - sonar-reasoning
+          - sonar-reasoning-pro
+          - step-2-16k
+          - step-2-16k-exp
+          - step-2-mini
+          - undi95/remm-slerp-l2-13b
+          - x-ai/grok-2-1212
+          - x-ai/grok-beta
+          - yi-34b-chat-0205
+          - yi-34b-chat-200k
+          - yi-large
+          - yi-large-turbo
+          - yi-lightning
+          - yi-medium-200k
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+      modelDisplayLabel: "NanoGPT"
+
     # NVIDIA
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
       apiKey: "user_provided"
       baseURL: "https://integrate.api.nvidia.com/v1/"
       models:
@@ -872,7 +1021,6 @@ endpoints:
       titleConvo: true
       titleModel: "nvidia/nemotron-mini-4b-instruct"
       modelDisplayLabel: "Nvidia"
-      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
 
     # OpenRouter.ai
     # Model list: https://openrouter.ai/models
@@ -1155,9 +1303,9 @@ endpoints:
           - sonar-reasoning-pro
         fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "llama-3.1-sonar-small-128k-chat"
+      titleModel: "current_model"
       summarize: false
-      summaryModel: "llama-3.1-sonar-small-128k-chat"
+      summaryModel: "sonar"
       forcePrompt: false
       dropParams:
         - "stop"
@@ -1167,6 +1315,7 @@ endpoints:
     # SambaNova
     # https://cloud.sambanova.ai/apis
     - name: "SambaNova"
+      iconURL: "https://global.discourse-cdn.com/sambanova/original/1X/f5ea7759d23daaad4f91a387079b8a8a71cae3f6.webp"
       apiKey: "user_provided"
       baseURL: "https://api.sambanova.ai/v1/"
       models:
@@ -1190,70 +1339,6 @@ endpoints:
       titleConvo: true
       titleModel: "Meta-Llama-3.1-8B-Instruct"
       modelDisplayLabel: "SambaNova"
-      iconURL: "https://global.discourse-cdn.com/sambanova/original/1X/f5ea7759d23daaad4f91a387079b8a8a71cae3f6.webp"
-
-    # ShuttleAI API
-    # Model list: https://shuttleai.com/models
-    - name: "ShuttleAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.shuttleai.com/v1"
-      models:
-        default:
-          - "shuttleai/shuttle-3"
-          - "shuttleai/shuttle-3-mini"
-          - "shuttleai/s1"
-          - "shuttleai/s1-mini"
-          - "openai/o1-preview-2024-09-12"
-          - "openai/o1-mini-2024-09-12"
-          - "openai/gpt-4o-mini-2024-07-18"
-          - "openai/chatgpt-4o-latest"
-          - "openai/gpt-4o-2024-08-06"
-          - "openai/gpt-4o-2024-05-13"
-          - "openai/gpt-4-turbo-2024-04-09"
-          - "openai/gpt-4-0125-preview"
-          - "openai/gpt-4-1106-preview"
-          - "openai/gpt-4-0613"
-          - "openai/gpt-3.5-turbo-0125"
-          - "openai/gpt-3.5-turbo-1106"
-          - "anthropic/claude-3-5-sonnet-20240620"
-          - "anthropic/claude-3-opus-20240229"
-          - "anthropic/claude-3-haiku-20240307"
-          - "google/gemini-1.5-pro"
-          - "google/gemini-1.5-pro-exp-0827"
-          - "google/gemini-1.5-flash"
-          - "google/gemini-1.5-flash-exp-0827"
-          - "google/gemini-1.5-flash-8b-exp-0924"
-          - "meta-llama/meta-llama-3.2-90b-vision-instruct"
-          - "meta-llama/meta-llama-3.1-405b-instruct"
-          - "meta-llama/meta-llama-3.1-70b-instruct"
-          - "meta-llama/meta-llama-3.1-8b-instruct"
-          - "mattshumer/reflection-llama-3.1-70b"
-          - "perplexity/llama-3.1-sonar-large-128k-online"
-          - "perplexity/llama-3.1-sonar-small-128k-online"
-          - "perplexity/llama-3.1-sonar-large-128k-chat"
-          - "perplexity/llama-3.1-sonar-small-128k-chat"
-          - "mistralai/mistral-nemo-instruct-2407"
-          - "mistralai/codestral-2405"
-          - "alibaba-cloud/qwen-2.5-72b-instruct"
-          - "alibaba-cloud/qwen-2.5-coder-7b"
-          - "alibaba-cloud/qwen-2.5-math-72b"
-          - "cohere/command-r-plus-08-2024"
-          - "cohere/command-r-plus"
-          - "cohere/command-r-08-2024"
-          - "cohere/command-r"
-        fetch: true
-      titleConvo: true
-      titleModel: "shuttle-2.5-mini"
-      summarize: false
-      summaryModel: "shuttle-2.5-mini"
-      forcePrompt: false
-      dropParams:
-        - "user"
-        - "frequency_penalty"
-        - "presence_penalty"
-        - "repetition_penalty"
-      modelDisplayLabel: "ShuttleAI"
-      # iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ShuttleAI.png"
 
     # together.ai
     # https://api.together.ai/settings/api-keys
@@ -1321,6 +1406,7 @@ endpoints:
       modelDisplayLabel: "together.ai"
 
     # Unify
+    # Model list: https://unify.ai/chat
     - name: "Unify"
       apiKey: "user_provided"
       baseURL: "https://api.unify.ai/v0/"
@@ -1495,6 +1581,8 @@ endpoints:
         - "frequency_penalty"
         - "presence_penalty"
 
+    # xAI
+    # https://x.ai/api
     - name: "xai"
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
@@ -1509,353 +1597,3 @@ endpoints:
       summaryModel: "grok-beta"
       forcePrompt: false
       modelDisplayLabel: "Grok"
-
-# REVERSE PROXY
-
-    # ConvoAI
-    - name: "ConvoAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.convoai.tech/v1/"
-      models:
-        default:
-          - "gpt-3.5-turbo"
-          - "gpt-3.5-turbo-1106"
-          - "gpt-3.5-turbo-0125"
-          - "gpt-3.5-turbo-16k"
-          - "gpt-4"
-          - "gpt-4-0613"
-          - "gpt-4-1106-preview"
-          - "gpt-4-0125-preview"
-          - "gpt-4-vision-preview"
-          - "gpt-4-turbo-2024-04-09"
-          - "convoai-pro"
-          - "mixtral-8x22b"
-          - "gpt-3.5-turbo-16k-0613"
-          - "gpt-3.5-turbo-0613"
-          - "gpt-4-32k"
-          - "gpt-4-1106-vision-preview"
-          - "claude-2"
-          - "claude-3-haiku"
-          - "claude-3-sonnet"
-          - "claude-3-opus"
-          - "claude-instant-1.2"
-          - "gemma-2b"
-          - "gemma-2b-it"
-          - "gemma-7b"
-          - "gemma-7b-it"
-          - "gemini-1.0-pro-001"
-          - "gemini-pro"
-          - "gemini-1.0-pro"
-          - "gemini-1.0-pro-latest"
-          - "gemini-1.5-pro"
-          - "gemini-1.5-pro-latest"
-          - "gemini-pro-vision"
-          - "mistral-7b"
-          - "mixtral-8x7b-Instruct-v0.1"
-          - "mistral-7b-instruct-v0.1"
-          - "mistral-7b-instruct-v0.2"
-          - "mixtral-8x7b"
-          - "dolphin-mixtral-8x7b"
-          - "mistral-tiny"
-          - "mistral-small"
-          - "mistral-medium"
-          - "mistral-large"
-          - "llama2-7b"
-          - "llama2-70b"
-          - "llama2-13b"
-          - "code-llama-7b"
-          - "code-llama-70b-instruct"
-          - "code-llama-13b"
-          - "code-llama-34b"
-          - "code-llama-34b-instruct"
-          - "openchat-3.5"
-          - "yi-34b-chat"
-          - "yi-34b-200k"
-          - "command-r-plus"
-          - "command-r-plus-4bit"
-          - "aya-101"
-          - "dbrx-instruct"
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "ConvoAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/ConvoAI.png"
-
-    # FreeGPT-4
-    - name: "FreeGPT-4"
-      apiKey: "user_provided"
-      baseURL: "https://api.freegpt4.tech/v1/"
-      models:
-        default:
-          - "gpt-3.5-turbo"
-          - "gpt-3.5-turbo-1106"
-          - "gpt-3.5-turbo-0125"
-          - "gpt-3.5-turbo-16k"
-          - "gpt-4"
-          - "gpt-4-1106-preview"
-          - "gpt-4-0125-preview"
-          - "claude"
-          - "gemini-pro"
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "FreeGPT-4"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/FreeGPT-4.png"
-
-    # Mandrill
-    - name: "Mandrill"
-      apiKey: "user_provided"
-      baseURL: "https://api.mandrillai.tech/v1"
-      models:
-        default:
-          - "gpt-4o"
-          - "gpt-4-turbo"
-          - "gpt-4-0125-preview"
-          - "gpt-4-1106-preview"
-          - "gpt-4"
-          - "gpt-3.5-turbo"
-          - "gpt-3.5-turbo-1106"
-          - "gpt-3.5-turbo-0613"
-          - "gpt-3.5-turbo-0301"
-          - "claude-3-opus"
-          - "gemini-pro"
-          - "gemini-pro-vision"
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "Mandrill"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Mandrill.png"
-
-    # NagaAI
-    - name: "NagaAI"
-      apiKey: "user_provided"
-      baseURL: "https://api.naga.ac/v1"
-      models:
-        default:
-          - "gpt-4"
-          - "gpt-4-vision-preview"
-          - "gpt-4-turbo-preview"
-          - "gpt-4-0125-preview"
-          - "gpt-4-1106-preview"
-          - "gpt-4-0613"
-          - "mistral-large"
-          - "mistral-large-2402"
-          - "mistral-next"
-          - "mistral-small"
-          - "mistral-small-2402"
-          - "gpt-3.5-turbo"
-          - "gpt-3.5-turbo-0125"
-          - "gpt-3.5-turbo-1106"
-          - "gpt-3.5-turbo-0613"
-          - "claude-3-opus"
-          - "claude-3-opus-20240229"
-          - "claude-3-sonnet"
-          - "claude-3-sonnet-20240229"
-          - "claude-3-haiku"
-          - "claude-3-haiku-20240307"
-          - "claude-2.1"
-          - "claude-instant"
-          - "gemini-pro"
-          - "gemini-pro-vision"
-          - "llama-2-70b-chat"
-          - "llama-2-13b-chat"
-          - "llama-2-7b-chat"
-          - "mistral-7b"
-          - "mixtral-8x7b"
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      modelDisplayLabel: "NagaAI"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/NagaAI.png"
-
-    # Pawan
-    - name: "Pawan"
-      apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-rp/v1"
-      models:
-        default:
-          - "pai-001-rp"
-        fetch: false
-      titleConvo: true
-      titleModel: "pai-001-rp"
-      summarize: false
-      summaryModel: "pai-001-rp"
-      forcePrompt: false
-      modelDisplayLabel: "Pawan"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
-
-    # Pawan light
-    - name: "Pawan light"
-      apiKey: "user_provided"
-      baseURL: "https://api.pawan.krd/pai-001-light-rp/v1"
-      models:
-        default:
-          - "pai-001-light-rp"
-        fetch: false
-      titleConvo: true
-      titleModel: "pai-001-light-rp"
-      summarize: false
-      summaryModel: "pai-001-light-rp"
-      forcePrompt: false
-      modelDisplayLabel: "Pawan light"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/Pawan.png"
-
-    #Shard
-    - name: "Shard"
-      apiKey: "user_provided"
-      baseURL: "https://api.shard-ai.xyz/v1/"
-      models:
-        default:
-          - 'gpt-3.5-turbo-0301'
-          - 'gpt-3.5-turbo-0613'
-          - 'gpt-3.5-turbo'
-          - 'gpt-3.5-turbo-1106'
-          - 'gpt-3.5-turbo-0125'
-          - 'gpt-3.5-turbo-instruct'
-          - 'gpt-3.5-turbo-instruct-0914'
-          - 'gpt-3.5-turbo-16k'
-          - 'gpt-4-0613'
-          - 'gpt-4'
-          - 'gpt-4-turbo'
-          - 'gpt-4-turbo-2024-04-09'
-          - 'gpt-4-1106-preview'
-          - 'gpt-4-0125-preview'
-          - 'gpt-4-turbo-preview'
-          - 'gpt-4-vision-preview'
-          - 'command-r'
-          - 'command-r-plus'
-          - 'command-light-nightly'
-          - 'command'
-          - 'command-light'
-          - 'c4ai-aya'
-          - 'claude'
-          - 'claude-1.2'
-          - 'claude-2'
-          - 'claude-2.1'
-          - 'claude-3-haiku'
-          - 'claude-3-sonnet'
-          - 'claude-3-opus'
-          - 'claude-instant-v1'
-          - 'claude-instant-v1-100k'
-          - 'palm-2'
-          - 'dbrx-instruct'
-          - 'gemini-pro'
-          - 'gemini-1.5-pro'
-          - 'mixtral-8x7b-instruct'
-          - 'mixtral-8x7b'
-          - 'mixtral-8x22b'
-          - 'mixtral-8x22b-finetuned'
-          - 'zephyr-8x22b'
-          - 'zephyr-7b'
-          - 'mistral-tiny'
-          - 'mistral-small'
-          - 'mistral-medium'
-          - 'mistral-large'
-          - 'mistral-next'
-          - 'mistral-7b-instruct'
-          - 'yi-34b'
-          - 'gemma-2b'
-          - 'gemma-7b'
-          - 'gemma-1.1-7b'
-          - 'llamaguard-7b'
-          - 'llama-2-7b'
-          - 'llama-2-13b'
-          - 'llama-2-70b'
-          - 'llama-3-8b'
-          - 'llama-3-70b'
-          - 'openchat-3.5'
-          - 'phind-codellama-34b'
-          - 'llava-1.5'
-          - 'llava-1.6-34b'
-          - 'llava-1.6-7b'
-          - 'lzlv-70b'
-          - 'airoboros-70b'
-          - 'airoboros-70b-gpt4'
-          - 'cinematika-7b'
-          - 'toppy-7b'
-          - 'codellama-7b-instruct'
-          - 'codellama-13b-instruct'
-          - 'codellama-34b-instruct'
-          - 'codellama-70b-instruct'
-          - 'dolphine-mixtral'
-          - 'pi'
-          - 'mythomax-l2-13b'
-          - 'nous-capybara-7b'
-          - 'sonar-small-chat'
-          - 'sonar-medium-chat'
-          - 'sonar-small-online'
-          - 'sonar-medium-online'
-          - 'perplexity-related'
-          - 'hermes-2'
-          - 'hermes-2-pro'
-          - 'qwen-1.5-32b-chat'
-        fetch: false
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      modelDisplayLabel: "Shard"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/shard.png"
-
-    # Zukijourney
-    - name: "Zukijourney"
-      apiKey: "user_provided"
-      baseURL: "https://zukijourney.xyzbot.net/unf/"
-      models:
-        default:
-          - "gpt-3.5-turbo"
-          - "gpt-3.5-turbo-1106"
-          - "gpt-3.5-turbo-0125"
-          - "gpt-3.5-turbo-instruct"
-          - "gpt-3.5-turbo-16k"
-          - "gpt-4"
-          - "gpt-4-32k"
-          - "gpt-4-1106-preview"
-          - "gpt-4-0125-preview"
-          - "gpt-4-vision-preview"
-          - "claude"
-          - "claude-2"
-          - "claude-2.1"
-          - "claude-instant-v1"
-          - "claude-instant-v1-100k"
-          - "pplx-70b-online"
-          - "palm-2"
-          - "bard"
-          - "gemini-pro"
-          - "gemini-pro-vision"
-          - "mixtral-8x7b"
-          - "mixtral-8x7b-instruct"
-          - "mistral-tiny"
-          - "mistral-small"
-          - "mistral-medium"
-          - "mistral-7b-instruct"
-          - "codellama-7b-instruct"
-          - "llama-2-7b"
-          - "llama-2-70b-chat"
-          - "mythomax-l2-13b-8k"
-          - "sheep-duck-llama"
-          - "goliath-120b"
-          - "nous-llama"
-          - "yi-34b"
-          - "openchat"
-          - "solar10-7b"
-          - "pi"
-        fetch: true
-      titleConvo: true
-      titleModel: "gpt-3.5-turbo"
-      summarize: false
-      summaryModel: "gpt-3.5-turbo"
-      forcePrompt: false
-      dropParams:
-        - "stream"
-      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/zuki.png"

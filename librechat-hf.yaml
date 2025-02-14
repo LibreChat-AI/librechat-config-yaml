@@ -21,29 +21,6 @@ registration:
 
 endpoints:
   custom:
-    # Anyscale
-    # # Model list: https://console.anyscale.com/v2/playground
-    - name: "Anyscale"
-      apiKey: "user_provided"
-      baseURL: "https://api.endpoints.anyscale.com/v1"
-      models:
-        default:
-          - "google/gemma-7b-it"
-          - "llava-hf/llava-v1.6-mistral-7b-hf"
-          - "meta-llama/Meta-Llama-3-70B-Instruct"
-          - "meta-llama/Meta-Llama-3-8B-Instruct"
-          - "mistralai/Mistral-7B-Instruct-v0.1"
-          - "mistralai/Mixtral-8x22B-Instruct-v0.1"
-          - "mistralai/Mixtral-8x7B-Instruct-v0.1"
-          - "mlabonne/NeuralHermes-2.5-Mistral-7B"
-        fetch: false
-      titleConvo: true
-      titleModel: "meta-llama/Meta-Llama-3-8B-Instruct"
-      summarize: false
-      summaryModel: "meta-llama/Meta-Llama-3-8B-Instruct"
-      forcePrompt: false
-      modelDisplayLabel: "Anyscale"
-
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
@@ -493,7 +470,7 @@ endpoints:
     # Model list (auth header required): https://glhf.chat/models
     - name: "glhf.chat"
       iconURL: "https://glhf.chat/apple-touch-icon.png"
-      apiKey: "${GLHF_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://glhf.chat/api/openai/v1"
       models:
         default:
@@ -1347,6 +1324,8 @@ endpoints:
         - "frequency_penalty"
         - "presence_penalty"
 
+    # xAI
+    # https://x.ai/api
     - name: "xai"
       apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
