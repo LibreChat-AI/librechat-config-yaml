@@ -1315,11 +1315,12 @@ endpoints:
     # SambaNova
     # https://cloud.sambanova.ai/apis
     - name: "SambaNova"
-      iconURL: "https://global.discourse-cdn.com/sambanova/original/1X/f5ea7759d23daaad4f91a387079b8a8a71cae3f6.webp"
+      iconURL: "https://sambanova.ai/hubfs/logotype_sambanova_orange.png"
       apiKey: "user_provided"
       baseURL: "https://api.sambanova.ai/v1/"
       models:
         default:
+          - DeepSeek-R1
           - DeepSeek-R1-Distill-Llama-70B
           - Llama-3.1-Tulu-3-405B
           - Llama-3.2-11B-Vision-Instruct
