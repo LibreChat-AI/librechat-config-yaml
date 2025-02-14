@@ -1274,6 +1274,7 @@ endpoints:
     # SambaNova
     # https://cloud.sambanova.ai/apis
     - name: "SambaNova"
+      iconURL: "https://sambanova.ai/hubfs/logotype_sambanova_orange.png"
       apiKey: "${SAMBANOVA_API_KEY}"
       baseURL: "https://api.sambanova.ai/v1/"
       models:
@@ -1298,7 +1299,6 @@ endpoints:
       titleConvo: true
       titleModel: "Meta-Llama-3.1-8B-Instruct"
       modelDisplayLabel: "SambaNova"
-      iconURL: "https://global.discourse-cdn.com/sambanova/original/1X/f5ea7759d23daaad4f91a387079b8a8a71cae3f6.webp"
 
     # together.ai
     # https://api.together.ai/settings/api-keys
