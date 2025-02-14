@@ -58,7 +58,6 @@ Configuration used for the LibreChat Demo:
   </a>
 </p>
 
-- Accepts: Official APIs and Reverse Proxies
 - API Keys: Hardcoded as `user_provided`
 - File Strategy: `firebase`
 - Fetch: false
