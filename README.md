@@ -23,27 +23,32 @@ Contributions are welcome! Some files are more restrictive than others. Feel fre
 
 ## File Descriptions
 ### `librechat.yaml`
-Basic configuration where model fetching is enabled on all endpoints that supports it:
+Basic configuration:
 - API Keys: .env variables
 - File Strategy: `local`
 - Fetch: true
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat.yaml
-  ANYSCALE_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
-  DATABRICKS_API_KEY=
   FIREWORKS_API_KEY=
+  GITHUB_TOKEN=
+  GLHF_API_KEY
   GROQ_API_KEY=
   HUGGINGFACE_TOKEN=
+  HYPERBOLIC_API_KEY=
+  KLUSTER_API_KEY=
   MISTRAL_API_KEY=
+  NANOGPT_API_KEY
+  NVIDIA_API_KEY=
   OPENROUTER_KEY=
   PERPLEXITY_API_KEY=
-  SHUTTLEAI_API_KEY=
+  SAMBANOVA_API_KEY=
   TOGETHERAI_API_KEY=
   UNIFY_API_KEY=
+  XAI_API_KEY=
   ```
 
 ### `librechat-hf.yaml`
@@ -55,7 +60,6 @@ Configuration used for the LibreChat Demo:
   </a>
 </p>
 
-- Accepts: Official APIs and Reverse Proxies
 - API Keys: Hardcoded as `user_provided`
 - File Strategy: `firebase`
 - Fetch: false
@@ -84,54 +88,59 @@ Configuration used for the Railway one-click install template:
 </a>
 </p>
 
-- Accepts: Official APIs
 - API Keys: .env variables
 - File Strategy: `local`
 - Fetch: false
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-rw.yaml
-  ANYSCALE_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
-  DATABRICKS_API_KEY=
   FIREWORKS_API_KEY=
+  GITHUB_TOKEN=
+  GLHF_API_KEY
   GROQ_API_KEY=
   HUGGINGFACE_TOKEN=
+  HYPERBOLIC_API_KEY=
+  KLUSTER_API_KEY=
   MISTRAL_API_KEY=
+  NANOGPT_API_KEY
+  NVIDIA_API_KEY=
   OPENROUTER_KEY=
   PERPLEXITY_API_KEY=
-  SHUTTLEAI_API_KEY=
+  SAMBANOVA_API_KEY=
   TOGETHERAI_API_KEY=
   UNIFY_API_KEY=
+  XAI_API_KEY=
   ```
-- Note:
-  - Accepts `model` updates
-  - Contact @Berry or @fuegovic here or on Discord before submitting a PR to add a new `endpoint`
 
 ### `librechat-f.yaml`
-- Accepts: Official APIs
 - API Keys: .env variables
 - File Strategy: `firebase`
 - Fetch: false
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-f.yaml
-  ANYSCALE_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
-  DATABRICKS_API_KEY=
   FIREWORKS_API_KEY=
+  GITHUB_TOKEN=
+  GLHF_API_KEY
   GROQ_API_KEY=
   HUGGINGFACE_TOKEN=
+  HYPERBOLIC_API_KEY=
+  KLUSTER_API_KEY=
   MISTRAL_API_KEY=
+  NANOGPT_API_KEY
+  NVIDIA_API_KEY=
   OPENROUTER_KEY=
   PERPLEXITY_API_KEY=
-  SHUTTLEAI_API_KEY=
+  SAMBANOVA_API_KEY=
   TOGETHERAI_API_KEY=
   UNIFY_API_KEY=
+  XAI_API_KEY=
   ```
 
 ### `librechat-test.yaml`
@@ -140,12 +149,6 @@ Configuration used for the Railway one-click install template:
 ---
 
 ## Get an API key:
-
-
-### Official APIs:
-
-#### Anyscale
-- https://app.endpoints.anyscale.com/credentials
 
 #### APIpie
 - https://apipie.ai/dashboard/profile/api-keys
@@ -159,17 +162,41 @@ Configuration used for the Railway one-click install template:
 #### FireworksAI
 - https://fireworks.ai/
 
+#### Github Models
+- https://github.com
+
+#### glhf.chat
+- https://glhf.chat
+
 #### groq
 - https://console.groq.com/keys
+
+#### HuggingFace
+- https://huggingface.co/settings/tokens
+
+#### Hyperbolic
+- https://app.hyperbolic.xyz/
+
+#### Kluster
+- https://platform.kluster.ai/apikeys
 
 #### Mistral
 - https://mistral.ai/
 
+#### NanoGPT
+- https://nano-gpt.com/api
+
+#### NVIDIA
+- https://build.nvidia.com/explore/discover
+
 #### OpenRouter
 - https://openrouter.ai/
 
-#### ShuttleAI
-- https://shuttleai.com/keys
+#### Perplexity
+- https://docs.perplexity.ai/docs/getting-started
+
+#### SambaNova
+- https://cloud.sambanova.ai/apis
 
 #### TogetherAI
 - https://www.together.ai/
@@ -177,34 +204,5 @@ Configuration used for the Railway one-click install template:
 #### Unify
 - https://unify.ai/
 
----
-
-### Reverse Proxies:
-
-#### ConvoAI
-- https://discord.gg/taH8UnARwd
-- Get API key on discord with the command `/key`
-
-#### FreeGPT-4
-- https://discord.com/invite/gpt4
-- Get API key on discord with the command `/key`
-
-#### Mandrill
-- https://discord.mandrillai.tech
-- Get API key on discord with the command `/key get` 
-
-#### NagaAI
-- https://discord.naga.ac
-- Get API key on discord with the command `/key get` 
-
-#### Pawan
-- https://discord.gg/pawan
-- Get API key on discord with the command `/key`
-
-#### Shard
-- https://discord.gg/ligma
-- Get API key on discord with the command `/get-key`
-
-#### Zukijourney
-- https://discord.gg/zukijourney
-- Get API key on discord with the command `/key`
+#### X.AI (Grok)
+- https://api.x.ai/
