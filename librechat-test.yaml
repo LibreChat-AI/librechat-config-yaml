@@ -625,7 +625,7 @@ endpoints:
     # Hyperbolic
     # https://app.hyperbolic.xyz/models
     - name: 'Hyperbolic'
-      iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
+      iconURL: "https://app.hyperbolic.xyz/icon.svg"
       apiKey: '${HYPERBOLIC_API_KEY}'
       baseURL: 'https://api.hyperbolic.xyz/v1/'
       models:
