@@ -645,7 +645,7 @@ endpoints:
       titleConvo: true
       titleModel: "meta-llama/Meta-Llama-3.1-8B-Instruct"
       modelDisplayLabel: "Hyperbolic"
-      iconURL: "https://pbs.twimg.com/profile_images/1775708849707819008/1RRWsmmg_400x400.jpg"
+      iconURL: "https://app.hyperbolic.xyz/icon.svg"
 
     # kluster.ai
     # https://platform.kluster.ai/apikeys
