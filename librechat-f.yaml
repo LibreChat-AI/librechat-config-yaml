@@ -978,6 +978,7 @@ endpoints:
           - anthropic/claude-2
           - anthropic/claude-2.0
           - anthropic/claude-2.1
+          - anthropic/claude-3-7-sonnet
           - anthropic/claude-3-haiku
           - anthropic/claude-3-opus
           - anthropic/claude-3-sonnet
