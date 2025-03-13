@@ -427,6 +427,23 @@ endpoints:
       summaryModel: "deepseek-chat"
       modelDisplayLabel: "DeepSeek"
 
+    # FastAPI|NAI
+    # https://fast.typegpt.net/
+    - name: "FastAPI|NAI"
+      iconURL: "https://fast.typegpt.net/logo.png"
+      apiKey: "${FASTAPI_API_KEY}"
+      baseURL: "https://api.typegpt.net/v1"
+      models:
+        default:
+          - deepseek-r1
+          - deepseek-v3
+        fetch: true
+      titleConvo: true
+      titleModel: "deepseek-v3"
+      summarize: false
+      summaryModel: "deepseek-v3"
+      modelDisplayLabel: "FastAPI|NAI"
+      
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
