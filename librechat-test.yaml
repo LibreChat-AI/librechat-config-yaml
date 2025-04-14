@@ -1921,7 +1921,12 @@ endpoints:
       baseURL: "https://api.x.ai/v1"
       models:
         default:
-          - "grok-beta"
+          - grok-2-1212
+          - grok-2-vision-1212
+          - grok-3-beta
+          - grok-3-mini-beta
+          - grok-beta
+          - grok-vision-beta
         fetch: false
       titleConvo: true
       titleMethod: "completion"
