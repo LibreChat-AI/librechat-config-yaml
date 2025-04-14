@@ -2,7 +2,7 @@ import requests
 import json
 from collections import defaultdict
 
-def sort_and_group_ids(ids):
+def sort_and_group_ids(ids, stealth_models=None):
     """Sort and group model IDs, including category headers."""
     first_model = "openrouter/auto"
     models_list = []
@@ -48,6 +48,11 @@ def sort_and_group_ids(ids):
         if grouped_ids[suffix]:
             models_list.append(f'---{suffix[1:].upper()}---')
             models_list.extend(grouped_ids[suffix])
+            
+            # Add stealth models right after FREE category
+            if suffix == ':free' and stealth_models and len(stealth_models) > 0:
+                models_list.append('---STEALTH---')
+                models_list.extend(sorted(stealth_models))
 
     # Add prefix groups with headers
     for prefix in sorted(prefix_grouped.keys()):
@@ -62,8 +67,45 @@ def sort_and_group_ids(ids):
     
     return models_list
 
+def get_stealth_models():
+    """Prompt the user for stealth models if they want to add them."""
+    add_stealth = input("Do you want to add or update stealth models? (y/n): ").lower().strip()
+    
+    if add_stealth == 'y' or add_stealth == 'yes':
+        saved_models = []
+        try:
+            with open("openrouter.txt", 'r') as file:
+                all_models = json.load(file)
+                
+                # Find STEALTH section and extract models
+                stealth_section = False
+                for item in all_models:
+                    if item == "---STEALTH---":
+                        stealth_section = True
+                        continue
+                    elif stealth_section and item.startswith("---"):
+                        break
+                    elif stealth_section:
+                        saved_models.append(item)
+                
+                if saved_models:
+                    print("Currently saved stealth models:")
+                    print(", ".join(saved_models))
+        except (FileNotFoundError, json.JSONDecodeError):
+            pass
+            
+        stealth_input = input("Enter comma-separated list of stealth model IDs: ").strip()
+        if stealth_input:
+            # Split by commas and clean up whitespace
+            return [model.strip() for model in stealth_input.split(',')]
+    
+    return []
+
 def fetch_and_save_model_ids(url, output_file):
     try:
+        # Get stealth models first
+        stealth_models = get_stealth_models()
+        
         # Fetch the data from the URL
         response = requests.get(url)
         response.raise_for_status()
@@ -73,7 +115,7 @@ def fetch_and_save_model_ids(url, output_file):
         model_ids = [model["id"] for model in data.get("data", []) if "id" in model]
 
         # Sort and group the IDs
-        sorted_models = sort_and_group_ids(model_ids)
+        sorted_models = sort_and_group_ids(model_ids, stealth_models)
 
         # Save as JSON array
         with open(output_file, 'w') as file:
