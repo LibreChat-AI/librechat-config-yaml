@@ -14,6 +14,19 @@ registration:
     - "google"
     - "openid"
 
+  termsOfService:
+    externalUrl: "https://github.com/LibreChat-AI/librechat-config-yaml"
+    openNewTab: true
+    modalAcceptance: true
+    modalTitle: "Important Notice"
+    modalContent: |
+      # Configuration Update Required
+      ## Notice
+      The `librechat.yaml` configuration file you are currently using has been deprecated.
+
+      To continue receiving updates and ensure compatibility, please update your `CONFIG_PATH` to the following URL:
+      `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-test.yaml`
+
 endpoints:
   custom:
     # APIpie
