@@ -1202,6 +1202,9 @@ endpoints:
           - openai/o1-pro
           - openai/o3-mini
           - openai/o3-mini-high
+          - openai/o3
+          - openai/o4-mini
+          - openai/o4-mini-high
           - '---PERPLEXITY---'
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
