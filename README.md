@@ -7,93 +7,76 @@ See the Custom Configuration Guide for more information: [LibreChat Custom Confi
 - In your LibreChat `.env` file, add `CONFIG_PATH="https://raw-config-file-url/librechat.yaml"`
   - ⚠️ Replace the URL with one provided below!
 
-## Contributions
-Contributions are welcome! Some files are more restrictive than others. Feel free to ask @fuegovic or @Berry here or on Discord if you have any questions or doubts.
-- Updates to the model list are always welcome
-- Adding endpoints is restricted on some files
+## Available Configuration Files
 
-> **❗Note:**
-> - Keep the file content organized: Official APIs first, then Reverse Proxies
-> - Keep the Official APIs alphabetized
-> - Keep the Reverse Proxies alphabetized
-> - Always provide a logo for new endpoints
-> - When adding a new endpoint, always add a note in the bottom of this README with the name and URL to get an API key
->   - Use alphabetical order, like in the yaml files
->   - For reverse proxies on discord, add the invite link and the command to get the API key    
+| File Name | API Keys | File Strategy |
+|-----------|----------|---------------|
+| librechat-env-l.yaml | env | local |
+| librechat-env-f.yaml | env | firebase |
+| librechat-up-l.yaml | user_provided | local |
+| librechat-up-f.yaml | user_provided | firebase |
 
-## File Descriptions
-### `librechat.yaml`
-Basic configuration:
-- API Keys: .env variables
-- File Strategy: `local`
-- Fetch: true
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat.yaml
-  APIPIE_API_KEY=
-  COHERE_API_KEY=
-  DEEPSEEK_API_KEY=
-  FIREWORKS_API_KEY=
-  GITHUB_TOKEN=
-  GLHF_API_KEY
-  GROQ_API_KEY=
-  HUGGINGFACE_TOKEN=
-  HYPERBOLIC_API_KEY=
-  KLUSTER_API_KEY=
-  MISTRAL_API_KEY=
-  NANOGPT_API_KEY
-  NVIDIA_API_KEY=
-  OPENROUTER_KEY=
-  PERPLEXITY_API_KEY=
-  SAMBANOVA_API_KEY=
-  TOGETHERAI_API_KEY=
-  UNIFY_API_KEY=
-  XAI_API_KEY=
-  ```
+## LibreChat Demo & Quick Deployments
 
-### `librechat-hf.yaml`
-Configuration used for the LibreChat Demo:
 <p align="left">
   <a href="https://demo.librechat.cfd/">
       <img src="https://github.com/LibreChat-AI/librechat-config-yaml/assets/32828263/d3a1e88f-fce0-4a8e-8c1d-5901a3e1c2dd">
-  <img href="https://demo.librechat.cfd/">
   </a>
 </p>
 
-- API Keys: Hardcoded as `user_provided`
-- File Strategy: `firebase`
-- Fetch: false
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-hf.yaml
-  ```
-
-### `librechat-aio.yaml`
-Same configuration used for the LibreChat Demo, but with firebase disable:
-
-- Accepts: Official APIs and Reverse Proxies
-- API Keys: Hardcoded as `user_provided`
-- File Strategy: `local`
-- Fetch: false
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-aio.yaml
-  ```
-
-### `librechat-rw.yaml`
-Configuration used for the Railway one-click install template:
 <p align="left">
 <a href="https://railway.app/template/b5k2mn?referralCode=HI9hWz">
   <img src="https://railway.app/button.svg" alt="Deploy on Railway">
 </a>
 </p>
 
+## Contributions
+Contributions are welcome!
+
+**Important:** Instead of manually updating individual files, please use/update the scripts provided in the [scripts folder](./scripts/). See the [scripts README](./scripts/README.md) for more information on how to use these scripts for file generation and updates.
+
+> **❗Note:**
+> - Updates to the model list are always welcome
+> - Adding endpoints requires also updating the scripts
+> - Keep the APIs alphabetized
+> - Provide a logo for new endpoints
+> - When adding a new endpoint, add a note in the bottom of this README with the name and URL to get an API key
+   
+## File Descriptions
+### `librechat-env-l.yaml`
+Basic configuration:
 - API Keys: .env variables
 - File Strategy: `local`
-- Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-rw.yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-l.yaml
+  APIPIE_API_KEY=
+  COHERE_API_KEY=
+  DEEPSEEK_API_KEY=
+  FIREWORKS_API_KEY=
+  GITHUB_TOKEN=
+  GLHF_API_KEY
+  GROQ_API_KEY=
+  HUGGINGFACE_TOKEN=
+  HYPERBOLIC_API_KEY=
+  KLUSTER_API_KEY=
+  MISTRAL_API_KEY=
+  NANOGPT_API_KEY
+  NVIDIA_API_KEY=
+  OPENROUTER_KEY=
+  PERPLEXITY_API_KEY=
+  SAMBANOVA_API_KEY=
+  TOGETHERAI_API_KEY=
+  UNIFY_API_KEY=
+  XAI_API_KEY=
+  ```
+### `librechat-env-f.yaml`
+Basic configuration:
+- API Keys: .env variables
+- File Strategy: `firebase`
+- .env config:
+  ```yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-f.yaml
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
@@ -115,32 +98,22 @@ Configuration used for the Railway one-click install template:
   XAI_API_KEY=
   ```
 
-### `librechat-f.yaml`
-- API Keys: .env variables
+### `librechat-up-f.yaml`
+Basic configuration:
+- API Keys: `user_provided`
 - File Strategy: `firebase`
-- Fetch: false
 - .env config:
   ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/librechat-f.yaml
-  APIPIE_API_KEY=
-  COHERE_API_KEY=
-  DEEPSEEK_API_KEY=
-  FIREWORKS_API_KEY=
-  GITHUB_TOKEN=
-  GLHF_API_KEY
-  GROQ_API_KEY=
-  HUGGINGFACE_TOKEN=
-  HYPERBOLIC_API_KEY=
-  KLUSTER_API_KEY=
-  MISTRAL_API_KEY=
-  NANOGPT_API_KEY
-  NVIDIA_API_KEY=
-  OPENROUTER_KEY=
-  PERPLEXITY_API_KEY=
-  SAMBANOVA_API_KEY=
-  TOGETHERAI_API_KEY=
-  UNIFY_API_KEY=
-  XAI_API_KEY=
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-f.yaml
+  ```
+
+### `librechat-up-l.yaml`
+Basic configuration:
+- API Keys: `user_provided`
+- File Strategy: `local`
+- .env config:
+  ```yaml
+  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-l.yaml
   ```
 
 ### `librechat-test.yaml`
@@ -148,61 +121,46 @@ Configuration used for the Railway one-click install template:
 
 ---
 
+## Deprecated Files
+The following files are now deprecated and should not be used for new configurations:
+
+### ~~`librechat.yaml`~~ (Deprecated)
+Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env.l.yaml`
+
+### ~~`librechat-hf.yaml`~~ (Deprecated)
+Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-f.yaml`
+
+### ~~`librechat-aio.yaml`~~ (Deprecated)
+Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-l.yaml`
+
+### ~~`librechat-rw.yaml`~~ (Deprecated)
+Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-l.yaml`
+
+### ~~`librechat-f.yaml`~~ (Deprecated)
+Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-f.yaml`
+
+---
+
 ## Get an API key:
 
-#### APIpie
-- https://apipie.ai/dashboard/profile/api-keys
-
-#### Cohere
-- https://dashboard.cohere.com/api-keys
-
-#### DeepSeek
-- https://platform.deepseek.com/api_keys
-
-#### FireworksAI
-- https://fireworks.ai/
-
-#### Github Models
-- https://github.com
-
-#### glhf.chat
-- https://glhf.chat
-
-#### groq
-- https://console.groq.com/keys
-
-#### HuggingFace
-- https://huggingface.co/settings/tokens
-
-#### Hyperbolic
-- https://app.hyperbolic.xyz/
-
-#### Kluster
-- https://platform.kluster.ai/apikeys
-
-#### Mistral
-- https://mistral.ai/
-
-#### NanoGPT
-- https://nano-gpt.com/api
-
-#### NVIDIA
-- https://build.nvidia.com/explore/discover
-
-#### OpenRouter
-- https://openrouter.ai/
-
-#### Perplexity
-- https://docs.perplexity.ai/docs/getting-started
-
-#### SambaNova
-- https://cloud.sambanova.ai/apis
-
-#### TogetherAI
-- https://www.together.ai/
-
-#### Unify
-- https://unify.ai/
-
-#### X.AI (Grok)
-- https://api.x.ai/
+| Provider | URL |
+|----------|-----|
+| APIpie | https://apipie.ai/dashboard/profile/api-keys |
+| Cohere | https://dashboard.cohere.com/api-keys |
+| DeepSeek | https://platform.deepseek.com/api_keys |
+| FireworksAI | https://fireworks.ai/ |
+| Github Models | https://github.com |
+| glhf.chat | https://glhf.chat |
+| groq | https://console.groq.com/keys |
+| HuggingFace | https://huggingface.co/settings/tokens |
+| Hyperbolic | https://app.hyperbolic.xyz/ |
+| Kluster | https://platform.kluster.ai/apikeys |
+| Mistral | https://mistral.ai/ |
+| NanoGPT | https://nano-gpt.com/api |
+| NVIDIA | https://build.nvidia.com/explore/discover |
+| OpenRouter | https://openrouter.ai/ |
+| Perplexity | https://docs.perplexity.ai/docs/getting-started |
+| SambaNova | https://cloud.sambanova.ai/apis |
+| TogetherAI | https://www.together.ai/ |
+| Unify | https://unify.ai/ |
+| X.AI (Grok) | https://api.x.ai/ |

@@ -3,9 +3,6 @@ version: 1.2.4
 cache: true
 fileStrategy: "firebase"
 
-interface:
-  runCode: false
-
 registration:
   socialLogins:
     - "discord"
@@ -509,7 +506,13 @@ endpoints:
           - yi-vision
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "claude-3-haiku"
+      summarize: false
+      summaryModel: "claude-3-haiku"
+      dropParams:
+        - "stream"
+      modelDisplayLabel: "APIpie"
+      iconURL: "https://raw.githubusercontent.com/fuegovic/lc-config-yaml/main/icons/APIpie.png"
 
     # cohere
     # Model list: https://dashboard.cohere.com/playground/chat
@@ -554,23 +557,6 @@ endpoints:
       summarize: false
       summaryModel: "deepseek-chat"
       modelDisplayLabel: "DeepSeek"
-
-    # FastAPI|NAI
-    # https://fast.typegpt.net/
-    - name: "FastAPI|NAI"
-      iconURL: "https://fast.typegpt.net/logo.png"
-      apiKey: "${FASTAPI_API_KEY}"
-      baseURL: "https://api.typegpt.net/v1"
-      models:
-        default:
-          - deepseek-r1
-          - deepseek-v3
-        fetch: true
-      titleConvo: true
-      titleModel: "deepseek-v3"
-      summarize: false
-      summaryModel: "deepseek-v3"
-      modelDisplayLabel: "FastAPI|NAI"
 
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
@@ -620,8 +606,7 @@ endpoints:
       dropParams:
         - "user"
 
-    # GitHub
-    # Model list: https://models.inference.ai.azure.com/models 
+    # GitHub 
     - name: "Github Models"
       iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
       apiKey: "${GITHUB_TOKEN}"
@@ -656,45 +641,6 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-4o-mini"
 
-    # glhf.chat 
-    # Model list (auth header required): https://glhf.chat/models
-    - name: "glhf.chat"
-      iconURL: "https://glhf.chat/apple-touch-icon.png"
-      apiKey: "${GLHF_API_KEY}"
-      baseURL: "https://glhf.chat/api/openai/v1"
-      models:
-        default:
-          - hf:NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO
-          - hf:Qwen/QwQ-32B-Preview
-          - hf:Qwen/Qwen2.5-72B-Instruct
-          - hf:Qwen/Qwen2.5-7B-Instruct
-          - hf:Qwen/Qwen2.5-Coder-32B-Instruct
-          - hf:anthracite-org/magnum-v4-12b
-          - hf:deepseek-ai/DeepSeek-R1
-          - hf:deepseek-ai/DeepSeek-R1-Distill-Llama-70B
-          - hf:deepseek-ai/DeepSeek-V3
-          - hf:deepseek-ai/DeepSeek-V3-0324
-          - hf:google/gemma-2-27b-it
-          - hf:google/gemma-2-9b-it
-          - hf:huihui-ai/Llama-3.3-70B-Instruct-abliterated
-          - hf:meta-llama/Llama-3.1-405B-Instruct
-          - hf:meta-llama/Llama-3.1-70B-Instruct
-          - hf:meta-llama/Llama-3.1-8B-Instruct
-          - hf:meta-llama/Llama-3.2-11B-Vision-Instruct
-          - hf:meta-llama/Llama-3.2-3B-Instruct
-          - hf:meta-llama/Llama-3.2-90B-Vision-Instruct
-          - hf:meta-llama/Llama-3.3-70B-Instruct
-          - hf:meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
-          - hf:meta-llama/Llama-4-Scout-17B-16E-Instruct
-          - hf:mistralai/Mistral-7B-Instruct-v0.3
-          - hf:mistralai/Mixtral-8x22B-Instruct-v0.1
-          - hf:mistralai/Mixtral-8x7B-Instruct-v0.1
-          - hf:nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
-          - hf:upstage/SOLAR-10.7B-Instruct-v1.0
-        fetch: false
-      titleConvo: true
-      titleModel: "current_model"
-
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
@@ -724,6 +670,7 @@ endpoints:
       modelDisplayLabel: "groq"
 
     # HuggingFace
+    # https://huggingface.co/settings/tokens
     - name: 'HuggingFace'
       apiKey: '${HUGGINGFACE_TOKEN}'
       baseURL: 'https://api-inference.huggingface.co/v1'
@@ -820,7 +767,6 @@ endpoints:
     # Hyperbolic
     # https://app.hyperbolic.xyz/models
     - name: 'Hyperbolic'
-      iconURL: "https://app.hyperbolic.xyz/icon.svg"
       apiKey: '${HYPERBOLIC_API_KEY}'
       baseURL: 'https://api.hyperbolic.xyz/v1/'
       models:
@@ -846,11 +792,11 @@ endpoints:
       titleConvo: true
       titleModel: "meta-llama/Meta-Llama-3.1-8B-Instruct"
       modelDisplayLabel: "Hyperbolic"
+      iconURL: "https://app.hyperbolic.xyz/icon.svg"
 
     # kluster.ai
     # https://platform.kluster.ai/apikeys
     - name: "Kluster"
-      iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
       apiKey: "${KLUSTER_API_KEY}"
       baseURL: "https://api.kluster.ai/v1/"
       models:
@@ -869,6 +815,7 @@ endpoints:
       titleConvo: true
       titleModel: 'klusterai/Meta-Llama-3.1-8B-Instruct-Turbo'
       modelDisplayLabel: 'Kluster'
+      iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
 
     # Mistral AI API
     # Model list: https://docs.mistral.ai/getting-started/models/
@@ -1180,7 +1127,6 @@ endpoints:
     # NVIDIA         
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
-      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
       apiKey: "${NVIDIA_API_KEY}"
       baseURL: "https://integrate.api.nvidia.com/v1/"
       models:
@@ -1316,6 +1262,7 @@ endpoints:
       titleConvo: true
       titleModel: "nvidia/nemotron-mini-4b-instruct"
       modelDisplayLabel: "Nvidia"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
 
     # OpenRouter.ai
     # Model list: https://openrouter.ai/models

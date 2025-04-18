@@ -1,10 +1,14 @@
 version: 1.2.4
 
 cache: true
-fileStrategy: "firebase"
 
 interface:
-  runCode: false
+  privacyPolicy:
+    externalUrl: 'https://librechat.ai/privacy-policy'
+    openNewTab: true
+  termsOfService:
+    externalUrl: 'https://librechat.ai/tos'
+    openNewTab: true
 
 registration:
   socialLogins:
@@ -20,7 +24,7 @@ endpoints:
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py
     - name: "APIpie"
-      apiKey: "${APIPIE_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://apipie.ai/v1/"
       models:
         default:
@@ -509,12 +513,15 @@ endpoints:
           - yi-vision
         fetch: false
       titleConvo: true
-      titleModel: "gpt-3.5-turbo"
+      titleModel: "claude-3-haiku"
+      summarize: false
+      summaryModel: "claude-3-haiku"
+      modelDisplayLabel: "APIpie"
 
     # cohere
     # Model list: https://dashboard.cohere.com/playground/chat
     - name: "cohere"
-      apiKey: "${COHERE_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.cohere.ai/v1"
       models:
         default:
@@ -542,7 +549,7 @@ endpoints:
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
     - name: "deepseek"
-      apiKey: "${DEEPSEEK_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.deepseek.com"
       models:
         default:
@@ -555,27 +562,10 @@ endpoints:
       summaryModel: "deepseek-chat"
       modelDisplayLabel: "DeepSeek"
 
-    # FastAPI|NAI
-    # https://fast.typegpt.net/
-    - name: "FastAPI|NAI"
-      iconURL: "https://fast.typegpt.net/logo.png"
-      apiKey: "${FASTAPI_API_KEY}"
-      baseURL: "https://api.typegpt.net/v1"
-      models:
-        default:
-          - deepseek-r1
-          - deepseek-v3
-        fetch: true
-      titleConvo: true
-      titleModel: "deepseek-v3"
-      summarize: false
-      summaryModel: "deepseek-v3"
-      modelDisplayLabel: "FastAPI|NAI"
-
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
-      apiKey: "${FIREWORKS_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default:
@@ -620,11 +610,11 @@ endpoints:
       dropParams:
         - "user"
 
-    # GitHub
-    # Model list: https://models.inference.ai.azure.com/models 
+    # GitHub 
+    # Models: https://models.inference.ai.azure.com/models
     - name: "Github Models"
       iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
-      apiKey: "${GITHUB_TOKEN}"
+      apiKey: "user_provided"
       baseURL: "https://models.inference.ai.azure.com"
       models:
         default:
@@ -660,7 +650,7 @@ endpoints:
     # Model list (auth header required): https://glhf.chat/models
     - name: "glhf.chat"
       iconURL: "https://glhf.chat/apple-touch-icon.png"
-      apiKey: "${GLHF_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://glhf.chat/api/openai/v1"
       models:
         default:
@@ -698,7 +688,7 @@ endpoints:
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
-      apiKey: "${GROQ_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.groq.com/openai/v1/"
       models:
         default:
@@ -724,8 +714,9 @@ endpoints:
       modelDisplayLabel: "groq"
 
     # HuggingFace
+    # https://huggingface.co/settings/tokens
     - name: 'HuggingFace'
-      apiKey: '${HUGGINGFACE_TOKEN}'
+      apiKey: 'user_provided'
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
         default:
@@ -821,7 +812,7 @@ endpoints:
     # https://app.hyperbolic.xyz/models
     - name: 'Hyperbolic'
       iconURL: "https://app.hyperbolic.xyz/icon.svg"
-      apiKey: '${HYPERBOLIC_API_KEY}'
+      apiKey: 'user_provided'
       baseURL: 'https://api.hyperbolic.xyz/v1/'
       models:
         default:
@@ -851,7 +842,7 @@ endpoints:
     # https://platform.kluster.ai/apikeys
     - name: "Kluster"
       iconURL: "https://platform.kluster.ai/cropped-fav-1-144x144.png"
-      apiKey: "${KLUSTER_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.kluster.ai/v1/"
       models:
         default:
@@ -873,7 +864,7 @@ endpoints:
     # Mistral AI API
     # Model list: https://docs.mistral.ai/getting-started/models/
     - name: "Mistral"
-      apiKey: "${MISTRAL_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.mistral.ai/v1"
       models:
         default:
@@ -945,7 +936,7 @@ endpoints:
     # Model list: https://nano-gpt.com/api/models
     - name: "NanoGPT"
       iconURL: "https://nano-gpt.com/logo.png"
-      apiKey: "${NANOGPT_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://nano-gpt.com/api/v1/"
       models:
         default:
@@ -1177,11 +1168,11 @@ endpoints:
       titleModel: "current_model"
       modelDisplayLabel: "NanoGPT"
 
-    # NVIDIA         
+    # NVIDIA
     # https://build.nvidia.com/explore/discover
     - name: "Nvidia"
       iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/refs/heads/main/icons/nvidia.png"
-      apiKey: "${NVIDIA_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://integrate.api.nvidia.com/v1/"
       models:
         default:
@@ -1321,7 +1312,7 @@ endpoints:
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
     - name: "OpenRouter"
-      apiKey: "${OPENROUTER_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
@@ -1666,7 +1657,7 @@ endpoints:
     # Preplexity
     # Model list: https://docs.perplexity.ai/docs/model-cards
     - name: "Perplexity"
-      apiKey: "${PERPLEXITY_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.perplexity.ai/"
       models:
         default:
@@ -1678,9 +1669,9 @@ endpoints:
           - sonar-reasoning-pro
         fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "llama-3.1-sonar-small-128k-chat"
+      titleModel: "current_model"
       summarize: false
-      summaryModel: "llama-3.1-sonar-small-128k-chat"
+      summaryModel: "sonar"
       forcePrompt: false
       dropParams:
         - "stop"
@@ -1691,7 +1682,7 @@ endpoints:
     # https://cloud.sambanova.ai/apis
     - name: "SambaNova"
       iconURL: "https://sambanova.ai/hubfs/logotype_sambanova_orange.png"
-      apiKey: "${SAMBANOVA_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.sambanova.ai/v1/"
       models:
         default:
@@ -1720,7 +1711,7 @@ endpoints:
     # https://api.together.ai/settings/api-keys
     # Model list: https://docs.together.ai/docs/inference-models
     - name: "together.ai"
-      apiKey: "${TOGETHERAI_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.together.xyz"
       models:
         default:
@@ -1783,16 +1774,16 @@ endpoints:
           - upstage/SOLAR-10.7B-Instruct-v1.0
         fetch: false
       titleConvo: true
-      titleModel: "togethercomputer/llama-2-7b-chat"
+      titleModel: "openchat/openchat-3.5-1210"
       summarize: false
-      summaryModel: "togethercomputer/llama-2-7b-chat"
+      summaryModel: "openchat/openchat-3.5-1210"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
     # Unify
     # Model list: https://unify.ai/chat
     - name: "Unify"
-      apiKey: "${UNIFY_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.unify.ai/v0/"
       models:
         default:
@@ -1974,7 +1965,7 @@ endpoints:
     # xAI
     # https://x.ai/api
     - name: "xai"
-      apiKey: "${XAI_API_KEY}"
+      apiKey: "user_provided"
       baseURL: "https://api.x.ai/v1"
       models:
         default:

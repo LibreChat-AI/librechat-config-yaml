@@ -44,12 +44,11 @@ This will:
 2. Prompt whether to update model lists
 3. Create backups before any modifications
 4. Process all configuration files:
-   - librechat-aio.yaml
-   - librechat-f.yaml
-   - librechat-hf.yaml
-   - librechat-rw.yaml
+   - librechat-env-f.yaml
+   - librechat-env-l.yaml
+   - librechat-up-f.yaml
+   - librechat-up-l.yaml
    - librechat-test.yaml
-   - librechat.yaml
 
 ### Individual Scripts
 
