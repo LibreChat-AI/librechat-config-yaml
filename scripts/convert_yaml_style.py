@@ -34,12 +34,11 @@ logger.info("Logging initialized successfully")
 
 # Input and output file paths
 yaml_files = [
-    'librechat-aio.yaml',
-    'librechat-f.yaml',
-    'librechat-hf.yaml',
-    'librechat-rw.yaml',
+    'librechat-env-f.yaml',
+    'librechat-env-l.yaml',
+    'librechat-up-f.yaml',
+    'librechat-up-l.yaml',
     'librechat-test.yaml',
-    'librechat.yaml',
 ]
 
 def create_backup(file_path):
@@ -60,12 +59,11 @@ def convert_yaml_style():
     
     # Input files with parent directory
     yaml_files = [
-        os.path.join(parent_dir, 'librechat-aio.yaml'),
-        os.path.join(parent_dir, 'librechat-f.yaml'),
-        os.path.join(parent_dir, 'librechat-hf.yaml'),
-        os.path.join(parent_dir, 'librechat-rw.yaml'),
+        os.path.join(parent_dir, 'librechat-env-f.yaml'),
+        os.path.join(parent_dir, 'librechat-env-l.yaml'),
+        os.path.join(parent_dir, 'librechat-up-f.yaml'),
+        os.path.join(parent_dir, 'librechat-up-l.yaml'),
         os.path.join(parent_dir, 'librechat-test.yaml'),
-        os.path.join(parent_dir, 'librechat.yaml'),
     ]
 
     for filename in yaml_files:

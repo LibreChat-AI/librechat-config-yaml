@@ -263,12 +263,12 @@ def update_models():
     
     # Input and output file paths with parent directory
     input_files = [
-        os.path.join(parent_dir, 'librechat-aio.yaml'),
-        os.path.join(parent_dir, 'librechat-f.yaml'),
-        os.path.join(parent_dir, 'librechat-hf.yaml'),
-        os.path.join(parent_dir, 'librechat-rw.yaml'),
+        os.path.join(parent_dir, 'librechat-env-f.yaml'),
+        os.path.join(parent_dir, 'librechat-env-l.yaml'),
+        os.path.join(parent_dir, 'librechat-up-f.yaml'),
+        os.path.join(parent_dir, 'librechat-up-l.yaml'),
         os.path.join(parent_dir, 'librechat-test.yaml'),
-        os.path.join(parent_dir, 'librechat.yaml'),
+        # os.path.join(parent_dir, 'librechat.yaml'),
     ]
 
     # Load each input file and perform updates
@@ -280,9 +280,6 @@ def update_models():
         try:
             with open(input_file, 'r', encoding='utf-8') as f:
                 data = yaml.safe_load(f)
-
-            # Make modifications here
-            # ...existing code...
 
             # Save the updated file
             with open(input_file, 'w', encoding='utf-8') as f:
@@ -301,12 +298,12 @@ def main():
     # Get parent directory path
     parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     yaml_files = [
-        'librechat-aio.yaml',
-        'librechat-f.yaml',
-        'librechat-hf.yaml',
-        'librechat-rw.yaml',
+        'librechat-env-f.yaml',
+        'librechat-env-l.yaml',
+        'librechat-up-f.yaml',
+        'librechat-up-l.yaml',
         'librechat-test.yaml',
-        'librechat.yaml',
+        # 'librechat.yaml',
     ]
     
     # Define the scripts to run and their corresponding provider names
