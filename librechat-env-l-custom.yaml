@@ -1,0 +1,32 @@
+version: 1.2.4
+
+cache: true
+
+registration:
+  socialLogins:
+    - "discord"
+    - "facebook"
+    - "github"
+    - "google"
+    - "openid"
+
+endpoints:
+  custom:
+    # ElectronHub
+    # https://playground.electronhub.top/console
+    - name: "ElectronHub"
+      apiKey: "${ELECTRONHUB_API_KEY}"
+      baseURL: "https://api.electronhub.top/v1/"
+      models:
+        default:
+          - gpt-4.1-2025-04-14
+          - claude-3-7-sonnet-20250219
+          - gemini-2.5-pro-preview-03-25
+          - pixtral-large-2411
+        fetch: true
+      titleConvo: true
+      titleModel: "llama-4-scout-17b-16e-instruct"
+      summarize: false
+      summaryModel: "llama-4-scout-17b-16e-instruct"
+      modelDisplayLabel: "ElectronHub"
+      iconURL: "https://c10.patreonusercontent.com/4/patreon-media/p/campaign/12560061/85eee3b0fd884366a1ba945c2df37bcf/eyJ3IjoyMDB9/6.png?token-time=2145916800&token-hash=xfzg-GLUhQ7Jv_M8xuvaZSKVuSOgyNgB9c7a_qSm8AM%3D"
