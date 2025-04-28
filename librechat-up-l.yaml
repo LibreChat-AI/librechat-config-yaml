@@ -549,7 +549,7 @@ endpoints:
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
     - name: "deepseek"
-      apiKey: "user_provided"
+      apiKey: "${DEEPSEEK_API_KEY}"
       baseURL: "https://api.deepseek.com"
       models:
         default:
@@ -565,7 +565,7 @@ endpoints:
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
-      apiKey: "user_provided"
+      apiKey: "${FIREWORKS_API_KEY}"
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default:
@@ -602,7 +602,7 @@ endpoints:
           - accounts/zmd5zer-d5cab1/models/ft-10cf39a6-ebbdd
         fetch: false
       titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      titleModel: "accounts/fireworks/models/qwq-32b"
       summarize: false
       summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
       forcePrompt: false
@@ -1312,7 +1312,7 @@ endpoints:
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
     - name: "OpenRouter"
-      apiKey: "user_provided"
+      apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
@@ -1711,7 +1711,7 @@ endpoints:
     # https://api.together.ai/settings/api-keys
     # Model list: https://docs.together.ai/docs/inference-models
     - name: "together.ai"
-      apiKey: "user_provided"
+      apiKey: "${TOGETHERAI_API_KEY}"
       baseURL: "https://api.together.xyz"
       models:
         default:
@@ -1774,9 +1774,9 @@ endpoints:
           - upstage/SOLAR-10.7B-Instruct-v1.0
         fetch: false
       titleConvo: true
-      titleModel: "openchat/openchat-3.5-1210"
+      titleModel: "Qwen/QwQ-32B"
       summarize: false
-      summaryModel: "openchat/openchat-3.5-1210"
+      summaryModel: "Qwen/QwQ-32B"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
