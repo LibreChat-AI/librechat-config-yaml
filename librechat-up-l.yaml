@@ -602,9 +602,9 @@ endpoints:
           - accounts/zmd5zer-d5cab1/models/ft-10cf39a6-ebbdd
         fetch: false
       titleConvo: true
-      titleModel: "accounts/fireworks/models/qwq-32b"
+      titleModel: "accounts/fireworks/models/llama-v3p3-70b-instruct"
       summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summaryModel: "accounts/fireworks/models/llama-v3p3-70b-instruct"
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams:
@@ -1774,9 +1774,9 @@ endpoints:
           - upstage/SOLAR-10.7B-Instruct-v1.0
         fetch: false
       titleConvo: true
-      titleModel: "Qwen/QwQ-32B"
+      titleModel: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
       summarize: false
-      summaryModel: "Qwen/QwQ-32B"
+      summaryModel: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
