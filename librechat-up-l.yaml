@@ -1840,7 +1840,7 @@ endpoints:
           - sophosympatheia/midnight-rose-70b
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
-        fetch: false
+        fetch: true
       dropParams:
         - "stop"
       titleConvo: true
