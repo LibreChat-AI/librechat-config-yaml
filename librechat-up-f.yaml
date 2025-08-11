@@ -1401,6 +1401,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - openrouter/cypher-alpha:free
           - agentica-org/deepcoder-14b-preview:free
           - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin3.0-mistral-24b:free
