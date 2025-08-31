@@ -702,7 +702,7 @@ endpoints:
       dropParams:
         - "user"
 
-    # GitHub 
+    # GitHub
     # Models: https://models.inference.ai.azure.com/models
     - name: "Github Models"
       iconURL: https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png
@@ -738,7 +738,7 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-4o-mini"
 
-    # glhf.chat 
+    # glhf.chat
     # Model list (auth header required): https://glhf.chat/models
     - name: "glhf.chat"
       iconURL: "https://glhf.chat/apple-touch-icon.png"
@@ -1496,89 +1496,65 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - openrouter/cypher-alpha:free
           - agentica-org/deepcoder-14b-preview:free
           - arliai/qwq-32b-arliai-rpr-v1:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cognitivecomputations/dolphin3.0-mistral-24b:free
           - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
           - deepseek/deepseek-chat-v3-0324:free
-          - deepseek/deepseek-chat:free
-          - deepseek/deepseek-prover-v2:free
+          - deepseek/deepseek-chat-v3.1:free
+          - deepseek/deepseek-r1-0528-qwen3-8b:free
+          - deepseek/deepseek-r1-0528:free
           - deepseek/deepseek-r1-distill-llama-70b:free
           - deepseek/deepseek-r1-distill-qwen-14b:free
-          - deepseek/deepseek-r1-distill-qwen-32b:free
-          - deepseek/deepseek-r1-zero:free
           - deepseek/deepseek-r1:free
-          - deepseek/deepseek-v3-base:free
-          - featherless/qwerky-72b:free
           - google/gemini-2.0-flash-exp:free
+          - google/gemini-2.5-flash-image-preview:free
           - google/gemma-2-9b-it:free
           - google/gemma-3-12b-it:free
-          - google/gemma-3-1b-it:free
           - google/gemma-3-27b-it:free
           - google/gemma-3-4b-it:free
+          - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
-          - meta-llama/llama-3.1-405b:free
-          - meta-llama/llama-3.1-8b-instruct:free
-          - meta-llama/llama-3.2-11b-vision-instruct:free
-          - meta-llama/llama-3.2-1b-instruct:free
+          - meta-llama/llama-3.1-405b-instruct:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-3.3-8b-instruct:free
           - meta-llama/llama-4-maverick:free
           - meta-llama/llama-4-scout:free
           - microsoft/mai-ds-r1:free
-          - microsoft/phi-4-reasoning-plus:free
-          - microsoft/phi-4-reasoning:free
-          - mistralai/devstral-small:free
+          - mistralai/devstral-small-2505:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-nemo:free
           - mistralai/mistral-small-24b-instruct-2501:free
           - mistralai/mistral-small-3.1-24b-instruct:free
+          - mistralai/mistral-small-3.2-24b-instruct:free
+          - moonshotai/kimi-dev-72b:free
+          - moonshotai/kimi-k2:free
           - moonshotai/kimi-vl-a3b-thinking:free
-          - moonshotai/moonlight-16b-a3b-instruct:free
           - nousresearch/deephermes-3-llama-3-8b-preview:free
-          - nousresearch/deephermes-3-mistral-24b-preview:free
           - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
-          - nvidia/llama-3.3-nemotron-super-49b-v1:free
-          - open-r1/olympiccoder-32b:free
-          - opengvlab/internvl3-14b:free
-          - opengvlab/internvl3-2b:free
+          - openai/gpt-oss-120b:free
+          - openai/gpt-oss-20b:free
           - qwen/qwen-2.5-72b-instruct:free
-          - qwen/qwen-2.5-7b-instruct:free
           - qwen/qwen-2.5-coder-32b-instruct:free
-          - qwen/qwen-2.5-vl-7b-instruct:free
           - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwen2.5-vl-3b-instruct:free
           - qwen/qwen2.5-vl-72b-instruct:free
           - qwen/qwen3-14b:free
           - qwen/qwen3-235b-a22b:free
           - qwen/qwen3-30b-a3b:free
-          - qwen/qwen3-32b:free
           - qwen/qwen3-4b:free
           - qwen/qwen3-8b:free
+          - qwen/qwen3-coder:free
           - qwen/qwq-32b:free
           - rekaai/reka-flash-3:free
+          - sarvamai/sarvam-m:free
           - shisa-ai/shisa-v2-llama3.3-70b:free
-          - thudm/glm-4-32b:free
-          - thudm/glm-4-9b:free
-          - thudm/glm-z1-32b:free
-          - thudm/glm-z1-9b:free
+          - tencent/hunyuan-a13b-instruct:free
           - tngtech/deepseek-r1t-chimera:free
-          - '---BETA---'
-          - anthropic/claude-2.0:beta
-          - anthropic/claude-2.1:beta
-          - anthropic/claude-2:beta
-          - anthropic/claude-3-haiku:beta
-          - anthropic/claude-3-opus:beta
-          - anthropic/claude-3-sonnet:beta
-          - anthropic/claude-3.5-haiku-20241022:beta
-          - anthropic/claude-3.5-haiku:beta
-          - anthropic/claude-3.5-sonnet-20240620:beta
-          - anthropic/claude-3.5-sonnet:beta
-          - anthropic/claude-3.7-sonnet:beta
+          - tngtech/deepseek-r1t2-chimera:free
+          - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
-          - neversleep/llama-3-lumimaid-8b:extended
           - openai/gpt-4o:extended
           - '---AION-LABS---'
           - aion-labs/aion-1.0
@@ -1589,12 +1565,8 @@ endpoints:
           - amazon/nova-micro-v1
           - amazon/nova-pro-v1
           - '---ANTHROPIC---'
-          - anthropic/claude-2
-          - anthropic/claude-2.0
-          - anthropic/claude-2.1
           - anthropic/claude-3-haiku
           - anthropic/claude-3-opus
-          - anthropic/claude-3-sonnet
           - anthropic/claude-3.5-haiku
           - anthropic/claude-3.5-haiku-20241022
           - anthropic/claude-3.5-sonnet
@@ -1602,15 +1574,22 @@ endpoints:
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:thinking
           - anthropic/claude-opus-4
+          - anthropic/claude-opus-4.1
           - anthropic/claude-sonnet-4
           - '---ARCEE-AI---'
-          - arcee-ai/arcee-blitz
-          - arcee-ai/caller-large
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
           - arcee-ai/virtuoso-large
-          - arcee-ai/virtuoso-medium-v2
+          - '---BAIDU---'
+          - baidu/ernie-4.5-21b-a3b
+          - baidu/ernie-4.5-300b-a47b
+          - baidu/ernie-4.5-vl-28b-a3b
+          - baidu/ernie-4.5-vl-424b-a47b
+          - '---COGNITIVECOMPUTATIONS---'
+          - cognitivecomputations/dolphin-mixtral-8x22b
+          - cognitivecomputations/dolphin3.0-mistral-24b
+          - cognitivecomputations/dolphin3.0-r1-mistral-24b
           - '---COHERE---'
           - cohere/command
           - cohere/command-a
@@ -1624,27 +1603,27 @@ endpoints:
           - '---DEEPSEEK---'
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
-          - deepseek/deepseek-coder
+          - deepseek/deepseek-chat-v3.1
           - deepseek/deepseek-prover-v2
           - deepseek/deepseek-r1
+          - deepseek/deepseek-r1-0528
+          - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-r1-distill-llama-8b
-          - deepseek/deepseek-r1-distill-qwen-1.5b
           - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
-          - '---EVA-UNIT-01---'
-          - eva-unit-01/eva-llama-3.33-70b
-          - eva-unit-01/eva-qwen-2.5-32b
-          - eva-unit-01/eva-qwen-2.5-72b
+          - deepseek/deepseek-v3.1-base
           - '---GOOGLE---'
           - google/gemini-2.0-flash-001
           - google/gemini-2.0-flash-lite-001
-          - google/gemini-2.5-flash-preview
-          - google/gemini-2.5-flash-preview-05-20
-          - google/gemini-2.5-flash-preview-05-20:thinking
-          - google/gemini-2.5-flash-preview:thinking
+          - google/gemini-2.5-flash
+          - google/gemini-2.5-flash-image-preview
+          - google/gemini-2.5-flash-lite
+          - google/gemini-2.5-flash-lite-preview-06-17
+          - google/gemini-2.5-pro
           - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview
+          - google/gemini-2.5-pro-preview-05-06
           - google/gemini-flash-1.5
           - google/gemini-flash-1.5-8b
           - google/gemini-pro-1.5
@@ -1653,12 +1632,8 @@ endpoints:
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
-          - '---LIQUID---'
-          - liquid/lfm-3b
-          - liquid/lfm-40b
-          - liquid/lfm-7b
+          - google/gemma-3n-e4b-it
           - '---META-LLAMA---'
-          - meta-llama/llama-2-70b-chat
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-405b
@@ -1676,6 +1651,7 @@ endpoints:
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
           - '---MICROSOFT---'
+          - microsoft/mai-ds-r1
           - microsoft/phi-3-medium-128k-instruct
           - microsoft/phi-3-mini-128k-instruct
           - microsoft/phi-3.5-mini-128k-instruct
@@ -1685,82 +1661,94 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - '---MISTRALAI---'
           - mistralai/codestral-2501
-          - mistralai/codestral-mamba
+          - mistralai/codestral-2508
+          - mistralai/devstral-medium
           - mistralai/devstral-small
+          - mistralai/devstral-small-2505
+          - mistralai/magistral-medium-2506
+          - mistralai/magistral-medium-2506:thinking
+          - mistralai/magistral-small-2506
           - mistralai/ministral-3b
           - mistralai/ministral-8b
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
-          - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
-          - mistralai/mistral-medium
           - mistralai/mistral-medium-3
+          - mistralai/mistral-medium-3.1
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
           - mistralai/mistral-small
           - mistralai/mistral-small-24b-instruct-2501
           - mistralai/mistral-small-3.1-24b-instruct
+          - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
+          - '---MOONSHOTAI---'
+          - moonshotai/kimi-dev-72b
+          - moonshotai/kimi-k2
+          - moonshotai/kimi-vl-a3b-thinking
           - '---NEVERSLEEP---'
           - neversleep/llama-3-lumimaid-70b
-          - neversleep/llama-3-lumimaid-8b
-          - neversleep/llama-3.1-lumimaid-70b
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - '---NOUSRESEARCH---'
+          - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/nous-hermes-2-mixtral-8x7b-dpo
+          - nousresearch/hermes-4-405b
+          - nousresearch/hermes-4-70b
+          - '---NVIDIA---'
+          - nvidia/llama-3.1-nemotron-70b-instruct
+          - nvidia/llama-3.1-nemotron-ultra-253b-v1
+          - nvidia/llama-3.3-nemotron-super-49b-v1
           - '---OPENAI---'
           - openai/chatgpt-4o-latest
           - openai/codex-mini
           - openai/gpt-3.5-turbo
-          - openai/gpt-3.5-turbo-0125
           - openai/gpt-3.5-turbo-0613
-          - openai/gpt-3.5-turbo-1106
           - openai/gpt-3.5-turbo-16k
           - openai/gpt-3.5-turbo-instruct
           - openai/gpt-4
           - openai/gpt-4-0314
           - openai/gpt-4-1106-preview
-          - openai/gpt-4-32k
-          - openai/gpt-4-32k-0314
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
-          - openai/gpt-4.5-preview
           - openai/gpt-4o
           - openai/gpt-4o-2024-05-13
           - openai/gpt-4o-2024-08-06
           - openai/gpt-4o-2024-11-20
+          - openai/gpt-4o-audio-preview
           - openai/gpt-4o-mini
           - openai/gpt-4o-mini-2024-07-18
           - openai/gpt-4o-mini-search-preview
           - openai/gpt-4o-search-preview
+          - openai/gpt-5
+          - openai/gpt-5-chat
+          - openai/gpt-5-mini
+          - openai/gpt-5-nano
+          - openai/gpt-oss-120b
+          - openai/gpt-oss-20b
           - openai/o1
           - openai/o1-mini
           - openai/o1-mini-2024-09-12
-          - openai/o1-preview
-          - openai/o1-preview-2024-09-12
           - openai/o1-pro
           - openai/o3
           - openai/o3-mini
           - openai/o3-mini-high
+          - openai/o3-pro
           - openai/o4-mini
           - openai/o4-mini-high
           - '---PERPLEXITY---'
-          - perplexity/llama-3.1-sonar-large-128k-online
-          - perplexity/llama-3.1-sonar-small-128k-online
           - perplexity/r1-1776
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -1768,7 +1756,6 @@ endpoints:
           - perplexity/sonar-reasoning
           - perplexity/sonar-reasoning-pro
           - '---QWEN---'
-          - qwen/qwen-2-72b-instruct
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
@@ -1778,69 +1765,85 @@ endpoints:
           - qwen/qwen-turbo
           - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
-          - qwen/qwen2.5-coder-7b-instruct
           - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen3-14b
           - qwen/qwen3-235b-a22b
+          - qwen/qwen3-235b-a22b-2507
+          - qwen/qwen3-235b-a22b-thinking-2507
           - qwen/qwen3-30b-a3b
+          - qwen/qwen3-30b-a3b-instruct-2507
+          - qwen/qwen3-30b-a3b-thinking-2507
           - qwen/qwen3-32b
           - qwen/qwen3-8b
+          - qwen/qwen3-coder
+          - qwen/qwen3-coder-30b-a3b-instruct
           - qwen/qwq-32b
           - qwen/qwq-32b-preview
           - '---SAO10K---'
-          - sao10k/fimbulvetr-11b-v2
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
           - '---THEDRUMMER---'
+          - thedrummer/anubis-70b-v1.1
           - thedrummer/anubis-pro-105b-v1
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
           - '---THUDM---'
           - thudm/glm-4-32b
+          - thudm/glm-4.1v-9b-thinking
           - thudm/glm-z1-32b
-          - thudm/glm-z1-rumination-32b
           - '---X-AI---'
           - x-ai/grok-2-1212
           - x-ai/grok-2-vision-1212
+          - x-ai/grok-3
           - x-ai/grok-3-beta
+          - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
-          - x-ai/grok-beta
+          - x-ai/grok-4
+          - x-ai/grok-code-fast-1
           - x-ai/grok-vision-beta
+          - '---Z-AI---'
+          - z-ai/glm-4-32b
+          - z-ai/glm-4.5
+          - z-ai/glm-4.5-air
+          - z-ai/glm-4.5v
           - '---OTHERS---'
-          - 01-ai/yi-large
-          - aetherwiing/mn-starcannon-12b
-          - ai21/jamba-1.6-large
-          - ai21/jamba-1.6-mini
+          - agentica-org/deepcoder-14b-preview
+          - ai21/jamba-large-1.7
+          - ai21/jamba-mini-1.7
           - alfredpros/codellama-7b-instruct-solidity
-          - all-hands/openhands-lm-32b-v0.1
-          - allenai/olmo-7b-instruct
           - alpindale/goliath-120b
-          - alpindale/magnum-72b
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
-          - cognitivecomputations/dolphin-mixtral-8x22b
+          - arliai/qwq-32b-arliai-rpr-v1
+          - bytedance/ui-tars-1.5-7b
           - eleutherai/llemma_7b
           - gryphe/mythomax-l2-13b
-          - inception/mercury-coder-small-beta
+          - inception/mercury
+          - inception/mercury-coder
           - infermatic/mn-inferor-12b
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
+          - liquid/lfm-3b
+          - liquid/lfm-7b
           - mancer/weaver
           - minimax/minimax-01
-          - nothingiisreal/mn-celeste-12b
-          - nvidia/llama-3.1-nemotron-70b-instruct
-          - nvidia/llama-3.3-nemotron-super-49b-v1
+          - minimax/minimax-m1
+          - morph/morph-v3-fast
+          - morph/morph-v3-large
+          - opengvlab/internvl3-14b
           - pygmalionai/mythalion-13b
           - raifle/sorcererlm-8x22b
           - scb10x/llama3.1-typhoon2-70b-instruct
-          - scb10x/llama3.1-typhoon2-8b-instruct
+          - shisa-ai/shisa-v2-llama3.3-70b
           - sophosympatheia/midnight-rose-70b
+          - switchpoint/router
+          - tencent/hunyuan-a13b-instruct
+          - tngtech/deepseek-r1t-chimera
           - undi95/remm-slerp-l2-13b
-          - undi95/toppy-m-7b
         fetch: true
       dropParams:
         - "stop"
