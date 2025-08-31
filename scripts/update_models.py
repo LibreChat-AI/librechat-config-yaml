@@ -308,6 +308,7 @@ def main():
     
     # Define the scripts to run and their corresponding provider names
     fetchers = {
+        'ai302': '302AI',
         'apipie': 'APIpie',
         'cohere': 'cohere',
         'deepseek': 'deepseek',
