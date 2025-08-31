@@ -649,7 +649,7 @@ endpoints:
     # https://platform.deepseek.com/api_keys
     # Model list: https://platform.deepseek.com/api-docs/pricing
     - name: "deepseek"
-      apiKey: "user_provided"
+      apiKey: "${DEEPSEEK_API_KEY}"
       baseURL: "https://api.deepseek.com"
       models:
         default:
@@ -665,7 +665,7 @@ endpoints:
     # Fireworks.ai
     # Models: https://fireworks.ai/models?show=Serverless
     - name: "Fireworks"
-      apiKey: "user_provided"
+      apiKey: "${FIREWORKS_API_KEY}"
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default:
@@ -694,9 +694,9 @@ endpoints:
           - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
         fetch: false
       titleConvo: true
-      titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      titleModel: "accounts/fireworks/models/llama-v3p3-70b-instruct"
       summarize: false
-      summaryModel: "accounts/fireworks/models/llama-v2-7b-chat"
+      summaryModel: "accounts/fireworks/models/llama-v3p3-70b-instruct"
       forcePrompt: false
       modelDisplayLabel: "Fireworks"
       dropParams:
@@ -1490,7 +1490,7 @@ endpoints:
     # Model list: https://openrouter.ai/models
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/openrouter.py
     - name: "OpenRouter"
-      apiKey: "user_provided"
+      apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default:
@@ -1841,7 +1841,7 @@ endpoints:
           - sophosympatheia/midnight-rose-70b
           - undi95/remm-slerp-l2-13b
           - undi95/toppy-m-7b
-        fetch: false
+        fetch: true
       dropParams:
         - "stop"
       titleConvo: true
@@ -1908,7 +1908,7 @@ endpoints:
     # https://api.together.ai/settings/api-keys
     # Model list: https://docs.together.ai/docs/inference-models
     - name: "together.ai"
-      apiKey: "user_provided"
+      apiKey: "${TOGETHERAI_API_KEY}"
       baseURL: "https://api.together.xyz"
       models:
         default:
@@ -1971,9 +1971,9 @@ endpoints:
           - togethercomputer/Refuel-Llm-V2-Small
         fetch: false
       titleConvo: true
-      titleModel: "openchat/openchat-3.5-1210"
+      titleModel: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
       summarize: false
-      summaryModel: "openchat/openchat-3.5-1210"
+      summaryModel: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
       forcePrompt: false
       modelDisplayLabel: "together.ai"
 
