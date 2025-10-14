@@ -517,6 +517,7 @@ endpoints:
       baseURL: "https://apipie.ai/v1/"
       models:
         default:
+          - afm-4-5b
           - aion
           - aion-1-0
           - aion-1-0-mini
@@ -538,6 +539,7 @@ endpoints:
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
+          - claude-3-5-sonnet-20241022
           - claude-3-5-sonnet-20241022-v2
           - claude-3-5-sonnet-latest
           - claude-3-7-sonnet
@@ -545,8 +547,10 @@ endpoints:
           - claude-3-7-sonnet-20250219-v1
           - claude-3-7-sonnet-latest
           - claude-3-haiku
+          - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-opus
+          - claude-3-opus-20240229
           - claude-3-opus-20240229-v1
           - claude-3-opus-latest
           - claude-3-sonnet-20240229-v1
@@ -555,12 +559,16 @@ endpoints:
           - claude-instant-v1
           - claude-opus-4
           - claude-opus-4-1
+          - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
+          - claude-sonnet-4-5
+          - claude-sonnet-4-5-20250929
+          - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -573,6 +581,8 @@ endpoints:
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
+          - cogito-2-deepseek-671b
+          - cogito-2-llama-109b-moe
           - cogito-v2-preview-deepseek-671b
           - cogito-v2-preview-llama-109b-moe
           - command
@@ -593,12 +603,17 @@ endpoints:
           - computer-use
           - computer-use-preview
           - computer-use-preview-2025-03-11
+          - cydonia-24b-v4-1
           - cypher-alpha
           - davinci-002
+          - deepcoder-14b
           - deepcoder-14b-preview
+          - deephermes-3-llama-3-8b
           - deephermes-3-llama-3-8b-preview
           - deephermes-3-mistral-24b-preview
           - deepseek-3-1
+          - deepseek-3-1-terminus
+          - deepseek-3-2-exp
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-prover-v2
@@ -610,18 +625,21 @@ endpoints:
           - deepseek-r1-0528-turbo
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-llama-70b-free
-          - deepseek-r1-distill-llama-8b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
+          - deepseek-r1-qwen-3-8b
           - deepseek-r1-turbo
           - deepseek-r1-zero
           - deepseek-r1t-chimera
           - deepseek-r1t2-chimera
+          - deepseek-r3-1
           - deepseek-v3
           - deepseek-v3-0324
           - deepseek-v3-0324-turbo
           - deepseek-v3-1
           - deepseek-v3-1-base
+          - deepseek-v3-1-terminus
+          - deepseek-v3-2-exp
           - deepseek-v3-base
           - deepseek-v3-p-dp
           - devstral-medium
@@ -632,9 +650,11 @@ endpoints:
           - dolphin-2-6-mixtral-8x7b
           - dolphin-3-0-mistral-24b
           - dolphin-3-0-r1-mistral-24b
+          - dolphin-3-mistral-24b
+          - dolphin-3-r1-mistral-24b
           - dolphin-mistral-24b-venice-edition
-          - dolphin-mixtral-8x22b
           - ernie-4-5-21b-a3b
+          - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
           - ernie-4-5-vl-424b-a47b
@@ -651,12 +671,16 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
+          - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
+          - gemini-2-5-flash-lite-preview-09-2025
           - gemini-2-5-flash-preview-04-17
           - gemini-2-5-flash-preview-05-20
+          - gemini-2-5-flash-preview-09-2025
           - gemini-2-5-pro
           - gemini-2-5-pro-exp
           - gemini-2-5-pro-exp-03-25
@@ -677,7 +701,6 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
-          - gemma-3n-e4b-it
           - giant-context
           - glm-4-1v-9b-thinking
           - glm-4-32b
@@ -685,6 +708,7 @@ endpoints:
           - glm-4-5-air
           - glm-4-5-air-fp8
           - glm-4-5v
+          - glm-4-6
           - glm-4-9b
           - glm-z1-32b
           - glm-z1-9b
@@ -736,14 +760,19 @@ endpoints:
           - gpt-5-2025-08-07
           - gpt-5-chat
           - gpt-5-chat-latest
+          - gpt-5-codex
           - gpt-5-mini
           - gpt-5-mini-2025-08-07
           - gpt-5-nano
           - gpt-5-nano-2025-08-07
+          - gpt-5-pro
+          - gpt-5-pro-2025-10-06
           - gpt-oss-120b
+          - gpt-oss-120b-1
+          - gpt-oss-120b-turbo
           - gpt-oss-20b
+          - gpt-oss-20b-1
           - grok-2
-          - grok-2-1212
           - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
@@ -754,8 +783,10 @@ endpoints:
           - grok-3-mini-beta
           - grok-4
           - grok-4-0709
+          - grok-4-fast
           - grok-code-fast-1
           - grok-vision-beta
+          - hermes-2-mixtral-8x7b-dpo
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
@@ -768,6 +799,7 @@ endpoints:
           - inflection-3-pi
           - inflection-3-productivity
           - internvl-3-14b
+          - internvl-3-78b
           - j2-grande-instruct
           - j2-mid
           - j2-mid-v1
@@ -782,9 +814,12 @@ endpoints:
           - jamba-mini-1-7
           - kimi-dev-72b
           - kimi-k2
+          - kimi-k2-0905
           - kimi-k2-instruct
+          - kimi-k2-instruct-0905
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
+          - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
           - l3-3-70b-euryale-v2-3
           - l3-3-electra-r1-70b
@@ -796,6 +831,7 @@ endpoints:
           - learnlm-1-5-pro-experimental
           - lfm-3b
           - lfm-7b
+          - ling-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-chat-v1
@@ -803,7 +839,6 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
-          - llama-2-70b-hf
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-turbo
@@ -820,7 +855,6 @@ endpoints:
           - llama-3-1-nemotron-70b-instruct
           - llama-3-1-nemotron-ultra-253b-v1
           - llama-3-1-swallow-70b-instruct-v0-3
-          - llama-3-1-typhoon-2-70b-instruct
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
           - llama-3-2-11b-vision-instruct
@@ -837,17 +871,16 @@ endpoints:
           - llama-3-3-70b-instruct-v1
           - llama-3-3-70b-versatile
           - llama-3-3-8b-instruct
-          - llama-3-3-nemotron-super-49b-v1
+          - llama-3-3-nemotron-super-49b
+          - llama-3-3-nemotron-super-49b-1-5
+          - llama-3-3-nemotron-super-49b-v1-5
           - llama-3-70b-8192
-          - llama-3-70b-chat-hf
           - llama-3-70b-instruct
-          - llama-3-70b-instruct-turbo
           - llama-3-70b-instruct-v1
           - llama-3-8b-8192
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
-          - llama-3-lumimaid-70b
           - llama-4
           - llama-4-maverick
           - llama-4-maverick-17b-128e-instruct-fp8
@@ -862,6 +895,8 @@ endpoints:
           - llama-guard-3-8b
           - llama-guard-4-12b
           - llemma-7b
+          - longcat-flash
+          - longcat-flash-chat
           - maestro-reasoning
           - magistral-medium
           - magistral-medium-2506
@@ -874,7 +909,6 @@ endpoints:
           - mercury
           - mercury-coder
           - mercury-coder-small-beta
-          - midnight-rose-70b
           - minimax
           - minimax-01
           - minimax-m1
@@ -921,17 +955,17 @@ endpoints:
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
           - mn-celeste-12b
-          - mn-inferor-12b
           - molmo-7b-d
           - moonlight-16b-a3b-instruct
           - morph-v3-fast
           - morph-v3-large
           - multimodal
-          - mythalion-13b
           - mythomax
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
           - nemotron-4-340b-instruct
+          - nemotron-nano-9b-2
+          - nemotron-nano-9b-v2
           - noromaid-20b
           - nova-lite
           - nova-lite-v1
@@ -944,6 +978,7 @@ endpoints:
           - nova-reel
           - nova-reel-v1
           - nova-sonic-v1
+          - nvidia-nemotron-nano-9b-v2
           - o1
           - o1-2024-12-17
           - o1-mini
@@ -966,7 +1001,10 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
+          - olmo-2-0325-32b-instruct
+          - olmocr-7b
           - olmocr-7b-0725-fp8
+          - olmocr-7b-0825
           - olympiccoder-32b
           - omni-moderation
           - omni-moderation-2024-09-26
@@ -983,6 +1021,7 @@ endpoints:
           - palm-2-chat-bison-32k
           - palm-2-codechat-bison
           - palm-2-codechat-bison-32k
+          - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
           - phi-3-medium-4k-instruct
@@ -1001,11 +1040,11 @@ endpoints:
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
-          - qwen-2-5-72b-instruct-turbo
           - qwen-2-5-7b-instruct
           - qwen-2-5-7b-instruct-turbo
           - qwen-2-5-coder-32b-instruct
           - qwen-2-5-coder-7b
+          - qwen-2-5-coder-7b-instruct
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
@@ -1021,40 +1060,56 @@ endpoints:
           - qwen-3-235b-a22b
           - qwen-3-235b-a22b-07-25
           - qwen-3-235b-a22b-2507
-          - qwen-3-235b-a22b-fp8-tput
           - qwen-3-235b-a22b-instruct
           - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
           - qwen-3-30b-a3b-instruct-2507
+          - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
+          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
+          - qwen-3-coder-30b-a3b-instruct
+          - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
+          - qwen-3-coder-flash
+          - qwen-3-coder-plus
+          - qwen-3-max
+          - qwen-3-next-80b-a3b-instruct
+          - qwen-3-next-80b-a3b-thinking
+          - qwen-3-vl-235b-a22b-instruct
+          - qwen-3-vl-235b-a22b-thinking
+          - qwen-3-vl-30b-a3b-instruct
+          - qwen-3-vl-30b-a3b-thinking
           - qwen-max
           - qwen-plus
+          - qwen-plus-2025-07-28
           - qwen-turbo
           - qwen-vl-max
           - qwen-vl-plus
           - qwerky-72b
           - qwq-32b
+          - qwq-32b-arliai-rpr
           - qwq-32b-arliai-rpr-v1
-          - qwq-32b-preview
           - r1-1776
           - reasoners
-          - refuel-llm-v2
           - refuel-llm-v2-small
           - reka-flash-3
+          - relace-apply-3
           - remm-slerp-l2-13b
           - rocinante-12b
           - router
           - sarvam-m
+          - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
+          - seedream-4-0-250828
+          - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
           - skyfall-36b-v2
@@ -1063,16 +1118,21 @@ endpoints:
           - sonar-pro
           - sonar-reasoning
           - sonar-reasoning-pro
+          - sora-2
+          - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
+          - step-3
           - text-babbage-002
           - text-davinci-002
+          - text-embedding-004
+          - text-multilingual-embedding-002
           - titan-text-express
           - titan-text-express-v1
           - titan-text-lite
           - titan-text-lite-v1
-          - titan-text-premier-v1
           - titan-tg-1-large
+          - tongyi-deepresearch-30b-a3b
           - ui-tars-1-5-7b
           - ui-tars-72b
           - ultra-fast
@@ -1196,13 +1256,6 @@ endpoints:
           - Mistral-Nemo
           - Mistral-large-2407
           - Mistral-small
-          - Phi-3-medium-128k-instruct
-          - Phi-3-medium-4k-instruct
-          - Phi-3-mini-128k-instruct
-          - Phi-3-mini-4k-instruct
-          - Phi-3-small-128k-instruct
-          - Phi-3-small-8k-instruct
-          - Phi-3.5-mini-instruct
           - gpt-4o
           - gpt-4o-mini
           - text-embedding-3-large
@@ -1423,17 +1476,18 @@ endpoints:
       baseURL: "https://nano-gpt.com/api/v1/"
       models:
         default:
-          - ArliAI-RpR-Ultra-235B
+          - Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
-          - ByteDance-Seed/Seed-OSS-36B-Instruct
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
           - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
+          - GLM-4.5-Air-Iceblink
+          - GLM-4.5-Air-Steam-v1
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1444,13 +1498,13 @@ endpoints:
           - Gemma-3-27B-it-Abliterated
           - Gryphe/MythoMax-L2-13b
           - Infermatic/MN-12B-Inferor-v0.0
+          - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
+          - Ling-Flash-2.0
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
           - Llama-3.3+(3.1v3.3)-70B-New-Dawn-v1.1
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
           - Llama-3.3-70B-Anthrobomination
-          - Llama-3.3-70B-Anubis-v1
-          - Llama-3.3-70B-Anubis-v1.1
           - Llama-3.3-70B-Argunaut-1-SFT
           - Llama-3.3-70B-ArliAI-RPMax-v1.4
           - Llama-3.3-70B-ArliAI-RPMax-v2
@@ -1459,7 +1513,6 @@ endpoints:
           - Llama-3.3-70B-Bigger-Body
           - Llama-3.3-70B-Cirrus-x1
           - Llama-3.3-70B-Cu-Mai-R1
-          - Llama-3.3-70B-Damascus-R1
           - Llama-3.3-70B-Dark-Ages-v0.1
           - Llama-3.3-70B-Electra-R1
           - Llama-3.3-70B-Electranova-v1.0
@@ -1467,7 +1520,9 @@ endpoints:
           - Llama-3.3-70B-Fallen-v1
           - Llama-3.3-70B-Forgotten-Abomination-v5.0
           - Llama-3.3-70B-Forgotten-Safeword-3.6
+          - Llama-3.3-70B-GeneticLemonade-Opus
           - Llama-3.3-70B-GeneticLemonade-Unleashed-v3
+          - Llama-3.3-70B-Ignition-v0.1
           - Llama-3.3-70B-Incandescent-Malevolence
           - Llama-3.3-70B-Legion-V2.1
           - Llama-3.3-70B-MS-Nevoria
@@ -1476,10 +1531,12 @@ endpoints:
           - Llama-3.3-70B-Mhnnn-x1
           - Llama-3.3-70B-MiraiFanfare
           - Llama-3.3-70B-Mokume-Gane-R1
+          - Llama-3.3-70B-Nova
           - Llama-3.3-70B-Predatorial-Extasy
           - Llama-3.3-70B-Progenitor-V3.3
           - Llama-3.3-70B-RAWMAW
           - Llama-3.3-70B-Sapphira-0.1
+          - Llama-3.3-70B-Sapphira-0.2
           - Llama-3.3-70B-Shakudo
           - Llama-3.3-70B-StrawberryLemonade-v1.0
           - Llama-3.3-70B-Strawberrylemonade-v1.2
@@ -1497,8 +1554,7 @@ endpoints:
           - NeverSleep/Lumimaid-v0.2-70B
           - Nexusflow/Athene-V2-Chat
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
-          - OpenGVLab/InternVL3-14B
-          - OpenGVLab/InternVL3-2B
+          - NousResearch/Hermes-4-70B:thinking
           - OpenGVLab/InternVL3-78B
           - QwQ-32B-ArliAI-RpR-v1
           - Qwen/QwQ-32B-Preview
@@ -1507,7 +1563,8 @@ endpoints:
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-8B
-          - Qwen/Qwen3-Coder-480B-A35B-Instruct-FP8
+          - Qwen/Qwen3-Next-80B-A3B-Instruct
+          - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen2.5-32B-EVA-v0.2
           - Qwen2.5-72B-Chuluun-v0.08
           - Qwen2.5-72B-Doctor-Kunou
@@ -1536,7 +1593,7 @@ endpoints:
           - TEE/deepseek-r1-70b-distill
           - TEE/gemma-3-27b-it
           - TEE/gpt-oss-120b
-          - TEE/llama-3.3-70b-instruct
+          - TEE/llama3-3-70b
           - TEE/mistral-small-3-1-24b
           - TEE/qwen2-5-72b
           - TEE/qwen3-coder
@@ -1545,8 +1602,9 @@ endpoints:
           - THUDM/GLM-Z1-32B-0414
           - THUDM/GLM-Z1-9B-0414
           - THUDM/GLM-Z1-Rumination-32B-0414
-          - Tesslate/UIGEN-X-32B-0727
+          - TheDrummer/Anubis-105B-v1
           - TheDrummer/Anubis-70B-v1
+          - TheDrummer/Anubis-70B-v1.1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Cydonia-24B-v4
           - TheDrummer/Cydonia-24B-v4.1
@@ -1564,7 +1622,6 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
-          - anubis-pro-105b-v1
           - asi1-mini
           - azure-gpt-4-turbo
           - azure-gpt-4o
@@ -1601,15 +1658,14 @@ endpoints:
           - claude-opus-4-thinking:32768
           - claude-opus-4-thinking:8192
           - claude-sonnet-4-20250514
+          - claude-sonnet-4-5-20250929
+          - claude-sonnet-4-5-20250929-thinking
           - claude-sonnet-4-thinking
           - claude-sonnet-4-thinking:1024
           - claude-sonnet-4-thinking:32768
           - claude-sonnet-4-thinking:64000
           - claude-sonnet-4-thinking:8192
-          - codellama/CodeLlama-70b-Instruct-hf
-          - cognitivecomputations/Dolphin3.0-R1-Mistral-24B
           - cognitivecomputations/dolphin-2.9.2-qwen2-72b
-          - cognitivecomputations/dolphin-mixtral-8x22b
           - cohere/command-r
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
@@ -1623,7 +1679,11 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3.1
+          - deepseek-ai/DeepSeek-V3.1-Terminus
+          - deepseek-ai/DeepSeek-V3.1-Terminus:thinking
           - deepseek-ai/DeepSeek-V3.1:thinking
+          - deepseek-ai/deepseek-v3.2-exp
+          - deepseek-ai/deepseek-v3.2-exp-thinking
           - deepseek-chat
           - deepseek-chat-cheaper
           - deepseek-r1
@@ -1632,6 +1692,8 @@ endpoints:
           - deepseek-reasoner-cheaper
           - deepseek-v3-0324
           - deepseek-v3.1-original
+          - deepseek-v3.2-exp-original
+          - deepseek-v3.2-exp-thinking-original
           - deepseek/deepseek-prover-v2-671b
           - dmind/dmind-1
           - dmind/dmind-1-mini
@@ -1650,26 +1712,29 @@ endpoints:
           - ernie-x1-32k
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
+          - ernie-x1.1-preview
           - eva-unit-01/eva-qwen-2.5-72b
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - featherless-ai/Qwerky-72B
           - free-model
           - gemini-2.0-flash-001
           - gemini-2.0-flash-exp-image-generation
-          - gemini-2.0-flash-exp-search
           - gemini-2.0-flash-lite
           - gemini-2.0-flash-thinking-exp-01-21
           - gemini-2.0-flash-thinking-exp-1219
           - gemini-2.0-pro-exp-02-05
           - gemini-2.0-pro-reasoner
           - gemini-2.5-flash
-          - gemini-2.5-flash-image-preview
           - gemini-2.5-flash-lite-preview-06-17
+          - gemini-2.5-flash-lite-preview-09-2025
+          - gemini-2.5-flash-lite-preview-09-2025-thinking
           - gemini-2.5-flash-nothinking
           - gemini-2.5-flash-preview-04-17
           - gemini-2.5-flash-preview-04-17:thinking
           - gemini-2.5-flash-preview-05-20
           - gemini-2.5-flash-preview-05-20:thinking
+          - gemini-2.5-flash-preview-09-2025
+          - gemini-2.5-flash-preview-09-2025-thinking
           - gemini-2.5-pro
           - gemini-2.5-pro-exp-03-25
           - gemini-2.5-pro-preview-03-25
@@ -1703,23 +1768,27 @@ endpoints:
           - gpt-4o-search-preview
           - gpt-5
           - gpt-5-chat-latest
+          - gpt-5-codex
           - gpt-5-mini
           - gpt-5-nano
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
           - grok-3-mini-fast-beta
+          - hermes-3-llama-3.1-405b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
-          - huihui-ai/Huihui-Qwen3-30B-A3B-Instruct-2507-abliterated
           - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - hunyuan-t1-latest
           - hunyuan-turbos-20250226
+          - inclusionAI/Ling-flash-2.0
+          - inclusionAI/Ring-flash-2.0
+          - inclusionai/ling-1t
+          - inclusionai/ring-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - internlm/Intern-S1
           - jamba-large
           - jamba-large-1.6
           - jamba-large-1.7
@@ -1727,9 +1796,9 @@ endpoints:
           - jamba-mini-1.6
           - jamba-mini-1.7
           - kimi-k2-instruct-fast
-          - kimi-latest
           - kimi-thinking-preview
           - learnlm-1.5-pro-experimental
+          - meituan-longcat/LongCat-Flash-Chat-FP8
           - mercury-coder-small
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-3b-instruct
@@ -1751,16 +1820,18 @@ endpoints:
           - mistralai/mistral-tiny
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-Dev-72B
-          - moonshotai/Kimi-K2-Instruct
-          - moonshotai/Kimi-VL-A3B-Thinking
+          - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/kimi-k2-instruct-0711
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-4-405b
+          - nousresearch/hermes-4-405b:thinking
           - nousresearch/hermes-4-70b
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.1-Nemotron-Ultra-253B-v1
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
+          - nvidia/nvidia-nemotron-nano-9b-v2
           - o1
           - o1-mini
           - o1-preview
@@ -1776,12 +1847,11 @@ endpoints:
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
+          - openai/gpt-5-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/o1-pro
           - pamanseau/OpenReasoning-Nemotron-32B
-          - parasail-drummer-anubis-70b-1-1
-          - parasail-valkyrie-49b-v1
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qvq-max
@@ -1793,9 +1863,15 @@ endpoints:
           - qwen/qwen3-14b
           - qwen/qwen3-30b-a3b
           - qwen/qwen3-32b
+          - qwen/qwen3-coder
+          - qwen/qwen3-coder-flash
+          - qwen/qwen3-coder-plus
+          - qwen/qwen3-max
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
+          - qwen3-vl-235b-a22b-instruct-original
+          - qwen3-vl-235b-a22b-thinking
           - qwq-32b
           - r1-1776
           - raifle/sorcererlm-8x22b
@@ -1814,7 +1890,6 @@ endpoints:
           - step-3
           - step-r1-v-mini
           - study_gpt-chatgpt-4o-latest
-          - tencent/Hunyuan-A13B-Instruct
           - thedrummer/skyfall-36b-v2
           - tngtech/DeepSeek-R1T-Chimera
           - tngtech/DeepSeek-TNG-R1T2-Chimera
@@ -1827,21 +1902,24 @@ endpoints:
           - v0-1.5-lg
           - v0-1.5-md
           - venice-uncensored
-          - venice-uncensored-web
+          - venice-uncensored:web
           - x-ai/grok-4-07-09
-          - x-ai/grok-4-07-09-extended
+          - x-ai/grok-4-fast
+          - x-ai/grok-4-fast:thinking
           - x-ai/grok-code-fast-1
           - yi-34b-chat-0205
           - yi-34b-chat-200k
           - yi-large
           - yi-lightning
           - yi-medium-200k
+          - z-ai/glm-4.6
+          - z-ai/glm-4.6:thinking
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air:thinking
           - zai-org/GLM-4.5-FP8
           - zai-org/GLM-4.5-FP8:thinking
-          - zai-org/GLM-4.5V-FP8
-          - zai-org/GLM-4.5V-FP8:thinking
+          - zai-org/GLM-4.6-turbo
+          - zai-org/GLM-4.6-turbo:thinking
         fetch: false
       titleConvo: true
       titleModel: "current_model"
@@ -1865,6 +1943,7 @@ endpoints:
           - baichuan-inc/baichuan2-13b-chat
           - bigcode/starcoder2-15b
           - bigcode/starcoder2-7b
+          - bytedance/seed-oss-36b-instruct
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-r1
@@ -1874,6 +1953,7 @@ endpoints:
           - deepseek-ai/deepseek-r1-distill-qwen-32b
           - deepseek-ai/deepseek-r1-distill-qwen-7b
           - deepseek-ai/deepseek-v3.1
+          - deepseek-ai/deepseek-v3.1-terminus
           - google/codegemma-1.1-7b
           - google/codegemma-7b
           - google/deplot
@@ -1949,6 +2029,7 @@ endpoints:
           - mistralai/mixtral-8x22b-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
           - moonshotai/kimi-k2-instruct
+          - moonshotai/kimi-k2-instruct-0905
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/embed-qa-4
           - nvidia/llama-3.1-nemoguard-8b-content-safety
@@ -1962,6 +2043,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nemoretriever-300m-embed-v1
+          - nvidia/llama-3.2-nemoretriever-300m-embed-v2
           - nvidia/llama-3.2-nv-embedqa-1b-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v2
           - nvidia/llama-3.3-nemotron-super-49b-v1
@@ -1995,12 +2077,17 @@ endpoints:
           - qwen/qwen2.5-coder-32b-instruct
           - qwen/qwen2.5-coder-7b-instruct
           - qwen/qwen3-235b-a22b
+          - qwen/qwen3-coder-480b-a35b-instruct
+          - qwen/qwen3-next-80b-a3b-instruct
+          - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwq-32b
           - rakuten/rakutenai-7b-chat
           - rakuten/rakutenai-7b-instruct
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
           - speakleash/bielik-11b-v2.3-instruct
+          - speakleash/bielik-11b-v2.6-instruct
+          - stockmark/stockmark-2-100b-instruct
           - thudm/chatglm3-6b
           - tiiuae/falcon3-7b-instruct
           - tokyotech-llm/llama-3-swallow-70b-instruct-v0.1
@@ -2028,25 +2115,24 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - agentica-org/deepcoder-14b-preview:free
+          - alibaba/tongyi-deepresearch-30b-a3b:free
           - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cognitivecomputations/dolphin3.0-mistral-24b:free
-          - cognitivecomputations/dolphin3.0-r1-mistral-24b:free
           - deepseek/deepseek-chat-v3-0324:free
+          - deepseek/deepseek-chat-v3.1:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-0528:free
           - deepseek/deepseek-r1-distill-llama-70b:free
-          - deepseek/deepseek-r1-distill-qwen-14b:free
           - deepseek/deepseek-r1:free
           - google/gemini-2.0-flash-exp:free
-          - google/gemini-2.5-flash-image-preview:free
           - google/gemma-2-9b-it:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
           - google/gemma-3-4b-it:free
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
-          - meta-llama/llama-3.1-405b-instruct:free
+          - meituan/longcat-flash-chat:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - meta-llama/llama-3.3-8b-instruct:free
@@ -2061,9 +2147,8 @@ endpoints:
           - mistralai/mistral-small-3.2-24b-instruct:free
           - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-k2:free
-          - moonshotai/kimi-vl-a3b-thinking:free
           - nousresearch/deephermes-3-llama-3-8b-preview:free
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1:free
+          - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-20b:free
           - qwen/qwen-2.5-72b-instruct:free
           - qwen/qwen-2.5-coder-32b-instruct:free
@@ -2075,9 +2160,6 @@ endpoints:
           - qwen/qwen3-4b:free
           - qwen/qwen3-8b:free
           - qwen/qwen3-coder:free
-          - qwen/qwq-32b:free
-          - rekaai/reka-flash-3:free
-          - sarvamai/sarvam-m:free
           - shisa-ai/shisa-v2-llama3.3-70b:free
           - tencent/hunyuan-a13b-instruct:free
           - tngtech/deepseek-r1t-chimera:free
@@ -2105,28 +2187,22 @@ endpoints:
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
           - anthropic/claude-sonnet-4
+          - anthropic/claude-sonnet-4.5
           - '---ARCEE-AI---'
+          - arcee-ai/afm-4.5b
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
           - baidu/ernie-4.5-21b-a3b
+          - baidu/ernie-4.5-21b-a3b-thinking
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
-          - '---COGNITIVECOMPUTATIONS---'
-          - cognitivecomputations/dolphin-mixtral-8x22b
-          - cognitivecomputations/dolphin3.0-mistral-24b
-          - cognitivecomputations/dolphin3.0-r1-mistral-24b
           - '---COHERE---'
-          - cohere/command
           - cohere/command-a
-          - cohere/command-r
-          - cohere/command-r-03-2024
           - cohere/command-r-08-2024
-          - cohere/command-r-plus
-          - cohere/command-r-plus-04-2024
           - cohere/command-r-plus-08-2024
           - cohere/command-r7b-12-2024
           - '---DEEPSEEK---'
@@ -2138,24 +2214,23 @@ endpoints:
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
-          - deepseek/deepseek-r1-distill-llama-8b
           - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
-          - deepseek/deepseek-v3.1-base
+          - deepseek/deepseek-v3.1-terminus
+          - deepseek/deepseek-v3.2-exp
           - '---GOOGLE---'
           - google/gemini-2.0-flash-001
           - google/gemini-2.0-flash-lite-001
           - google/gemini-2.5-flash
+          - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-image-preview
           - google/gemini-2.5-flash-lite
           - google/gemini-2.5-flash-lite-preview-06-17
+          - google/gemini-2.5-flash-lite-preview-09-2025
+          - google/gemini-2.5-flash-preview-09-2025
           - google/gemini-2.5-pro
-          - google/gemini-2.5-pro-exp-03-25
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
-          - google/gemini-flash-1.5
-          - google/gemini-flash-1.5-8b
-          - google/gemini-pro-1.5
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-3-12b-it
@@ -2201,6 +2276,7 @@ endpoints:
           - mistralai/ministral-8b
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
+          - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
@@ -2218,22 +2294,23 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
-          - '---NEVERSLEEP---'
-          - neversleep/llama-3-lumimaid-70b
-          - neversleep/llama-3.1-lumimaid-8b
-          - neversleep/noromaid-20b
+          - '---MOONSHOTAI---'
+          - moonshotai/kimi-dev-72b
+          - moonshotai/kimi-k2
+          - moonshotai/kimi-k2-0905
           - '---NOUSRESEARCH---'
+          - nousresearch/deephermes-3-llama-3-8b-preview
           - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-70b
-          - nousresearch/nous-hermes-2-mixtral-8x7b-dpo
           - '---NVIDIA---'
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
-          - nvidia/llama-3.3-nemotron-super-49b-v1
+          - nvidia/llama-3.3-nemotron-super-49b-v1.5
+          - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
           - openai/chatgpt-4o-latest
           - openai/codex-mini
@@ -2260,8 +2337,10 @@ endpoints:
           - openai/gpt-4o-search-preview
           - openai/gpt-5
           - openai/gpt-5-chat
+          - openai/gpt-5-codex
           - openai/gpt-5-mini
           - openai/gpt-5-nano
+          - openai/gpt-5-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/o1
@@ -2282,16 +2361,18 @@ endpoints:
           - perplexity/sonar-reasoning
           - perplexity/sonar-reasoning-pro
           - '---QWEN---'
-          - qwen/qwen-2-72b-instruct
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-2.5-vl-7b-instruct
           - qwen/qwen-max
           - qwen/qwen-plus
+          - qwen/qwen-plus-2025-07-28
+          - qwen/qwen-plus-2025-07-28:thinking
           - qwen/qwen-turbo
           - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
+          - qwen/qwen2.5-coder-7b-instruct
           - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen3-14b
@@ -2300,76 +2381,91 @@ endpoints:
           - qwen/qwen3-235b-a22b-thinking-2507
           - qwen/qwen3-30b-a3b
           - qwen/qwen3-30b-a3b-instruct-2507
+          - qwen/qwen3-30b-a3b-thinking-2507
           - qwen/qwen3-32b
           - qwen/qwen3-8b
           - qwen/qwen3-coder
+          - qwen/qwen3-coder-30b-a3b-instruct
+          - qwen/qwen3-coder-flash
+          - qwen/qwen3-coder-plus
+          - qwen/qwen3-max
+          - qwen/qwen3-next-80b-a3b-instruct
+          - qwen/qwen3-next-80b-a3b-thinking
+          - qwen/qwen3-vl-235b-a22b-instruct
+          - qwen/qwen3-vl-235b-a22b-thinking
+          - qwen/qwen3-vl-30b-a3b-instruct
+          - qwen/qwen3-vl-30b-a3b-thinking
           - qwen/qwq-32b
-          - qwen/qwq-32b-preview
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
+          - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
           - '---THEDRUMMER---'
           - thedrummer/anubis-70b-v1.1
-          - thedrummer/anubis-pro-105b-v1
+          - thedrummer/cydonia-24b-v4.1
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
-          - '---THUDM---'
-          - thudm/glm-4-32b
-          - thudm/glm-4.1v-9b-thinking
-          - thudm/glm-z1-32b
           - '---X-AI---'
-          - x-ai/grok-2-1212
-          - x-ai/grok-2-vision-1212
           - x-ai/grok-3
           - x-ai/grok-3-beta
           - x-ai/grok-3-mini
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
+          - x-ai/grok-4-fast
           - x-ai/grok-code-fast-1
-          - x-ai/grok-vision-beta
           - '---Z-AI---'
           - z-ai/glm-4-32b
           - z-ai/glm-4.5
           - z-ai/glm-4.5-air
           - z-ai/glm-4.5v
+          - z-ai/glm-4.6
           - '---OTHERS---'
           - agentica-org/deepcoder-14b-preview
           - ai21/jamba-large-1.7
           - ai21/jamba-mini-1.7
           - alfredpros/codellama-7b-instruct-solidity
+          - alibaba/tongyi-deepresearch-30b-a3b
+          - allenai/molmo-7b-d
+          - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - arliai/qwq-32b-arliai-rpr-v1
           - bytedance/ui-tars-1.5-7b
+          - cognitivecomputations/dolphin3.0-mistral-24b
+          - deepcogito/cogito-v2-preview-deepseek-671b
+          - deepcogito/cogito-v2-preview-llama-109b-moe
           - eleutherai/llemma_7b
           - gryphe/mythomax-l2-13b
           - inception/mercury
           - inception/mercury-coder
-          - infermatic/mn-inferor-12b
+          - inclusionai/ling-1t
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - liquid/lfm-3b
           - liquid/lfm-7b
           - mancer/weaver
+          - meituan/longcat-flash-chat
           - minimax/minimax-01
           - minimax/minimax-m1
-          - moonshotai/kimi-k2
-          - moonshotai/kimi-vl-a3b-thinking
           - morph/morph-v3-fast
           - morph/morph-v3-large
-          - opengvlab/internvl3-14b
-          - pygmalionai/mythalion-13b
+          - neversleep/llama-3.1-lumimaid-8b
+          - neversleep/noromaid-20b
+          - opengvlab/internvl3-78b
           - raifle/sorcererlm-8x22b
-          - scb10x/llama3.1-typhoon2-70b-instruct
+          - relace/relace-apply-3
           - shisa-ai/shisa-v2-llama3.3-70b
-          - sophosympatheia/midnight-rose-70b
+          - stepfun-ai/step3
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
+          - thudm/glm-4.1v-9b-thinking
+          - thudm/glm-z1-32b
           - tngtech/deepseek-r1t-chimera
+          - tngtech/deepseek-r1t2-chimera
           - undi95/remm-slerp-l2-13b
         fetch: false
       dropParams:
