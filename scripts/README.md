@@ -1,35 +1,18 @@
 # LibreChat YAML Configuration Manager
 
-This tool helps manage and maintain LibreChat YAML configuration files by providing automated updates for model lists and consistent YAML formatting.
+Automated tool for maintaining LibreChat YAML configurations with up-to-date model lists from 20+ AI providers.
 
-## Prerequisites
+## Quick Start
 
-- Python 3.8 or higher
-- pip (Python package installer)
+**Prerequisites:** Python 3.8+ and pip
 
-## Installation
-
-1. Clone this repository:
 ```bash
-git clone https://github.com/LibreChat-AI/librechat-config-yaml.git
-cd librechat-config-yaml/scripts
-```
-
-2. Install required dependencies:
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-3. Copy the environment file and add your API keys:
-```bash
+# For local use, configure API keys
 cp .env.example .env
-```
-
-Edit `.env` and add your API keys for the services you want to use:
-```bash
-COHERE_API_KEY=your-cohere-key
-DEEPSEEK_API_KEY=your-deepseek-key
-# ... etc
+# Edit .env with your API keys
 ```
 
 ## Usage
