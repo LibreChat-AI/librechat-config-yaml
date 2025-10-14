@@ -158,23 +158,13 @@ This repository includes automated weekly model updates via GitHub Actions.
    ```yaml
    on:
      schedule:
-       - cron: '0 0 * * 1'  # Change this line
+       - cron: '0 0 * * 1'
    ```
 
    Examples:
    - Daily: `'0 0 * * *'`
    - Every 6 hours: `'0 */6 * * *'`
    - Monthly (1st of month): `'0 0 1 * *'`
-
-5. **Update Mode**
-
-   By default, only `librechat-test.yaml` is updated. To update all files:
-   
-   Edit `.github/workflows/update-models.yml` and change:
-   ```yaml
-   env:
-     UPDATE_TEST_ONLY: 'false'  # Change from 'true' to 'false'
-   ```
 
 ### Notifications
 
