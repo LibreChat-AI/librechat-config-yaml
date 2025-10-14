@@ -34,6 +34,8 @@ DEEPSEEK_API_KEY=your-deepseek-key
 
 ## Usage
 
+### Interactive Mode (Manual Updates)
+
 Run the main update script:
 ```bash
 python update.py
@@ -43,12 +45,43 @@ This will:
 1. Prompt whether to update YAML formatting (should not be required)
 2. Prompt whether to update model lists
 3. Create backups before any modifications
-4. Process all configuration files:
-   - librechat-env-f.yaml
-   - librechat-env-l.yaml
-   - librechat-up-f.yaml
-   - librechat-up-l.yaml
-   - librechat-test.yaml
+4. Process configuration files
+
+### Automated Mode (No Prompts)
+
+For automated/scheduled runs without user interaction:
+
+```bash
+# Update only test file (recommended for initial testing)
+python update.py --automated --test-only
+
+# Update all YAML files
+python update.py --automated
+```
+
+Or using environment variables:
+```bash
+AUTOMATED_MODE=true UPDATE_TEST_ONLY=true python update.py
+```
+
+### Dedicated Automated Script
+
+For GitHub Actions and other CI/CD pipelines:
+
+```bash
+# Runs automated update with YAML validation
+cd scripts
+python automated_update.py
+```
+
+This script:
+- Fetches latest models from all providers
+- Updates YAML files (test-only by default)
+- Validates YAML syntax
+- Returns appropriate exit codes:
+  - `0`: Success
+  - `1`: Update failed
+  - `2`: YAML validation failed
 
 ### Individual Scripts
 
@@ -61,8 +94,101 @@ python convert_yaml_style.py
 
 Update model lists:
 ```bash
+# Interactive mode
 python update_models.py
+
+# Test-only mode
+python update_models.py --test-only
 ```
+
+## GitHub Actions (Automated Weekly Updates)
+
+This repository includes automated weekly model updates via GitHub Actions.
+
+### Setup Instructions
+
+1. **Add Repository Secrets**
+
+   Go to your repository Settings → Secrets and variables → Actions, and add the following secrets:
+
+   ```
+   AI302_API_KEY
+   APIPIE_API_KEY
+   COHERE_API_KEY
+   DEEPSEEK_API_KEY
+   FIREWORKS_API_KEY
+   GLHF_API_KEY
+   GROQ_API_KEY
+   HUGGINGFACE_TOKEN
+   HYPERBOLIC_API_KEY
+   KLUSTER_API_KEY
+   MISTRAL_API_KEY
+   NANOGPT_API_KEY
+   NVIDIA_API_KEY
+   OPENROUTER_KEY
+   PERPLEXITY_API_KEY
+   SAMBANOVA_API_KEY
+   TOGETHERAI_API_KEY
+   UNIFY_API_KEY
+   XAI_API_KEY
+   ```
+
+   Optional for notifications:
+   ```
+   NOTIFICATION_WEBHOOK  # Slack/Discord webhook URL
+   ```
+
+2. **Workflow Configuration**
+
+   The workflow is located at `.github/workflows/update-models.yml`
+
+   **Schedule**: Runs every Monday at 00:00 UTC
+   
+   **Manual Trigger**: Can be triggered manually from GitHub Actions tab
+
+3. **How It Works**
+
+   - **On Success**: Changes are committed directly to main branch with notification
+   - **On YAML Validation Failure**: Creates a PR for manual review and notifies @Berry-13
+   - **On Script Failure**: Sends failure notification
+
+4. **Customizing the Schedule**
+
+   Edit `.github/workflows/update-models.yml`:
+   ```yaml
+   on:
+     schedule:
+       - cron: '0 0 * * 1'  # Change this line
+   ```
+
+   Examples:
+   - Daily: `'0 0 * * *'`
+   - Every 6 hours: `'0 */6 * * *'`
+   - Monthly (1st of month): `'0 0 1 * *'`
+
+5. **Update Mode**
+
+   By default, only `librechat-test.yaml` is updated. To update all files:
+   
+   Edit `.github/workflows/update-models.yml` and change:
+   ```yaml
+   env:
+     UPDATE_TEST_ONLY: 'false'  # Change from 'true' to 'false'
+   ```
+
+### Notifications
+
+The workflow sends notifications on:
+- ✅ **Success**: Models updated and committed
+- ⚠️ **YAML Validation Failed**: PR created for review
+- ❌ **Failure**: Script encountered errors
+
+Configure webhook URL in repository secrets as `NOTIFICATION_WEBHOOK`.
+
+Supported formats:
+- Slack incoming webhooks
+- Discord webhooks
+- Any webhook accepting JSON with `text` field
 
 ## Directory Structure
 

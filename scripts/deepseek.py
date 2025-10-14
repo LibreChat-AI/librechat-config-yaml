@@ -5,14 +5,11 @@ import os
 from pathlib import Path
 
 def get_api_key():
-    """Get API key from .env file in the current directory or prompt user for input."""
+    """Get API key from .env file or environment variables."""
     env_path = Path(__file__).parent / '.env'
     load_dotenv(dotenv_path=env_path)
     key = os.getenv('DEEPSEEK_API_KEY')
-    if key:
-        return key
-    
-    return input("Please enter your DeepSeek API key (press Enter to skip): ").strip() or None
+    return key
 
 def fetch_models(api_key):
     """Fetch models from DeepSeek API."""
