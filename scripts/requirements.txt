@@ -1,4 +1,5 @@
 ruamel.yaml>=0.17.21
-pyyaml>=6.0.1
+PyYAML>=6.0.1
 python-dotenv>=1.0.0
 requests>=2.31.0
+beautifulsoup4>=4.12.0
