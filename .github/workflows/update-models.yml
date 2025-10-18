@@ -29,6 +29,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
       
+      - name: Verify installation
+        run: |
+          python -c "import yaml; print('PyYAML installed successfully')"
+          pip list
+      
       - name: Run automated model update
         id: update
         env:
