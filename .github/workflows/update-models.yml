@@ -23,6 +23,7 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+          cache: 'pip'
       
       - name: Install dependencies
         run: |
@@ -31,8 +32,14 @@ jobs:
       
       - name: Verify installation
         run: |
-          python -c "import yaml; print('PyYAML installed successfully')"
+          echo "Python version:"
+          python --version
+          which python
+          echo "Installed packages:"
           pip list
+          echo "Testing import:"
+          python -c "import sys; print('Python executable:', sys.executable)"
+          python -c "import yaml; print('PyYAML version:', yaml.__version__)"
       
       - name: Run automated model update
         id: update
@@ -59,6 +66,7 @@ jobs:
           UNIFY_API_KEY: ${{ secrets.UNIFY_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: |
+          python -m pip list | grep -i yaml
           cd scripts
           python automated_update.py
           echo "UPDATE_EXIT_CODE=$?" >> $GITHUB_OUTPUT
