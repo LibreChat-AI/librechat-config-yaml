@@ -20,3 +20,6 @@ scripts/*_raw.json
 
 # Environment variables
 .env
+
+# Act tests runner executables
+/bin/
