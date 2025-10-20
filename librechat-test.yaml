@@ -1385,6 +1385,7 @@ endpoints:
           - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-30B-A3B
+          - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
           - Qwen/Qwen3-Next-80B-A3B-Instruct
@@ -1438,7 +1439,6 @@ endpoints:
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
           - perplexity-ai/r1-1776
-          - shenzhi-wang/Llama3-8B-Chinese-Chat
           - teknium/OpenHermes-2.5-Mistral-7B
           - tencent/Hunyuan-A13B-Instruct
           - tiiuae/falcon-7b-instruct
