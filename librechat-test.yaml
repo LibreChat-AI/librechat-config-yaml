@@ -1368,13 +1368,13 @@ endpoints:
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
         default:
-          - AIDC-AI/Marco-o1
           - Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
           - CohereLabs/c4ai-command-r-plus
           - CohereLabs/c4ai-command-r-v01
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - HuggingFaceTB/SmolLM3-3B
+          - MiniMaxAI/MiniMax-M2
           - NexaAI/Octopus-v2
           - PygmalionAI/pygmalion-6b
           - Qwen/QwQ-32B
@@ -1385,7 +1385,6 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
           - Qwen/Qwen3-235B-A22B
-          - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
@@ -1605,7 +1604,9 @@ endpoints:
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.5-Air-Iceblink
+          - GLM-4.5-Air-Iceblink:thinking
           - GLM-4.5-Air-Steam-v1
+          - GLM-4.5-Air-Steam-v1:thinking
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1616,6 +1617,9 @@ endpoints:
           - Gemma-3-27B-it-Abliterated
           - Gryphe/MythoMax-L2-13b
           - Infermatic/MN-12B-Inferor-v0.0
+          - KAT-Coder-Air-V1
+          - KAT-Coder-Exp-72B-1010
+          - KAT-Coder-Pro-V1
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Ling-Flash-2.0
@@ -1927,6 +1931,7 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/Kimi-Linear-48B-A3B-Instruct
           - moonshotai/kimi-k2-instruct-0711
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-405b
@@ -1957,6 +1962,7 @@ endpoints:
           - openai/gpt-5-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
+          - openai/gpt-oss-safeguard-20b
           - openai/o1-pro
           - pamanseau/OpenReasoning-Nemotron-32B
           - phi-4-mini-instruct
@@ -2120,6 +2126,7 @@ endpoints:
           - microsoft/phi-4-mini-flash-reasoning
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
+          - minimaxai/minimax-m2
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/magistral-small-2506
           - mistralai/mamba-codestral-7b-v0.1
@@ -2147,6 +2154,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-nano-4b-v1.1
           - nvidia/llama-3.1-nemotron-nano-8b-v1
           - nvidia/llama-3.1-nemotron-nano-vl-8b-v1
+          - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nemoretriever-300m-embed-v1
@@ -2164,6 +2172,8 @@ endpoints:
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-4-mini-hindi-4b-instruct
           - nvidia/nemotron-mini-4b-instruct
+          - nvidia/nemotron-nano-12b-v2-vl
+          - nvidia/nemotron-parse
           - nvidia/neva-22b
           - nvidia/nv-embed-v1
           - nvidia/nv-embedcode-7b-v1
@@ -2225,7 +2235,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - cognitivecomputations/dolphin3.0-mistral-24b:free
           - deepseek/deepseek-chat-v3-0324:free
           - deepseek/deepseek-chat-v3.1:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
@@ -2233,7 +2242,6 @@ endpoints:
           - deepseek/deepseek-r1-distill-llama-70b:free
           - deepseek/deepseek-r1:free
           - google/gemini-2.0-flash-exp:free
-          - google/gemma-2-9b-it:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
           - google/gemma-3-4b-it:free
@@ -2247,16 +2255,14 @@ endpoints:
           - meta-llama/llama-4-scout:free
           - microsoft/mai-ds-r1:free
           - minimax/minimax-m2:free
-          - mistralai/devstral-small-2505:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-nemo:free
           - mistralai/mistral-small-24b-instruct-2501:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - mistralai/mistral-small-3.2-24b-instruct:free
-          - moonshotai/kimi-dev-72b:free
           - moonshotai/kimi-k2:free
-          - nousresearch/deephermes-3-llama-3-8b-preview:free
           - nousresearch/hermes-3-llama-3.1-405b:free
+          - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-20b:free
           - qwen/qwen-2.5-72b-instruct:free
@@ -2266,10 +2272,8 @@ endpoints:
           - qwen/qwen3-235b-a22b:free
           - qwen/qwen3-30b-a3b:free
           - qwen/qwen3-4b:free
-          - qwen/qwen3-8b:free
           - qwen/qwen3-coder:free
           - shisa-ai/shisa-v2-llama3.3-70b:free
-          - tencent/hunyuan-a13b-instruct:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - z-ai/glm-4.5-air:free
@@ -2282,6 +2286,7 @@ endpoints:
           - '---AMAZON---'
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
+          - amazon/nova-premier-v1
           - amazon/nova-pro-v1
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
@@ -2378,6 +2383,10 @@ endpoints:
           - microsoft/phi-4-multimodal-instruct
           - microsoft/phi-4-reasoning-plus
           - microsoft/wizardlm-2-8x22b
+          - '---MINIMAX---'
+          - minimax/minimax-01
+          - minimax/minimax-m1
+          - minimax/minimax-m2
           - '---MISTRALAI---'
           - mistralai/codestral-2501
           - mistralai/codestral-2508
@@ -2409,13 +2418,13 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
+          - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
           - moonshotai/kimi-dev-72b
           - moonshotai/kimi-k2
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
           - '---NOUSRESEARCH---'
-          - nousresearch/deephermes-3-llama-3-8b-preview
           - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
@@ -2426,6 +2435,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
+          - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
           - openai/chatgpt-4o-latest
@@ -2462,9 +2472,8 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b:exacto
           - openai/gpt-oss-20b
+          - openai/gpt-oss-safeguard-20b
           - openai/o1
-          - openai/o1-mini
-          - openai/o1-mini-2024-09-12
           - openai/o1-pro
           - openai/o3
           - openai/o3-deep-research
@@ -2474,10 +2483,12 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - openai/text-embedding-3-large
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
+          - perplexity/sonar-pro-search
           - perplexity/sonar-reasoning
           - perplexity/sonar-reasoning-pro
           - '---QWEN---'
@@ -2559,7 +2570,6 @@ endpoints:
           - anthracite-org/magnum-v4-72b
           - arliai/qwq-32b-arliai-rpr-v1
           - bytedance/ui-tars-1.5-7b
-          - cognitivecomputations/dolphin3.0-mistral-24b
           - eleutherai/llemma_7b
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
@@ -2573,14 +2583,11 @@ endpoints:
           - liquid/lfm2-8b-a1b
           - mancer/weaver
           - meituan/longcat-flash-chat
-          - minimax/minimax-01
-          - minimax/minimax-m1
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
-          - openrouter/andromeda-alpha
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2588,7 +2595,6 @@ endpoints:
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - thudm/glm-4.1v-9b-thinking
-          - thudm/glm-z1-32b
           - tngtech/deepseek-r1t-chimera
           - tngtech/deepseek-r1t2-chimera
           - undi95/remm-slerp-l2-13b
