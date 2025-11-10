@@ -1379,7 +1379,6 @@ endpoints:
           - PygmalionAI/pygmalion-6b
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
-          - Qwen/Qwen2-72B-Instruct
           - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-7B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
@@ -1435,6 +1434,7 @@ endpoints:
           - mistralai/Mistral-7B-Instruct-v0.1
           - mistralai/Mistral-7B-Instruct-v0.2
           - moonshotai/Kimi-K2-Instruct
+          - moonshotai/Kimi-K2-Thinking
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -1789,7 +1789,6 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-70B
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Terminus
           - deepseek-ai/DeepSeek-V3.1-Terminus:thinking
@@ -1931,8 +1930,10 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct-0905
-          - moonshotai/Kimi-Linear-48B-A3B-Instruct
           - moonshotai/kimi-k2-instruct-0711
+          - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-k2-thinking-original
+          - moonshotai/kimi-k2-thinking-turbo-original
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-4-405b
@@ -1959,7 +1960,6 @@ endpoints:
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
           - openai/gpt-5
-          - openai/gpt-5-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
@@ -2273,7 +2273,6 @@ endpoints:
           - qwen/qwen3-30b-a3b:free
           - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
-          - shisa-ai/shisa-v2-llama3.3-70b:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - z-ai/glm-4.5-air:free
@@ -2424,6 +2423,8 @@ endpoints:
           - moonshotai/kimi-k2
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
+          - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-linear-48b-a3b-instruct
           - '---NOUSRESEARCH---'
           - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
@@ -2483,7 +2484,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
-          - openai/text-embedding-3-large
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2527,7 +2527,6 @@ endpoints:
           - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3-vl-30b-a3b-instruct
           - qwen/qwen3-vl-30b-a3b-thinking
-          - qwen/qwen3-vl-32b-instruct
           - qwen/qwen3-vl-8b-instruct
           - qwen/qwen3-vl-8b-thinking
           - qwen/qwq-32b
@@ -2566,7 +2565,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
-          - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - arliai/qwq-32b-arliai-rpr-v1
           - bytedance/ui-tars-1.5-7b
@@ -2588,9 +2586,9 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
+          - openrouter/polaris-alpha
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
-          - shisa-ai/shisa-v2-llama3.3-70b
           - stepfun-ai/step3
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
