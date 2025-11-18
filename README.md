@@ -44,6 +44,7 @@ Basic configuration:
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-l.yaml
+  AI302_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
@@ -71,6 +72,7 @@ Basic configuration:
 - .env config:
   ```yaml
   CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-f.yaml
+  AI302_API_KEY=
   APIPIE_API_KEY=
   COHERE_API_KEY=
   DEEPSEEK_API_KEY=
@@ -115,30 +117,11 @@ Basic configuration:
 
 ---
 
-## Deprecated Files
-The following files are now deprecated and should not be used for new configurations:
-
-### ~~`librechat.yaml`~~ (Deprecated)
-Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env.l.yaml`
-
-### ~~`librechat-hf.yaml`~~ (Deprecated)
-Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-f.yaml`
-
-### ~~`librechat-aio.yaml`~~ (Deprecated)
-Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-l.yaml`
-
-### ~~`librechat-rw.yaml`~~ (Deprecated)
-Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-l.yaml`
-
-### ~~`librechat-f.yaml`~~ (Deprecated)
-Update your `CONFIG_PATH` environment variable to: `https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-f.yaml`
-
----
-
 ## Get an API key:
 
 | Provider | URL |
 |----------|-----|
+| 302.AI | https://302.ai/ |
 | APIpie | https://apipie.ai/dashboard/profile/api-keys |
 | Cohere | https://dashboard.cohere.com/api-keys |
 | DeepSeek | https://platform.deepseek.com/api_keys |
