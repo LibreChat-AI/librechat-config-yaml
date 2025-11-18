@@ -129,13 +129,26 @@ This repository includes automated weekly model updates via GitHub Actions.
    
    **Manual Trigger**: Can be triggered manually from GitHub Actions tab
 
-3. **How It Works**
+3. **Control Which Files Are Updated**
+
+   By default, the workflow only updates `librechat-test.yaml`. To update all YAML files:
+   
+   - Go to Settings → Secrets and variables → Actions → **Variables** tab
+   - Click "New repository variable"
+   - Name: `UPDATE_TEST_ONLY`
+   - Value: `false`
+   
+   Values:
+   - `true` (or not set): Only updates `librechat-test.yaml` ✓ Safe default
+   - `false`: Updates all `librechat-*.yaml` files
+
+4. **How It Works**
 
    - **On Success**: Changes are committed directly to main branch with notification
    - **On YAML Validation Failure**: Creates a PR for manual review and notifies @Berry-13
    - **On Script Failure**: Sends failure notification
 
-4. **Customizing the Schedule**
+5. **Customizing the Schedule**
 
    Edit `.github/workflows/update-models.yml`:
    ```yaml
