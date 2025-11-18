@@ -513,6 +513,7 @@ endpoints:
       models:
         default:
           - afm-4-5b
+          - aibi
           - aion
           - aion-1-0
           - aion-1-0-mini
@@ -567,6 +568,8 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
+          - coder-large
           - codestral
           - codestral-2405
           - codestral-2501
@@ -904,6 +907,7 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - maestro-reasoning
           - magistral-medium
           - magistral-medium-2506
           - magistral-small
@@ -1139,6 +1143,7 @@ endpoints:
           - sora-2
           - sora-2-pro
           - sorcererlm-8x22b
+          - spotlight
           - step-3
           - text-babbage-002
           - text-davinci-002
@@ -1154,6 +1159,7 @@ endpoints:
           - ui-tars-72b
           - ultra-fast
           - unslopnemo-12b
+          - virtuoso-large
           - visionx
           - voxtral-small-24b-2507
           - wan-2-1-t2v-1-3b
@@ -1417,6 +1423,7 @@ endpoints:
           - google/gemma-2-9b-it
           - google/gemma-2b-it
           - google/gemma-7b-it
+          - jinaai/ReaderLM-v2
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
@@ -1826,6 +1833,8 @@ endpoints:
           - ernie-4.5-8k-preview
           - ernie-4.5-turbo-128k
           - ernie-4.5-turbo-vl-32k
+          - ernie-5.0-thinking-latest
+          - ernie-5.0-thinking-preview
           - ernie-x1-32k
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
@@ -1856,6 +1865,7 @@ endpoints:
           - gemini-2.5-pro-preview-03-25
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
+          - gemini-3-pro-preview
           - gemini-exp-1206
           - gemini-exp-1206
           - glm-4
@@ -1935,6 +1945,7 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-Dev-72B
           - moonshotai/Kimi-K2-Instruct-0905
+          - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0711
           - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2-thinking-original
@@ -2239,7 +2250,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - agentica-org/deepcoder-14b-preview:free
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
@@ -2354,6 +2364,7 @@ endpoints:
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
+          - google/gemini-3-pro-preview
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-3-12b-it
@@ -2566,7 +2577,6 @@ endpoints:
           - z-ai/glm-4.6
           - z-ai/glm-4.6:exacto
           - '---OTHERS---'
-          - agentica-org/deepcoder-14b-preview
           - ai21/jamba-large-1.7
           - ai21/jamba-mini-1.7
           - alfredpros/codellama-7b-instruct-solidity
