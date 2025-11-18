@@ -35,16 +35,13 @@ This will:
 For automated/scheduled runs without user interaction:
 
 ```bash
-# Update only test file (recommended for initial testing)
-python update.py --automated --test-only
-
 # Update all YAML files
 python update.py --automated
 ```
 
 Or using environment variables:
 ```bash
-AUTOMATED_MODE=true UPDATE_TEST_ONLY=true python update.py
+AUTOMATED_MODE=true python update.py
 ```
 
 ### Dedicated Automated Script
@@ -59,7 +56,7 @@ python automated_update.py
 
 This script:
 - Fetches latest models from all providers
-- Updates YAML files (test-only by default)
+- Updates all YAML files
 - Validates YAML syntax
 - Returns appropriate exit codes:
   - `0`: Success
@@ -79,9 +76,6 @@ Update model lists:
 ```bash
 # Interactive mode
 python update_models.py
-
-# Test-only mode
-python update_models.py --test-only
 ```
 
 ## GitHub Actions (Automated Weekly Updates)
@@ -129,20 +123,7 @@ This repository includes automated weekly model updates via GitHub Actions.
    
    **Manual Trigger**: Can be triggered manually from GitHub Actions tab
 
-3. **Control Which Files Are Updated**
-
-   By default, the workflow only updates `librechat-test.yaml`. To update all YAML files:
-   
-   - Go to Settings → Secrets and variables → Actions → **Variables** tab
-   - Click "New repository variable"
-   - Name: `UPDATE_TEST_ONLY`
-   - Value: `false`
-   
-   Values:
-   - `true` (or not set): Only updates `librechat-test.yaml` ✓ Safe default
-   - `false`: Updates all `librechat-*.yaml` files
-
-4. **How It Works**
+3. **How It Works**
 
    - **On Success**: Changes are committed directly to main branch with notification
    - **On YAML Validation Failure**: Creates a PR for manual review and notifies @Berry-13

@@ -44,7 +44,6 @@ jobs:
       - name: Run automated model update
         id: update
         env:
-          UPDATE_TEST_ONLY: ${{ vars.UPDATE_TEST_ONLY || 'false' }}
           AI302_API_KEY: ${{ secrets.AI302_API_KEY }}
           APIPIE_API_KEY: ${{ secrets.APIPIE_API_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
@@ -89,16 +88,10 @@ jobs:
       
       - name: Commit and push changes (if validation passed)
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true'
-        env:
-          UPDATE_TEST_ONLY: ${{ vars.UPDATE_TEST_ONLY || 'true' }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          if [[ "${UPDATE_TEST_ONLY}" == "true" ]]; then
-            git add librechat-test.yaml
-          else
-            git add librechat-*.yaml
-          fi
+          git add librechat-*.yaml
           git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
           git push
       
@@ -143,13 +136,11 @@ jobs:
       - name: Notify on success
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true' && success()
         env:
-          UPDATE_TEST_ONLY: ${{ vars.UPDATE_TEST_ONLY || 'true' }}
           WEBHOOK_URL: ${{ secrets.NOTIFICATION_WEBHOOK }}
         uses: actions/github-script@v7
         with:
           script: |
-            const testOnly = process.env.UPDATE_TEST_ONLY === 'true';
-            const files = testOnly ? 'librechat-test.yaml' : 'all librechat-*.yaml files';
+            const files = 'all librechat-*.yaml files';
             const message = `✅ **AI Models Updated Successfully**\n\nDate: ${{ steps.date.outputs.DATE }}\nFiles: ${files}\n\nChanges have been committed to the main branch.`;
             console.log(message);
             

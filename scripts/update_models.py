@@ -257,26 +257,20 @@ def cleanup_temp_files():
         except Exception as e:
             logger.error(f"Error deleting {txt_file}: {str(e)}")
 
-def update_models(test_only=False):
+def update_models():
     # Get parent directory path
     parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
     # Input and output file paths with parent directory
-    if test_only:
-        # Only update test file for initial testing
-        input_files = [
-            os.path.join(parent_dir, 'librechat-test.yaml'),
-        ]
-    else:
-        # Update all files
-        input_files = [
-            os.path.join(parent_dir, 'librechat-env-f.yaml'),
-            os.path.join(parent_dir, 'librechat-env-l.yaml'),
-            os.path.join(parent_dir, 'librechat-up-f.yaml'),
-            os.path.join(parent_dir, 'librechat-up-l.yaml'),
-            os.path.join(parent_dir, 'librechat-test.yaml'),
-            # os.path.join(parent_dir, 'librechat.yaml'),
-        ]
+    # Update all files
+    input_files = [
+        os.path.join(parent_dir, 'librechat-env-f.yaml'),
+        os.path.join(parent_dir, 'librechat-env-l.yaml'),
+        os.path.join(parent_dir, 'librechat-up-f.yaml'),
+        os.path.join(parent_dir, 'librechat-up-l.yaml'),
+        os.path.join(parent_dir, 'librechat-test.yaml'),
+        # os.path.join(parent_dir, 'librechat.yaml'),
+    ]
 
     # Load each input file and perform updates
     for input_file in input_files:
@@ -297,7 +291,7 @@ def update_models(test_only=False):
         except Exception as e:
             logger.error(f"Error processing {input_file}: {str(e)}")
 
-def main(test_only=False):
+def main():
     logger.info("Starting model update process")
     
     stats = UpdateStats()
@@ -305,19 +299,14 @@ def main(test_only=False):
     # Get parent directory path
     parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
-    if test_only:
-        # Only update test file for initial testing
-        yaml_files = ['librechat-test.yaml']
-        logger.info("Running in test mode - only updating librechat-test.yaml")
-    else:
-        yaml_files = [
-            'librechat-env-f.yaml',
-            'librechat-env-l.yaml',
-            'librechat-up-f.yaml',
-            'librechat-up-l.yaml',
-            'librechat-test.yaml',
-            # 'librechat.yaml',
-        ]
+    yaml_files = [
+        'librechat-env-f.yaml',
+        'librechat-env-l.yaml',
+        'librechat-up-f.yaml',
+        'librechat-up-l.yaml',
+        'librechat-test.yaml',
+        # 'librechat.yaml',
+    ]
     
     # Define the scripts to run and their corresponding provider names
     fetchers = {
@@ -412,11 +401,8 @@ def main(test_only=False):
 if __name__ == "__main__":
     import sys
     
-    # Check for command line arguments
-    test_only = '--test-only' in sys.argv or os.getenv('UPDATE_TEST_ONLY', '').lower() in ['true', '1', 'yes']
-    
     try:
-        success = main(test_only=test_only)
+        success = main()
         logger.info(f"Script completed with success={success}")
         exit(0 if success else 1)
     except Exception as e:

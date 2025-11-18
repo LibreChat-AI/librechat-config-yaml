@@ -74,16 +74,11 @@ def main():
     
     try:
         # Get configuration from environment
-        test_only = os.getenv('UPDATE_TEST_ONLY', 'true').lower() in ['true', '1', 'yes']
-        
-        if test_only:
-            logger.info("Running in TEST mode - only updating librechat-test.yaml")
-        else:
-            logger.info("Running in FULL mode - updating all YAML files")
+        logger.info("Running in FULL mode - updating all YAML files")
         
         # Run the model update
         logger.info("Fetching latest models from all providers...")
-        success = update_models.main(test_only=test_only)
+        success = update_models.main()
         
         if not success:
             logger.error("Model update failed")
@@ -96,16 +91,13 @@ def main():
         
         parent_dir = Path(__file__).parent.parent
         
-        if test_only:
-            files_to_validate = [parent_dir / 'librechat-test.yaml']
-        else:
-            files_to_validate = [
-                parent_dir / 'librechat-env-f.yaml',
-                parent_dir / 'librechat-env-l.yaml',
-                parent_dir / 'librechat-up-f.yaml',
-                parent_dir / 'librechat-up-l.yaml',
-                parent_dir / 'librechat-test.yaml',
-            ]
+        files_to_validate = [
+            parent_dir / 'librechat-env-f.yaml',
+            parent_dir / 'librechat-env-l.yaml',
+            parent_dir / 'librechat-up-f.yaml',
+            parent_dir / 'librechat-up-l.yaml',
+            parent_dir / 'librechat-test.yaml',
+        ]
         
         validation_failed = False
         validation_errors = []

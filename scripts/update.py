@@ -20,7 +20,7 @@ def get_user_choice(prompt):
             return choice == 'y'
         print("Please enter 'y' or 'n'")
 
-def main(automated=False, test_only=False):
+def main(automated=False):
     if not automated:
         print("\nLibreChat YAML Configuration Update Tool")
         print("=======================================\n")
@@ -30,7 +30,7 @@ def main(automated=False, test_only=False):
             # Automated mode: skip YAML style conversion, only update models
             logging.info("Running in automated mode")
             print("\nUpdating model lists in automated mode...")
-            update_models.main(test_only=test_only)
+            update_models.main()
             print("Model list updates completed.\n")
         else:
             # Interactive mode
@@ -45,7 +45,7 @@ def main(automated=False, test_only=False):
             # Ask about model list updates
             if get_user_choice("Do you want to update model lists? (y/n): "):
                 print("\nUpdating model lists...")
-                update_models.main(test_only=test_only)
+                update_models.main()
                 print("Model list updates completed.\n")
             else:
                 print("Skipping model list updates.\n")
@@ -67,8 +67,7 @@ if __name__ == "__main__":
     
     # Check for automated mode flags
     automated = '--automated' in sys.argv or os.getenv('AUTOMATED_MODE', '').lower() in ['true', '1', 'yes']
-    test_only = '--test-only' in sys.argv or os.getenv('UPDATE_TEST_ONLY', '').lower() in ['true', '1', 'yes']
     
-    exit_code = main(automated=automated, test_only=test_only)
+    exit_code = main(automated=automated)
     if exit_code != 0 and not automated:
         print("\nScript encountered errors. Please check the logs.")
