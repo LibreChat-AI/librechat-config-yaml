@@ -19,12 +19,6 @@ See the Custom Configuration Guide for more information: [LibreChat Custom Confi
 ## LibreChat Demo & Quick Deployments
 
 <p align="left">
-  <a href="https://demo.librechat.cfd/">
-      <img src="https://github.com/LibreChat-AI/librechat-config-yaml/assets/32828263/d3a1e88f-fce0-4a8e-8c1d-5901a3e1c2dd">
-  </a>
-</p>
-
-<p align="left">
 <a href="https://railway.app/template/b5k2mn?referralCode=HI9hWz">
   <img src="https://railway.app/button.svg" alt="Deploy on Railway">
 </a>
