@@ -44,7 +44,7 @@ jobs:
       - name: Run automated model update
         id: update
         env:
-          UPDATE_TEST_ONLY: ${{ vars.UPDATE_TEST_ONLY || 'true' }}
+          UPDATE_TEST_ONLY: ${{ vars.UPDATE_TEST_ONLY || 'false' }}
           AI302_API_KEY: ${{ secrets.AI302_API_KEY }}
           APIPIE_API_KEY: ${{ secrets.APIPIE_API_KEY }}
           COHERE_API_KEY: ${{ secrets.COHERE_API_KEY }}
