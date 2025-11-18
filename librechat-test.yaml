@@ -567,8 +567,6 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
-          - coder-large
           - codestral
           - codestral-2405
           - codestral-2501
@@ -906,7 +904,6 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
-          - maestro-reasoning
           - magistral-medium
           - magistral-medium-2506
           - magistral-small
@@ -1142,7 +1139,6 @@ endpoints:
           - sora-2
           - sora-2-pro
           - sorcererlm-8x22b
-          - spotlight
           - step-3
           - text-babbage-002
           - text-davinci-002
@@ -1158,7 +1154,6 @@ endpoints:
           - ui-tars-72b
           - ultra-fast
           - unslopnemo-12b
-          - virtuoso-large
           - visionx
           - voxtral-small-24b-2507
           - wan-2-1-t2v-1-3b
@@ -1905,7 +1900,6 @@ endpoints:
           - inclusionAI/Ling-flash-2.0
           - inclusionAI/Ring-flash-2.0
           - inclusionai/ling-1t
-          - inclusionai/ring-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
@@ -2587,8 +2581,6 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - inception/mercury
           - inception/mercury-coder
-          - inclusionai/ling-1t
-          - inclusionai/ring-1t
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - liquid/lfm-2.2-6b
