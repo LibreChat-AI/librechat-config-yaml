@@ -571,7 +571,6 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -685,6 +684,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
+          - gemini-3-pro-preview
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -2198,7 +2198,6 @@ endpoints:
           - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-chat-v3-0324:free
-          - deepseek/deepseek-chat-v3.1:free
           - deepseek/deepseek-r1-0528-qwen3-8b:free
           - deepseek/deepseek-r1-0528:free
           - deepseek/deepseek-r1-distill-llama-70b:free
@@ -2302,7 +2301,6 @@ endpoints:
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-image-preview
           - google/gemini-2.5-flash-lite
-          - google/gemini-2.5-flash-lite-preview-06-17
           - google/gemini-2.5-flash-lite-preview-09-2025
           - google/gemini-2.5-flash-preview-09-2025
           - google/gemini-2.5-pro
