@@ -578,10 +578,12 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
           - cogito-2-deepseek-671b
+          - cogito-v2-1-671b
           - cogito-v2-preview-deepseek-671b
           - cogito-v2-preview-llama-109b-moe
           - cogito-v2-preview-llama-405b
@@ -691,6 +693,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
+          - gemini-3-pro
           - gemini-3-pro-preview
           - gemini-pro
           - gemini-pro-vision
@@ -796,6 +799,7 @@ endpoints:
           - grok-3-mini-beta
           - grok-4
           - grok-4-0709
+          - grok-4-1-fast
           - grok-4-fast
           - grok-code-fast-1
           - grok-vision-beta
@@ -1790,6 +1794,7 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
           - deepcogito/cogito-v2-preview-llama-70B
+          - deepcogito/cogito-v2.1-671b
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-V3.1
@@ -1857,6 +1862,7 @@ endpoints:
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-preview
+          - gemini-3-pro-preview-thinking
           - gemini-exp-1206
           - gemini-exp-1206
           - glm-4
@@ -2327,6 +2333,7 @@ endpoints:
           - deepcogito/cogito-v2-preview-llama-109b-moe
           - deepcogito/cogito-v2-preview-llama-405b
           - deepcogito/cogito-v2-preview-llama-70b
+          - deepcogito/cogito-v2.1-671b
           - '---DEEPSEEK---'
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
@@ -2557,6 +2564,7 @@ endpoints:
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
           - x-ai/grok-4-fast
+          - x-ai/grok-4.1-fast
           - x-ai/grok-code-fast-1
           - '---Z-AI---'
           - z-ai/glm-4-32b
@@ -2591,8 +2599,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
-          - openrouter/sherlock-dash-alpha
-          - openrouter/sherlock-think-alpha
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - stepfun-ai/step3
