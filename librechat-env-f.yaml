@@ -575,7 +575,6 @@ endpoints:
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
-          - cogito-2-deepseek-671b
           - cogito-v2-1-671b
           - cogito-v2-preview-deepseek-671b
           - cogito-v2-preview-llama-109b-moe
@@ -687,6 +686,7 @@ endpoints:
           - gemini-2-flash-exp
           - gemini-2-flash-lite
           - gemini-3-pro
+          - gemini-3-pro-image-preview
           - gemini-3-pro-preview
           - gemini-pro
           - gemini-pro-vision
@@ -1052,7 +1052,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1129,8 +1128,6 @@ endpoints:
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
-          - sherlock-dash-alpha
-          - sherlock-think-alpha
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -1988,6 +1985,8 @@ endpoints:
           - x-ai/grok-4-07-09
           - x-ai/grok-4-fast
           - x-ai/grok-4-fast:thinking
+          - x-ai/grok-4.1-fast
+          - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-code-fast-1
           - yi-34b-chat-0205
           - yi-34b-chat-200k
@@ -2239,6 +2238,7 @@ endpoints:
           - qwen/qwen3-coder:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
+          - x-ai/grok-4.1-fast:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2313,6 +2313,7 @@ endpoints:
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
+          - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
