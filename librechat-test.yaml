@@ -689,6 +689,7 @@ endpoints:
           - gemini-2-flash-exp
           - gemini-2-flash-lite
           - gemini-3-pro
+          - gemini-3-pro-image
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
           - gemini-pro
@@ -1055,6 +1056,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -2302,6 +2304,11 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
+          - '---ALLENAI---'
+          - allenai/olmo-2-0325-32b-instruct
+          - allenai/olmo-3-32b-think
+          - allenai/olmo-3-7b-instruct
+          - allenai/olmo-3-7b-think
           - '---AMAZON---'
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
@@ -2588,7 +2595,6 @@ endpoints:
           - ai21/jamba-mini-1.7
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
-          - allenai/olmo-2-0325-32b-instruct
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
           - arliai/qwq-32b-arliai-rpr-v1
