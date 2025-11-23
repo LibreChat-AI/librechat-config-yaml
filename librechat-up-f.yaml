@@ -966,7 +966,6 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
-          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1025,6 +1024,9 @@ endpoints:
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olmo-2-0325-32b-instruct
+          - olmo-3-32b-think
+          - olmo-3-7b-instruct
+          - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0725-fp8
@@ -1075,7 +1077,6 @@ endpoints:
           - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-3b-instruct
           - qwen-2-5-vl-72b-instruct
-          - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
           - qwen-2-small
@@ -1286,7 +1287,6 @@ endpoints:
           - Meta-Llama-3.1-8B-Instruct
           - Mistral-Nemo
           - Mistral-large-2407
-          - Mistral-small
           - gpt-4o
           - gpt-4o-mini
           - text-embedding-3-large
@@ -1951,6 +1951,8 @@ endpoints:
           - yi-large
           - yi-lightning
           - yi-medium-200k
+          - z-ai/glm-4.5v
+          - z-ai/glm-4.5v:thinking
           - z-ai/glm-4.6
           - z-ai/glm-4.6:thinking
           - zai-org/GLM-4.5-Air
