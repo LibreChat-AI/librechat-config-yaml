@@ -525,6 +525,7 @@ endpoints:
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
+          - bert-nebulon-alpha
           - chatgpt-4o
           - chatgpt-4o-latest
           - chatx
@@ -564,6 +565,7 @@ endpoints:
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
+          - claude-opus-4-5
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1604,6 +1606,7 @@ endpoints:
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
+          - Doctor-Shotgun/MS3.2-24B-Magnum-Diamond
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
@@ -1613,6 +1616,7 @@ endpoints:
           - GLM-4.5-Air-Abliterated
           - GLM-4.5-Air-Iceblink
           - GLM-4.5-Air-Iceblink:thinking
+          - GLM-4.5-Air-Iso-Abliterated
           - GLM-4.5-Air-Steam-v1
           - GLM-4.5-Air-Steam-v1:thinking
           - GalrionSoftworks/MN-LooseCannon-12B-v1
@@ -1736,6 +1740,7 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
+          - allenai/olmo-3-32b-think
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
           - amazon/nova-pro-v1
@@ -1772,6 +1777,8 @@ endpoints:
           - claude-opus-4-1-thinking:32768
           - claude-opus-4-1-thinking:8192
           - claude-opus-4-20250514
+          - claude-opus-4-5-20251101
+          - claude-opus-4-5-20251101:thinking
           - claude-opus-4-thinking
           - claude-opus-4-thinking:1024
           - claude-opus-4-thinking:32000
@@ -2320,6 +2327,7 @@ endpoints:
           - anthropic/claude-haiku-4.5
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
+          - anthropic/claude-opus-4.5
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - '---ARCEE-AI---'
@@ -2609,6 +2617,7 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
+          - openrouter/bert-nebulon-alpha
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - stepfun-ai/step3
