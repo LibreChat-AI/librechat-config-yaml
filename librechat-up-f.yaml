@@ -1522,10 +1522,13 @@ endpoints:
           - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
-          - GLM-4.5-Air-Abliterated
+          - GLM-4.5-Air-Derestricted
           - GLM-4.5-Air-Iceblink
+          - GLM-4.5-Air-Iceblink-Derestricted
+          - GLM-4.5-Air-Iceblink-v2
+          - GLM-4.5-Air-Iceblink-v2-Derestricted
           - GLM-4.5-Air-Iceblink:thinking
-          - GLM-4.5-Air-Iso-Abliterated
+          - GLM-4.5-Air-Steam-Derestricted
           - GLM-4.5-Air-Steam-v1
           - GLM-4.5-Air-Steam-v1:thinking
           - GalrionSoftworks/MN-LooseCannon-12B-v1
@@ -2492,7 +2495,6 @@ endpoints:
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
           - x-ai/grok-4-fast
-          - x-ai/grok-4.1-fast
           - x-ai/grok-code-fast-1
           - '---Z-AI---'
           - z-ai/glm-4-32b
