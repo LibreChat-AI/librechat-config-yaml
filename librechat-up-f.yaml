@@ -671,7 +671,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -793,7 +792,6 @@ endpoints:
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1026,6 +1024,7 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
+          - olmo-2-0325-32b-instruct
           - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
@@ -1290,7 +1289,6 @@ endpoints:
           - Meta-Llama-3.1-8B-Instruct
           - Mistral-Nemo
           - Mistral-large-2407
-          - Mistral-small
           - gpt-4o
           - gpt-4o-mini
           - text-embedding-3-large
@@ -1523,10 +1521,13 @@ endpoints:
           - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
-          - GLM-4.5-Air-Abliterated
+          - GLM-4.5-Air-Derestricted
           - GLM-4.5-Air-Iceblink
+          - GLM-4.5-Air-Iceblink-Derestricted
+          - GLM-4.5-Air-Iceblink-v2
+          - GLM-4.5-Air-Iceblink-v2-Derestricted
           - GLM-4.5-Air-Iceblink:thinking
-          - GLM-4.5-Air-Iso-Abliterated
+          - GLM-4.5-Air-Steam-Derestricted
           - GLM-4.5-Air-Steam-v1
           - GLM-4.5-Air-Steam-v1:thinking
           - GalrionSoftworks/MN-LooseCannon-12B-v1
@@ -2493,7 +2494,6 @@ endpoints:
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
           - x-ai/grok-4-fast
-          - x-ai/grok-4.1-fast
           - x-ai/grok-code-fast-1
           - '---Z-AI---'
           - z-ai/glm-4-32b
