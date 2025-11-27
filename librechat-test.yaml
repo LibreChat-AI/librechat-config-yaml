@@ -562,6 +562,7 @@ endpoints:
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
           - claude-opus-4-5
+          - claude-opus-4-5-20251101
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -666,6 +667,7 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
+          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -787,6 +789,7 @@ endpoints:
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
+          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1097,7 +1100,6 @@ endpoints:
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
-          - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
@@ -1160,6 +1162,7 @@ endpoints:
           - titan-text-lite
           - titan-text-lite-v1
           - titan-tg-1-large
+          - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
           - ui-tars-1-5-7b
           - ui-tars-72b
@@ -1428,8 +1431,8 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-2-9b-it
           - google/gemma-2b-it
-          - google/gemma-3-1b-it
           - google/gemma-7b-it
+          - jinaai/ReaderLM-v2
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
@@ -2271,13 +2274,8 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
-          - arliai/qwq-32b-arliai-rpr-v1:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - deepseek/deepseek-chat-v3-0324:free
-          - deepseek/deepseek-r1-0528-qwen3-8b:free
-          - deepseek/deepseek-r1-0528:free
           - deepseek/deepseek-r1-distill-llama-70b:free
-          - deepseek/deepseek-r1:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
@@ -2288,27 +2286,19 @@ endpoints:
           - meituan/longcat-flash-chat:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - microsoft/mai-ds-r1:free
           - mistralai/mistral-7b-instruct:free
-          - mistralai/mistral-nemo:free
-          - mistralai/mistral-small-24b-instruct-2501:free
           - mistralai/mistral-small-3.1-24b-instruct:free
-          - mistralai/mistral-small-3.2-24b-instruct:free
           - moonshotai/kimi-k2:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-20b:free
-          - qwen/qwen-2.5-72b-instruct:free
-          - qwen/qwen-2.5-coder-32b-instruct:free
-          - qwen/qwen2.5-vl-32b-instruct:free
-          - qwen/qwen3-14b:free
           - qwen/qwen3-235b-a22b:free
-          - qwen/qwen3-30b-a3b:free
           - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
+          - tngtech/tng-r1t-chimera:free
           - x-ai/grok-4.1-fast:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2587,6 +2577,10 @@ endpoints:
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
+          - '---TNGTECH---'
+          - tngtech/deepseek-r1t-chimera
+          - tngtech/deepseek-r1t2-chimera
+          - tngtech/tng-r1t-chimera
           - '---X-AI---'
           - x-ai/grok-3
           - x-ai/grok-3-beta
@@ -2634,8 +2628,6 @@ endpoints:
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - thudm/glm-4.1v-9b-thinking
-          - tngtech/deepseek-r1t-chimera
-          - tngtech/deepseek-r1t2-chimera
           - undi95/remm-slerp-l2-13b
         fetch: false
       dropParams:
