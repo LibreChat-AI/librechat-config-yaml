@@ -581,7 +581,6 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -819,6 +818,7 @@ endpoints:
           - image-01
           - inflection-3-pi
           - inflection-3-productivity
+          - intellect-3
           - internvl-3-14b
           - internvl-3-78b
           - j2-grande-instruct
@@ -1104,6 +1104,7 @@ endpoints:
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
+          - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
@@ -1422,6 +1423,7 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-2-9b-it
           - google/gemma-2b-it
+          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - jinaai/ReaderLM-v2
           - manycore-research/SpatialLM-Llama-1B
@@ -2613,6 +2615,7 @@ endpoints:
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
           - openrouter/bert-nebulon-alpha
+          - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - stepfun-ai/step3
