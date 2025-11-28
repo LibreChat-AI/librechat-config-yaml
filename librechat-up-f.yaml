@@ -582,7 +582,6 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -820,6 +819,7 @@ endpoints:
           - image-01
           - inflection-3-pi
           - inflection-3-productivity
+          - intellect-3
           - internvl-3-14b
           - internvl-3-78b
           - j2-grande-instruct
@@ -2522,6 +2522,7 @@ endpoints:
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
           - openrouter/bert-nebulon-alpha
+          - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - stepfun-ai/step3
