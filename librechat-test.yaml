@@ -577,6 +577,7 @@ endpoints:
           - codestral-2405
           - codestral-2501
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -2276,7 +2277,6 @@ endpoints:
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - deepseek/deepseek-r1-distill-llama-70b:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
