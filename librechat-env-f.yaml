@@ -568,12 +568,12 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2405
           - codestral-2501
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -614,7 +614,6 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
-          - deepseek-prover-v2
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -2221,7 +2220,6 @@ endpoints:
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
-          - deepseek/deepseek-r1-distill-llama-70b:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
