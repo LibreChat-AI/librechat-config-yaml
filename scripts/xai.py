@@ -13,7 +13,7 @@ def get_api_key():
 
 def fetch_models(api_key):
     """Fetch models from XAI API."""
-    url = "https://api.xai.sh/v1/models"
+    url = "https://api.x.ai/v1/models"
     headers = {
         "accept": "application/json",
         "Authorization": f"Bearer {api_key}"
@@ -24,10 +24,10 @@ def fetch_models(api_key):
         response.raise_for_status()
         
         data = response.json()
-        # Extract and sort model IDs
+        # Extract and sort model IDs from data array
         model_ids = sorted([
             model['id']
-            for model in data
+            for model in data['data']
         ])
         return model_ids
             

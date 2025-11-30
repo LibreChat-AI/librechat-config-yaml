@@ -24,14 +24,15 @@ def fetch_models(api_key):
         response.raise_for_status()
         
         data = response.json()
-        if 'data' in data:
-            # Extract and sort model IDs
-            model_ids = sorted([
-                model['id']
-                for model in data['data']
-                if 'id' in model
-            ])
-            return model_ids
+        # Handle both response formats: {"data": [...]} or direct array [...]
+        models_list = data['data'] if 'data' in data else data
+        # Extract and sort model IDs
+        model_ids = sorted([
+            model['id']
+            for model in models_list
+            if 'id' in model
+        ])
+        return model_ids
             
     except Exception as e:
         print(f"Error fetching models: {str(e)}")
