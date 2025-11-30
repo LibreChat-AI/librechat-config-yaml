@@ -529,7 +529,6 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
-          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -568,6 +567,7 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2405
@@ -614,6 +614,7 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
+          - deepseek-prover-v2
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -806,7 +807,6 @@ endpoints:
           - hermes-4-70b
           - horizon
           - horizon-beta
-          - hunyuan-a13b-instruct
           - image-01
           - inflection-3-pi
           - inflection-3-productivity
@@ -826,7 +826,6 @@ endpoints:
           - jamba-large-1-7
           - jamba-mini-1-7
           - kat-coder-pro
-          - kimi-dev-72b
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-instruct
@@ -1058,7 +1057,6 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
