@@ -528,6 +528,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -643,7 +644,6 @@ endpoints:
           - devstral-small-2505
           - devstral-small-2507
           - dobby-mini-unhinged-plus-llama-3-1-8b
-          - dolphin-2-6-mixtral-8x7b
           - dolphin-3-0-mistral-24b
           - dolphin-3-0-r1-mistral-24b
           - dolphin-3-mistral-24b
@@ -667,7 +667,6 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
-          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
@@ -1058,6 +1057,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pixtral-large-latest
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
