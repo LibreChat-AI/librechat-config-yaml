@@ -637,6 +637,7 @@ endpoints:
           - deepseek-v3-1-base
           - deepseek-v3-1-terminus
           - deepseek-v3-2-exp
+          - deepseek-v3-2-speciale
           - deepseek-v3-base
           - deepseek-v3-p-dp
           - devstral-medium
@@ -662,11 +663,11 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
@@ -1090,7 +1091,6 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
-          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
@@ -1148,7 +1148,6 @@ endpoints:
           - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
-          - step-3
           - text-babbage-002
           - text-davinci-002
           - text-embedding-004
@@ -1160,6 +1159,7 @@ endpoints:
           - titan-tg-1-large
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
+          - trinity-mini
           - ui-tars-1-5-7b
           - ui-tars-72b
           - ultra-fast
@@ -2218,6 +2218,7 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
+          - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
@@ -2278,6 +2279,7 @@ endpoints:
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
+          - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
           - baidu/ernie-4.5-21b-a3b
@@ -2305,11 +2307,12 @@ endpoints:
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
-          - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.1-terminus:exacto
+          - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
+          - deepseek/deepseek-v3.2-speciale
           - '---GOOGLE---'
           - google/gemini-2.0-flash-001
           - google/gemini-2.0-flash-lite-001
