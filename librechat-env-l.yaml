@@ -857,7 +857,6 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
-          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
@@ -944,12 +943,12 @@ endpoints:
           - mistral-large-2402-v1
           - mistral-large-2407
           - mistral-large-2411
+          - mistral-large-2512
           - mistral-large-latest
           - mistral-medium
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
-          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -985,6 +984,7 @@ endpoints:
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
           - noromaid-20b
+          - nova-2-lite-v1
           - nova-lite
           - nova-lite-v1
           - nova-micro
@@ -2119,10 +2119,12 @@ endpoints:
           - mistralai/magistral-small-2506
           - mistralai/mamba-codestral-7b-v0.1
           - mistralai/mathstral-7b-v0.1
+          - mistralai/ministral-14b-instruct-2512
           - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
+          - mistralai/mistral-large-3-675b-instruct-2512
           - mistralai/mistral-medium-3-instruct
           - mistralai/mistral-nemotron
           - mistralai/mistral-small-24b-instruct
@@ -2170,6 +2172,7 @@ endpoints:
           - nvidia/nvclip
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
+          - nvidia/streampetr
           - nvidia/usdcode-llama-3.1-70b-instruct
           - nvidia/vila
           - openai/gpt-oss-120b
@@ -2221,6 +2224,8 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
+          - allenai/olmo-3-32b-think:free
+          - amazon/nova-2-lite-v1:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - google/gemini-2.0-flash-exp:free
@@ -2256,10 +2261,10 @@ endpoints:
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
           - allenai/olmo-2-0325-32b-instruct
-          - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
           - '---AMAZON---'
+          - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
           - amazon/nova-premier-v1
@@ -2384,6 +2389,7 @@ endpoints:
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
+          - mistralai/mistral-large-2512
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-nemo
@@ -2570,7 +2576,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
-          - openrouter/bert-nebulon-alpha
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
