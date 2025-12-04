@@ -555,9 +555,9 @@ endpoints:
           - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
-          - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101
+          - claude-opus-4-5-20251101-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -566,12 +566,12 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2405
           - codestral-2501
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -608,6 +608,7 @@ endpoints:
           - deephermes-3-mistral-24b-preview
           - deepseek-3-1
           - deepseek-3-1-terminus
+          - deepseek-3-2
           - deepseek-3-2-exp
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
@@ -786,6 +787,7 @@ endpoints:
           - grok-2
           - grok-2-latest
           - grok-2-vision
+          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -793,6 +795,7 @@ endpoints:
           - grok-3-mini-beta
           - grok-4
           - grok-4-0709
+          - grok-4-1-fast
           - grok-4-fast
           - grok-code-fast-1
           - grok-vision-beta
@@ -853,6 +856,7 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
+          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
@@ -945,6 +949,7 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1071,6 +1076,7 @@ endpoints:
           - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-3b-instruct
           - qwen-2-5-vl-72b-instruct
+          - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
           - qwen-2-small
@@ -1672,12 +1678,15 @@ endpoints:
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-chat-v3-0324
-          - TEE/deepseek-r1-70b-distill
+          - TEE/deepseek-r1-0528
+          - TEE/deepseek-v3.1
           - TEE/gemma-3-27b-it
+          - TEE/glm-4.6
           - TEE/gpt-oss-120b
+          - TEE/gpt-oss-20b
           - TEE/llama3-3-70b
-          - TEE/mistral-small-3-1-24b
-          - TEE/qwen2-5-72b
+          - TEE/qwen2.5-vl-72b-instruct
+          - TEE/qwen3-30b-a3b-instruct-2507
           - TEE/qwen3-coder
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
@@ -1699,6 +1708,7 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - allenai/olmo-3-32b-think
+          - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
           - amazon/nova-pro-v1
@@ -1771,6 +1781,7 @@ endpoints:
           - deepseek-ai/deepseek-v3.2-exp-thinking
           - deepseek-chat
           - deepseek-chat-cheaper
+          - deepseek-math-v2
           - deepseek-r1
           - deepseek-r1-sambanova
           - deepseek-reasoner
@@ -1779,7 +1790,13 @@ endpoints:
           - deepseek-v3.1-original
           - deepseek-v3.2-exp-original
           - deepseek-v3.2-exp-thinking-original
+          - deepseek-v3.2-original
+          - deepseek-v3.2-speciale-original
+          - deepseek-v3.2-thinking-original
           - deepseek/deepseek-prover-v2-671b
+          - deepseek/deepseek-v3.2
+          - deepseek/deepseek-v3.2-speciale
+          - deepseek/deepseek-v3.2:thinking
           - dmind/dmind-1
           - dmind/dmind-1-mini
           - doubao-1-5-thinking-pro-250415
@@ -1899,8 +1916,10 @@ endpoints:
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
+          - mistralai/ministral-14b-instruct-2512
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-large
+          - mistralai/mistral-large-3-675b-instruct-2512
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-saba
@@ -2013,10 +2032,9 @@ endpoints:
           - z-ai/glm-4.5v:thinking
           - z-ai/glm-4.6
           - z-ai/glm-4.6:thinking
+          - zai-org/GLM-4.5
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air:thinking
-          - zai-org/GLM-4.5-FP8
-          - zai-org/GLM-4.5-FP8:thinking
           - zai-org/GLM-4.6-turbo
           - zai-org/GLM-4.6-turbo:thinking
         fetch: false
@@ -2248,7 +2266,6 @@ endpoints:
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
-          - x-ai/grok-4.1-fast:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2312,6 +2329,7 @@ endpoints:
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
+          - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.1-terminus:exacto
@@ -2540,6 +2558,7 @@ endpoints:
           - x-ai/grok-3-mini-beta
           - x-ai/grok-4
           - x-ai/grok-4-fast
+          - x-ai/grok-4.1-fast
           - x-ai/grok-code-fast-1
           - '---Z-AI---'
           - z-ai/glm-4-32b
