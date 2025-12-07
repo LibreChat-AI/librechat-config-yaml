@@ -535,6 +535,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -621,6 +622,7 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
+          - deepseek-prover-v2
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -866,7 +868,6 @@ endpoints:
           - llama-2-70b-chat-v1
           - llama-3-1-405b
           - llama-3-1-405b-instruct
-          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -960,7 +961,6 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
-          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -973,6 +973,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1163,7 +1164,6 @@ endpoints:
           - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
-          - step-3
           - test123
           - text-babbage-002
           - text-davinci-002
@@ -1426,6 +1426,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Base
+          - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V3.2-Exp
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
@@ -1433,7 +1434,6 @@ endpoints:
           - google/gemma-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
-          - jinaai/ReaderLM-v2
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
@@ -1731,6 +1731,7 @@ endpoints:
           - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-0528
           - TEE/deepseek-v3.1
+          - TEE/deepseek-v3.2
           - TEE/gemma-3-27b-it
           - TEE/glm-4.6
           - TEE/gpt-oss-120b
@@ -2206,6 +2207,7 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct-v0.1
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0905
+          - moonshotai/kimi-k2-thinking
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/embed-qa-4
           - nvidia/llama-3.1-nemoguard-8b-content-safety
@@ -2649,7 +2651,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
-          - openrouter/bodybuilder
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
