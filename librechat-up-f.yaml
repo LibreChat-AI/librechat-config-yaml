@@ -963,7 +963,6 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
-          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -976,6 +975,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1640,6 +1640,7 @@ endpoints:
           - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-0528
           - TEE/deepseek-v3.1
+          - TEE/deepseek-v3.2
           - TEE/gemma-3-27b-it
           - TEE/glm-4.6
           - TEE/gpt-oss-120b
@@ -2115,6 +2116,7 @@ endpoints:
           - mistralai/mixtral-8x7b-instruct-v0.1
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0905
+          - moonshotai/kimi-k2-thinking
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/embed-qa-4
           - nvidia/llama-3.1-nemoguard-8b-content-safety
@@ -2558,7 +2560,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - opengvlab/internvl3-78b
-          - openrouter/bodybuilder
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
