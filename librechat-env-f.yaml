@@ -578,7 +578,6 @@ endpoints:
           - codex-mini
           - codex-mini-latest
           - cogito-v2-1-671b
-          - cogito-v2-preview-deepseek-671b
           - cogito-v2-preview-llama-109b-moe
           - cogito-v2-preview-llama-405b
           - cogito-v2-preview-llama-70b
@@ -861,6 +860,7 @@ endpoints:
           - llama-2-70b-chat-v1
           - llama-3-1-405b
           - llama-3-1-405b-instruct
+          - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
@@ -954,6 +954,7 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1157,6 +1158,7 @@ endpoints:
           - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
+          - step-3
           - test123
           - text-babbage-002
           - text-davinci-002
@@ -1579,14 +1581,9 @@ endpoints:
           - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.5-Air-Derestricted
-          - GLM-4.5-Air-Iceblink
-          - GLM-4.5-Air-Iceblink-Derestricted
-          - GLM-4.5-Air-Iceblink-v2
-          - GLM-4.5-Air-Iceblink-v2-Derestricted
-          - GLM-4.5-Air-Iceblink:thinking
-          - GLM-4.5-Air-Steam-Derestricted
-          - GLM-4.5-Air-Steam-v1
-          - GLM-4.5-Air-Steam-v1:thinking
+          - GLM-4.5-Air-Derestricted-Iceblink
+          - GLM-4.5-Air-Derestricted-Iceblink-v2
+          - GLM-4.5-Air-Derestricted-Steam
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -2327,7 +2324,6 @@ endpoints:
           - cohere/command-r-plus-08-2024
           - cohere/command-r7b-12-2024
           - '---DEEPCOGITO---'
-          - deepcogito/cogito-v2-preview-deepseek-671b
           - deepcogito/cogito-v2-preview-llama-109b-moe
           - deepcogito/cogito-v2-preview-llama-405b
           - deepcogito/cogito-v2-preview-llama-70b
@@ -2403,7 +2399,6 @@ endpoints:
           - mistralai/devstral-medium
           - mistralai/devstral-small
           - mistralai/devstral-small-2505
-          - mistralai/magistral-medium-2506:thinking
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b
           - mistralai/ministral-3b-2512
