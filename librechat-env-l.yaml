@@ -542,7 +542,6 @@ endpoints:
           - claude-3-haiku-20240307-v1
           - claude-3-opus
           - claude-3-opus-20240229
-          - claude-3-opus-20240229-v1
           - claude-3-opus-latest
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
@@ -640,6 +639,7 @@ endpoints:
           - deepseek-v3-2-speciale
           - deepseek-v3-base
           - deepseek-v3-p-dp
+          - devstral-2512
           - devstral-medium
           - devstral-small
           - devstral-small-2505
@@ -663,6 +663,7 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
+          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -787,7 +788,6 @@ endpoints:
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
-          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -1036,7 +1036,6 @@ endpoints:
           - olmo-2-0325-32b-instruct
           - olmo-3-32b-think
           - olmo-3-7b-instruct
-          - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0725-fp8
@@ -1059,6 +1058,8 @@ endpoints:
           - palm-2-chat-bison-32k
           - palm-2-codechat-bison
           - palm-2-codechat-bison-32k
+          - palmyra-x4-v1
+          - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
@@ -1931,6 +1932,7 @@ endpoints:
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
+          - mistralai/devstral-2-123b-instruct-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-14b-instruct-2512
           - mistralai/ministral-3b-2512
@@ -2152,6 +2154,7 @@ endpoints:
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2
           - mistralai/codestral-22b-instruct-v0.1
+          - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
           - mistralai/mamba-codestral-7b-v0.1
           - mistralai/mathstral-7b-v0.1
@@ -2275,6 +2278,7 @@ endpoints:
           - meituan/longcat-flash-chat:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
+          - mistralai/devstral-2512:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
