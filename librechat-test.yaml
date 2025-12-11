@@ -546,6 +546,7 @@ endpoints:
           - claude-3-haiku-20240307-v1
           - claude-3-opus
           - claude-3-opus-20240229
+          - claude-3-opus-20240229-v1
           - claude-3-opus-latest
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
@@ -637,12 +638,13 @@ endpoints:
           - deepseek-v3-0324-turbo
           - deepseek-v3-1
           - deepseek-v3-1-base
+          - deepseek-v3-1-nex-n1
           - deepseek-v3-1-terminus
           - deepseek-v3-2
           - deepseek-v3-2-exp
-          - deepseek-v3-2-speciale
           - deepseek-v3-base
           - deepseek-v3-p-dp
+          - devstral
           - devstral-2512
           - devstral-medium
           - devstral-small
@@ -792,6 +794,7 @@ endpoints:
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
+          - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
@@ -965,7 +968,6 @@ endpoints:
           - mistral-medium-3-1
           - mistral-medium-latest
           - mistral-nemo
-          - mistral-nemo-instruct-2407
           - mistral-saba
           - mistral-saba-latest
           - mistral-small
@@ -1040,6 +1042,7 @@ endpoints:
           - olmo-2-0325-32b-instruct
           - olmo-3-32b-think
           - olmo-3-7b-instruct
+          - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0725-fp8
@@ -1066,14 +1069,11 @@ endpoints:
           - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
-          - phi-3-medium-128k-instruct
-          - phi-3-medium-instruct
           - phi-3-mini-128k-instruct
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning
           - phi-4-reasoning-plus
-          - phind-codellama-34b-v2
           - pixtral-12b
           - pixtral-large
           - pixtral-large-2411
@@ -2009,6 +2009,7 @@ endpoints:
           - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2-thinking-original
           - moonshotai/kimi-k2-thinking-turbo-original
+          - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-4-405b
@@ -2339,6 +2340,7 @@ endpoints:
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
+          - nex-agi/deepseek-v3.1-nex-n1:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
@@ -2471,6 +2473,7 @@ endpoints:
           - minimax/minimax-m2
           - '---MISTRALAI---'
           - mistralai/codestral-2508
+          - mistralai/devstral-2512
           - mistralai/devstral-medium
           - mistralai/devstral-small
           - mistralai/devstral-small-2505
