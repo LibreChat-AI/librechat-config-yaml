@@ -523,6 +523,7 @@ endpoints:
           - aion-1-0
           - aion-1-0-mini
           - aion-rp-llama-3-1-8b
+          - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
           - chatgpt-4o
@@ -535,7 +536,6 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
-          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -563,6 +563,7 @@ endpoints:
           - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
+          - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101
           - claude-opus-4-5-20251101-v1
@@ -579,6 +580,7 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -779,6 +781,7 @@ endpoints:
           - gpt-5-2-chat
           - gpt-5-2-chat-latest
           - gpt-5-2-pro
+          - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
           - gpt-5-chat
           - gpt-5-chat-latest
@@ -850,6 +853,7 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
+          - kimi-linear-48b-a3b-instruct
           - kimi-vl-a3b-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
@@ -973,6 +977,7 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1129,6 +1134,7 @@ endpoints:
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
+          - qwen-3-coder-plus
           - qwen-3-max
           - qwen-3-next-80b-a3b
           - qwen-3-next-80b-a3b-instruct
@@ -1553,8 +1559,12 @@ endpoints:
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.5-Air-Derestricted
           - GLM-4.5-Air-Derestricted-Iceblink
+          - GLM-4.5-Air-Derestricted-Iceblink-ReExtract
           - GLM-4.5-Air-Derestricted-Iceblink-v2
+          - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
+          - GLM-4.5-Air-Derestricted-Steam-ReExtract
+          - GLM-4.6-Derestricted
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -2179,6 +2189,7 @@ endpoints:
           - nvidia/nvclip
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
+          - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/streampetr
           - nvidia/usdcode-llama-3.1-70b-instruct
           - nvidia/vila
@@ -2241,9 +2252,9 @@ endpoints:
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
           - kwaipilot/kat-coder-pro:free
-          - meituan/longcat-flash-chat:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-guard-4-12b:free
           - mistralai/devstral-2512:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
@@ -2367,7 +2378,6 @@ endpoints:
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
           - '---MICROSOFT---'
-          - microsoft/mai-ds-r1
           - microsoft/phi-3-medium-128k-instruct
           - microsoft/phi-3-mini-128k-instruct
           - microsoft/phi-3.5-mini-128k-instruct
@@ -2417,7 +2427,6 @@ endpoints:
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
           - moonshotai/kimi-k2-thinking
-          - moonshotai/kimi-linear-48b-a3b-instruct
           - '---NOUSRESEARCH---'
           - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
@@ -2538,7 +2547,6 @@ endpoints:
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
           - '---THEDRUMMER---'
-          - thedrummer/anubis-70b-v1.1
           - thedrummer/cydonia-24b-v4.1
           - thedrummer/rocinante-12b
           - thedrummer/skyfall-36b-v2
