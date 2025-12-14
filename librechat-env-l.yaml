@@ -527,6 +527,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -1608,7 +1609,7 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
-          - GLM-4.6-Derestricted
+          - GLM-4.6-Derestricted-v4
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1845,6 +1846,7 @@ endpoints:
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
           - ernie-x1.1-preview
+          - essentialai/rnj-1-instruct
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - featherless-ai/Qwerky-72B
           - free-model
@@ -2298,7 +2300,6 @@ endpoints:
           - kwaipilot/kat-coder-pro:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-guard-4-12b:free
           - mistralai/devstral-2512:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
