@@ -1665,7 +1665,7 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
-          - GLM-4.6-Derestricted
+          - GLM-4.6-Derestricted-v4
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1902,6 +1902,7 @@ endpoints:
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
           - ernie-x1.1-preview
+          - essentialai/rnj-1-instruct
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - featherless-ai/Qwerky-72B
           - free-model
