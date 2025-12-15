@@ -1656,6 +1656,7 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
+          - GLM-4.6-Derestricted-v3
           - GLM-4.6-Derestricted-v4
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
@@ -2268,11 +2269,13 @@ endpoints:
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/mistral-nemo-minitron-8b-base
           - nvidia/nemoretriever-parse
+          - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-4-mini-hindi-4b-instruct
           - nvidia/nemotron-mini-4b-instruct
           - nvidia/nemotron-nano-12b-v2-vl
+          - nvidia/nemotron-nano-3-30b-a3b
           - nvidia/nemotron-parse
           - nvidia/neva-22b
           - nvidia/nv-embed-v1
@@ -2347,7 +2350,6 @@ endpoints:
           - kwaipilot/kat-coder-pro:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-guard-4-12b:free
           - mistralai/devstral-2512:free
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
