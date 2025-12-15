@@ -614,7 +614,6 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
-          - deepseek-prover-v2
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -667,7 +666,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -1610,6 +1608,7 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
+          - GLM-4.6-Derestricted-v3
           - GLM-4.6-Derestricted-v4
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
@@ -2221,11 +2220,13 @@ endpoints:
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/mistral-nemo-minitron-8b-base
           - nvidia/nemoretriever-parse
+          - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-4-mini-hindi-4b-instruct
           - nvidia/nemotron-mini-4b-instruct
           - nvidia/nemotron-nano-12b-v2-vl
+          - nvidia/nemotron-nano-3-30b-a3b
           - nvidia/nemotron-parse
           - nvidia/neva-22b
           - nvidia/nv-embed-v1
