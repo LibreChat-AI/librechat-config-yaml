@@ -936,6 +936,7 @@ endpoints:
           - mercury
           - mercury-coder
           - mercury-coder-small-beta
+          - mimo-v2-flash
           - minimax
           - minimax-01
           - minimax-m1
@@ -982,6 +983,8 @@ endpoints:
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
+          - mistral-small-creative
+          - mistral-small-latest
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -1044,6 +1047,7 @@ endpoints:
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olmo-2-0325-32b-instruct
+          - olmo-3-1-32b-think
           - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
@@ -1164,6 +1168,7 @@ endpoints:
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
+          - seedream-4-5-251128
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -1961,6 +1966,7 @@ endpoints:
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-saba
+          - mistralai/mistral-small-creative
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
@@ -2066,6 +2072,7 @@ endpoints:
           - x-ai/grok-4.1-fast
           - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-code-fast-1
+          - xiaomi/mimo-v2-flash
           - yi-34b-chat-0205
           - yi-34b-chat-200k
           - yi-large
@@ -2294,9 +2301,11 @@ endpoints:
           - '---FREE---'
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - allenai/olmo-3-32b-think:free
+          - allenai/olmo-3.1-32b-think:free
           - amazon/nova-2-lite-v1:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - deepseek/deepseek-r1-0528:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
           - google/gemma-3-27b-it:free
@@ -2304,6 +2313,7 @@ endpoints:
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
           - kwaipilot/kat-coder-pro:free
+          - meta-llama/llama-3.1-405b-instruct:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - mistralai/devstral-2512:free
@@ -2323,6 +2333,7 @@ endpoints:
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
+          - xiaomi/mimo-v2-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2467,6 +2478,7 @@ endpoints:
           - mistralai/mistral-small-24b-instruct-2501
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
+          - mistralai/mistral-small-creative
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
