@@ -572,7 +572,6 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -690,6 +689,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
+          - gemini-3-flash-preview
           - gemini-3-pro
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
@@ -1140,6 +1140,7 @@ endpoints:
           - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
+          - qwen-3-vl-32b-instruct
           - qwen-3-vl-4b-thinking
           - qwen-3-vl-8b-instruct
           - qwen-3-vl-8b-thinking
@@ -1384,6 +1385,7 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
           - Qwen/Qwen3-235B-A22B
+          - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
@@ -1396,7 +1398,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
@@ -1895,6 +1896,8 @@ endpoints:
           - glm-z1-air
           - glm-z1-airx
           - glm-zero-preview
+          - google/gemini-3-flash-preview
+          - google/gemini-3-flash-preview-thinking
           - google/gemini-flash-1.5
           - gpt-3.5-turbo
           - gpt-4-turbo-preview
@@ -2073,8 +2076,6 @@ endpoints:
           - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-code-fast-1
           - xiaomi/mimo-v2-flash
-          - yi-34b-chat-0205
-          - yi-34b-chat-200k
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2302,7 +2303,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - allenai/olmo-3-32b-think:free
           - allenai/olmo-3.1-32b-think:free
-          - amazon/nova-2-lite-v1:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
@@ -2327,6 +2327,7 @@ endpoints:
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
+          - qwen/qwen-2.5-vl-7b-instruct:free
           - qwen/qwen3-235b-a22b:free
           - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
@@ -2415,6 +2416,7 @@ endpoints:
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
+          - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
           - google/gemma-2-27b-it
@@ -2601,6 +2603,7 @@ endpoints:
           - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3-vl-30b-a3b-instruct
           - qwen/qwen3-vl-30b-a3b-thinking
+          - qwen/qwen3-vl-32b-instruct
           - qwen/qwen3-vl-8b-instruct
           - qwen/qwen3-vl-8b-thinking
           - qwen/qwq-32b
