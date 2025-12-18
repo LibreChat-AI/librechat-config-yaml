@@ -535,7 +535,6 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
-          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620
           - claude-3-5-sonnet-20240620-v1
@@ -575,12 +574,10 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2405
           - codestral-2508
-          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -679,7 +676,6 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
-          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
@@ -698,6 +694,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
+          - gemini-3-flash-preview
           - gemini-3-pro
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
@@ -804,10 +801,7 @@ endpoints:
           - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
-          - grok-2
-          - grok-2-latest
           - grok-2-vision
-          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -929,6 +923,7 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
+          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -1147,6 +1142,7 @@ endpoints:
           - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
+          - qwen-3-vl-32b-instruct
           - qwen-3-vl-4b-thinking
           - qwen-3-vl-8b-instruct
           - qwen-3-vl-8b-thinking
@@ -1175,6 +1171,7 @@ endpoints:
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
+          - seedream-4-5-251128
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - sky-t1-32b-preview
@@ -1431,6 +1428,7 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
           - Qwen/Qwen3-235B-A22B
+          - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
@@ -1443,7 +1441,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
@@ -1942,6 +1939,8 @@ endpoints:
           - glm-z1-air
           - glm-z1-airx
           - glm-zero-preview
+          - google/gemini-3-flash-preview
+          - google/gemini-3-flash-preview-thinking
           - google/gemini-flash-1.5
           - gpt-3.5-turbo
           - gpt-4-turbo-preview
@@ -2120,8 +2119,6 @@ endpoints:
           - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-code-fast-1
           - xiaomi/mimo-v2-flash
-          - yi-34b-chat-0205
-          - yi-34b-chat-200k
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2349,7 +2346,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b:free
           - allenai/olmo-3-32b-think:free
           - allenai/olmo-3.1-32b-think:free
-          - amazon/nova-2-lite-v1:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
@@ -2463,6 +2459,7 @@ endpoints:
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
+          - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
           - google/gemma-2-27b-it
@@ -2649,6 +2646,7 @@ endpoints:
           - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3-vl-30b-a3b-instruct
           - qwen/qwen3-vl-30b-a3b-thinking
+          - qwen/qwen3-vl-32b-instruct
           - qwen/qwen3-vl-8b-instruct
           - qwen/qwen3-vl-8b-thinking
           - qwen/qwq-32b
