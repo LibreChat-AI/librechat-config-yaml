@@ -2,6 +2,12 @@ version: 1.2.4
 
 cache: true
 
+mcpServers:
+  twenty:
+    url: 'https://mcp.highfinity.org/metamcp/twenty/sse'
+    headers:
+      Authorization: 'Baerer ${METAMCP_API_KEY}'
+
 interface:
   privacyPolicy:
     externalUrl: 'https://librechat.ai/privacy-policy'
