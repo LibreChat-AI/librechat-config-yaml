@@ -581,6 +581,7 @@ endpoints:
           - codestral
           - codestral-2405
           - codestral-2508
+          - codestral-latest
           - codestral-mamba-latest
           - codex-mini
           - codex-mini-latest
@@ -698,6 +699,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
+          - gemini-3-flash
           - gemini-3-flash-preview
           - gemini-3-pro
           - gemini-3-pro-image
@@ -877,7 +879,6 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
-          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
@@ -1780,10 +1781,10 @@ endpoints:
           - deepseek-v3.1-original
           - deepseek-v3.2-exp-original
           - deepseek-v3.2-exp-thinking-original
-          - deepseek-v3.2-original
           - deepseek-v3.2-speciale-original
           - deepseek-v3.2-thinking-original
           - deepseek/deepseek-prover-v2-671b
+          - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-speciale
           - deepseek/deepseek-v3.2:thinking
@@ -1798,6 +1799,7 @@ endpoints:
           - doubao-seed-1-6-250615
           - doubao-seed-1-6-flash-250615
           - doubao-seed-1-6-thinking-250615
+          - doubao-seed-1-8-251215
           - doubao-seed-code-preview-latest
           - ernie-4.5-8k-preview
           - ernie-4.5-turbo-128k
@@ -1886,7 +1888,6 @@ endpoints:
           - hunyuan-turbos-20250226
           - inclusionAI/Ling-flash-2.0
           - inclusionAI/Ring-flash-2.0
-          - inclusionai/ling-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
@@ -2460,6 +2461,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
+          - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
