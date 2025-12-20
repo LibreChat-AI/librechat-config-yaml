@@ -874,6 +874,7 @@ endpoints:
           - llama-2-70b
           - llama-2-70b-chat
           - llama-2-70b-chat-v1
+          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
           - llama-3-1-70b-instruct
@@ -923,7 +924,6 @@ endpoints:
           - llama-4-scout-17b-16e-instruct
           - llama-4-scout-17b-instruct
           - llama-4-scout-17b-instruct-v1
-          - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
           - llemma-7b
@@ -1400,6 +1400,7 @@ endpoints:
       models:
         default:
           - allam-2-7b
+          - canopylabs/orpheus-arabic-saudi
           - groq/compound
           - groq/compound-mini
           - llama-3.1-8b-instant
@@ -1778,6 +1779,7 @@ endpoints:
           - TEE/glm-4.6
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
+          - TEE/kimi-k2-thinking
           - TEE/llama3-3-70b
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3-30b-a3b-instruct-2507
@@ -2013,6 +2015,7 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
+          - minimax/minimax-m2.1
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
