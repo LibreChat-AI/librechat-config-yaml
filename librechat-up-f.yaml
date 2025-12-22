@@ -1183,7 +1183,6 @@ endpoints:
           - seedream-4-5-251128
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
-          - sky-t1-32b-preview
           - skyfall-36b-v2
           - sonar
           - sonar-deep-research
@@ -1916,7 +1915,6 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
-          - minimax/minimax-m2.1
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
