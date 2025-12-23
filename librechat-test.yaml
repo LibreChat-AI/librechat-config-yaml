@@ -719,6 +719,7 @@ endpoints:
           - glm-4-5v
           - glm-4-6
           - glm-4-6v
+          - glm-4-7
           - glm-4-9b
           - glm-z1-32b
           - glm-z1-9b
@@ -1451,11 +1452,11 @@ endpoints:
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - baidu/ERNIE-4.5-21B-A3B-Thinking
-          - databricks/dbrx-instruct
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+          - deepseek-ai/DeepSeek-R1-Distill-Llama-70B
           - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
@@ -2117,6 +2118,7 @@ endpoints:
           - step-3
           - step-r1-v-mini
           - study_gpt-chatgpt-4o-latest
+          - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
           - tngtech/DeepSeek-R1T-Chimera
           - tngtech/DeepSeek-TNG-R1T2-Chimera
@@ -2138,6 +2140,7 @@ endpoints:
           - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-code-fast-1
           - xiaomi/mimo-v2-flash
+          - xiaomi/mimo-v2-flash-thinking
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2155,6 +2158,9 @@ endpoints:
           - zai-org/glm-4.6v
           - zai-org/glm-4.6v-flash-original
           - zai-org/glm-4.6v-original
+          - zai-org/glm-4.7
+          - zai-org/glm-4.7-original
+          - zai-org/glm-4.7:thinking
         fetch: false
       titleConvo: true
       titleModel: "current_model"
@@ -2701,6 +2707,7 @@ endpoints:
           - z-ai/glm-4.6
           - z-ai/glm-4.6:exacto
           - z-ai/glm-4.6v
+          - z-ai/glm-4.7
           - '---OTHERS---'
           - ai21/jamba-large-1.7
           - ai21/jamba-mini-1.7
