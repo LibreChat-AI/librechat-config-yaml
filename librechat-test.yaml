@@ -948,6 +948,7 @@ endpoints:
           - minimax-01
           - minimax-m1
           - minimax-m2
+          - minimax-m2-1
           - minimax-text-01
           - ministral-14b-2512
           - ministral-3-14b-instruct
@@ -1172,7 +1173,9 @@ endpoints:
           - rocinante-12b
           - router
           - sarvam-m
+          - seed-1-6
           - seed-1-6-250915
+          - seed-1-6-flash
           - seed-oss-36b-instruct
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
@@ -1674,7 +1677,7 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
           - GLM-4.6-Derestricted-v3
-          - GLM-4.6-Derestricted-v4
+          - GLM-4.6-Derestricted-v5
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1914,7 +1917,11 @@ endpoints:
           - ernie-x1-turbo-32k
           - ernie-x1.1-preview
           - essentialai/rnj-1-instruct
+          - exa-answer
+          - exa-research
+          - exa-research-pro
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
+          - fastgpt
           - featherless-ai/Qwerky-72B
           - free-model
           - gemini-2.0-flash-001
@@ -2017,6 +2024,7 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
+          - minimax/minimax-m2.1
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
@@ -2124,6 +2132,7 @@ endpoints:
           - tngtech/DeepSeek-TNG-R1T2-Chimera
           - tngtech/tng-r1t-chimera
           - undi95/remm-slerp-l2-13b
+          - universal-summarizer
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
@@ -2521,6 +2530,7 @@ endpoints:
           - minimax/minimax-01
           - minimax/minimax-m1
           - minimax/minimax-m2
+          - minimax/minimax-m2.1
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/devstral-2512
@@ -2716,6 +2726,8 @@ endpoints:
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
           - arliai/qwq-32b-arliai-rpr-v1
+          - bytedance-seed/seed-1.6
+          - bytedance-seed/seed-1.6-flash
           - bytedance/ui-tars-1.5-7b
           - eleutherai/llemma_7b
           - essentialai/rnj-1-instruct
