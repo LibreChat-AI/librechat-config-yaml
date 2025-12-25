@@ -983,6 +983,7 @@ endpoints:
           - mistral-medium-2312
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1577,8 +1578,8 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Iceblink-v2-ReExtract
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
-          - GLM-4.6-Derestricted-v3
           - GLM-4.6-Derestricted-v5
+          - GLM-4.7-Derestricted-v1
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
