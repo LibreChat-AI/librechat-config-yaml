@@ -1739,6 +1739,8 @@ endpoints:
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Cydonia-24B-v4
           - TheDrummer/Cydonia-24B-v4.1
+          - TheDrummer/Cydonia-24B-v4.3
+          - TheDrummer/Magidonia-24B-v4.3
           - TheDrummer/Rocinante-12B-v1.1
           - TheDrummer/UnslopNemo-12B-v4.1
           - Tongyi-Zhiwen/QwenLong-L1-32B
