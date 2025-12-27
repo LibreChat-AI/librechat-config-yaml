@@ -18,6 +18,14 @@ registration:
     - "google"
     - "openid"
 
+mcpServers:
+  Time:
+    type: stdio
+    command: uvx
+    args:
+      - mcp-server-time
+    startup: false
+
 endpoints:
   custom:
     # 302AI
