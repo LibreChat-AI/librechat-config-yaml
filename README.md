@@ -30,92 +30,10 @@ Contributions are welcome!
 **Important:** Instead of manually updating individual files, please use/update the scripts provided in the [scripts folder](./scripts/). See the [scripts README](./scripts/README.md) for more information on how to use these scripts for file generation and updates.
 
 > **❗Note:**
-> - Updates to the model list are always welcome
 > - Adding endpoints requires also updating the scripts
 > - Keep the APIs alphabetized
 > - Provide a logo for new endpoints
 > - When adding a new endpoint, add a note in the bottom of this README with the name and URL to get an API key
-   
-## File Descriptions
-### `librechat-env-l.yaml`
-Basic configuration:
-- API Keys: .env variables
-- File Strategy: `local`
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-l.yaml
-  AI302_API_KEY=
-  APIPIE_API_KEY=
-  COHERE_API_KEY=
-  DEEPSEEK_API_KEY=
-  FIREWORKS_API_KEY=
-  GITHUB_TOKEN=
-  GLHF_API_KEY
-  GROQ_API_KEY=
-  HUGGINGFACE_TOKEN=
-  HYPERBOLIC_API_KEY=
-  KLUSTER_API_KEY=
-  MISTRAL_API_KEY=
-  NANOGPT_API_KEY
-  NVIDIA_API_KEY=
-  OPENROUTER_KEY=
-  PERPLEXITY_API_KEY=
-  SAMBANOVA_API_KEY=
-  TOGETHERAI_API_KEY=
-  UNIFY_API_KEY=
-  XAI_API_KEY=
-  ```
-### `librechat-env-f.yaml`
-Basic configuration:
-- API Keys: .env variables
-- File Strategy: `firebase`
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-env-f.yaml
-  AI302_API_KEY=
-  APIPIE_API_KEY=
-  COHERE_API_KEY=
-  DEEPSEEK_API_KEY=
-  FIREWORKS_API_KEY=
-  GITHUB_TOKEN=
-  GLHF_API_KEY
-  GROQ_API_KEY=
-  HUGGINGFACE_TOKEN=
-  HYPERBOLIC_API_KEY=
-  KLUSTER_API_KEY=
-  MISTRAL_API_KEY=
-  NANOGPT_API_KEY
-  NVIDIA_API_KEY=
-  OPENROUTER_KEY=
-  PERPLEXITY_API_KEY=
-  SAMBANOVA_API_KEY=
-  TOGETHERAI_API_KEY=
-  UNIFY_API_KEY=
-  XAI_API_KEY=
-  ```
-
-### `librechat-up-f.yaml`
-Basic configuration:
-- API Keys: `user_provided`
-- File Strategy: `firebase`
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-f.yaml
-  ```
-
-### `librechat-up-l.yaml`
-Basic configuration:
-- API Keys: `user_provided`
-- File Strategy: `local`
-- .env config:
-  ```yaml
-  CONFIG_PATH=https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/librechat-up-l.yaml
-  ```
-
-### `librechat-test.yaml`
-- Personal file used to test changes and configs
-
----
 
 ## Get an API key:
 

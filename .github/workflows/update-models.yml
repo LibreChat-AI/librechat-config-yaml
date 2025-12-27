@@ -100,48 +100,23 @@ jobs:
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
           RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
-          RAILWAY_ENVIRONMENT_ID: ${{ secrets.RAILWAY_ENVIRONMENT_ID }}
+          RAILWAY_ENV_ID: ${{ secrets.RAILWAY_ENVIRONMENT_ID }}
           RAILWAY_SERVICE_ID: ${{ secrets.RAILWAY_SERVICE_ID }}
           RAILWAY_REDEPLOY: ${{ vars.RAILWAY_REDEPLOY || 'true' }}
         run: |
           if [ "$RAILWAY_REDEPLOY" != "true" ]; then
-            echo "Railway redeploy is disabled."
+            echo "Railway redeploy is disabled via RAILWAY_REDEPLOY variable."
             exit 0
           fi
 
           if [ -z "$RAILWAY_TOKEN" ]; then
-            echo "RAILWAY_TOKEN is not set. Skipping redeploy."
+            echo "RAILWAY_TOKEN is not set. Skipping Railway redeploy."
             exit 0
           fi
 
-          echo "Fetching latest deployment..."
-          QUERY='{"query": "query { deployments(first: 1, input: { projectId: \"'"$RAILWAY_PROJECT_ID"'\", environmentId: \"'"$RAILWAY_ENVIRONMENT_ID"'\", serviceId: \"'"$RAILWAY_SERVICE_ID"'\" }) { edges { node { id } } } }"}'
-          
-          RESPONSE=$(curl -s -X POST \
-            -H "Authorization: Bearer $RAILWAY_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d "$QUERY" \
-            https://backboard.railway.com/graphql/v2)
-            
-          DEPLOYMENT_ID=$(echo $RESPONSE | jq -r '.data.deployments.edges[0].node.id')
-          
-          if [ -z "$DEPLOYMENT_ID" ] || [ "$DEPLOYMENT_ID" == "null" ]; then
-            echo "Failed to get deployment ID. Response: $RESPONSE"
-            exit 1
-          fi
-          
-          echo "Latest Deployment ID: $DEPLOYMENT_ID"
-          echo "Triggering restart..."
-          
-          MUTATION='{"query": "mutation { deploymentRestart(id: \"'"$DEPLOYMENT_ID"'\") }"}'
-          
-          RESTART_RESPONSE=$(curl -s -X POST \
-            -H "Authorization: Bearer $RAILWAY_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d "$MUTATION" \
-            https://backboard.railway.com/graphql/v2)
-            
-          echo "Restart Response: $RESTART_RESPONSE"
+          echo "Running Railway redeploy script..."
+          cd scripts
+          python railway_redeploy.py
 
       - name: Create Pull Request (if validation failed)
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED == 'true'

@@ -32,15 +32,6 @@ logger.addHandler(console_handler)
 # Test logging
 logger.info("Logging initialized successfully")
 
-# Input and output file paths
-yaml_files = [
-    'librechat-env-f.yaml',
-    'librechat-env-l.yaml',
-    'librechat-up-f.yaml',
-    'librechat-up-l.yaml',
-    'librechat-test.yaml',
-]
-
 def create_backup(file_path):
     """Create a backup of the original file."""
     try:
