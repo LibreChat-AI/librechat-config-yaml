@@ -21,5 +21,8 @@ scripts/*_raw.json
 # Environment variables
 .env
 
+# Venv
+privacy-venv
+
 # Act tests runner executables
 /bin/
