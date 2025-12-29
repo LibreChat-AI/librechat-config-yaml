@@ -1671,7 +1671,6 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Steam
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
           - GLM-4.6-Derestricted-v5
-          - GLM-4.7-Derestricted-v1
           - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-3-27B-ArliAI-RPMax-v3
           - Gemma-3-27B-Big-Tiger-v3
@@ -1687,7 +1686,6 @@ endpoints:
           - KAT-Coder-Pro-V1
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
-          - Ling-Flash-2.0
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
           - Llama-3.3+(3.1v3.3)-70B-New-Dawn-v1.1
           - Llama-3.3+(3v3.3)-70B-TenyxChat-DaybreakStorywriter
@@ -1992,8 +1990,6 @@ endpoints:
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - hunyuan-t1-latest
           - hunyuan-turbos-20250226
-          - inclusionAI/Ling-flash-2.0
-          - inclusionAI/Ring-flash-2.0
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
