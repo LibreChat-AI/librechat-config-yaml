@@ -535,6 +535,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620-v1
           - claude-3-5-sonnet-20241022-v2
@@ -573,6 +574,7 @@ endpoints:
           - claude-sonnet-4-5-20250929-v1
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
           - coder-large
           - codestral
           - codestral-2508
@@ -654,6 +656,7 @@ endpoints:
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
           - gemini-2-0-flash-lite-001
+          - gemini-2-0-flash-lite-preview-02-05
           - gemini-2-5-flash
           - gemini-2-5-flash-image
           - gemini-2-5-flash-image-preview
@@ -663,11 +666,13 @@ endpoints:
           - gemini-2-5-flash-preview-04-17
           - gemini-2-5-flash-preview-05-20
           - gemini-2-5-flash-preview-09-2025
+          - gemini-2-5-flash-tts
           - gemini-2-5-pro
           - gemini-2-5-pro-exp-03-25
           - gemini-2-5-pro-preview
           - gemini-2-5-pro-preview-03-25
           - gemini-2-5-pro-preview-05-06
+          - gemini-2-5-pro-tts
           - gemini-2-flash
           - gemini-2-flash-exp
           - gemini-2-flash-lite
@@ -1005,9 +1010,7 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5-v1
           - pegasus-1-2-v1
-          - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
-          - phi-3-mini-128k-instruct
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
@@ -1310,8 +1313,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
-          - playai-tts
-          - playai-tts-arabic
           - qwen/qwen3-32b
         fetch: false
       titleConvo: true
@@ -2163,6 +2164,7 @@ endpoints:
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
           - yentinglin/llama-3-taiwan-70b-instruct
+          - z-ai/glm4.7
           - zyphra/zamba2-7b-instruct
         fetch: false
       titleConvo: true
