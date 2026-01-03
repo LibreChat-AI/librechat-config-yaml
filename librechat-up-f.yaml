@@ -1010,7 +1010,9 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5-v1
           - pegasus-1-2-v1
+          - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
+          - phi-3-mini-128k-instruct
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
@@ -2066,6 +2068,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2
+          - minimaxai/minimax-m2.1
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506

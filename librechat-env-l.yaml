@@ -1001,7 +1001,9 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5-v1
           - pegasus-1-2-v1
+          - phi-3-5-mini-128k-instruct
           - phi-3-medium-128k-instruct
+          - phi-3-mini-128k-instruct
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
@@ -1283,6 +1285,7 @@ endpoints:
           - HuggingFaceH4/zephyr-7b-beta
           - HuggingFaceTB/SmolLM3-3B
           - MiniMaxAI/MiniMax-M2
+          - MiniMaxAI/MiniMax-M2.1
           - NexaAI/Octopus-v2
           - PygmalionAI/pygmalion-6b
           - Qwen/QwQ-32B
@@ -1292,7 +1295,6 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
           - Qwen/Qwen3-235B-A22B
-          - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-30B-A3B
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
@@ -2109,6 +2111,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2
+          - minimaxai/minimax-m2.1
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
