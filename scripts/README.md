@@ -7,6 +7,10 @@ Automated tool for maintaining LibreChat YAML configurations with up-to-date mod
 **Prerequisites:** Python 3.8+ and pip
 
 ```bash
+# Create a virtual environment
+python -m venv privacy-venv
+source privacy-venv/Scripts/activate  # On Windows use: privacy-venv\Scripts\activate
+
 # Install dependencies
 pip install -r requirements.txt
 
