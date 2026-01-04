@@ -607,6 +607,7 @@ endpoints:
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
+          - deepseek-prover-v2
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -650,7 +651,6 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
-          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -775,7 +775,6 @@ endpoints:
           - grok-2
           - grok-2-latest
           - grok-2-vision
-          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -877,6 +876,7 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
+          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -1622,8 +1622,6 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
-          - chatgpt-4o-latest
-          - chatgpt-4o-latest-reasoner
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
@@ -1769,24 +1767,6 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
           - google/gemini-flash-1.5
-          - gpt-3.5-turbo
-          - gpt-4-turbo-preview
-          - gpt-4.1-reasoner
-          - gpt-4o
-          - gpt-4o-2024-08-06
-          - gpt-4o-2024-11-20
-          - gpt-4o-mini
-          - gpt-4o-mini-search-preview
-          - gpt-4o-reasoner
-          - gpt-4o-search-preview
-          - gpt-5-chat-latest
-          - gpt-5-codex
-          - gpt-5-mini
-          - gpt-5-nano
-          - gpt-5.1-codex-max
-          - gpt-5.2
-          - gpt-5.2-chat-latest
-          - gpt-5.2-pro
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -1864,29 +1844,50 @@ endpoints:
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nvidia-nemotron-nano-9b-v2
-          - o1
-          - o1-preview
-          - o3
-          - o3-deep-research
-          - o3-mini
-          - o3-mini-high
-          - o3-mini-low
-          - o3-pro
-          - o4-mini
-          - o4-mini-deep-research
-          - o4-mini-high
+          - openai/chatgpt-4o-latest
+          - openai/gpt-3.5-turbo
+          - openai/gpt-4-turbo
+          - openai/gpt-4-turbo-preview
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
+          - openai/gpt-4o
+          - openai/gpt-4o-2024-08-06
+          - openai/gpt-4o-2024-11-20
+          - openai/gpt-4o-mini
+          - openai/gpt-4o-mini-search-preview
+          - openai/gpt-4o-search-preview
           - openai/gpt-5
+          - openai/gpt-5-chat-latest
+          - openai/gpt-5-codex
+          - openai/gpt-5-mini
+          - openai/gpt-5-nano
+          - openai/gpt-5-pro
           - openai/gpt-5.1
+          - openai/gpt-5.1-2025-11-13
           - openai/gpt-5.1-chat
           - openai/gpt-5.1-codex
+          - openai/gpt-5.1-codex-max
           - openai/gpt-5.1-codex-mini
+          - openai/gpt-5.2
+          - openai/gpt-5.2-chat
+          - openai/gpt-5.2-chat-latest
+          - openai/gpt-5.2-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
+          - openai/o1
+          - openai/o1-preview
           - openai/o1-pro
+          - openai/o3
+          - openai/o3-deep-research
+          - openai/o3-mini
+          - openai/o3-mini-high
+          - openai/o3-mini-low
+          - openai/o3-pro-2025-06-10
+          - openai/o4-mini
+          - openai/o4-mini-deep-research
+          - openai/o4-mini-high
           - pamanseau/OpenReasoning-Nemotron-32B
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
