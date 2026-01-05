@@ -642,6 +642,7 @@ endpoints:
           - gemini-1-5-flash-latest
           - gemini-1-5-pro
           - gemini-1-5-pro-latest
+          - gemini-2-0-flash
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite
@@ -766,6 +767,7 @@ endpoints:
           - grok-2
           - grok-2-latest
           - grok-2-vision
+          - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
@@ -1503,7 +1505,6 @@ endpoints:
       baseURL: "https://nano-gpt.com/api/v1/"
       models:
         default:
-          - Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
@@ -1649,6 +1650,7 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
+          - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
