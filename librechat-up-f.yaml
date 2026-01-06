@@ -548,9 +548,7 @@ endpoints:
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-opus
-          - claude-3-opus-20240229
           - claude-3-opus-20240229-v1
-          - claude-3-opus-latest
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
@@ -1104,7 +1102,6 @@ endpoints:
           - sonar-deep-research
           - sonar-pro
           - sonar-pro-search
-          - sonar-reasoning
           - sonar-reasoning-pro
           - sora-2
           - sora-2-pro
@@ -1634,7 +1631,6 @@ endpoints:
           - claude-3-7-sonnet-thinking:128000
           - claude-3-7-sonnet-thinking:32768
           - claude-3-7-sonnet-thinking:8192
-          - claude-3-opus-20240229
           - claude-haiku-4-5-20251001
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
@@ -1749,6 +1745,7 @@ endpoints:
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-preview
+          - gemini-3-pro-preview-image
           - gemini-3-pro-preview-thinking
           - gemini-exp-1206
           - gemini-exp-1206
@@ -1915,6 +1912,7 @@ endpoints:
           - raifle/sorcererlm-8x22b
           - sarvan-medium
           - shisa-ai/shisa-v2-llama3.3-70b
+          - shisa-ai/shisa-v2.1-llama3.3-70b
           - sonar
           - sonar-deep-research
           - sonar-pro
@@ -2184,9 +2182,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - alibaba/tongyi-deepresearch-30b-a3b:free
-          - allenai/olmo-3-32b-think:free
-          - allenai/olmo-3.1-32b-think:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
@@ -2227,8 +2222,10 @@ endpoints:
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
           - allenai/olmo-2-0325-32b-instruct
+          - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
+          - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
@@ -2237,7 +2234,6 @@ endpoints:
           - amazon/nova-pro-v1
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
-          - anthropic/claude-3-opus
           - anthropic/claude-3.5-haiku
           - anthropic/claude-3.5-haiku-20241022
           - anthropic/claude-3.5-sonnet
@@ -2450,7 +2446,6 @@ endpoints:
           - perplexity/sonar-deep-research
           - perplexity/sonar-pro
           - perplexity/sonar-pro-search
-          - perplexity/sonar-reasoning
           - perplexity/sonar-reasoning-pro
           - '---QWEN---'
           - qwen/qwen-2.5-72b-instruct
@@ -2532,7 +2527,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
-          - arliai/qwq-32b-arliai-rpr-v1
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
           - bytedance/ui-tars-1.5-7b
@@ -2544,6 +2538,7 @@ endpoints:
           - inception/mercury-coder
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
+          - kwaipilot/kat-coder-pro
           - liquid/lfm-2.2-6b
           - liquid/lfm2-8b-a1b
           - mancer/weaver
