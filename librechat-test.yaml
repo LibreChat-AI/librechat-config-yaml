@@ -544,6 +544,7 @@ endpoints:
           - claude-3-haiku-20240307-v1
           - claude-3-opus
           - claude-3-opus-20240229-v1
+          - claude-3-opus-latest
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
@@ -991,6 +992,7 @@ endpoints:
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
           - olmo-2-0325-32b-instruct
+          - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
           - olmo-3-7b-instruct
@@ -1761,7 +1763,6 @@ endpoints:
           - command-a-reasoning-08-2025
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
-          - deepcogito/cogito-v2-preview-deepseek-671b
           - deepcogito/cogito-v2-preview-llama-109B-MoE
           - deepcogito/cogito-v2-preview-llama-405B
           - deepcogito/cogito-v2-preview-llama-70B
@@ -1845,8 +1846,8 @@ endpoints:
           - gemini-2.5-pro-preview-03-25
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
+          - gemini-3-pro-image-preview
           - gemini-3-pro-preview
-          - gemini-3-pro-preview-image
           - gemini-3-pro-preview-thinking
           - gemini-exp-1206
           - gemini-exp-1206
@@ -2072,6 +2073,7 @@ endpoints:
           - zai-org/glm-4.6v-original
           - zai-org/glm-4.7
           - zai-org/glm-4.7-original
+          - zai-org/glm-4.7-original:thinking
           - zai-org/glm-4.7:thinking
         fetch: false
       titleConvo: true
@@ -2423,9 +2425,6 @@ endpoints:
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
           - '---MICROSOFT---'
-          - microsoft/phi-3-medium-128k-instruct
-          - microsoft/phi-3-mini-128k-instruct
-          - microsoft/phi-3.5-mini-128k-instruct
           - microsoft/phi-4
           - microsoft/phi-4-multimodal-instruct
           - microsoft/phi-4-reasoning-plus
