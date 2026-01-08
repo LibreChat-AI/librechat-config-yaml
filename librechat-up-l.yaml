@@ -534,7 +534,6 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
-          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620-v1
           - claude-3-5-sonnet-20241022-v2
@@ -798,8 +797,6 @@ endpoints:
           - internvl-3-78b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
-          - jamba-large-1-7
-          - jamba-mini-1-7
           - kat-coder-pro
           - kimi-dev-72b
           - kimi-k2
@@ -1897,6 +1894,7 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m2.1
+          - miromind-ai/MiroThinker-v1.5-235B
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
@@ -1927,6 +1925,7 @@ endpoints:
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-405b
+          - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-405b:thinking
           - nousresearch/hermes-4-70b
