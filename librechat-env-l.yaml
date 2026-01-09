@@ -526,6 +526,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620-v1
           - claude-3-5-sonnet-20241022-v2
@@ -789,6 +790,8 @@ endpoints:
           - internvl-3-78b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
+          - jamba-large-1-7
+          - jamba-mini-1-7
           - kat-coder-pro
           - kimi-dev-72b
           - kimi-k2
@@ -865,7 +868,6 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
-          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -1080,7 +1082,6 @@ endpoints:
           - rocinante-12b
           - router
           - seed-1-6
-          - seed-1-6-250915
           - seed-1-6-flash
           - seedream-3-0-t2i-250415
           - seedream-4-0-250828
@@ -1101,9 +1102,6 @@ endpoints:
           - test123
           - text-embedding-004
           - text-multilingual-embedding-002
-          - titan-text-express
-          - titan-text-express-v1
-          - titan-tg-1-large
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
           - trinity-mini
@@ -2271,6 +2269,7 @@ endpoints:
           - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
+          - allenai/olmo-3.1-32b-instruct
           - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
