@@ -542,6 +542,7 @@ endpoints:
           - claude-3-5-haiku
           - claude-3-5-haiku-20241022
           - claude-3-5-haiku-20241022-v1
+          - claude-3-5-haiku-latest
           - claude-3-5-sonnet
           - claude-3-5-sonnet-20240620-v1
           - claude-3-5-sonnet-20241022-v2
@@ -1120,7 +1121,6 @@ endpoints:
           - text-embedding-004
           - text-multilingual-embedding-002
           - titan-text-express
-          - titan-text-express-v1
           - titan-tg-1-large
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
@@ -2328,6 +2328,7 @@ endpoints:
           - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
+          - allenai/olmo-3.1-32b-instruct
           - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
