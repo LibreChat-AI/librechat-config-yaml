@@ -698,6 +698,7 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
+          - gemma-7b-it
           - giant-context
           - glm-4-1v-9b-thinking
           - glm-4-32b
@@ -780,19 +781,38 @@ endpoints:
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-2
+          - grok-2-1212
           - grok-2-latest
           - grok-2-vision
           - grok-2-vision-1212
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
+          - grok-3-fast-beta
+          - grok-3-fast-latest
+          - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
+          - grok-3-mini-fast
+          - grok-3-mini-fast-beta
+          - grok-3-mini-fast-latest
+          - grok-3-mini-latest
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
+          - grok-4-1-fast-non-reasoning
+          - grok-4-1-fast-non-reasoning-latest
+          - grok-4-1-fast-reasoning
+          - grok-4-1-fast-reasoning-latest
           - grok-4-fast
+          - grok-4-fast-non-reasoning
+          - grok-4-fast-reasoning
+          - grok-4-latest
+          - grok-beta
+          - grok-code-fast
           - grok-code-fast-1
+          - grok-code-fast-1-0825
+          - grok-vision-beta
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
@@ -832,12 +852,15 @@ endpoints:
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
+          - llama-2-70b-4096
           - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-405b-instruct-v1
+          - llama-3-1-405b-reasoning
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
           - llama-3-1-70b-instruct-v1
+          - llama-3-1-70b-versatile
           - llama-3-1-8b-instant
           - llama-3-1-8b-instruct
           - llama-3-1-8b-instruct-turbo
@@ -849,18 +872,25 @@ endpoints:
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
+          - llama-3-2-11b-text-preview
           - llama-3-2-11b-vision-instruct
+          - llama-3-2-11b-vision-preview
           - llama-3-2-1b-instruct
           - llama-3-2-1b-instruct-v1
+          - llama-3-2-1b-preview
           - llama-3-2-3b-instruct
           - llama-3-2-3b-instruct-v1
+          - llama-3-2-3b-preview
           - llama-3-2-90b-instruct-v1
+          - llama-3-2-90b-text-preview
           - llama-3-2-90b-vision-instruct
+          - llama-3-2-90b-vision-preview
           - llama-3-2-large
           - llama-3-2-small
           - llama-3-3-70b-instruct
           - llama-3-3-70b-instruct-turbo
           - llama-3-3-70b-instruct-v1
+          - llama-3-3-70b-specdec
           - llama-3-3-70b-versatile
           - llama-3-3-nemotron-super-49b-1-5
           - llama-3-3-nemotron-super-49b-v1-5
@@ -871,6 +901,8 @@ endpoints:
           - llama-3-8b-instruct
           - llama-3-8b-instruct-lite
           - llama-3-8b-instruct-v1
+          - llama-3-groq-70b-8192-tool-use-preview
+          - llama-3-groq-8b-8192-tool-use-preview
           - llama-4
           - llama-4-maverick
           - llama-4-maverick-17b-128e-instruct-fp8
@@ -948,10 +980,12 @@ endpoints:
           - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
+          - mixtral-8x7b-32768
           - mixtral-8x7b-instruct
           - mixtral-8x7b-instruct-0-1
           - mixtral-8x7b-instruct-v0
           - mixtral-8x7b-instruct-v0-1
+          - molmo-2-8b
           - molmo-7b-d
           - morph-v3-fast
           - morph-v3-large
@@ -1120,9 +1154,13 @@ endpoints:
           - test123
           - text-embedding-004
           - text-multilingual-embedding-002
-          - titan-text-express
-          - titan-tg-1-large
           - tng-r1t-chimera
+          - together-ai-21-1b-41b
+          - together-ai-4-1b-8b
+          - together-ai-41-1b-80b
+          - together-ai-8-1b-21b
+          - together-ai-81-1b-110b
+          - together-ai-up-to-4b
           - tongyi-deepresearch-30b-a3b
           - trinity-mini
           - ui-tars-1-5-7b
@@ -1681,6 +1719,7 @@ endpoints:
           - TEE/gpt-oss-20b
           - TEE/kimi-k2-thinking
           - TEE/llama3-3-70b
+          - TEE/minimax-m2.1
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3-30b-a3b-instruct-2507
           - TEE/qwen3-coder
@@ -2302,7 +2341,6 @@ endpoints:
           - mistralai/mistral-7b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
-          - nex-agi/deepseek-v3.1-nex-n1:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
@@ -2324,6 +2362,7 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
+          - allenai/molmo-2-8b
           - allenai/olmo-2-0325-32b-instruct
           - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
@@ -2648,6 +2687,7 @@ endpoints:
           - morph/morph-v3-large
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
+          - nex-agi/deepseek-v3.1-nex-n1
           - opengvlab/internvl3-78b
           - openrouter/bodybuilder
           - prime-intellect/intellect-3
