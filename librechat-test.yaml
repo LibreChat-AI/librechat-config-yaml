@@ -566,15 +566,15 @@ endpoints:
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
-          - codestral
+          - codestral-2508
           - codex-mini
           - codex-mini-latest
           - cogito-v2-1-671b
           - cogito-v2-preview-llama-109b-moe
+          - cogito-v2-preview-llama-405b
           - cogito-v2-preview-llama-70b
           - command
           - command-a
-          - command-light
           - command-r
           - command-r-08-2024
           - command-r-plus
@@ -634,7 +634,6 @@ endpoints:
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
-          - gemini-1-5-pro
           - gemini-2-0-flash-001
           - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite-001
@@ -746,7 +745,7 @@ endpoints:
           - gpt-oss-20b-1
           - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
-          - grok-2
+          - granite-4-0-h-micro
           - grok-2-vision
           - grok-2-vision-latest
           - grok-3
@@ -775,7 +774,6 @@ endpoints:
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
-          - grok-vision-beta
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
@@ -784,7 +782,6 @@ endpoints:
           - hunyuan-a13b-instruct
           - inflection-3-pi
           - inflection-3-productivity
-          - intellect-3
           - internvl-3-78b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
@@ -797,7 +794,6 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
-          - kimi-linear-48b-a3b-instruct
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -865,7 +861,6 @@ endpoints:
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
-          - magistral-medium
           - magistral-small
           - magistral-small-2509
           - magnum-v4-72b
@@ -959,7 +954,6 @@ endpoints:
           - nvidia-nemotron-nano-9b-v2
           - o1
           - o1-2024-12-17
-          - o1-mini
           - o1-pro
           - o1-pro-2025-03-19
           - o3
@@ -979,13 +973,12 @@ endpoints:
           - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
-          - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
-          - olmocr-7b-1025
+          - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5-v1
           - pegasus-1-2-v1
@@ -1045,6 +1038,7 @@ endpoints:
           - qwen-3-next-80b-a3b-thinking
           - qwen-3-vl-235b-a22b
           - qwen-3-vl-235b-a22b-instruct
+          - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
@@ -2261,6 +2255,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - allenai/molmo-2-8b:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
@@ -2270,7 +2265,6 @@ endpoints:
           - google/gemma-3-4b-it:free
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
-          - kwaipilot/kat-coder-pro:free
           - meta-llama/llama-3.1-405b-instruct:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
@@ -2299,7 +2293,6 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
-          - allenai/molmo-2-8b
           - allenai/olmo-2-0325-32b-instruct
           - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
