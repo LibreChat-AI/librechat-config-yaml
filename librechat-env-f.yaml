@@ -771,7 +771,6 @@ endpoints:
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
-          - grok-vision-beta
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
@@ -793,7 +792,6 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
-          - kimi-linear-48b-a3b-instruct
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -979,7 +977,6 @@ endpoints:
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
-          - olmocr-7b-1025
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5-v1
