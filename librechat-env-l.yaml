@@ -721,6 +721,7 @@ endpoints:
           - gpt-5-2-pro
           - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
+          - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
           - gpt-5-image
@@ -762,6 +763,7 @@ endpoints:
           - grok-4-1-fast-non-reasoning-latest
           - grok-4-1-fast-reasoning
           - grok-4-1-fast-reasoning-latest
+          - grok-4-fast
           - grok-4-fast-non-reasoning
           - grok-4-fast-reasoning
           - grok-4-latest
@@ -787,6 +789,7 @@ endpoints:
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-instruct
+          - kimi-k2-instruct-0905
           - kimi-k2-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
@@ -1012,9 +1015,11 @@ endpoints:
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
+          - qwen-3-30b-a3b-instruct-2507
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-fp8
+          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
@@ -1028,6 +1033,7 @@ endpoints:
           - qwen-3-max
           - qwen-3-next-80b-a3b
           - qwen-3-next-80b-a3b-instruct
+          - qwen-3-next-80b-a3b-thinking
           - qwen-3-vl-235b-a22b
           - qwen-3-vl-235b-a22b-instruct
           - qwen-3-vl-235b-a22b-thinking
@@ -1067,6 +1073,7 @@ endpoints:
           - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
+          - step-3
           - test123
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
@@ -1874,6 +1881,7 @@ endpoints:
           - openai/gpt-5.1
           - openai/gpt-5.1-2025-11-13
           - openai/gpt-5.1-chat
+          - openai/gpt-5.1-chat-latest
           - openai/gpt-5.1-codex
           - openai/gpt-5.1-codex-max
           - openai/gpt-5.1-codex-mini
@@ -1938,7 +1946,6 @@ endpoints:
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
-          - tngtech/DeepSeek-R1T-Chimera
           - tngtech/DeepSeek-TNG-R1T2-Chimera
           - tngtech/tng-r1t-chimera
           - undi95/remm-slerp-l2-13b
