@@ -1880,6 +1880,7 @@ endpoints:
           - openai/gpt-5.1
           - openai/gpt-5.1-2025-11-13
           - openai/gpt-5.1-chat
+          - openai/gpt-5.1-chat-latest
           - openai/gpt-5.1-codex
           - openai/gpt-5.1-codex-max
           - openai/gpt-5.1-codex-mini
@@ -1944,7 +1945,6 @@ endpoints:
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
-          - tngtech/DeepSeek-R1T-Chimera
           - tngtech/DeepSeek-TNG-R1T2-Chimera
           - tngtech/tng-r1t-chimera
           - undi95/remm-slerp-l2-13b
