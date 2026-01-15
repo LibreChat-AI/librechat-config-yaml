@@ -548,6 +548,7 @@ endpoints:
           - claude-opus-4
           - claude-opus-4-1
           - claude-opus-4-1-20250805
+          - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
           - claude-opus-4-5
@@ -594,13 +595,11 @@ endpoints:
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
-          - deepseek-r1-0528-qwen-3-8b
           - deepseek-r1-0528-tput
           - deepseek-r1-0528-turbo
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
-          - deepseek-r1-qwen-3-8b
           - deepseek-r1-turbo
           - deepseek-r1t-chimera
           - deepseek-r1t2-chimera
@@ -621,7 +620,6 @@ endpoints:
           - devstral-small
           - devstral-small-2505
           - devstral-small-2507
-          - dolphin-mistral-24b-venice-edition
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
@@ -639,7 +637,6 @@ endpoints:
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-lite-preview-09-2025
-          - gemini-2-5-flash-preview-09-2025
           - gemini-2-5-pro
           - gemini-2-5-pro-preview
           - gemini-2-5-pro-preview-05-06
@@ -663,7 +660,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - giant-context
-          - glm-4-1v-9b-thinking
           - glm-4-32b
           - glm-4-5
           - glm-4-5-air
@@ -718,6 +714,7 @@ endpoints:
           - gpt-5-2-2025-12-11
           - gpt-5-2-chat
           - gpt-5-2-chat-latest
+          - gpt-5-2-codex
           - gpt-5-2-pro
           - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
@@ -1020,7 +1017,6 @@ endpoints:
           - qwen-3-32b
           - qwen-3-32b-fp8
           - qwen-3-32b-v1
-          - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1888,6 +1884,7 @@ endpoints:
           - openai/gpt-5.2
           - openai/gpt-5.2-chat
           - openai/gpt-5.2-chat-latest
+          - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2202,7 +2199,6 @@ endpoints:
           - '---FREE---'
           - allenai/molmo-2-8b:free
           - arcee-ai/trinity-mini:free
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
@@ -2211,20 +2207,16 @@ endpoints:
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
           - meta-llama/llama-3.1-405b-instruct:free
-          - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - mistralai/devstral-2512:free
           - mistralai/mistral-7b-instruct:free
-          - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
-          - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
           - qwen/qwen-2.5-vl-7b-instruct:free
-          - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
@@ -2253,7 +2245,6 @@ endpoints:
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
           - anthropic/claude-3.5-haiku
-          - anthropic/claude-3.5-haiku-20241022
           - anthropic/claude-3.5-sonnet
           - anthropic/claude-3.7-sonnet
           - anthropic/claude-3.7-sonnet:thinking
@@ -2292,9 +2283,7 @@ endpoints:
           - deepseek/deepseek-prover-v2
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
-          - deepseek/deepseek-r1-0528-qwen3-8b
           - deepseek/deepseek-r1-distill-llama-70b
-          - deepseek/deepseek-r1-distill-qwen-14b
           - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.1-terminus:exacto
@@ -2309,7 +2298,6 @@ endpoints:
           - google/gemini-2.5-flash-image-preview
           - google/gemini-2.5-flash-lite
           - google/gemini-2.5-flash-lite-preview-09-2025
-          - google/gemini-2.5-flash-preview-09-2025
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
@@ -2441,6 +2429,7 @@ endpoints:
           - openai/gpt-5.1-codex-mini
           - openai/gpt-5.2
           - openai/gpt-5.2-chat
+          - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b:exacto
@@ -2572,7 +2561,6 @@ endpoints:
           - stepfun-ai/step3
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
-          - thudm/glm-4.1v-9b-thinking
           - undi95/remm-slerp-l2-13b
         fetch: false
       dropParams:
