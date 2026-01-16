@@ -595,13 +595,11 @@ endpoints:
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
-          - deepseek-r1-0528-qwen-3-8b
           - deepseek-r1-0528-tput
           - deepseek-r1-0528-turbo
           - deepseek-r1-distill-llama-70b
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
-          - deepseek-r1-qwen-3-8b
           - deepseek-r1-turbo
           - deepseek-r1t-chimera
           - deepseek-r1t2-chimera
@@ -664,7 +662,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - giant-context
-          - glm-4-1v-9b-thinking
           - glm-4-32b
           - glm-4-5
           - glm-4-5-air
@@ -856,7 +853,6 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
-          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -1045,12 +1041,8 @@ endpoints:
           - qwen-3-vl-4b-thinking
           - qwen-3-vl-8b-instruct
           - qwen-3-vl-8b-thinking
-          - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
-          - qwen-turbo
-          - qwen-vl-max
-          - qwen-vl-plus
           - qwq-32b
           - qwq-32b-arliai-rpr-v1
           - reasoners
@@ -1745,6 +1737,7 @@ endpoints:
           - gemini-2.0-pro-exp-02-05
           - gemini-2.0-pro-reasoner
           - gemini-2.5-flash
+          - gemini-2.5-flash-lite
           - gemini-2.5-flash-lite-preview-06-17
           - gemini-2.5-flash-lite-preview-09-2025
           - gemini-2.5-flash-lite-preview-09-2025-thinking
@@ -2204,6 +2197,7 @@ endpoints:
           - '---FREE---'
           - allenai/molmo-2-8b:free
           - arcee-ai/trinity-mini:free
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
           - google/gemini-2.0-flash-exp:free
           - google/gemma-3-12b-it:free
@@ -2212,17 +2206,21 @@ endpoints:
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
           - meta-llama/llama-3.1-405b-instruct:free
+          - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - mistralai/devstral-2512:free
-          - mistralai/mistral-7b-instruct:free
+          - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
+          - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
           - qwen/qwen-2.5-vl-7b-instruct:free
+          - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
+          - qwen/qwen3-next-80b-a3b-instruct:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
@@ -2285,7 +2283,6 @@ endpoints:
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
           - deepseek/deepseek-chat-v3.1
-          - deepseek/deepseek-prover-v2
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-distill-llama-70b
@@ -2300,9 +2297,9 @@ endpoints:
           - google/gemini-2.0-flash-lite-001
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
-          - google/gemini-2.5-flash-image-preview
           - google/gemini-2.5-flash-lite
           - google/gemini-2.5-flash-lite-preview-09-2025
+          - google/gemini-2.5-flash-preview-09-2025
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
@@ -2325,18 +2322,12 @@ endpoints:
           - meta-llama/llama-3.2-11b-vision-instruct
           - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-3b-instruct
-          - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
           - meta-llama/llama-guard-2-8b
           - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
-          - '---MICROSOFT---'
-          - microsoft/phi-4
-          - microsoft/phi-4-multimodal-instruct
-          - microsoft/phi-4-reasoning-plus
-          - microsoft/wizardlm-2-8x22b
           - '---MINIMAX---'
           - minimax/minimax-01
           - minimax/minimax-m1
@@ -2347,7 +2338,6 @@ endpoints:
           - mistralai/devstral-2512
           - mistralai/devstral-medium
           - mistralai/devstral-small
-          - mistralai/devstral-small-2505
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b
           - mistralai/ministral-3b-2512
@@ -2461,13 +2451,6 @@ endpoints:
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-2.5-vl-7b-instruct
-          - qwen/qwen-max
-          - qwen/qwen-plus
-          - qwen/qwen-plus-2025-07-28
-          - qwen/qwen-plus-2025-07-28:thinking
-          - qwen/qwen-turbo
-          - qwen/qwen-vl-max
-          - qwen/qwen-vl-plus
           - qwen/qwen2.5-coder-7b-instruct
           - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-72b-instruct
@@ -2482,10 +2465,7 @@ endpoints:
           - qwen/qwen3-8b
           - qwen/qwen3-coder
           - qwen/qwen3-coder-30b-a3b-instruct
-          - qwen/qwen3-coder-flash
-          - qwen/qwen3-coder-plus
           - qwen/qwen3-coder:exacto
-          - qwen/qwen3-max
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
@@ -2494,7 +2474,6 @@ endpoints:
           - qwen/qwen3-vl-30b-a3b-thinking
           - qwen/qwen3-vl-32b-instruct
           - qwen/qwen3-vl-8b-instruct
-          - qwen/qwen3-vl-8b-thinking
           - qwen/qwq-32b
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
@@ -2552,6 +2531,8 @@ endpoints:
           - liquid/lfm2-8b-a1b
           - mancer/weaver
           - meituan/longcat-flash-chat
+          - microsoft/phi-4
+          - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - neversleep/llama-3.1-lumimaid-8b
@@ -2567,6 +2548,7 @@ endpoints:
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - undi95/remm-slerp-l2-13b
+          - xiaomi/mimo-v2-flash
         fetch: false
       dropParams:
         - "stop"
