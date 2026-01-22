@@ -980,6 +980,7 @@ endpoints:
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
+          - palmyra-x5
           - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
@@ -2576,6 +2577,7 @@ endpoints:
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - undi95/remm-slerp-l2-13b
+          - writer/palmyra-x5
           - xiaomi/mimo-v2-flash
         fetch: false
       dropParams:
