@@ -666,6 +666,7 @@ endpoints:
           - glm-4-6
           - glm-4-6v
           - glm-4-7
+          - glm-4-7-flash
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -730,6 +731,8 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
+          - gpt-audio
+          - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -751,7 +754,6 @@ endpoints:
           - grok-3-mini-fast
           - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
-          - grok-3-mini-latest
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
@@ -798,6 +800,8 @@ endpoints:
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
+          - lfm-2-5-1-2b-instruct
+          - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-1t
           - llama-2-13b
@@ -975,6 +979,7 @@ endpoints:
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
+          - palmyra-x5
           - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
@@ -1251,7 +1256,6 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - NexaAI/Octopus-v2
-          - PygmalionAI/pygmalion-6b
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-72B-Instruct
@@ -1322,6 +1326,7 @@ endpoints:
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
+          - zai-org/GLM-4.7-Flash
         fetch: false
       titleConvo: true
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
@@ -2570,6 +2575,7 @@ endpoints:
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - undi95/remm-slerp-l2-13b
+          - writer/palmyra-x5
           - xiaomi/mimo-v2-flash
         fetch: false
       dropParams:
