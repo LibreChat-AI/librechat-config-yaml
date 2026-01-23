@@ -666,7 +666,6 @@ endpoints:
           - glm-4-6
           - glm-4-6v
           - glm-4-7
-          - glm-4-7-flash
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -731,8 +730,6 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
-          - gpt-audio
-          - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -754,6 +751,7 @@ endpoints:
           - grok-3-mini-fast
           - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
+          - grok-3-mini-latest
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
@@ -800,8 +798,6 @@ endpoints:
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
-          - lfm-2-5-1-2b-instruct
-          - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-1t
           - llama-2-13b
@@ -979,7 +975,6 @@ endpoints:
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
-          - palmyra-x5
           - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
@@ -1553,7 +1548,6 @@ endpoints:
           - Llama-3.3-70B-Vulpecula-R1
           - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
-          - Meta-Llama-3-1-405B-Instruct-FP8
           - Meta-Llama-3-1-8B-Instruct-FP8
           - MiniMax-M1
           - MiniMax-M2
@@ -1563,7 +1557,6 @@ endpoints:
           - NeverSleep/Lumimaid-v0.2-70B
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - NousResearch/Hermes-4-70B:thinking
-          - OpenGVLab/InternVL3-78B
           - QwQ-32B-ArliAI-RpR-v1
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-Coder-32B-Instruct
@@ -1787,7 +1780,6 @@ endpoints:
           - grok-3-fast-beta
           - grok-3-mini-beta
           - grok-3-mini-fast-beta
-          - hermes-3-llama-3.1-405b
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
@@ -1822,7 +1814,7 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m2.1
-          - miromind-ai/MiroThinker-v1.5-235B
+          - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
@@ -1852,7 +1844,6 @@ endpoints:
           - moonshotai/kimi-k2-thinking-turbo-original
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
-          - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-405b:thinking
@@ -2143,6 +2134,7 @@ endpoints:
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-4-mini-hindi-4b-instruct
+          - nvidia/nemotron-content-safety-reasoning-4b
           - nvidia/nemotron-mini-4b-instruct
           - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-3-30b-a3b
