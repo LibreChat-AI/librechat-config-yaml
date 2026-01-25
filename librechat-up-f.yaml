@@ -879,6 +879,7 @@ endpoints:
           - minimax-m1
           - minimax-m2
           - minimax-m2-1
+          - minimax-m2-her
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -1772,6 +1773,7 @@ endpoints:
           - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
+          - minimax/minimax-m2-her
           - minimax/minimax-m2.1
           - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
@@ -2299,6 +2301,7 @@ endpoints:
           - minimax/minimax-01
           - minimax/minimax-m1
           - minimax/minimax-m2
+          - minimax/minimax-m2-her
           - minimax/minimax-m2.1
           - '---MISTRALAI---'
           - mistralai/codestral-2508
