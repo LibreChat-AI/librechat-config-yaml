@@ -1528,6 +1528,7 @@ endpoints:
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
+          - CrucibleLab/L3.3-70B-Loki-V2.0
           - Doctor-Shotgun/MS3.2-24B-Magnum-Diamond
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
@@ -1672,6 +1673,8 @@ endpoints:
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
+          - allenai/olmo-3.1-32b-instruct
+          - allenai/olmo-3.1-32b-think
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
@@ -2072,8 +2075,6 @@ endpoints:
           - bytedance/seed-oss-36b-instruct
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
-          - deepseek-ai/deepseek-r1
-          - deepseek-ai/deepseek-r1-0528
           - deepseek-ai/deepseek-r1-distill-llama-8b
           - deepseek-ai/deepseek-r1-distill-qwen-14b
           - deepseek-ai/deepseek-r1-distill-qwen-32b
