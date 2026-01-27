@@ -666,7 +666,6 @@ endpoints:
           - glm-4-6
           - glm-4-6v
           - glm-4-7
-          - glm-4-7-flash
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -731,8 +730,6 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
-          - gpt-audio
-          - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -754,13 +751,17 @@ endpoints:
           - grok-3-mini-fast
           - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
+          - grok-3-mini-latest
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
           - grok-4-1-fast-non-reasoning
           - grok-4-1-fast-non-reasoning-latest
+          - grok-4-1-fast-reasoning
+          - grok-4-1-fast-reasoning-latest
           - grok-4-fast
           - grok-4-fast-non-reasoning
+          - grok-4-fast-reasoning
           - grok-4-latest
           - grok-code-fast
           - grok-code-fast-1
@@ -797,8 +798,6 @@ endpoints:
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
-          - lfm-2-5-1-2b-instruct
-          - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-1t
           - llama-2-13b
@@ -869,7 +868,6 @@ endpoints:
           - minimax-m1
           - minimax-m2
           - minimax-m2-1
-          - minimax-m2-her
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -977,7 +975,6 @@ endpoints:
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
-          - palmyra-x5
           - palmyra-x5-v1
           - pegasus-1-2-v1
           - phi-3-5-mini-128k-instruct
@@ -1584,7 +1581,6 @@ endpoints:
           - Steelskull/L3.3-MS-Evayale-70B
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
-          - TEE/deepseek-chat-v3-0324
           - TEE/deepseek-r1-0528
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
@@ -2237,7 +2233,6 @@ endpoints:
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
-          - xiaomi/mimo-v2-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
