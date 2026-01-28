@@ -1902,6 +1902,10 @@ endpoints:
           - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2-thinking-original
           - moonshotai/kimi-k2-thinking-turbo-original
+          - moonshotai/kimi-k2.5
+          - moonshotai/kimi-k2.5
+          - moonshotai/kimi-k2.5:thinking
+          - moonshotai/kimi-k2.5:thinking
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
@@ -1979,6 +1983,7 @@ endpoints:
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
+          - qwen3-max-2026-01-23
           - qwen3-vl-235b-a22b-instruct-original
           - qwen3-vl-235b-a22b-thinking
           - qwq-32b
@@ -2165,6 +2170,7 @@ endpoints:
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0905
           - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-k2.5
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/cosmos-reason2-8b
           - nvidia/embed-qa-4
@@ -2260,6 +2266,7 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - allenai/molmo-2-8b:free
+          - arcee-ai/trinity-large-preview:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-r1-0528:free
@@ -2274,7 +2281,6 @@ endpoints:
           - meta-llama/llama-3.1-405b-instruct:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - mistralai/devstral-2512:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - moonshotai/kimi-k2:free
           - nousresearch/hermes-3-llama-3.1-405b:free
@@ -2290,6 +2296,7 @@ endpoints:
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
+          - upstage/solar-pro-3:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2437,6 +2444,7 @@ endpoints:
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
           - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-k2.5
           - '---NOUSRESEARCH---'
           - nousresearch/deephermes-3-mistral-24b-preview
           - nousresearch/hermes-2-pro-llama-3-8b
