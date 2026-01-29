@@ -531,6 +531,7 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
+          - babbage-002
           - chatgpt-4o
           - chatgpt-4o-latest
           - chatx
@@ -578,7 +579,6 @@ endpoints:
           - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
-          - codex-mini
           - codex-mini-latest
           - cogito-v2-1-671b
           - cogito-v2-preview-llama-109b-moe
@@ -595,6 +595,7 @@ endpoints:
           - command-r7b
           - command-r7b-12-2024
           - cydonia-24b-v4-1
+          - davinci-002
           - deephermes-3-mistral-24b-preview
           - deepseek-3-1
           - deepseek-3-1-nex-n1
@@ -654,7 +655,6 @@ endpoints:
           - gemini-2-5-pro-preview
           - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
-          - gemini-2-flash-exp
           - gemini-2-flash-lite
           - gemini-3-flash
           - gemini-3-flash-preview
@@ -688,6 +688,7 @@ endpoints:
           - gpt-3-5-turbo-1106
           - gpt-3-5-turbo-16k
           - gpt-3-5-turbo-instruct
+          - gpt-3-5-turbo-instruct-0914
           - gpt-4
           - gpt-4-0125-preview
           - gpt-4-0314
@@ -965,6 +966,7 @@ endpoints:
           - o1
           - o1-2024-12-17
           - o1-pro
+          - o1-pro-2025-03-19
           - o3
           - o3-2025-04-16
           - o3-deep-research
@@ -979,6 +981,7 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
+          - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
@@ -1059,7 +1062,6 @@ endpoints:
           - qwen-vl-max
           - qwen-vl-plus
           - qwq-32b
-          - qwq-32b-arliai-rpr-v1
           - reasoners
           - refuel-llm-v2-small
           - relace-apply-3
@@ -1341,7 +1343,6 @@ endpoints:
           - google/gemma-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
-          - jinaai/ReaderLM-v2
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
@@ -1678,6 +1679,8 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - arcee-ai/trinity-large
+          - arcee-ai/trinity-mini
           - asi1-mini
           - azure-gpt-4-turbo
           - azure-gpt-4o
