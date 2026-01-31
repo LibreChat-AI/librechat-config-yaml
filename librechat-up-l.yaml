@@ -579,6 +579,7 @@ endpoints:
           - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
+          - codex-mini
           - codex-mini-latest
           - cogito-v2-1-671b
           - cogito-v2-preview-llama-109b-moe
@@ -655,6 +656,7 @@ endpoints:
           - gemini-2-5-pro-preview
           - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
+          - gemini-2-flash-exp
           - gemini-2-flash-lite
           - gemini-3-flash
           - gemini-3-flash-preview
@@ -680,7 +682,6 @@ endpoints:
           - glm-4-6
           - glm-4-6v
           - glm-4-7
-          - glm-4-7-flash
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -745,8 +746,6 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
-          - gpt-audio
-          - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -768,13 +767,17 @@ endpoints:
           - grok-3-mini-fast
           - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
+          - grok-3-mini-latest
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
           - grok-4-1-fast-non-reasoning
           - grok-4-1-fast-non-reasoning-latest
+          - grok-4-1-fast-reasoning
+          - grok-4-1-fast-reasoning-latest
           - grok-4-fast
           - grok-4-fast-non-reasoning
+          - grok-4-fast-reasoning
           - grok-4-latest
           - grok-code-fast
           - grok-code-fast-1
@@ -797,7 +800,6 @@ endpoints:
           - kimi-dev-72b
           - kimi-k2
           - kimi-k2-0905
-          - kimi-k2-5
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
@@ -812,8 +814,6 @@ endpoints:
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
-          - lfm-2-5-1-2b-instruct
-          - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-1t
           - llama-2-13b
@@ -884,7 +884,6 @@ endpoints:
           - minimax-m1
           - minimax-m2
           - minimax-m2-1
-          - minimax-m2-her
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -992,9 +991,11 @@ endpoints:
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
-          - palmyra-x5
           - palmyra-x5-v1
           - pegasus-1-2-v1
+          - phi-3-5-mini-128k-instruct
+          - phi-3-medium-128k-instruct
+          - phi-3-mini-128k-instruct
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
@@ -1062,6 +1063,7 @@ endpoints:
           - qwen-vl-max
           - qwen-vl-plus
           - qwq-32b
+          - qwq-32b-arliai-rpr-v1
           - reasoners
           - refuel-llm-v2-small
           - relace-apply-3
@@ -1075,7 +1077,6 @@ endpoints:
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
-          - solar-pro-3
           - sonar
           - sonar-deep-research
           - sonar-pro
@@ -1089,7 +1090,6 @@ endpoints:
           - test123
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
-          - trinity-large-preview
           - trinity-mini
           - ui-tars-1-5-7b
           - ultra-fast
