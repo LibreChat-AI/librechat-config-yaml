@@ -758,6 +758,7 @@ endpoints:
           - grok-3-mini
           - grok-3-mini-beta
           - grok-3-mini-fast
+          - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
           - grok-4
           - grok-4-0709
@@ -1998,6 +1999,8 @@ endpoints:
           - step-2-mini
           - step-3
           - step-r1-v-mini
+          - stepfun-ai/step-3.5-flash
+          - stepfun-ai/step-3.5-flash:thinking
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
