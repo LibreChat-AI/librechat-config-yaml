@@ -1950,6 +1950,8 @@ endpoints:
           - step-2-mini
           - step-3
           - step-r1-v-mini
+          - stepfun-ai/step-3.5-flash
+          - stepfun-ai/step-3.5-flash:thinking
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
@@ -2182,6 +2184,7 @@ endpoints:
           - snowflake/arctic-embed-l
           - speakleash/bielik-11b-v2.3-instruct
           - speakleash/bielik-11b-v2.6-instruct
+          - stepfun-ai/step-3.5-flash
           - stockmark/stockmark-2-100b-instruct
           - thudm/chatglm3-6b
           - tiiuae/falcon3-7b-instruct
@@ -2227,7 +2230,6 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - mistralai/mistral-small-3.1-24b-instruct:free
-          - moonshotai/kimi-k2:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
@@ -2238,6 +2240,7 @@ endpoints:
           - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
+          - stepfun/step-3.5-flash:free
           - tngtech/deepseek-r1t-chimera:free
           - tngtech/deepseek-r1t2-chimera:free
           - tngtech/tng-r1t-chimera:free
