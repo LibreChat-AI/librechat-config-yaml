@@ -1822,7 +1822,6 @@ endpoints:
           - gemini-3-pro-preview
           - gemini-3-pro-preview-thinking
           - gemini-exp-1206
-          - gemini-exp-1206
           - glm-4
           - glm-4-air
           - glm-4-air-0111
@@ -2273,7 +2272,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - allenai/molmo-2-8b:free
           - arcee-ai/trinity-large-preview:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
@@ -2310,6 +2308,7 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
+          - allenai/molmo-2-8b
           - allenai/olmo-2-0325-32b-instruct
           - allenai/olmo-3-32b-think
           - allenai/olmo-3-7b-instruct
@@ -2351,11 +2350,6 @@ endpoints:
           - cohere/command-r-08-2024
           - cohere/command-r-plus-08-2024
           - cohere/command-r7b-12-2024
-          - '---DEEPCOGITO---'
-          - deepcogito/cogito-v2-preview-llama-109b-moe
-          - deepcogito/cogito-v2-preview-llama-405b
-          - deepcogito/cogito-v2-preview-llama-70b
-          - deepcogito/cogito-v2.1-671b
           - '---DEEPSEEK---'
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
@@ -2611,6 +2605,7 @@ endpoints:
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
           - bytedance/ui-tars-1.5-7b
+          - deepcogito/cogito-v2.1-671b
           - eleutherai/llemma_7b
           - essentialai/rnj-1-instruct
           - gryphe/mythomax-l2-13b
