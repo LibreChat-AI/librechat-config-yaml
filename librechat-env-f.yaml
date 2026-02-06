@@ -547,6 +547,7 @@ endpoints:
           - claude-instant-v1
           - claude-opus-4
           - claude-opus-4-1
+          - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
@@ -623,7 +624,6 @@ endpoints:
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
           - ernie-4-5-vl-424b-a47b
-          - free
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
@@ -751,6 +751,7 @@ endpoints:
           - grok-3-mini
           - grok-3-mini-beta
           - grok-3-mini-fast
+          - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
           - grok-4
           - grok-4-0709
@@ -799,6 +800,7 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
+          - ling-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1024,7 +1026,6 @@ endpoints:
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
-          - qwen-3-coder-next
           - qwen-3-coder-plus
           - qwen-3-max
           - qwen-3-next-80b-a3b
@@ -1070,7 +1071,6 @@ endpoints:
           - sorcererlm-8x22b
           - spotlight
           - step-3
-          - step-3-5-flash
           - test123
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
@@ -1627,6 +1627,11 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - anthropic/claude-opus-4.6
+          - anthropic/claude-opus-4.6:thinking
+          - anthropic/claude-opus-4.6:thinking:low
+          - anthropic/claude-opus-4.6:thinking:max
+          - anthropic/claude-opus-4.6:thinking:medium
           - arcee-ai/trinity-large
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -1678,9 +1683,6 @@ endpoints:
           - command-a-reasoning-08-2025
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
-          - deepcogito/cogito-v2-preview-llama-109B-MoE
-          - deepcogito/cogito-v2-preview-llama-405B
-          - deepcogito/cogito-v2-preview-llama-70B
           - deepcogito/cogito-v2.1-671b
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3.1
@@ -2274,6 +2276,7 @@ endpoints:
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.5
+          - anthropic/claude-opus-4.6
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - '---ARCEE-AI---'
@@ -2293,11 +2296,6 @@ endpoints:
           - cohere/command-r-08-2024
           - cohere/command-r-plus-08-2024
           - cohere/command-r7b-12-2024
-          - '---DEEPCOGITO---'
-          - deepcogito/cogito-v2-preview-llama-109b-moe
-          - deepcogito/cogito-v2-preview-llama-405b
-          - deepcogito/cogito-v2-preview-llama-70b
-          - deepcogito/cogito-v2.1-671b
           - '---DEEPSEEK---'
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
@@ -2553,6 +2551,7 @@ endpoints:
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
           - bytedance/ui-tars-1.5-7b
+          - deepcogito/cogito-v2.1-671b
           - eleutherai/llemma_7b
           - essentialai/rnj-1-instruct
           - gryphe/mythomax-l2-13b
