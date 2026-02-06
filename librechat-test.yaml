@@ -1684,6 +1684,11 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - anthropic/claude-opus-4.6
+          - anthropic/claude-opus-4.6:thinking
+          - anthropic/claude-opus-4.6:thinking:low
+          - anthropic/claude-opus-4.6:thinking:max
+          - anthropic/claude-opus-4.6:thinking:medium
           - arcee-ai/trinity-large
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -1735,9 +1740,6 @@ endpoints:
           - command-a-reasoning-08-2025
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
-          - deepcogito/cogito-v2-preview-llama-109B-MoE
-          - deepcogito/cogito-v2-preview-llama-405B
-          - deepcogito/cogito-v2-preview-llama-70B
           - deepcogito/cogito-v2.1-671b
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3.1
@@ -2331,6 +2333,7 @@ endpoints:
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.5
+          - anthropic/claude-opus-4.6
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - '---ARCEE-AI---'
