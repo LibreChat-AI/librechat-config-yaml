@@ -550,7 +550,6 @@ endpoints:
           - claude-instant-v1
           - claude-opus-4
           - claude-opus-4-1
-          - claude-opus-4-1-20250805
           - claude-opus-4-1-20250805-v1
           - claude-opus-4-20250514
           - claude-opus-4-20250514-v1
@@ -627,6 +626,7 @@ endpoints:
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
           - ernie-4-5-vl-424b-a47b
+          - free
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
@@ -754,7 +754,6 @@ endpoints:
           - grok-3-mini
           - grok-3-mini-beta
           - grok-3-mini-fast
-          - grok-3-mini-fast-beta
           - grok-3-mini-fast-latest
           - grok-4
           - grok-4-0709
@@ -803,7 +802,6 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
-          - ling-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1020,7 +1018,6 @@ endpoints:
           - qwen-3-32b
           - qwen-3-32b-fp8
           - qwen-3-32b-v1
-          - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1029,6 +1026,7 @@ endpoints:
           - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
+          - qwen-3-coder-next
           - qwen-3-coder-plus
           - qwen-3-max
           - qwen-3-next-80b-a3b
@@ -1074,6 +1072,7 @@ endpoints:
           - sorcererlm-8x22b
           - spotlight
           - step-3
+          - step-3-5-flash
           - test123
           - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
@@ -1699,6 +1698,7 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
+          - brave
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
@@ -1758,7 +1758,6 @@ endpoints:
           - deepseek-v3.1-original
           - deepseek-v3.2-exp-original
           - deepseek-v3.2-exp-thinking-original
-          - deepseek-v3.2-speciale-original
           - deepseek-v3.2-thinking-original
           - deepseek/deepseek-prover-v2-671b
           - deepseek/deepseek-v3.2
@@ -2516,6 +2515,10 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - '---OPENROUTER---'
+          - openrouter/bodybuilder
+          - openrouter/free
+          - openrouter/pony-alpha
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2629,8 +2632,6 @@ endpoints:
           - neversleep/noromaid-20b
           - nex-agi/deepseek-v3.1-nex-n1
           - opengvlab/internvl3-78b
-          - openrouter/bodybuilder
-          - openrouter/free
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
