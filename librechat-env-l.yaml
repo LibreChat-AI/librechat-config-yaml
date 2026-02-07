@@ -1643,6 +1643,7 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
+          - brave
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
@@ -1702,7 +1703,6 @@ endpoints:
           - deepseek-v3.1-original
           - deepseek-v3.2-exp-original
           - deepseek-v3.2-exp-thinking-original
-          - deepseek-v3.2-speciale-original
           - deepseek-v3.2-thinking-original
           - deepseek/deepseek-prover-v2-671b
           - deepseek/deepseek-v3.2
@@ -2460,6 +2460,10 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - '---OPENROUTER---'
+          - openrouter/bodybuilder
+          - openrouter/free
+          - openrouter/pony-alpha
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2573,8 +2577,6 @@ endpoints:
           - neversleep/noromaid-20b
           - nex-agi/deepseek-v3.1-nex-n1
           - opengvlab/internvl3-78b
-          - openrouter/bodybuilder
-          - openrouter/free
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
