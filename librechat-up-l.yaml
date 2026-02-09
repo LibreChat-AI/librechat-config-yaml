@@ -559,6 +559,9 @@ endpoints:
           - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101-v1
+          - claude-opus-4-6
+          - claude-opus-4-6-1
+          - claude-opus-4-6-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -573,8 +576,6 @@ endpoints:
           - codex-mini-latest
           - cogito-v2-1-671b
           - cogito-v2-preview-llama-109b-moe
-          - cogito-v2-preview-llama-405b
-          - cogito-v2-preview-llama-70b
           - command
           - command-a
           - command-r
@@ -992,6 +993,7 @@ endpoints:
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
+          - pony-alpha
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1022,6 +1024,7 @@ endpoints:
           - qwen-3-32b
           - qwen-3-32b-fp8
           - qwen-3-32b-v1
+          - qwen-3-4b
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -2431,7 +2434,6 @@ endpoints:
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
-          - moonshotai/kimi-dev-72b
           - moonshotai/kimi-k2
           - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2-0905:exacto
@@ -2628,7 +2630,6 @@ endpoints:
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
           - relace/relace-search
-          - stepfun-ai/step3
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - undi95/remm-slerp-l2-13b
