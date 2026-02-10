@@ -515,6 +515,7 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
+          - aurora-alpha
           - babbage-002
           - chatgpt-4o
           - chatgpt-4o-latest
@@ -1028,6 +1029,7 @@ endpoints:
           - qwen-3-coder-next
           - qwen-3-coder-plus
           - qwen-3-max
+          - qwen-3-max-thinking
           - qwen-3-next-80b-a3b
           - qwen-3-next-80b-a3b-instruct
           - qwen-3-next-80b-a3b-thinking
@@ -2462,6 +2464,7 @@ endpoints:
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - '---OPENROUTER---'
+          - openrouter/aurora-alpha
           - openrouter/bodybuilder
           - openrouter/free
           - openrouter/pony-alpha
@@ -2502,6 +2505,7 @@ endpoints:
           - qwen/qwen3-coder-plus
           - qwen/qwen3-coder:exacto
           - qwen/qwen3-max
+          - qwen/qwen3-max-thinking
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
@@ -2548,7 +2552,6 @@ endpoints:
           - z-ai/glm-4.7-flash
           - '---OTHERS---'
           - ai21/jamba-large-1.7
-          - ai21/jamba-mini-1.7
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
           - alpindale/goliath-120b
