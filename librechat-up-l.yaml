@@ -516,6 +516,7 @@ endpoints:
       baseURL: "https://apipie.ai/v1/"
       models:
         default:
+          - '5'
           - aibi
           - aion
           - aion-1-0
@@ -1336,7 +1337,6 @@ endpoints:
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/functiongemma-270m-it
           - google/gemma-2-2b-it
-          - google/gemma-2-9b-it
           - google/gemma-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
@@ -1696,6 +1696,8 @@ endpoints:
           - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
           - brave
+          - brave-pro
+          - brave-research
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
           - claude-3-5-sonnet-20240620
@@ -1988,7 +1990,6 @@ endpoints:
           - qwen3-vl-235b-a22b-instruct-original
           - qwen3-vl-235b-a22b-thinking
           - qwq-32b
-          - r1-1776
           - raifle/sorcererlm-8x22b
           - sarvan-medium
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -1996,7 +1997,6 @@ endpoints:
           - sonar
           - sonar-deep-research
           - sonar-pro
-          - sonar-reasoning
           - sonar-reasoning-pro
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
@@ -2194,6 +2194,7 @@ endpoints:
           - nvidia/llama-3.2-nv-embedqa-1b-v2
           - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
+          - nvidia/llama-nemotron-embed-vl-1b-v2
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/llama3-chatqa-1.5-8b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
