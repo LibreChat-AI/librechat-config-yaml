@@ -878,6 +878,7 @@ endpoints:
           - minimax-m1
           - minimax-m2
           - minimax-m2-1
+          - minimax-m2-5
           - minimax-m2-her
           - ministral-14b-2512
           - ministral-3-14b-instruct
@@ -1320,7 +1321,6 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
-          - baidu/ERNIE-4.5-21B-A3B-Thinking
           - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -1376,6 +1376,7 @@ endpoints:
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
           - zai-org/GLM-4.7-Flash
+          - zai-org/GLM-5
         fetch: false
       titleConvo: true
       titleModel: "NousResearch/Nous-Hermes-2-Mixtral-8x7B-DPO"
@@ -1879,6 +1880,8 @@ endpoints:
           - minimax/minimax-01
           - minimax/minimax-m2-her
           - minimax/minimax-m2.1
+          - minimax/minimax-m2.5
+          - minimax/minimax-m2.5-official
           - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
@@ -2411,6 +2414,7 @@ endpoints:
           - minimax/minimax-m2
           - minimax/minimax-m2-her
           - minimax/minimax-m2.1
+          - minimax/minimax-m2.5
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/devstral-2512
@@ -2437,7 +2441,6 @@ endpoints:
           - mistralai/mistral-small-creative
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
-          - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
