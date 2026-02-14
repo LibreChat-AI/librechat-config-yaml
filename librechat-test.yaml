@@ -513,6 +513,7 @@ endpoints:
       models:
         default:
           - '5'
+          - '7'
           - aibi
           - aion
           - aion-1-0
@@ -936,6 +937,7 @@ endpoints:
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2
           - nemotron-nano-12b-v2-vl
+          - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
           - noromaid-20b
@@ -2273,6 +2275,7 @@ endpoints:
           - writer/palmyra-med-70b-32k
           - yentinglin/llama-3-taiwan-70b-instruct
           - z-ai/glm4.7
+          - z-ai/glm5
           - zyphra/zamba2-7b-instruct
         fetch: false
       titleConvo: true
@@ -2313,9 +2316,6 @@ endpoints:
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
           - stepfun/step-3.5-flash:free
-          - tngtech/deepseek-r1t-chimera:free
-          - tngtech/deepseek-r1t2-chimera:free
-          - tngtech/tng-r1t-chimera:free
           - upstage/solar-pro-3:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2561,6 +2561,7 @@ endpoints:
           - qwen/qwen3-30b-a3b-instruct-2507
           - qwen/qwen3-30b-a3b-thinking-2507
           - qwen/qwen3-32b
+          - qwen/qwen3-4b
           - qwen/qwen3-8b
           - qwen/qwen3-coder
           - qwen/qwen3-coder-30b-a3b-instruct
