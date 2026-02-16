@@ -517,7 +517,6 @@ endpoints:
       baseURL: "https://apipie.ai/v1/"
       models:
         default:
-          - '5'
           - '7'
           - aibi
           - aion
@@ -759,7 +758,6 @@ endpoints:
           - grok-3-beta
           - grok-3-fast
           - grok-3-fast-beta
-          - grok-3-fast-latest
           - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
