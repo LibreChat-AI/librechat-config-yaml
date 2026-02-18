@@ -518,8 +518,8 @@ endpoints:
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - aurora-alpha
+          - babbage-002
           - chatgpt-4o
-          - chatgpt-4o-latest
           - chatx
           - chatx-fast
           - cheap
@@ -562,13 +562,13 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-5-20250929-v1
+          - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
           - cogito-v2-1-671b
-          - cogito-v2-preview-llama-109b-moe
           - command
           - command-a
           - command-r
@@ -580,6 +580,8 @@ endpoints:
           - command-r7b
           - command-r7b-12-2024
           - cydonia-24b-v4-1
+          - davinci-002
+          - deephermes-3-mistral-24b-preview
           - deepseek-3-1
           - deepseek-3-1-nex-n1
           - deepseek-3-1-terminus
@@ -627,7 +629,6 @@ endpoints:
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-2-0-flash-001
-          - gemini-2-0-flash-exp
           - gemini-2-0-flash-lite-001
           - gemini-2-5-flash
           - gemini-2-5-flash-image
@@ -673,6 +674,7 @@ endpoints:
           - gpt-3-5-turbo-1106
           - gpt-3-5-turbo-16k
           - gpt-3-5-turbo-instruct
+          - gpt-3-5-turbo-instruct-0914
           - gpt-4
           - gpt-4-0125-preview
           - gpt-4-0314
@@ -774,7 +776,6 @@ endpoints:
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-large-1-7
-          - jamba-mini-1-7
           - kat-coder-pro
           - kimi-k2
           - kimi-k2-0905
@@ -846,6 +847,7 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
+          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
@@ -905,7 +907,6 @@ endpoints:
           - mistral-small-3-2-24b-instruct-2506
           - mistral-small-creative
           - mistral-small-latest
-          - mistral-tiny
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
           - mixtral-8x7b-instruct
@@ -947,17 +948,22 @@ endpoints:
           - o1
           - o1-2024-12-17
           - o1-pro
+          - o1-pro-2025-03-19
           - o3
           - o3-2025-04-16
           - o3-deep-research
+          - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
           - o3-pro
+          - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-deep-research
+          - o4-mini-deep-research-2025-06-26
           - o4-mini-high
+          - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
@@ -970,14 +976,12 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
-          - pegasus-1-2-v1
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
-          - pony-alpha
           - premium
           - premium-coding
           - qwen-2-5-72b-instruct
@@ -1052,6 +1056,8 @@ endpoints:
           - router
           - seed-1-6
           - seed-1-6-flash
+          - seed-1-8
+          - seed-2-0-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
@@ -1075,6 +1081,7 @@ endpoints:
           - ui-tars-1-5-7b
           - ultra-fast
           - unslopnemo-12b
+          - us-40-51r-vm-ev-3
           - virtuoso-large
           - visionx
           - voxtral-mini-3b-2507
@@ -1630,6 +1637,8 @@ endpoints:
           - anthropic/claude-opus-4.6:thinking:low
           - anthropic/claude-opus-4.6:thinking:max
           - anthropic/claude-opus-4.6:thinking:medium
+          - anthropic/claude-sonnet-4.6
+          - anthropic/claude-sonnet-4.6:thinking
           - arcee-ai/trinity-large
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -1700,12 +1709,7 @@ endpoints:
           - deepseek-reasoner
           - deepseek-reasoner-cheaper
           - deepseek-v3-0324
-          - deepseek-v3.1-original
-          - deepseek-v3.2-exp-original
-          - deepseek-v3.2-exp-thinking-original
-          - deepseek-v3.2-thinking-original
           - deepseek/deepseek-prover-v2-671b
-          - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-speciale
           - deepseek/deepseek-v3.2:thinking
@@ -1827,7 +1831,6 @@ endpoints:
           - minimax/minimax-m2-her
           - minimax/minimax-m2.1
           - minimax/minimax-m2.5
-          - minimax/minimax-m2.5-official
           - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
           - mistralai/Devstral-Small-2505
@@ -1857,8 +1860,6 @@ endpoints:
           - moonshotai/kimi-k2-thinking-original
           - moonshotai/kimi-k2-thinking-turbo-original
           - moonshotai/kimi-k2.5
-          - moonshotai/kimi-k2.5
-          - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.5:thinking
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
@@ -2291,6 +2292,7 @@ endpoints:
           - anthropic/claude-opus-4.6
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
+          - anthropic/claude-sonnet-4.6
           - '---ARCEE-AI---'
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
@@ -2413,7 +2415,6 @@ endpoints:
           - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
-          - openai/chatgpt-4o-latest
           - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
           - openai/gpt-3.5-turbo-16k
