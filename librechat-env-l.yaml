@@ -1007,7 +1007,6 @@ endpoints:
           - qwen-3-30b-a3b-instruct-2507
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
-          - qwen-3-32b-fp8
           - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-5-397b-a17b
@@ -1017,7 +1016,6 @@ endpoints:
           - qwen-3-coder-30b-a3b-instruct
           - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
-          - qwen-3-coder-480b-a35b-instruct-fp8
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
           - qwen-3-coder-next
@@ -1248,6 +1246,7 @@ endpoints:
           - HuggingFaceTB/SmolLM3-3B
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
+          - MiniMaxAI/MiniMax-M2.5
           - NexaAI/Octopus-v2
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -1784,6 +1783,7 @@ endpoints:
           - glm-zero-preview
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
+          - google/gemini-3.1-pro-preview
           - google/gemini-flash-1.5
           - grok-3-beta
           - grok-3-fast-beta
@@ -2330,6 +2330,7 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
+          - google/gemini-3.1-pro-preview
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-3-12b-it
@@ -2461,10 +2462,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
-          - '---OPENROUTER---'
-          - openrouter/aurora-alpha
-          - openrouter/bodybuilder
-          - openrouter/free
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2494,7 +2491,6 @@ endpoints:
           - qwen/qwen3-30b-a3b-instruct-2507
           - qwen/qwen3-30b-a3b-thinking-2507
           - qwen/qwen3-32b
-          - qwen/qwen3-4b
           - qwen/qwen3-8b
           - qwen/qwen3-coder
           - qwen/qwen3-coder-30b-a3b-instruct
@@ -2578,6 +2574,8 @@ endpoints:
           - neversleep/noromaid-20b
           - nex-agi/deepseek-v3.1-nex-n1
           - opengvlab/internvl3-78b
+          - openrouter/bodybuilder
+          - openrouter/free
           - prime-intellect/intellect-3
           - raifle/sorcererlm-8x22b
           - relace/relace-apply-3
