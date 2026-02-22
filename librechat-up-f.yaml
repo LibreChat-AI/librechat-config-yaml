@@ -1740,6 +1740,8 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
           - google/gemini-3.1-pro-preview
+          - google/gemini-3.1-pro-preview-high
+          - google/gemini-3.1-pro-preview-low
           - google/gemini-flash-1.5
           - grok-3-beta
           - grok-3-fast-beta
