@@ -638,6 +638,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-lite
           - gemini-3-1-pro-preview
+          - gemini-3-1-pro-preview-customtools
           - gemini-3-flash
           - gemini-3-flash-preview
           - gemini-3-pro
@@ -792,6 +793,7 @@ endpoints:
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
+          - lfm-2-24b-a2b
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
@@ -1010,7 +1012,11 @@ endpoints:
           - qwen-3-32b
           - qwen-3-32b-v1
           - qwen-3-4b
+          - qwen-3-5-122b-a10b
+          - qwen-3-5-27b
+          - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
+          - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
@@ -1613,6 +1619,7 @@ endpoints:
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
+          - aion-labs/aion-2.0
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/molmo-2-8b
@@ -1810,6 +1817,7 @@ endpoints:
           - kimi-k2-instruct-fast
           - kimi-thinking-preview
           - learnlm-1.5-pro-experimental
+          - liquid/lfm-2-24b-a2b
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
@@ -2341,12 +2349,17 @@ endpoints:
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
           - google/gemini-3.1-pro-preview
+          - google/gemini-3.1-pro-preview-customtools
           - google/gemma-2-27b-it
           - google/gemma-2-9b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e4b-it
+          - '---LIQUID---'
+          - liquid/lfm-2-24b-a2b
+          - liquid/lfm-2.2-6b
+          - liquid/lfm2-8b-a1b
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
@@ -2412,7 +2425,6 @@ endpoints:
           - nousresearch/hermes-4-70b
           - '---NVIDIA---'
           - nvidia/llama-3.1-nemotron-70b-instruct
-          - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-nano-12b-v2-vl
@@ -2520,7 +2532,11 @@ endpoints:
           - qwen/qwen3-vl-32b-instruct
           - qwen/qwen3-vl-8b-instruct
           - qwen/qwen3-vl-8b-thinking
+          - qwen/qwen3.5-122b-a10b
+          - qwen/qwen3.5-27b
+          - qwen/qwen3.5-35b-a3b
           - qwen/qwen3.5-397b-a17b
+          - qwen/qwen3.5-flash-02-23
           - qwen/qwen3.5-plus-02-15
           - qwen/qwq-32b
           - '---SAO10K---'
@@ -2573,8 +2589,6 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro
-          - liquid/lfm-2.2-6b
-          - liquid/lfm2-8b-a1b
           - mancer/weaver
           - meituan/longcat-flash-chat
           - microsoft/phi-4
