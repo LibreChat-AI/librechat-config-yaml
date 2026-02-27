@@ -644,6 +644,7 @@ endpoints:
           - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
           - gemini-2-flash-lite
+          - gemini-3-1-flash-image-preview
           - gemini-3-1-pro
           - gemini-3-1-pro-preview
           - gemini-3-1-pro-preview-customtools
@@ -1066,6 +1067,7 @@ endpoints:
           - seed-1-6-flash
           - seed-1-8
           - seed-2-0-mini
+          - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
@@ -1294,7 +1296,6 @@ endpoints:
       baseURL: 'https://api-inference.huggingface.co/v1'
       models:
         default:
-          - Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
           - CohereLabs/c4ai-command-r-plus
           - CohereLabs/c4ai-command-r-v01
           - HuggingFaceH4/zephyr-7b-alpha
@@ -1303,6 +1304,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
+          - Nanbeige/Nanbeige4.1-3B
           - NexaAI/Octopus-v2
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -2024,7 +2026,6 @@ endpoints:
           - step-3
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
-          - stepfun-ai/step-3.5-flash:thinking
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
@@ -2172,8 +2173,8 @@ endpoints:
           - microsoft/phi-4-mini-flash-reasoning
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
-          - minimaxai/minimax-m2
           - minimaxai/minimax-m2.1
+          - minimaxai/minimax-m2.5
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
@@ -2211,7 +2212,6 @@ endpoints:
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nemoretriever-300m-embed-v1
-          - nvidia/llama-3.2-nemoretriever-300m-embed-v2
           - nvidia/llama-3.2-nv-embedqa-1b-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v2
           - nvidia/llama-3.3-nemotron-super-49b-v1
@@ -2366,6 +2366,10 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
+          - '---BYTEDANCE-SEED---'
+          - bytedance-seed/seed-1.6
+          - bytedance-seed/seed-1.6-flash
+          - bytedance-seed/seed-2.0-mini
           - '---COHERE---'
           - cohere/command-a
           - cohere/command-r-08-2024
@@ -2397,6 +2401,7 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
+          - google/gemini-3.1-flash-image-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
           - google/gemma-2-27b-it
@@ -2442,7 +2447,6 @@ endpoints:
           - mistralai/ministral-8b-2512
           - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
-          - mistralai/mistral-7b-instruct-v0.2
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
@@ -2625,8 +2629,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
-          - bytedance-seed/seed-1.6
-          - bytedance-seed/seed-1.6-flash
           - bytedance/ui-tars-1.5-7b
           - deepcogito/cogito-v2.1-671b
           - eleutherai/llemma_7b
