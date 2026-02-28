@@ -517,7 +517,6 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
-          - babbage-002
           - chatx
           - chatx-fast
           - cheap
@@ -535,7 +534,6 @@ endpoints:
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-opus
-          - claude-3-opus-20240229-v1
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
@@ -576,7 +574,6 @@ endpoints:
           - command-r7b
           - command-r7b-12-2024
           - cydonia-24b-v4-1
-          - davinci-002
           - deephermes-3-mistral-24b-preview
           - deepseek-3-1
           - deepseek-3-1-nex-n1
@@ -673,7 +670,6 @@ endpoints:
           - gpt-3-5-turbo-1106
           - gpt-3-5-turbo-16k
           - gpt-3-5-turbo-instruct
-          - gpt-3-5-turbo-instruct-0914
           - gpt-4
           - gpt-4-0125-preview
           - gpt-4-0314
@@ -812,7 +808,6 @@ endpoints:
           - llama-3-1-large
           - llama-3-1-lumimaid-8b
           - llama-3-1-nemotron-70b-instruct
-          - llama-3-1-nemotron-ultra-253b-v1
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
@@ -964,7 +959,6 @@ endpoints:
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
           - o4-mini-high
-          - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
@@ -994,7 +988,6 @@ endpoints:
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
-          - qwen-2-5-vl-72b-instruct
           - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
@@ -1059,6 +1052,7 @@ endpoints:
           - seed-1-6-flash
           - seed-1-8
           - seed-2-0-mini
+          - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
@@ -1792,6 +1786,7 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
           - google/gemini-3.1-pro-preview
+          - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.1-pro-preview-high
           - google/gemini-3.1-pro-preview-low
           - google/gemini-flash-1.5
@@ -2123,6 +2118,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2.1
+          - minimaxai/minimax-m2.5
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
@@ -2282,7 +2278,6 @@ endpoints:
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
           - allenai/olmo-3.1-32b-instruct
-          - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
