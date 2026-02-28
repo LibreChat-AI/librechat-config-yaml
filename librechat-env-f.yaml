@@ -518,7 +518,6 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
-          - babbage-002
           - chatx
           - chatx-fast
           - cheap
@@ -535,8 +534,6 @@ endpoints:
           - claude-3-haiku
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
-          - claude-3-opus
-          - claude-3-opus-20240229-v1
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
@@ -577,8 +574,6 @@ endpoints:
           - command-r7b
           - command-r7b-12-2024
           - cydonia-24b-v4-1
-          - davinci-002
-          - deephermes-3-mistral-24b-preview
           - deepseek-3-1
           - deepseek-3-1-nex-n1
           - deepseek-3-1-terminus
@@ -596,8 +591,6 @@ endpoints:
           - deepseek-r1-distill-qwen-14b
           - deepseek-r1-distill-qwen-32b
           - deepseek-r1-turbo
-          - deepseek-r1t-chimera
-          - deepseek-r1t2-chimera
           - deepseek-r3-1
           - deepseek-v3
           - deepseek-v3-0324
@@ -615,7 +608,6 @@ endpoints:
           - devstral-small
           - devstral-small-2505
           - devstral-small-2507
-          - dolphin-mistral-24b-venice-edition
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
@@ -656,7 +648,6 @@ endpoints:
           - gemma-3-12b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
-          - gemma-3n-e2b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -674,7 +665,6 @@ endpoints:
           - gpt-3-5-turbo-1106
           - gpt-3-5-turbo-16k
           - gpt-3-5-turbo-instruct
-          - gpt-3-5-turbo-instruct-0914
           - gpt-4
           - gpt-4-0125-preview
           - gpt-4-0314
@@ -716,7 +706,6 @@ endpoints:
           - gpt-5-2-chat-latest
           - gpt-5-2-codex
           - gpt-5-2-pro
-          - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
           - gpt-5-3-codex
           - gpt-5-chat
@@ -729,7 +718,6 @@ endpoints:
           - gpt-5-nano
           - gpt-5-nano-2025-08-07
           - gpt-5-pro
-          - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
           - gpt-audio
@@ -760,7 +748,6 @@ endpoints:
           - grok-4-1-fast-non-reasoning-latest
           - grok-4-fast
           - grok-4-fast-non-reasoning
-          - grok-4-latest
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
@@ -773,7 +760,6 @@ endpoints:
           - inflection-3-pi
           - inflection-3-productivity
           - intellect-3
-          - internvl-3-78b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-large-1-7
@@ -813,7 +799,6 @@ endpoints:
           - llama-3-1-large
           - llama-3-1-lumimaid-8b
           - llama-3-1-nemotron-70b-instruct
-          - llama-3-1-nemotron-ultra-253b-v1
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
@@ -927,7 +912,6 @@ endpoints:
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2
-          - nemotron-nano-12b-v2-vl
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
@@ -954,21 +938,15 @@ endpoints:
           - o3
           - o3-2025-04-16
           - o3-deep-research
-          - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
           - o3-mini-high
-          - o3-pro
-          - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-deep-research
-          - o4-mini-deep-research-2025-06-26
           - o4-mini-high
-          - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
-          - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
           - olmocr-2-7b-1025
@@ -995,7 +973,6 @@ endpoints:
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
-          - qwen-2-5-vl-72b-instruct
           - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
@@ -1013,7 +990,6 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-32b-v1
-          - qwen-3-4b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
           - qwen-3-5-35b-a3b
@@ -1070,14 +1046,12 @@ endpoints:
           - sonar-pro
           - sonar-pro-search
           - sonar-reasoning-pro
-          - sora-2
           - sora-2-pro
           - sorcererlm-8x22b
           - spotlight
           - step-3
           - step-3-5-flash
           - test123
-          - tng-r1t-chimera
           - tongyi-deepresearch-30b-a3b
           - trinity-large-preview
           - trinity-mini
@@ -1795,6 +1769,7 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
           - google/gemini-3.1-pro-preview
+          - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.1-pro-preview-high
           - google/gemini-3.1-pro-preview-low
           - google/gemini-flash-1.5
@@ -2286,7 +2261,6 @@ endpoints:
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
           - allenai/olmo-3.1-32b-instruct
-          - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
