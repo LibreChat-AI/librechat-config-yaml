@@ -1,0 +1,17 @@
+version: 1.2.1
+
+cache: true
+
+mcpSettings:
+  allowedDomains:
+    - "seo-data-api-mcp-server.railway.internal"
+
+mcpServers:
+  se-ranking:
+    type: sse
+    url: "http://seo-data-api-mcp-server.railway.internal:5000/sse"
+    title: "SE Ranking"
+    description: "SEO data, keyword rankings, competitor analysis, and site audits"
+    timeout: 30000
+    initTimeout: 15000
+    serverInstructions: true
