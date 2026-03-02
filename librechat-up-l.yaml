@@ -567,7 +567,6 @@ endpoints:
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
           - cogito-v2-1-671b
@@ -749,7 +748,6 @@ endpoints:
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
-          - grok-3-fast
           - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
@@ -758,7 +756,6 @@ endpoints:
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
-          - grok-4-1-fast-non-reasoning
           - grok-4-fast
           - grok-code-fast
           - grok-code-fast-1
@@ -847,12 +844,12 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
+          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
-          - magnum-v4-72b
           - marin-8b-instruct
           - mercury
           - mercury-coder
@@ -1000,8 +997,6 @@ endpoints:
           - qwen-3-235b-a22b
           - qwen-3-235b-a22b-07-25
           - qwen-3-235b-a22b-2507
-          - qwen-3-235b-a22b-instruct
-          - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
@@ -1014,7 +1009,6 @@ endpoints:
           - qwen-3-5-27b
           - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
-          - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
@@ -2638,7 +2632,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - nex-agi/deepseek-v3.1-nex-n1
-          - opengvlab/internvl3-78b
           - openrouter/bodybuilder
           - openrouter/free
           - prime-intellect/intellect-3
