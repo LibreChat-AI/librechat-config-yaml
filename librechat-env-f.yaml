@@ -560,7 +560,6 @@ endpoints:
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
-          - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
           - cogito-v2-1-671b
@@ -742,8 +741,6 @@ endpoints:
           - grok-2-vision-latest
           - grok-3
           - grok-3-beta
-          - grok-3-fast
-          - grok-3-fast-beta
           - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
@@ -752,10 +749,7 @@ endpoints:
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
-          - grok-4-1-fast-non-reasoning
-          - grok-4-1-fast-non-reasoning-latest
           - grok-4-fast
-          - grok-4-fast-non-reasoning
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
@@ -849,7 +843,6 @@ endpoints:
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
-          - magnum-v4-72b
           - marin-8b-instruct
           - mercury
           - mercury-coder
@@ -2594,7 +2587,6 @@ endpoints:
           - neversleep/llama-3.1-lumimaid-8b
           - neversleep/noromaid-20b
           - nex-agi/deepseek-v3.1-nex-n1
-          - opengvlab/internvl3-78b
           - openrouter/bodybuilder
           - openrouter/free
           - prime-intellect/intellect-3
