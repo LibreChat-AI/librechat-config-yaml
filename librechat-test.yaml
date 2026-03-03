@@ -563,6 +563,7 @@ endpoints:
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
           - cogito-v2-1-671b
@@ -632,7 +633,6 @@ endpoints:
           - gemini-2-5-flash-lite-preview-09-2025
           - gemini-2-5-pro
           - gemini-2-5-pro-preview
-          - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
           - gemini-2-flash-lite
           - gemini-3-1-flash-image-preview
@@ -837,7 +837,6 @@ endpoints:
           - llama-4-scout-17b-16e-instruct
           - llama-4-scout-17b-instruct
           - llama-4-scout-17b-instruct-v1
-          - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
           - llemma-7b
@@ -846,6 +845,7 @@ endpoints:
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
+          - magnum-v4-72b
           - marin-8b-instruct
           - mercury
           - mercury-coder
@@ -947,16 +947,15 @@ endpoints:
           - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
-          - o3-mini-high
           - o3-pro
           - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
-          - o4-mini-high
           - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
+          - olmo-3-1-32b-think
           - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
@@ -993,7 +992,6 @@ endpoints:
           - qwen-3-235b-a22b
           - qwen-3-235b-a22b-07-25
           - qwen-3-235b-a22b-2507
-          - qwen-3-235b-a22b-instruct
           - qwen-3-235b-a22b-instruct-2507
           - qwen-3-235b-a22b-thinking
           - qwen-3-235b-a22b-thinking-2507
@@ -1058,7 +1056,6 @@ endpoints:
           - sonar-deep-research
           - sonar-pro
           - sonar-pro-search
-          - sonar-reasoning-pro
           - sora-2
           - sora-2-pro
           - sorcererlm-8x22b
@@ -1323,7 +1320,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - deepseek-ai/DeepSeek-V3.1
           - deepseek-ai/DeepSeek-V3.1-Base
           - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V3.2-Exp
@@ -2312,7 +2308,6 @@ endpoints:
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
           - stepfun/step-3.5-flash:free
-          - upstage/solar-pro-3:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2328,6 +2323,7 @@ endpoints:
           - allenai/olmo-3-7b-instruct
           - allenai/olmo-3-7b-think
           - allenai/olmo-3.1-32b-instruct
+          - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
@@ -2352,7 +2348,6 @@ endpoints:
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
-          - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
           - baidu/ernie-4.5-21b-a3b
@@ -2654,6 +2649,7 @@ endpoints:
           - tencent/hunyuan-a13b-instruct
           - tngtech/deepseek-r1t2-chimera
           - undi95/remm-slerp-l2-13b
+          - upstage/solar-pro-3
           - writer/palmyra-x5
           - xiaomi/mimo-v2-flash
         fetch: false
