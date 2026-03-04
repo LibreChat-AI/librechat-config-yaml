@@ -517,6 +517,7 @@ endpoints:
           - aion
           - aion-1-0
           - aion-1-0-mini
+          - aion-2-0
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
@@ -538,7 +539,6 @@ endpoints:
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-sonnet-20240229-v1
-          - claude-4-opus
           - claude-4-sonnet
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
@@ -583,6 +583,7 @@ endpoints:
           - deepseek-3-2
           - deepseek-3-2-exp
           - deepseek-chat-v3-0324
+          - deepseek-chat-v3-1
           - deepseek-ocr
           - deepseek-prover-v2-671b
           - deepseek-r1
@@ -603,7 +604,6 @@ endpoints:
           - deepseek-v3-1-terminus
           - deepseek-v3-2
           - deepseek-v3-2-exp
-          - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
           - devstral
           - devstral-2512
@@ -613,29 +613,36 @@ endpoints:
           - devstral-small-2507
           - dolphin-mistral-24b-venice-edition
           - ernie-4-5-21b-a3b
+          - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
+          - ernie-4-5-vl-424b-a47b
+          - free
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
           - gemini-1-5-flash-8b-exp
           - gemini-2-0-flash-001
           - gemini-2-0-flash-lite-001
           - gemini-2-5-flash
+          - gemini-2-5-flash-image
           - gemini-2-5-flash-lite
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-lite-preview-09-2025
           - gemini-2-5-pro
-          - gemini-2-5-pro-preview
+          - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
           - gemini-2-flash-lite
           - gemini-3-1-flash-image-preview
+          - gemini-3-1-flash-lite-preview
           - gemini-3-1-pro
           - gemini-3-1-pro-preview
+          - gemini-3-1-pro-preview-customtools
           - gemini-3-flash
           - gemini-3-flash-preview
           - gemini-3-pro
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
+          - gemini-3-pro-preview
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -649,7 +656,6 @@ endpoints:
           - giant-context
           - glm-4-32b
           - glm-4-5
-          - glm-4-5-air
           - glm-4-5v
           - glm-4-6
           - glm-4-6v
@@ -707,10 +713,15 @@ endpoints:
           - gpt-5-2-pro
           - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
+          - gpt-5-3
+          - gpt-5-3-chat
+          - gpt-5-3-chat-latest
           - gpt-5-3-codex
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
+          - gpt-5-image
+          - gpt-5-image-mini
           - gpt-5-mini
           - gpt-5-mini-2025-08-07
           - gpt-5-nano
@@ -723,14 +734,9 @@ endpoints:
           - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
-          - gpt-oss-120b-turbo
           - gpt-oss-20b
-          - gpt-oss-20b-1
           - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
-          - granite-4-0-h-micro
-          - grok-2-vision
-          - grok-2-vision-latest
           - grok-3
           - grok-3-beta
           - grok-3-latest
@@ -741,8 +747,8 @@ endpoints:
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
+          - grok-4-fast
           - grok-code-fast
-          - grok-code-fast-1
           - grok-code-fast-1-0825
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
@@ -752,6 +758,7 @@ endpoints:
           - hunyuan-a13b-instruct
           - inflection-3-pi
           - inflection-3-productivity
+          - intellect-3
           - internvl-3-78b
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
@@ -761,6 +768,7 @@ endpoints:
           - kimi-k2-0905
           - kimi-k2-5
           - kimi-k2-instruct
+          - kimi-k2-instruct-0905
           - kimi-k2-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
@@ -775,6 +783,7 @@ endpoints:
           - lfm-2-2-6b
           - lfm-2-24b-a2b
           - lfm-2-5-1-2b-instruct
+          - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - llama-2-13b
           - llama-2-13b-chat-hf
@@ -822,6 +831,7 @@ endpoints:
           - llama-4-scout-17b-16e-instruct
           - llama-4-scout-17b-instruct
           - llama-4-scout-17b-instruct-v1
+          - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
           - llemma-7b
@@ -839,7 +849,6 @@ endpoints:
           - mimo-v2-flash
           - minimax
           - minimax-01
-          - minimax-m1
           - minimax-m2
           - minimax-m2-1
           - minimax-m2-5
@@ -920,7 +929,7 @@ endpoints:
           - nova-reel
           - nova-reel-v1
           - nova-sonic-v1
-          - nvidia-nemotron-nano-12b-v2-vl
+          - nvidia-nemotron-nano-9b-v2
           - o1
           - o1-2024-12-17
           - o1-pro
@@ -931,21 +940,23 @@ endpoints:
           - o3-deep-research-2025-06-26
           - o3-mini
           - o3-mini-2025-01-31
+          - o3-mini-high
           - o3-pro
           - o3-pro-2025-06-10
           - o4-mini
           - o4-mini-2025-04-16
           - o4-mini-deep-research
           - o4-mini-deep-research-2025-06-26
+          - o4-mini-high
           - olmo-2-0325-32b-instruct
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
           - olmo-3-7b-instruct
+          - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
-          - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
@@ -986,31 +997,37 @@ endpoints:
           - qwen-3-4b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
+          - qwen-3-5-35b-a3b
+          - qwen-3-5-397b-a17b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
-          - qwen-3-coder-30b-a3b-instruct
           - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-turbo
+          - qwen-3-coder-flash
           - qwen-3-coder-next
           - qwen-3-coder-plus
           - qwen-3-max
           - qwen-3-max-thinking
           - qwen-3-next-80b-a3b
           - qwen-3-next-80b-a3b-instruct
+          - qwen-3-next-80b-a3b-thinking
           - qwen-3-vl-235b-a22b
           - qwen-3-vl-235b-a22b-instruct
+          - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
+          - qwen-3-vl-8b-instruct
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
           - qwen-turbo
           - qwen-vl-max
           - qwen-vl-plus
+          - qwq-32b
           - reasoners
           - refuel-llm-v2-small
           - relace-apply-3
@@ -1027,10 +1044,12 @@ endpoints:
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
+          - solar-pro-3
           - sonar
           - sonar-deep-research
           - sonar-pro
           - sonar-pro-search
+          - sonar-reasoning-pro
           - sora-2
           - sora-2-pro
           - sorcererlm-8x22b
@@ -1038,6 +1057,7 @@ endpoints:
           - step-3
           - step-3-5-flash
           - test123
+          - tongyi-deepresearch-30b-a3b
           - trinity-large-preview
           - trinity-mini
           - ui-tars-1-5-7b
@@ -1806,6 +1826,7 @@ endpoints:
           - glm-zero-preview
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
+          - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.1-pro-preview-high
@@ -1925,6 +1946,7 @@ endpoints:
           - openai/gpt-5.2-chat
           - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
+          - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2003,6 +2025,7 @@ endpoints:
           - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
+          - upstage/solar-pro-3
           - v0-1.0-md
           - v0-1.5-lg
           - v0-1.5-md
@@ -2166,6 +2189,7 @@ endpoints:
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/cosmos-reason2-8b
           - nvidia/embed-qa-4
+          - nvidia/gliner-pii
           - nvidia/llama-3.1-nemoguard-8b-content-safety
           - nvidia/llama-3.1-nemoguard-8b-topic-control
           - nvidia/llama-3.1-nemotron-51b-instruct
@@ -2323,6 +2347,7 @@ endpoints:
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
+          - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
           - baidu/ernie-4.5-21b-a3b
@@ -2366,6 +2391,7 @@ endpoints:
           - google/gemini-3-pro-image-preview
           - google/gemini-3-pro-preview
           - google/gemini-3.1-flash-image-preview
+          - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
           - google/gemma-2-27b-it
@@ -2409,9 +2435,7 @@ endpoints:
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
-          - mistralai/mistral-7b-instruct
           - mistralai/mistral-7b-instruct-v0.1
-          - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
@@ -2485,6 +2509,7 @@ endpoints:
           - openai/gpt-5.2-chat
           - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
+          - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-audio
           - openai/gpt-audio-mini
