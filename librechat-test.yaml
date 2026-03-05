@@ -717,6 +717,7 @@ endpoints:
           - gpt-5-2-pro
           - gpt-5-2-pro-2025-12-11
           - gpt-5-2025-08-07
+          - gpt-5-3
           - gpt-5-3-chat
           - gpt-5-3-chat-latest
           - gpt-5-3-codex
@@ -739,11 +740,9 @@ endpoints:
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
           - gpt-oss-20b
-          - gpt-oss-20b-1
           - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
-          - grok-2-vision
           - grok-3
           - grok-3-beta
           - grok-3-latest
@@ -2253,7 +2252,6 @@ endpoints:
           - qwen/qwen2.5-7b-instruct
           - qwen/qwen2.5-coder-32b-instruct
           - qwen/qwen2.5-coder-7b-instruct
-          - qwen/qwen3-235b-a22b
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
