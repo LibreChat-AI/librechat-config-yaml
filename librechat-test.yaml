@@ -539,6 +539,7 @@ endpoints:
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-sonnet-20240229-v1
+          - claude-4-opus
           - claude-4-sonnet
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
@@ -604,6 +605,7 @@ endpoints:
           - deepseek-v3-1-terminus
           - deepseek-v3-2
           - deepseek-v3-2-exp
+          - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
           - devstral
           - devstral-2512
@@ -629,13 +631,13 @@ endpoints:
           - gemini-2-5-flash-lite-preview-06-17
           - gemini-2-5-flash-lite-preview-09-2025
           - gemini-2-5-pro
+          - gemini-2-5-pro-preview
           - gemini-2-5-pro-preview-05-06
           - gemini-2-flash
           - gemini-2-flash-lite
           - gemini-3-1-flash-image-preview
           - gemini-3-1-flash-lite-preview
           - gemini-3-1-pro
-          - gemini-3-1-pro-preview
           - gemini-3-1-pro-preview-customtools
           - gemini-3-flash
           - gemini-3-flash-preview
@@ -656,6 +658,7 @@ endpoints:
           - giant-context
           - glm-4-32b
           - glm-4-5
+          - glm-4-5-air
           - glm-4-5v
           - glm-4-6
           - glm-4-6v
@@ -734,9 +737,11 @@ endpoints:
           - gpt-audio-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
+          - gpt-oss-120b-turbo
           - gpt-oss-20b
           - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
+          - granite-4-0-h-micro
           - grok-3
           - grok-3-beta
           - grok-3-latest
@@ -749,11 +754,11 @@ endpoints:
           - grok-4-1-fast
           - grok-4-fast
           - grok-code-fast
+          - grok-code-fast-1
           - grok-code-fast-1-0825
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
-          - hermes-4-405b
           - hermes-4-70b
           - hunyuan-a13b-instruct
           - inflection-3-pi
@@ -780,11 +785,9 @@ endpoints:
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
-          - lfm-2-2-6b
           - lfm-2-24b-a2b
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
-          - lfm-2-8b-a1b
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -849,6 +852,7 @@ endpoints:
           - mimo-v2-flash
           - minimax
           - minimax-01
+          - minimax-m1
           - minimax-m2
           - minimax-m2-1
           - minimax-m2-5
@@ -929,6 +933,7 @@ endpoints:
           - nova-reel
           - nova-reel-v1
           - nova-sonic-v1
+          - nvidia-nemotron-nano-12b-v2-vl
           - nvidia-nemotron-nano-9b-v2
           - o1
           - o1-2024-12-17
@@ -957,6 +962,7 @@ endpoints:
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
+          - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
@@ -991,9 +997,7 @@ endpoints:
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
           - qwen-3-30b-a3b-instruct-2507
-          - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
-          - qwen-3-32b-v1
           - qwen-3-4b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
@@ -1003,6 +1007,7 @@ endpoints:
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
+          - qwen-3-coder-30b-a3b-instruct
           - qwen-3-coder-30b-a3b-v1
           - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-turbo
@@ -2206,6 +2211,7 @@ endpoints:
           - nvidia/llama-3.2-nv-embedqa-1b-v2
           - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
+          - nvidia/llama-nemotron-embed-1b-v2
           - nvidia/llama-nemotron-embed-vl-1b-v2
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/llama3-chatqa-1.5-8b
@@ -2242,7 +2248,6 @@ endpoints:
           - qwen/qwen2.5-7b-instruct
           - qwen/qwen2.5-coder-32b-instruct
           - qwen/qwen2.5-coder-7b-instruct
-          - qwen/qwen3-235b-a22b
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
