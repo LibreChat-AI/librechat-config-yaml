@@ -567,6 +567,7 @@ endpoints:
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
+          - codellama-7b-instruct-solidity
           - coder-large
           - codestral-2508
           - cogito-v2-1-671b
@@ -848,6 +849,7 @@ endpoints:
           - llama-guard-2-8b
           - llama-guard-3-8b
           - llama-guard-4-12b
+          - llemma-7b
           - longcat-flash
           - longcat-flash-chat
           - maestro-reasoning
