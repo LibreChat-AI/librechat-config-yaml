@@ -528,7 +528,6 @@ endpoints:
           - aibi
           - aion
           - aion-1-0
-          - aion-1-0-mini
           - aion-2-0
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
@@ -789,6 +788,7 @@ endpoints:
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-5
+          - kimi-k2-5-turbo
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
@@ -810,7 +810,6 @@ endpoints:
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
-          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
@@ -938,7 +937,6 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
-          - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
           - nova-lite
