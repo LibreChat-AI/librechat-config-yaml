@@ -513,7 +513,6 @@ endpoints:
           - aibi
           - aion
           - aion-1-0
-          - aion-1-0-mini
           - aion-2-0
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
@@ -555,6 +554,7 @@ endpoints:
           - claude-sonnet-4-20250514-v1
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
+          - claude-sonnet-4-5-20250929-v1
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
@@ -650,7 +650,6 @@ endpoints:
           - gemma-3-12b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
-          - gemma-3n-e2b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -720,15 +719,12 @@ endpoints:
           - gpt-5-4-2026-03-05
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
-          - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
           - gpt-5-image
           - gpt-5-image-mini
           - gpt-5-mini
-          - gpt-5-mini-2025-08-07
           - gpt-5-nano
-          - gpt-5-nano-2025-08-07
           - gpt-5-pro
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
@@ -779,6 +775,7 @@ endpoints:
           - kimi-k2-thinking
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
+          - l3-1-euryale-70b
           - l3-3-70b-euryale-v2-3
           - l3-3-euryale-70b
           - l3-8b-lunaris-v1-turbo
@@ -790,10 +787,10 @@ endpoints:
           - lfm-2-24b-a2b
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
+          - lfm-2-8b-a1b
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
-          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
@@ -921,7 +918,6 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
-          - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
           - nova-lite
@@ -961,6 +957,7 @@ endpoints:
           - olmo-3-32b-think
           - olmo-3-7b-instruct
           - olmo-3-7b-think
+          - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
           - paddleocr-vl-0-9b
@@ -980,7 +977,6 @@ endpoints:
           - qwen-2-5-7b-instruct-turbo
           - qwen-2-5-coder-32b-instruct
           - qwen-2-5-coder-7b
-          - qwen-2-5-coder-7b-instruct
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
@@ -1001,16 +997,15 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-4b
-          - qwen-3-5-122b-a10b
           - qwen-3-5-27b
           - qwen-3-5-35b-a3b
+          - qwen-3-5-397b-a17b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
           - qwen-3-coder-30b-a3b-v1
-          - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
           - qwen-3-coder-next
@@ -1050,6 +1045,7 @@ endpoints:
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
+          - solar-pro-3
           - sonar
           - sonar-deep-research
           - sonar-pro
@@ -1478,13 +1474,6 @@ endpoints:
           - GLM-4.5-Air-Derestricted-Steam-ReExtract
           - GLM-4.6-Derestricted-v5
           - GalrionSoftworks/MN-LooseCannon-12B-v1
-          - Gemma-3-27B-ArliAI-RPMax-v3
-          - Gemma-3-27B-Big-Tiger-v3
-          - Gemma-3-27B-CardProjector-v4
-          - Gemma-3-27B-Glitter
-          - Gemma-3-27B-Nidum-Uncensored
-          - Gemma-3-27B-it
-          - Gemma-3-27B-it-Abliterated
           - Gryphe/MythoMax-L2-13b
           - Infermatic/MN-12B-Inferor-v0.0
           - KAT-Coder-Air-V1
