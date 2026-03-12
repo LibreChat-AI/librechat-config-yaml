@@ -4,6 +4,7 @@ cache: true
 
 registration:
   socialLogins:
+    - "apple"
     - "discord"
     - "facebook"
     - "github"

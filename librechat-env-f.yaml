@@ -5,6 +5,7 @@ fileStrategy: "firebase"
 
 registration:
   socialLogins:
+    - "apple"
     - "discord"
     - "facebook"
     - "github"

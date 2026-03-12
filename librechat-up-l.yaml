@@ -12,6 +12,7 @@ interface:
 
 registration:
   socialLogins:
+    - "apple"
     - "discord"
     - "facebook"
     - "github"
