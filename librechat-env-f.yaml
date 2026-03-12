@@ -1856,6 +1856,8 @@ endpoints:
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - nvidia/nemotron-3-nano-30b-a3b
+          - nvidia/nemotron-3-super-120b-a12b
+          - nvidia/nemotron-3-super-120b-a12b:thinking
           - nvidia/nvidia-nemotron-nano-9b-v2
           - openai/chatgpt-4o-latest
           - openai/gpt-3.5-turbo
@@ -2156,6 +2158,7 @@ endpoints:
           - nvidia/mistral-nemo-minitron-8b-base
           - nvidia/nemoretriever-parse
           - nvidia/nemotron-3-nano-30b-a3b
+          - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-4-mini-hindi-4b-instruct
@@ -2243,6 +2246,7 @@ endpoints:
           - mistralai/mistral-small-3.1-24b-instruct:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
+          - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
@@ -2474,6 +2478,11 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - '---OPENROUTER---'
+          - openrouter/bodybuilder
+          - openrouter/free
+          - openrouter/healer-alpha
+          - openrouter/hunter-alpha
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2580,8 +2589,6 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/deepseek-v3.1-nex-n1
-          - openrouter/bodybuilder
-          - openrouter/free
           - prime-intellect/intellect-3
           - relace/relace-apply-3
           - relace/relace-search
