@@ -551,7 +551,6 @@ endpoints:
           - claude-opus-4
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
-          - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
@@ -588,7 +587,6 @@ endpoints:
           - deepseek-3-2-exp
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
-          - deepseek-ocr
           - deepseek-prover-v2-671b
           - deepseek-r1
           - deepseek-r1-0528
@@ -657,7 +655,6 @@ endpoints:
           - gemma-3-12b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
-          - gemma-3n-e2b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -706,7 +703,6 @@ endpoints:
           - gpt-5
           - gpt-5-1
           - gpt-5-1-2025-11-13
-          - gpt-5-1-chat
           - gpt-5-1-chat-latest
           - gpt-5-1-codex
           - gpt-5-1-codex-max
@@ -758,6 +754,8 @@ endpoints:
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
+          - grok-4-20-beta
+          - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
           - grok-code-fast-1
@@ -858,7 +856,6 @@ endpoints:
           - marin-8b-instruct
           - mercury
           - mercury-2
-          - mercury-coder
           - mimo-2-flash
           - mimo-v2-flash
           - minimax
@@ -868,6 +865,7 @@ endpoints:
           - minimax-m2-1
           - minimax-m2-5
           - minimax-m2-her
+          - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
           - ministral-3-8b-instruct
@@ -922,6 +920,7 @@ endpoints:
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
           - nemotron-3-nano-30b-a3b
+          - nemotron-3-super-120b-a12b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
@@ -967,10 +966,12 @@ endpoints:
           - olmo-3-1-32b-instruct
           - olmo-3-1-32b-think
           - olmo-3-32b-think
+          - olmo-3-7b-instruct
           - olmo-3-7b-think
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
+          - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
@@ -992,6 +993,7 @@ endpoints:
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
           - qwen-2-5-vl-72b-instruct
+          - qwen-2-5-vl-7b-instruct
           - qwen-2-72b-instruct
           - qwen-2-large
           - qwen-2-small
@@ -1004,6 +1006,7 @@ endpoints:
           - qwen-3-235b-a22b-thinking-2507
           - qwen-3-30b-a3b
           - qwen-3-30b-a3b-instruct-2507
+          - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-4b
           - qwen-3-5-122b-a10b
@@ -1043,7 +1046,9 @@ endpoints:
           - reasoners
           - refuel-llm-v2-small
           - relace-apply-3
+          - relace-search
           - remm-slerp-l2-13b
+          - rnj-1-instruct
           - rocinante-12b
           - router
           - seed-1-6
@@ -1059,6 +1064,7 @@ endpoints:
           - sonar
           - sonar-deep-research
           - sonar-pro
+          - sonar-pro-search
           - sonar-reasoning-pro
           - sora-2
           - sora-2-pro
@@ -2029,6 +2035,9 @@ endpoints:
           - x-ai/grok-4-fast:thinking
           - x-ai/grok-4.1-fast
           - x-ai/grok-4.1-fast-reasoning
+          - x-ai/grok-4.20-beta-non-reasoning
+          - x-ai/grok-4.20-beta-reasoning
+          - x-ai/grok-4.20-multi-agent-beta
           - x-ai/grok-code-fast-1
           - xiaomi/mimo-v2-flash
           - xiaomi/mimo-v2-flash-original
@@ -2604,6 +2613,8 @@ endpoints:
           - x-ai/grok-4
           - x-ai/grok-4-fast
           - x-ai/grok-4.1-fast
+          - x-ai/grok-4.20-beta
+          - x-ai/grok-4.20-multi-agent-beta
           - x-ai/grok-code-fast-1
           - '---Z-AI---'
           - z-ai/glm-4-32b
