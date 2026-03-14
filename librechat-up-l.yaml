@@ -560,7 +560,6 @@ endpoints:
           - claude-opus-4
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
-          - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
@@ -774,7 +773,6 @@ endpoints:
           - grok-code-fast-1
           - grok-code-fast-1-0825
           - healer-alpha
-          - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
           - hermes-4-405b
@@ -802,7 +800,6 @@ endpoints:
           - l3-3-70b-euryale-v2-3
           - l3-3-euryale-70b
           - l3-8b-lunaris-v1-turbo
-          - l3-euryale-70b
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
@@ -1643,6 +1640,7 @@ endpoints:
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3-30b-a3b-instruct-2507
           - TEE/qwen3-coder
+          - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
