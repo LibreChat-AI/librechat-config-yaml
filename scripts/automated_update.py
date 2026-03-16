@@ -41,7 +41,9 @@ def validate_yaml_file(file_path):
         yaml = YAML()
         yaml.preserve_quotes = True
         yaml.width = 4096
-        
+        yaml.default_flow_style = False
+        yaml.indent(mapping=2, sequence=4, offset=2)
+
         with open(file_path, 'r', encoding='utf-8') as f:
             content = yaml.load(f)
             
