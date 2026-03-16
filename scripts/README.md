@@ -115,12 +115,9 @@ This repository includes automated daily model updates via GitHub Actions.
    NOTIFICATION_WEBHOOK  # Slack/Discord webhook URL
    ```
 
-   Optional for Railway auto-redeployment (see [Railway Integration](#railway-integration)):
+   Optional for automatic deploy webhook:
    ```
-   RAILWAY_TOKEN
-   RAILWAY_PROJECT_ID
-   RAILWAY_ENVIRONMENT_ID
-   RAILWAY_SERVICE_ID
+   DEPLOY_WEBHOOK_URL  # URL to trigger redeployment after model updates
    ```
 
 2. **Workflow Configuration**
@@ -136,15 +133,16 @@ This repository includes automated daily model updates via GitHub Actions.
    - **On Success**: Changes are committed directly to main branch with notification
    - **On YAML Validation Failure**: Creates a PR for manual review and notifies @Berry-13
    - **On Script Failure**: Sends failure notification
-   - **Railway Redeployment**: After successful commit, triggers Railway redeployment (if configured)
+   - **Deploy Webhook**: After successful commit, triggers deploy webhook (if configured)
 
-4. **Railway Redeployment**
+4. **Deploy Webhook**
 
-   After model updates are committed, the workflow can automatically trigger a Railway redeployment:
+   After model updates are committed, the workflow can trigger a deploy webhook:
 
-   - **Enable/Disable**: Set repository variable `RAILWAY_REDEPLOY` to `true` or `false` (defaults to `true`)
-   - **Requirements**: All four Railway secrets must be configured
-   - **Behavior**: Skips silently if `RAILWAY_TOKEN` is not set
+   - **Configuration**: Add `DEPLOY_WEBHOOK_URL` as a repository secret
+   - **Behavior**: If not configured, the step logs a warning and continues without error
+   - **Payload**: JSON with `event`, `date`, `repository`, and `run_id` fields
+   - **Use case**: Trigger redeployment on any platform (Docker server, cloud provider, etc.)
 
 5. **Customizing the Schedule**
 
@@ -173,70 +171,6 @@ Supported formats:
 - Slack incoming webhooks
 - Discord webhooks
 - Any webhook accepting JSON with `text` field
-
-## Railway Integration
-
-Automatically redeploy your LibreChat instance on Railway after model list updates.
-
-### Overview
-
-The [`railway_redeploy.py`](railway_redeploy.py) script uses the Railway GraphQL API to trigger a redeployment of your LibreChat service whenever model lists are updated.
-
-### Required Environment Variables
-
-```bash
-# Railway API Token - https://railway.app/account/tokens
-RAILWAY_TOKEN=your-railway-api-token
-
-# Project ID - Found in your Railway project URL or settings
-RAILWAY_PROJECT_ID=your-project-id
-
-# Environment ID - The deployment environment (e.g., production)
-RAILWAY_ENV_ID=your-environment-id
-
-# Service ID - The specific service to redeploy
-RAILWAY_SERVICE_ID=your-service-id
-```
-
-### How to Obtain Railway Values
-
-1. **RAILWAY_TOKEN**
-   - Go to [Railway Account Tokens](https://railway.app/account/tokens)
-   - Create a new token with appropriate permissions
-   - Copy the token value
-
-2. **RAILWAY_PROJECT_ID**
-   - Open your project in Railway dashboard
-   - The project ID is in the URL: `https://railway.app/project/<PROJECT_ID>`
-   - Or find it in Project Settings → General
-
-3. **RAILWAY_ENV_ID**
-   - In your project, go to Settings → Environments
-   - Click on the environment you want to deploy to
-   - The environment ID is in the URL or settings panel
-
-4. **RAILWAY_SERVICE_ID**
-   - Click on your service in the Railway dashboard
-   - The service ID is in the URL: `https://railway.app/project/<PROJECT_ID>/service/<SERVICE_ID>`
-
-### GitHub Actions Configuration
-
-To enable Railway redeployment in the automated workflow:
-
-1. Add the four Railway secrets to your repository (Settings → Secrets → Actions)
-2. Optionally set the `RAILWAY_REDEPLOY` repository variable:
-   - Go to Settings → Secrets and variables → Actions → Variables
-   - Add `RAILWAY_REDEPLOY` with value `true` (enabled) or `false` (disabled)
-   - Default is `true` if not set
-
-### Manual Usage
-
-Run the redeployment script locally:
-
-```bash
-cd scripts
-python railway_redeploy.py
-```
 
 ## Directory Structure
 
