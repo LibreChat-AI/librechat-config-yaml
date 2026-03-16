@@ -5,7 +5,16 @@ from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from enum import Enum
-from typing import Optional
+from typing import Any, Optional
+
+import httpx
+from tenacity import (
+    retry,
+    retry_if_exception,
+    stop_after_attempt,
+    wait_exponential_jitter,
+    before_sleep_log,
+)
 
 
 class FetchStatus(Enum):
@@ -27,6 +36,13 @@ class FetchResult:
 
     def __post_init__(self):
         self.model_count = len(self.models)
+
+
+def _is_transient_error(exc: BaseException) -> bool:
+    """Return True for transient HTTP errors worth retrying."""
+    if isinstance(exc, httpx.HTTPStatusError):
+        return exc.response.status_code in (429, 500, 502, 503, 504)
+    return isinstance(exc, (httpx.ConnectError, httpx.TimeoutException))
 
 
 # Module-level registry: provider_name -> fetcher class
@@ -81,6 +97,40 @@ class BaseFetcher(ABC):
                 status=FetchStatus.NETWORK_ERROR,
                 error_message=str(e),
             )
+
+    def _http_get(
+        self,
+        url: str,
+        *,
+        headers: dict[str, str] | None = None,
+        params: dict[str, Any] | None = None,
+        timeout: float = 30.0,
+        follow_redirects: bool = True,
+    ) -> httpx.Response:
+        """GET request with automatic retry on transient errors."""
+
+        @retry(
+            stop=stop_after_attempt(3),
+            wait=wait_exponential_jitter(initial=2, max=30),
+            retry=retry_if_exception(_is_transient_error),
+            before_sleep=before_sleep_log(
+                logging.getLogger(f"fetcher.{self.provider_name}"),
+                logging.WARNING,
+            ),
+            reraise=True,
+        )
+        def _do_get() -> httpx.Response:
+            response = httpx.get(
+                url,
+                headers=headers,
+                params=params,
+                timeout=timeout,
+                follow_redirects=follow_redirects,
+            )
+            response.raise_for_status()
+            return response
+
+        return _do_get()
 
 
 def get_registry() -> dict[str, type[BaseFetcher]]:
