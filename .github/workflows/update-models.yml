@@ -95,28 +95,28 @@ jobs:
           git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
           git push
       
-      - name: Redeploy on Railway
+      - name: Trigger deploy webhook
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true'
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
-          RAILWAY_ENV_ID: ${{ secrets.RAILWAY_ENVIRONMENT_ID }}
-          RAILWAY_SERVICE_ID: ${{ secrets.RAILWAY_SERVICE_ID }}
-          RAILWAY_REDEPLOY: ${{ vars.RAILWAY_REDEPLOY || 'true' }}
+          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
         run: |
-          if [ "$RAILWAY_REDEPLOY" != "true" ]; then
-            echo "Railway redeploy is disabled via RAILWAY_REDEPLOY variable."
+          if [ -z "$DEPLOY_WEBHOOK_URL" ]; then
+            echo "DEPLOY_WEBHOOK_URL is not configured. Skipping deploy webhook."
             exit 0
           fi
 
-          if [ -z "$RAILWAY_TOKEN" ]; then
-            echo "RAILWAY_TOKEN is not set. Skipping Railway redeploy."
-            exit 0
-          fi
+          echo "Triggering deploy webhook..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "$DEPLOY_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d '{"event": "models_updated", "date": "${{ steps.date.outputs.DATE }}", "repository": "${{ github.repository }}", "run_id": "${{ github.run_id }}"}' \
+            --max-time 30)
 
-          echo "Running Railway redeploy script..."
-          cd scripts
-          python railway_redeploy.py
+          if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 300 ]; then
+            echo "Deploy webhook triggered successfully (HTTP $HTTP_STATUS)"
+          else
+            echo "Warning: Deploy webhook returned HTTP $HTTP_STATUS (non-fatal)"
+          fi
 
       - name: Create Pull Request (if validation failed)
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED == 'true'
