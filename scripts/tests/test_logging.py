@@ -1,9 +1,13 @@
 """Tests for centralized logging configuration (log_config module)."""
 
+import importlib
+import importlib.util
 import json
 import logging
 import os
+import subprocess
 from io import StringIO
+from pathlib import Path
 
 import pytest
 
@@ -202,3 +206,41 @@ class TestSetupLogging:
         assert "[INFO]" in output
         assert "[WARNING]" in output
         assert "[ERROR]" in output
+
+
+def test_no_print_calls_in_scripts():
+    """Verify no print() calls remain in scripts/ (except update.py UI and test files)."""
+    result = subprocess.run(
+        ["grep", "-rn", "--include=*.py", "print(", str(Path(__file__).parent.parent)],
+        capture_output=True, text=True
+    )
+    allowed_files = {"update.py", "test_"}
+    violations = []
+    for line in result.stdout.strip().split("\n"):
+        if not line:
+            continue
+        filepath = line.split(":")[0]
+        filename = Path(filepath).name
+        # Allow print() in update.py (interactive UI) and test files
+        if any(allowed in filename for allowed in allowed_files):
+            continue
+        # Allow print() in log_config.py (none expected, but don't flag if present)
+        if "log_config.py" in filepath:
+            continue
+        # Skip __pycache__
+        if "__pycache__" in filepath:
+            continue
+        violations.append(line)
+    assert not violations, f"print() found in disallowed files:\n" + "\n".join(violations)
+
+
+def test_legacy_script_has_logger():
+    """Verify a representative legacy script uses logging (not print)."""
+    # Import deepseek module and verify it has a logger
+    spec = importlib.util.spec_from_file_location(
+        "deepseek", str(Path(__file__).parent.parent / "deepseek.py")
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    assert hasattr(module, "logger"), "deepseek.py must have module-level 'logger'"
+    assert module.logger.name == "deepseek", f"Expected logger name 'deepseek', got '{module.logger.name}'"
