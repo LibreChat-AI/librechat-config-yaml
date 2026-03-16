@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 from collections import defaultdict
 
 from log_config import setup_logging
@@ -100,7 +100,7 @@ def fetch_and_save_model_ids(url, output_file):
         stealth_models = get_stealth_models()
         
         # Fetch the data from the URL
-        response = requests.get(url)
+        response = httpx.get(url, timeout=30.0, follow_redirects=True)
         response.raise_for_status()
         data = response.json()
 
@@ -116,7 +116,7 @@ def fetch_and_save_model_ids(url, output_file):
 
         logger.info("Model IDs successfully saved to %s", output_file)
 
-    except requests.exceptions.RequestException as e:
+    except httpx.HTTPError as e:
         logger.error("An error occurred: %s", e)
 
 def main():

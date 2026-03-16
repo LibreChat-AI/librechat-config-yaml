@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 from dotenv import load_dotenv
 import os
 from pathlib import Path
@@ -25,7 +25,7 @@ def fetch_models(api_key):
     }
     
     try:
-        response = requests.get(url, headers=headers)
+        response = httpx.get(url, headers=headers, timeout=30.0, follow_redirects=True)
         response.raise_for_status()
         
         data = response.json()

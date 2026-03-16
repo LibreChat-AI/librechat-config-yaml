@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 from bs4 import BeautifulSoup
 
 from log_config import setup_logging
@@ -12,7 +12,7 @@ def fetch_models():
     url = "https://community.sambanova.ai/t/supported-models/193"
     
     try:
-        response = requests.get(url)
+        response = httpx.get(url, timeout=30.0, follow_redirects=True)
         response.raise_for_status()
         
         # Parse HTML and extract model names

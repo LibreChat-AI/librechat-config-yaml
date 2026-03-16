@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 
 from log_config import setup_logging
 
@@ -11,7 +11,7 @@ def fetch_models():
     url = "https://integrate.api.nvidia.com/v1/models"
     
     try:
-        response = requests.get(url)
+        response = httpx.get(url, timeout=30.0, follow_redirects=True)
         response.raise_for_status()
         
         data = response.json()

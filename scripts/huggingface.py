@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 from time import sleep
 
 from log_config import setup_logging
@@ -20,7 +20,7 @@ def fetch_models(page=1, limit=100):
     }
     
     try:
-        response = requests.get(url, params=params)
+        response = httpx.get(url, params=params, timeout=30.0, follow_redirects=True)
         response.raise_for_status()
         return response.json()
     except Exception as e:

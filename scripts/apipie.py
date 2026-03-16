@@ -1,6 +1,6 @@
 import json
 import logging
-import requests
+import httpx
 
 from log_config import setup_logging
 
@@ -38,7 +38,7 @@ def fetch_and_order_models():
         
         for param_type in params_types.values():
             try:
-                response = requests.get(url, headers=headers, params=param_type)
+                response = httpx.get(url, headers=headers, params=param_type, timeout=30.0, follow_redirects=True)
                 response.raise_for_status()
                 data = response.json()
                 
@@ -47,7 +47,7 @@ def fetch_and_order_models():
                         if isinstance(model, dict) and 'id' in model:
                             model_id = str(model['id'])
                             all_models.add(model_id)
-            except requests.exceptions.RequestException as e:
+            except httpx.HTTPError as e:
                 logger.warning("Error fetching %s models: %s", param_type, e)
                 continue
         
