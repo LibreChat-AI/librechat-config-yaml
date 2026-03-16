@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 from typing import Optional
 
-import requests
+import httpx
 from dotenv import load_dotenv
 
 from .base import BaseFetcher, FetchResult, FetchStatus
@@ -29,14 +29,13 @@ class GroqFetcher(BaseFetcher):
                 error_message="GROQ_API_KEY not set",
             )
         try:
-            response = requests.get(
+            response = self._http_get(
                 "https://api.groq.com/openai/v1/models",
                 headers={
                     "accept": "application/json",
                     "Authorization": f"Bearer {api_key}",
                 },
             )
-            response.raise_for_status()
             data = response.json()
             if "data" not in data:
                 return FetchResult(
@@ -62,10 +61,10 @@ class GroqFetcher(BaseFetcher):
                 models=models,
                 status=FetchStatus.SUCCESS,
             )
-        except requests.exceptions.HTTPError as e:
+        except httpx.HTTPStatusError as e:
             status = (
                 FetchStatus.AUTH_ERROR
-                if e.response is not None and e.response.status_code in (401, 403)
+                if e.response.status_code in (401, 403)
                 else FetchStatus.NETWORK_ERROR
             )
             return FetchResult(
@@ -74,7 +73,7 @@ class GroqFetcher(BaseFetcher):
                 status=status,
                 error_message=str(e),
             )
-        except requests.exceptions.RequestException as e:
+        except httpx.HTTPError as e:
             return FetchResult(
                 provider_name=self.provider_name,
                 models=[],

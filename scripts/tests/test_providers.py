@@ -26,12 +26,12 @@ class TestNvidiaFetcher:
         assert fetcher.get_api_key() is None
 
     def test_nvidia_fetch_success(self):
+        from providers.nvidia import NvidiaFetcher
         fetcher = self._make()
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"data": [{"id": "a"}, {"id": "b"}]}
-        mock_resp.raise_for_status = MagicMock()
 
-        with patch("providers.nvidia.requests.get", return_value=mock_resp):
+        with patch.object(NvidiaFetcher, "_http_get", return_value=mock_resp):
             result = fetcher.fetch_models()
 
         assert result.status == FetchStatus.SUCCESS
@@ -42,12 +42,12 @@ class TestNvidiaFetcher:
         assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
 
     def test_nvidia_fetch_empty_data(self):
+        from providers.nvidia import NvidiaFetcher
         fetcher = self._make()
         mock_resp = MagicMock()
         mock_resp.json.return_value = {"data": []}
-        mock_resp.raise_for_status = MagicMock()
 
-        with patch("providers.nvidia.requests.get", return_value=mock_resp):
+        with patch.object(NvidiaFetcher, "_http_get", return_value=mock_resp):
             result = fetcher.fetch_models()
 
         assert result.status == FetchStatus.EMPTY
@@ -76,6 +76,7 @@ class TestGroqFetcher:
         assert "GROQ_API_KEY" in result.error_message
 
     def test_groq_fetch_success(self, monkeypatch):
+        from providers.groq import GroqFetcher
         monkeypatch.setenv("GROQ_API_KEY", "test-key")
         fetcher = self._make()
         mock_resp = MagicMock()
@@ -86,10 +87,9 @@ class TestGroqFetcher:
                 {"id": "mixtral-8x7b"},
             ]
         }
-        mock_resp.raise_for_status = MagicMock()
 
         with patch("providers.groq.load_dotenv"), \
-             patch("providers.groq.requests.get", return_value=mock_resp):
+             patch.object(GroqFetcher, "_http_get", return_value=mock_resp):
             result = fetcher.fetch_models()
 
         assert result.status == FetchStatus.SUCCESS
@@ -121,12 +121,12 @@ class TestGithubModelsFetcher:
         assert fetcher.get_api_key() is None
 
     def test_github_fetch_success(self):
+        from providers.github_models import GithubModelsFetcher
         fetcher = self._make()
         mock_resp = MagicMock()
         mock_resp.json.return_value = [{"name": "x"}, {"name": "y"}]
-        mock_resp.raise_for_status = MagicMock()
 
-        with patch("providers.github_models.requests.get", return_value=mock_resp):
+        with patch.object(GithubModelsFetcher, "_http_get", return_value=mock_resp):
             result = fetcher.fetch_models()
 
         assert result.status == FetchStatus.SUCCESS

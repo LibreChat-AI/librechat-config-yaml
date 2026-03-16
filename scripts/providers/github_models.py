@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-import requests
+import httpx
 
 from .base import BaseFetcher, FetchResult, FetchStatus
 
@@ -21,11 +21,10 @@ class GithubModelsFetcher(BaseFetcher):
 
     def fetch_models(self) -> FetchResult:
         try:
-            response = requests.get(
+            response = self._http_get(
                 "https://models.inference.ai.azure.com/models",
                 headers={"accept": "application/json"},
             )
-            response.raise_for_status()
             data = response.json()
             if not isinstance(data, list):
                 return FetchResult(
@@ -47,10 +46,10 @@ class GithubModelsFetcher(BaseFetcher):
                 models=models,
                 status=FetchStatus.SUCCESS,
             )
-        except requests.exceptions.HTTPError as e:
+        except httpx.HTTPStatusError as e:
             status = (
                 FetchStatus.AUTH_ERROR
-                if e.response is not None and e.response.status_code in (401, 403)
+                if e.response.status_code in (401, 403)
                 else FetchStatus.NETWORK_ERROR
             )
             return FetchResult(
@@ -59,7 +58,7 @@ class GithubModelsFetcher(BaseFetcher):
                 status=status,
                 error_message=str(e),
             )
-        except requests.exceptions.RequestException as e:
+        except httpx.HTTPError as e:
             return FetchResult(
                 provider_name=self.provider_name,
                 models=[],

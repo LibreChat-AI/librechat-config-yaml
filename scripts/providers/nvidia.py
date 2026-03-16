@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Optional
 
-import requests
+import httpx
 
 from .base import BaseFetcher, FetchResult, FetchStatus
 
@@ -17,8 +17,7 @@ class NvidiaFetcher(BaseFetcher):
 
     def fetch_models(self) -> FetchResult:
         try:
-            response = requests.get("https://integrate.api.nvidia.com/v1/models")
-            response.raise_for_status()
+            response = self._http_get("https://integrate.api.nvidia.com/v1/models")
             data = response.json()
             if "data" not in data or not isinstance(data["data"], list):
                 return FetchResult(
@@ -40,10 +39,10 @@ class NvidiaFetcher(BaseFetcher):
                 models=models,
                 status=FetchStatus.SUCCESS,
             )
-        except requests.exceptions.HTTPError as e:
+        except httpx.HTTPStatusError as e:
             status = (
                 FetchStatus.AUTH_ERROR
-                if e.response is not None and e.response.status_code in (401, 403)
+                if e.response.status_code in (401, 403)
                 else FetchStatus.NETWORK_ERROR
             )
             return FetchResult(
@@ -52,7 +51,7 @@ class NvidiaFetcher(BaseFetcher):
                 status=status,
                 error_message=str(e),
             )
-        except requests.exceptions.RequestException as e:
+        except httpx.HTTPError as e:
             return FetchResult(
                 provider_name=self.provider_name,
                 models=[],
