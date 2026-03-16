@@ -529,6 +529,7 @@ endpoints:
           - aibi
           - aion
           - aion-1-0
+          - aion-1-0-mini
           - aion-2-0
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
@@ -559,7 +560,6 @@ endpoints:
           - claude-opus-4
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
-          - claude-opus-4-20250514-v1
           - claude-opus-4-5
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
@@ -570,7 +570,6 @@ endpoints:
           - claude-sonnet-4-20250514-v1
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
-          - claude-sonnet-4-5-20250929-v1
           - claude-sonnet-4-6
           - claude-v2
           - codegemma-7b-it
@@ -666,6 +665,7 @@ endpoints:
           - gemma-3-12b-it
           - gemma-3-27b-it
           - gemma-3-4b-it
+          - gemma-3n-e2b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -676,6 +676,7 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -735,12 +736,15 @@ endpoints:
           - gpt-5-4-2026-03-05
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
+          - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
           - gpt-5-image
           - gpt-5-image-mini
           - gpt-5-mini
+          - gpt-5-mini-2025-08-07
           - gpt-5-nano
+          - gpt-5-nano-2025-08-07
           - gpt-5-pro
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
@@ -751,7 +755,6 @@ endpoints:
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
           - gpt-oss-20b
-          - gpt-oss-safeguard-120b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
           - grok-3
@@ -764,15 +767,19 @@ endpoints:
           - grok-4
           - grok-4-0709
           - grok-4-1-fast
+          - grok-4-20-beta
+          - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
+          - healer-alpha
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
           - hermes-4-405b
           - hermes-4-70b
+          - hunter-alpha
           - hunyuan-a13b-instruct
           - inflection-3-pi
           - inflection-3-productivity
@@ -807,6 +814,7 @@ endpoints:
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
+          - llama-3-1-405b
           - llama-3-1-405b-instruct
           - llama-3-1-70b-instruct
           - llama-3-1-70b-instruct-turbo
@@ -815,7 +823,6 @@ endpoints:
           - llama-3-1-8b-instruct-turbo
           - llama-3-1-8b-instruct-v1
           - llama-3-1-large
-          - llama-3-1-lumimaid-8b
           - llama-3-1-nemotron-70b-instruct
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-2-11b-instruct
@@ -927,13 +934,14 @@ endpoints:
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
           - nemotron-3-nano-30b-a3b
+          - nemotron-3-super-120b-a12b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
-          - nemotron-nano-12b-v2
           - nemotron-nano-12b-v2-vl
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
+          - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
           - nova-lite
@@ -947,6 +955,7 @@ endpoints:
           - nova-reel
           - nova-reel-v1
           - nova-sonic-v1
+          - nvidia-nemotron-3-super-120b-a12b
           - nvidia-nemotron-nano-12b-v2-vl
           - nvidia-nemotron-nano-9b-v2
           - o1
@@ -993,6 +1002,7 @@ endpoints:
           - qwen-2-5-7b-instruct-turbo
           - qwen-2-5-coder-32b-instruct
           - qwen-2-5-coder-7b
+          - qwen-2-5-coder-7b-instruct
           - qwen-2-5-large
           - qwen-2-5-small
           - qwen-2-5-vl-32b-instruct
@@ -1013,15 +1023,17 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-4b
+          - qwen-3-5-122b-a10b
           - qwen-3-5-27b
           - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
+          - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
-          - qwen-3-coder-30b-a3b-v1
+          - qwen-3-coder-480b-a35b-instruct
           - qwen-3-coder-480b-a35b-instruct-turbo
           - qwen-3-coder-flash
           - qwen-3-coder-next
@@ -1056,6 +1068,7 @@ endpoints:
           - seed-1-6
           - seed-1-6-flash
           - seed-1-8
+          - seed-2-0-lite
           - seed-2-0-mini
           - seed-2-mini
           - shisa-2-llama-3-3-70b
@@ -1069,7 +1082,6 @@ endpoints:
           - sonar-reasoning-pro
           - sora-2
           - sora-2-pro
-          - sorcererlm-8x22b
           - spotlight
           - step-3
           - step-3-5-flash
@@ -1308,7 +1320,6 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
-          - deepseek-ai/DeepSeek-Prover-V2-671B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
@@ -2053,6 +2064,7 @@ endpoints:
           - z-ai/glm-4.5v:thinking
           - z-ai/glm-4.6
           - z-ai/glm-4.6:thinking
+          - z-ai/glm-5-turbo
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air:thinking
           - zai-org/GLM-4.5:thinking
@@ -2303,6 +2315,7 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
+          - minimax/minimax-m2.5:free
           - mistralai/mistral-small-3.1-24b-instruct:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
@@ -2629,6 +2642,7 @@ endpoints:
           - z-ai/glm-4.7
           - z-ai/glm-4.7-flash
           - z-ai/glm-5
+          - z-ai/glm-5-turbo
           - '---OTHERS---'
           - ai21/jamba-large-1.7
           - alfredpros/codellama-7b-instruct-solidity
