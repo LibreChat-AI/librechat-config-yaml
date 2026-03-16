@@ -6,6 +6,8 @@ from datetime import datetime
 from ruamel.yaml import YAML
 import os
 
+from providers import discover_providers, FetchStatus
+
 # Create logs directory if it doesn't exist
 log_dir = Path(__file__).parent / 'logs'
 log_dir.mkdir(exist_ok=True)
@@ -300,10 +302,33 @@ def main():
     # Fetch all models first
     logger.info("Fetching models from all providers...")
     provider_models = {}
+
+    # New path: discover and run contract-based providers
+    registry = discover_providers()
+    logger.info(f"Discovered {len(registry)} contract-based providers: {list(registry.keys())}")
+
+    migrated_provider_names = set(registry.keys())
+
+    for provider_name, fetcher_cls in registry.items():
+        logger.info(f"Running {provider_name} fetcher (contract)")
+        fetcher = fetcher_cls()
+        result = fetcher.run()
+        if result.status == FetchStatus.SUCCESS:
+            provider_models[result.provider_name] = result.models
+            stats.add_provider_result(result.provider_name, result.models)
+            logger.info(f"{result.provider_name}: {result.status.value} ({result.model_count} models)")
+        else:
+            logger.warning(f"{result.provider_name}: {result.status.value} - {result.error_message}")
+            stats.add_provider_result(result.provider_name, None)
+
+    # Legacy path: run script-based providers (skip migrated ones)
     for script_name, provider_name in fetchers.items():
+        if provider_name in migrated_provider_names:
+            logger.info(f"Skipping legacy {script_name} -- migrated to contract")
+            continue
         logger.info(f"Running {script_name} fetcher")
         models = run_fetcher_script(script_name)
-        
+
         if models:
             cleaned_models = clean_model_list(models)
             if cleaned_models:
