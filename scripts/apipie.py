@@ -1,5 +1,10 @@
 import json
+import logging
 import requests
+
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def sort_models(ids):
     """Simple sort with free models first."""
@@ -43,7 +48,7 @@ def fetch_and_order_models():
                             model_id = str(model['id'])
                             all_models.add(model_id)
             except requests.exceptions.RequestException as e:
-                print(f"Warning: Error fetching {param_type} models: {e}")
+                logger.warning("Error fetching %s models: %s", param_type, e)
                 continue
         
         # Sort the models
@@ -53,13 +58,14 @@ def fetch_and_order_models():
         with open("apipie.txt", "w", encoding='utf-8') as file:
             json.dump(sorted_models, file, indent=2)
             
-        print(f"Successfully saved {len(sorted_models)} models to apipie.txt")
+        logger.info("Successfully saved %d models to apipie.txt", len(sorted_models))
 
     except Exception as e:
-        print(f"Unexpected error: {e}")
+        logger.error("Unexpected error: %s", e)
 
 def main():
     fetch_and_order_models()
 
 if __name__ == "__main__":
+    setup_logging()
     main()

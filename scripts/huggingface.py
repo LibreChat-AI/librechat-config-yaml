@@ -1,6 +1,11 @@
 import json
+import logging
 import requests
 from time import sleep
+
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def fetch_models(page=1, limit=100):
     """Fetch text generation models from Hugging Face API."""
@@ -19,17 +24,17 @@ def fetch_models(page=1, limit=100):
         response.raise_for_status()
         return response.json()
     except Exception as e:
-        print(f"Error fetching page {page}: {str(e)}")
+        logger.error("Error fetching page %d: %s", page, e)
         return None
 
 def main():
-    print("Fetching models from Hugging Face...")
+    logger.info("Fetching models from %s API", "Hugging Face")
     all_models = []
     page = 1
     max_pages = 5  # Add page limit
-    
+
     while page <= max_pages:  # Change condition to use max_pages
-        print(f"Fetching page {page} of {max_pages}...")
+        logger.info("Fetching page %d of %d", page, max_pages)
         models = fetch_models(page=page)
         
         if not models:
@@ -46,7 +51,7 @@ def main():
             break
             
         all_models.extend(model_ids)
-        print(f"Found {len(model_ids)} models on page {page}")
+        logger.info("Found %d models on page %d", len(model_ids), page)
         
         # Check if we've reached the end of results
         if len(models) < 100:
@@ -61,9 +66,10 @@ def main():
         
         with open("huggingface.txt", "w") as file:
             json.dump(unique_models, file, indent=2)
-        print(f"Successfully saved {len(unique_models)} models to huggingface.txt")
+        logger.info("Successfully saved %d models to %s", len(unique_models), "huggingface.txt")
     else:
-        print("Failed to fetch models.")
+        logger.error("Failed to fetch models")
 
 if __name__ == "__main__":
+    setup_logging()
     main()

@@ -1,6 +1,11 @@
-import requests
 import json
+import logging
+import requests
 from collections import defaultdict
+
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def sort_and_group_ids(ids, stealth_models=None):
     """Sort and group model IDs, including category headers."""
@@ -109,10 +114,10 @@ def fetch_and_save_model_ids(url, output_file):
         with open(output_file, 'w') as file:
             json.dump(sorted_models, file, indent=2)
 
-        print(f"Model IDs successfully saved to {output_file}")
+        logger.info("Model IDs successfully saved to %s", output_file)
 
     except requests.exceptions.RequestException as e:
-        print(f"An error occurred: {e}")
+        logger.error("An error occurred: %s", e)
 
 def main():
     # URL for the JSON list
@@ -123,4 +128,5 @@ def main():
     fetch_and_save_model_ids(url, output_file)
 
 if __name__ == "__main__":
+    setup_logging()
     main()

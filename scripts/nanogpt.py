@@ -1,5 +1,10 @@
 import json
+import logging
 import requests
+
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def fetch_models():
     """Fetch models from NanoGPT's public API."""
@@ -23,19 +28,20 @@ def fetch_models():
             return model_ids
             
     except Exception as e:
-        print(f"Error fetching models: {str(e)}")
+        logger.error("Error fetching models: %s", e)
         return None
 
 def main():
-    print("Fetching models from NanoGPT API...")
+    logger.info("Fetching models from %s API", "NanoGPT")
     models = fetch_models()
-    
+
     if models:
         with open("nanogpt.txt", "w") as file:
             json.dump(models, file, indent=2)
-        print(f"Successfully saved {len(models)} models to nanogpt.txt")
+        logger.info("Successfully saved %d models to %s", len(models), "nanogpt.txt")
     else:
-        print("Failed to fetch models.")
+        logger.error("Failed to fetch models")
 
 if __name__ == "__main__":
+    setup_logging()
     main()

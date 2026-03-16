@@ -1,6 +1,11 @@
 import json
+import logging
 import requests
 from bs4 import BeautifulSoup
+
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def fetch_models():
     """Fetch models by scraping the documentation page."""
@@ -15,7 +20,7 @@ def fetch_models():
         # Find all tables
         tables = soup.find_all('table')
         if not tables:
-            print("No tables found in documentation")
+            logger.warning("No tables found in documentation")
             return None
             
         # Get the first table (current models)
@@ -33,20 +38,21 @@ def fetch_models():
         return sorted(models)
         
     except Exception as e:
-        print(f"Error fetching models: {str(e)}")
+        logger.error("Error fetching models: %s", e)
         return None
 
 def main():
-    print("Fetching models from Perplexity documentation...")
+    logger.info("Fetching models from %s API", "Perplexity")
     models = fetch_models()
-    
+
     if models:
         # Save models to file
         with open("perplexity.txt", "w") as file:
             json.dump(models, file, indent=2)
-        print(f"Successfully saved {len(models)} models to perplexity.txt")
+        logger.info("Successfully saved %d models to %s", len(models), "perplexity.txt")
     else:
-        print("Failed to fetch models.")
+        logger.error("Failed to fetch models")
 
 if __name__ == "__main__":
+    setup_logging()
     main()
