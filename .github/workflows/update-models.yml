@@ -39,7 +39,7 @@ jobs:
           pip list
           echo "Testing import:"
           python -c "import sys; print('Python executable:', sys.executable)"
-          python -c "import yaml; print('PyYAML version:', yaml.__version__)"
+          python -c "import ruamel.yaml; print('ruamel.yaml version:', ruamel.yaml.version_info)"
       
       - name: Run automated model update
         id: update

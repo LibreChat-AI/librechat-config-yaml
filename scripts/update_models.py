@@ -4,7 +4,6 @@ import importlib.util
 import logging
 from datetime import datetime
 from ruamel.yaml import YAML
-import yaml
 import os
 
 # Create logs directory if it doesn't exist
@@ -256,40 +255,6 @@ def cleanup_temp_files():
             logger.info(f"Deleted temporary file: {txt_file}")
         except Exception as e:
             logger.error(f"Error deleting {txt_file}: {str(e)}")
-
-def update_models():
-    # Get parent directory path
-    parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    
-    # Input and output file paths with parent directory
-    # Update all files
-    input_files = [
-        os.path.join(parent_dir, 'librechat-env-f.yaml'),
-        os.path.join(parent_dir, 'librechat-env-l.yaml'),
-        os.path.join(parent_dir, 'librechat-up-f.yaml'),
-        os.path.join(parent_dir, 'librechat-up-l.yaml'),
-        os.path.join(parent_dir, 'librechat-test.yaml'),
-        # os.path.join(parent_dir, 'librechat.yaml'),
-    ]
-
-    # Load each input file and perform updates
-    for input_file in input_files:
-        if not os.path.exists(input_file):
-            logger.warning(f"{input_file} not found, skipping...")
-            continue
-
-        try:
-            with open(input_file, 'r', encoding='utf-8') as f:
-                data = yaml.safe_load(f)
-
-            # Save the updated file
-            with open(input_file, 'w', encoding='utf-8') as f:
-                yaml.dump(data, f, sort_keys=False, allow_unicode=True)
-                
-            logger.info(f"Successfully updated {input_file}")
-
-        except Exception as e:
-            logger.error(f"Error processing {input_file}: {str(e)}")
 
 def main():
     logger.info("Starting model update process")
