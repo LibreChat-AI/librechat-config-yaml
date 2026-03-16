@@ -3,14 +3,9 @@ from pathlib import Path
 import convert_yaml_style
 import update_models
 
-# Set up logging for console only
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(levelname)s: %(message)s',
-    handlers=[
-        logging.StreamHandler()
-    ]
-)
+from log_config import setup_logging
+
+logger = logging.getLogger(__name__)
 
 def get_user_choice(prompt):
     """Get user input with validation."""
@@ -21,6 +16,7 @@ def get_user_choice(prompt):
         print("Please enter 'y' or 'n'")
 
 def main(automated=False):
+    setup_logging()
     if not automated:
         print("\nLibreChat YAML Configuration Update Tool")
         print("=======================================\n")
@@ -28,34 +24,34 @@ def main(automated=False):
     try:
         if automated:
             # Automated mode: skip YAML style conversion, only update models
-            logging.info("Running in automated mode")
-            print("\nUpdating model lists in automated mode...")
+            logger.info("Running in automated mode")
+            logger.info("Updating model lists in automated mode")
             update_models.main()
-            print("Model list updates completed.\n")
+            logger.info("Model list updates completed")
         else:
             # Interactive mode
             # Ask about YAML style conversion
             if get_user_choice("Do you want to update YAML style formatting? (y/n): "):
-                print("\nConverting YAML style...")
+                logger.info("Converting YAML style")
                 convert_yaml_style.main()
-                print("YAML style conversion completed.\n")
+                logger.info("YAML style conversion completed")
             else:
-                print("Skipping YAML style conversion.\n")
+                logger.info("Skipping YAML style conversion")
 
             # Ask about model list updates
             if get_user_choice("Do you want to update model lists? (y/n): "):
-                print("\nUpdating model lists...")
+                logger.info("Updating model lists")
                 update_models.main()
-                print("Model list updates completed.\n")
+                logger.info("Model list updates completed")
             else:
-                print("Skipping model list updates.\n")
+                logger.info("Skipping model list updates")
 
         if not automated:
-            print("All requested operations completed successfully!")
+            logger.info("All requested operations completed successfully")
         return 0
 
     except Exception as e:
-        logging.error(f"Script failed: {str(e)}")
+        logger.error("Script failed: %s", e)
         if not automated:
             print(f"\nError: {str(e)}")
             print("Check the log file for details.")
@@ -64,10 +60,10 @@ def main(automated=False):
 if __name__ == "__main__":
     import sys
     import os
-    
+
     # Check for automated mode flags
     automated = '--automated' in sys.argv or os.getenv('AUTOMATED_MODE', '').lower() in ['true', '1', 'yes']
-    
+
     exit_code = main(automated=automated)
     if exit_code != 0 and not automated:
         print("\nScript encountered errors. Please check the logs.")

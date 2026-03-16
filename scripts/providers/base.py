@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import logging
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
@@ -37,6 +38,12 @@ class BaseFetcher(ABC):
 
     # Subclasses MUST set this as a class attribute
     provider_name: str = ""
+
+    @property
+    def logger(self) -> logging.LoggerAdapter:
+        """Logger that auto-includes provider name in log records."""
+        base_logger = logging.getLogger(f"fetcher.{self.provider_name}")
+        return logging.LoggerAdapter(base_logger, {"provider": self.provider_name})
 
     def __init_subclass__(cls, **kwargs):
         super().__init_subclass__(**kwargs)

@@ -2,38 +2,13 @@ import json
 from pathlib import Path
 import importlib.util
 import logging
-from datetime import datetime
 from ruamel.yaml import YAML
 import os
 
+from log_config import setup_logging
 from providers import discover_providers, FetchStatus
 
-# Create logs directory if it doesn't exist
-log_dir = Path(__file__).parent / 'logs'
-log_dir.mkdir(exist_ok=True)
-
-# Set up logger instance instead of basic config
-logger = logging.getLogger('model_updater')
-logger.setLevel(logging.DEBUG)
-
-# Create log file with timestamp
-log_file = log_dir / f'update_models_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log'
-
-# Create handlers with proper formatting
-file_handler = logging.FileHandler(log_file)
-console_handler = logging.StreamHandler()
-
-# Set formatter
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-file_handler.setFormatter(formatter)
-console_handler.setFormatter(formatter)
-
-# Add handlers to logger
-logger.addHandler(file_handler)
-logger.addHandler(console_handler)
-
-# Test logging
-logger.info("Logging initialized successfully")
+logger = logging.getLogger(__name__)
 
 class UpdateStats:
     def __init__(self):
@@ -56,32 +31,35 @@ class UpdateStats:
 
     def print_summary(self):
         summary = "\nUpdate Summary\n============="
-        
+
         summary += "\n\nProvider Statistics:\n-----------------"
         if self.provider_counts:
             for provider, count in sorted(self.provider_counts.items()):
-                summary += f"\n✓ {provider}: {count} models"
-        
+                summary += "\n[OK] %s: %d models" % (provider, count)
+
         if self.failed_providers:
             summary += "\n\nFailed Providers:\n----------------"
             for provider in sorted(self.failed_providers):
-                summary += f"\n✗ {provider}"
-        
+                summary += "\n[FAIL] %s" % provider
+
         summary += "\n\nFile Updates:\n------------"
         if self.updated_files:
             for file in sorted(self.updated_files):
-                summary += f"\n✓ {file}"
-        
+                summary += "\n[OK] %s" % file
+
         if self.failed_files:
             summary += "\n\nFailed Files:\n-------------"
             for file in sorted(self.failed_files):
-                summary += f"\n✗ {file}"
+                summary += "\n[FAIL] %s" % file
 
-        summary += (f"\n\nSummary: {len(self.provider_counts)} providers updated, "
-                    f"{len(self.failed_providers)} failed, "
-                    f"{len(self.updated_files)} files updated, "
-                    f"{len(self.failed_files)} files failed")
-        
+        summary += ("\n\nSummary: %d providers updated, "
+                    "%d failed, "
+                    "%d files updated, "
+                    "%d files failed" % (len(self.provider_counts),
+                    len(self.failed_providers),
+                    len(self.updated_files),
+                    len(self.failed_files)))
+
         logger.info(summary)  # Add logging for summary
 
 def load_module_from_file(file_path, module_name):
@@ -97,14 +75,14 @@ def read_model_file(script_name):
         output_file = Path(f"{script_name}.txt")
         if not output_file.exists():
             return None
-            
+
         with open(output_file, 'r', encoding='utf-8') as f:
             content = f.read().strip()
-            
+
             # Handle empty files
             if not content:
                 return None
-                
+
             # Try to parse as JSON first
             try:
                 return json.loads(content)
@@ -114,37 +92,37 @@ def read_model_file(script_name):
                 # Clean up lines (remove quotes, commas, and whitespace)
                 models = [line.strip(' ",\n') for line in lines if line.strip()]
                 return models if models else None
-                
+
     except Exception as e:
-        logger.error(f"Error reading {script_name}.txt: {str(e)}")
+        logger.error("Error reading %s.txt: %s", script_name, e)
         return None
 
 def run_fetcher_script(script_name):
     """Run a model fetcher script and process its output."""
     try:
         script_path = Path(__file__).parent / f"{script_name}.py"
-        logger.info(f"Attempting to run fetcher script: {script_path}")
+        logger.info("Attempting to run fetcher script: %s", script_path)
         module = load_module_from_file(script_path, script_name)
-        
+
         if hasattr(module, 'main'):
-            logger.debug(f"Executing main() for {script_name}")
+            logger.debug("Executing main() for %s", script_name)
             module.main()
             result = read_model_file(script_name)
-            logger.info(f"Fetcher {script_name} completed successfully")
+            logger.info("Fetcher %s completed successfully", script_name)
             return result
     except Exception as e:
-        logger.error(f"Error running {script_name}: {str(e)}", exc_info=True)
+        logger.error("Error running %s: %s", script_name, e, exc_info=True)
     return None
 
 def clean_model_list(models):
     """Clean and validate the model list."""
     if not models:
         return None
-        
+
     # If models is already a list of strings, return it
     if isinstance(models, list) and all(isinstance(m, str) for m in models):
         return models
-        
+
     # If models is a dict or other structure, try to extract model names
     try:
         if isinstance(models, dict):
@@ -157,10 +135,10 @@ def clean_model_list(models):
             # Handle case where models might be keys in a dict
             else:
                 models = list(models.keys())
-        
+
         # Convert to list if it's some other iterable
         models = list(models)
-        
+
         # Clean up each model name
         cleaned = []
         for model in models:
@@ -172,11 +150,11 @@ def clean_model_list(models):
                     cleaned.append(str(model['name']))
             else:
                 cleaned.append(str(model))
-        
+
         return [m for m in cleaned if m]  # Remove any empty strings
-        
+
     except Exception as e:
-        logger.error(f"Error cleaning model list: {str(e)}")
+        logger.error("Error cleaning model list: %s", e)
         return None
 
 def load_yaml_file(file_path):
@@ -186,11 +164,11 @@ def load_yaml_file(file_path):
         yaml.preserve_quotes = True
         yaml.width = 4096
         yaml.default_flow_style = False
-        
+
         with open(file_path, 'r', encoding='utf-8') as f:
             return yaml.load(f)
     except Exception as e:
-        logger.error(f"Error loading YAML file {file_path}: {str(e)}")
+        logger.error("Error loading YAML file %s: %s", file_path, e)
         return None
 
 def save_yaml_file(file_path, data):
@@ -201,12 +179,12 @@ def save_yaml_file(file_path, data):
         yaml.width = 4096
         yaml.default_flow_style = False
         yaml.indent(mapping=2, sequence=4, offset=2)
-        
+
         with open(file_path, 'w', encoding='utf-8') as f:
             yaml.dump(data, f)
-        logger.info(f"Updated {file_path}")
+        logger.info("Updated %s", file_path)
     except Exception as e:
-        logger.error(f"Error saving YAML file {file_path}: {str(e)}")
+        logger.error("Error saving YAML file %s: %s", file_path, e)
 
 def update_yaml_models(yaml_data, provider_name, models):
     """Update the models list for a specific provider in the YAML data."""
@@ -216,34 +194,34 @@ def update_yaml_models(yaml_data, provider_name, models):
     # Clean and validate the model list
     cleaned_models = clean_model_list(models)
     if not cleaned_models:
-        logger.error(f"No valid models found for {provider_name}")
+        logger.error("No valid models found for %s", provider_name)
         return False
 
     for endpoint in yaml_data['endpoints'].get('custom', []):
         if endpoint.get('name') == provider_name:
             endpoint['models']['default'] = cleaned_models
             endpoint['models']['fetch'] = False
-            logger.info(f"Updated {len(cleaned_models)} models for {provider_name}")
+            logger.info("Updated %d models for %s", len(cleaned_models), provider_name)
             return True
     return False
 
 def create_backup(yaml_path):
     """Create a backup of the YAML file with timestamp."""
     backup_path = yaml_path.with_suffix(f'.yaml.bak')
-    
+
     try:
         # Read original content
         with open(yaml_path, 'r', encoding='utf-8') as source:
             content = source.read()
-            
+
         # Write to backup with original content
         with open(backup_path, 'w', encoding='utf-8') as target:
             target.write(content)
-            
-        logger.info(f"Created backup at {backup_path}")
+
+        logger.info("Created backup at %s", backup_path)
         return backup_path
     except Exception as e:
-        logger.error(f"Error creating backup: {str(e)}")
+        logger.error("Error creating backup: %s", e)
         return None
 
 def cleanup_temp_files():
@@ -254,18 +232,19 @@ def cleanup_temp_files():
             continue
         try:
             txt_file.unlink()
-            logger.info(f"Deleted temporary file: {txt_file}")
+            logger.info("Deleted temporary file: %s", txt_file)
         except Exception as e:
-            logger.error(f"Error deleting {txt_file}: {str(e)}")
+            logger.error("Error deleting %s: %s", txt_file, e)
 
 def main():
+    setup_logging()
     logger.info("Starting model update process")
-    
+
     stats = UpdateStats()
-    
+
     # Get parent directory path
     parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    
+
     yaml_files = [
         'librechat-env-f.yaml',
         'librechat-env-l.yaml',
@@ -274,7 +253,7 @@ def main():
         'librechat-test.yaml',
         # 'librechat.yaml',
     ]
-    
+
     # Define the scripts to run and their corresponding provider names
     fetchers = {
         'ai302': '302AI',
@@ -298,35 +277,35 @@ def main():
         'unify': 'Unify',
         'xai': 'xai'
     }
-    
+
     # Fetch all models first
     logger.info("Fetching models from all providers...")
     provider_models = {}
 
     # New path: discover and run contract-based providers
     registry = discover_providers()
-    logger.info(f"Discovered {len(registry)} contract-based providers: {list(registry.keys())}")
+    logger.info("Discovered %d contract-based providers: %s", len(registry), list(registry.keys()))
 
     migrated_provider_names = set(registry.keys())
 
     for provider_name, fetcher_cls in registry.items():
-        logger.info(f"Running {provider_name} fetcher (contract)")
+        logger.info("Running %s fetcher (contract)", provider_name)
         fetcher = fetcher_cls()
         result = fetcher.run()
         if result.status == FetchStatus.SUCCESS:
             provider_models[result.provider_name] = result.models
             stats.add_provider_result(result.provider_name, result.models)
-            logger.info(f"{result.provider_name}: {result.status.value} ({result.model_count} models)")
+            logger.info("%s: %s (%d models)", result.provider_name, result.status.value, result.model_count)
         else:
-            logger.warning(f"{result.provider_name}: {result.status.value} - {result.error_message}")
+            logger.warning("%s: %s - %s", result.provider_name, result.status.value, result.error_message)
             stats.add_provider_result(result.provider_name, None)
 
     # Legacy path: run script-based providers (skip migrated ones)
     for script_name, provider_name in fetchers.items():
         if provider_name in migrated_provider_names:
-            logger.info(f"Skipping legacy {script_name} -- migrated to contract")
+            logger.info("Skipping legacy %s -- migrated to contract", script_name)
             continue
-        logger.info(f"Running {script_name} fetcher")
+        logger.info("Running %s fetcher", script_name)
         models = run_fetcher_script(script_name)
 
         if models:
@@ -338,62 +317,62 @@ def main():
                 stats.add_provider_result(provider_name, None)
         else:
             stats.add_provider_result(provider_name, None)
-    
+
     # Now process each YAML file with the fetched models
     for yaml_file in yaml_files:
         yaml_path = Path(os.path.join(parent_dir, yaml_file))
         if not yaml_path.exists():
             stats.add_file_result(yaml_file, False)
             continue
-            
+
         try:
             # Create initial backup of original file
             backup_path = create_backup(yaml_path)
             if not backup_path:
                 stats.add_file_result(yaml_file, False)
                 continue
-            
+
             # Load YAML data
             yaml_data = load_yaml_file(yaml_path)
             if not yaml_data:
                 stats.add_file_result(yaml_file, False)
                 continue
-            
+
             updates_made = False
-            
+
             # Update YAML with previously fetched models
             for provider_name, models in provider_models.items():
                 if update_yaml_models(yaml_data, provider_name, models):
                     updates_made = True
-            
+
             # Save YAML file if updates were made
             if updates_made:
                 save_yaml_file(yaml_path, yaml_data)
                 stats.add_file_result(yaml_file, True)
             else:
                 stats.add_file_result(yaml_file, False)
-                
+
         except Exception as e:
-            logger.error(f"Error processing {yaml_file}: {str(e)}")
+            logger.error("Error processing %s: %s", yaml_file, e)
             stats.add_file_result(yaml_file, False)
 
     # Clean up temporary files
     cleanup_temp_files()
-    
+
     # Print summary
     stats.print_summary()
-    
+
     logger.info("Model update process completed")
-    
+
     # Return success if at least one file was updated
     return len(stats.updated_files) > 0
 
 if __name__ == "__main__":
     import sys
-    
+
     try:
         success = main()
-        logger.info(f"Script completed with success={success}")
+        logger.info("Script completed with success=%s", success)
         exit(0 if success else 1)
     except Exception as e:
         logger.critical("Unexpected error occurred", exc_info=True)
