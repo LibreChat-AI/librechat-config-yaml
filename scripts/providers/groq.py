@@ -1,0 +1,86 @@
+from __future__ import annotations
+
+import os
+from pathlib import Path
+from typing import Optional
+
+import requests
+from dotenv import load_dotenv
+
+from .base import BaseFetcher, FetchResult, FetchStatus
+
+
+class GroqFetcher(BaseFetcher):
+    """Fetch models from Groq API (API key required)."""
+
+    provider_name = "groq"
+
+    def get_api_key(self) -> Optional[str]:
+        load_dotenv(dotenv_path=Path(__file__).parent.parent / ".env")
+        return os.getenv("GROQ_API_KEY")
+
+    def fetch_models(self) -> FetchResult:
+        api_key = self.get_api_key()
+        if not api_key:
+            return FetchResult(
+                provider_name=self.provider_name,
+                models=[],
+                status=FetchStatus.AUTH_ERROR,
+                error_message="GROQ_API_KEY not set",
+            )
+        try:
+            response = requests.get(
+                "https://api.groq.com/openai/v1/models",
+                headers={
+                    "accept": "application/json",
+                    "Authorization": f"Bearer {api_key}",
+                },
+            )
+            response.raise_for_status()
+            data = response.json()
+            if "data" not in data:
+                return FetchResult(
+                    provider_name=self.provider_name,
+                    models=[],
+                    status=FetchStatus.PARSE_ERROR,
+                    error_message="Response missing 'data' key",
+                )
+            models = [
+                m["id"]
+                for m in data["data"]
+                if "id" in m and "whisper" not in m["id"].lower()
+            ]
+            if not models:
+                return FetchResult(
+                    provider_name=self.provider_name,
+                    models=[],
+                    status=FetchStatus.EMPTY,
+                    error_message="No models returned after filtering",
+                )
+            return FetchResult(
+                provider_name=self.provider_name,
+                models=models,
+                status=FetchStatus.SUCCESS,
+            )
+        except requests.exceptions.HTTPError as e:
+            status = (
+                FetchStatus.AUTH_ERROR
+                if e.response is not None and e.response.status_code in (401, 403)
+                else FetchStatus.NETWORK_ERROR
+            )
+            return FetchResult(
+                provider_name=self.provider_name,
+                models=[],
+                status=status,
+                error_message=str(e),
+            )
+        except requests.exceptions.RequestException as e:
+            return FetchResult(
+                provider_name=self.provider_name,
+                models=[],
+                status=FetchStatus.NETWORK_ERROR,
+                error_message=str(e),
+            )
+
+    def post_process(self, models: list[str]) -> list[str]:
+        return sorted(set(models))

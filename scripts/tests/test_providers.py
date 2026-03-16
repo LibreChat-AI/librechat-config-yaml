@@ -143,10 +143,18 @@ class TestGithubModelsFetcher:
 
 class TestRegistration:
     def test_all_three_registered(self):
-        # Force-import all 3 modules to trigger __init_subclass__ registration
-        import providers.nvidia  # noqa: F401
-        import providers.groq  # noqa: F401
-        import providers.github_models  # noqa: F401
+        import importlib
+
+        # Force re-import to trigger __init_subclass__ registration
+        # (clean_registry fixture clears the registry, but cached modules
+        # won't re-fire __init_subclass__, so we reload them)
+        import providers.nvidia
+        import providers.groq
+        import providers.github_models
+
+        importlib.reload(providers.nvidia)
+        importlib.reload(providers.groq)
+        importlib.reload(providers.github_models)
 
         registry = get_registry()
         assert "Nvidia" in registry
