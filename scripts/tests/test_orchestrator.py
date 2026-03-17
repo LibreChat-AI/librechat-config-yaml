@@ -1,4 +1,4 @@
-"""Tests for dual-path orchestrator logic in update_models.py."""
+"""Tests for contract-based orchestrator logic in update_models.py."""
 from __future__ import annotations
 
 import logging
@@ -33,20 +33,17 @@ def _make_fake_fetcher(name: str, models: list[str], status: FetchStatus = Fetch
     return FakeFetcher
 
 
-class TestDualPathOrchestrator:
-    """Test that update_models.main() runs registry providers first,
-    then legacy providers, skipping duplicates."""
+class TestContractOrchestrator:
+    """Test that update_models.main() runs all providers through the contract path."""
 
     @patch("update_models.setup_logging")
     @patch("update_models.discover_providers")
-    @patch("update_models.run_fetcher_script")
     @patch("update_models.load_yaml_file", return_value=None)
     @patch("update_models.cleanup_temp_files")
-    def test_migrated_providers_skipped(
-        self, mock_cleanup, mock_load_yaml, mock_run_fetcher, mock_discover, mock_setup_log, caplog
+    def test_all_providers_run_via_contract(
+        self, mock_cleanup, mock_load_yaml, mock_discover, mock_setup_log, caplog
     ):
-        """Providers in the registry should be skipped in the legacy loop."""
-        # Set up registry with Nvidia and groq
+        """All providers should be discovered and run via the contract path."""
         mock_discover.return_value = {
             "Nvidia": _make_fake_fetcher("Nvidia", ["model-a", "model-b"]),
             "groq": _make_fake_fetcher("groq", ["llama-3"]),
@@ -56,51 +53,19 @@ class TestDualPathOrchestrator:
             from update_models import main
             main()
 
-        # Legacy nvidia and groq should be skipped
-        skip_messages = [r.message for r in caplog.records if "Skipping legacy" in r.message]
-        skipped_scripts = " ".join(skip_messages)
-        assert "nvidia" in skipped_scripts
-        assert "groq" in skipped_scripts
-
-        # run_fetcher_script should NOT be called for nvidia or groq
-        called_scripts = [call.args[0] for call in mock_run_fetcher.call_args_list]
-        assert "nvidia" not in called_scripts
-        assert "groq" not in called_scripts
+        # Both providers should have run
+        run_messages = [r.message for r in caplog.records if "Running" in r.message]
+        provider_names = " ".join(run_messages)
+        assert "Nvidia" in provider_names
+        assert "groq" in provider_names
 
     @patch("update_models.setup_logging")
     @patch("update_models.discover_providers")
-    @patch("update_models.run_fetcher_script", return_value=None)
-    @patch("update_models.load_yaml_file", return_value=None)
-    @patch("update_models.cleanup_temp_files")
-    def test_legacy_providers_still_run(
-        self, mock_cleanup, mock_load_yaml, mock_run_fetcher, mock_discover, mock_setup_log, caplog
-    ):
-        """Non-migrated providers should still run via legacy path."""
-        # Only Nvidia is migrated
-        mock_discover.return_value = {
-            "Nvidia": _make_fake_fetcher("Nvidia", ["model-a"]),
-        }
-
-        with caplog.at_level(logging.INFO, logger="update_models"):
-            from update_models import main
-            main()
-
-        # run_fetcher_script should be called for non-migrated providers
-        called_scripts = [call.args[0] for call in mock_run_fetcher.call_args_list]
-        # cohere, deepseek etc. should be in the called list
-        assert "cohere" in called_scripts
-        assert "deepseek" in called_scripts
-        # nvidia should NOT be in the called list
-        assert "nvidia" not in called_scripts
-
-    @patch("update_models.setup_logging")
-    @patch("update_models.discover_providers")
-    @patch("update_models.run_fetcher_script", return_value=None)
     @patch("update_models.save_yaml_file")
     @patch("update_models.create_backup", return_value=MagicMock())
     @patch("update_models.cleanup_temp_files")
     def test_registry_results_in_provider_models(
-        self, mock_cleanup, mock_backup, mock_save, mock_run_fetcher, mock_discover, mock_setup_log
+        self, mock_cleanup, mock_backup, mock_save, mock_discover, mock_setup_log
     ):
         """Registry provider results should flow into the YAML update logic."""
         mock_discover.return_value = {
@@ -133,3 +98,22 @@ class TestDualPathOrchestrator:
         # Verify the YAML data was updated with the fetched models
         assert mock_yaml_data["endpoints"]["custom"][0]["models"]["default"] == ["model-a", "model-b"]
         assert mock_yaml_data["endpoints"]["custom"][0]["models"]["fetch"] is False
+
+    @patch("update_models.setup_logging")
+    @patch("update_models.discover_providers")
+    @patch("update_models.load_yaml_file", return_value=None)
+    @patch("update_models.cleanup_temp_files")
+    def test_failed_provider_tracked(
+        self, mock_cleanup, mock_load_yaml, mock_discover, mock_setup_log, caplog
+    ):
+        """Providers that fail should be tracked in stats."""
+        mock_discover.return_value = {
+            "Nvidia": _make_fake_fetcher("Nvidia", [], FetchStatus.NETWORK_ERROR),
+        }
+
+        with caplog.at_level(logging.WARNING, logger="update_models"):
+            from update_models import main
+            main()
+
+        warning_messages = [r.message for r in caplog.records if r.levelno >= logging.WARNING]
+        assert any("Nvidia" in m for m in warning_messages)

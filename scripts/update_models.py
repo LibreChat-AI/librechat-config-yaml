@@ -1,6 +1,4 @@
-import json
 from pathlib import Path
-import importlib.util
 import logging
 from ruamel.yaml import YAML
 import os
@@ -62,101 +60,6 @@ class UpdateStats:
 
         logger.info(summary)  # Add logging for summary
 
-def load_module_from_file(file_path, module_name):
-    """Load a Python module from a file path."""
-    spec = importlib.util.spec_from_file_location(module_name, file_path)
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
-
-def read_model_file(script_name):
-    """Read and parse model data from output files with different formats."""
-    try:
-        output_file = Path(f"{script_name}.txt")
-        if not output_file.exists():
-            return None
-
-        with open(output_file, 'r', encoding='utf-8') as f:
-            content = f.read().strip()
-
-            # Handle empty files
-            if not content:
-                return None
-
-            # Try to parse as JSON first
-            try:
-                return json.loads(content)
-            except json.JSONDecodeError:
-                # If not JSON, process as line-based format
-                lines = content.split('\n')
-                # Clean up lines (remove quotes, commas, and whitespace)
-                models = [line.strip(' ",\n') for line in lines if line.strip()]
-                return models if models else None
-
-    except Exception as e:
-        logger.error("Error reading %s.txt: %s", script_name, e)
-        return None
-
-def run_fetcher_script(script_name):
-    """Run a model fetcher script and process its output."""
-    try:
-        script_path = Path(__file__).parent / f"{script_name}.py"
-        logger.info("Attempting to run fetcher script: %s", script_path)
-        module = load_module_from_file(script_path, script_name)
-
-        if hasattr(module, 'main'):
-            logger.debug("Executing main() for %s", script_name)
-            module.main()
-            result = read_model_file(script_name)
-            logger.info("Fetcher %s completed successfully", script_name)
-            return result
-    except Exception as e:
-        logger.error("Error running %s: %s", script_name, e, exc_info=True)
-    return None
-
-def clean_model_list(models):
-    """Clean and validate the model list."""
-    if not models:
-        return None
-
-    # If models is already a list of strings, return it
-    if isinstance(models, list) and all(isinstance(m, str) for m in models):
-        return models
-
-    # If models is a dict or other structure, try to extract model names
-    try:
-        if isinstance(models, dict):
-            # Handle case where models might be nested in a response
-            if 'models' in models:
-                models = models['models']
-            # Handle case where models might be values in a dict
-            elif any(isinstance(v, str) for v in models.values()):
-                models = list(models.values())
-            # Handle case where models might be keys in a dict
-            else:
-                models = list(models.keys())
-
-        # Convert to list if it's some other iterable
-        models = list(models)
-
-        # Clean up each model name
-        cleaned = []
-        for model in models:
-            if isinstance(model, (dict, list)):
-                # Extract model name from complex structures
-                if isinstance(model, dict) and 'id' in model:
-                    cleaned.append(str(model['id']))
-                elif isinstance(model, dict) and 'name' in model:
-                    cleaned.append(str(model['name']))
-            else:
-                cleaned.append(str(model))
-
-        return [m for m in cleaned if m]  # Remove any empty strings
-
-    except Exception as e:
-        logger.error("Error cleaning model list: %s", e)
-        return None
-
 def load_yaml_file(file_path):
     """Load a YAML file and return its contents while preserving formatting."""
     try:
@@ -191,17 +94,15 @@ def update_yaml_models(yaml_data, provider_name, models):
     if not yaml_data or 'endpoints' not in yaml_data:
         return False
 
-    # Clean and validate the model list
-    cleaned_models = clean_model_list(models)
-    if not cleaned_models:
+    if not models:
         logger.error("No valid models found for %s", provider_name)
         return False
 
     for endpoint in yaml_data['endpoints'].get('custom', []):
         if endpoint.get('name') == provider_name:
-            endpoint['models']['default'] = cleaned_models
+            endpoint['models']['default'] = models
             endpoint['models']['fetch'] = False
-            logger.info("Updated %d models for %s", len(cleaned_models), provider_name)
+            logger.info("Updated %d models for %s", len(models), provider_name)
             return True
     return False
 
@@ -254,42 +155,15 @@ def main():
         # 'librechat.yaml',
     ]
 
-    # Define the scripts to run and their corresponding provider names
-    fetchers = {
-        'ai302': '302AI',
-        'apipie': 'APIpie',
-        'cohere': 'cohere',
-        'deepseek': 'deepseek',
-        'fireworks': 'Fireworks',
-        'github': 'Github Models',
-        'glhf': 'glhf.chat',
-        'groq': 'groq',
-        'huggingface': 'HuggingFace',
-        'hyperbolic': 'Hyperbolic',
-        'kluster': 'Kluster',
-        'mistral': 'Mistral',
-        'nanogpt': 'NanoGPT',
-        'nvidia': 'Nvidia',
-        'openrouter': 'OpenRouter',
-        'perplexity': 'Perplexity',
-        'sambanova': 'SambaNova',
-        'togetherai': 'together.ai',
-        'unify': 'Unify',
-        'xai': 'xai'
-    }
-
-    # Fetch all models first
+    # Fetch all models from contract-based providers
     logger.info("Fetching models from all providers...")
     provider_models = {}
 
-    # New path: discover and run contract-based providers
     registry = discover_providers()
     logger.info("Discovered %d contract-based providers: %s", len(registry), list(registry.keys()))
 
-    migrated_provider_names = set(registry.keys())
-
     for provider_name, fetcher_cls in registry.items():
-        logger.info("Running %s fetcher (contract)", provider_name)
+        logger.info("Running %s fetcher", provider_name)
         fetcher = fetcher_cls()
         result = fetcher.run()
         if result.status == FetchStatus.SUCCESS:
@@ -299,24 +173,6 @@ def main():
         else:
             logger.warning("%s: %s - %s", result.provider_name, result.status.value, result.error_message)
             stats.add_provider_result(result.provider_name, None)
-
-    # Legacy path: run script-based providers (skip migrated ones)
-    for script_name, provider_name in fetchers.items():
-        if provider_name in migrated_provider_names:
-            logger.info("Skipping legacy %s -- migrated to contract", script_name)
-            continue
-        logger.info("Running %s fetcher", script_name)
-        models = run_fetcher_script(script_name)
-
-        if models:
-            cleaned_models = clean_model_list(models)
-            if cleaned_models:
-                provider_models[provider_name] = cleaned_models
-                stats.add_provider_result(provider_name, cleaned_models)
-            else:
-                stats.add_provider_result(provider_name, None)
-        else:
-            stats.add_provider_result(provider_name, None)
 
     # Now process each YAML file with the fetched models
     for yaml_file in yaml_files:

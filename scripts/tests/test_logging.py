@@ -232,15 +232,3 @@ def test_no_print_calls_in_scripts():
             continue
         violations.append(line)
     assert not violations, f"print() found in disallowed files:\n" + "\n".join(violations)
-
-
-def test_legacy_script_has_logger():
-    """Verify a representative legacy script uses logging (not print)."""
-    # Import deepseek module and verify it has a logger
-    spec = importlib.util.spec_from_file_location(
-        "deepseek", str(Path(__file__).parent.parent / "deepseek.py")
-    )
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    assert hasattr(module, "logger"), "deepseek.py must have module-level 'logger'"
-    assert module.logger.name == "deepseek", f"Expected logger name 'deepseek', got '{module.logger.name}'"
