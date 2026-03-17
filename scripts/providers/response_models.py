@@ -114,3 +114,40 @@ class HuggingFaceModelEntry(BaseModel):
 
     modelId: str
     pipeline_tag: str | None = None
+
+
+# --- Format A extensions: provider-specific fields ---
+
+
+class FireworksModelEntry(OpenAIModelEntry):
+    """Fireworks model entry with supports_chat field for filtering."""
+
+    supports_chat: bool = False
+
+
+class HyperbolicModelEntry(OpenAIModelEntry):
+    """Hyperbolic model entry with supports_image_input field for filtering."""
+
+    supports_image_input: bool = False
+
+
+class TogetherAIModelEntry(ModelEntryById):
+    """TogetherAI model entry with type field for chat filtering."""
+
+    type: str = ""
+
+
+class FireworksModelListResponse(BaseModel):
+    """Fireworks /v1/models response with chat support field."""
+
+    model_config = ConfigDict(extra="allow")
+
+    data: list[FireworksModelEntry]
+
+
+class HyperbolicModelListResponse(BaseModel):
+    """Hyperbolic /v1/models response with image input field."""
+
+    model_config = ConfigDict(extra="allow")
+
+    data: list[HyperbolicModelEntry]
