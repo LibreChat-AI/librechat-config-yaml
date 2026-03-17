@@ -1196,73 +1196,112 @@ class TestHuggingFaceFetcher:
 # Registration
 # ---------------------------------------------------------------------------
 
+def _reload_all_providers():
+    """Reload all provider modules to re-trigger __init_subclass__ registration.
+
+    The autouse clean_registry fixture clears the registry between tests, but
+    cached modules in sys.modules won't re-fire __init_subclass__ on plain
+    import. Reloading forces re-registration.
+    """
+    import importlib
+    import providers.nvidia
+    import providers.groq
+    import providers.github_models
+    import providers.openrouter
+    import providers.nanogpt
+    import providers.apipie
+    import providers.sambanova
+    import providers.perplexity
+    import providers.togetherai
+    import providers.cohere
+    import providers.unify
+    import providers.huggingface
+    import providers.ai302
+    import providers.deepseek
+    import providers.fireworks
+    import providers.glhf
+    import providers.kluster
+    import providers.mistral
+    import providers.hyperbolic
+    import providers.xai
+
+    for mod in [
+        providers.nvidia, providers.groq, providers.github_models,
+        providers.openrouter, providers.nanogpt, providers.apipie,
+        providers.sambanova, providers.perplexity, providers.togetherai,
+        providers.cohere, providers.unify, providers.huggingface,
+        providers.ai302, providers.deepseek, providers.fireworks,
+        providers.glhf, providers.kluster, providers.mistral,
+        providers.hyperbolic, providers.xai,
+    ]:
+        importlib.reload(mod)
+
+    return get_registry()
+
+
 class TestRegistration:
-    def test_all_providers_registered(self):
-        import importlib
+    def test_all_20_providers_registered(self):
+        """All 20 providers must be discoverable."""
+        registry = _reload_all_providers()
+        expected = {
+            "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
+            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
+            "OpenRouter", "Perplexity", "SambaNova", "together.ai",
+            "Unify", "xai",
+        }
+        assert set(registry.keys()) == expected, (
+            f"Missing: {expected - set(registry.keys())}, "
+            f"Extra: {set(registry.keys()) - expected}"
+        )
 
-        # Force re-import to trigger __init_subclass__ registration
-        # (clean_registry fixture clears the registry, but cached modules
-        # won't re-fire __init_subclass__, so we reload them)
-        import providers.nvidia
-        import providers.groq
-        import providers.github_models
-        import providers.openrouter
-        import providers.nanogpt
-        import providers.apipie
-        import providers.sambanova
-        import providers.perplexity
-        import providers.togetherai
-        import providers.cohere
-        import providers.unify
-        import providers.huggingface
-        import providers.ai302
-        import providers.deepseek
-        import providers.fireworks
-        import providers.glhf
-        import providers.kluster
-        import providers.mistral
-        import providers.hyperbolic
-        import providers.xai
+    def test_registry_count(self):
+        registry = _reload_all_providers()
+        assert len(registry) == 20
 
-        importlib.reload(providers.nvidia)
-        importlib.reload(providers.groq)
-        importlib.reload(providers.github_models)
-        importlib.reload(providers.openrouter)
-        importlib.reload(providers.nanogpt)
-        importlib.reload(providers.apipie)
-        importlib.reload(providers.sambanova)
-        importlib.reload(providers.perplexity)
-        importlib.reload(providers.togetherai)
-        importlib.reload(providers.cohere)
-        importlib.reload(providers.unify)
-        importlib.reload(providers.huggingface)
-        importlib.reload(providers.ai302)
-        importlib.reload(providers.deepseek)
-        importlib.reload(providers.fireworks)
-        importlib.reload(providers.glhf)
-        importlib.reload(providers.kluster)
-        importlib.reload(providers.mistral)
-        importlib.reload(providers.hyperbolic)
-        importlib.reload(providers.xai)
 
-        registry = get_registry()
-        assert "Nvidia" in registry
-        assert "groq" in registry
-        assert "Github Models" in registry
-        assert "OpenRouter" in registry
-        assert "NanoGPT" in registry
-        assert "APIpie" in registry
-        assert "SambaNova" in registry
-        assert "Perplexity" in registry
-        assert "together.ai" in registry
-        assert "cohere" in registry
-        assert "Unify" in registry
-        assert "HuggingFace" in registry
-        assert "302AI" in registry
-        assert "deepseek" in registry
-        assert "Fireworks" in registry
-        assert "glhf.chat" in registry
-        assert "Kluster" in registry
-        assert "Mistral" in registry
-        assert "Hyperbolic" in registry
-        assert "xai" in registry
+class TestNoDuplicates:
+    """Integration test: every provider's post_process produces no duplicates."""
+
+    def test_no_duplicates_in_post_process(self):
+        registry = _reload_all_providers()
+        for name, cls in registry.items():
+            fetcher = cls()
+            # Feed duplicates to post_process
+            test_input = ["model-a", "model-b", "model-a", "model-c", "model-b"]
+            result = fetcher.post_process(test_input)
+            # Filter out category headers (e.g., ---FREE---)
+            model_ids = [m for m in result if not m.startswith("---")]
+            assert len(model_ids) == len(set(model_ids)), (
+                f"{name}: post_process produced duplicates: {result}"
+            )
+
+    def test_post_process_is_deterministic(self):
+        registry = _reload_all_providers()
+        for name, cls in registry.items():
+            fetcher = cls()
+            test_input = ["z-model", "a-model", "m-model", "a-model"]
+            result1 = fetcher.post_process(list(test_input))
+            result2 = fetcher.post_process(list(test_input))
+            assert result1 == result2, (
+                f"{name}: post_process is not deterministic"
+            )
+
+
+class TestAllProviderNames:
+    """Verify each provider's provider_name matches the expected YAML name."""
+
+    def test_provider_names_match_yaml_names(self):
+        registry = _reload_all_providers()
+        # These are the exact YAML endpoint names from the config files
+        expected_names = {
+            "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
+            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
+            "OpenRouter", "Perplexity", "SambaNova", "together.ai",
+            "Unify", "xai",
+        }
+        for name in expected_names:
+            assert name in registry, f"Provider '{name}' not registered"
+            fetcher = registry[name]()
+            assert fetcher.provider_name == name
