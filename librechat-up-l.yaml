@@ -2196,6 +2196,7 @@ endpoints:
           - mistralai/mistral-nemotron
           - mistralai/mistral-small-24b-instruct
           - mistralai/mistral-small-3.1-24b-instruct-2503
+          - mistralai/mistral-small-4-119b-2603
           - mistralai/mixtral-8x22b-instruct-v0.1
           - mistralai/mixtral-8x22b-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
@@ -2433,7 +2434,6 @@ endpoints:
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-405b
-          - meta-llama/llama-3.1-405b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
