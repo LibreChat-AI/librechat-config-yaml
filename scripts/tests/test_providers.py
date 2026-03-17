@@ -470,6 +470,235 @@ class TestPerplexityFetcher:
 
 
 # ---------------------------------------------------------------------------
+# TogetherAI
+# ---------------------------------------------------------------------------
+
+class TestTogetherAIFetcher:
+    def _make(self):
+        from providers.togetherai import TogetherAIFetcher
+        return TogetherAIFetcher()
+
+    def test_togetherai_provider_name(self):
+        from providers.togetherai import TogetherAIFetcher
+        assert TogetherAIFetcher.provider_name == "together.ai"
+
+    def test_togetherai_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("TOGETHERAI_API_KEY", raising=False)
+        with patch("providers.togetherai.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "TOGETHERAI_API_KEY" in result.error_message
+
+    def test_togetherai_fetch_success(self, monkeypatch):
+        from providers.togetherai import TogetherAIFetcher
+        monkeypatch.setenv("TOGETHERAI_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [
+            {"id": "llama-3", "type": "chat"},
+            {"id": "stable-diffusion", "type": "image"},
+            {"id": "mixtral", "type": "chat"},
+        ]
+
+        with patch("providers.togetherai.load_dotenv"), \
+             patch.object(TogetherAIFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "llama-3" in result.models
+        assert "mixtral" in result.models
+        assert "stable-diffusion" not in result.models  # filtered by type!=chat
+
+    def test_togetherai_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_togetherai_malformed_response(self, monkeypatch):
+        from providers.togetherai import TogetherAIFetcher
+        monkeypatch.setenv("TOGETHERAI_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"data": "not-array"}
+
+        with patch("providers.togetherai.load_dotenv"), \
+             patch.object(TogetherAIFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Cohere
+# ---------------------------------------------------------------------------
+
+class TestCohereFetcher:
+    def _make(self):
+        from providers.cohere import CohereFetcher
+        return CohereFetcher()
+
+    def test_cohere_provider_name(self):
+        from providers.cohere import CohereFetcher
+        assert CohereFetcher.provider_name == "cohere"
+
+    def test_cohere_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("COHERE_API_KEY", raising=False)
+        with patch("providers.cohere.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "COHERE_API_KEY" in result.error_message
+
+    def test_cohere_fetch_success(self, monkeypatch):
+        from providers.cohere import CohereFetcher
+        monkeypatch.setenv("COHERE_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "models": [
+                {"name": "command-r", "endpoints": ["chat", "generate"]},
+                {"name": "embed-english", "endpoints": ["embed"]},
+            ]
+        }
+
+        with patch("providers.cohere.load_dotenv"), \
+             patch.object(CohereFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "command-r" in result.models
+        assert "embed-english" not in result.models  # no "chat" in endpoints
+
+    def test_cohere_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_cohere_malformed_response(self, monkeypatch):
+        from providers.cohere import CohereFetcher
+        monkeypatch.setenv("COHERE_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.cohere.load_dotenv"), \
+             patch.object(CohereFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Unify
+# ---------------------------------------------------------------------------
+
+class TestUnifyFetcher:
+    def _make(self):
+        from providers.unify import UnifyFetcher
+        return UnifyFetcher()
+
+    def test_unify_provider_name(self):
+        from providers.unify import UnifyFetcher
+        assert UnifyFetcher.provider_name == "Unify"
+
+    def test_unify_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("UNIFY_API_KEY", raising=False)
+        with patch("providers.unify.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "UNIFY_API_KEY" in result.error_message
+
+    def test_unify_fetch_success(self, monkeypatch):
+        from providers.unify import UnifyFetcher
+        monkeypatch.setenv("UNIFY_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [
+            "claude-3@anthropic",
+            "gpt-4@openai",
+            "llama-3@together",
+        ]
+
+        with patch("providers.unify.load_dotenv"), \
+             patch.object(UnifyFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "claude-3@anthropic" in result.models
+        assert "gpt-4@openai" in result.models
+        assert "llama-3@together" in result.models
+
+    def test_unify_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_unify_malformed_response(self, monkeypatch):
+        from providers.unify import UnifyFetcher
+        monkeypatch.setenv("UNIFY_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"not": "a list"}
+
+        with patch("providers.unify.load_dotenv"), \
+             patch.object(UnifyFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# HuggingFace
+# ---------------------------------------------------------------------------
+
+class TestHuggingFaceFetcher:
+    def _make(self):
+        from providers.huggingface import HuggingFaceFetcher
+        return HuggingFaceFetcher()
+
+    def test_huggingface_provider_name(self):
+        from providers.huggingface import HuggingFaceFetcher
+        assert HuggingFaceFetcher.provider_name == "HuggingFace"
+
+    def test_huggingface_get_api_key_returns_none(self):
+        fetcher = self._make()
+        assert fetcher.get_api_key() is None
+
+    def test_huggingface_fetch_success_single_page(self):
+        from providers.huggingface import HuggingFaceFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [
+            {"modelId": "meta-llama/Llama-3", "pipeline_tag": "text-generation"},
+            {"modelId": "openai/whisper", "pipeline_tag": "automatic-speech-recognition"},
+        ]
+
+        with patch.object(HuggingFaceFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "meta-llama/Llama-3" in result.models
+        assert "openai/whisper" not in result.models  # pipeline_tag filter
+
+    def test_huggingface_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_huggingface_empty_result(self):
+        from providers.huggingface import HuggingFaceFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = []
+
+        with patch.object(HuggingFaceFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.EMPTY
+
+
+# ---------------------------------------------------------------------------
 # Registration
 # ---------------------------------------------------------------------------
 
@@ -488,6 +717,10 @@ class TestRegistration:
         import providers.apipie
         import providers.sambanova
         import providers.perplexity
+        import providers.togetherai
+        import providers.cohere
+        import providers.unify
+        import providers.huggingface
 
         importlib.reload(providers.nvidia)
         importlib.reload(providers.groq)
@@ -497,6 +730,10 @@ class TestRegistration:
         importlib.reload(providers.apipie)
         importlib.reload(providers.sambanova)
         importlib.reload(providers.perplexity)
+        importlib.reload(providers.togetherai)
+        importlib.reload(providers.cohere)
+        importlib.reload(providers.unify)
+        importlib.reload(providers.huggingface)
 
         registry = get_registry()
         assert "Nvidia" in registry
@@ -507,3 +744,7 @@ class TestRegistration:
         assert "APIpie" in registry
         assert "SambaNova" in registry
         assert "Perplexity" in registry
+        assert "together.ai" in registry
+        assert "cohere" in registry
+        assert "Unify" in registry
+        assert "HuggingFace" in registry
