@@ -134,6 +134,500 @@ class TestGroqFetcher:
 
 
 # ---------------------------------------------------------------------------
+# 302AI
+# ---------------------------------------------------------------------------
+
+class TestAI302Fetcher:
+    def _make(self):
+        from providers.ai302 import AI302Fetcher
+        return AI302Fetcher()
+
+    def test_ai302_provider_name(self):
+        from providers.ai302 import AI302Fetcher
+        assert AI302Fetcher.provider_name == "302AI"
+
+    def test_ai302_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("AI302_API_KEY", raising=False)
+        with patch("providers.ai302.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "AI302_API_KEY" in result.error_message
+
+    def test_ai302_fetch_success(self, monkeypatch):
+        from providers.ai302 import AI302Fetcher
+        monkeypatch.setenv("AI302_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "model-a"}, {"id": "model-b"}]
+        }
+
+        with patch("providers.ai302.load_dotenv"), \
+             patch.object(AI302Fetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "model-a" in result.models
+        assert "model-b" in result.models
+
+    def test_ai302_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_ai302_malformed_response(self, monkeypatch):
+        from providers.ai302 import AI302Fetcher
+        monkeypatch.setenv("AI302_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.ai302.load_dotenv"), \
+             patch.object(AI302Fetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# DeepSeek
+# ---------------------------------------------------------------------------
+
+class TestDeepSeekFetcher:
+    def _make(self):
+        from providers.deepseek import DeepSeekFetcher
+        return DeepSeekFetcher()
+
+    def test_deepseek_provider_name(self):
+        from providers.deepseek import DeepSeekFetcher
+        assert DeepSeekFetcher.provider_name == "deepseek"
+
+    def test_deepseek_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("DEEPSEEK_API_KEY", raising=False)
+        with patch("providers.deepseek.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "DEEPSEEK_API_KEY" in result.error_message
+
+    def test_deepseek_fetch_success(self, monkeypatch):
+        from providers.deepseek import DeepSeekFetcher
+        monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "deepseek-chat"}, {"id": "deepseek-coder"}]
+        }
+
+        with patch("providers.deepseek.load_dotenv"), \
+             patch.object(DeepSeekFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "deepseek-chat" in result.models
+        assert "deepseek-coder" in result.models
+
+    def test_deepseek_fetch_success_flat_array(self, monkeypatch):
+        from providers.deepseek import DeepSeekFetcher
+        monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [{"id": "model-a"}, {"id": "model-b"}]
+
+        with patch("providers.deepseek.load_dotenv"), \
+             patch.object(DeepSeekFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "model-a" in result.models
+        assert "model-b" in result.models
+
+    def test_deepseek_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_deepseek_malformed_response(self, monkeypatch):
+        from providers.deepseek import DeepSeekFetcher
+        monkeypatch.setenv("DEEPSEEK_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.deepseek.load_dotenv"), \
+             patch.object(DeepSeekFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Fireworks
+# ---------------------------------------------------------------------------
+
+class TestFireworksFetcher:
+    def _make(self):
+        from providers.fireworks import FireworksFetcher
+        return FireworksFetcher()
+
+    def test_fireworks_provider_name(self):
+        from providers.fireworks import FireworksFetcher
+        assert FireworksFetcher.provider_name == "Fireworks"
+
+    def test_fireworks_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("FIREWORKS_API_KEY", raising=False)
+        with patch("providers.fireworks.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "FIREWORKS_API_KEY" in result.error_message
+
+    def test_fireworks_fetch_success(self, monkeypatch):
+        from providers.fireworks import FireworksFetcher
+        monkeypatch.setenv("FIREWORKS_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [
+                {"id": "llama-v3", "supports_chat": True},
+                {"id": "whisper-v3", "supports_chat": False},
+            ]
+        }
+
+        with patch("providers.fireworks.load_dotenv"), \
+             patch.object(FireworksFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "llama-v3" in result.models
+        assert "whisper-v3" not in result.models
+
+    def test_fireworks_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_fireworks_malformed_response(self, monkeypatch):
+        from providers.fireworks import FireworksFetcher
+        monkeypatch.setenv("FIREWORKS_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.fireworks.load_dotenv"), \
+             patch.object(FireworksFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# GLHF
+# ---------------------------------------------------------------------------
+
+class TestGLHFFetcher:
+    def _make(self):
+        from providers.glhf import GLHFFetcher
+        return GLHFFetcher()
+
+    def test_glhf_provider_name(self):
+        from providers.glhf import GLHFFetcher
+        assert GLHFFetcher.provider_name == "glhf.chat"
+
+    def test_glhf_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("GLHF_API_KEY", raising=False)
+        with patch("providers.glhf.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "GLHF_API_KEY" in result.error_message
+
+    def test_glhf_fetch_success(self, monkeypatch):
+        from providers.glhf import GLHFFetcher
+        monkeypatch.setenv("GLHF_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "hf:model-a"}, {"id": "hf:model-b"}]
+        }
+
+        with patch("providers.glhf.load_dotenv"), \
+             patch.object(GLHFFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "hf:model-a" in result.models
+        assert "hf:model-b" in result.models
+
+    def test_glhf_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_glhf_malformed_response(self, monkeypatch):
+        from providers.glhf import GLHFFetcher
+        monkeypatch.setenv("GLHF_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.glhf.load_dotenv"), \
+             patch.object(GLHFFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Kluster
+# ---------------------------------------------------------------------------
+
+class TestKlusterFetcher:
+    def _make(self):
+        from providers.kluster import KlusterFetcher
+        return KlusterFetcher()
+
+    def test_kluster_provider_name(self):
+        from providers.kluster import KlusterFetcher
+        assert KlusterFetcher.provider_name == "Kluster"
+
+    def test_kluster_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("KLUSTER_API_KEY", raising=False)
+        with patch("providers.kluster.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "KLUSTER_API_KEY" in result.error_message
+
+    def test_kluster_fetch_success(self, monkeypatch):
+        from providers.kluster import KlusterFetcher
+        monkeypatch.setenv("KLUSTER_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "model-a"}, {"id": "model-b"}]
+        }
+
+        with patch("providers.kluster.load_dotenv"), \
+             patch.object(KlusterFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "model-a" in result.models
+        assert "model-b" in result.models
+
+    def test_kluster_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_kluster_malformed_response(self, monkeypatch):
+        from providers.kluster import KlusterFetcher
+        monkeypatch.setenv("KLUSTER_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.kluster.load_dotenv"), \
+             patch.object(KlusterFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Mistral
+# ---------------------------------------------------------------------------
+
+class TestMistralFetcher:
+    def _make(self):
+        from providers.mistral import MistralFetcher
+        return MistralFetcher()
+
+    def test_mistral_provider_name(self):
+        from providers.mistral import MistralFetcher
+        assert MistralFetcher.provider_name == "Mistral"
+
+    def test_mistral_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
+        with patch("providers.mistral.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "MISTRAL_API_KEY" in result.error_message
+
+    def test_mistral_fetch_success(self, monkeypatch):
+        from providers.mistral import MistralFetcher
+        monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "mistral-large"}, {"id": "mistral-small"}]
+        }
+
+        with patch("providers.mistral.load_dotenv"), \
+             patch.object(MistralFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "mistral-large" in result.models
+        assert "mistral-small" in result.models
+
+    def test_mistral_fetch_success_flat_array(self, monkeypatch):
+        from providers.mistral import MistralFetcher
+        monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [{"id": "model-a"}, {"id": "model-b"}]
+
+        with patch("providers.mistral.load_dotenv"), \
+             patch.object(MistralFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "model-a" in result.models
+        assert "model-b" in result.models
+
+    def test_mistral_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_mistral_malformed_response(self, monkeypatch):
+        from providers.mistral import MistralFetcher
+        monkeypatch.setenv("MISTRAL_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.mistral.load_dotenv"), \
+             patch.object(MistralFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# Hyperbolic
+# ---------------------------------------------------------------------------
+
+class TestHyperbolicFetcher:
+    def _make(self):
+        from providers.hyperbolic import HyperbolicFetcher
+        return HyperbolicFetcher()
+
+    def test_hyperbolic_provider_name(self):
+        from providers.hyperbolic import HyperbolicFetcher
+        assert HyperbolicFetcher.provider_name == "Hyperbolic"
+
+    def test_hyperbolic_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("HYPERBOLIC_API_KEY", raising=False)
+        with patch("providers.hyperbolic.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "HYPERBOLIC_API_KEY" in result.error_message
+
+    def test_hyperbolic_fetch_success(self, monkeypatch):
+        from providers.hyperbolic import HyperbolicFetcher
+        monkeypatch.setenv("HYPERBOLIC_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [
+                {"id": "llama-3", "supports_image_input": False},
+                {"id": "sdxl", "supports_image_input": True},
+                {"id": "TTS"},
+            ]
+        }
+
+        with patch("providers.hyperbolic.load_dotenv"), \
+             patch.object(HyperbolicFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "llama-3" in result.models
+        assert "sdxl" not in result.models
+        assert "TTS" not in result.models
+
+    def test_hyperbolic_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_hyperbolic_malformed_response(self, monkeypatch):
+        from providers.hyperbolic import HyperbolicFetcher
+        monkeypatch.setenv("HYPERBOLIC_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.hyperbolic.load_dotenv"), \
+             patch.object(HyperbolicFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# xAI
+# ---------------------------------------------------------------------------
+
+class TestXAIFetcher:
+    def _make(self):
+        from providers.xai import XAIFetcher
+        return XAIFetcher()
+
+    def test_xai_provider_name(self):
+        from providers.xai import XAIFetcher
+        assert XAIFetcher.provider_name == "xai"
+
+    def test_xai_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("XAI_API_KEY", raising=False)
+        with patch("providers.xai.load_dotenv"):
+            fetcher = self._make()
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "XAI_API_KEY" in result.error_message
+
+    def test_xai_fetch_success(self, monkeypatch):
+        from providers.xai import XAIFetcher
+        monkeypatch.setenv("XAI_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [{"id": "grok-2"}, {"id": "grok-3"}]
+        }
+
+        with patch("providers.xai.load_dotenv"), \
+             patch.object(XAIFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "grok-2" in result.models
+        assert "grok-3" in result.models
+
+    def test_xai_post_process_dedup_and_sort(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
+
+    def test_xai_malformed_response(self, monkeypatch):
+        from providers.xai import XAIFetcher
+        monkeypatch.setenv("XAI_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch("providers.xai.load_dotenv"), \
+             patch.object(XAIFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
 # GitHub Models
 # ---------------------------------------------------------------------------
 
@@ -721,6 +1215,14 @@ class TestRegistration:
         import providers.cohere
         import providers.unify
         import providers.huggingface
+        import providers.ai302
+        import providers.deepseek
+        import providers.fireworks
+        import providers.glhf
+        import providers.kluster
+        import providers.mistral
+        import providers.hyperbolic
+        import providers.xai
 
         importlib.reload(providers.nvidia)
         importlib.reload(providers.groq)
@@ -734,6 +1236,14 @@ class TestRegistration:
         importlib.reload(providers.cohere)
         importlib.reload(providers.unify)
         importlib.reload(providers.huggingface)
+        importlib.reload(providers.ai302)
+        importlib.reload(providers.deepseek)
+        importlib.reload(providers.fireworks)
+        importlib.reload(providers.glhf)
+        importlib.reload(providers.kluster)
+        importlib.reload(providers.mistral)
+        importlib.reload(providers.hyperbolic)
+        importlib.reload(providers.xai)
 
         registry = get_registry()
         assert "Nvidia" in registry
@@ -748,3 +1258,11 @@ class TestRegistration:
         assert "cohere" in registry
         assert "Unify" in registry
         assert "HuggingFace" in registry
+        assert "302AI" in registry
+        assert "deepseek" in registry
+        assert "Fireworks" in registry
+        assert "glhf.chat" in registry
+        assert "Kluster" in registry
+        assert "Mistral" in registry
+        assert "Hyperbolic" in registry
+        assert "xai" in registry
