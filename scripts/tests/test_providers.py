@@ -52,6 +52,19 @@ class TestNvidiaFetcher:
 
         assert result.status == FetchStatus.EMPTY
 
+    def test_nvidia_fetch_malformed_response(self):
+        """Malformed response (wrong structure) returns parse_error with pydantic details."""
+        from providers.nvidia import NvidiaFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"models": [{"name": "x"}]}  # wrong shape
+
+        with patch.object(NvidiaFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+        assert "data" in result.error_message  # pydantic names the missing field
+
 
 # ---------------------------------------------------------------------------
 # Groq
@@ -102,6 +115,21 @@ class TestGroqFetcher:
         fetcher = self._make()
         assert fetcher.post_process(["z", "a", "a"]) == ["a", "z"]
 
+    def test_groq_fetch_malformed_response(self, monkeypatch):
+        """Malformed response returns parse_error with pydantic details."""
+        from providers.groq import GroqFetcher
+        monkeypatch.setenv("GROQ_API_KEY", "test-key")
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"result": "not-openai-format"}
+
+        with patch("providers.groq.load_dotenv"), \
+             patch.object(GroqFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+        assert "data" in result.error_message
+
 
 # ---------------------------------------------------------------------------
 # GitHub Models
@@ -135,6 +163,19 @@ class TestGithubModelsFetcher:
     def test_github_post_process(self):
         fetcher = self._make()
         assert fetcher.post_process(["c", "a", "a"]) == ["a", "c"]
+
+    def test_github_fetch_malformed_entries(self):
+        """Array with entries missing 'name' returns parse_error."""
+        from providers.github_models import GithubModelsFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = [{"id": "no-name-field"}]  # has id, not name
+
+        with patch.object(GithubModelsFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+        assert "name" in result.error_message
 
 
 # ---------------------------------------------------------------------------
