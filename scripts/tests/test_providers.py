@@ -274,11 +274,207 @@ class TestOpenRouterFetcher:
 
 
 # ---------------------------------------------------------------------------
+# NanoGPT
+# ---------------------------------------------------------------------------
+
+class TestNanoGPTFetcher:
+    def _make(self):
+        from providers.nanogpt import NanoGPTFetcher
+        return NanoGPTFetcher()
+
+    def test_nanogpt_provider_name(self):
+        from providers.nanogpt import NanoGPTFetcher
+        assert NanoGPTFetcher.provider_name == "NanoGPT"
+
+    def test_nanogpt_get_api_key_returns_none(self):
+        fetcher = self._make()
+        assert fetcher.get_api_key() is None
+
+    def test_nanogpt_fetch_success(self):
+        from providers.nanogpt import NanoGPTFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"data": [{"id": "gpt-4o"}, {"id": "claude-3"}]}
+
+        with patch.object(NanoGPTFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "gpt-4o" in result.models
+        assert "claude-3" in result.models
+
+    def test_nanogpt_uses_v1_endpoint(self):
+        from providers.nanogpt import NanoGPTFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"data": [{"id": "test-model"}]}
+
+        with patch.object(NanoGPTFetcher, "_http_get", return_value=mock_resp) as mock_http_get:
+            fetcher.fetch_models()
+
+        url_arg = mock_http_get.call_args[0][0]
+        assert "/api/v1/models" in url_arg
+
+    def test_nanogpt_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
+
+    def test_nanogpt_malformed_response(self):
+        from providers.nanogpt import NanoGPTFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"wrong": "format"}
+
+        with patch.object(NanoGPTFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+
+
+# ---------------------------------------------------------------------------
+# APIpie
+# ---------------------------------------------------------------------------
+
+class TestAPIpieFetcher:
+    def _make(self):
+        from providers.apipie import APIpieFetcher
+        return APIpieFetcher()
+
+    def test_apipie_provider_name(self):
+        from providers.apipie import APIpieFetcher
+        assert APIpieFetcher.provider_name == "APIpie"
+
+    def test_apipie_get_api_key_returns_none(self):
+        fetcher = self._make()
+        assert fetcher.get_api_key() is None
+
+    def test_apipie_fetch_success_openai_format(self):
+        from providers.apipie import APIpieFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"data": [{"id": "gpt-4"}, {"id": "claude-3"}]}
+
+        with patch.object(APIpieFetcher, "_http_get", return_value=mock_resp):
+            result = fetcher.fetch_models()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert "gpt-4" in result.models
+        assert "claude-3" in result.models
+
+    def test_apipie_uses_v1_endpoint(self):
+        from providers.apipie import APIpieFetcher
+        fetcher = self._make()
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"data": [{"id": "test-model"}]}
+
+        with patch.object(APIpieFetcher, "_http_get", return_value=mock_resp) as mock_http_get:
+            fetcher.fetch_models()
+
+        url_arg = mock_http_get.call_args[0][0]
+        assert "/v1/models" in url_arg
+
+    def test_apipie_post_process_free_models_first(self):
+        fetcher = self._make()
+        result = fetcher.post_process(["gpt-4", "free/llama-3", "claude"])
+        assert result == ["---FREE---", "free/llama-3", "claude", "gpt-4"]
+
+    def test_apipie_post_process_no_free(self):
+        fetcher = self._make()
+        result = fetcher.post_process(["gpt-4", "claude"])
+        assert result == ["claude", "gpt-4"]
+        assert "---FREE---" not in result
+
+
+# ---------------------------------------------------------------------------
+# SambaNova
+# ---------------------------------------------------------------------------
+
+class TestSambaNova:
+    def _make(self):
+        from providers.sambanova import SambaNova
+        return SambaNova()
+
+    def test_sambanova_provider_name(self):
+        from providers.sambanova import SambaNova
+        assert SambaNova.provider_name == "SambaNova"
+
+    def test_sambanova_get_api_key_returns_none(self):
+        fetcher = self._make()
+        assert fetcher.get_api_key() is None
+
+    def test_sambanova_returns_hardcoded_models(self):
+        fetcher = self._make()
+        result = fetcher.fetch_models()
+        assert result.status == FetchStatus.SUCCESS
+        assert len(result.models) > 0
+
+    def test_sambanova_models_are_strings(self):
+        fetcher = self._make()
+        result = fetcher.fetch_models()
+        for model in result.models:
+            assert isinstance(model, str)
+            assert model.strip() != ""
+
+    def test_sambanova_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
+
+    def test_sambanova_no_scraping_imports(self):
+        import importlib
+        mod = importlib.import_module("providers.sambanova")
+        source = inspect.getsource(mod)
+        assert "BeautifulSoup" not in source
+        assert "bs4" not in source
+
+
+# ---------------------------------------------------------------------------
+# Perplexity
+# ---------------------------------------------------------------------------
+
+class TestPerplexityFetcher:
+    def _make(self):
+        from providers.perplexity import PerplexityFetcher
+        return PerplexityFetcher()
+
+    def test_perplexity_provider_name(self):
+        from providers.perplexity import PerplexityFetcher
+        assert PerplexityFetcher.provider_name == "Perplexity"
+
+    def test_perplexity_get_api_key_returns_none(self):
+        fetcher = self._make()
+        assert fetcher.get_api_key() is None
+
+    def test_perplexity_returns_hardcoded_models(self):
+        fetcher = self._make()
+        result = fetcher.fetch_models()
+        assert result.status == FetchStatus.SUCCESS
+        assert "sonar" in result.models
+        assert "sonar-pro" in result.models
+
+    def test_perplexity_all_models_match_pattern(self):
+        from providers.perplexity import PerplexityFetcher
+        pattern = re.compile(r"^sonar(-[a-z0-9]+)*$")
+        for model in PerplexityFetcher.MODELS:
+            assert pattern.match(model), f"Model '{model}' does not match pattern"
+
+    def test_perplexity_post_process(self):
+        fetcher = self._make()
+        assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
+
+    def test_perplexity_no_scraping_imports(self):
+        import importlib
+        mod = importlib.import_module("providers.perplexity")
+        source = inspect.getsource(mod)
+        assert "BeautifulSoup" not in source
+        assert "bs4" not in source
+
+
+# ---------------------------------------------------------------------------
 # Registration
 # ---------------------------------------------------------------------------
 
 class TestRegistration:
-    def test_all_four_registered(self):
+    def test_all_providers_registered(self):
         import importlib
 
         # Force re-import to trigger __init_subclass__ registration
@@ -288,14 +484,26 @@ class TestRegistration:
         import providers.groq
         import providers.github_models
         import providers.openrouter
+        import providers.nanogpt
+        import providers.apipie
+        import providers.sambanova
+        import providers.perplexity
 
         importlib.reload(providers.nvidia)
         importlib.reload(providers.groq)
         importlib.reload(providers.github_models)
         importlib.reload(providers.openrouter)
+        importlib.reload(providers.nanogpt)
+        importlib.reload(providers.apipie)
+        importlib.reload(providers.sambanova)
+        importlib.reload(providers.perplexity)
 
         registry = get_registry()
         assert "Nvidia" in registry
         assert "groq" in registry
         assert "Github Models" in registry
         assert "OpenRouter" in registry
+        assert "NanoGPT" in registry
+        assert "APIpie" in registry
+        assert "SambaNova" in registry
+        assert "Perplexity" in registry
