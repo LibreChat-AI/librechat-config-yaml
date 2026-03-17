@@ -3,8 +3,10 @@ from __future__ import annotations
 from typing import Optional
 
 import httpx
+from pydantic import ValidationError
 
 from .base import BaseFetcher, FetchResult, FetchStatus
+from .response_models import ModelEntryByName
 
 
 class GithubModelsFetcher(BaseFetcher):
@@ -33,7 +35,16 @@ class GithubModelsFetcher(BaseFetcher):
                     status=FetchStatus.PARSE_ERROR,
                     error_message="Expected array response, got " + type(data).__name__,
                 )
-            models = [m["name"] for m in data if "name" in m]
+            try:
+                validated = [ModelEntryByName.model_validate(entry) for entry in data]
+            except ValidationError as e:
+                return FetchResult(
+                    provider_name=self.provider_name,
+                    models=[],
+                    status=FetchStatus.PARSE_ERROR,
+                    error_message=str(e),
+                )
+            models = [entry.name for entry in validated]
             if not models:
                 return FetchResult(
                     provider_name=self.provider_name,

@@ -3,8 +3,10 @@ from __future__ import annotations
 from typing import Optional
 
 import httpx
+from pydantic import ValidationError
 
 from .base import BaseFetcher, FetchResult, FetchStatus
+from .response_models import OpenAIModelListResponse
 
 
 class NvidiaFetcher(BaseFetcher):
@@ -19,14 +21,16 @@ class NvidiaFetcher(BaseFetcher):
         try:
             response = self._http_get("https://integrate.api.nvidia.com/v1/models")
             data = response.json()
-            if "data" not in data or not isinstance(data["data"], list):
+            try:
+                validated = OpenAIModelListResponse.model_validate(data)
+            except ValidationError as e:
                 return FetchResult(
                     provider_name=self.provider_name,
                     models=[],
                     status=FetchStatus.PARSE_ERROR,
-                    error_message="Response missing 'data' key or 'data' is not a list",
+                    error_message=str(e),
                 )
-            models = [m["id"] for m in data["data"] if "id" in m]
+            models = [entry.id for entry in validated.data]
             if not models:
                 return FetchResult(
                     provider_name=self.provider_name,

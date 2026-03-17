@@ -6,8 +6,10 @@ from typing import Optional
 
 import httpx
 from dotenv import load_dotenv
+from pydantic import ValidationError
 
 from .base import BaseFetcher, FetchResult, FetchStatus
+from .response_models import OpenAIModelListResponse
 
 
 class GroqFetcher(BaseFetcher):
@@ -37,17 +39,18 @@ class GroqFetcher(BaseFetcher):
                 },
             )
             data = response.json()
-            if "data" not in data:
+            try:
+                validated = OpenAIModelListResponse.model_validate(data)
+            except ValidationError as e:
                 return FetchResult(
                     provider_name=self.provider_name,
                     models=[],
                     status=FetchStatus.PARSE_ERROR,
-                    error_message="Response missing 'data' key",
+                    error_message=str(e),
                 )
             models = [
-                m["id"]
-                for m in data["data"]
-                if "id" in m and "whisper" not in m["id"].lower()
+                entry.id for entry in validated.data
+                if "whisper" not in entry.id.lower()
             ]
             if not models:
                 return FetchResult(
