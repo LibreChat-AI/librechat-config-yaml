@@ -26,4 +26,10 @@ scripts/*_raw.json
 .commit_msg
 
 # Act tests runner executables
-/bin/.planning/
+/bin/
+
+# Planning artifacts
+.planning/
+
+# Claude Code local settings
+.claude/
