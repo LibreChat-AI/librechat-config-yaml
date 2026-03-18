@@ -1,3 +1,4 @@
+from datetime import datetime, timezone
 from pathlib import Path
 import logging
 import os
@@ -41,17 +42,17 @@ def check_staleness(provider_name, new_models, yaml_data):
 
 class UpdateStats:
     def __init__(self):
-        self.provider_counts = {}  # Store model counts per provider
-        self.failed_providers = []  # Store failed provider names
-        self.stale_providers = []  # Store stale provider tuples (name, old, new)
-        self.updated_files = []    # Store successfully updated files
-        self.failed_files = []     # Store files that failed to update
+        self.provider_results = {}  # name -> (old_count, new_count)
+        self.failed_providers = {}  # name -> error_message
+        self.stale_providers = []   # (name, old_count, new_count) tuples
+        self.updated_files = []     # Successfully updated files
+        self.failed_files = []      # Files that failed to update
 
-    def add_provider_result(self, provider_name, models):
-        if models:
-            self.provider_counts[provider_name] = len(models)
-        else:
-            self.failed_providers.append(provider_name)
+    def add_provider_result(self, provider_name, old_count, new_count):
+        self.provider_results[provider_name] = (old_count, new_count)
+
+    def add_failed_provider(self, provider_name, error_message):
+        self.failed_providers[provider_name] = error_message or "unknown error"
 
     def add_stale_provider(self, provider_name, old_count, new_count):
         self.stale_providers.append((provider_name, old_count, new_count))
@@ -66,14 +67,19 @@ class UpdateStats:
         summary = "\nUpdate Summary\n============="
 
         summary += "\n\nProvider Statistics:\n-----------------"
-        if self.provider_counts:
-            for provider, count in sorted(self.provider_counts.items()):
-                summary += "\n[OK] %s: %d models" % (provider, count)
+        if self.provider_results:
+            for provider, (old, new) in sorted(self.provider_results.items()):
+                delta = new - old
+                if delta >= 0:
+                    sign = "+"
+                else:
+                    sign = ""
+                summary += "\n[OK] %s: %d models (%s%d)" % (provider, new, sign, delta)
 
         if self.failed_providers:
             summary += "\n\nFailed Providers:\n----------------"
             for provider in sorted(self.failed_providers):
-                summary += "\n[FAIL] %s" % provider
+                summary += "\n[FAIL] %s: %s" % (provider, self.failed_providers[provider])
 
         if self.stale_providers:
             summary += "\n\nStale Providers (skipped):\n-------------------------"
@@ -94,13 +100,81 @@ class UpdateStats:
                     "%d failed, "
                     "%d stale (skipped), "
                     "%d files updated, "
-                    "%d files failed" % (len(self.provider_counts),
+                    "%d files failed" % (len(self.provider_results),
                     len(self.failed_providers),
                     len(self.stale_providers),
                     len(self.updated_files),
                     len(self.failed_files)))
 
-        logger.info(summary)  # Add logging for summary
+        logger.info(summary)
+
+    def generate_commit_message(self):
+        """Generate a commit message with subject and body."""
+        subject = self._commit_subject()
+        body = self._commit_body()
+        return "%s\n\n%s" % (subject, body)
+
+    def _commit_subject(self):
+        """Build commit subject line with provider deltas."""
+        deltas = []
+        for provider, (old, new) in sorted(self.provider_results.items()):
+            diff = new - old
+            if diff > 0:
+                deltas.append("%s +%d" % (provider, diff))
+            elif diff < 0:
+                deltas.append("%s %d" % (provider, diff))
+
+        if not deltas:
+            date_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+            return "chore: update models (%s)" % date_str
+
+        subject = "chore: update models (%s)" % ", ".join(deltas)
+        if len(subject) <= 72:
+            return subject
+
+        # Truncate: count gained vs lost
+        gained = 0
+        lost = 0
+        for provider, (old, new) in self.provider_results.items():
+            diff = new - old
+            if diff > 0:
+                gained += 1
+            elif diff < 0:
+                lost += 1
+
+        parts = []
+        if gained:
+            parts.append("%d providers gained models" % gained)
+        if lost:
+            parts.append("%d lost models" % lost)
+        return "chore: update models (%s)" % ", ".join(parts)
+
+    def _commit_body(self):
+        """Build commit body with provider details."""
+        lines = []
+
+        if self.provider_results:
+            for provider, (old, new) in sorted(self.provider_results.items()):
+                delta = new - old
+                if delta >= 0:
+                    sign = "+"
+                else:
+                    sign = ""
+                lines.append("%s: %d -> %d (%s%d)" % (provider, old, new, sign, delta))
+
+        if self.failed_providers:
+            lines.append("")
+            lines.append("Failed:")
+            for provider in sorted(self.failed_providers):
+                lines.append("  %s: %s" % (provider, self.failed_providers[provider]))
+
+        if self.stale_providers:
+            lines.append("")
+            lines.append("Stale (skipped):")
+            for provider, old, new in sorted(self.stale_providers):
+                lines.append("  %s: %d -> %d" % (provider, old, new))
+
+        return "\n".join(lines)
 
 def validate_yaml_file(file_path):
     """Validate YAML file can be parsed correctly.
@@ -285,11 +359,10 @@ def main():
         result = fetcher.run()
         if result.status == FetchStatus.SUCCESS:
             provider_models[result.provider_name] = result.models
-            stats.add_provider_result(result.provider_name, result.models)
             logger.info("%s: %s (%d models)", result.provider_name, result.status.value, result.model_count)
         else:
             logger.warning("%s: %s - %s", result.provider_name, result.status.value, result.error_message)
-            stats.add_provider_result(result.provider_name, None)
+            stats.add_failed_provider(result.provider_name, result.error_message)
 
     # Now process each YAML file with the fetched models
     for yaml_file in yaml_files:
@@ -312,6 +385,7 @@ def main():
                 continue
 
             updates_made = False
+            seen_providers = set()
 
             # Update YAML with previously fetched models
             for provider_name, models in provider_models.items():
@@ -331,6 +405,9 @@ def main():
 
                 if update_yaml_models(yaml_data, provider_name, models):
                     updates_made = True
+                    if provider_name not in seen_providers:
+                        stats.add_provider_result(provider_name, old_count, new_count)
+                        seen_providers.add(provider_name)
 
             # Save YAML file if updates were made
             if updates_made:
@@ -351,14 +428,14 @@ def main():
 
     logger.info("Model update process completed")
 
-    # Return success if at least one file was updated
-    return len(stats.updated_files) > 0
+    return stats
 
 if __name__ == "__main__":
     import sys
 
     try:
-        success = main()
+        stats = main()
+        success = stats is not None and len(stats.updated_files) > 0
         logger.info("Script completed with success=%s", success)
         exit(0 if success else 1)
     except Exception as e:
