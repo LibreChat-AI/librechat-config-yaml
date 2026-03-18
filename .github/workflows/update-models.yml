@@ -89,7 +89,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add librechat-*.yaml
-          git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
+          if [ -s .commit_msg ]; then
+            git commit -F .commit_msg
+          else
+            git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
+          fi
           git push
       
       - name: Trigger deploy webhook
