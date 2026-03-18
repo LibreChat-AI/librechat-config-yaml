@@ -1,17 +1,49 @@
 from pathlib import Path
 import logging
-from ruamel.yaml import YAML
 import os
+import tempfile
+
+from ruamel.yaml import YAML
 
 from log_config import setup_logging
 from providers import discover_providers, FetchStatus
 
 logger = logging.getLogger(__name__)
 
+STALENESS_THRESHOLD = float(os.environ.get("STALENESS_THRESHOLD", "0.5"))
+
+
+def check_staleness(provider_name, new_models, yaml_data):
+    """Check if new model count is suspiciously low compared to existing.
+
+    Returns:
+        tuple: (is_stale, old_count, new_count)
+    """
+    if not yaml_data or 'endpoints' not in yaml_data:
+        return False, 0, len(new_models)
+
+    for endpoint in yaml_data['endpoints'].get('custom', []):
+        if endpoint.get('name') == provider_name:
+            existing = endpoint.get('models', {}).get('default', [])
+            old_count = len(existing)
+            new_count = len(new_models)
+
+            if old_count == 0:
+                return False, 0, new_count
+
+            ratio = new_count / old_count
+            if ratio < STALENESS_THRESHOLD:
+                return True, old_count, new_count
+            return False, old_count, new_count
+
+    return False, 0, len(new_models)
+
+
 class UpdateStats:
     def __init__(self):
         self.provider_counts = {}  # Store model counts per provider
         self.failed_providers = []  # Store failed provider names
+        self.stale_providers = []  # Store stale provider tuples (name, old, new)
         self.updated_files = []    # Store successfully updated files
         self.failed_files = []     # Store files that failed to update
 
@@ -20,6 +52,9 @@ class UpdateStats:
             self.provider_counts[provider_name] = len(models)
         else:
             self.failed_providers.append(provider_name)
+
+    def add_stale_provider(self, provider_name, old_count, new_count):
+        self.stale_providers.append((provider_name, old_count, new_count))
 
     def add_file_result(self, filename, success):
         if success:
@@ -40,6 +75,11 @@ class UpdateStats:
             for provider in sorted(self.failed_providers):
                 summary += "\n[FAIL] %s" % provider
 
+        if self.stale_providers:
+            summary += "\n\nStale Providers (skipped):\n-------------------------"
+            for provider, old, new in sorted(self.stale_providers):
+                summary += "\n[SKIP] %s: %d -> %d models (below threshold)" % (provider, old, new)
+
         summary += "\n\nFile Updates:\n------------"
         if self.updated_files:
             for file in sorted(self.updated_files):
@@ -52,13 +92,55 @@ class UpdateStats:
 
         summary += ("\n\nSummary: %d providers updated, "
                     "%d failed, "
+                    "%d stale (skipped), "
                     "%d files updated, "
                     "%d files failed" % (len(self.provider_counts),
                     len(self.failed_providers),
+                    len(self.stale_providers),
                     len(self.updated_files),
                     len(self.failed_files)))
 
         logger.info(summary)  # Add logging for summary
+
+def validate_yaml_file(file_path):
+    """Validate YAML file can be parsed correctly.
+
+    Args:
+        file_path: Path to YAML file to validate
+
+    Returns:
+        tuple: (is_valid, error_message)
+    """
+    try:
+        yaml = YAML()
+        yaml.preserve_quotes = True
+        yaml.width = 4096
+        yaml.default_flow_style = False
+        yaml.indent(mapping=2, sequence=4, offset=2)
+
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = yaml.load(f)
+
+        if content is None:
+            return False, "YAML file is empty"
+
+        if not isinstance(content, dict):
+            return False, "YAML file does not contain a valid dictionary structure"
+
+        # Check for required keys in LibreChat config
+        required_keys = ['version', 'endpoints']
+        missing_keys = [key for key in required_keys if key not in content]
+        if missing_keys:
+            return False, "Missing required keys: %s" % ', '.join(missing_keys)
+
+        logger.info("YAML validation successful for %s", file_path)
+        return True, None
+
+    except Exception as e:
+        error_msg = "YAML parsing error: %s" % e
+        logger.error("%s", error_msg)
+        return False, error_msg
+
 
 def load_yaml_file(file_path):
     """Load a YAML file and return its contents while preserving formatting."""
@@ -75,7 +157,11 @@ def load_yaml_file(file_path):
         return None
 
 def save_yaml_file(file_path, data):
-    """Save data to a YAML file while preserving formatting."""
+    """Save data to a YAML file atomically with validation."""
+    file_path = Path(file_path)
+    tmp_fd = None
+    tmp_path = None
+
     try:
         yaml = YAML()
         yaml.preserve_quotes = True
@@ -83,11 +169,42 @@ def save_yaml_file(file_path, data):
         yaml.default_flow_style = False
         yaml.indent(mapping=2, sequence=4, offset=2)
 
-        with open(file_path, 'w', encoding='utf-8') as f:
+        # Create temp file in same directory (same filesystem = atomic rename)
+        tmp_fd, tmp_path = tempfile.mkstemp(
+            suffix='.yaml.tmp',
+            dir=str(file_path.parent),
+        )
+
+        # Write to temp file
+        with os.fdopen(tmp_fd, 'w', encoding='utf-8') as f:
+            tmp_fd = None  # os.fdopen takes ownership of fd
             yaml.dump(data, f)
+            f.flush()
+            os.fsync(f.fileno())
+
+        # Validate the temp file before replacing
+        is_valid, error = validate_yaml_file(tmp_path)
+        if not is_valid:
+            raise ValueError(
+                "Validation failed for %s: %s" % (file_path.name, error)
+            )
+
+        # Atomic replace
+        os.replace(tmp_path, str(file_path))
+        tmp_path = None  # Prevent cleanup since file was moved
         logger.info("Updated %s", file_path)
+
     except Exception as e:
         logger.error("Error saving YAML file %s: %s", file_path, e)
+        raise
+    finally:
+        if tmp_fd is not None:
+            os.close(tmp_fd)
+        if tmp_path is not None:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
 
 def update_yaml_models(yaml_data, provider_name, models):
     """Update the models list for a specific provider in the YAML data."""
@@ -198,6 +315,20 @@ def main():
 
             # Update YAML with previously fetched models
             for provider_name, models in provider_models.items():
+                is_stale, old_count, new_count = check_staleness(
+                    provider_name, models, yaml_data
+                )
+                if is_stale:
+                    logger.warning(
+                        "Staleness detected for %s: %d -> %d models "
+                        "(%.0f%% of previous, threshold %.0f%%)",
+                        provider_name, old_count, new_count,
+                        (new_count / old_count) * 100,
+                        STALENESS_THRESHOLD * 100,
+                    )
+                    stats.add_stale_provider(provider_name, old_count, new_count)
+                    continue
+
                 if update_yaml_models(yaml_data, provider_name, models):
                     updates_made = True
 

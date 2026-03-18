@@ -8,53 +8,12 @@ import sys
 import os
 import logging
 from pathlib import Path
-from ruamel.yaml import YAML
 import update_models
+from update_models import validate_yaml_file
 
 from log_config import setup_logging
 
 logger = logging.getLogger(__name__)
-
-
-def validate_yaml_file(file_path):
-    """
-    Validate YAML file can be parsed correctly.
-
-    Args:
-        file_path: Path to YAML file to validate
-
-    Returns:
-        tuple: (is_valid, error_message)
-    """
-    try:
-        yaml = YAML()
-        yaml.preserve_quotes = True
-        yaml.width = 4096
-        yaml.default_flow_style = False
-        yaml.indent(mapping=2, sequence=4, offset=2)
-
-        with open(file_path, 'r', encoding='utf-8') as f:
-            content = yaml.load(f)
-
-        if content is None:
-            return False, "YAML file is empty"
-
-        if not isinstance(content, dict):
-            return False, "YAML file does not contain a valid dictionary structure"
-
-        # Check for required keys in LibreChat config
-        required_keys = ['version', 'endpoints']
-        missing_keys = [key for key in required_keys if key not in content]
-        if missing_keys:
-            return False, "Missing required keys: %s" % ', '.join(missing_keys)
-
-        logger.info("YAML validation successful for %s", file_path)
-        return True, None
-
-    except Exception as e:
-        error_msg = "YAML parsing error: %s" % e
-        logger.error("%s", error_msg)
-        return False, error_msg
 
 
 def main():
