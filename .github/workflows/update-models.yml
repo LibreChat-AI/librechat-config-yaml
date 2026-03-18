@@ -65,11 +65,8 @@ jobs:
           UNIFY_API_KEY: ${{ secrets.UNIFY_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: |
-          python -m pip list | grep -i yaml
           cd scripts
           python automated_update.py
-          echo "UPDATE_EXIT_CODE=$?" >> $GITHUB_OUTPUT
-        continue-on-error: true
       
       - name: Check for changes
         id: changes
@@ -146,7 +143,7 @@ jobs:
             ### Details
             - **Date**: ${{ steps.date.outputs.DATE }}
             - **Triggered by**: Automated workflow
-            - **Exit code**: ${{ steps.update.outputs.UPDATE_EXIT_CODE }}
+            - **Exit code**: Non-zero (validation failure)
             
             @Berry-13 Please review this update.
           labels: |

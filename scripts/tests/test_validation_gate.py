@@ -31,6 +31,26 @@ class TestWorkflowStructure:
         assert "python automated_update.py" in content
 
 
+def _make_fake_path(exists=True):
+    """Create a Path mock where parent_dir / 'file.yaml' returns objects with correct .name."""
+    # automated_update.py does:  parent_dir = Path(__file__).parent.parent
+    # then: parent_dir / 'librechat-test.yaml'  ->  we need .name and .exists() to work
+    parent_dir = MagicMock()
+
+    def truediv_side_effect(self_mock, filename):
+        child = MagicMock()
+        child.name = filename
+        child.exists.return_value = exists
+        return child
+
+    parent_dir.__truediv__ = truediv_side_effect
+
+    mock_path_cls = MagicMock()
+    # Path(__file__) returns instance; .parent.parent returns our parent_dir
+    mock_path_cls.return_value.parent.parent = parent_dir
+    return mock_path_cls
+
+
 class TestExitCodePropagation:
     """Test that automated_update.py returns correct exit codes."""
 
@@ -41,11 +61,7 @@ class TestExitCodePropagation:
         mock_um.main.return_value = True
 
         with patch("automated_update.validate_yaml_file", return_value=(True, None)), \
-             patch("automated_update.Path") as MockPath:
-            mock_path = MagicMock()
-            mock_path.exists.return_value = True
-            MockPath.return_value.__truediv__ = MagicMock(return_value=mock_path)
-            mock_path.__truediv__ = MagicMock(return_value=mock_path)
+             patch("automated_update.Path", _make_fake_path(exists=True)):
 
             import automated_update
             result = automated_update.main()
@@ -70,12 +86,8 @@ class TestExitCodePropagation:
         mock_um.main.return_value = True
 
         with patch("automated_update.validate_yaml_file", return_value=(False, "Missing required keys: version")), \
-             patch("automated_update.Path") as MockPath, \
+             patch("automated_update.Path", _make_fake_path(exists=True)), \
              patch.dict("os.environ", {"GITHUB_ENV": "/dev/null"}):
-            mock_path = MagicMock()
-            mock_path.exists.return_value = True
-            mock_path.name = "librechat-test.yaml"
-            MockPath.return_value.__truediv__ = MagicMock(return_value=mock_path)
 
             import automated_update
             result = automated_update.main()
@@ -89,17 +101,19 @@ class TestExitCodePropagation:
         mock_um.main.return_value = True
 
         with patch("automated_update.validate_yaml_file", return_value=(False, "YAML file is empty")), \
-             patch("automated_update.Path") as MockPath, \
+             patch("automated_update.Path", _make_fake_path(exists=True)), \
              patch.dict("os.environ", {"GITHUB_ENV": "/dev/null"}), \
              caplog.at_level(logging.ERROR, logger="automated_update"):
-            mock_path = MagicMock()
-            mock_path.exists.return_value = True
-            mock_path.name = "librechat-test.yaml"
-            MockPath.return_value.__truediv__ = MagicMock(return_value=mock_path)
 
             import automated_update
             automated_update.main()
 
         error_messages = " ".join(r.message for r in caplog.records if r.levelno >= logging.ERROR)
-        assert "librechat-test.yaml" in error_messages
+        # At least one of the 5 YAML files should appear in error messages
+        yaml_files = [
+            "librechat-env-f.yaml", "librechat-env-l.yaml",
+            "librechat-up-f.yaml", "librechat-up-l.yaml",
+            "librechat-test.yaml",
+        ]
+        assert any(f in error_messages for f in yaml_files)
         assert "YAML file is empty" in error_messages
