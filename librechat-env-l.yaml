@@ -718,6 +718,10 @@ endpoints:
           - gpt-5-3-codex
           - gpt-5-4
           - gpt-5-4-2026-03-05
+          - gpt-5-4-mini
+          - gpt-5-4-mini-2026-03-17
+          - gpt-5-4-nano
+          - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-chat
@@ -897,6 +901,7 @@ endpoints:
           - mistral-small-2402-v1
           - mistral-small-24b-instruct
           - mistral-small-24b-instruct-2501
+          - mistral-small-2603
           - mistral-small-3-1-24b-instruct
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
@@ -1245,6 +1250,7 @@ endpoints:
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - HuggingFaceTB/SmolLM3-3B
+          - Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
@@ -1555,6 +1561,7 @@ endpoints:
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen2.5-32B-EVA-v0.2
+          - Qwen3.5-27B-Derestricted
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
           - ReadyArt/The-Omega-Abomination-L-70B-v1.0
           - Salesforce/Llama-xLAM-2-70b-fc-r
@@ -1829,6 +1836,7 @@ endpoints:
           - minimax/minimax-m2.5
           - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
+          - mistral-small-latest-thinking
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/codestral-2508
@@ -1843,6 +1851,8 @@ endpoints:
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-saba
+          - mistralai/mistral-small-4-119b-2603
+          - mistralai/mistral-small-4-119b-2603:thinking
           - mistralai/mistral-small-creative
           - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct-v0.1
@@ -1904,6 +1914,8 @@ endpoints:
           - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-5.4
+          - openai/gpt-5.4-mini
+          - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2413,6 +2425,7 @@ endpoints:
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
           - mistralai/mistral-small-24b-instruct-2501
+          - mistralai/mistral-small-2603
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mistral-small-creative
@@ -2479,6 +2492,8 @@ endpoints:
           - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-5.4
+          - openai/gpt-5.4-mini
+          - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
           - openai/gpt-audio
           - openai/gpt-audio-mini
