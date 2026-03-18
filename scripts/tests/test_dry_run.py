@@ -211,7 +211,7 @@ class TestDryRunUpdateModels:
     @patch("update_models.Path")
     def test_dry_run_logs_mode(
         self, mock_path, mock_discover, mock_load, mock_stale,
-        mock_update, mock_backup, mock_save, mock_cleanup, caplog,
+        mock_update, mock_backup, mock_save, mock_cleanup, capsys,
     ):
         """When dry_run=True, log output contains 'DRY RUN'."""
         mock_discover.return_value = _make_registry()
@@ -219,9 +219,9 @@ class TestDryRunUpdateModels:
         mock_path_inst = MagicMock()
         mock_path_inst.exists.return_value = True
         mock_path.return_value = mock_path_inst
-        with caplog.at_level(logging.INFO):
-            update_main(dry_run=True)
-        assert "DRY RUN" in caplog.text
+        update_main(dry_run=True)
+        captured = capsys.readouterr()
+        assert "DRY RUN" in captured.err
 
     @patch(_PATCHES["cleanup"])
     @patch(_PATCHES["save"])

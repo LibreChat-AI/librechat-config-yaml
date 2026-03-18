@@ -328,8 +328,10 @@ def cleanup_temp_files():
         except Exception as e:
             logger.error("Error deleting %s: %s", txt_file, e)
 
-def main():
+def main(dry_run=False):
     setup_logging()
+    if dry_run:
+        logger.info("DRY RUN mode -- no files will be written")
     logger.info("Starting model update process")
 
     stats = UpdateStats()
@@ -372,11 +374,11 @@ def main():
             continue
 
         try:
-            # Create initial backup of original file
-            backup_path = create_backup(yaml_path)
-            if not backup_path:
-                stats.add_file_result(yaml_file, False)
-                continue
+            if not dry_run:
+                backup_path = create_backup(yaml_path)
+                if not backup_path:
+                    stats.add_file_result(yaml_file, False)
+                    continue
 
             # Load YAML data
             yaml_data = load_yaml_file(yaml_path)
@@ -409,19 +411,16 @@ def main():
                         stats.add_provider_result(provider_name, old_count, new_count)
                         seen_providers.add(provider_name)
 
-            # Save YAML file if updates were made
-            if updates_made:
+            if updates_made and not dry_run:
                 save_yaml_file(yaml_path, yaml_data)
-                stats.add_file_result(yaml_file, True)
-            else:
-                stats.add_file_result(yaml_file, False)
+            stats.add_file_result(yaml_file, updates_made)
 
         except Exception as e:
             logger.error("Error processing %s: %s", yaml_file, e)
             stats.add_file_result(yaml_file, False)
 
-    # Clean up temporary files
-    cleanup_temp_files()
+    if not dry_run:
+        cleanup_temp_files()
 
     # Print summary
     stats.print_summary()
