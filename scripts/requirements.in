@@ -1,0 +1,9 @@
+# Source dependencies -- edit this file, then run:
+#   uv pip compile requirements.in -o requirements.txt
+# Do NOT edit requirements.txt directly -- it is auto-generated.
+
+ruamel.yaml>=0.17.21
+python-dotenv>=1.0.0
+httpx>=0.28.0
+tenacity>=9.0.0
+pydantic>=2.10.0
