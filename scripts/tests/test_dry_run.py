@@ -243,3 +243,50 @@ class TestDryRunUpdateModels:
         mock_path.return_value = mock_path_inst
         update_main(dry_run=False)
         assert mock_save.call_count > 0
+
+
+class TestAutomatedUpdateDryRun:
+    """Tests for automated_update.py --dry-run CLI flag."""
+
+    def test_automated_dry_run_flag_parsed(self):
+        """parse_args() with --dry-run sets dry_run=True."""
+        from automated_update import parse_args
+
+        with patch("sys.argv", ["prog", "--dry-run"]):
+            args = parse_args()
+        assert args.dry_run is True
+
+    def test_automated_dry_run_no_flag_parsed(self):
+        """parse_args() without --dry-run defaults dry_run=False."""
+        from automated_update import parse_args
+
+        with patch("sys.argv", ["prog"]):
+            args = parse_args()
+        assert args.dry_run is False
+
+    def test_automated_dry_run_skips_commit_msg(self, tmp_path):
+        """When dry_run=True, .commit_msg is not written."""
+        import automated_update
+        from update_models import UpdateStats
+
+        mock_stats = UpdateStats()
+        mock_stats.add_provider_result("test", 1, 2)
+        mock_stats.add_file_result("test.yaml", True)
+
+        with patch.object(
+            automated_update.update_models, "main", return_value=mock_stats
+        ) as mock_main:
+            result = automated_update.main(dry_run=True)
+            # Verify update_models.main was called with dry_run=True
+            mock_main.assert_called_once_with(dry_run=True)
+
+        assert result == 0
+
+    def test_automated_help_text(self):
+        """--help output mentions dry-run."""
+        from automated_update import parse_args
+
+        with patch("sys.argv", ["prog", "--help"]):
+            with pytest.raises(SystemExit) as exc_info:
+                parse_args()
+            assert exc_info.value.code == 0

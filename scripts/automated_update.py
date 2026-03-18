@@ -4,6 +4,7 @@ Automated Model Update Script for GitHub Actions
 Fetches latest models from all providers and updates YAML files with validation.
 """
 
+import argparse
 import sys
 import os
 import logging
@@ -16,9 +17,23 @@ from log_config import setup_logging
 logger = logging.getLogger(__name__)
 
 
-def main():
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Automated model update for LibreChat YAML configuration"
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Fetch models and report what would change without writing YAML files",
+    )
+    return parser.parse_args()
+
+
+def main(dry_run=False):
     """Main function for automated updates."""
     setup_logging()
+    if dry_run:
+        logger.info("DRY RUN mode -- skipping file writes and commit message")
     logger.info("=" * 70)
     logger.info("Starting automated model update process")
     logger.info("=" * 70)
@@ -29,7 +44,14 @@ def main():
 
         # Run the model update
         logger.info("Fetching latest models from all providers...")
-        stats = update_models.main()
+        stats = update_models.main(dry_run=dry_run)
+
+        if dry_run:
+            if stats is None:
+                logger.error("Model update failed")
+                return 1
+            logger.info("DRY RUN completed successfully")
+            return 0
 
         if stats is None or len(stats.updated_files) == 0:
             logger.error("Model update failed or no files updated")
@@ -85,12 +107,13 @@ def main():
         logger.info("=" * 70)
 
         # Write commit message for CI workflow
-        msg_path = Path(__file__).parent.parent / ".commit_msg"
-        try:
-            msg_path.write_text(stats.generate_commit_message(), encoding="utf-8")
-            logger.info("Commit message written to %s", msg_path)
-        except Exception as e:
-            logger.warning("Failed to write commit message: %s", e)
+        if not dry_run:
+            msg_path = Path(__file__).parent.parent / ".commit_msg"
+            try:
+                msg_path.write_text(stats.generate_commit_message(), encoding="utf-8")
+                logger.info("Commit message written to %s", msg_path)
+            except Exception as e:
+                logger.warning("Failed to write commit message: %s", e)
 
         return 0
 
@@ -100,5 +123,6 @@ def main():
 
 
 if __name__ == "__main__":
-    exit_code = main()
+    args = parse_args()
+    exit_code = main(dry_run=args.dry_run)
     sys.exit(exit_code)
