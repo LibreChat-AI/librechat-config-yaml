@@ -29,10 +29,10 @@ def main():
 
         # Run the model update
         logger.info("Fetching latest models from all providers...")
-        success = update_models.main()
+        stats = update_models.main()
 
-        if not success:
-            logger.error("Model update failed")
+        if stats is None or len(stats.updated_files) == 0:
+            logger.error("Model update failed or no files updated")
             return 1
 
         logger.info("Model update completed successfully")
@@ -83,6 +83,14 @@ def main():
         logger.info("All YAML files validated successfully")
         logger.info("Automated update completed successfully")
         logger.info("=" * 70)
+
+        # Write commit message for CI workflow
+        msg_path = Path(__file__).parent.parent / ".commit_msg"
+        try:
+            msg_path.write_text(stats.generate_commit_message(), encoding="utf-8")
+            logger.info("Commit message written to %s", msg_path)
+        except Exception as e:
+            logger.warning("Failed to write commit message: %s", e)
 
         return 0
 

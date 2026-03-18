@@ -7,9 +7,20 @@ from unittest.mock import patch, MagicMock
 
 import pytest
 
+from update_models import UpdateStats
+
 
 REPO_ROOT = Path(__file__).parent.parent.parent
 WORKFLOW_PATH = REPO_ROOT / ".github" / "workflows" / "update-models.yml"
+
+
+def _make_update_stats(updated_files=None):
+    """Create an UpdateStats instance with optional updated_files."""
+    stats = UpdateStats()
+    if updated_files:
+        for f in updated_files:
+            stats.add_file_result(f, True)
+    return stats
 
 
 class TestWorkflowStructure:
@@ -58,7 +69,7 @@ class TestExitCodePropagation:
     @patch("automated_update.update_models")
     def test_success_exit_code(self, mock_um, mock_log):
         """Successful update + validation returns 0."""
-        mock_um.main.return_value = True
+        mock_um.main.return_value = _make_update_stats(["librechat-test.yaml"])
 
         with patch("automated_update.validate_yaml_file", return_value=(True, None)), \
              patch("automated_update.Path", _make_fake_path(exists=True)):
@@ -72,7 +83,7 @@ class TestExitCodePropagation:
     @patch("automated_update.update_models")
     def test_update_failure_exit_code(self, mock_um, mock_log):
         """Failed update returns 1."""
-        mock_um.main.return_value = False
+        mock_um.main.return_value = None
 
         import automated_update
         result = automated_update.main()
@@ -83,7 +94,7 @@ class TestExitCodePropagation:
     @patch("automated_update.update_models")
     def test_validation_failure_exit_code(self, mock_um, mock_log):
         """Validation failure returns 2."""
-        mock_um.main.return_value = True
+        mock_um.main.return_value = _make_update_stats(["librechat-test.yaml"])
 
         with patch("automated_update.validate_yaml_file", return_value=(False, "Missing required keys: version")), \
              patch("automated_update.Path", _make_fake_path(exists=True)), \
@@ -98,7 +109,7 @@ class TestExitCodePropagation:
     @patch("automated_update.update_models")
     def test_validation_error_message_logged(self, mock_um, mock_log, caplog):
         """Validation failure logs the file name and error."""
-        mock_um.main.return_value = True
+        mock_um.main.return_value = _make_update_stats(["librechat-test.yaml"])
 
         with patch("automated_update.validate_yaml_file", return_value=(False, "YAML file is empty")), \
              patch("automated_update.Path", _make_fake_path(exists=True)), \
