@@ -5,8 +5,6 @@ import logging
 from typing import Optional
 from unittest.mock import MagicMock, patch
 
-import pytest
-
 from providers.base import BaseFetcher, FetchResult, FetchStatus
 
 

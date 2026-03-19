@@ -43,7 +43,7 @@ class TestAutoRegistration:
     def test_duplicate_registration(self):
         """Defining two classes with same provider_name -- last one wins."""
 
-        class First(BaseFetcher):
+        class First(BaseFetcher):  # noqa: F841 -- registered via __init_subclass__ side effect
             provider_name = "dup"
 
             def get_api_key(self) -> Optional[str]:

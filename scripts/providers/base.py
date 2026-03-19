@@ -70,17 +70,17 @@ class BaseFetcher(ABC):
     @abstractmethod
     def get_api_key(self) -> Optional[str]:
         """Return the API key for this provider, or None if not required."""
-        ...
+        pass
 
     @abstractmethod
     def fetch_models(self) -> FetchResult:
         """Fetch models from the provider and return a typed FetchResult."""
-        ...
+        pass
 
     @abstractmethod
     def post_process(self, models: list[str]) -> list[str]:
         """Post-process the model list (sort, filter, deduplicate)."""
-        ...
+        pass
 
     def run(self) -> FetchResult:
         """Template method: orchestrates fetch + post_process with error handling."""

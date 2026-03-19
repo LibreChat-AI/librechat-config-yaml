@@ -3,8 +3,6 @@
 import logging
 import re
 
-import pytest
-
 from update_models import UpdateStats
 
 

@@ -6,9 +6,7 @@ import inspect
 import re
 from unittest.mock import MagicMock, patch
 
-import pytest
-
-from providers.base import FetchResult, FetchStatus, get_registry
+from providers.base import FetchStatus, get_registry
 
 
 # ---------------------------------------------------------------------------
@@ -915,7 +913,6 @@ class TestSambaNova:
         assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
 
     def test_sambanova_no_scraping_imports(self):
-        import importlib
         mod = importlib.import_module("providers.sambanova")
         source = inspect.getsource(mod)
         assert "BeautifulSoup" not in source
@@ -957,7 +954,6 @@ class TestPerplexityFetcher:
         assert fetcher.post_process(["b", "a", "a"]) == ["a", "b"]
 
     def test_perplexity_no_scraping_imports(self):
-        import importlib
         mod = importlib.import_module("providers.perplexity")
         source = inspect.getsource(mod)
         assert "BeautifulSoup" not in source
