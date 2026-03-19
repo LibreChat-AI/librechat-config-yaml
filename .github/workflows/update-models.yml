@@ -9,6 +9,7 @@ on:
 jobs:
   update-models:
     runs-on: ubuntu-latest
+    environment: Production
     permissions:
       contents: write
       pull-requests: write
