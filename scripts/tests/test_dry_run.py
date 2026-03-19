@@ -1,6 +1,5 @@
 """Tests for --dry-run mode in update_models and automated_update."""
 
-import logging
 from unittest.mock import patch, MagicMock
 from pathlib import Path
 

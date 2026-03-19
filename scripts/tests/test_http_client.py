@@ -1,12 +1,10 @@
 """Tests for BaseFetcher._http_get() retry behavior (REQ-P4, REQ-P5)."""
 from __future__ import annotations
 
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 import httpx
 import pytest
-
-from providers.base import BaseFetcher
 
 
 def _make_response(status_code: int = 200, json_data: dict | None = None) -> httpx.Response:

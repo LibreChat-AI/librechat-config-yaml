@@ -1,7 +1,6 @@
 """Tests for atomic write and validate_yaml_file in update_models.py."""
 from __future__ import annotations
 
-from pathlib import Path
 from unittest.mock import patch
 
 import pytest

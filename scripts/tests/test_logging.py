@@ -1,15 +1,10 @@
 """Tests for centralized logging configuration (log_config module)."""
 
-import importlib
-import importlib.util
 import json
 import logging
-import os
 import subprocess
 from io import StringIO
 from pathlib import Path
-
-import pytest
 
 
 class TestHumanFormatter:
