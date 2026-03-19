@@ -1,6 +1,7 @@
 """Tests for staleness detection in update_models.py."""
 from __future__ import annotations
 
+import importlib
 import logging
 import os
 from typing import Optional
@@ -8,6 +9,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
+import update_models
 from providers.base import BaseFetcher, FetchResult, FetchStatus
 
 
@@ -70,9 +72,7 @@ class TestCheckStaleness:
 
     def test_stale_provider_skipped(self, yaml_data_with_models):
         """Provider with 90% drop is flagged as stale."""
-        from update_models import check_staleness
-
-        is_stale, old_count, new_count = check_staleness(
+        is_stale, old_count, new_count = update_models.check_staleness(
             "Nvidia", ["m1"], yaml_data_with_models
         )
         assert is_stale is True
@@ -81,10 +81,8 @@ class TestCheckStaleness:
 
     def test_not_stale_provider_passes(self, yaml_data_with_models):
         """Provider with 20% drop is NOT flagged as stale."""
-        from update_models import check_staleness
-
         models = ["m%d" % i for i in range(8)]
-        is_stale, old_count, new_count = check_staleness(
+        is_stale, old_count, new_count = update_models.check_staleness(
             "Nvidia", models, yaml_data_with_models
         )
         assert is_stale is False
@@ -93,16 +91,11 @@ class TestCheckStaleness:
 
     def test_threshold_configurable(self, yaml_data_with_models):
         """STALENESS_THRESHOLD env var changes the detection threshold."""
-        from update_models import check_staleness
-
         # 3 models out of 10 = 30% ratio
         models = ["m0", "m1", "m2"]
 
         # With threshold 0.5 (default), 30% < 50% => stale
         with patch.dict(os.environ, {"STALENESS_THRESHOLD": "0.5"}):
-            import importlib
-            import update_models
-
             importlib.reload(update_models)
             is_stale, _, _ = update_models.check_staleness(
                 "Nvidia", models, yaml_data_with_models
@@ -124,9 +117,7 @@ class TestCheckStaleness:
 
     def test_first_population(self, yaml_data_empty_provider):
         """First-time population (old count 0) is never flagged as stale."""
-        from update_models import check_staleness
-
-        is_stale, old_count, new_count = check_staleness(
+        is_stale, old_count, new_count = update_models.check_staleness(
             "Nvidia", ["m1"], yaml_data_empty_provider
         )
         assert is_stale is False
@@ -135,9 +126,7 @@ class TestCheckStaleness:
 
     def test_provider_not_in_yaml(self, yaml_data_no_unknown):
         """Unknown provider not in YAML is treated as first-time (not stale)."""
-        from update_models import check_staleness
-
-        is_stale, old_count, new_count = check_staleness(
+        is_stale, old_count, new_count = update_models.check_staleness(
             "Unknown", ["m1"], yaml_data_no_unknown
         )
         assert is_stale is False
@@ -208,8 +197,7 @@ class TestStalenessIntegration:
             MockPath.return_value = mock_path_instance
 
             with caplog.at_level(logging.WARNING, logger="update_models"):
-                from update_models import main
-                main()
+                update_models.main()
 
         # Nvidia models should NOT have been updated (still 10 old models)
         assert mock_yaml_data["endpoints"]["custom"][0]["models"]["default"] == [

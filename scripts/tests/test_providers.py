@@ -1,6 +1,7 @@
 """Tests for converted provider fetchers."""
 from __future__ import annotations
 
+import importlib
 import inspect
 import re
 from unittest.mock import MagicMock, patch
@@ -1203,37 +1204,18 @@ def _reload_all_providers():
     cached modules in sys.modules won't re-fire __init_subclass__ on plain
     import. Reloading forces re-registration.
     """
-    import importlib
-    import providers.nvidia
-    import providers.groq
-    import providers.github_models
-    import providers.openrouter
-    import providers.nanogpt
-    import providers.apipie
-    import providers.sambanova
-    import providers.perplexity
-    import providers.togetherai
-    import providers.cohere
-    import providers.unify
-    import providers.huggingface
-    import providers.ai302
-    import providers.deepseek
-    import providers.fireworks
-    import providers.glhf
-    import providers.kluster
-    import providers.mistral
-    import providers.hyperbolic
-    import providers.xai
+    provider_module_names = [
+        "providers.nvidia", "providers.groq", "providers.github_models",
+        "providers.openrouter", "providers.nanogpt", "providers.apipie",
+        "providers.sambanova", "providers.perplexity", "providers.togetherai",
+        "providers.cohere", "providers.unify", "providers.huggingface",
+        "providers.ai302", "providers.deepseek", "providers.fireworks",
+        "providers.glhf", "providers.kluster", "providers.mistral",
+        "providers.hyperbolic", "providers.xai",
+    ]
 
-    for mod in [
-        providers.nvidia, providers.groq, providers.github_models,
-        providers.openrouter, providers.nanogpt, providers.apipie,
-        providers.sambanova, providers.perplexity, providers.togetherai,
-        providers.cohere, providers.unify, providers.huggingface,
-        providers.ai302, providers.deepseek, providers.fireworks,
-        providers.glhf, providers.kluster, providers.mistral,
-        providers.hyperbolic, providers.xai,
-    ]:
+    modules = [importlib.import_module(name) for name in provider_module_names]
+    for mod in modules:
         importlib.reload(mod)
 
     return get_registry()
