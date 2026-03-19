@@ -33,3 +33,4 @@ scripts/*_raw.json
 
 # Claude Code local settings
 .claude/
+.venv/
