@@ -23,23 +23,21 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
-      
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: 'scripts/requirements*.txt'
+
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r scripts/requirements.txt
-      
+        run: uv pip sync scripts/requirements.txt --system
+
       - name: Verify installation
         run: |
-          echo "Python version:"
           python --version
-          which python
-          echo "Installed packages:"
-          pip list
-          echo "Testing import:"
-          python -c "import sys; print('Python executable:', sys.executable)"
-          python -c "import yaml; print('PyYAML version:', yaml.__version__)"
+          python -c "import ruamel.yaml; print('ruamel.yaml:', ruamel.yaml.version_info)"
+          python -c "import httpx; print('httpx:', httpx.__version__)"
       
       - name: Run automated model update
         id: update
@@ -65,11 +63,8 @@ jobs:
           UNIFY_API_KEY: ${{ secrets.UNIFY_API_KEY }}
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
         run: |
-          python -m pip list | grep -i yaml
           cd scripts
           python automated_update.py
-          echo "UPDATE_EXIT_CODE=$?" >> $GITHUB_OUTPUT
-        continue-on-error: true
       
       - name: Check for changes
         id: changes
@@ -92,31 +87,35 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add librechat-*.yaml
-          git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
+          if [ -s .commit_msg ]; then
+            git commit -F .commit_msg
+          else
+            git commit -m "chore: update AI models (${{ steps.date.outputs.DATE }})"
+          fi
           git push
       
-      - name: Redeploy on Railway
+      - name: Trigger deploy webhook
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true'
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
-          RAILWAY_ENV_ID: ${{ secrets.RAILWAY_ENVIRONMENT_ID }}
-          RAILWAY_SERVICE_ID: ${{ secrets.RAILWAY_SERVICE_ID }}
-          RAILWAY_REDEPLOY: ${{ vars.RAILWAY_REDEPLOY || 'true' }}
+          DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
         run: |
-          if [ "$RAILWAY_REDEPLOY" != "true" ]; then
-            echo "Railway redeploy is disabled via RAILWAY_REDEPLOY variable."
+          if [ -z "$DEPLOY_WEBHOOK_URL" ]; then
+            echo "DEPLOY_WEBHOOK_URL is not configured. Skipping deploy webhook."
             exit 0
           fi
 
-          if [ -z "$RAILWAY_TOKEN" ]; then
-            echo "RAILWAY_TOKEN is not set. Skipping Railway redeploy."
-            exit 0
-          fi
+          echo "Triggering deploy webhook..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "$DEPLOY_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d '{"event": "models_updated", "date": "${{ steps.date.outputs.DATE }}", "repository": "${{ github.repository }}", "run_id": "${{ github.run_id }}"}' \
+            --max-time 30)
 
-          echo "Running Railway redeploy script..."
-          cd scripts
-          python railway_redeploy.py
+          if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 300 ]; then
+            echo "Deploy webhook triggered successfully (HTTP $HTTP_STATUS)"
+          else
+            echo "Warning: Deploy webhook returned HTTP $HTTP_STATUS (non-fatal)"
+          fi
 
       - name: Create Pull Request (if validation failed)
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED == 'true'
@@ -146,7 +145,7 @@ jobs:
             ### Details
             - **Date**: ${{ steps.date.outputs.DATE }}
             - **Triggered by**: Automated workflow
-            - **Exit code**: ${{ steps.update.outputs.UPDATE_EXIT_CODE }}
+            - **Exit code**: Non-zero (validation failure)
             
             @Berry-13 Please review this update.
           labels: |
