@@ -520,9 +520,25 @@ endpoints:
           - aion-1-0-mini
           - aion-2-0
           - aion-rp-llama-3-1-8b
+          - all-minilm-l12-v2
+          - all-minilm-l6-v2
+          - all-mpnet-base-v2
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
+          - bert-base-dutch-cased
+          - bge-base-en-v1-5
+          - bge-en-icl
+          - bge-large-en-v1-5
+          - bge-m3
+          - bge-m3-multi
+          - blur-background
+          - bria-3-2
+          - bria-3-2-vector
+          - chatgpt-image-latest
+          - chatterbox
+          - chatterbox-multilingual
+          - chatterbox-turbo
           - chatx
           - chatx-fast
           - cheap
@@ -560,6 +576,8 @@ endpoints:
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
           - claude-v2
+          - clip-vit-b-32
+          - clip-vit-b-32-multilingual-v1
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
@@ -575,7 +593,12 @@ endpoints:
           - command-r-v1
           - command-r7b
           - command-r7b-12-2024
+          - creative
+          - crystal
+          - csm-1b
           - cydonia-24b-v4-1
+          - dall-e-2
+          - dall-e-3
           - davinci-002
           - deepseek-3-1
           - deepseek-3-1-nex-n1
@@ -611,12 +634,118 @@ endpoints:
           - devstral-small
           - devstral-small-2505
           - devstral-small-2507
+          - dia-1-6b
+          - distil-large-v3
           - dolphin-mistral-24b-venice-edition
+          - e5-base-v2
+          - e5-large-v2
+          - eleven-flash-v2
+          - eleven-flash-v2-5
+          - eleven-monolingual-v1
+          - eleven-multilingual-v1
+          - eleven-multilingual-v2
+          - eleven-turbo-v2
+          - eleven-turbo-v2-5
+          - eleven-v3
+          - embed-english-v3
+          - embed-multilingual-v3
+          - embed-v4
+          - embeddinggemma-300m
+          - enhance
+          - erase
+          - erase-foreground
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
           - ernie-4-5-vl-28b-a3b
           - ernie-4-5-vl-424b-a47b
+          - expand
+          - fibo
+          - fibo-edit
+          - flux
+          - flux-1-1-pro
+          - flux-1-1-pro-ultra-v1
+          - flux-1-1-pro-ultra-v1-raw
+          - flux-1-1-pro-v1
+          - flux-1-2-flex-v1
+          - flux-1-2-pro-v1
+          - flux-1-control-dev-ghibli-v1
+          - flux-1-dev
+          - flux-1-dev-v1
+          - flux-1-dev-v1-2-5d-anime-v1
+          - flux-1-dev-v1-3d-anime-v1
+          - flux-1-dev-v1-amateur-photography-v1
+          - flux-1-dev-v1-analog-v1
+          - flux-1-dev-v1-counter-strike-v1
+          - flux-1-dev-v1-disposable-camera-v1
+          - flux-1-dev-v1-dreamy-semi-realism-v1
+          - flux-1-dev-v1-dutch-golden-age-v1
+          - flux-1-dev-v1-gta-v1
+          - flux-1-dev-v1-lomography-v1
+          - flux-1-dev-v1-neon-tokyo-v1
+          - flux-1-dev-v1-realism-v1
+          - flux-1-dev-v2
+          - flux-1-dev-v2-2-5d-anime-v1
+          - flux-1-dev-v2-3d-anime-v1
+          - flux-1-dev-v2-amateur-photography-v1
+          - flux-1-dev-v2-analog-v1
+          - flux-1-dev-v2-counter-strike-v1
+          - flux-1-dev-v2-disposable-camera-v1
+          - flux-1-dev-v2-dreamy-semi-realism-v1
+          - flux-1-dev-v2-dutch-golden-age-v1
+          - flux-1-dev-v2-gta-v1
+          - flux-1-dev-v2-lomography-v1
+          - flux-1-dev-v2-neon-tokyo-v1
+          - flux-1-dev-v2-realism-v1
+          - flux-1-fast-dev-kontext-v1
+          - flux-1-fast-dev-v1
+          - flux-1-fast-schnell-v0
+          - flux-1-fast-schnell-v1
+          - flux-1-fast-schnell-v2
+          - flux-1-kontext-dev
+          - flux-1-kontext-max
+          - flux-1-kontext-max-v1
+          - flux-1-kontext-max-v2
+          - flux-1-kontext-pro
+          - flux-1-kontext-pro-v1
+          - flux-1-kontext-pro-v2
+          - flux-1-krea-dev
+          - flux-1-pro
+          - flux-1-pro-v1
+          - flux-1-redux-dev
+          - flux-1-schnell
+          - flux-1-schnell-free
+          - flux-1-schnell-v1
+          - flux-1-schnell-v1-2-5d-anime-v1
+          - flux-1-schnell-v1-3d-anime-v1
+          - flux-1-schnell-v1-amateur-photography-v1
+          - flux-1-schnell-v1-analog-v1
+          - flux-1-schnell-v1-counter-strike-v1
+          - flux-1-schnell-v1-disposable-camera-v1
+          - flux-1-schnell-v1-dreamy-semi-realism-v1
+          - flux-1-schnell-v1-dutch-golden-age-v1
+          - flux-1-schnell-v1-gta-v1
+          - flux-1-schnell-v1-lomography-v1
+          - flux-1-schnell-v1-neon-tokyo-v1
+          - flux-1-schnell-v1-realism-v1
+          - flux-1-schnell-v2
+          - flux-1-schnell-v2-2-5d-anime-v1
+          - flux-1-schnell-v2-3d-anime-v1
+          - flux-1-schnell-v2-amateur-photography-v1
+          - flux-1-schnell-v2-analog-v1
+          - flux-1-schnell-v2-counter-strike-v1
+          - flux-1-schnell-v2-disposable-camera-v1
+          - flux-1-schnell-v2-dreamy-semi-realism-v1
+          - flux-1-schnell-v2-dutch-golden-age-v1
+          - flux-1-schnell-v2-gta-v1
+          - flux-1-schnell-v2-lomography-v1
+          - flux-1-schnell-v2-neon-tokyo-v1
+          - flux-1-schnell-v2-realism-v1
+          - flux-2-dev
+          - flux-2-klein-4b
+          - flux-2-klein-9b
+          - flux-2-max
+          - flux-2-pro
           - free
           - gemini-1-5-flash
           - gemini-1-5-flash-8b
@@ -644,6 +773,7 @@ endpoints:
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
+          - gemini-3-pro-v1
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -654,6 +784,8 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
+          - gemma-3n-e4b-it
+          - gen-fill
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -692,14 +824,27 @@ endpoints:
           - gpt-4o-2024-08-06
           - gpt-4o-2024-11-20
           - gpt-4o-audio-preview
+          - gpt-4o-audio-preview-2024-10-01
+          - gpt-4o-audio-preview-2024-12-17
+          - gpt-4o-audio-preview-2025-06-03
           - gpt-4o-mini
           - gpt-4o-mini-2024-07-18
+          - gpt-4o-mini-audio-preview
+          - gpt-4o-mini-audio-preview-2024-12-17
           - gpt-4o-mini-search
           - gpt-4o-mini-search-preview
           - gpt-4o-mini-search-preview-2025-03-11
+          - gpt-4o-mini-transcribe
+          - gpt-4o-mini-transcribe-2025-03-20
+          - gpt-4o-mini-transcribe-2025-12-15
+          - gpt-4o-mini-tts
+          - gpt-4o-mini-tts-2025-03-20
+          - gpt-4o-mini-tts-2025-12-15
           - gpt-4o-search
           - gpt-4o-search-preview
           - gpt-4o-search-preview-2025-03-11
+          - gpt-4o-transcribe
+          - gpt-4o-transcribe-diarize
           - gpt-5
           - gpt-5-1
           - gpt-5-1-2025-11-13
@@ -742,7 +887,14 @@ endpoints:
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
           - gpt-audio
+          - gpt-audio-1-5
+          - gpt-audio-2025-08-28
           - gpt-audio-mini
+          - gpt-audio-mini-2025-10-06
+          - gpt-audio-mini-2025-12-15
+          - gpt-image-1
+          - gpt-image-1-5
+          - gpt-image-1-mini
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -765,12 +917,16 @@ endpoints:
           - grok-code-fast
           - grok-code-fast-1
           - grok-code-fast-1-0825
+          - gte-base
+          - gte-large
+          - gte-modernbert-base
           - healer-alpha
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
           - hermes-3-llama-3-1-70b
           - hermes-4-405b
           - hermes-4-70b
+          - higgsaudio-v2-5
           - hunter-alpha
           - hunyuan-a13b-instruct
           - inflection-3-pi
@@ -780,6 +936,7 @@ endpoints:
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-large-1-7
+          - juggernaut-lightning-flux
           - kat-coder-pro
           - kimi-k2
           - kimi-k2-0905
@@ -788,6 +945,7 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
+          - kokoro-82m
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -849,21 +1007,31 @@ endpoints:
           - llama-4-scout-17b-instruct
           - llama-4-scout-17b-instruct-v1
           - llama-guard-2-8b
+          - llama-guard-3-11b-vision-turbo
           - llama-guard-3-8b
+          - llama-guard-3-8b-c7288101
+          - llama-guard-3-8b-dc-1-baf-04
           - llama-guard-4-12b
+          - llama-guard-7b
+          - llama-nemotron-embed-vl-1b-v2
+          - llama-rank-v1
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - m2-bert-80m-32k-retrieval
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
           - magnum-v4-72b
+          - marengo-embed-2-7-v1
           - marin-8b-instruct
           - mercury
           - mercury-2
           - mercury-coder
           - mimo-2-flash
           - mimo-v2-flash
+          - mimo-v2-omni
+          - mimo-v2-pro
           - minimax
           - minimax-01
           - minimax-m1
@@ -923,10 +1091,16 @@ endpoints:
           - molmo-7b-d
           - morph-v3-fast
           - morph-v3-large
+          - multi-qa-mpnet-base-dot-v1
+          - multilingual-e5-large
+          - multilingual-e5-large-instruct
           - multimodal
+          - mxbai-rerank-large-v2
           - mythomax
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
+          - nano-banana-v1
+          - nano-banana-v2
           - nemotron-3-nano-30b-a3b
           - nemotron-3-super-120b-a12b
           - nemotron-4-340b-instruct
@@ -938,6 +1112,8 @@ endpoints:
           - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
+          - nova-2-multimodal-embeddings-v1
+          - nova-canvas-v1
           - nova-lite
           - nova-lite-v1
           - nova-micro
@@ -979,10 +1155,14 @@ endpoints:
           - olmocr-2-7b-1025
           - olmocr-7b
           - olmocr-7b-0825
+          - orpheus-3b-0-1-ft
+          - p-image
+          - p-image-edit
           - paddleocr-vl-0-9b
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
+          - paraphrase-minilm-l6-v2
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
@@ -1032,11 +1212,19 @@ endpoints:
           - qwen-3-coder-flash
           - qwen-3-coder-next
           - qwen-3-coder-plus
+          - qwen-3-embedding-0-6b
+          - qwen-3-embedding-0-6b-batch
+          - qwen-3-embedding-4b
+          - qwen-3-embedding-4b-batch
+          - qwen-3-embedding-8b
+          - qwen-3-embedding-8b-batch
           - qwen-3-max
           - qwen-3-max-thinking
           - qwen-3-next-80b-a3b
           - qwen-3-next-80b-a3b-instruct
           - qwen-3-next-80b-a3b-thinking
+          - qwen-3-tts
+          - qwen-3-tts-voicedesign
           - qwen-3-vl-235b-a22b
           - qwen-3-vl-235b-a22b-instruct
           - qwen-3-vl-235b-a22b-thinking
@@ -1044,6 +1232,14 @@ endpoints:
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
           - qwen-3-vl-8b-instruct
+          - qwen-3-vl-8b-thinking
+          - qwen-image-edit
+          - qwen-image-edit-lightning-v1
+          - qwen-image-edit-max
+          - qwen-image-edit-plus-lightning-v1
+          - qwen-image-edit-plus-lightning-v2
+          - qwen-image-edit-plus-v1
+          - qwen-image-max
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -1052,10 +1248,20 @@ endpoints:
           - qwen-vl-plus
           - qwq-32b
           - reasoners
+          - recraft-v3
+          - recraft-v3-al-0
+          - recraft-v3-al-1
+          - recraft-v3-al-2
+          - recraft-v3-al-3
+          - recraft-v3-al-4
+          - recraft-v3-al-5
           - refuel-llm-v2-small
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
+          - remove-background
+          - replace-background
+          - rerank-v3-5
           - rnj-1-instruct
           - rocinante-12b
           - router
@@ -1065,6 +1271,11 @@ endpoints:
           - seed-2-0-lite
           - seed-2-0-mini
           - seed-2-mini
+          - seededit-v1
+          - seedream-4
+          - seedream-4-5
+          - seedream-4-v1
+          - seedream-v1
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
           - skyfall-36b-v2
@@ -1074,15 +1285,61 @@ endpoints:
           - sonar-pro
           - sonar-pro-search
           - sonar-reasoning-pro
+          - sonic
+          - sonic-2
           - sora-2
           - sora-2-pro
           - spotlight
+          - stable-conservative-upscale-v1
+          - stable-creative-upscale-v1
+          - stable-diffusion-3-5
+          - stable-diffusion-3-5-medium
+          - stable-diffusion-v1-5-con-v2
+          - stable-diffusion-v1-5-v1
+          - stable-diffusion-v1-5-v1-con
+          - stable-diffusion-v1-5-v2
+          - stable-diffusion-xl-con-ref-v2
+          - stable-diffusion-xl-con-v2
+          - stable-diffusion-xl-mj-52-v1
+          - stable-diffusion-xl-mj-52-v1-con
+          - stable-diffusion-xl-mj-52-v1-con-ref
+          - stable-diffusion-xl-mj-52-v1-ref
+          - stable-diffusion-xl-ref-v2
+          - stable-diffusion-xl-turbo
+          - stable-diffusion-xl-v1
+          - stable-diffusion-xl-v1-con
+          - stable-diffusion-xl-v1-con-ref
+          - stable-diffusion-xl-v1-ref
+          - stable-diffusion-xl-v2
+          - stable-fast-upscale-v1
+          - stable-image-control-sketch-v1
+          - stable-image-control-structure-v1
+          - stable-image-erase-object-v1
+          - stable-image-inpaint-v1
+          - stable-image-remove-background-v1
+          - stable-image-search-recolor-v1
+          - stable-image-search-replace-v1
+          - stable-image-style-guide-v1
+          - stable-outpaint-v1
+          - stable-style-transfer-v1
           - step-3
           - step-3-5-flash
           - test123
+          - text-2-vec-base-chinese
+          - text-embedding-3-large
+          - text-embedding-3-small
+          - text-embedding-3-small-okan-test
+          - titan-embed-g1-text-02
+          - titan-embed-image-v1
+          - titan-embed-text-v1
+          - titan-embed-text-v2
           - tongyi-deepresearch-30b-a3b
           - trinity-large-preview
           - trinity-mini
+          - tts
+          - tts-1-1106
+          - tts-1-hd
+          - tts-1-hd-1106
           - ui-tars-1-5-7b
           - ultra-fast
           - unslopnemo-12b
@@ -1091,8 +1348,26 @@ endpoints:
           - voxtral-mini-3b-2507
           - voxtral-small-24b
           - voxtral-small-24b-2507
+          - wan-2-6-image-edit
+          - wan-2-6-t2i
           - weaver
+          - whisper-1
+          - whisper-base
+          - whisper-base-en
+          - whisper-large
+          - whisper-large-v3
+          - whisper-large-v3-turbo
+          - whisper-medium
+          - whisper-medium-en
+          - whisper-small
+          - whisper-small-en
+          - whisper-timestamped-medium
+          - whisper-timestamped-medium-en
+          - whisper-tiny
+          - whisper-tiny-en
           - wizardlm-2-8x22b
+          - zonos-v0-1-hybrid
+          - zonos-v0-1-transformer
         fetch: false
       titleConvo: true
       titleModel: "gpt-3.5-turbo"
@@ -1208,16 +1483,10 @@ endpoints:
       baseURL: "https://models.inference.ai.azure.com"
       models:
         default:
-          - AI21-Jamba-Instruct
           - Cohere-embed-v3-english
           - Cohere-embed-v3-multilingual
-          - Meta-Llama-3-70B-Instruct
-          - Meta-Llama-3-8B-Instruct
           - Meta-Llama-3.1-405B-Instruct
-          - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-8B-Instruct
-          - Mistral-Nemo
-          - Mistral-large-2407
           - gpt-4o
           - gpt-4o-mini
           - text-embedding-3-large
@@ -1528,6 +1797,7 @@ endpoints:
       baseURL: "https://nano-gpt.com/api/v1/"
       models:
         default:
+          - Alibaba-NLP/Tongyi-DeepResearch-30B-A3B
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
@@ -1608,7 +1878,6 @@ endpoints:
           - NeverSleep/Lumimaid-v0.2-70B
           - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - NousResearch/Hermes-4-70B:thinking
-          - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-235B-A22B-Instruct-2507-TEE
@@ -1673,7 +1942,6 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
           - aion-labs/aion-rp-llama-3.1-8b
-          - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/molmo-2-8b
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
@@ -1694,6 +1962,10 @@ endpoints:
           - arcee-ai/trinity-large
           - arcee-ai/trinity-mini
           - asi1-mini
+          - auto-model
+          - auto-model-basic
+          - auto-model-premium
+          - auto-model-standard
           - azure-gpt-4-turbo
           - azure-gpt-4o
           - azure-gpt-4o-mini
@@ -1799,7 +2071,6 @@ endpoints:
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
-          - free-model
           - gemini-2.0-flash-001
           - gemini-2.0-flash-exp-image-generation
           - gemini-2.0-flash-lite
@@ -2011,6 +2282,7 @@ endpoints:
           - qwen/qwen3.5-397b-a17b-thinking
           - qwen/qwen3.5-plus
           - qwen/qwen3.5-plus-thinking
+          - qwen/qwq-32b-preview
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
@@ -2070,6 +2342,8 @@ endpoints:
           - xiaomi/mimo-v2-flash-original
           - xiaomi/mimo-v2-flash-thinking
           - xiaomi/mimo-v2-flash-thinking-original
+          - xiaomi/mimo-v2-omni
+          - xiaomi/mimo-v2-pro
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2267,8 +2541,6 @@ endpoints:
           - nvidia/usdcode-llama-3.1-70b-instruct
           - nvidia/vila
           - openai/gpt-oss-120b
-          - openai/gpt-oss-120b
-          - openai/gpt-oss-20b
           - openai/gpt-oss-20b
           - opengpt-x/teuken-7b-instruct-commercial-v0.4
           - qwen/qwen2-7b-instruct
@@ -2569,11 +2841,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
-          - '---OPENROUTER---'
-          - openrouter/bodybuilder
-          - openrouter/free
-          - openrouter/healer-alpha
-          - openrouter/hunter-alpha
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2687,6 +2954,8 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/deepseek-v3.1-nex-n1
+          - openrouter/bodybuilder
+          - openrouter/free
           - prime-intellect/intellect-3
           - relace/relace-apply-3
           - relace/relace-search
@@ -2714,11 +2983,9 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default:
-          - r1-1776
           - sonar
           - sonar-deep-research
           - sonar-pro
-          - sonar-reasoning
           - sonar-reasoning-pro
         fetch: false # fetching list of models is not supported
       titleConvo: true
@@ -2741,18 +3008,15 @@ endpoints:
         default:
           - DeepSeek-R1
           - DeepSeek-R1-Distill-Llama-70B
-          - Llama-3.1-Tulu-3-405B
+          - DeepSeek-V3-0324
           - Llama-3.2-11B-Vision-Instruct
           - Llama-3.2-90B-Vision-Instruct
+          - Llama-4-Maverick-17B-128E-Instruct
+          - Llama-4-Scout-17B-16E-Instruct
           - Meta-Llama-3.1-405B-Instruct
-          - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-8B-Instruct
-          - Meta-Llama-3.2-1B-Instruct
-          - Meta-Llama-3.2-3B-Instruct
           - Meta-Llama-3.3-70B-Instruct
-          - Meta-Llama-Guard-3-8B
-          - QwQ-32B-Preview
-          - Qwen2-Audio-7B-Instruct
+          - QwQ-32B
           - Qwen2.5-72B-Instruct
           - Qwen2.5-Coder-32B-Instruct
         fetch: false
