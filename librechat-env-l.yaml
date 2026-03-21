@@ -1609,6 +1609,7 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
+          - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/molmo-2-8b
