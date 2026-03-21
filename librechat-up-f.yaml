@@ -1471,16 +1471,10 @@ endpoints:
       baseURL: "https://models.inference.ai.azure.com"
       models:
         default:
-          - AI21-Jamba-Instruct
           - Cohere-embed-v3-english
           - Cohere-embed-v3-multilingual
-          - Meta-Llama-3-70B-Instruct
-          - Meta-Llama-3-8B-Instruct
           - Meta-Llama-3.1-405B-Instruct
-          - Meta-Llama-3.1-70B-Instruct
           - Meta-Llama-3.1-8B-Instruct
-          - Mistral-Nemo
-          - Mistral-large-2407
           - gpt-4o
           - gpt-4o-mini
           - text-embedding-3-large
@@ -1844,6 +1838,7 @@ endpoints:
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
+          - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
           - allenai/molmo-2-8b
           - allenai/olmo-3-32b-think
