@@ -974,6 +974,7 @@ endpoints:
           - llama-3-1-8b-instruct-v1
           - llama-3-1-large
           - llama-3-1-nemotron-70b-instruct
+          - llama-3-1-nemotron-ultra-253b-v1
           - llama-3-1-swallow-70b-instruct-v0-3
           - llama-3-2-11b-instruct
           - llama-3-2-11b-instruct-v1
@@ -1166,6 +1167,7 @@ endpoints:
           - phi-4
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
+          - pixtral-12b
           - pixtral-large
           - pixtral-large-2411
           - pixtral-large-2502-v1
@@ -2758,6 +2760,7 @@ endpoints:
           - mistralai/mistral-small-creative
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
+          - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
@@ -2773,6 +2776,7 @@ endpoints:
           - nousresearch/hermes-4-70b
           - '---NVIDIA---'
           - nvidia/llama-3.1-nemotron-70b-instruct
+          - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
