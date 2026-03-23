@@ -1527,7 +1527,6 @@ endpoints:
           - Baichuan-M2
           - Baichuan4-Air
           - Baichuan4-Turbo
-          - CrucibleLab/L3.3-70B-Loki-V2.0
           - Doctor-Shotgun/MS3.2-24B-Magnum-Diamond
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.0
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
@@ -2350,11 +2349,8 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-rp-llama-3.1-8b
           - '---ALLENAI---'
-          - allenai/molmo-2-8b
           - allenai/olmo-2-0325-32b-instruct
           - allenai/olmo-3-32b-think
-          - allenai/olmo-3-7b-instruct
-          - allenai/olmo-3-7b-think
           - allenai/olmo-3.1-32b-instruct
           - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
