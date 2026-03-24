@@ -728,7 +728,6 @@ endpoints:
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
-          - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-chat
@@ -754,20 +753,16 @@ endpoints:
           - granite-4-0-h-micro
           - grok-3
           - grok-3-beta
-          - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
           - grok-3-mini-fast
-          - grok-3-mini-fast-latest
           - grok-4
-          - grok-4-0709
           - grok-4-1-fast
           - grok-4-20-beta
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
           - grok-code-fast-1
-          - grok-code-fast-1-0825
           - healer-alpha
           - hermes-2-pro-llama-3-8b
           - hermes-3-llama-3-1-405b
@@ -900,11 +895,9 @@ endpoints:
           - mistral-large-2411
           - mistral-large-2512
           - mistral-large-3-675b-instruct
-          - mistral-large-latest
           - mistral-medium
           - mistral-medium-3
           - mistral-medium-3-1
-          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -918,7 +911,6 @@ endpoints:
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
           - mistral-small-creative
-          - mistral-small-latest
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
           - mixtral-8x7b-instruct
@@ -1069,7 +1061,6 @@ endpoints:
           - seed-1-6
           - seed-1-6-flash
           - seed-1-8
-          - seed-2-0-lite
           - seed-2-0-mini
           - seed-2-mini
           - shisa-2-llama-3-3-70b
@@ -1295,7 +1286,6 @@ endpoints:
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - HuggingFaceTB/SmolLM3-3B
-          - Jackrong/Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
@@ -1318,7 +1308,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Zero
@@ -1705,6 +1694,7 @@ endpoints:
           - claude-3-7-sonnet-thinking:32768
           - claude-3-7-sonnet-thinking:8192
           - claude-haiku-4-5-20251001
+          - claude-haiku-4-5-20251001-thinking
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
           - claude-opus-4-1-thinking:1024
