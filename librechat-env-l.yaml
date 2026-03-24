@@ -899,20 +899,16 @@ endpoints:
           - granite-4-0-h-micro
           - grok-3
           - grok-3-beta
-          - grok-3-latest
           - grok-3-mini
           - grok-3-mini-beta
           - grok-3-mini-fast
-          - grok-3-mini-fast-latest
           - grok-4
-          - grok-4-0709
           - grok-4-1-fast
           - grok-4-20-beta
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
           - grok-code-fast-1
-          - grok-code-fast-1-0825
           - gte-base
           - gte-large
           - gte-modernbert-base
@@ -1059,11 +1055,9 @@ endpoints:
           - mistral-large-2411
           - mistral-large-2512
           - mistral-large-3-675b-instruct
-          - mistral-large-latest
           - mistral-medium
           - mistral-medium-3
           - mistral-medium-3-1
-          - mistral-medium-latest
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1077,7 +1071,6 @@ endpoints:
           - mistral-small-3-2-24b-instruct
           - mistral-small-3-2-24b-instruct-2506
           - mistral-small-creative
-          - mistral-small-latest
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
           - mixtral-8x7b-instruct
@@ -1383,6 +1376,7 @@ endpoints:
       baseURL: "https://api.cohere.ai/v1"
       models:
         default:
+          - c4ai-aya-expanse-32b
           - c4ai-aya-expanse-8b
           - c4ai-aya-vision-8b
           - command-a-reasoning-08-2025
@@ -1541,7 +1535,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Zero
@@ -1931,6 +1924,7 @@ endpoints:
           - claude-3-7-sonnet-thinking:32768
           - claude-3-7-sonnet-thinking:8192
           - claude-haiku-4-5-20251001
+          - claude-haiku-4-5-20251001-thinking
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
           - claude-opus-4-1-thinking:1024
