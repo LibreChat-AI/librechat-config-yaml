@@ -724,6 +724,7 @@ endpoints:
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
+          - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-chat
@@ -1057,6 +1058,7 @@ endpoints:
           - seed-1-6
           - seed-1-6-flash
           - seed-1-8
+          - seed-2-0-lite
           - seed-2-0-mini
           - seed-2-mini
           - shisa-2-llama-3-3-70b
@@ -2431,7 +2433,6 @@ endpoints:
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
-          - meta-llama/llama-3.1-405b
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
@@ -2474,7 +2475,6 @@ endpoints:
           - mistralai/mistral-small-creative
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
-          - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
@@ -2566,7 +2566,6 @@ endpoints:
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
-          - qwen/qwen-2.5-vl-7b-instruct
           - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-plus-2025-07-28
