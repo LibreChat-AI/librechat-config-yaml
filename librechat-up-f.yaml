@@ -2609,7 +2609,6 @@ endpoints:
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
-          - meta-llama/llama-3.1-405b
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
@@ -2652,7 +2651,6 @@ endpoints:
           - mistralai/mistral-small-creative
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
-          - mistralai/pixtral-12b
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
@@ -2744,7 +2742,6 @@ endpoints:
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
-          - qwen/qwen-2.5-vl-7b-instruct
           - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-plus-2025-07-28
