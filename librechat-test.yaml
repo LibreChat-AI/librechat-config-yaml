@@ -929,6 +929,8 @@ endpoints:
           - inflection-3-productivity
           - intellect-3
           - internvl-3-78b
+          - inworld-tts-1-5-max
+          - inworld-tts-1-5-mini
           - jamba-1-5-large-v1
           - jamba-1-5-mini-v1
           - jamba-large-1-7
@@ -1251,6 +1253,7 @@ endpoints:
           - recraft-v3-al-4
           - recraft-v3-al-5
           - refuel-llm-v2-small
+          - reka-edge
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1591,6 +1594,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
+          - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Zero
@@ -1631,7 +1635,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
-          - perplexity-ai/r1-1776
           - teknium/OpenHermes-2.5-Mistral-7B
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
@@ -2457,7 +2460,6 @@ endpoints:
           - microsoft/phi-4-mini-flash-reasoning
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
-          - minimaxai/minimax-m2.1
           - minimaxai/minimax-m2.5
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
@@ -2684,7 +2686,6 @@ endpoints:
           - google/gemini-2.5-pro-preview-05-06
           - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
-          - google/gemini-3-pro-preview
           - google/gemini-3.1-flash-image-preview
           - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
@@ -2944,6 +2945,7 @@ endpoints:
           - openrouter/bodybuilder
           - openrouter/free
           - prime-intellect/intellect-3
+          - reka/reka-edge
           - relace/relace-apply-3
           - relace/relace-search
           - stepfun/step-3.5-flash
