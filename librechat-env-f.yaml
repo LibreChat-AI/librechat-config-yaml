@@ -1010,10 +1010,13 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-4b
+          - qwen-3-5-0-8b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
+          - qwen-3-5-2b
           - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
+          - qwen-3-5-4b
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
@@ -1596,6 +1599,7 @@ endpoints:
           - TheDrummer/Cydonia-24B-v4.3
           - TheDrummer/Magidonia-24B-v4.3
           - TheDrummer/Rocinante-12B-v1.1
+          - TheDrummer/Skyfall-31B-v4.2
           - TheDrummer/UnslopNemo-12B-v4.1
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
@@ -1758,8 +1762,6 @@ endpoints:
           - gemini-2.5-pro-preview-05-06
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-image-preview
-          - gemini-3-pro-preview
-          - gemini-3-pro-preview-thinking
           - gemini-exp-1206
           - glm-4
           - glm-4-air
@@ -1942,6 +1944,7 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3.5-397b-a17b
           - qwen/qwen3.5-397b-a17b-thinking
+          - qwen/qwen3.5-9b
           - qwen/qwen3.5-plus
           - qwen/qwen3.5-plus-thinking
           - qwen25-vl-72b-instruct
