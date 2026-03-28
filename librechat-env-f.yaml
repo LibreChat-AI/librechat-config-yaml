@@ -1552,6 +1552,7 @@ endpoints:
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen2.5-32B-EVA-v0.2
           - Qwen3.5-27B-Derestricted
+          - Qwen3.5-27B-Musica-v1
           - Qwen3.5-27B-Vivid-Durian
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
           - ReadyArt/The-Omega-Abomination-L-70B-v1.0
@@ -2037,6 +2038,8 @@ endpoints:
           - zai-org/glm-5
           - zai-org/glm-5-original
           - zai-org/glm-5-original:thinking
+          - zai-org/glm-5.1
+          - zai-org/glm-5.1:thinking
           - zai-org/glm-5:thinking
         fetch: false
       titleConvo: true
@@ -2607,6 +2610,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro
+          - kwaipilot/kat-coder-pro-v2
           - mancer/weaver
           - meituan/longcat-flash-chat
           - microsoft/phi-4
