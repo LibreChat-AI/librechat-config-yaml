@@ -941,6 +941,7 @@ endpoints:
           - jamba-large-1-7
           - juggernaut-lightning-flux
           - kat-coder-pro
+          - kat-coder-pro-v2
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-5
@@ -2042,6 +2043,7 @@ endpoints:
           - jamba-mini-1.7
           - kimi-k2-instruct-fast
           - kimi-thinking-preview
+          - kwaipilot/kat-coder-pro-v2
           - learnlm-1.5-pro-experimental
           - liquid/lfm-2-24b-a2b
           - meganova-ai/manta-flash-1.0
@@ -2504,7 +2506,6 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - minimax/minimax-m2.5:free
-          - mistralai/mistral-small-3.1-24b-instruct:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-super-120b-a12b:free
@@ -2512,7 +2513,6 @@ endpoints:
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
-          - qwen/qwen3-4b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
           - stepfun/step-3.5-flash:free
@@ -2844,6 +2844,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro
+          - kwaipilot/kat-coder-pro-v2
           - mancer/weaver
           - meituan/longcat-flash-chat
           - microsoft/phi-4
