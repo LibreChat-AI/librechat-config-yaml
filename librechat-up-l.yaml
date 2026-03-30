@@ -1659,7 +1659,6 @@ endpoints:
           - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/tongyi-deepresearch-30b-a3b
-          - allenai/molmo-2-8b
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
           - allenai/olmo-3.1-32b-think
@@ -1669,13 +1668,16 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6:thinking
           - anthropic/claude-opus-4.6:thinking:low
           - anthropic/claude-opus-4.6:thinking:max
           - anthropic/claude-opus-4.6:thinking:medium
+          - anthropic/claude-opus-latest
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
+          - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -1833,6 +1835,9 @@ endpoints:
           - google/gemini-3.1-pro-preview-high
           - google/gemini-3.1-pro-preview-low
           - google/gemini-flash-1.5
+          - google/gemini-flash-latest
+          - google/gemini-flash-lite-latest
+          - google/gemini-pro-latest
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -1959,6 +1964,7 @@ endpoints:
           - openai/gpt-5.4-mini
           - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
+          - openai/gpt-latest
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
