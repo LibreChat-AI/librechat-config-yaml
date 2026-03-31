@@ -2303,6 +2303,8 @@ endpoints:
           - qwen3.5-35b-a3b:thinking
           - qwen3.5-flash
           - qwen3.5-flash:thinking
+          - qwen3.5-omni-flash
+          - qwen3.5-omni-plus
           - qwq-32b
           - raifle/sorcererlm-8x22b
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2545,7 +2547,6 @@ endpoints:
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/streampetr
-          - nvidia/usdcode-llama-3.1-70b-instruct
           - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2596,7 +2597,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - arcee-ai/trinity-large-preview:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - google/gemma-3-12b-it:free
@@ -2618,6 +2618,7 @@ endpoints:
           - openai/gpt-oss-20b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
+          - qwen/qwen3.6-plus-preview:free
           - stepfun/step-3.5-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2708,6 +2709,8 @@ endpoints:
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e4b-it
+          - google/lyria-3-clip-preview
+          - google/lyria-3-pro-preview
           - '---INCEPTION---'
           - inception/mercury
           - inception/mercury-2
