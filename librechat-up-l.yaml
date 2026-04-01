@@ -759,7 +759,9 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
+          - grok-4-20
           - grok-4-20-beta
+          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -855,6 +857,8 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
+          - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
@@ -1028,6 +1032,7 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1058,6 +1063,7 @@ endpoints:
           - reasoners
           - refuel-llm-v2-small
           - reka-edge
+          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1315,7 +1321,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
-          - deepseek-ai/DeepSeek-R1-Distill-Llama-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-R1-Zero
@@ -1534,7 +1539,6 @@ endpoints:
           - Infermatic/MN-12B-Inferor-v0.0
           - KAT-Coder-Air-V1
           - KAT-Coder-Exp-72B-1010
-          - KAT-Coder-Pro-V1
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
@@ -1875,7 +1879,6 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
-          - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m2-her
@@ -2242,6 +2245,7 @@ endpoints:
           - nvidia/mistral-nemo-minitron-8b-base
           - nvidia/nemoretriever-parse
           - nvidia/nemotron-3-nano-30b-a3b
+          - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
@@ -2634,8 +2638,8 @@ endpoints:
           - x-ai/grok-4
           - x-ai/grok-4-fast
           - x-ai/grok-4.1-fast
-          - x-ai/grok-4.20-beta
-          - x-ai/grok-4.20-multi-agent-beta
+          - x-ai/grok-4.20
+          - x-ai/grok-4.20-multi-agent
           - x-ai/grok-code-fast-1
           - '---XIAOMI---'
           - xiaomi/mimo-v2-flash
