@@ -913,7 +913,9 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
+          - grok-4-20
           - grok-4-20-beta
+          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -1023,6 +1025,8 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
+          - lyria-3-pro-preview
           - m2-bert-80m-32k-retrieval
           - maestro-reasoning
           - magistral-small
@@ -1210,6 +1214,7 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1263,6 +1268,7 @@ endpoints:
           - recraft-v3-al-5
           - refuel-llm-v2-small
           - reka-edge
+          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1721,7 +1727,6 @@ endpoints:
           - Infermatic/MN-12B-Inferor-v0.0
           - KAT-Coder-Air-V1
           - KAT-Coder-Exp-72B-1010
-          - KAT-Coder-Pro-V1
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Llama-3.3+(3.1v3.3)-70B-Hanami-x1
@@ -2063,7 +2068,6 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
-          - microsoft/MAI-DS-R1-FP8
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-m2-her
@@ -2500,6 +2504,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - arcee-ai/trinity-large-preview:free
           - arcee-ai/trinity-mini:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - google/gemma-3-12b-it:free
@@ -2820,8 +2825,8 @@ endpoints:
           - x-ai/grok-4
           - x-ai/grok-4-fast
           - x-ai/grok-4.1-fast
-          - x-ai/grok-4.20-beta
-          - x-ai/grok-4.20-multi-agent-beta
+          - x-ai/grok-4.20
+          - x-ai/grok-4.20-multi-agent
           - x-ai/grok-code-fast-1
           - '---XIAOMI---'
           - xiaomi/mimo-v2-flash
@@ -2852,7 +2857,6 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - kwaipilot/kat-coder-pro
           - kwaipilot/kat-coder-pro-v2
           - mancer/weaver
           - meituan/longcat-flash-chat
@@ -2865,6 +2869,7 @@ endpoints:
           - openrouter/free
           - prime-intellect/intellect-3
           - reka/reka-edge
+          - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
           - stepfun/step-3.5-flash
