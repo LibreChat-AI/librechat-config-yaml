@@ -797,6 +797,7 @@ endpoints:
           - glm-4-7-flash
           - glm-5
           - glm-5-turbo
+          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -1278,6 +1279,7 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
+          - seed-2-0-pro
           - seed-2-mini
           - seededit-v1
           - seedream-4
@@ -1343,6 +1345,7 @@ endpoints:
           - titan-embed-text-v2
           - tongyi-deepresearch-30b-a3b
           - trinity-large-preview
+          - trinity-large-thinking
           - trinity-mini
           - tts
           - tts-1-1106
@@ -1358,6 +1361,7 @@ endpoints:
           - voxtral-small-24b-2507
           - wan-2-6-image-edit
           - wan-2-6-t2i
+          - wan-2-7-image-edit
           - weaver
           - whisper-1
           - whisper-base
@@ -1610,7 +1614,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1-Base
-          - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V3.2-Exp
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/functiongemma-270m-it
@@ -1965,6 +1968,7 @@ endpoints:
           - anthropic/claude-sonnet-4.6:thinking
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large
+          - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - asi1-mini
           - auto-model
@@ -2131,6 +2135,8 @@ endpoints:
           - grok-3-fast-beta
           - grok-3-mini-beta
           - grok-3-mini-fast-beta
+          - holo3-35b-a3b
+          - holo3-35b-a3b:thinking
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.1-Nemotron-70B-Instruct-HF-abliterated
@@ -2345,9 +2351,8 @@ endpoints:
           - x-ai/grok-4-fast:thinking
           - x-ai/grok-4.1-fast
           - x-ai/grok-4.1-fast-reasoning
-          - x-ai/grok-4.20-beta-non-reasoning
-          - x-ai/grok-4.20-beta-reasoning
-          - x-ai/grok-4.20-multi-agent-beta
+          - x-ai/grok-4.20
+          - x-ai/grok-4.20-multi-agent
           - x-ai/grok-code-fast-1
           - xiaomi/mimo-v2-flash
           - xiaomi/mimo-v2-flash-original
@@ -2363,6 +2368,7 @@ endpoints:
           - z-ai/glm-4.6
           - z-ai/glm-4.6:thinking
           - z-ai/glm-5-turbo
+          - z-ai/glm-5v-turbo
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air:thinking
           - zai-org/GLM-4.5:thinking
@@ -2661,6 +2667,7 @@ endpoints:
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
+          - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
@@ -2939,6 +2946,7 @@ endpoints:
           - z-ai/glm-4.7-flash
           - z-ai/glm-5
           - z-ai/glm-5-turbo
+          - z-ai/glm-5v-turbo
           - '---OTHERS---'
           - ai21/jamba-large-1.7
           - alfredpros/codellama-7b-instruct-solidity
@@ -2964,7 +2972,7 @@ endpoints:
           - openrouter/bodybuilder
           - openrouter/free
           - prime-intellect/intellect-3
-          - reka/reka-edge
+          - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
