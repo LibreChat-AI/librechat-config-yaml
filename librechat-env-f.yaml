@@ -650,6 +650,7 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
+          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -1026,6 +1027,7 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus
           - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
@@ -1785,6 +1787,7 @@ endpoints:
           - glm-4-plus-0111
           - glm-4.1v-thinking-flash
           - glm-4.1v-thinking-flashx
+          - glm-4.7-flash-heretic
           - glm-z1-air
           - glm-z1-airx
           - glm-zero-preview
@@ -1799,6 +1802,8 @@ endpoints:
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
+          - google/gemma-4-26b-a4b-it
+          - google/gemma-4-31b-it
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -1946,6 +1951,7 @@ endpoints:
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - qvq-max
+          - qwen-3.6-plus
           - qwen-long
           - qwen-max
           - qwen-plus
@@ -2036,6 +2042,7 @@ endpoints:
           - z-ai/glm-4.6:thinking
           - z-ai/glm-5-turbo
           - z-ai/glm-5v-turbo
+          - z-ai/glm-5v-turbo:thinking
           - zai-org/GLM-4.5-Air
           - zai-org/GLM-4.5-Air:thinking
           - zai-org/GLM-4.5:thinking
@@ -2105,6 +2112,7 @@ endpoints:
           - google/gemma-3-4b-it
           - google/gemma-3n-e2b-it
           - google/gemma-3n-e4b-it
+          - google/gemma-4-31b-it
           - google/gemma-7b
           - google/paligemma
           - google/recurrentgemma-2b
@@ -2298,7 +2306,7 @@ endpoints:
           - openai/gpt-oss-20b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - qwen/qwen3.6-plus-preview:free
+          - qwen/qwen3.6-plus:free
           - stepfun/step-3.5-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2390,16 +2398,13 @@ endpoints:
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e4b-it
+          - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
           - '---INCEPTION---'
           - inception/mercury
           - inception/mercury-2
           - inception/mercury-coder
-          - '---LIQUID---'
-          - liquid/lfm-2-24b-a2b
-          - liquid/lfm-2.2-6b
-          - liquid/lfm2-8b-a1b
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
@@ -2632,6 +2637,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro-v2
+          - liquid/lfm-2-24b-a2b
           - mancer/weaver
           - meituan/longcat-flash-chat
           - microsoft/phi-4
