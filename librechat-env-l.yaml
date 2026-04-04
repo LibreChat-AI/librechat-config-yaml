@@ -1639,7 +1639,6 @@ endpoints:
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
           - anthropic/claude-sonnet-latest
-          - arcee-ai/trinity-large
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -1802,7 +1801,9 @@ endpoints:
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
           - google/gemma-4-26b-a4b-it
+          - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-31b-it
+          - google/gemma-4-31b-it:thinking
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -2397,6 +2398,7 @@ endpoints:
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e4b-it
+          - google/gemma-4-26b-a4b-it
           - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
