@@ -785,7 +785,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
-          - gemma-4-31b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -798,7 +797,6 @@ endpoints:
           - glm-4-7-flash
           - glm-5
           - glm-5-turbo
-          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -910,9 +908,7 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
-          - grok-4-20
           - grok-4-20-beta
-          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -1022,8 +1018,6 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
-          - lyria-3-clip-preview
-          - lyria-3-pro-preview
           - m2-bert-80m-32k-retrieval
           - maestro-reasoning
           - magistral-small
@@ -1211,8 +1205,6 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
-          - qwen-3-6-plus
-          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1266,7 +1258,6 @@ endpoints:
           - recraft-v3-al-5
           - refuel-llm-v2-small
           - reka-edge
-          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1281,7 +1272,6 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
-          - seed-2-0-pro
           - seed-2-mini
           - seededit-v1
           - seedream-4
@@ -1346,9 +1336,7 @@ endpoints:
           - titan-embed-text-v1
           - titan-embed-text-v2
           - tongyi-deepresearch-30b-a3b
-          - trinity-large
           - trinity-large-preview
-          - trinity-large-thinking
           - trinity-mini
           - tts
           - tts-1-1106
@@ -1364,7 +1352,6 @@ endpoints:
           - voxtral-small-24b-2507
           - wan-2-6-image-edit
           - wan-2-6-t2i
-          - wan-2-7-image-edit
           - weaver
           - whisper-1
           - whisper-base
@@ -1970,7 +1957,6 @@ endpoints:
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
           - anthropic/claude-sonnet-latest
-          - arcee-ai/trinity-large
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -2136,7 +2122,9 @@ endpoints:
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
           - google/gemma-4-26b-a4b-it
+          - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-31b-it
+          - google/gemma-4-31b-it:thinking
           - grok-3-beta
           - grok-3-fast-beta
           - grok-3-mini-beta
@@ -2729,6 +2717,7 @@ endpoints:
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e4b-it
+          - google/gemma-4-26b-a4b-it
           - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
@@ -2736,10 +2725,6 @@ endpoints:
           - inception/mercury
           - inception/mercury-2
           - inception/mercury-coder
-          - '---LIQUID---'
-          - liquid/lfm-2-24b-a2b
-          - liquid/lfm-2.2-6b
-          - liquid/lfm2-8b-a1b
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
@@ -2972,6 +2957,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro-v2
+          - liquid/lfm-2-24b-a2b
           - mancer/weaver
           - meituan/longcat-flash-chat
           - microsoft/phi-4
