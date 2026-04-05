@@ -1843,6 +1843,7 @@ endpoints:
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/gemma-3-27b-it
+          - TEE/gemma4-31b
           - TEE/glm-4.6
           - TEE/glm-4.7
           - TEE/glm-4.7-flash
