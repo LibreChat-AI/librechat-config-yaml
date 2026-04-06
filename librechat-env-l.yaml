@@ -1277,7 +1277,6 @@ endpoints:
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/functiongemma-270m-it
           - google/gemma-2-2b-it
-          - google/gemma-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
@@ -2309,7 +2308,6 @@ endpoints:
           - allenai/olmo-2-0325-32b-instruct
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
-          - allenai/olmo-3.1-32b-think
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
