@@ -658,6 +658,9 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
+          - gemma-3n-e4b-it
+          - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -669,6 +672,7 @@ endpoints:
           - glm-4-7-flash
           - glm-5
           - glm-5-turbo
+          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -760,7 +764,9 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
+          - grok-4-20
           - grok-4-20-beta
+          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -856,6 +862,8 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
+          - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
@@ -1029,6 +1037,8 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus
+          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1049,6 +1059,7 @@ endpoints:
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
           - qwen-3-vl-8b-instruct
+          - qwen-3-vl-8b-thinking
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -1059,6 +1070,7 @@ endpoints:
           - reasoners
           - refuel-llm-v2-small
           - reka-edge
+          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1070,6 +1082,7 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
+          - seed-2-0-pro
           - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
@@ -1087,7 +1100,9 @@ endpoints:
           - step-3-5-flash
           - test123
           - tongyi-deepresearch-30b-a3b
+          - trinity-large
           - trinity-large-preview
+          - trinity-large-thinking
           - trinity-mini
           - ui-tars-1-5-7b
           - ultra-fast
@@ -1510,9 +1525,19 @@ endpoints:
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen2.5-32B-EVA-v0.2
+          - Qwen3.5-27B-BlueStar-Derestricted
+          - Qwen3.5-27B-BlueStar-Derestricted-Lite
+          - Qwen3.5-27B-BlueStar-v2-Derestricted
+          - Qwen3.5-27B-BlueStar-v2-Derestricted-Lite
           - Qwen3.5-27B-Derestricted
           - Qwen3.5-27B-Musica-v1
+          - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted
+          - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted-Lite
           - Qwen3.5-27B-Vivid-Durian
+          - Qwen3.5-27B-Writer-Derestricted
+          - Qwen3.5-27B-Writer-Derestricted-Lite
+          - Qwen3.5-27B-Writer-V2-Derestricted
+          - Qwen3.5-27B-Writer-V2-Derestricted-Lite
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
           - ReadyArt/The-Omega-Abomination-L-70B-v1.0
           - Salesforce/Llama-xLAM-2-70b-fc-r
@@ -1573,7 +1598,6 @@ endpoints:
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
-          - allenai/olmo-3.1-32b-think
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
