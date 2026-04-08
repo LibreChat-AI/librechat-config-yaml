@@ -548,6 +548,7 @@ endpoints:
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
           - claude-opus-4-6-1
+          - claude-opus-4-6-fast
           - claude-opus-4-6-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -663,6 +664,7 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-1
           - glm-5-turbo
           - glm-5v-turbo
           - goliath-120b
@@ -2001,7 +2003,6 @@ endpoints:
           - qwen3.5-omni-flash
           - qwen3.5-omni-plus
           - qwq-32b
-          - raifle/sorcererlm-8x22b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
           - sonar
@@ -2305,6 +2306,8 @@ endpoints:
           - google/gemma-3-4b-it:free
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
+          - google/gemma-4-26b-a4b-it:free
+          - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-1.2b-instruct:free
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
@@ -2319,7 +2322,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - qwen/qwen3.6-plus:free
           - stepfun/step-3.5-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2349,6 +2351,7 @@ endpoints:
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.5
           - anthropic/claude-opus-4.6
+          - anthropic/claude-opus-4.6-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
@@ -2595,6 +2598,7 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-flash-02-23
           - qwen/qwen3.5-plus-02-15
+          - qwen/qwen3.6-plus
           - qwen/qwq-32b
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
@@ -2633,6 +2637,7 @@ endpoints:
           - z-ai/glm-4.7-flash
           - z-ai/glm-5
           - z-ai/glm-5-turbo
+          - z-ai/glm-5.1
           - z-ai/glm-5v-turbo
           - '---OTHERS---'
           - ai21/jamba-large-1.7
