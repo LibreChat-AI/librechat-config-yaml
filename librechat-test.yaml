@@ -568,6 +568,7 @@ endpoints:
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
           - claude-opus-4-6-1
+          - claude-opus-4-6-fast
           - claude-opus-4-6-v1
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -785,6 +786,8 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
+          - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -796,7 +799,9 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-1
           - glm-5-turbo
+          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -908,7 +913,9 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
+          - grok-4-20
           - grok-4-20-beta
+          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -1018,6 +1025,8 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
+          - lyria-3-pro-preview
           - m2-bert-80m-32k-retrieval
           - maestro-reasoning
           - magistral-small
@@ -1205,6 +1214,8 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus
+          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1258,6 +1269,7 @@ endpoints:
           - recraft-v3-al-5
           - refuel-llm-v2-small
           - reka-edge
+          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1272,6 +1284,7 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
+          - seed-2-0-pro
           - seed-2-mini
           - seededit-v1
           - seedream-4
@@ -1336,7 +1349,9 @@ endpoints:
           - titan-embed-text-v1
           - titan-embed-text-v2
           - tongyi-deepresearch-30b-a3b
+          - trinity-large
           - trinity-large-preview
+          - trinity-large-thinking
           - trinity-mini
           - tts
           - tts-1-1106
@@ -1352,6 +1367,7 @@ endpoints:
           - voxtral-small-24b-2507
           - wan-2-6-image-edit
           - wan-2-6-t2i
+          - wan-2-7-image-edit
           - weaver
           - whisper-1
           - whisper-base
@@ -2319,7 +2335,6 @@ endpoints:
           - qwen3.5-omni-flash
           - qwen3.5-omni-plus
           - qwq-32b
-          - raifle/sorcererlm-8x22b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
           - sonar
@@ -2620,6 +2635,8 @@ endpoints:
           - google/gemma-3-4b-it:free
           - google/gemma-3n-e2b-it:free
           - google/gemma-3n-e4b-it:free
+          - google/gemma-4-26b-a4b-it:free
+          - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-1.2b-instruct:free
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
@@ -2634,7 +2651,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - qwen/qwen3.6-plus:free
           - stepfun/step-3.5-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
@@ -2664,6 +2680,7 @@ endpoints:
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.5
           - anthropic/claude-opus-4.6
+          - anthropic/claude-opus-4.6-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
@@ -2948,6 +2965,7 @@ endpoints:
           - z-ai/glm-4.7-flash
           - z-ai/glm-5
           - z-ai/glm-5-turbo
+          - z-ai/glm-5.1
           - z-ai/glm-5v-turbo
           - '---OTHERS---'
           - ai21/jamba-large-1.7
