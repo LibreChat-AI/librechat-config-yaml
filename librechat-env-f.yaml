@@ -1864,7 +1864,6 @@ endpoints:
           - Steelskull/L3.3-MS-Evayale-70B
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
-          - TEE/deepseek-r1-0528
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/gemma-3-27b-it
@@ -1873,6 +1872,8 @@ endpoints:
           - TEE/glm-4.7
           - TEE/glm-4.7-flash
           - TEE/glm-5
+          - TEE/glm-5-1
+          - TEE/glm-5-1-thinking
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2-thinking
@@ -2595,7 +2596,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - stepfun/step-3.5-flash:free
           - z-ai/glm-4.5-air:free
           - '---EXTENDED---'
           - openai/gpt-4o:extended
@@ -2871,6 +2871,7 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-flash-02-23
           - qwen/qwen3.5-plus-02-15
+          - qwen/qwen3.6-plus
           - qwen/qwq-32b
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
