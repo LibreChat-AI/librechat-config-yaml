@@ -2214,6 +2214,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2.5
+          - minimaxai/minimax-m2.7
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
