@@ -2507,6 +2507,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2.5
+          - minimaxai/minimax-m2.7
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/devstral-2-123b-instruct-2512
           - mistralai/magistral-small-2506
@@ -2974,7 +2975,6 @@ endpoints:
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
           - deepcogito/cogito-v2.1-671b
-          - eleutherai/llemma_7b
           - essentialai/rnj-1-instruct
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
