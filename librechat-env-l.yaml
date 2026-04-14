@@ -608,6 +608,7 @@ endpoints:
           - devstral-small-2505
           - devstral-small-2507
           - dolphin-mistral-24b-venice-edition
+          - elephant-alpha
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
@@ -2544,6 +2545,10 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - '---OPENROUTER---'
+          - openrouter/bodybuilder
+          - openrouter/elephant-alpha
+          - openrouter/free
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2659,8 +2664,6 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/deepseek-v3.1-nex-n1
-          - openrouter/bodybuilder
-          - openrouter/free
           - prime-intellect/intellect-3
           - rekaai/reka-edge
           - rekaai/reka-flash-3
