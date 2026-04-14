@@ -645,6 +645,7 @@ endpoints:
           - dolphin-mistral-24b-venice-edition
           - e5-base-v2
           - e5-large-v2
+          - elephant-alpha
           - eleven-flash-v2
           - eleven-flash-v2-5
           - eleven-monolingual-v1
@@ -1407,13 +1408,14 @@ endpoints:
         default:
           - c4ai-aya-expanse-32b
           - c4ai-aya-vision-32b
+          - command-a-03-2025
           - command-a-reasoning-08-2025
+          - command-a-translate-08-2025
           - command-a-vision-07-2025
           - command-r-08-2024
+          - command-r-plus-08-2024
           - command-r7b-12-2024
           - command-r7b-arabic-02-2025
-          - tiny-aya-fire
-          - tiny-aya-water
         fetch: false
       modelDisplayLabel: "cohere"
       titleModel: "command"
@@ -2781,6 +2783,10 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - '---OPENROUTER---'
+          - openrouter/bodybuilder
+          - openrouter/elephant-alpha
+          - openrouter/free
           - '---PERPLEXITY---'
           - perplexity/sonar
           - perplexity/sonar-deep-research
@@ -2896,8 +2902,6 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/deepseek-v3.1-nex-n1
-          - openrouter/bodybuilder
-          - openrouter/free
           - prime-intellect/intellect-3
           - rekaai/reka-edge
           - rekaai/reka-flash-3
