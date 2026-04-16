@@ -2293,6 +2293,7 @@ endpoints:
           - step-3
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
+          - stepfun-ai/step-3.5-flash-2603
           - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - thedrummer/skyfall-36b-v2
@@ -2446,6 +2447,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.1-nemotron-nano-8b-v1
           - nvidia/llama-3.1-nemotron-nano-vl-8b-v1
+          - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nemoretriever-300m-embed-v1
@@ -2475,7 +2477,6 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
-          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen2.5-coder-32b-instruct
@@ -2526,6 +2527,7 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
+          - meta-llama/llama-guard-4-12b:free
           - minimax/minimax-m2.5:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
