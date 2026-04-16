@@ -4,11 +4,22 @@ cache: true
 
 interface:
   privacyPolicy:
-    externalUrl: 'https://librechat.ai/privacy-policy'
+    externalUrl: 'https://www.librechat.ai/demo/privacy'
     openNewTab: true
   termsOfService:
-    externalUrl: 'https://librechat.ai/tos'
+    externalUrl: 'https://www.librechat.ai/demo/terms'
     openNewTab: true
+    modalAcceptance: true
+    modalTitle: 'Demo Terms of Service'
+    modalContent: |
+      By using this demo, you agree to the LibreChat Terms of Service.
+
+      In summary:
+      - This demo is provided as-is and may change at any time.
+      - Do not submit sensitive, confidential, or personal data.
+      - You are responsible for your use of generated outputs.
+      - Misuse, abuse, or unlawful activity is prohibited.
+      - Continued use means you accept the full terms linked above.
 
 registration:
   socialLogins:
