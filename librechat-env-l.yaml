@@ -566,6 +566,7 @@ endpoints:
           - claude-opus-4-6-1
           - claude-opus-4-6-fast
           - claude-opus-4-6-v1
+          - claude-opus-4-7
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -1514,8 +1515,6 @@ endpoints:
           - meta-llama/llama-4-scout-17b-16e-instruct
           - meta-llama/llama-prompt-guard-2-22m
           - meta-llama/llama-prompt-guard-2-86m
-          - moonshotai/kimi-k2-instruct
-          - moonshotai/kimi-k2-instruct-0905
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
@@ -1924,6 +1923,8 @@ endpoints:
           - anthropic/claude-opus-4.6:thinking:low
           - anthropic/claude-opus-4.6:thinking:max
           - anthropic/claude-opus-4.6:thinking:medium
+          - anthropic/claude-opus-4.7
+          - anthropic/claude-opus-4.7:thinking
           - anthropic/claude-opus-latest
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
@@ -2171,6 +2172,8 @@ endpoints:
           - moonshotai/kimi-k2-thinking-turbo-original
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.5:thinking
+          - moonshotai/kimi-k2.6
+          - moonshotai/kimi-k2.6:thinking
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
@@ -2459,6 +2462,7 @@ endpoints:
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/nemoretriever-parse
+          - nvidia/nemotron-3-content-safety
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-4-340b-instruct
@@ -2546,10 +2550,6 @@ endpoints:
           - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
           - aion-labs/aion-rp-llama-3.1-8b
-          - '---ALLENAI---'
-          - allenai/olmo-2-0325-32b-instruct
-          - allenai/olmo-3-32b-think
-          - allenai/olmo-3.1-32b-instruct
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
@@ -2567,6 +2567,7 @@ endpoints:
           - anthropic/claude-opus-4.5
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6-fast
+          - anthropic/claude-opus-4.7
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
@@ -2855,6 +2856,8 @@ endpoints:
           - ai21/jamba-large-1.7
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
+          - allenai/olmo-3-32b-think
+          - allenai/olmo-3.1-32b-instruct
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
