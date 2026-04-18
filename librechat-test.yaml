@@ -551,7 +551,9 @@ endpoints:
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
           - claude-opus-4-6-1
+          - claude-opus-4-6-fast
           - claude-opus-4-6-v1
+          - claude-opus-4-7
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -611,6 +613,7 @@ endpoints:
           - devstral-small-2505
           - devstral-small-2507
           - dolphin-mistral-24b-venice-edition
+          - elephant-alpha
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
@@ -653,6 +656,9 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
+          - gemma-3n-e4b-it
+          - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -663,7 +669,9 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-1
           - glm-5-turbo
+          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -755,7 +763,9 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
+          - grok-4-20
           - grok-4-20-beta
+          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -851,6 +861,8 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
+          - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
@@ -1024,6 +1036,8 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-plus
+          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1044,6 +1058,7 @@ endpoints:
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
           - qwen-3-vl-8b-instruct
+          - qwen-3-vl-8b-thinking
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -1054,6 +1069,7 @@ endpoints:
           - reasoners
           - refuel-llm-v2-small
           - reka-edge
+          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1065,6 +1081,7 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
+          - seed-2-0-pro
           - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
@@ -1082,7 +1099,9 @@ endpoints:
           - step-3-5-flash
           - test123
           - tongyi-deepresearch-30b-a3b
+          - trinity-large
           - trinity-large-preview
+          - trinity-large-thinking
           - trinity-mini
           - ui-tars-1-5-7b
           - ultra-fast
@@ -1303,6 +1322,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
+          - MiniMaxAI/MiniMax-M2.7
           - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -1358,7 +1378,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
-          - teknium/OpenHermes-2.5-Mistral-7B
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
           - zai-org/GLM-4.5
@@ -1673,6 +1692,8 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
+          - alibaba/qwen3.6-35b-a3b
+          - alibaba/qwen3.6-flash
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
@@ -2158,7 +2179,6 @@ endpoints:
           - google/gemma-3n-e2b-it
           - google/gemma-3n-e4b-it
           - google/gemma-4-31b-it
-          - google/gemma-7b
           - google/recurrentgemma-2b
           - ibm/granite-3.0-3b-a800m-instruct
           - ibm/granite-3.0-8b-instruct
@@ -2257,7 +2277,6 @@ endpoints:
           - qwen/qwen3.5-397b-a17b
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
-          - speakleash/bielik-11b-v2.3-instruct
           - stepfun-ai/step-3.5-flash
           - stockmark/stockmark-2-100b-instruct
           - upstage/solar-10.7b-instruct
@@ -2265,6 +2284,7 @@ endpoints:
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
+          - z-ai/glm-5.1
           - z-ai/glm4.7
           - z-ai/glm5
           - zyphra/zamba2-7b-instruct
@@ -2296,7 +2316,6 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-guard-4-12b:free
           - minimax/minimax-m2.5:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
@@ -2542,7 +2561,6 @@ endpoints:
           - qwen/qwen-turbo
           - qwen/qwen-vl-max
           - qwen/qwen-vl-plus
-          - qwen/qwen2.5-vl-32b-instruct
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen3-14b
           - qwen/qwen3-235b-a22b
