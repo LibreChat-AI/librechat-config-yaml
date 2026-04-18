@@ -1540,6 +1540,7 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
+          - MiniMaxAI/MiniMax-M2.7
           - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -1595,7 +1596,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
-          - teknium/OpenHermes-2.5-Mistral-7B
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
           - zai-org/GLM-4.5
@@ -1910,6 +1910,8 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
+          - alibaba/qwen3.6-35b-a3b
+          - alibaba/qwen3.6-flash
           - allenai/olmo-3-32b-think
           - allenai/olmo-3.1-32b-instruct
           - amazon/nova-2-lite-v1
@@ -2397,7 +2399,6 @@ endpoints:
           - google/gemma-3n-e2b-it
           - google/gemma-3n-e4b-it
           - google/gemma-4-31b-it
-          - google/gemma-7b
           - google/recurrentgemma-2b
           - ibm/granite-3.0-3b-a800m-instruct
           - ibm/granite-3.0-8b-instruct
@@ -2457,6 +2458,7 @@ endpoints:
           - nvidia/llama-3.2-nemoretriever-300m-embed-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v2
+          - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/llama-nemotron-embed-1b-v2
           - nvidia/llama-nemotron-embed-vl-1b-v2
@@ -2492,7 +2494,6 @@ endpoints:
           - qwen/qwen3.5-397b-a17b
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
-          - speakleash/bielik-11b-v2.3-instruct
           - stepfun-ai/step-3.5-flash
           - stockmark/stockmark-2-100b-instruct
           - upstage/solar-10.7b-instruct
@@ -2532,7 +2533,6 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - meta-llama/llama-guard-4-12b:free
           - minimax/minimax-m2.5:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
