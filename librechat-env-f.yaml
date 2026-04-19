@@ -1033,6 +1033,7 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
+          - qwen-3-6-35b-a3b
           - qwen-3-6-plus
           - qwen-3-6-plus-preview
           - qwen-3-8b
@@ -2271,8 +2272,6 @@ endpoints:
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
           - z-ai/glm-4.5-air:free
-          - '---EXTENDED---'
-          - openai/gpt-4o:extended
           - '---AION-LABS---'
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
