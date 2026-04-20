@@ -1564,6 +1564,8 @@ endpoints:
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Next-80B-A3B-Instruct
           - Qwen/Qwen3-VL-235B-A22B-Instruct
+          - Qwen/Qwen3.6-35B-A3B
+          - Qwen/Qwen3.6-35B-A3B:thinking
           - Qwen2.5-32B-EVA-v0.2
           - Qwen3.5-27B-BlueStar-Derestricted
           - Qwen3.5-27B-BlueStar-Derestricted-Lite
@@ -1636,7 +1638,6 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
-          - alibaba/qwen3.6-35b-a3b
           - alibaba/qwen3.6-flash
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
