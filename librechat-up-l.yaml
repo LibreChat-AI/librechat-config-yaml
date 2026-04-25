@@ -589,6 +589,8 @@ endpoints:
           - deepseek-3-1-terminus
           - deepseek-3-2
           - deepseek-3-2-exp
+          - deepseek-4-flash
+          - deepseek-4-pro
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
@@ -612,6 +614,8 @@ endpoints:
           - deepseek-v3-2-exp
           - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
+          - deepseek-v4-flash
+          - deepseek-v4-pro
           - devstral
           - devstral-2512
           - devstral-medium
@@ -742,6 +746,10 @@ endpoints:
           - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
+          - gpt-5-5
+          - gpt-5-5-2026-04-23
+          - gpt-5-5-pro
+          - gpt-5-5-pro-2026-04-23
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1328,7 +1336,6 @@ endpoints:
           - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
-          - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-7B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
@@ -1349,6 +1356,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1-Base
           - deepseek-ai/DeepSeek-V3.2-Exp
+          - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/functiongemma-270m-it
           - google/gemma-2-2b-it
@@ -1359,7 +1367,6 @@ endpoints:
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
-          - meta-llama/Llama-3.1-70B-Instruct
           - meta-llama/Llama-3.1-8B-Instruct
           - meta-llama/Llama-3.2-1B-Instruct
           - meta-llama/Llama-3.2-3B-Instruct
@@ -1799,6 +1806,10 @@ endpoints:
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-speciale
           - deepseek/deepseek-v3.2:thinking
+          - deepseek/deepseek-v4-flash
+          - deepseek/deepseek-v4-flash:thinking
+          - deepseek/deepseek-v4-pro
+          - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1
           - dmind/dmind-1-mini
           - doubao-1-5-thinking-pro-250415
@@ -2015,6 +2026,7 @@ endpoints:
           - openai/gpt-5.4-mini
           - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
+          - openai/gpt-5.5
           - openai/gpt-latest
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2181,6 +2193,8 @@ endpoints:
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-v3.1-terminus
           - deepseek-ai/deepseek-v3.2
+          - deepseek-ai/deepseek-v4-flash
+          - deepseek-ai/deepseek-v4-pro
           - google/codegemma-1.1-7b
           - google/codegemma-7b
           - google/deplot
@@ -2279,7 +2293,6 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
-          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2407,6 +2420,8 @@ endpoints:
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
           - deepseek/deepseek-v3.2-speciale
+          - deepseek/deepseek-v4-flash
+          - deepseek/deepseek-v4-pro
           - '---GOOGLE---'
           - google/gemini-2.0-flash-001
           - google/gemini-2.0-flash-lite-001
@@ -2544,6 +2559,8 @@ endpoints:
           - openai/gpt-5.4-mini
           - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
+          - openai/gpt-5.5
+          - openai/gpt-5.5-pro
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-oss-120b
