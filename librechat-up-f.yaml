@@ -549,7 +549,6 @@ endpoints:
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
           - claude-instant-v1
-          - claude-opus
           - claude-opus-4
           - claude-opus-4-1
           - claude-opus-4-1-20250805-v1
@@ -557,10 +556,7 @@ endpoints:
           - claude-opus-4-5-20251101-v1
           - claude-opus-4-6
           - claude-opus-4-6-1
-          - claude-opus-4-6-fast
           - claude-opus-4-6-v1
-          - claude-opus-4-7
-          - claude-opus-latest
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
@@ -590,8 +586,6 @@ endpoints:
           - deepseek-3-1-terminus
           - deepseek-3-2
           - deepseek-3-2-exp
-          - deepseek-4-flash
-          - deepseek-4-pro
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
@@ -615,8 +609,6 @@ endpoints:
           - deepseek-v3-2-exp
           - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
-          - deepseek-v4-flash
-          - deepseek-v4-pro
           - devstral
           - devstral-2512
           - devstral-medium
@@ -624,7 +616,6 @@ endpoints:
           - devstral-small-2505
           - devstral-small-2507
           - dolphin-mistral-24b-venice-edition
-          - elephant-alpha
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
@@ -667,9 +658,6 @@ endpoints:
           - gemma-3-27b-it
           - gemma-3-4b-it
           - gemma-3n-e2b-it
-          - gemma-3n-e4b-it
-          - gemma-4-26b-a4b-it
-          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -680,9 +668,7 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
-          - glm-5-1
           - glm-5-turbo
-          - glm-5v-turbo
           - goliath-120b
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
@@ -740,17 +726,12 @@ endpoints:
           - gpt-5-3-codex
           - gpt-5-4
           - gpt-5-4-2026-03-05
-          - gpt-5-4-image-2
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
           - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
-          - gpt-5-5
-          - gpt-5-5-2026-04-23
-          - gpt-5-5-pro
-          - gpt-5-5-pro-2026-04-23
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -779,9 +760,7 @@ endpoints:
           - grok-3-mini-fast
           - grok-4
           - grok-4-1-fast
-          - grok-4-20
           - grok-4-20-beta
-          - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
           - grok-code-fast
@@ -794,7 +773,6 @@ endpoints:
           - hermes-4-70b
           - hunter-alpha
           - hunyuan-a13b-instruct
-          - hy-3-preview
           - inflection-3-pi
           - inflection-3-productivity
           - intellect-3
@@ -808,7 +786,6 @@ endpoints:
           - kimi-k2-0905
           - kimi-k2-5
           - kimi-k2-5-turbo
-          - kimi-k2-6
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
@@ -827,8 +804,6 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
-          - ling-2-6-1t
-          - ling-2-6-flash
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -881,8 +856,6 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
-          - lyria-3-clip-preview
-          - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
           - magistral-small-2509
@@ -892,8 +865,6 @@ endpoints:
           - mercury-2
           - mercury-coder
           - mimo-2-flash
-          - mimo-v2-5
-          - mimo-v2-5-pro
           - mimo-v2-flash
           - mimo-v2-omni
           - mimo-v2-pro
@@ -1022,7 +993,6 @@ endpoints:
           - pixtral-large-2502-v1
           - premium
           - premium-coding
-          - qianfan-ocr-fast
           - qwen-2-5-72b-instruct
           - qwen-2-5-7b-instruct
           - qwen-2-5-7b-instruct-turbo
@@ -1059,9 +1029,6 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus-02-15
-          - qwen-3-6-35b-a3b
-          - qwen-3-6-plus
-          - qwen-3-6-plus-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1082,7 +1049,6 @@ endpoints:
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
           - qwen-3-vl-8b-instruct
-          - qwen-3-vl-8b-thinking
           - qwen-max
           - qwen-plus
           - qwen-plus-2025-07-28
@@ -1093,7 +1059,6 @@ endpoints:
           - reasoners
           - refuel-llm-v2-small
           - reka-edge
-          - reka-flash-3
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
@@ -1105,7 +1070,6 @@ endpoints:
           - seed-1-8
           - seed-2-0-lite
           - seed-2-0-mini
-          - seed-2-0-pro
           - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
@@ -1123,9 +1087,7 @@ endpoints:
           - step-3-5-flash
           - test123
           - tongyi-deepresearch-30b-a3b
-          - trinity-large
           - trinity-large-preview
-          - trinity-large-thinking
           - trinity-mini
           - ui-tars-1-5-7b
           - ultra-fast
@@ -1726,6 +1688,8 @@ endpoints:
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
+          - deepseek/deepseek-v4-pro-cheaper
+          - deepseek/deepseek-v4-pro-cheaper:thinking
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1
           - dmind/dmind-1-mini
