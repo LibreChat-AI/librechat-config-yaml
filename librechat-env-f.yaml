@@ -540,6 +540,7 @@ endpoints:
           - claude-4-sonnet
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
+          - claude-haiku-latest
           - claude-instant-v1
           - claude-opus
           - claude-opus-4
@@ -553,12 +554,14 @@ endpoints:
           - claude-opus-4-6-v1
           - claude-opus-4-7
           - claude-opus-latest
+          - claude-sonnet
           - claude-sonnet-4
           - claude-sonnet-4-20250514
           - claude-sonnet-4-20250514-v1
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-latest
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -649,7 +652,9 @@ endpoints:
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
+          - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -758,6 +763,8 @@ endpoints:
           - gpt-5-search-api-2025-10-14
           - gpt-audio
           - gpt-audio-mini
+          - gpt-latest
+          - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -804,6 +811,7 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
+          - kimi-latest
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -1050,8 +1058,13 @@ endpoints:
           - qwen-3-5-4b
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
+          - qwen-3-5-plus
           - qwen-3-5-plus-02-15
+          - qwen-3-5-plus-20260420
+          - qwen-3-6-27b
           - qwen-3-6-35b-a3b
+          - qwen-3-6-flash
+          - qwen-3-6-max-preview
           - qwen-3-6-plus
           - qwen-3-6-plus-preview
           - qwen-3-8b
@@ -2587,7 +2600,11 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-flash-02-23
           - qwen/qwen3.5-plus-02-15
+          - qwen/qwen3.5-plus-20260420
           - qwen/qwen3.6-27b
+          - qwen/qwen3.6-35b-a3b
+          - qwen/qwen3.6-flash
+          - qwen/qwen3.6-max-preview
           - qwen/qwen3.6-plus
           - qwen/qwq-32b
           - '---SAO10K---'
@@ -2631,6 +2648,10 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5v-turbo
+          - '---~ANTHROPIC---'
+          - ~anthropic/claude-haiku-latest
+          - ~anthropic/claude-opus-latest
+          - ~anthropic/claude-sonnet-latest
           - '---OTHERS---'
           - ai21/jamba-large-1.7
           - alfredpros/codellama-7b-instruct-solidity
@@ -2667,7 +2688,11 @@ endpoints:
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - writer/palmyra-x5
-          - ~anthropic/claude-opus-latest
+          - ~google/gemini-flash-latest
+          - ~google/gemini-pro-latest
+          - ~moonshotai/kimi-latest
+          - ~openai/gpt-latest
+          - ~openai/gpt-mini-latest
         fetch: false
       dropParams:
         - "stop"
