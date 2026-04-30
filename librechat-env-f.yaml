@@ -1849,6 +1849,7 @@ endpoints:
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-pro
+          - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma4-31b
           - TEE/glm-4.6
@@ -2139,6 +2140,8 @@ endpoints:
           - minimax/minimax-m2.7-turbo
           - miromind-ai/mirothinker-v1.5-235b
           - mistral-small-31-24b-instruct
+          - mistral/mistral-medium-3.5
+          - mistral/mistral-vibe-cli-latest
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/codestral-2508
@@ -2434,6 +2437,7 @@ endpoints:
           - mistralai/mistral-large-2-instruct
           - mistralai/mistral-large-3-675b-instruct-2512
           - mistralai/mistral-medium-3-instruct
+          - mistralai/mistral-medium-3.5-128b
           - mistralai/mistral-nemotron
           - mistralai/mistral-small-4-119b-2603
           - mistralai/mixtral-8x22b-instruct-v0.1
@@ -2442,7 +2446,6 @@ endpoints:
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0905
           - moonshotai/kimi-k2-thinking
-          - moonshotai/kimi-k2.5
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
@@ -2488,7 +2491,6 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
-          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen2.5-coder-32b-instruct
@@ -2686,7 +2688,6 @@ endpoints:
           - mistralai/mistral-small-2603
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
-          - mistralai/mistral-small-creative
           - mistralai/mixtral-8x22b-instruct
           - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-large-2411
