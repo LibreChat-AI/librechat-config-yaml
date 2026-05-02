@@ -2188,7 +2188,6 @@ endpoints:
           - mercury-coder-small
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-3b-instruct
-          - meta-llama/llama-3.2-90b-vision-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
@@ -2306,6 +2305,8 @@ endpoints:
           - pangram-plagiarism-detection
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
+          - poolside/laguna-m.1
+          - poolside/laguna-xs.2
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
@@ -2509,6 +2510,7 @@ endpoints:
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0905
           - moonshotai/kimi-k2-thinking
+          - moonshotai/kimi-k2.6
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
@@ -2554,6 +2556,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen2.5-coder-32b-instruct
