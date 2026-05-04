@@ -1739,6 +1739,7 @@ endpoints:
           - deepseek-reasoner
           - deepseek-reasoner-cheaper
           - deepseek-v3-0324
+          - deepseek/deepseek-latest
           - deepseek/deepseek-prover-v2-671b
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-speciale
@@ -1765,11 +1766,9 @@ endpoints:
           - doubao-seed-2-0-lite-260215
           - doubao-seed-2-0-mini-260215
           - doubao-seed-2-0-pro-260215
-          - doubao-seed-code-preview-latest
           - ernie-4.5-8k-preview
           - ernie-4.5-turbo-128k
           - ernie-4.5-turbo-vl-32k
-          - ernie-5.0-thinking-latest
           - ernie-5.0-thinking-preview
           - ernie-x1-32k
           - ernie-x1-32k-preview
@@ -1847,7 +1846,6 @@ endpoints:
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
-          - hunyuan-t1-latest
           - hunyuan-turbos-20250226
           - ibm-granite/granite-4.1-8b
           - inclusionai/ling-2.6-1t
@@ -1878,6 +1876,7 @@ endpoints:
           - meta-llama/llama-4-scout
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
+          - minimax/minimax-latest
           - minimax/minimax-m2-her
           - minimax/minimax-m2.1
           - minimax/minimax-m2.5
@@ -1887,7 +1886,6 @@ endpoints:
           - mistral-small-31-24b-instruct
           - mistral/mistral-medium-3.5
           - mistral/mistral-medium-3.5:thinking
-          - mistral/mistral-vibe-cli-latest
           - mistralai/Devstral-Small-2505
           - mistralai/Mistral-Nemo-Instruct-2407
           - mistralai/codestral-2508
@@ -1917,6 +1915,7 @@ endpoints:
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.6:thinking
+          - moonshotai/kimi-latest
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
@@ -1931,7 +1930,6 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b:thinking
           - nvidia/nvidia-nemotron-nano-9b-v2
-          - openai/chatgpt-4o-latest
           - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
@@ -1945,29 +1943,25 @@ endpoints:
           - openai/gpt-4o-mini-search-preview
           - openai/gpt-4o-search-preview
           - openai/gpt-5
-          - openai/gpt-5-chat-latest
           - openai/gpt-5-codex
           - openai/gpt-5-mini
           - openai/gpt-5-nano
           - openai/gpt-5-pro
           - openai/gpt-5.1
           - openai/gpt-5.1-2025-11-13
-          - openai/gpt-5.1-chat
-          - openai/gpt-5.1-chat-latest
           - openai/gpt-5.1-codex
           - openai/gpt-5.1-codex-max
           - openai/gpt-5.1-codex-mini
           - openai/gpt-5.2
-          - openai/gpt-5.2-chat
           - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
-          - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-5.4
           - openai/gpt-5.4-mini
           - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
           - openai/gpt-5.5
+          - openai/gpt-chat-latest
           - openai/gpt-latest
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2047,7 +2041,6 @@ endpoints:
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
-          - study_gpt-chatgpt-4o-latest
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
           - thedrummer/skyfall-36b-v2
@@ -2073,6 +2066,7 @@ endpoints:
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
           - x-ai/grok-code-fast-1
+          - x-ai/grok-latest
           - xiaomi/mimo-v2-flash
           - xiaomi/mimo-v2-flash-original
           - xiaomi/mimo-v2-flash-thinking
@@ -2115,6 +2109,7 @@ endpoints:
           - zai-org/glm-5.1
           - zai-org/glm-5.1:thinking
           - zai-org/glm-5:thinking
+          - zai-org/glm-latest
         fetch: false
       titleConvo: true
       titleModel: "current_model"
@@ -2137,8 +2132,6 @@ endpoints:
           - bytedance/seed-oss-36b-instruct
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
-          - deepseek-ai/deepseek-v3.1-terminus
-          - deepseek-ai/deepseek-v3.2
           - deepseek-ai/deepseek-v4-flash
           - deepseek-ai/deepseek-v4-flash
           - deepseek-ai/deepseek-v4-pro
@@ -2244,7 +2237,6 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
-          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
