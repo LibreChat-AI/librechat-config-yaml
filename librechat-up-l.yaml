@@ -548,7 +548,6 @@ endpoints:
           - all-mpnet-base-v2
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
-          - babbage-002
           - bge-base-en-v1-5
           - bge-en-icl
           - bge-large-en-v1-5
@@ -1127,6 +1126,7 @@ endpoints:
           - mistral-medium
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-3-5
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1266,7 +1266,6 @@ endpoints:
           - qwen-3-5-2b
           - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
-          - qwen-3-5-4b
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus
@@ -1347,7 +1346,6 @@ endpoints:
           - seed-2-0-code
           - seed-2-0-lite
           - seed-2-0-mini
-          - seed-2-0-pro
           - seed-2-mini
           - seededit-v1
           - seedream-4
@@ -2026,8 +2024,6 @@ endpoints:
           - bytedance-seed/seed-2.0-lite
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
-          - claude-3-5-sonnet-20240620
-          - claude-3-5-sonnet-20241022
           - claude-3-7-sonnet-20250219
           - claude-3-7-sonnet-reasoner
           - claude-3-7-sonnet-thinking
@@ -2320,8 +2316,6 @@ endpoints:
           - openai/o4-mini-high
           - owl
           - pamanseau/OpenReasoning-Nemotron-32B
-          - pangram-ai-detection
-          - pangram-plagiarism-detection
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
@@ -2575,6 +2569,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen2.5-coder-32b-instruct
@@ -2764,6 +2759,7 @@ endpoints:
           - mistralai/mistral-large-2411
           - mistralai/mistral-large-2512
           - mistralai/mistral-medium-3
+          - mistralai/mistral-medium-3-5
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
