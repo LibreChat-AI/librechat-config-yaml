@@ -572,6 +572,7 @@ endpoints:
           - claude-sonnet-4-6
           - claude-sonnet-latest
           - claude-v2
+          - cobuddy
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
@@ -953,7 +954,6 @@ endpoints:
           - mistral-small-2402-v1
           - mistral-small-24b-instruct
           - mistral-small-24b-instruct-2501
-          - mistral-small-2603
           - mistral-small-3-1-24b-instruct
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
@@ -2117,7 +2117,6 @@ endpoints:
           - ibm/granite-34b-code-instruct
           - ibm/granite-8b-code-instruct
           - meta/codellama-70b
-          - meta/llama-3.1-405b-instruct
           - meta/llama-3.1-70b-instruct
           - meta/llama-3.1-8b-instruct
           - meta/llama-3.2-11b-vision-instruct
@@ -2151,7 +2150,6 @@ endpoints:
           - mistralai/mixtral-8x22b-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
           - moonshotai/kimi-k2-instruct
-          - moonshotai/kimi-k2-instruct-0905
           - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.6
           - nv-mistralai/mistral-nemo-12b-instruct
@@ -2421,7 +2419,6 @@ endpoints:
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
-          - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
@@ -2599,7 +2596,6 @@ endpoints:
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
-          - allenai/olmo-3.1-32b-instruct
           - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
