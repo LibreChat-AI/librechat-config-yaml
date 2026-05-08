@@ -776,6 +776,7 @@ endpoints:
           - gemini-2-flash
           - gemini-2-flash-lite
           - gemini-3-1-flash-image-preview
+          - gemini-3-1-flash-lite
           - gemini-3-1-flash-lite-preview
           - gemini-3-1-pro
           - gemini-3-1-pro-preview
@@ -1116,6 +1117,7 @@ endpoints:
           - mistral-small-2402-v1
           - mistral-small-24b-instruct
           - mistral-small-24b-instruct-2501
+          - mistral-small-2603
           - mistral-small-3-1-24b-instruct
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
@@ -1978,7 +1980,6 @@ endpoints:
           - alibaba/qwen3.6-27b
           - alibaba/qwen3.6-flash
           - allenai/olmo-3-32b-think
-          - allenai/olmo-3.1-32b-instruct
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
@@ -2154,7 +2155,7 @@ endpoints:
           - glm-zero-preview
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
-          - google/gemini-3.1-flash-lite-preview
+          - google/gemini-3.1-flash-lite
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.1-pro-preview-high
@@ -2562,6 +2563,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen2.5-coder-32b-instruct
@@ -2699,6 +2701,7 @@ endpoints:
           - google/gemini-3-flash-preview
           - google/gemini-3-pro-image-preview
           - google/gemini-3.1-flash-image-preview
+          - google/gemini-3.1-flash-lite
           - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
@@ -2759,7 +2762,6 @@ endpoints:
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mixtral-8x22b-instruct
-          - mistralai/mixtral-8x7b-instruct
           - mistralai/pixtral-large-2411
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
@@ -2775,7 +2777,6 @@ endpoints:
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-70b
           - '---NVIDIA---'
-          - nvidia/llama-3.1-nemotron-70b-instruct
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
@@ -2965,6 +2966,7 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.1-8b
           - inception/mercury-2
+          - inclusionai/ling-2.6-1t
           - inclusionai/ling-2.6-flash
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
