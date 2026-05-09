@@ -808,6 +808,7 @@ endpoints:
           - hermes-4-70b
           - hunter-alpha
           - hunyuan-a13b-instruct
+          - hy-3
           - hy-3-preview
           - inflection-3-pi
           - inflection-3-productivity
@@ -1079,7 +1080,6 @@ endpoints:
           - qwen-3-5-flash-02-23
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
-          - qwen-3-5-plus-20260420
           - qwen-3-6-27b
           - qwen-3-6-35b-a3b
           - qwen-3-6-flash
@@ -1121,6 +1121,7 @@ endpoints:
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
+          - ring-2-6-1t
           - rnj-1-instruct
           - rocinante-12b
           - router
@@ -2243,6 +2244,7 @@ endpoints:
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
+          - inclusionai/ring-2.6-1t:free
           - liquid/lfm-2.5-1.2b-instruct:free
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
@@ -2260,7 +2262,6 @@ endpoints:
           - poolside/laguna-xs.2:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - tencent/hy3-preview:free
           - z-ai/glm-4.5-air:free
           - '---AION-LABS---'
           - aion-labs/aion-1.0
@@ -2622,7 +2623,7 @@ endpoints:
           - stepfun/step-3.5-flash
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
-          - tngtech/deepseek-r1t2-chimera
+          - tencent/hy3-preview
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - writer/palmyra-x5
