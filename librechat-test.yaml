@@ -15,6 +15,12 @@ registration:
     - "google"
     - "openid"
 
+turnstile:
+  siteKey: "${CLOUDFLARE_SITEKEY}"
+  options:
+    language: "auto"
+    size: "normal"
+
 endpoints:
   custom:
     # 302AI
