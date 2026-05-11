@@ -16,7 +16,7 @@ turnstile:
   siteKey: "${CLOUDFLARE_SITEKEY}"
   options:
     language: "auto"
-    size: "normal"
+    size: "flexible"
 
 endpoints:
   custom:
