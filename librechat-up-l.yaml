@@ -1821,6 +1821,8 @@ endpoints:
           - ernie-4.5-turbo-128k
           - ernie-4.5-turbo-vl-32k
           - ernie-5.0-thinking-preview
+          - ernie-5.1
+          - ernie-5.1:thinking
           - ernie-x1-32k
           - ernie-x1-32k-preview
           - ernie-x1-turbo-32k
@@ -1901,6 +1903,7 @@ endpoints:
           - ibm-granite/granite-4.1-8b
           - inclusionai/ling-2.6-1t
           - inclusionai/ling-2.6-flash
+          - inclusionai/ring-2.6-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
@@ -2221,14 +2224,11 @@ endpoints:
           - minimaxai/minimax-m2.5
           - minimaxai/minimax-m2.7
           - mistralai/codestral-22b-instruct-v0.1
-          - mistralai/devstral-2-123b-instruct-2512
-          - mistralai/magistral-small-2506
           - mistralai/ministral-14b-instruct-2512
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
           - mistralai/mistral-large-3-675b-instruct-2512
-          - mistralai/mistral-medium-3-instruct
           - mistralai/mistral-medium-3.5-128b
           - mistralai/mistral-nemotron
           - mistralai/mistral-small-4-119b-2603
@@ -2285,6 +2285,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2361,8 +2362,6 @@ endpoints:
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
           - anthropic/claude-3.5-haiku
-          - anthropic/claude-3.7-sonnet
-          - anthropic/claude-3.7-sonnet:thinking
           - anthropic/claude-haiku-4.5
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
