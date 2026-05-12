@@ -1979,6 +1979,9 @@ endpoints:
           - claude-sonnet-4-thinking:32768
           - claude-sonnet-4-thinking:64000
           - claude-sonnet-4-thinking:8192
+          - claw-high
+          - claw-low
+          - claw-medium
           - cognitivecomputations/dolphin-2.9.2-qwen2-72b
           - cohere/command-r
           - cohere/command-r-plus-08-2024
@@ -2102,6 +2105,9 @@ endpoints:
           - grok-3-fast-beta
           - grok-3-mini-beta
           - grok-3-mini-fast-beta
+          - hermes-high
+          - hermes-low
+          - hermes-medium
           - holo3-35b-a3b
           - holo3-35b-a3b:thinking
           - huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
@@ -2403,7 +2409,6 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-2b
           - google/gemma-3-12b-it
-          - google/gemma-3-27b-it
           - google/gemma-3-4b-it
           - google/gemma-3n-e2b-it
           - google/gemma-3n-e4b-it
@@ -2429,7 +2434,6 @@ endpoints:
           - microsoft/phi-3.5-moe-instruct
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
-          - minimaxai/minimax-m2.5
           - minimaxai/minimax-m2.7
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/ministral-14b-instruct-2512
@@ -2443,8 +2447,6 @@ endpoints:
           - mistralai/mixtral-8x22b-instruct-v0.1
           - mistralai/mixtral-8x22b-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
-          - moonshotai/kimi-k2-instruct
-          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.6
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/ai-synthetic-video-detector
@@ -2494,7 +2496,6 @@ endpoints:
           - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - qwen/qwen2.5-coder-32b-instruct
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
@@ -2528,6 +2529,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - arcee-ai/trinity-large-thinking:free
           - baidu/cobuddy:free
           - baidu/qianfan-ocr-fast:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
@@ -2883,7 +2885,6 @@ endpoints:
           - alfredpros/codellama-7b-instruct-solidity
           - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
-          - alpindale/goliath-120b
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
           - deepcogito/cogito-v2.1-671b
