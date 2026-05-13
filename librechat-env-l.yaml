@@ -1531,6 +1531,14 @@ endpoints:
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.6-Derestricted-v5
           - GalrionSoftworks/MN-LooseCannon-12B-v1
+          - Gemma-4-31B-Claude-4.6-Opus-Reasoning-Distilled
+          - Gemma-4-31B-Cognitive-Unshackled
+          - Gemma-4-31B-DarkIdol
+          - Gemma-4-31B-GarnetV2
+          - Gemma-4-31B-Gemopus
+          - Gemma-4-31B-Musica-v1
+          - Gemma-4-31B-Queen
+          - Gemma-4-31B-it
           - Gryphe/MythoMax-L2-13b
           - Infermatic/MN-12B-Inferor-v0.0
           - KAT-Coder-Air-V1
@@ -1576,6 +1584,8 @@ endpoints:
           - Qwen3.5-27B-NaNovel-Derestricted-Lite
           - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted
           - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted-Lite
+          - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted
+          - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted-Lite
           - Qwen3.5-27B-Queen-Derestricted
           - Qwen3.5-27B-Queen-Derestricted-Lite
           - Qwen3.5-27B-RpRMax-v1
@@ -1816,6 +1826,11 @@ endpoints:
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-image-preview
           - gemini-exp-1206
+          - gemma-4-31B-Fabled
+          - gemma-4-31B-Garnet
+          - gemma-4-31B-K1-v5
+          - gemma-4-31B-Larkspur-v0.5
+          - gemma-4-31B-MeroMero
           - glm-4
           - glm-4-air
           - glm-4-air-0111
@@ -1895,6 +1910,8 @@ endpoints:
           - minimax/minimax-m2.7
           - minimax/minimax-m2.7
           - miromind-ai/mirothinker-v1.5-235b
+          - mirothinker-1-7-deepresearch
+          - mirothinker-1-7-deepresearch-mini
           - mistral-small-31-24b-instruct
           - mistral/mistral-medium-3.5
           - mistral/mistral-medium-3.5:thinking
@@ -1992,6 +2009,7 @@ endpoints:
           - openai/o4-mini-high
           - owl
           - pamanseau/OpenReasoning-Nemotron-32B
+          - perceptron/perceptron-mk1
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
@@ -2036,6 +2054,8 @@ endpoints:
           - qwen3.5-omni-plus
           - qwen3.6-max-preview
           - qwq-32b
+          - sarvam-105b
+          - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
           - sonar
@@ -2051,6 +2071,7 @@ endpoints:
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
+          - stepfun-ai/step-3.6
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
           - thedrummer/skyfall-36b-v2
@@ -2058,7 +2079,6 @@ endpoints:
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
-          - unsloth/gemma-3-1b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
           - upstage/solar-pro-3
@@ -2323,6 +2343,7 @@ endpoints:
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6-fast
           - anthropic/claude-opus-4.7
+          - anthropic/claude-opus-4.7-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
@@ -2536,13 +2557,9 @@ endpoints:
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
-          - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-plus-2025-07-28
           - qwen/qwen-plus-2025-07-28:thinking
-          - qwen/qwen-turbo
-          - qwen/qwen-vl-max
-          - qwen/qwen-vl-plus
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen3-14b
           - qwen/qwen3-235b-a22b
@@ -2651,6 +2668,7 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/deepseek-v3.1-nex-n1
+          - perceptron/perceptron-mk1
           - prime-intellect/intellect-3
           - rekaai/reka-edge
           - rekaai/reka-flash-3
