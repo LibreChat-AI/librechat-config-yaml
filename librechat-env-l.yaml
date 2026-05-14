@@ -2219,6 +2219,11 @@ endpoints:
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.6:thinking
           - moonshotai/kimi-latest
+          - nanogpt/coding-router
+          - nanogpt/coding-router:high
+          - nanogpt/coding-router:low
+          - nanogpt/coding-router:max
+          - nanogpt/coding-router:medium
           - nex-agi/deepseek-v3.1-nex-n1
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
@@ -2529,6 +2534,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - qwen/qwen3-coder-480b-a35b-instruct
@@ -2546,7 +2552,6 @@ endpoints:
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
           - z-ai/glm-5.1
-          - z-ai/glm4.7
           - z-ai/glm5
           - zyphra/zamba2-7b-instruct
         fetch: false
@@ -2569,6 +2574,7 @@ endpoints:
           - baidu/cobuddy:free
           - baidu/qianfan-ocr-fast:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ring-2.6-1t:free
