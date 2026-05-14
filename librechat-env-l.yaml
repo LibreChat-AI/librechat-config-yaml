@@ -2278,7 +2278,6 @@ endpoints:
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
           - z-ai/glm-5.1
-          - z-ai/glm4.7
           - z-ai/glm5
           - zyphra/zamba2-7b-instruct
         fetch: false
@@ -2301,6 +2300,7 @@ endpoints:
           - baidu/cobuddy:free
           - baidu/qianfan-ocr-fast:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
+          - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ring-2.6-1t:free
