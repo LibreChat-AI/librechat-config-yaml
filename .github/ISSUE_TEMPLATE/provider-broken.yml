@@ -1,0 +1,42 @@
+name: Provider fetcher is broken
+description: A provider script in scripts/providers/ is failing in the daily update workflow.
+title: "[broken] <provider name>"
+labels: ["fetcher-broken", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for scripts/providers/*.py failures: the daily workflow run
+        is erroring on a specific provider, the staleness gate is firing, or
+        the fetcher returns an empty / clearly wrong list.
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+    validations:
+      required: true
+  - type: input
+    id: workflow_run
+    attributes:
+      label: Failing workflow run URL
+      placeholder: "https://github.com/.../actions/runs/..."
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message / log excerpt
+      render: shell
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Suspected cause
+      options:
+        - "Vendor API endpoint changed"
+        - "Auth / credential issue"
+        - "Vendor rate limit / throttling"
+        - "Web scraper broken (markup changed)"
+        - "Empty response from vendor"
+        - "Other / unknown"
+  - type: input
+    id: vendor_status
+    attributes:
+      label: Vendor status page URL

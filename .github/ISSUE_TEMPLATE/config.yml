@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: LibreChat custom config docs
+    url: https://www.librechat.ai/docs/configuration/librechat_yaml/setup
+    about: General reference for the librechat.yaml schema.
+  - name: LibreChat main repository
+    url: https://github.com/danny-avila/LibreChat
+    about: For issues about LibreChat itself rather than these YAML files.
