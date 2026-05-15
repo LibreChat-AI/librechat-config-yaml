@@ -1,0 +1,61 @@
+# Validate YAML
+#
+# WHAT
+# ─────────────────────────────────────────────────────────────────────────────
+# Runs `scripts/validate_config.mjs` against every `librechat-*.yaml` file
+# on every PR that touches a config file or the validator itself. The
+# validator imports the canonical Zod `configSchema` from the published
+# `librechat-data-provider` npm package — same schema LibreChat uses to
+# parse `librechat.yaml` at startup — and applies `.strict()` at the top
+# level so typos like `fileStratgey:` produce a CI failure instead of being
+# silently dropped.
+#
+# WHY THE PATH FILTER
+# ─────────────────────────────────────────────────────────────────────────────
+# Limiting to YAML / validator paths keeps CI cycles cheap on PRs that only
+# touch fetcher scripts, README, etc. Note that bumps to the validator's
+# Node deps (e.g. Dependabot updating `librechat-data-provider` to a
+# version with a stricter schema) DO trigger this workflow because
+# `scripts/package-lock.json` is in the path list — so schema drift is
+# caught the moment the dep PR is opened.
+
+name: Validate YAML
+
+on:
+  pull_request:
+    paths:
+      - 'librechat-*.yaml'
+      - 'scripts/validate_config.mjs'
+      - 'scripts/package.json'
+      - 'scripts/package-lock.json'
+      - '.github/workflows/validate-yaml.yml'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          # `cache: npm` + `cache-dependency-path` makes `npm ci` reuse the
+          # cached node_modules across runs when the lockfile is unchanged.
+          cache: 'npm'
+          cache-dependency-path: 'scripts/package-lock.json'
+
+      - name: Install tooling dependencies
+        working-directory: scripts
+        # `npm ci` (not `npm install`) so the lockfile is treated as
+        # source-of-truth and any drift fails CI loudly.
+        run: npm ci
+
+      - name: Validate all librechat-*.yaml files
+        # No args -> the script defaults to all five canonical files.
+        # Exit 0 = clean, 1 = schema/duplicate-model failure, 2 = invocation
+        # error (missing file path); only exit 0 lets the PR go green.
+        run: node scripts/validate_config.mjs

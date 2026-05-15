@@ -1,0 +1,47 @@
+name: Stale model list
+description: A provider's model list appears outdated or incorrect.
+title: "[stale] <provider name>"
+labels: ["stale-models", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when a provider's `models.default` array in one of the
+        `librechat-*.yaml` files no longer matches the vendor's current
+        catalog (missing recent models, contains retired models, etc.).
+  - type: input
+    id: provider
+    attributes:
+      label: Provider
+      placeholder: "e.g. OpenRouter, Mistral, Groq"
+    validations:
+      required: true
+  - type: input
+    id: file
+    attributes:
+      label: Which YAML file(s)?
+      placeholder: "librechat-env-f.yaml, librechat-up-l.yaml, ..."
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: Missing models
+      description: Model IDs that should be in `models.default` but aren't.
+      placeholder: |
+        - model-id-1
+        - model-id-2
+  - type: textarea
+    id: extra
+    attributes:
+      label: Models that should be removed
+      description: Model IDs in `models.default` that are retired / no longer served.
+  - type: input
+    id: catalog_url
+    attributes:
+      label: Vendor's current catalog URL
+      placeholder: "https://docs.vendor.com/models"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Other notes

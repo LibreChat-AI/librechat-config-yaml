@@ -1,0 +1,50 @@
+name: New provider request
+description: Request a new provider be added to the librechat-*.yaml files.
+title: "[new provider] <vendor name>"
+labels: ["new-provider", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Adding a new provider means:
+        1. A new entry in `endpoints.custom` across all 5 YAML files.
+        2. A new fetcher under `scripts/providers/` extending `BaseFetcher`.
+        3. A new secret in the daily workflow's env block.
+        4. A new entry in the README's "Get an API key" table.
+        Tests under `scripts/tests/test_providers.py` should cover the new fetcher.
+  - type: input
+    id: vendor
+    attributes:
+      label: Vendor name
+    validations:
+      required: true
+  - type: input
+    id: api_url
+    attributes:
+      label: API base URL
+      placeholder: "https://api.vendor.com/v1"
+    validations:
+      required: true
+  - type: input
+    id: docs
+    attributes:
+      label: Models list / API docs URL
+    validations:
+      required: true
+  - type: input
+    id: api_key_url
+    attributes:
+      label: Where to obtain an API key
+  - type: dropdown
+    id: compat
+    attributes:
+      label: API compatibility
+      options:
+        - "OpenAI-compatible (chat completions)"
+        - "Native LibreChat endpoint (openAI/anthropic/google/etc.)"
+        - "Custom protocol — adapter needed"
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this vendor?
+      description: Distinctive models, pricing, region, etc.

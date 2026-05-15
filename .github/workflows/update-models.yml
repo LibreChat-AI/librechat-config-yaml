@@ -96,12 +96,14 @@ jobs:
           git push
       
       - name: Trigger deploy webhook
+        id: deploy
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true'
         env:
           DEPLOY_WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
         run: |
           if [ -z "$DEPLOY_WEBHOOK_URL" ]; then
             echo "DEPLOY_WEBHOOK_URL is not configured. Skipping deploy webhook."
+            echo "deploy_ok=skipped" >> $GITHUB_OUTPUT
             exit 0
           fi
 
@@ -114,8 +116,33 @@ jobs:
 
           if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 300 ]; then
             echo "Deploy webhook triggered successfully (HTTP $HTTP_STATUS)"
+            echo "deploy_ok=true" >> $GITHUB_OUTPUT
           else
             echo "Warning: Deploy webhook returned HTTP $HTTP_STATUS (non-fatal)"
+            echo "deploy_ok=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Flush downstream Redis cache
+        if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED != 'true' && steps.deploy.outputs.deploy_ok == 'true'
+        env:
+          CACHE_FLUSH_WEBHOOK_URL: ${{ secrets.CACHE_FLUSH_WEBHOOK_URL }}
+        run: |
+          if [ -z "$CACHE_FLUSH_WEBHOOK_URL" ]; then
+            echo "CACHE_FLUSH_WEBHOOK_URL is not configured. Skipping cache flush."
+            exit 0
+          fi
+
+          echo "Firing cache-flush hook..."
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST "$CACHE_FLUSH_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -d '{"event": "config_changed", "date": "${{ steps.date.outputs.DATE }}", "repository": "${{ github.repository }}", "run_id": "${{ github.run_id }}"}' \
+            --max-time 30)
+
+          if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 300 ]; then
+            echo "Cache flush hook fired successfully (HTTP $HTTP_STATUS)"
+          else
+            echo "Warning: Cache flush hook returned HTTP $HTTP_STATUS (non-fatal)"
           fi
 
       - name: Create Pull Request (if validation failed)
