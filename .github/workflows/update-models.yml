@@ -147,7 +147,7 @@ jobs:
 
       - name: Create Pull Request (if validation failed)
         if: steps.changes.outputs.HAS_CHANGES == 'true' && env.YAML_VALIDATION_FAILED == 'true'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update AI models (${{ steps.date.outputs.DATE }}) [YAML VALIDATION FAILED]"
