@@ -1,26 +1,63 @@
 #!/usr/bin/env node
 /**
- * Validate every librechat-*.yaml against the published Zod `configSchema`
- * exported by `librechat-data-provider`. Dependabot keeps that package on
- * the latest published version; bumps automatically follow LibreChat
- * releases.
+ * validate_config.mjs — schema validator for librechat-*.yaml files.
  *
- * Upstream `configSchema` uses `.strip()` (silently drops unknown keys) to
- * accommodate plugin extensions in downstream deployments. In this repo
- * the YAMLs are the canonical reference, so we apply `.strict()` at the
- * top level to catch typos like `fileStratgey:` or `intereface:`.
+ * ─────────────────────────────────────────────────────────────────────────────
+ * WHY THIS EXISTS
+ * ─────────────────────────────────────────────────────────────────────────────
+ * This repo ships five user-facing YAML configs (env-l, env-f, up-l, up-f,
+ * test) that downstream LibreChat deployments pin via CONFIG_PATH. A typo
+ * (`fileStratgey:` instead of `fileStrategy:`) or a structurally invalid
+ * endpoint silently breaks every deployment that points at the bad file.
  *
- * One extra post-Zod check Zod doesn't cover: duplicate model IDs inside
- * a custom endpoint's `models.default`.
+ * Hand-rolling allowlists / enum checks in Python was the previous approach
+ * and required us to chase every `configSchema` change in LibreChat by hand.
+ * Instead we import the *actual* Zod `configSchema` from the published
+ * `librechat-data-provider` npm package, which is the same schema LibreChat
+ * itself uses to parse `librechat.yaml` at startup. Dependabot opens a PR
+ * whenever a new version is published, so schema drift is detected
+ * automatically rather than manually.
  *
- * Exit codes:
- *   0 - all files valid
- *   1 - one or more files failed validation
- *   2 - invocation error (missing files, etc.)
+ * ─────────────────────────────────────────────────────────────────────────────
+ * STRICT MODE
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Upstream `configSchema` is built with `.strip()` semantics: unknown top-
+ * level keys are silently dropped so plugin extensions in downstream
+ * deployments don't blow up. In *this* repo the YAMLs are the canonical
+ * reference everyone else pins, so we override with `.strict()` at the top
+ * level. That promotes a typo from "silently ignored" to "CI failure with
+ * a clear message," which is what we want here.
  *
- * Usage:
+ * Note: `.strict()` is applied only at the top level — nested objects keep
+ * their upstream-defined strictness. This is enough to catch the common
+ * misspelling class without rejecting future-but-not-yet-published nested
+ * keys that may appear in a fresher LibreChat than our pinned data-provider.
+ *
+ * ─────────────────────────────────────────────────────────────────────────────
+ * EXTRA CHECK: DUPLICATE MODEL IDS
+ * ─────────────────────────────────────────────────────────────────────────────
+ * Zod treats `models.default` as `string[]`, which means `["foo", "foo"]`
+ * passes schema validation but is almost always a bug introduced by a
+ * misbehaving fetcher or a bad merge. `findDuplicateModelIds` walks every
+ * `endpoints.custom[*].models.default` list and reports any repeated id.
+ *
+ * ─────────────────────────────────────────────────────────────────────────────
+ * EXIT CODES
+ * ─────────────────────────────────────────────────────────────────────────────
+ *   0 — every targeted file parsed and validated cleanly.
+ *   1 — at least one file failed schema or duplicate-model validation.
+ *   2 — invocation error: a path passed on the command line does not exist,
+ *       or no files were resolvable. Distinct from 1 so CI / wrappers can
+ *       tell "your config is broken" apart from "you typed the wrong path."
+ *
+ * ─────────────────────────────────────────────────────────────────────────────
+ * USAGE
+ * ─────────────────────────────────────────────────────────────────────────────
+ *   # validate all five canonical files
  *   node scripts/validate_config.mjs
- *   node scripts/validate_config.mjs librechat-env-f.yaml
+ *
+ *   # validate one or more specific files
+ *   node scripts/validate_config.mjs librechat-env-f.yaml librechat-test.yaml
  */
 
 import { configSchema } from 'librechat-data-provider';
@@ -100,14 +137,20 @@ function validateFile(filePath) {
 }
 
 function main(argv) {
-  const targets = (argv.length
+  const requested = argv.length
     ? argv.map(a => (isAbsolute(a) ? a : join(repoRoot, a)))
-    : DEFAULT_FILES.map(f => join(repoRoot, f))
-  ).filter(p => {
-    if (existsSync(p)) return true;
-    console.error(`missing: ${p}`);
-    return false;
-  });
+    : DEFAULT_FILES.map(f => join(repoRoot, f));
+
+  const targets = [];
+  const missing = [];
+  for (const p of requested) {
+    if (existsSync(p)) {
+      targets.push(p);
+    } else {
+      missing.push(p);
+      console.error(`missing: ${p}`);
+    }
+  }
 
   if (targets.length === 0) {
     console.error('no files to validate');
@@ -127,6 +170,13 @@ function main(argv) {
       }
       exitCode = 1;
     }
+  }
+
+  // If the caller named files we couldn't resolve, surface that as an
+  // invocation error (exit 2) — but only if every targeted file passed,
+  // since a real validation failure is more important to report.
+  if (missing.length > 0 && exitCode === 0) {
+    return 2;
   }
   return exitCode;
 }
