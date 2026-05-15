@@ -209,14 +209,19 @@ def test_no_print_calls_in_scripts():
         ["grep", "-rn", "--include=*.py", "print(", str(Path(__file__).parent.parent)],
         capture_output=True, text=True
     )
-    allowed_files = {"update.py", "test_"}
+    # update.py is an interactive UI; report_staleness.py is a CLI report
+    # tool whose stdout IS its API (the staleness-report workflow consumes
+    # the JSON via `python report_staleness.py --json > staleness.json`),
+    # so logger-to-stderr would defeat its purpose.
+    allowed_files = {"update.py", "report_staleness.py", "test_"}
     violations = []
     for line in result.stdout.strip().split("\n"):
         if not line:
             continue
         filepath = line.split(":")[0]
         filename = Path(filepath).name
-        # Allow print() in update.py (interactive UI) and test files
+        # Allow print() in CLI tools (update.py, report_staleness.py) and
+        # test files; everything else must use the structured logger.
         if any(allowed in filename for allowed in allowed_files):
             continue
         # Allow print() in log_config.py (none expected, but don't flag if present)
