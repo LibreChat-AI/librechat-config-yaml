@@ -1629,7 +1629,6 @@ endpoints:
           - TEE/kimi-k2.5-thinking
           - TEE/kimi-k2.6
           - TEE/llama3-3-70b
-          - TEE/mimo-v2-flash
           - TEE/minimax-m2.1
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
@@ -1701,13 +1700,6 @@ endpoints:
           - bytedance-seed/seed-2.0-lite
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-3-5-haiku-20241022
-          - claude-3-7-sonnet-20250219
-          - claude-3-7-sonnet-reasoner
-          - claude-3-7-sonnet-thinking
-          - claude-3-7-sonnet-thinking:1024
-          - claude-3-7-sonnet-thinking:128000
-          - claude-3-7-sonnet-thinking:32768
-          - claude-3-7-sonnet-thinking:8192
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
           - claude-opus-4-1-20250805
@@ -2299,7 +2291,6 @@ endpoints:
           - '---FREE---'
           - arcee-ai/trinity-large-thinking:free
           - baidu/cobuddy:free
-          - baidu/qianfan-ocr-fast:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
@@ -2362,6 +2353,7 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
+          - baidu/qianfan-ocr-fast
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
