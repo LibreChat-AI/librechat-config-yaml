@@ -1,0 +1,14 @@
+{
+  "name": "librechat-config-yaml-tooling",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tooling for the librechat-config-yaml repo. Not published.",
+  "type": "module",
+  "scripts": {
+    "validate": "node validate_config.mjs"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "librechat-data-provider": "^0.8.502"
+  }
+}

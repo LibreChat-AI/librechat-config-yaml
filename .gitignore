@@ -16,6 +16,9 @@ __pycache__/
 *$py.class
 .pytest_cache/
 
+# Node modules (scripts/ tooling)
+node_modules/
+
 # Raw JSON responses
 scripts/*_raw.json
 
