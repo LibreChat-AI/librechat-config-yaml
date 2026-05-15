@@ -1,8 +1,34 @@
+# Staleness Report
+#
+# WHAT
+# ─────────────────────────────────────────────────────────────────────────────
+# Runs `scripts/report_staleness.py` once a week and turns the JSON output
+# into (or onto) a single tracking GitHub issue labelled `staleness-report`.
+# We open one rolling issue rather than spamming a new one every Sunday so
+# the maintainer's notification volume stays bounded.
+#
+# WHY
+# ─────────────────────────────────────────────────────────────────────────────
+# Closes the silent-failure mode the existing 50%-drop staleness gate inside
+# `update_models.py` can't catch — see the docstring of the python script
+# for the failure modes (cached scrapes, dropped families, key-tier
+# changes, ...).
+#
+# BEHAVIOUR
+# ─────────────────────────────────────────────────────────────────────────────
+# - stale_count > 0  -> open a new tracking issue OR update the existing one.
+# - stale_count == 0 -> if a tracking issue is open, comment "all clear" and
+#                       close it; otherwise do nothing. This means a clean
+#                       week always tidies up after a previous bad week
+#                       without any maintainer involvement.
+
 name: Staleness Report
 
 on:
   schedule:
-    # Every Sunday at 12:00 UTC
+    # Every Sunday at 12:00 UTC. Picked so the maintainer can triage on
+    # Monday morning without competing with the daily update job (cron
+    # `0 0 * * *` in update-models.yml).
     - cron: '0 12 * * 0'
   workflow_dispatch:
     inputs:
@@ -22,6 +48,9 @@ jobs:
       - name: Checkout (full history needed for git blame)
         uses: actions/checkout@v4
         with:
+          # `fetch-depth: 0` is required: report_staleness.py runs
+          # `git blame` against arbitrarily old commits, and a shallow
+          # clone would treat unblamed lines as "blame failed."
           fetch-depth: 0
 
       - name: Set up Python
@@ -36,28 +65,84 @@ jobs:
           cache-dependency-glob: 'scripts/requirements*.txt'
 
       - name: Install dependencies
+        # Reuses the existing requirements file; no new packages needed.
         run: uv pip sync scripts/requirements.txt --system
 
       - name: Generate staleness report
         id: report
+        # Pass workflow_dispatch input via env (not direct ${{ }}
+        # interpolation into the script) to avoid shell-injection risk.
+        env:
+          WEEKS_INPUT: ${{ github.event.inputs.weeks }}
         run: |
-          WEEKS="${{ github.event.inputs.weeks }}"
-          WEEKS="${WEEKS:-4}"
+          # Resolve threshold: workflow_dispatch input wins, otherwise default.
+          WEEKS="${WEEKS_INPUT:-4}"
+          # Reject anything that isn't a positive integer; argparse would
+          # also reject it, but failing early gives a clearer log line.
+          if ! [[ "$WEEKS" =~ ^[0-9]+$ ]]; then
+            echo "Invalid --weeks value: $WEEKS" >&2
+            exit 1
+          fi
+
+          # Run twice: first JSON-only into a file (for the issue body),
+          # then human-readable to the workflow log (for at-a-glance debug).
           python scripts/report_staleness.py --weeks "$WEEKS" --json > staleness.json
           python scripts/report_staleness.py --weeks "$WEEKS"
-          STALE_COUNT=$(python -c "import json; print(len(json.load(open('staleness.json'))['stale']))")
-          echo "stale_count=$STALE_COUNT" >> $GITHUB_OUTPUT
-          echo "weeks=$WEEKS" >> $GITHUB_OUTPUT
 
-      - name: Open or update tracking issue
-        if: steps.report.outputs.stale_count != '0'
+          # Extract just the count for the conditional in the next step.
+          STALE_COUNT=$(python -c "import json; print(len(json.load(open('staleness.json'))['stale']))")
+          echo "stale_count=$STALE_COUNT" >> "$GITHUB_OUTPUT"
+          echo "weeks=$WEEKS" >> "$GITHUB_OUTPUT"
+
+      - name: Open / update / close tracking issue
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
             const report = JSON.parse(fs.readFileSync('staleness.json', 'utf8'));
-            const week = new Date().toISOString().slice(0, 10);
+            const reportDate = new Date().toISOString().slice(0, 10);
+            const staleCount = report.stale.length;
 
+            // Always look for an existing tracking issue first; it's the
+            // anchor for both the "update" and "all clear -> close" paths.
+            const { data: openIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'staleness-report',
+              state: 'open',
+              per_page: 10,
+            });
+            const existing = openIssues[0];
+
+            // -- Branch 1: clean week ----------------------------------
+            if (staleCount === 0) {
+              if (!existing) {
+                core.info('No stale providers and no open issue. Nothing to do.');
+                return;
+              }
+              const blameNote = report.blame_failed.length > 0
+                ? `\n\n_Note: blame failed for ${report.blame_failed.length} provider(s) ` +
+                  `(${report.blame_failed.join(', ')}); their staleness could not be measured._`
+                : '';
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `All providers are now within the ${report.threshold_weeks}-week ` +
+                      `freshness window (checked ${reportDate}). Auto-closing.${blameNote}`,
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                state: 'closed',
+                state_reason: 'completed',
+              });
+              core.info(`Closed existing issue #${existing.number} (no stale providers).`);
+              return;
+            }
+
+            // -- Branch 2: stale providers exist -----------------------
             const lines = [
               `Generated on ${report.generated_at}.`,
               `Threshold: no model-list change in > **${report.threshold_weeks} weeks**.`,
@@ -66,35 +151,42 @@ jobs:
               `## Stale providers (${report.stale.length})`,
               ``,
               ...report.stale.map(s =>
-                `- **${s.provider}** — last changed ${s.last_changed.slice(0, 10)} (${s.days_stale} days ago)`),
+                `- **${s.provider}** -- last changed ${s.last_changed.slice(0, 10)} (${s.days_stale} days ago)`),
               ``,
               `## Fresh providers (${report.fresh.length})`,
               ``,
               report.fresh.length > 0 ? report.fresh.join(', ') : '_none_',
+            ];
+            if (report.blame_failed.length > 0) {
+              lines.push(
+                ``,
+                `## Blame failed (${report.blame_failed.length})`,
+                ``,
+                `_Coverage gap -- git blame returned no data for these providers. ` +
+                `Investigate before trusting the rest of the report._`,
+                ``,
+                report.blame_failed.join(', '),
+              );
+            }
+            lines.push(
               ``,
               `---`,
-              `<sub>Auto-generated by .github/workflows/staleness-report.yml. The issue is updated weekly; close it once stale providers are investigated.</sub>`,
-            ];
+              `<sub>Auto-generated by .github/workflows/staleness-report.yml. ` +
+              `The issue is updated weekly and auto-closed once every provider falls ` +
+              `back inside the freshness window.</sub>`,
+            );
             const body = lines.join('\n');
-            const title = `Provider staleness report (week of ${week})`;
+            const title = `Provider staleness report (${reportDate})`;
 
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: 'staleness-report',
-              state: 'open',
-              per_page: 10,
-            });
-
-            if (issues.length > 0) {
+            if (existing) {
               await github.rest.issues.update({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: issues[0].number,
+                issue_number: existing.number,
                 title,
                 body,
               });
-              core.info(`Updated existing issue #${issues[0].number}`);
+              core.info(`Updated existing issue #${existing.number}`);
             } else {
               const { data: issue } = await github.rest.issues.create({
                 owner: context.repo.owner,
