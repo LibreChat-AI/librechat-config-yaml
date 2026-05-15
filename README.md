@@ -9,12 +9,15 @@ See the Custom Configuration Guide for more information: [LibreChat Custom Confi
 
 ## Available Configuration Files
 
-| File Name | API Keys | File Strategy |
-|-----------|----------|---------------|
-| librechat-env-l.yaml | env | local |
-| librechat-env-f.yaml | env | firebase |
-| librechat-up-l.yaml | user_provided | local |
-| librechat-up-f.yaml | user_provided | firebase |
+| File Name | API Keys | File Strategy | Intended Use |
+|-----------|----------|---------------|--------------|
+| librechat-env-l.yaml | env | local | production |
+| librechat-env-f.yaml | env | firebase | production |
+| librechat-up-l.yaml | user_provided | local | production |
+| librechat-up-f.yaml | user_provided | firebase | production |
+| librechat-test.yaml | env | firebase | staging / canary — not for downstream pinning |
+
+> The schema version pinned across all files is currently `1.3.11`, tracking the [`configSchema`](https://github.com/danny-avila/LibreChat/blob/main/packages/data-provider/src/config.ts) on LibreChat `main`.
 
 ## LibreChat Demo & Quick Deployments
 

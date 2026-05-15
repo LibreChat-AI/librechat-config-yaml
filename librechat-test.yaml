@@ -1,3 +1,10 @@
+# Staging / canary variant of the librechat-*.yaml matrix.
+# Processed by the same daily update pipeline as the four production files
+# (see scripts/update_models.py and scripts/automated_update.py) and used by
+# the validation gate to detect breakage before production files are touched.
+# Pin your CONFIG_PATH to one of the production files (env-l, env-f, up-l,
+# up-f); do not pin downstream deployments to this file.
+
 version: 1.3.11
 
 cache: true
