@@ -1625,7 +1625,6 @@ endpoints:
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
           - microsoft/Phi-3-mini-4k-instruct
-          - microsoft/Phi-3-vision-128k-instruct
           - microsoft/Phi-3.5-mini-instruct
           - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
@@ -2175,7 +2174,6 @@ endpoints:
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m2.7-turbo
-          - miromind-ai/mirothinker-v1.5-235b
           - mirothinker-1-7-deepresearch
           - mirothinker-1-7-deepresearch-mini
           - mistral-small-31-24b-instruct
@@ -2347,7 +2345,6 @@ endpoints:
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
           - thedrummer/skyfall-36b-v2
-          - tngtech/DeepSeek-TNG-R1T2-Chimera
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
@@ -2568,7 +2565,6 @@ endpoints:
           - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - inclusionai/ring-2.6-1t:free
           - liquid/lfm-2.5-1.2b-instruct:free
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
@@ -2677,6 +2673,10 @@ endpoints:
           - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
+          - '---INCLUSIONAI---'
+          - inclusionai/ling-2.6-1t
+          - inclusionai/ling-2.6-flash
+          - inclusionai/ring-2.6-1t
           - '---META-LLAMA---'
           - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
@@ -2877,17 +2877,9 @@ endpoints:
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
           - '---X-AI---'
-          - x-ai/grok-3
-          - x-ai/grok-3-beta
-          - x-ai/grok-3-mini
-          - x-ai/grok-3-mini-beta
-          - x-ai/grok-4
-          - x-ai/grok-4-fast
-          - x-ai/grok-4.1-fast
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
-          - x-ai/grok-code-fast-1
           - '---XIAOMI---'
           - xiaomi/mimo-v2-flash
           - xiaomi/mimo-v2-omni
@@ -2924,8 +2916,6 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.1-8b
           - inception/mercury-2
-          - inclusionai/ling-2.6-1t
-          - inclusionai/ling-2.6-flash
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro-v2
