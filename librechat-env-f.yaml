@@ -2195,7 +2195,6 @@ endpoints:
           - mistralai/mistral-saba
           - mistralai/mistral-small-4-119b-2603
           - mistralai/mistral-small-4-119b-2603:thinking
-          - mistralai/mistral-tiny
           - mistralai/mixtral-8x22b-instruct-v0.1
           - mistralai/mixtral-8x7b-instruct-v0.1
           - mlabonne/NeuralDaredevil-8B-abliterated
