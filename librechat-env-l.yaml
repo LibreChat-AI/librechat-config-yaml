@@ -553,6 +553,7 @@ endpoints:
           - claude-opus-4-6-fast
           - claude-opus-4-6-v1
           - claude-opus-4-7
+          - claude-opus-4-7-fast
           - claude-opus-latest
           - claude-sonnet
           - claude-sonnet-4
@@ -1025,6 +1026,7 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
+          - perceptron-mk-1
           - phi-4
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
@@ -2214,9 +2216,7 @@ endpoints:
           - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
-          - nvidia/llama-3.2-nemoretriever-300m-embed-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v1
-          - nvidia/llama-3.2-nv-embedqa-1b-v2
           - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/llama-nemotron-embed-1b-v2
@@ -2266,7 +2266,6 @@ endpoints:
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
           - z-ai/glm-5.1
-          - z-ai/glm5
           - zyphra/zamba2-7b-instruct
         fetch: false
       titleConvo: true
