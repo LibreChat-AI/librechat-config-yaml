@@ -1492,29 +1492,18 @@ endpoints:
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default:
-          - accounts/fireworks/models/deepseek-r1
-          - accounts/fireworks/models/deepseek-r1-basic
-          - accounts/fireworks/models/deepseek-v3
-          - accounts/fireworks/models/deepseek-v3-0324
-          - accounts/fireworks/models/firesearch-ocr-v6
-          - accounts/fireworks/models/llama-guard-3-8b
-          - accounts/fireworks/models/llama-v3p1-405b-instruct
-          - accounts/fireworks/models/llama-v3p1-405b-instruct-long
-          - accounts/fireworks/models/llama-v3p1-70b-instruct
-          - accounts/fireworks/models/llama-v3p1-8b-instruct
-          - accounts/fireworks/models/llama-v3p3-70b-instruct
-          - accounts/fireworks/models/llama4-maverick-instruct-basic
-          - accounts/fireworks/models/llama4-scout-instruct-basic
-          - accounts/fireworks/models/mixtral-8x22b-instruct
-          - accounts/fireworks/models/qwen2-vl-72b-instruct
-          - accounts/fireworks/models/qwen2p5-72b-instruct
-          - accounts/fireworks/models/qwen2p5-vl-32b-instruct
-          - accounts/fireworks/models/qwen3-235b-a22b
-          - accounts/fireworks/models/qwen3-30b-a3b
-          - accounts/fireworks/models/qwq-32b
-          - accounts/instacart/models/srl-finetune-0417-debug
-          - accounts/perplexity/models/r1-1776
-          - accounts/sentientfoundation/models/dobby-unhinged-llama-3-3-70b-new
+          - accounts/fireworks/models/deepseek-v4-pro
+          - accounts/fireworks/models/flux-kontext-max
+          - accounts/fireworks/models/flux-kontext-pro
+          - accounts/fireworks/models/glm-5p1
+          - accounts/fireworks/models/gpt-oss-120b
+          - accounts/fireworks/models/kimi-k2p5
+          - accounts/fireworks/models/kimi-k2p6
+          - accounts/pyroworks/models/ministral-3-3b-2512-canary-20260518-211925
+          - accounts/pyroworks/models/ministral-3-3b-2512-lora-e2e-20260518-170033
+          - accounts/pyroworks/models/ministral-3-3b-2512-lora-smoke
+          - accounts/pyroworks/models/ministral-canary-remap-20260518-214944
+          - accounts/pyroworks/models/ministral-canary-v2-fixed-20260518-220617
         fetch: false
       titleConvo: true
       titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
@@ -2126,10 +2115,6 @@ endpoints:
           - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-31b-it
           - google/gemma-4-31b-it:thinking
-          - grok-3-beta
-          - grok-3-fast-beta
-          - grok-3-mini-beta
-          - grok-3-mini-fast-beta
           - hermes-high
           - hermes-low
           - hermes-medium
@@ -2357,15 +2342,9 @@ endpoints:
           - v0-1.5-md
           - venice-uncensored
           - venice-uncensored:web
-          - x-ai/grok-4-07-09
-          - x-ai/grok-4-fast
-          - x-ai/grok-4-fast:thinking
-          - x-ai/grok-4.1-fast
-          - x-ai/grok-4.1-fast-reasoning
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
-          - x-ai/grok-code-fast-1
           - x-ai/grok-latest
           - xiaomi/mimo-v2-flash
           - xiaomi/mimo-v2-flash-original
