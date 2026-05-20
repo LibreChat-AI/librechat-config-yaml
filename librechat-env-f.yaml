@@ -1451,6 +1451,7 @@ endpoints:
           - c4ai-aya-expanse-32b
           - c4ai-aya-vision-32b
           - command-a-03-2025
+          - command-a-plus-05-2026
           - command-a-reasoning-08-2025
           - command-a-translate-08-2025
           - command-a-vision-07-2025
@@ -1501,10 +1502,12 @@ endpoints:
           - accounts/fireworks/models/kimi-k2p5
           - accounts/fireworks/models/kimi-k2p6
           - accounts/pyroworks/models/ministral-3-3b-2512-canary-20260518-211925
+          - accounts/pyroworks/models/ministral-3-3b-2512-canary-20260519-141009
           - accounts/pyroworks/models/ministral-3-3b-2512-lora-e2e-20260518-170033
           - accounts/pyroworks/models/ministral-3-3b-2512-lora-smoke
           - accounts/pyroworks/models/ministral-canary-remap-20260518-214944
           - accounts/pyroworks/models/ministral-canary-v2-fixed-20260518-220617
+          - accounts/pyroworks/models/ministral-canary-v3-20260519-054536
         fetch: false
       titleConvo: true
       titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
@@ -2108,6 +2111,8 @@ endpoints:
           - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.1-pro-preview-high
           - google/gemini-3.1-pro-preview-low
+          - google/gemini-3.5-flash
+          - google/gemini-3.5-flash-thinking
           - google/gemini-flash-1.5
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
@@ -2642,6 +2647,7 @@ endpoints:
           - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
+          - google/gemini-3.5-flash
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
