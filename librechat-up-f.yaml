@@ -1882,7 +1882,6 @@ endpoints:
           - THUDM/GLM-4-9B-0414
           - THUDM/GLM-Z1-32B-0414
           - THUDM/GLM-Z1-9B-0414
-          - THUDM/GLM-Z1-Rumination-32B-0414
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Anubis-70B-v1.1
           - TheDrummer/Cydonia-24B-v2
@@ -1923,7 +1922,6 @@ endpoints:
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
           - anthropic/claude-sonnet-latest
-          - arcee-ai/trinity-large-preview
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - asi1-mini
@@ -2292,6 +2290,8 @@ endpoints:
           - qwen3.5-omni-flash
           - qwen3.5-omni-plus
           - qwen3.6-max-preview
+          - qwen3.7-max
+          - qwen3.7-max:thinking
           - qwq-32b
           - sarvam-105b
           - sarvam-30b
@@ -2571,7 +2571,6 @@ endpoints:
           - arcee-ai/coder-large
           - arcee-ai/maestro-reasoning
           - arcee-ai/spotlight
-          - arcee-ai/trinity-large-preview
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
@@ -2825,6 +2824,7 @@ endpoints:
           - qwen/qwen3.6-flash
           - qwen/qwen3.6-max-preview
           - qwen/qwen3.6-plus
+          - qwen/qwen3.7-max
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
