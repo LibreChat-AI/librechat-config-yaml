@@ -1775,6 +1775,7 @@ endpoints:
           - cognitivecomputations/dolphin-2.9.2-qwen2-72b
           - cohere/command-r
           - cohere/command-r-plus-08-2024
+          - command-a-plus-05-2026
           - command-a-reasoning-08-2025
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
