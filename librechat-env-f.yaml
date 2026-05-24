@@ -1878,6 +1878,7 @@ endpoints:
           - TEE/deepseek-v4-pro
           - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
+          - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
           - TEE/glm-4.6
@@ -1900,6 +1901,7 @@ endpoints:
           - TEE/qwen3-coder-next
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
+          - TEE/qwen3.6-35b-a3b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
           - THUDM/GLM-Z1-32B-0414
