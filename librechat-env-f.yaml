@@ -1501,13 +1501,6 @@ endpoints:
           - accounts/fireworks/models/gpt-oss-120b
           - accounts/fireworks/models/kimi-k2p5
           - accounts/fireworks/models/kimi-k2p6
-          - accounts/pyroworks/models/ministral-3-3b-2512-canary-20260518-211925
-          - accounts/pyroworks/models/ministral-3-3b-2512-canary-20260519-141009
-          - accounts/pyroworks/models/ministral-3-3b-2512-lora-e2e-20260518-170033
-          - accounts/pyroworks/models/ministral-3-3b-2512-lora-smoke
-          - accounts/pyroworks/models/ministral-canary-remap-20260518-214944
-          - accounts/pyroworks/models/ministral-canary-v2-fixed-20260518-220617
-          - accounts/pyroworks/models/ministral-canary-v3-20260519-054536
         fetch: false
       titleConvo: true
       titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
