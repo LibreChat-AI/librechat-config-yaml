@@ -2863,7 +2863,6 @@ endpoints:
           - '---OTHERS---'
           - ai21/jamba-large-1.7
           - alfredpros/codellama-7b-instruct-solidity
-          - alibaba/tongyi-deepresearch-30b-a3b
           - allenai/olmo-3-32b-think
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
