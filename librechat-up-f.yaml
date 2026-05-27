@@ -1850,9 +1850,9 @@ endpoints:
           - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
+          - TEE/gemma-4-31b-it
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
-          - TEE/glm-4.6
           - TEE/glm-4.7
           - TEE/glm-4.7-flash
           - TEE/glm-5
@@ -1860,16 +1860,14 @@ endpoints:
           - TEE/glm-5.1-thinking
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
-          - TEE/kimi-k2-thinking
           - TEE/kimi-k2.5
           - TEE/kimi-k2.5-thinking
           - TEE/kimi-k2.6
           - TEE/llama3-3-70b
-          - TEE/minimax-m2.1
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3-30b-a3b-instruct-2507
-          - TEE/qwen3-coder-next
+          - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-35b-a3b-uncensored
@@ -2514,7 +2512,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - arcee-ai/trinity-large-thinking:free
           - baidu/cobuddy:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
