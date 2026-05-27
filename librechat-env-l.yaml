@@ -1305,16 +1305,16 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
-          - CohereLabs/c4ai-command-r-v01
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
+          - HuggingFaceTB/SmolLM3-3B
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
-          - MiniMaxAI/MiniMax-M2.7
           - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
+          - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-7B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
@@ -1330,6 +1330,7 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+          - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1-Base
@@ -1338,14 +1339,15 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Flash
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
-          - google/functiongemma-270m-it
           - google/gemma-2-2b-it
+          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
+          - meta-llama/Llama-3.1-70B-Instruct
           - meta-llama/Llama-3.1-8B-Instruct
           - meta-llama/Llama-3.2-1B-Instruct
           - meta-llama/Llama-3.2-3B-Instruct
@@ -1354,6 +1356,8 @@ endpoints:
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
           - microsoft/Phi-3-mini-4k-instruct
+          - microsoft/Phi-3-vision-128k-instruct
+          - microsoft/Phi-3.5-mini-instruct
           - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
           - mistralai/Mistral-7B-Instruct-v0.1
@@ -1363,14 +1367,12 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - openchat/openchat_3.5
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
           - zai-org/GLM-4.7-Flash
-          - zai-org/GLM-5
           - zai-org/GLM-5.1
         fetch: false
       titleConvo: true
@@ -1614,9 +1616,9 @@ endpoints:
           - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
+          - TEE/gemma-4-31b-it
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
-          - TEE/glm-4.6
           - TEE/glm-4.7
           - TEE/glm-4.7-flash
           - TEE/glm-5
@@ -1624,16 +1626,14 @@ endpoints:
           - TEE/glm-5.1-thinking
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
-          - TEE/kimi-k2-thinking
           - TEE/kimi-k2.5
           - TEE/kimi-k2.5-thinking
           - TEE/kimi-k2.6
           - TEE/llama3-3-70b
-          - TEE/minimax-m2.1
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3-30b-a3b-instruct-2507
-          - TEE/qwen3-coder-next
+          - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-35b-a3b-uncensored
@@ -2276,7 +2276,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - arcee-ai/trinity-large-thinking:free
           - baidu/cobuddy:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
