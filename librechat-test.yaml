@@ -1364,14 +1364,13 @@ endpoints:
           - CohereLabs/c4ai-command-r-plus
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
-          - HuggingFaceTB/SmolLM3-3B
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
+          - MiniMaxAI/MiniMax-M2.7
           - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
-          - Qwen/Qwen2.5-72B-Instruct
           - Qwen/Qwen2.5-7B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
@@ -1387,7 +1386,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
-          - deepseek-ai/DeepSeek-R1-Zero
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1-Base
@@ -1404,7 +1402,6 @@ endpoints:
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
-          - meta-llama/Llama-3.1-70B-Instruct
           - meta-llama/Llama-3.1-8B-Instruct
           - meta-llama/Llama-3.2-1B-Instruct
           - meta-llama/Llama-3.2-3B-Instruct
@@ -1430,6 +1427,7 @@ endpoints:
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
           - zai-org/GLM-4.7-Flash
+          - zai-org/GLM-5
           - zai-org/GLM-5.1
         fetch: false
       titleConvo: true
@@ -2206,8 +2204,6 @@ endpoints:
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-v4-flash
-          - deepseek-ai/deepseek-v4-flash
-          - deepseek-ai/deepseek-v4-pro
           - deepseek-ai/deepseek-v4-pro
           - google/codegemma-1.1-7b
           - google/codegemma-7b
@@ -2279,8 +2275,6 @@ endpoints:
           - nvidia/nemotron-3-content-safety
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
-          - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
-          - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
@@ -2300,8 +2294,6 @@ endpoints:
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/vila
           - openai/gpt-oss-120b
-          - openai/gpt-oss-120b
-          - openai/gpt-oss-20b
           - openai/gpt-oss-20b
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
@@ -2333,7 +2325,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - baidu/cobuddy:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
@@ -2343,6 +2334,7 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - minimax/minimax-m2.5:free
+          - moonshotai/kimi-k2.6:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free

@@ -2115,8 +2115,6 @@ endpoints:
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-v4-flash
-          - deepseek-ai/deepseek-v4-flash
-          - deepseek-ai/deepseek-v4-pro
           - deepseek-ai/deepseek-v4-pro
           - google/codegemma-1.1-7b
           - google/codegemma-7b
@@ -2188,8 +2186,6 @@ endpoints:
           - nvidia/nemotron-3-content-safety
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
-          - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
-          - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
@@ -2209,8 +2205,6 @@ endpoints:
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/vila
           - openai/gpt-oss-120b
-          - openai/gpt-oss-120b
-          - openai/gpt-oss-20b
           - openai/gpt-oss-20b
           - qwen/qwen3-coder-480b-a35b-instruct
           - qwen/qwen3-next-80b-a3b-instruct
@@ -2242,7 +2236,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - baidu/cobuddy:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
@@ -2252,6 +2245,7 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - minimax/minimax-m2.5:free
+          - moonshotai/kimi-k2.6:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
