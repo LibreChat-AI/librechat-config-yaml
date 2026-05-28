@@ -2512,7 +2512,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - baidu/cobuddy:free
           - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - deepseek/deepseek-v4-flash:free
           - google/gemma-4-26b-a4b-it:free
@@ -2522,6 +2521,7 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - minimax/minimax-m2.5:free
+          - moonshotai/kimi-k2.6:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
