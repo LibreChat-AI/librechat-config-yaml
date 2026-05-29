@@ -1911,6 +1911,8 @@ endpoints:
           - anthropic/claude-opus-4.6:thinking:medium
           - anthropic/claude-opus-4.7
           - anthropic/claude-opus-4.7:thinking
+          - anthropic/claude-opus-4.8
+          - anthropic/claude-opus-4.8:thinking
           - anthropic/claude-opus-latest
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
@@ -2489,6 +2491,7 @@ endpoints:
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
           - stepfun-ai/step-3.5-flash
+          - stepfun-ai/step-3.7-flash
           - stockmark/stockmark-2-100b-instruct
           - upstage/solar-10.7b-instruct
           - writer/palmyra-creative-122b
@@ -2557,6 +2560,8 @@ endpoints:
           - anthropic/claude-opus-4.6-fast
           - anthropic/claude-opus-4.7
           - anthropic/claude-opus-4.7-fast
+          - anthropic/claude-opus-4.8
+          - anthropic/claude-opus-4.8-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
@@ -2573,7 +2578,6 @@ endpoints:
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
-          - baidu/qianfan-ocr-fast
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
@@ -2884,6 +2888,7 @@ endpoints:
           - relace/relace-apply-3
           - relace/relace-search
           - stepfun/step-3.5-flash
+          - stepfun/step-3.7-flash
           - switchpoint/router
           - tencent/hunyuan-a13b-instruct
           - tencent/hy3-preview
