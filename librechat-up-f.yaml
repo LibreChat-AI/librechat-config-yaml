@@ -1886,6 +1886,7 @@ endpoints:
           - TheDrummer/Skyfall-31B-v4.2
           - TheDrummer/UnslopNemo-12B-v4.1
           - Tongyi-Zhiwen/QwenLong-L1-32B
+          - Unbabel/M-Prometheus-14B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-1.0
@@ -2306,7 +2307,8 @@ endpoints:
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
-          - stepfun-ai/step-3.6
+          - stepfun/step-3.7-flash
+          - stepfun/step-3.7-flash:thinking
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
           - thedrummer/skyfall-36b-v2
@@ -2599,7 +2601,6 @@ endpoints:
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
-          - deepseek/deepseek-v3.2-speciale
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-pro
           - '---GOOGLE---'
@@ -2717,7 +2718,6 @@ endpoints:
           - openai/gpt-4o-2024-05-13
           - openai/gpt-4o-2024-08-06
           - openai/gpt-4o-2024-11-20
-          - openai/gpt-4o-audio-preview
           - openai/gpt-4o-mini
           - openai/gpt-4o-mini-2024-07-18
           - openai/gpt-4o-mini-search-preview
