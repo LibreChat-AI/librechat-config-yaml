@@ -2031,7 +2031,6 @@ endpoints:
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
-          - stepfun/step-3.7-flash
           - stepfun/step-3.7-flash:thinking
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
@@ -2249,7 +2248,6 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - minimax/minimax-m2.5:free
           - moonshotai/kimi-k2.6:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
@@ -2299,8 +2297,6 @@ endpoints:
           - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
-          - baidu/ernie-4.5-21b-a3b
-          - baidu/ernie-4.5-21b-a3b-thinking
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
@@ -2391,7 +2387,6 @@ endpoints:
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
-          - mistralai/mistral-7b-instruct-v0.1
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
@@ -2587,7 +2582,6 @@ endpoints:
           - ~anthropic/claude-sonnet-latest
           - '---OTHERS---'
           - ai21/jamba-large-1.7
-          - alfredpros/codellama-7b-instruct-solidity
           - allenai/olmo-3-32b-think
           - anthracite-org/magnum-v4-72b
           - bytedance/ui-tars-1.5-7b
@@ -2617,7 +2611,6 @@ endpoints:
           - tencent/hunyuan-a13b-instruct
           - tencent/hy3-preview
           - undi95/remm-slerp-l2-13b
-          - upstage/solar-pro-3
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
