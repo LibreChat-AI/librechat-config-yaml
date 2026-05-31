@@ -1663,6 +1663,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
+          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
@@ -1677,7 +1678,6 @@ endpoints:
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
           - microsoft/Phi-3-mini-4k-instruct
-          - microsoft/Phi-3-vision-128k-instruct
           - microsoft/Phi-3.5-mini-instruct
           - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
@@ -2394,7 +2394,6 @@ endpoints:
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
-          - stepfun/step-3.7-flash
           - stepfun/step-3.7-flash:thinking
           - tencent/Hunyuan-MT-7B
           - tencent/hy3-preview
@@ -2663,7 +2662,6 @@ endpoints:
           - arcee-ai/virtuoso-large
           - '---BAIDU---'
           - baidu/ernie-4.5-21b-a3b
-          - baidu/ernie-4.5-21b-a3b-thinking
           - baidu/ernie-4.5-300b-a47b
           - baidu/ernie-4.5-vl-28b-a3b
           - baidu/ernie-4.5-vl-424b-a47b
@@ -2754,7 +2752,6 @@ endpoints:
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
-          - mistralai/mistral-7b-instruct-v0.1
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2411
@@ -2980,7 +2977,6 @@ endpoints:
           - tencent/hunyuan-a13b-instruct
           - tencent/hy3-preview
           - undi95/remm-slerp-l2-13b
-          - upstage/solar-pro-3
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
@@ -3313,6 +3309,7 @@ endpoints:
           - grok-imagine-image
           - grok-imagine-image-quality
           - grok-imagine-video
+          - grok-imagine-video-1.5-preview
         fetch: false
       titleConvo: true
       titleMethod: "completion"
