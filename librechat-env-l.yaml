@@ -2165,6 +2165,7 @@ endpoints:
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m2.7-turbo
+          - minimax/minimax-m3
           - mirothinker-1-7-deepresearch
           - mirothinker-1-7-deepresearch-mini
           - mistral-small-31-24b-instruct
@@ -2315,6 +2316,8 @@ endpoints:
           - qwen3.6-max-preview
           - qwen3.7-max
           - qwen3.7-max:thinking
+          - qwen3.7-plus
+          - qwen3.7-plus:thinking
           - qwq-32b
           - sarvam-105b
           - sarvam-30b
@@ -2625,8 +2628,6 @@ endpoints:
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-pro
           - '---GOOGLE---'
-          - google/gemini-2.0-flash-001
-          - google/gemini-2.0-flash-lite-001
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-lite
@@ -2680,6 +2681,7 @@ endpoints:
           - minimax/minimax-m2.1
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
+          - minimax/minimax-m3
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/devstral-2512
