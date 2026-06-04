@@ -1344,7 +1344,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
-          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
@@ -2100,6 +2099,8 @@ endpoints:
           - xiaomi/mimo-v2-pro
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
+          - xiaomi/mimo-v2.5-pro:thinking
+          - xiaomi/mimo-v2.5:thinking
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2230,6 +2231,7 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
+          - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-content-safety-reasoning-4b
@@ -2457,7 +2459,6 @@ endpoints:
           - openai/gpt-3.5-turbo-16k
           - openai/gpt-3.5-turbo-instruct
           - openai/gpt-4
-          - openai/gpt-4-0314
           - openai/gpt-4-1106-preview
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
@@ -2573,6 +2574,7 @@ endpoints:
           - qwen/qwen3.6-max-preview
           - qwen/qwen3.6-plus
           - qwen/qwen3.7-max
+          - qwen/qwen3.7-plus
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
