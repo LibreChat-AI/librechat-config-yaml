@@ -2345,6 +2345,8 @@ endpoints:
           - xiaomi/mimo-v2-pro
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
+          - xiaomi/mimo-v2.5-pro:thinking
+          - xiaomi/mimo-v2.5:thinking
           - yi-large
           - yi-lightning
           - yi-medium-200k
@@ -2476,6 +2478,7 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
+          - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-content-safety-reasoning-4b
@@ -2818,6 +2821,7 @@ endpoints:
           - qwen/qwen3.6-max-preview
           - qwen/qwen3.6-plus
           - qwen/qwen3.7-max
+          - qwen/qwen3.7-plus
           - '---SAO10K---'
           - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
