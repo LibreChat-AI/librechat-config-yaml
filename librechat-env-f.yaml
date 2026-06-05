@@ -1603,6 +1603,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
+          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
@@ -1896,6 +1897,7 @@ endpoints:
           - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
+          - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
@@ -2207,6 +2209,7 @@ endpoints:
           - nanogpt/coding-router:max
           - nanogpt/coding-router:medium
           - nex-agi/deepseek-v3.1-nex-n1
+          - nex-agi/nex-n2-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -2219,6 +2222,8 @@ endpoints:
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b:thinking
+          - nvidia/nemotron-3-ultra-550b-a55b
+          - nvidia/nemotron-3-ultra-550b-a55b:thinking
           - nvidia/nvidia-nemotron-nano-9b-v2
           - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
@@ -2497,6 +2502,7 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
+          - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
@@ -2561,6 +2567,8 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
+          - nvidia/nemotron-3-ultra-550b-a55b:free
+          - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-120b:free
@@ -2718,6 +2726,7 @@ endpoints:
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
+          - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
@@ -2725,7 +2734,6 @@ endpoints:
           - openai/gpt-3.5-turbo-16k
           - openai/gpt-3.5-turbo-instruct
           - openai/gpt-4
-          - openai/gpt-4-0314
           - openai/gpt-4-1106-preview
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
