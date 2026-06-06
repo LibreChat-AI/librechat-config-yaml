@@ -1768,7 +1768,6 @@ endpoints:
           - fastgpt
           - featherless-ai/Qwerky-72B
           - free-model
-          - gemini-2.0-flash-001
           - gemini-2.0-flash-exp-image-generation
           - gemini-2.0-flash-thinking-exp-01-21
           - gemini-2.0-flash-thinking-exp-1219
@@ -2420,7 +2419,6 @@ endpoints:
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - '---NOUSRESEARCH---'
-          - nousresearch/hermes-2-pro-llama-3-8b
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -2554,7 +2552,6 @@ endpoints:
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
           - '---SAO10K---'
-          - sao10k/l3-euryale-70b
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
