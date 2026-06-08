@@ -522,7 +522,6 @@ endpoints:
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
-          - chat-latest
           - chatx
           - chatx-fast
           - cheap
@@ -570,7 +569,6 @@ endpoints:
           - claude-sonnet-4-6
           - claude-sonnet-latest
           - claude-v2
-          - cobuddy
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
           - coder-large
@@ -911,7 +909,6 @@ endpoints:
           - mercury-2
           - mercury-coder
           - mimo-2-flash
-          - mimo-v2-5
           - mimo-v2-5-pro
           - mimo-v2-flash
           - mimo-v2-omni
@@ -924,6 +921,7 @@ endpoints:
           - minimax-m2-5
           - minimax-m2-7
           - minimax-m2-her
+          - minimax-m3
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -977,9 +975,11 @@ endpoints:
           - mythomax
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
+          - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
           - nemotron-3-super-120b-a12b
+          - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
@@ -1089,6 +1089,7 @@ endpoints:
           - qwen-3-6-max-preview
           - qwen-3-6-plus
           - qwen-3-7-max
+          - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1131,7 +1132,6 @@ endpoints:
           - seed-1-6
           - seed-1-6-flash
           - seed-1-8
-          - seed-2-0-code
           - seed-2-0-lite
           - seed-2-0-mini
           - seed-2-mini
@@ -1397,11 +1397,11 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.1-Base
           - deepseek-ai/DeepSeek-V3.2
-          - deepseek-ai/DeepSeek-V3.2-Exp
           - deepseek-ai/DeepSeek-V4-Flash
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
+          - google/gemma-3-1b-it
           - google/gemma-7b-it
           - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
