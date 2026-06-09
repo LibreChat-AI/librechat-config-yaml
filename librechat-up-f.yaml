@@ -527,6 +527,7 @@ endpoints:
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
+          - chat-latest
           - chatx
           - chatx-fast
           - cheap
@@ -831,7 +832,6 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
-          - kimi-latest
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -914,6 +914,7 @@ endpoints:
           - mercury-2
           - mercury-coder
           - mimo-2-flash
+          - mimo-v2-5
           - mimo-v2-5-pro
           - mimo-v2-flash
           - mimo-v2-omni
@@ -991,6 +992,7 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
+          - nex-n2-pro
           - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
@@ -2269,6 +2271,7 @@ endpoints:
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - moonshotai/kimi-k2.6:free
+          - nex-agi/nex-n2-pro:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
@@ -2608,7 +2611,6 @@ endpoints:
           - mancer/weaver
           - morph/morph-v3-fast
           - morph/morph-v3-large
-          - nex-agi/deepseek-v3.1-nex-n1
           - perceptron/perceptron-mk1
           - prime-intellect/intellect-3
           - rekaai/reka-edge
