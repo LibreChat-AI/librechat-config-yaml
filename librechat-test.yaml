@@ -902,7 +902,6 @@ endpoints:
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
-          - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-5
@@ -1080,7 +1079,6 @@ endpoints:
           - marengo-embed-2-7-v1
           - marin-8b-instruct
           - mercury
-          - mercury-2
           - mercury-coder
           - mimo-2-flash
           - mimo-v2-5
@@ -1159,7 +1157,6 @@ endpoints:
           - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
-          - nemotron-3-super-120b-a12b
           - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
@@ -1524,7 +1521,6 @@ endpoints:
       models:
         default:
           - accounts/fireworks/models/deepseek-v4-pro
-          - accounts/fireworks/models/flux-kontext-max
           - accounts/fireworks/models/flux-kontext-pro
           - accounts/fireworks/models/glm-5p1
           - accounts/fireworks/models/gpt-oss-120b
@@ -1937,6 +1933,7 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
+          - TEE/deepseek-v4-flash
           - TEE/deepseek-v4-pro
           - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
@@ -1962,6 +1959,7 @@ endpoints:
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
+          - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.6-35b-a3b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
@@ -1996,6 +1994,8 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - anthropic/claude-fable-5
+          - anthropic/claude-fable-latest
           - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6:thinking
@@ -2645,7 +2645,6 @@ endpoints:
           - poolside/laguna-xs.2:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
-          - z-ai/glm-4.5-air:free
           - '---AION-LABS---'
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
@@ -2660,6 +2659,7 @@ endpoints:
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
           - anthropic/claude-3.5-haiku
+          - anthropic/claude-fable-5
           - anthropic/claude-haiku-4.5
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
@@ -2675,7 +2675,6 @@ endpoints:
           - anthropic/claude-sonnet-4.6
           - '---ARCEE-AI---'
           - arcee-ai/coder-large
-          - arcee-ai/maestro-reasoning
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
@@ -2935,7 +2934,6 @@ endpoints:
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
           - '---Z-AI---'
-          - z-ai/glm-4-32b
           - z-ai/glm-4.5
           - z-ai/glm-4.5-air
           - z-ai/glm-4.5v
@@ -2946,8 +2944,8 @@ endpoints:
           - z-ai/glm-5
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
-          - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
+          - ~anthropic/claude-fable-latest
           - ~anthropic/claude-haiku-latest
           - ~anthropic/claude-opus-latest
           - ~anthropic/claude-sonnet-latest
