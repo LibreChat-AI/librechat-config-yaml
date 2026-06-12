@@ -1344,7 +1344,6 @@ endpoints:
           - recraft-v3-al-4
           - recraft-v3-al-5
           - refuel-llm-v2-small
-          - reka-edge
           - reka-flash-3
           - relace-apply-3
           - relace-search
@@ -2287,6 +2286,7 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
+          - nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-TEE
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
@@ -2795,7 +2795,6 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
-          - nvidia/nemotron-nano-9b-v2
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
