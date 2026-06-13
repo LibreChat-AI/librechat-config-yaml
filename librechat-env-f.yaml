@@ -824,6 +824,7 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
+          - kimi-latest
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -903,6 +904,7 @@ endpoints:
           - magnum-v4-72b
           - marin-8b-instruct
           - mercury
+          - mercury-2
           - mercury-coder
           - mimo-2-flash
           - mimo-v2-5
@@ -975,6 +977,7 @@ endpoints:
           - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
+          - nemotron-3-super-120b-a12b
           - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
@@ -982,7 +985,6 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
-          - nex-n2-pro
           - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
@@ -1117,6 +1119,7 @@ endpoints:
           - qwq-32b
           - reasoners
           - refuel-llm-v2-small
+          - reka-edge
           - reka-flash-3
           - relace-apply-3
           - relace-search
@@ -1145,6 +1148,7 @@ endpoints:
           - spotlight
           - step-3
           - step-3-5-flash
+          - step-3-7-flash
           - test123
           - tongyi-deepresearch-30b-a3b
           - trinity-large
@@ -1947,6 +1951,7 @@ endpoints:
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.6:thinking
+          - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-latest
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2-pro
@@ -2206,6 +2211,7 @@ endpoints:
           - microsoft/phi-4-mini-instruct
           - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2.7
+          - minimaxai/minimax-m3
           - mistralai/codestral-22b-instruct-v0.1
           - mistralai/ministral-14b-instruct-2512
           - mistralai/mistral-7b-instruct-v0.3
@@ -2415,7 +2421,6 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
-          - meta-llama/llama-guard-3-8b
           - meta-llama/llama-guard-4-12b
           - '---MICROSOFT---'
           - microsoft/phi-4
@@ -2456,6 +2461,7 @@ endpoints:
           - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
+          - moonshotai/kimi-k2.7-code
           - '---NOUSRESEARCH---'
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
