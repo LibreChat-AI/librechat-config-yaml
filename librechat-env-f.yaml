@@ -804,8 +804,6 @@ endpoints:
           - hermes-4-70b
           - hunter-alpha
           - hunyuan-a13b-instruct
-          - hy-3
-          - hy-3-preview
           - inflection-3-pi
           - inflection-3-productivity
           - intellect-3
@@ -814,7 +812,6 @@ endpoints:
           - jamba-1-5-mini-v1
           - jamba-large-1-7
           - kat-coder-pro
-          - kat-coder-pro-v2
           - kimi
           - kimi-k2
           - kimi-k2-0905
@@ -824,7 +821,6 @@ endpoints:
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
-          - kimi-latest
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -904,7 +900,6 @@ endpoints:
           - magnum-v4-72b
           - marin-8b-instruct
           - mercury
-          - mercury-2
           - mercury-coder
           - mimo-2-flash
           - mimo-v2-5
@@ -920,7 +915,6 @@ endpoints:
           - minimax-m2-5
           - minimax-m2-7
           - minimax-m2-her
-          - minimax-m3
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -977,7 +971,6 @@ endpoints:
           - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
-          - nemotron-3-super-120b-a12b
           - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
@@ -985,6 +978,7 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
+          - nex-n2-pro
           - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
@@ -1119,7 +1113,6 @@ endpoints:
           - qwq-32b
           - reasoners
           - refuel-llm-v2-small
-          - reka-edge
           - reka-flash-3
           - relace-apply-3
           - relace-search
@@ -1148,7 +1141,6 @@ endpoints:
           - spotlight
           - step-3
           - step-3-5-flash
-          - step-3-7-flash
           - test123
           - tongyi-deepresearch-30b-a3b
           - trinity-large
