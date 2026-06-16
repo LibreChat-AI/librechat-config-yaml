@@ -671,7 +671,6 @@ endpoints:
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
           - gemma-4-26b-a4b-it
-          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -891,7 +890,6 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
-          - lyria-3-clip-preview
           - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
@@ -1292,6 +1290,7 @@ endpoints:
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
           - qwen/qwen3-32b
+          - qwen/qwen3.6-27b
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
