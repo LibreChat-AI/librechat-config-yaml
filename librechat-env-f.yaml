@@ -672,6 +672,7 @@ endpoints:
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
           - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -891,6 +892,7 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
           - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
@@ -1332,7 +1334,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - deepseek-ai/DeepSeek-V3.1-Base
           - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V4-Flash
           - deepseek-ai/DeepSeek-V4-Pro
@@ -1340,7 +1341,6 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
-          - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
@@ -1364,6 +1364,7 @@ endpoints:
           - openai/gpt-oss-20b
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
+          - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
@@ -1621,6 +1622,7 @@ endpoints:
           - TEE/glm-5
           - TEE/glm-5.1
           - TEE/glm-5.1-thinking
+          - TEE/glm-5.2
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2.5
@@ -1943,6 +1945,7 @@ endpoints:
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.6:thinking
           - moonshotai/kimi-k2.7-code
+          - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-latest
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2-pro
@@ -2143,6 +2146,8 @@ endpoints:
           - zai-org/glm-5-original:thinking
           - zai-org/glm-5.1
           - zai-org/glm-5.1:thinking
+          - zai-org/glm-5.2
+          - zai-org/glm-5.2:thinking
           - zai-org/glm-5:thinking
           - zai-org/glm-latest
         fetch: false
@@ -2366,7 +2371,6 @@ endpoints:
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-distill-llama-70b
-          - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
@@ -2614,6 +2618,7 @@ endpoints:
           - z-ai/glm-5
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
+          - z-ai/glm-5.2
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
           - ~anthropic/claude-haiku-latest
