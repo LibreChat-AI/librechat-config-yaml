@@ -573,7 +573,6 @@ endpoints:
           - claude-opus-4-7-fast
           - claude-opus-4-8
           - claude-opus-4-8-fast
-          - claude-opus-latest
           - claude-sonnet
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -802,7 +801,6 @@ endpoints:
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
           - gemma-4-26b-a4b-it
-          - gemma-4-31b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -896,7 +894,6 @@ endpoints:
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-5
-          - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
           - gpt-5-chat
@@ -932,7 +929,6 @@ endpoints:
           - gpt-oss-20b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
-          - granite-4-1-8b
           - grok-3
           - grok-3-beta
           - grok-3-mini
@@ -1058,7 +1054,6 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
-          - lyria-3-clip-preview
           - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
@@ -1141,7 +1136,6 @@ endpoints:
           - mythomax-l2-13b-turbo
           - nano-banana-v1
           - nano-banana-v2
-          - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
           - nemotron-3-ultra-550b-a55b
@@ -1257,7 +1251,6 @@ endpoints:
           - qwen-3-5-plus-20260420
           - qwen-3-6-27b
           - qwen-3-6-35b-a3b
-          - qwen-3-6-flash
           - qwen-3-6-max-preview
           - qwen-3-6-plus
           - qwen-3-7-max
@@ -1549,6 +1542,7 @@ endpoints:
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
           - qwen/qwen3-32b
+          - qwen/qwen3.6-27b
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
@@ -1589,7 +1583,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - deepseek-ai/DeepSeek-V3.1-Base
           - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V4-Flash
           - deepseek-ai/DeepSeek-V4-Pro
@@ -1597,7 +1590,6 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-3-1b-it
           - google/gemma-7b-it
-          - manycore-research/SpatialLM-Llama-1B
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
@@ -1621,6 +1613,7 @@ endpoints:
           - openai/gpt-oss-20b
           - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
+          - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
           - zai-org/GLM-4.7
@@ -1877,6 +1870,7 @@ endpoints:
           - TEE/glm-5
           - TEE/glm-5.1
           - TEE/glm-5.1-thinking
+          - TEE/glm-5.2
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2.5
@@ -2197,6 +2191,7 @@ endpoints:
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.6:thinking
           - moonshotai/kimi-k2.7-code
+          - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-latest
           - nanogpt/coding-router
           - nanogpt/coding-router:high
@@ -2399,6 +2394,8 @@ endpoints:
           - zai-org/glm-5-original:thinking
           - zai-org/glm-5.1
           - zai-org/glm-5.1:thinking
+          - zai-org/glm-5.2
+          - zai-org/glm-5.2:thinking
           - zai-org/glm-5:thinking
           - zai-org/glm-latest
         fetch: false
@@ -2622,7 +2619,6 @@ endpoints:
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-r1-distill-llama-70b
-          - deepseek/deepseek-r1-distill-qwen-32b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
@@ -2870,6 +2866,7 @@ endpoints:
           - z-ai/glm-5
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
+          - z-ai/glm-5.2
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
           - ~anthropic/claude-haiku-latest
