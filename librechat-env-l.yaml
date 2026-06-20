@@ -1206,7 +1206,6 @@ endpoints:
           - pixtral-large-2502-v1
           - premium
           - premium-coding
-          - qianfan-ocr-fast
           - qwen-2-5-72b-instruct
           - qwen-2-5-7b-instruct
           - qwen-2-5-7b-instruct-turbo
@@ -1783,8 +1782,6 @@ endpoints:
           - Gemma-4-31B-it
           - Gryphe/MythoMax-L2-13b
           - Infermatic/MN-12B-Inferor-v0.0
-          - KAT-Coder-Air-V1
-          - KAT-Coder-Exp-72B-1010
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Magistral-Small-2506
@@ -1794,7 +1791,6 @@ endpoints:
           - MiniMax-M2
           - MiniMaxAI/MiniMax-M1-80k
           - NeverSleep/Lumimaid-v0.2-70B
-          - NousResearch/DeepHermes-3-Mistral-24B-Preview
           - NousResearch/Hermes-4-70B:thinking
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-235B-A22B-Instruct-2507
@@ -1881,7 +1877,6 @@ endpoints:
           - TEE/qwen3.6-35b-a3b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
-          - THUDM/GLM-Z1-32B-0414
           - THUDM/GLM-Z1-9B-0414
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Anubis-70B-v1.1
@@ -1979,6 +1974,8 @@ endpoints:
           - cohere/north-mini-code
           - command-a-plus-05-2026
           - command-a-reasoning-08-2025
+          - crofai/greg-2-super
+          - crofai/greg-2-ultra
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
           - deepseek-ai/DeepSeek-R1-0528
@@ -2172,7 +2169,6 @@ endpoints:
           - mistralai/mistral-small-4-119b-2603
           - mistralai/mistral-small-4-119b-2603:thinking
           - mistralai/mixtral-8x22b-instruct-v0.1
-          - mistralai/mixtral-8x7b-instruct-v0.1
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moonshotai/Kimi-K2-Instruct-0905
           - moonshotai/kimi-k2-instruct
@@ -2208,7 +2204,6 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b:thinking
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3-ultra-550b-a55b:thinking
-          - nvidia/nvidia-nemotron-nano-9b-v2
           - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
@@ -2647,7 +2642,6 @@ endpoints:
           - inclusionai/ling-2.6-flash
           - inclusionai/ring-2.6-1t
           - '---META-LLAMA---'
-          - meta-llama/llama-3-70b-instruct
           - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
