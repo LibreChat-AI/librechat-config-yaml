@@ -1693,7 +1693,6 @@ endpoints:
           - TheDrummer/Cydonia-24B-v4.3
           - TheDrummer/Magidonia-24B-v4.3
           - TheDrummer/Rocinante-12B-v1.1
-          - TheDrummer/Skyfall-31B-v4.2
           - TheDrummer/UnslopNemo-12B-v4.1
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - Unbabel/M-Prometheus-14B
@@ -2112,6 +2111,7 @@ endpoints:
           - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
+          - sofya-research
           - sonar
           - sonar-deep-research
           - sonar-pro
