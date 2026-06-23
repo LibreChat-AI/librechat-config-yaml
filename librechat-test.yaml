@@ -541,7 +541,6 @@ endpoints:
           - blur-background
           - bria-3-2
           - bria-3-2-vector
-          - chat-latest
           - chatgpt-image-latest
           - chatterbox
           - chatterbox-multilingual
@@ -2000,7 +1999,6 @@ endpoints:
           - brave-research
           - bytedance-seed/seed-2.0-lite
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
-          - claude-3-5-haiku-20241022
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
           - claude-opus-4-1-20250805
@@ -2361,6 +2359,7 @@ endpoints:
           - qwen3.7-plus
           - qwen3.7-plus:thinking
           - qwq-32b
+          - sakana/fugu-ultra
           - sarvam-105b
           - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2600,7 +2599,6 @@ endpoints:
           - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
-          - nex-agi/nex-n2-pro:free
           - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
@@ -2909,6 +2907,7 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
+          - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
           - ~anthropic/claude-haiku-latest
