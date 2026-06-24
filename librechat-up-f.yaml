@@ -550,6 +550,7 @@ endpoints:
           - blur-background
           - bria-3-2
           - bria-3-2-vector
+          - chat-latest
           - chatgpt-image-latest
           - chatterbox
           - chatterbox-multilingual
@@ -904,7 +905,6 @@ endpoints:
           - gpt-5-4-2026-03-05
           - gpt-5-4-image-2
           - gpt-5-4-mini
-          - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
           - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
@@ -938,7 +938,6 @@ endpoints:
           - gpt-image-1-mini
           - gpt-image-2
           - gpt-image-2-2026-04-21
-          - gpt-latest
           - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
@@ -1917,6 +1916,8 @@ endpoints:
           - brave-pro
           - brave-research
           - bytedance-seed/seed-2.0-lite
+          - bytedance/doubao-seed-2.1-pro
+          - bytedance/doubao-seed-2.1-turbo
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
@@ -2839,7 +2840,6 @@ endpoints:
           - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
           - deepcogito/cogito-v2.1-671b
-          - essentialai/rnj-1-instruct
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.1-8b
@@ -2855,7 +2855,6 @@ endpoints:
           - perceptron/perceptron-mk1
           - poolside/laguna-m.1
           - poolside/laguna-xs.2
-          - prime-intellect/intellect-3
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
