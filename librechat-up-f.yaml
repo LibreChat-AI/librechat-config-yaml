@@ -1585,7 +1585,6 @@ endpoints:
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
           - TEE/glm-4.7
-          - TEE/glm-4.7-flash
           - TEE/glm-5
           - TEE/glm-5.1
           - TEE/glm-5.1-thinking
@@ -2611,6 +2610,7 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - sakana/fugu-ultra
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - switchpoint/router
