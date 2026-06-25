@@ -601,6 +601,7 @@ endpoints:
           - claude-opus-4-7-fast
           - claude-opus-4-8
           - claude-opus-4-8-fast
+          - claude-opus-latest
           - claude-sonnet
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -807,6 +808,7 @@ endpoints:
           - gemini-3-1-pro
           - gemini-3-1-pro-preview
           - gemini-3-1-pro-preview-customtools
+          - gemini-3-5-flash
           - gemini-3-flash
           - gemini-3-flash-preview
           - gemini-3-pro
@@ -828,6 +830,7 @@ endpoints:
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
           - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -841,6 +844,7 @@ endpoints:
           - glm-5
           - glm-5-1
           - glm-5-turbo
+          - glm-5v-turbo
           - goliath-120b
           - gpt
           - gpt-3-5-turbo
@@ -914,6 +918,7 @@ endpoints:
           - gpt-5-4-2026-03-05
           - gpt-5-4-image-2
           - gpt-5-4-mini
+          - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
           - gpt-5-4-nano-2026-03-17
           - gpt-5-4-pro
@@ -947,6 +952,7 @@ endpoints:
           - gpt-image-1-mini
           - gpt-image-2
           - gpt-image-2-2026-04-21
+          - gpt-latest
           - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
@@ -954,6 +960,7 @@ endpoints:
           - gpt-oss-20b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
+          - granite-4-1-8b
           - grok-3
           - grok-3-beta
           - grok-3-mini
@@ -967,6 +974,7 @@ endpoints:
           - grok-4-20-multi-agent-beta
           - grok-4-3
           - grok-4-fast
+          - grok-build-0-1
           - grok-code-fast
           - grok-code-fast-1
           - gte-base
@@ -1010,6 +1018,7 @@ endpoints:
           - l3-euryale-70b
           - l3-lunaris-8b
           - laguna-m-1
+          - laguna-xs-2
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
@@ -1077,6 +1086,7 @@ endpoints:
           - llemma-7b
           - longcat-flash
           - longcat-flash-chat
+          - lyria-3-clip-preview
           - lyria-3-pro-preview
           - maestro-reasoning
           - magistral-small
@@ -1088,7 +1098,10 @@ endpoints:
           - mercury-coder
           - mimo-2-flash
           - mimo-v2-5
+          - mimo-v2-5-pro
           - mimo-v2-flash
+          - mimo-v2-omni
+          - mimo-v2-pro
           - minimax
           - minimax-01
           - minimax-m1
@@ -1122,6 +1135,7 @@ endpoints:
           - mistral-medium
           - mistral-medium-3
           - mistral-medium-3-1
+          - mistral-medium-3-5
           - mistral-nemo
           - mistral-nemo-instruct-2407
           - mistral-saba
@@ -1155,6 +1169,7 @@ endpoints:
           - mythomax-l2-13b-turbo
           - nano-banana-v1
           - nano-banana-v2
+          - nemotron-3-5-content-safety
           - nemotron-3-nano-30b-a3b
           - nemotron-3-nano-omni-30b-a3b-reasoning
           - nemotron-3-ultra-550b-a55b
@@ -1231,6 +1246,7 @@ endpoints:
           - pixtral-large-2502-v1
           - premium
           - premium-coding
+          - qianfan-ocr-fast
           - qwen-2-5-72b-instruct
           - qwen-2-5-7b-instruct
           - qwen-2-5-7b-instruct-turbo
@@ -1257,6 +1273,7 @@ endpoints:
           - qwen-3-30b-a3b-thinking-2507
           - qwen-3-32b
           - qwen-3-4b
+          - qwen-3-5-0-8b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
           - qwen-3-5-35b-a3b
@@ -1266,7 +1283,9 @@ endpoints:
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-5-plus-20260420
+          - qwen-3-6-27b
           - qwen-3-6-35b-a3b
+          - qwen-3-6-flash
           - qwen-3-6-max-preview
           - qwen-3-6-plus
           - qwen-3-7-max
@@ -1919,7 +1938,6 @@ endpoints:
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
           - TEE/glm-4.7
-          - TEE/glm-4.7-flash
           - TEE/glm-5
           - TEE/glm-5.1
           - TEE/glm-5.1-thinking
@@ -2945,6 +2963,7 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - sakana/fugu-ultra
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - switchpoint/router
