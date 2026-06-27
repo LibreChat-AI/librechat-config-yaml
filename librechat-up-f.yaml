@@ -909,6 +909,7 @@ endpoints:
           - minimax-m2
           - minimax-m2-1
           - minimax-m2-5
+          - minimax-m2-7
           - minimax-m2-her
           - ministral-14b-2512
           - ministral-3-14b-instruct
@@ -1490,7 +1491,6 @@ endpoints:
           - Gemma-4-31B-Queen
           - Gemma-4-31B-it
           - Gryphe/MythoMax-L2-13b
-          - Infermatic/MN-12B-Inferor-v0.0
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Magistral-Small-2506
@@ -1512,7 +1512,6 @@ endpoints:
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen/Qwen3.6-35B-A3B
           - Qwen/Qwen3.6-35B-A3B:thinking
-          - Qwen2.5-32B-EVA-v0.2
           - Qwen3.5-27B-Anko
           - Qwen3.5-27B-BlueStar-Derestricted
           - Qwen3.5-27B-BlueStar-Derestricted-Lite
@@ -1551,7 +1550,6 @@ endpoints:
           - Sao10K/L3.3-70B-Euryale-v2.3
           - Steelskull/L3.3-Cu-Mai-R1-70b
           - Steelskull/L3.3-Electra-R1-70b
-          - Steelskull/L3.3-MS-Evalebis-70b
           - Steelskull/L3.3-MS-Evayale-70B
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
@@ -1598,7 +1596,6 @@ endpoints:
           - TheDrummer/Rocinante-12B-v1.1
           - TheDrummer/UnslopNemo-12B-v4.1
           - Tongyi-Zhiwen/QwenLong-L1-32B
-          - Unbabel/M-Prometheus-14B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-1.0
@@ -1610,7 +1607,6 @@ endpoints:
           - alibaba/qwen3.6-27b:thinking
           - alibaba/qwen3.6-flash
           - alibaba/tongyi-deepresearch-30b-a3b
-          - allenai/olmo-3-32b-think
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-micro-v1
@@ -1678,7 +1674,6 @@ endpoints:
           - claw-low
           - claw-medium
           - cognitivecomputations/dolphin-2.9.2-qwen2-72b
-          - cohere/command-r
           - cohere/command-r-plus-08-2024
           - cohere/north-mini-code
           - command-a-plus-05-2026
@@ -1696,7 +1691,6 @@ endpoints:
           - deepseek-ai/deepseek-v3.2-exp-thinking
           - deepseek-chat
           - deepseek-chat-cheaper
-          - deepseek-math-v2
           - deepseek-r1
           - deepseek-r1-sambanova
           - deepseek-reasoner
@@ -1715,9 +1709,6 @@ endpoints:
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1
           - dmind/dmind-1-mini
-          - doubao-1-5-thinking-pro-250415
-          - doubao-1-5-thinking-pro-vision-250415
-          - doubao-1-5-thinking-vision-pro-250428
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -1729,17 +1720,10 @@ endpoints:
           - doubao-seed-2-0-lite-260215
           - doubao-seed-2-0-mini-260215
           - doubao-seed-2-0-pro-260215
-          - ernie-4.5-8k-preview
-          - ernie-4.5-turbo-128k
-          - ernie-4.5-turbo-vl-32k
           - ernie-5.0-thinking-preview
           - ernie-5.1
           - ernie-5.1:thinking
-          - ernie-x1-32k
-          - ernie-x1-32k-preview
-          - ernie-x1-turbo-32k
           - ernie-x1.1-preview
-          - essentialai/rnj-1-instruct
           - exa-answer
           - exa-research
           - exa-research-pro
@@ -1747,9 +1731,6 @@ endpoints:
           - fastgpt
           - featherless-ai/Qwerky-72B
           - free-model
-          - gemini-2.0-flash-exp-image-generation
-          - gemini-2.0-flash-thinking-exp-01-21
-          - gemini-2.0-flash-thinking-exp-1219
           - gemini-2.0-pro-exp-02-05
           - gemini-2.0-pro-reasoner
           - gemini-2.5-flash
@@ -1830,7 +1811,6 @@ endpoints:
           - jamba-mini-1.6
           - jamba-mini-1.7
           - kimi-k2-instruct-fast
-          - kimi-thinking-preview
           - kwaipilot/kat-coder-pro-v2
           - learnlm-1.5-pro-experimental
           - linkup-research-high
