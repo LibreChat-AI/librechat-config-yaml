@@ -1390,7 +1390,6 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - tiiuae/falcon-7b-instruct
           - unsloth/DeepSeek-R1-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
@@ -1706,6 +1705,8 @@ endpoints:
           - anthropic/claude-opus-latest
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
+          - anthropic/claude-sonnet-5
+          - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
           - arcee-ai/trinity-mini
@@ -2346,6 +2347,7 @@ endpoints:
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
+          - anthropic/claude-sonnet-5
           - '---ARCEE-AI---'
           - arcee-ai/coder-large
           - arcee-ai/trinity-large-thinking
@@ -2387,6 +2389,7 @@ endpoints:
           - google/gemini-3.1-flash-image
           - google/gemini-3.1-flash-image-preview
           - google/gemini-3.1-flash-lite
+          - google/gemini-3.1-flash-lite-image
           - google/gemini-3.1-flash-lite-preview
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
@@ -2415,10 +2418,6 @@ endpoints:
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
           - meta-llama/llama-guard-4-12b
-          - '---MICROSOFT---'
-          - microsoft/phi-4
-          - microsoft/phi-4-mini-instruct
-          - microsoft/wizardlm-2-8x22b
           - '---MINIMAX---'
           - minimax/minimax-01
           - minimax/minimax-m1
@@ -2530,7 +2529,6 @@ endpoints:
           - openrouter/bodybuilder
           - openrouter/free
           - openrouter/fusion
-          - openrouter/owl-alpha
           - openrouter/pareto-code
           - '---PERPLEXITY---'
           - perplexity/sonar
@@ -2635,6 +2633,8 @@ endpoints:
           - kwaipilot/kat-coder-pro-v2
           - liquid/lfm-2-24b-a2b
           - mancer/weaver
+          - microsoft/phi-4
+          - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/nex-n2-pro
