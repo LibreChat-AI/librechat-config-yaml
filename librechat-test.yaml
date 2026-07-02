@@ -1952,6 +1952,8 @@ endpoints:
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
+          - anthropic/claude-fable-5
+          - anthropic/claude-fable-latest
           - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6:thinking
@@ -2545,7 +2547,6 @@ endpoints:
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
-          - z-ai/glm-5.1
           - zyphra/zamba2-7b-instruct
         fetch: false
       titleConvo: true
