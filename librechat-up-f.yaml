@@ -2201,6 +2201,7 @@ endpoints:
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
+          - z-ai/glm-5.2
           - zyphra/zamba2-7b-instruct
         fetch: false
       titleConvo: true
@@ -2236,6 +2237,7 @@ endpoints:
           - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
+          - poolside/laguna-xs-2.1:free
           - poolside/laguna-xs.2:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
@@ -2454,6 +2456,10 @@ endpoints:
           - perplexity/sonar-pro
           - perplexity/sonar-pro-search
           - perplexity/sonar-reasoning-pro
+          - '---POOLSIDE---'
+          - poolside/laguna-m.1
+          - poolside/laguna-xs-2.1
+          - poolside/laguna-xs.2
           - '---QWEN---'
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
@@ -2557,8 +2563,6 @@ endpoints:
           - morph/morph-v3-large
           - nex-agi/nex-n2-pro
           - perceptron/perceptron-mk1
-          - poolside/laguna-m.1
-          - poolside/laguna-xs.2
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
