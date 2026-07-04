@@ -1480,8 +1480,13 @@ endpoints:
           - Gemma-4-31B-Claude-4.6-Opus-Reasoning-Distilled
           - Gemma-4-31B-Cognitive-Unshackled
           - Gemma-4-31B-DarkIdol
+          - Gemma-4-31B-Fabled
+          - Gemma-4-31B-Garnet
           - Gemma-4-31B-GarnetV2
           - Gemma-4-31B-Gemopus
+          - Gemma-4-31B-K1-v5
+          - Gemma-4-31B-Larkspur-v0.5
+          - Gemma-4-31B-MeroMero
           - Gemma-4-31B-Musica-v1
           - Gemma-4-31B-Queen
           - Gemma-4-31B-it
@@ -1750,11 +1755,6 @@ endpoints:
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-image-preview
           - gemini-exp-1206
-          - gemma-4-31B-Fabled
-          - gemma-4-31B-Garnet
-          - gemma-4-31B-K1-v5
-          - gemma-4-31B-Larkspur-v0.5
-          - gemma-4-31B-MeroMero
           - glm-4
           - glm-4-air
           - glm-4-air-0111
