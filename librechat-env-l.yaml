@@ -648,6 +648,7 @@ endpoints:
           - dolphin-mistral-24b-venice-edition
           - e5-base-v2
           - e5-large-v2
+          - elephant-alpha
           - eleven-flash-v2
           - eleven-flash-v2-5
           - eleven-monolingual-v1
@@ -1226,6 +1227,7 @@ endpoints:
           - qwen-3-4b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
+          - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
           - qwen-3-5-flash-02-23
@@ -1233,6 +1235,7 @@ endpoints:
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
+          - qwen-3-6-plus
           - qwen-3-7-max
           - qwen-3-7-plus
           - qwen-3-8b
@@ -1565,7 +1568,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V4-Flash
-          - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
           - google/gemma-7b-it
@@ -1762,8 +1764,13 @@ endpoints:
           - Gemma-4-31B-Claude-4.6-Opus-Reasoning-Distilled
           - Gemma-4-31B-Cognitive-Unshackled
           - Gemma-4-31B-DarkIdol
+          - Gemma-4-31B-Fabled
+          - Gemma-4-31B-Garnet
           - Gemma-4-31B-GarnetV2
           - Gemma-4-31B-Gemopus
+          - Gemma-4-31B-K1-v5
+          - Gemma-4-31B-Larkspur-v0.5
+          - Gemma-4-31B-MeroMero
           - Gemma-4-31B-Musica-v1
           - Gemma-4-31B-Queen
           - Gemma-4-31B-it
@@ -2031,11 +2038,6 @@ endpoints:
           - gemini-2.5-pro-preview-06-05
           - gemini-3-pro-image-preview
           - gemini-exp-1206
-          - gemma-4-31B-Fabled
-          - gemma-4-31B-Garnet
-          - gemma-4-31B-K1-v5
-          - gemma-4-31B-Larkspur-v0.5
-          - gemma-4-31B-MeroMero
           - glm-4
           - glm-4-air
           - glm-4-air-0111
