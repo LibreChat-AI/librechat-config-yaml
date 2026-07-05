@@ -1626,8 +1626,6 @@ endpoints:
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
-          - aion-labs/aion-1.0
-          - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
           - aion-labs/aion-rp-llama-3.1-8b
@@ -1843,6 +1841,7 @@ endpoints:
           - linkup-research-medium
           - linkup-research-xhigh
           - liquid/lfm-2-24b-a2b
+          - longcat-2.0
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
@@ -1964,7 +1963,6 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
-          - owl
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - phi-4-mini-instruct
