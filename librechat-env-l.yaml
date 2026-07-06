@@ -812,7 +812,6 @@ endpoints:
           - glm-5-1
           - glm-5-turbo
           - goliath-120b
-          - gpt
           - gpt-3-5-turbo
           - gpt-3-5-turbo-0125
           - gpt-3-5-turbo-0613
@@ -912,7 +911,6 @@ endpoints:
           - gpt-audio-mini
           - gpt-audio-mini-2025-10-06
           - gpt-audio-mini-2025-12-15
-          - gpt-chat-latest
           - gpt-image-1
           - gpt-image-1-5
           - gpt-image-1-mini
@@ -961,12 +959,10 @@ endpoints:
           - jamba-large-1-7
           - juggernaut-lightning-flux
           - kat-coder-pro
-          - kimi
           - kimi-k2
           - kimi-k2-0905
           - kimi-k2-5
           - kimi-k2-5-turbo
-          - kimi-k2-6
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
