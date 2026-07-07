@@ -806,7 +806,6 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -1203,9 +1202,7 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -2137,6 +2134,7 @@ endpoints:
           - nanogpt/coding-router:low
           - nanogpt/coding-router:max
           - nanogpt/coding-router:medium
+          - nex-agi/nex-n2-mini
           - nex-agi/nex-n2-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
@@ -2270,7 +2268,7 @@ endpoints:
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - tencent/Hunyuan-MT-7B
-          - tencent/hy3-preview
+          - tencent/hy3
           - thedrummer/skyfall-36b-v2
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
@@ -2282,7 +2280,6 @@ endpoints:
           - v0-1.5-lg
           - v0-1.5-md
           - venice-uncensored
-          - venice-uncensored:web
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
@@ -2501,6 +2498,7 @@ endpoints:
           - poolside/laguna-xs.2:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
+          - tencent/hy3:free
           - '---AION-LABS---'
           - aion-labs/aion-1.0
           - aion-labs/aion-1.0-mini
@@ -2773,6 +2771,10 @@ endpoints:
           - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
+          - '---TENCENT---'
+          - tencent/hunyuan-a13b-instruct
+          - tencent/hy3
+          - tencent/hy3-preview
           - '---THEDRUMMER---'
           - thedrummer/cydonia-24b-v4.1
           - thedrummer/rocinante-12b
@@ -2821,6 +2823,7 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
+          - nex-agi/nex-n2-mini
           - nex-agi/nex-n2-pro
           - perceptron/perceptron-mk1
           - rekaai/reka-edge
@@ -2831,8 +2834,6 @@ endpoints:
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - switchpoint/router
-          - tencent/hunyuan-a13b-instruct
-          - tencent/hy3-preview
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - writer/palmyra-x5
