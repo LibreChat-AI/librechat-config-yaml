@@ -531,7 +531,6 @@ endpoints:
           - blur-background
           - bria-3-2
           - bria-3-2-vector
-          - chat-latest
           - chatgpt-image-latest
           - chatterbox
           - chatterbox-multilingual
@@ -1584,6 +1583,7 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - unsloth/DeepSeek-R1-GGUF
+          - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
@@ -1829,8 +1829,6 @@ endpoints:
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
-          - TEE/deepseek-v4-pro
-          - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -1874,6 +1872,8 @@ endpoints:
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
+          - aion-labs/aion-3.0
+          - aion-labs/aion-3.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/qwen3.6-27b
           - alibaba/qwen3.6-27b:thinking
@@ -2516,9 +2516,9 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-instruct:free
           - tencent/hy3:free
           - '---AION-LABS---'
-          - aion-labs/aion-1.0
-          - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
+          - aion-labs/aion-3.0
+          - aion-labs/aion-3.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
