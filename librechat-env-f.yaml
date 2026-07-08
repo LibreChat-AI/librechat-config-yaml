@@ -519,7 +519,6 @@ endpoints:
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
           - babbage-002
-          - chat-latest
           - chatx
           - chatx-fast
           - cheap
@@ -657,7 +656,6 @@ endpoints:
           - gemini-3-pro-preview
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -1005,9 +1003,7 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1330,6 +1326,7 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - unsloth/DeepSeek-R1-GGUF
+          - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
           - zai-org/GLM-4.6
@@ -1576,8 +1573,6 @@ endpoints:
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
-          - TEE/deepseek-v4-pro
-          - TEE/deepseek-v4-pro:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -1621,6 +1616,8 @@ endpoints:
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-2.0
           - aion-labs/aion-2.5
+          - aion-labs/aion-3.0
+          - aion-labs/aion-3.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - alibaba/qwen3.6-27b
           - alibaba/qwen3.6-27b:thinking
@@ -2261,9 +2258,9 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-instruct:free
           - tencent/hy3:free
           - '---AION-LABS---'
-          - aion-labs/aion-1.0
-          - aion-labs/aion-1.0-mini
           - aion-labs/aion-2.0
+          - aion-labs/aion-3.0
+          - aion-labs/aion-3.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
