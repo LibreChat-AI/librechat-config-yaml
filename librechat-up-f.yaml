@@ -550,6 +550,7 @@ endpoints:
           - blur-background
           - bria-3-2
           - bria-3-2-vector
+          - chat-latest
           - chatgpt-image-latest
           - chatterbox
           - chatterbox-multilingual
@@ -805,6 +806,7 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -1201,7 +1203,9 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
+          - perceptron-mk-1
           - phi-4
+          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -2282,6 +2286,7 @@ endpoints:
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
+          - x-ai/grok-4.5
           - x-ai/grok-build-0.1
           - x-ai/grok-latest
           - xiaomi/mimo-v2.5
@@ -2783,6 +2788,7 @@ endpoints:
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
+          - x-ai/grok-4.5
           - x-ai/grok-build-0.1
           - '---Z-AI---'
           - z-ai/glm-4.5
@@ -2843,6 +2849,7 @@ endpoints:
           - ~moonshotai/kimi-latest
           - ~openai/gpt-latest
           - ~openai/gpt-mini-latest
+          - ~x-ai/grok-latest
         fetch: false
       dropParams:
         - "stop"
@@ -3165,6 +3172,7 @@ endpoints:
           - grok-4.20-0309-reasoning
           - grok-4.20-multi-agent-0309
           - grok-4.3
+          - grok-4.5
           - grok-build-0.1
           - grok-imagine-image
           - grok-imagine-image-quality
