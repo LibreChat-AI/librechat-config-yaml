@@ -525,7 +525,6 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
-          - babbage-002
           - chat-latest
           - chatx
           - chatx-fast
@@ -571,7 +570,6 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
-          - claude-sonnet-latest
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -752,9 +750,11 @@ endpoints:
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-5
-          - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
+          - gpt-5-6-luna
+          - gpt-5-6-sol
+          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1884,6 +1884,7 @@ endpoints:
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
+          - mellum2-12b-a2-5b-instruct
           - mercury-2
           - mercury-coder-small
           - meta-llama/llama-3.1-8b-instruct
@@ -1891,6 +1892,7 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
+          - meta/muse-spark-1.1
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-latest
@@ -1986,6 +1988,12 @@ endpoints:
           - openai/gpt-5.4-nano
           - openai/gpt-5.4-pro
           - openai/gpt-5.5
+          - openai/gpt-5.6-luna
+          - openai/gpt-5.6-luna-pro
+          - openai/gpt-5.6-sol
+          - openai/gpt-5.6-sol-pro
+          - openai/gpt-5.6-terra
+          - openai/gpt-5.6-terra-pro
           - openai/gpt-chat-latest
           - openai/gpt-latest
           - openai/gpt-oss-120b
@@ -2303,7 +2311,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
-          - poolside/laguna-xs.2:free
           - qwen/qwen3-coder:free
           - qwen/qwen3-next-80b-a3b-instruct:free
           - tencent/hy3:free
@@ -2365,7 +2372,6 @@ endpoints:
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-lite
-          - google/gemini-2.5-flash-lite-preview-09-2025
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
@@ -2495,6 +2501,12 @@ endpoints:
           - openai/gpt-5.4-pro
           - openai/gpt-5.5
           - openai/gpt-5.5-pro
+          - openai/gpt-5.6-luna
+          - openai/gpt-5.6-luna-pro
+          - openai/gpt-5.6-sol
+          - openai/gpt-5.6-sol-pro
+          - openai/gpt-5.6-terra
+          - openai/gpt-5.6-terra-pro
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -2522,10 +2534,6 @@ endpoints:
           - perplexity/sonar-pro
           - perplexity/sonar-pro-search
           - perplexity/sonar-reasoning-pro
-          - '---POOLSIDE---'
-          - poolside/laguna-m.1
-          - poolside/laguna-xs-2.1
-          - poolside/laguna-xs.2
           - '---QWEN---'
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
@@ -2618,6 +2626,7 @@ endpoints:
           - anthracite-org/magnum-v4-72b
           - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
+          - cognitivecomputations/dolphin-mistral-24b-venice-edition
           - deepcogito/cogito-v2.1-671b
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
@@ -2626,7 +2635,6 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - kwaipilot/kat-coder-pro-v2
-          - liquid/lfm-2-24b-a2b
           - mancer/weaver
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
@@ -2635,6 +2643,8 @@ endpoints:
           - nex-agi/nex-n2-mini
           - nex-agi/nex-n2-pro
           - perceptron/perceptron-mk1
+          - poolside/laguna-m.1
+          - poolside/laguna-xs-2.1
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
