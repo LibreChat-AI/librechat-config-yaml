@@ -517,6 +517,7 @@ endpoints:
           - aion-rp-llama-3-1-8b
           - anubis-70b-v1-1
           - anubis-pro-105b-v1
+          - babbage-002
           - chat-latest
           - chatx
           - chatx-fast
@@ -742,6 +743,7 @@ endpoints:
           - gpt-5-4-pro
           - gpt-5-4-pro-2026-03-05
           - gpt-5-5
+          - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
           - gpt-5-6-luna
@@ -1965,6 +1967,7 @@ endpoints:
           - openai/o4-mini-high
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
+          - perplexity-academic-researcher
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
@@ -2296,7 +2299,6 @@ endpoints:
           - '---ARCEE-AI---'
           - arcee-ai/coder-large
           - arcee-ai/trinity-large-thinking
-          - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
@@ -2352,7 +2354,6 @@ endpoints:
           - inclusionai/ling-2.6-flash
           - inclusionai/ring-2.6-1t
           - '---META-LLAMA---'
-          - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
