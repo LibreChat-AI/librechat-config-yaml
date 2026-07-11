@@ -599,7 +599,6 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
-          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -806,7 +805,6 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -912,6 +910,9 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
+          - gpt-5-6-luna
+          - gpt-5-6-sol
+          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1203,9 +1204,7 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -2209,6 +2208,7 @@ endpoints:
           - openai/o4-mini-high
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
+          - perplexity-academic-researcher
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
@@ -2540,7 +2540,6 @@ endpoints:
           - '---ARCEE-AI---'
           - arcee-ai/coder-large
           - arcee-ai/trinity-large-thinking
-          - arcee-ai/trinity-mini
           - arcee-ai/virtuoso-large
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
