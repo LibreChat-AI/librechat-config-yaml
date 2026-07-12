@@ -590,6 +590,7 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -796,6 +797,7 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -901,9 +903,6 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
-          - gpt-5-6-luna
-          - gpt-5-6-sol
-          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1195,7 +1194,9 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
+          - perceptron-mk-1
           - phi-4
+          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -2293,7 +2294,6 @@ endpoints:
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
-          - poolside/laguna-xs.2
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
@@ -2676,7 +2676,6 @@ endpoints:
           - inclusionai/ling-2.6-flash
           - inclusionai/ring-2.6-1t
           - '---META-LLAMA---'
-          - meta-llama/llama-3-8b-instruct
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-11b-vision-instruct
