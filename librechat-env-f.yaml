@@ -564,6 +564,7 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-latest
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -656,6 +657,7 @@ endpoints:
           - gemini-3-pro-preview
           - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -747,9 +749,6 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
-          - gpt-5-6-luna
-          - gpt-5-6-sol
-          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1006,7 +1005,9 @@ endpoints:
           - palmyra-x4-v1
           - palmyra-x5
           - palmyra-x5-v1
+          - perceptron-mk-1
           - phi-4
+          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1972,7 +1973,6 @@ endpoints:
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
-          - poolside/laguna-xs.2
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
