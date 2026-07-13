@@ -579,7 +579,6 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
-          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -786,7 +785,6 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -892,6 +890,9 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
+          - gpt-5-6-luna
+          - gpt-5-6-sol
+          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1183,9 +1184,7 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1467,7 +1466,6 @@ endpoints:
           - accounts/fireworks/models/glm-5p1
           - accounts/fireworks/models/glm-5p2
           - accounts/fireworks/models/gpt-oss-120b
-          - accounts/fireworks/models/kimi-k2p5
           - accounts/fireworks/models/kimi-k2p6
         fetch: false
       titleConvo: true
@@ -1954,7 +1952,6 @@ endpoints:
           - claw-high
           - claw-low
           - claw-medium
-          - cognitivecomputations/dolphin-2.9.2-qwen2-72b
           - cohere/command-r-plus-08-2024
           - cohere/north-mini-code
           - command-a-plus-05-2026
