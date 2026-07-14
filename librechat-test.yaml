@@ -1893,7 +1893,6 @@ endpoints:
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
-          - mellum2-12b-a2-5b-instruct
           - mercury-2
           - mercury-coder-small
           - meta-llama/llama-3.1-8b-instruct
@@ -2304,8 +2303,6 @@ endpoints:
           - cohere/north-mini-code:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - liquid/lfm-2.5-1.2b-instruct:free
-          - liquid/lfm-2.5-1.2b-thinking:free
           - meta-llama/llama-3.2-3b-instruct:free
           - meta-llama/llama-3.3-70b-instruct:free
           - nousresearch/hermes-3-llama-3.1-405b:free
@@ -2316,7 +2313,6 @@ endpoints:
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
-          - openai/gpt-oss-120b:free
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
