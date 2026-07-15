@@ -608,6 +608,7 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -814,6 +815,7 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -919,9 +921,6 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
-          - gpt-5-6-luna
-          - gpt-5-6-sol
-          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1213,7 +1212,9 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
+          - perceptron-mk-1
           - phi-4
+          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -2149,7 +2150,9 @@ endpoints:
           - jamba-mini-1.6
           - jamba-mini-1.7
           - kimi-k2-instruct-fast
+          - kwaipilot/kat-coder-air-v2.5
           - kwaipilot/kat-coder-pro-v2
+          - kwaipilot/kat-coder-pro-v2.5
           - learnlm-1.5-pro-experimental
           - linkup-research-high
           - linkup-research-low
@@ -2474,8 +2477,6 @@ endpoints:
           - microsoft/kosmos-2
           - microsoft/phi-3-vision-128k-instruct
           - microsoft/phi-3.5-moe-instruct
-          - microsoft/phi-4-mini-instruct
-          - microsoft/phi-4-multimodal-instruct
           - minimaxai/minimax-m2.7
           - minimaxai/minimax-m3
           - mistralai/codestral-22b-instruct-v0.1
@@ -2513,7 +2514,6 @@ endpoints:
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/nemoretriever-parse
-          - nvidia/nemotron-3-content-safety
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
@@ -2521,7 +2521,6 @@ endpoints:
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
-          - nvidia/nemotron-content-safety-reasoning-4b
           - nvidia/nemotron-mini-4b-instruct
           - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-3-30b-a3b
@@ -2545,7 +2544,6 @@ endpoints:
           - snowflake/arctic-embed-l
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.7-flash
-          - stockmark/stockmark-2-100b-instruct
           - upstage/solar-10.7b-instruct
           - writer/palmyra-creative-122b
           - writer/palmyra-fin-70b-32k
@@ -2672,6 +2670,10 @@ endpoints:
           - inclusionai/ling-2.6-1t
           - inclusionai/ling-2.6-flash
           - inclusionai/ring-2.6-1t
+          - '---KWAIPILOT---'
+          - kwaipilot/kat-coder-air-v2.5
+          - kwaipilot/kat-coder-pro-v2
+          - kwaipilot/kat-coder-pro-v2.5
           - '---META-LLAMA---'
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
@@ -2856,7 +2858,6 @@ endpoints:
           - qwen/qwen3.7-plus
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
-          - sao10k/l3.1-70b-hanami-x1
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
           - '---TENCENT---'
@@ -2906,7 +2907,6 @@ endpoints:
           - inception/mercury-2
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
-          - kwaipilot/kat-coder-pro-v2
           - mancer/weaver
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
