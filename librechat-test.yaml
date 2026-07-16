@@ -2213,6 +2213,7 @@ endpoints:
           - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-latest
+          - nano-gpt-help
           - nanogpt/coding-router
           - nanogpt/coding-router:high
           - nanogpt/coding-router:low
@@ -2532,6 +2533,7 @@ endpoints:
           - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
+          - poolside/laguna-xs-2.1
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-397b-a17b
@@ -2608,10 +2610,6 @@ endpoints:
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-5
-          - '---ARCEE-AI---'
-          - arcee-ai/coder-large
-          - arcee-ai/trinity-large-thinking
-          - arcee-ai/virtuoso-large
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
@@ -2892,6 +2890,8 @@ endpoints:
           - ai21/jamba-large-1.7
           - allenai/olmo-3-32b-think
           - anthracite-org/magnum-v4-72b
+          - arcee-ai/trinity-large-thinking
+          - arcee-ai/virtuoso-large
           - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
