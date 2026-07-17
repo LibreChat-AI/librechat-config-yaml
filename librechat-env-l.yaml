@@ -2148,6 +2148,7 @@ endpoints:
           - moonshotai/kimi-k2.6:thinking
           - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-k2.7-code-highspeed
+          - moonshotai/kimi-k3
           - moonshotai/kimi-latest
           - nano-gpt-help
           - nanogpt/coding-router
@@ -2297,6 +2298,8 @@ endpoints:
           - tencent/Hunyuan-MT-7B
           - tencent/hy3
           - thedrummer/skyfall-36b-v2
+          - thinkingmachines/inkling
+          - thinkingmachines/inkling:thinking
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
@@ -2445,6 +2448,7 @@ endpoints:
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/nemoretriever-parse
+          - nvidia/nemotron-3-embed-1b
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
@@ -2476,6 +2480,7 @@ endpoints:
           - snowflake/arctic-embed-l
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.7-flash
+          - thinkingmachines/inkling
           - upstage/solar-10.7b-instruct
           - writer/palmyra-creative-122b
           - writer/palmyra-fin-70b-32k
@@ -2649,6 +2654,7 @@ endpoints:
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
+          - moonshotai/kimi-k3
           - '---NOUSRESEARCH---'
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
@@ -2839,6 +2845,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - mancer/weaver
+          - meta/muse-spark-1.1
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
