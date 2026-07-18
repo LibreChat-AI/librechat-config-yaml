@@ -608,7 +608,6 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
-          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -815,7 +814,6 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -838,7 +836,6 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
-          - glm-5-1
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -910,7 +907,6 @@ endpoints:
           - gpt-5-3-codex
           - gpt-5-4
           - gpt-5-4-2026-03-05
-          - gpt-5-4-image-2
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
@@ -921,6 +917,9 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
+          - gpt-5-6-luna
+          - gpt-5-6-sol
+          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1148,8 +1147,6 @@ endpoints:
           - nano-banana-v1
           - nano-banana-v2
           - nemotron-3-nano-30b-a3b
-          - nemotron-3-nano-omni-30b-a3b-reasoning
-          - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
@@ -1212,9 +1209,7 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1258,7 +1253,6 @@ endpoints:
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
-          - qwen-3-7-max
           - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
@@ -1580,13 +1574,11 @@ endpoints:
           - groq/compound-mini
           - llama-3.1-8b-instant
           - llama-3.3-70b-versatile
-          - meta-llama/llama-4-scout-17b-16e-instruct
           - meta-llama/llama-prompt-guard-2-22m
           - meta-llama/llama-prompt-guard-2-86m
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
-          - qwen/qwen3-32b
           - qwen/qwen3.6-27b
         fetch: false
       titleConvo: true
@@ -2680,7 +2672,6 @@ endpoints:
           - '---META-LLAMA---'
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
-          - meta-llama/llama-3.2-11b-vision-instruct
           - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.3-70b-instruct
@@ -2730,7 +2721,6 @@ endpoints:
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-70b
           - '---NVIDIA---'
-          - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
@@ -2802,6 +2792,7 @@ endpoints:
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
           - '---OPENROUTER---'
+          - openrouter/auto-beta
           - openrouter/bodybuilder
           - openrouter/free
           - openrouter/fusion
@@ -2931,6 +2922,7 @@ endpoints:
           - sakana/fugu-ultra
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
+          - thinkingmachines/inkling
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - writer/palmyra-x5
