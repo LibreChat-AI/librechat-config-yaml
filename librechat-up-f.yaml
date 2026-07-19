@@ -599,6 +599,7 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -805,6 +806,7 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
+          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -827,6 +829,7 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-1
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -898,6 +901,7 @@ endpoints:
           - gpt-5-3-codex
           - gpt-5-4
           - gpt-5-4-2026-03-05
+          - gpt-5-4-image-2
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
@@ -908,9 +912,6 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
-          - gpt-5-6-luna
-          - gpt-5-6-sol
-          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1138,6 +1139,8 @@ endpoints:
           - nano-banana-v1
           - nano-banana-v2
           - nemotron-3-nano-30b-a3b
+          - nemotron-3-nano-omni-30b-a3b-reasoning
+          - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
@@ -1200,7 +1203,9 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
+          - perceptron-mk-1
           - phi-4
+          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1244,6 +1249,7 @@ endpoints:
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
+          - qwen-3-7-max
           - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
@@ -1742,7 +1748,6 @@ endpoints:
           - Gemma-4-31B-MeroMero
           - Gemma-4-31B-Musica-v1
           - Gemma-4-31B-Queen
-          - Gemma-4-31B-it
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
@@ -1806,7 +1811,6 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
-          - TEE/deepseek-v4-flash
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -1900,6 +1904,7 @@ endpoints:
           - bytedance-seed/seed-2.0-lite
           - bytedance/doubao-seed-2.1-pro
           - bytedance/doubao-seed-2.1-turbo
+          - bytedance/doubao-seed-character
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
@@ -2228,7 +2233,6 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-plus
           - qwen/qwen3.5-plus-thinking
-          - qwen/qwq-32b-preview
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
@@ -2250,7 +2254,6 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
-          - qwq-32b
           - sakana/fugu-ultra
           - sarvam-105b
           - sarvam-30b
