@@ -1338,7 +1338,6 @@ endpoints:
           - Qwen/Qwen2.5-7B-Instruct
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
-          - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Coder-30B-A3B-Instruct
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
@@ -1377,6 +1376,7 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
+          - openchat/openchat_3.5
           - unsloth/DeepSeek-R1-GGUF
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
@@ -1558,7 +1558,6 @@ endpoints:
           - Gemma-4-31B-MeroMero
           - Gemma-4-31B-Musica-v1
           - Gemma-4-31B-Queen
-          - Gemma-4-31B-it
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
@@ -1715,6 +1714,7 @@ endpoints:
           - bytedance-seed/seed-2.0-lite
           - bytedance/doubao-seed-2.1-pro
           - bytedance/doubao-seed-2.1-turbo
+          - bytedance/doubao-seed-character
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
