@@ -579,7 +579,6 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
-          - claude-sonnet-latest
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -786,7 +785,6 @@ endpoints:
           - gemini-3-pro-v1
           - gemini-flash-latest
           - gemini-pro
-          - gemini-pro-latest
           - gemini-pro-vision
           - gemma-2
           - gemma-2-27b-it
@@ -809,7 +807,6 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
-          - glm-5-1
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -881,7 +878,6 @@ endpoints:
           - gpt-5-3-codex
           - gpt-5-4
           - gpt-5-4-2026-03-05
-          - gpt-5-4-image-2
           - gpt-5-4-mini
           - gpt-5-4-mini-2026-03-17
           - gpt-5-4-nano
@@ -892,6 +888,9 @@ endpoints:
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
           - gpt-5-5-pro-2026-04-23
+          - gpt-5-6-luna
+          - gpt-5-6-sol
+          - gpt-5-6-terra
           - gpt-5-chat
           - gpt-5-chat-latest
           - gpt-5-codex
@@ -1119,8 +1118,6 @@ endpoints:
           - nano-banana-v1
           - nano-banana-v2
           - nemotron-3-nano-30b-a3b
-          - nemotron-3-nano-omni-30b-a3b-reasoning
-          - nemotron-3-ultra-550b-a55b
           - nemotron-4-340b-instruct
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
@@ -1183,9 +1180,7 @@ endpoints:
           - palmyra-x5
           - palmyra-x5-v1
           - paraphrase-minilm-l6-v2
-          - perceptron-mk-1
           - phi-4
-          - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - phi-4-reasoning-plus
           - pixtral-12b
@@ -1229,7 +1224,6 @@ endpoints:
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
-          - qwen-3-7-max
           - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
@@ -1530,7 +1524,6 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
-          - CohereLabs/c4ai-command-r-v01
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - MiniMaxAI/MiniMax-M2
@@ -1827,6 +1820,7 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
+          - TEE/deepseek-v4-flash
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -2270,6 +2264,7 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
+          - qwen3.8-max-preview
           - sakana/fugu-ultra
           - sarvam-105b
           - sarvam-30b
@@ -2469,7 +2464,6 @@ endpoints:
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - qwen/qwen3-next-80b-a3b-instruct
-          - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-397b-a17b
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
@@ -2499,13 +2493,9 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cohere/north-mini-code:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - meta-llama/llama-3.2-3b-instruct:free
-          - meta-llama/llama-3.3-70b-instruct:free
-          - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
@@ -2516,8 +2506,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
-          - qwen/qwen3-coder:free
-          - qwen/qwen3-next-80b-a3b-instruct:free
           - tencent/hy3:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
