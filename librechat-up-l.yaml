@@ -831,7 +831,6 @@ endpoints:
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-2-6-1t
-          - ling-2-6-flash
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1088,7 +1087,6 @@ endpoints:
           - relace-apply-3
           - relace-search
           - remm-slerp-l2-13b
-          - ring-2-6-1t
           - rnj-1-instruct
           - rocinante-12b
           - router
@@ -1316,7 +1314,6 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
-          - CohereLabs/c4ai-command-r-v01
           - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - MiniMaxAI/MiniMax-M2
@@ -2055,6 +2052,7 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
+          - qwen3.8-max-preview
           - qwq-32b
           - sakana/fugu-ultra
           - sarvam-105b
@@ -2257,7 +2255,6 @@ endpoints:
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - qwen/qwen3-next-80b-a3b-instruct
-          - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-397b-a17b
           - sarvamai/sarvam-m
           - snowflake/arctic-embed-l
@@ -2286,13 +2283,9 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - cognitivecomputations/dolphin-mistral-24b-venice-edition:free
           - cohere/north-mini-code:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - meta-llama/llama-3.2-3b-instruct:free
-          - meta-llama/llama-3.3-70b-instruct:free
-          - nousresearch/hermes-3-llama-3.1-405b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
@@ -2303,8 +2296,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
-          - qwen/qwen3-coder:free
-          - qwen/qwen3-next-80b-a3b-instruct:free
           - tencent/hy3:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
