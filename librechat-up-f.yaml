@@ -1003,7 +1003,6 @@ endpoints:
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
           - ling-2-6-1t
-          - ling-2-6-flash
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1304,7 +1303,6 @@ endpoints:
           - remove-background
           - replace-background
           - rerank-v3-5
-          - ring-2-6-1t
           - rnj-1-instruct
           - rocinante-12b
           - router
@@ -1745,7 +1743,6 @@ endpoints:
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
-          - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
           - Meta-Llama-3-1-8B-Instruct-FP8
           - MiniMax-M1
@@ -1960,7 +1957,6 @@ endpoints:
           - deepseek/deepseek-v4-pro-cheaper
           - deepseek/deepseek-v4-pro-cheaper:thinking
           - deepseek/deepseek-v4-pro:thinking
-          - dmind/dmind-1
           - dmind/dmind-1-mini
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
@@ -2491,7 +2487,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
-          - tencent/hy3:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2812,6 +2807,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - mancer/weaver
+          - meituan/longcat-2.0
           - meta/muse-spark-1.1
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
