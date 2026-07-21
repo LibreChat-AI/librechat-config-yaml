@@ -1475,7 +1475,6 @@ endpoints:
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
-          - Magistral-Small-2506
           - MarinaraSpaghetti/NemoMix-Unleashed-12B
           - Meta-Llama-3-1-8B-Instruct-FP8
           - MiniMax-M1
@@ -2222,7 +2221,6 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
           - poolside/laguna-xs-2.1:free
-          - tencent/hy3:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2543,6 +2541,7 @@ endpoints:
           - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - mancer/weaver
+          - meituan/longcat-2.0
           - meta/muse-spark-1.1
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
