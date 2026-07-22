@@ -2105,7 +2105,9 @@ endpoints:
           - google/gemini-3.1-pro-preview-high
           - google/gemini-3.1-pro-preview-low
           - google/gemini-3.5-flash
+          - google/gemini-3.5-flash-lite
           - google/gemini-3.5-flash-thinking
+          - google/gemini-3.6-flash
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
@@ -2145,8 +2147,8 @@ endpoints:
           - linkup-research-low
           - linkup-research-medium
           - linkup-research-xhigh
-          - liquid/lfm-2-24b-a2b
           - longcat-2.0
+          - longcat-2.0:thinking
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
@@ -2286,6 +2288,8 @@ endpoints:
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - poolside/laguna-m.1
+          - poolside/laguna-s-2.1
+          - poolside/laguna-s-2.1:thinking
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
@@ -2361,9 +2365,6 @@ endpoints:
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
           - upstage/solar-pro-3
-          - v0-1.0-md
-          - v0-1.5-lg
-          - v0-1.5-md
           - venice-uncensored
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
@@ -2570,6 +2571,7 @@ endpoints:
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-20b:free
           - poolside/laguna-m.1:free
+          - poolside/laguna-s-2.1:free
           - poolside/laguna-xs-2.1:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
@@ -2638,6 +2640,8 @@ endpoints:
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
           - google/gemini-3.5-flash
+          - google/gemini-3.5-flash-lite
+          - google/gemini-3.6-flash
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
@@ -2789,6 +2793,10 @@ endpoints:
           - perplexity/sonar-pro
           - perplexity/sonar-pro-search
           - perplexity/sonar-reasoning-pro
+          - '---POOLSIDE---'
+          - poolside/laguna-m.1
+          - poolside/laguna-s-2.1
+          - poolside/laguna-xs-2.1
           - '---QWEN---'
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-2.5-7b-instruct
@@ -2900,8 +2908,6 @@ endpoints:
           - nex-agi/nex-n2-mini
           - nex-agi/nex-n2-pro
           - perceptron/perceptron-mk1
-          - poolside/laguna-m.1
-          - poolside/laguna-xs-2.1
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
