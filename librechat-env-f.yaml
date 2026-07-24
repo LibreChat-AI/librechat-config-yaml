@@ -1799,6 +1799,8 @@ endpoints:
           - ibm-granite/granite-4.1-8b
           - inclusionai/ling-2.6-1t
           - inclusionai/ling-2.6-flash
+          - inclusionai/ling-3.0-flash
+          - inclusionai/ling-3.0-flash:thinking
           - inclusionai/ring-2.6-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
@@ -2041,6 +2043,8 @@ endpoints:
           - x-ai/grok-latest
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
+          - xiaomi/mimo-v2.5-pro-crof
+          - xiaomi/mimo-v2.5-pro-crof:thinking
           - xiaomi/mimo-v2.5-pro:thinking
           - xiaomi/mimo-v2.5:thinking
           - yi-large
@@ -2142,7 +2146,6 @@ endpoints:
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
-          - mistralai/mistral-large-3-675b-instruct-2512
           - mistralai/mistral-medium-3.5-128b
           - mistralai/mistral-nemotron
           - mistralai/mistral-small-4-119b-2603
@@ -2155,6 +2158,7 @@ endpoints:
           - nvidia/embed-qa-4
           - nvidia/gliner-pii
           - nvidia/ising-calibration-1-35b-a3b
+          - nvidia/ising-calibration-1.5-31b
           - nvidia/llama-3.1-nemoguard-8b-content-safety
           - nvidia/llama-3.1-nemoguard-8b-topic-control
           - nvidia/llama-3.1-nemotron-51b-instruct
@@ -2230,6 +2234,7 @@ endpoints:
           - cohere/north-mini-code:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
+          - inclusionai/ling-3.0-flash:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
