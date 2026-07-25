@@ -1806,18 +1806,36 @@ endpoints:
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.6-Derestricted-v5
           - GalrionSoftworks/MN-LooseCannon-12B-v1
+          - Gemma-4-31B-Agares-v1
+          - Gemma-4-31B-Animus-V14.1
+          - Gemma-4-31B-AssGuard
           - Gemma-4-31B-Claude-4.6-Opus-Reasoning-Distilled
           - Gemma-4-31B-Cognitive-Unshackled
+          - Gemma-4-31B-Dark-Gemistry
           - Gemma-4-31B-DarkIdol
           - Gemma-4-31B-Fabled
           - Gemma-4-31B-Garnet
           - Gemma-4-31B-GarnetV2
+          - Gemma-4-31B-Gembrain
+          - Gemma-4-31B-Gembrain-X-Core
+          - Gemma-4-31B-Gembrain-uncensored-heretic
           - Gemma-4-31B-Gemopus
+          - Gemma-4-31B-Gemsicle
+          - Gemma-4-31B-Glamour
+          - Gemma-4-31B-Goetia-v1
+          - Gemma-4-31B-Gutenberg
+          - Gemma-4-31B-Isometry-RP
           - Gemma-4-31B-K1-v5
-          - Gemma-4-31B-Larkspur-v0.5
+          - Gemma-4-31B-Melinoe
+          - Gemma-4-31B-Mero-Artemis-v0.3.1
           - Gemma-4-31B-MeroMero
           - Gemma-4-31B-Musica-v1
+          - Gemma-4-31B-Novelist
+          - Gemma-4-31B-Pantheon-Reasoning-1.1
           - Gemma-4-31B-Queen
+          - Gemma-4-31B-SDFT-Heretic-RP
+          - Gemma-4-31B-Sphinsikus-Chronist
+          - Gemma-4-31B-StyleTune
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
@@ -1838,18 +1856,29 @@ endpoints:
           - Qwen/Qwen3.6-35B-A3B
           - Qwen/Qwen3.6-35B-A3B:thinking
           - Qwen3.5-27B-Anko
+          - Qwen3.5-27B-Blossom-V6.4-Derestricted
+          - Qwen3.5-27B-Blossom-V6.4-Derestricted-Lite
           - Qwen3.5-27B-BlueStar-Derestricted
           - Qwen3.5-27B-BlueStar-Derestricted-Lite
           - Qwen3.5-27B-BlueStar-v2-Derestricted
           - Qwen3.5-27B-BlueStar-v2-Derestricted-Lite
           - Qwen3.5-27B-BlueStar-v3-Derestricted
           - Qwen3.5-27B-BlueStar-v3-Derestricted-Lite
+          - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted
+          - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted-Lite
+          - Qwen3.5-27B-Dark-Nexus-v3.0-Derestricted
+          - Qwen3.5-27B-Dark-Nexus-v3.0-Derestricted-Lite
           - Qwen3.5-27B-Derestricted
+          - Qwen3.5-27B-Derestricted-Aconite-v0
+          - Qwen3.5-27B-Enteles-v0-Derestricted
+          - Qwen3.5-27B-Enteles-v0-Derestricted-Lite
           - Qwen3.5-27B-Infracelestial
           - Qwen3.5-27B-Marvin-DPO-V2-Derestricted
           - Qwen3.5-27B-Marvin-DPO-V2-Derestricted-Lite
           - Qwen3.5-27B-Marvin-V2-Derestricted
           - Qwen3.5-27B-Marvin-V2-Derestricted-Lite
+          - Qwen3.5-27B-Melinoe-Derestricted
+          - Qwen3.5-27B-Melinoe-Derestricted-Lite
           - Qwen3.5-27B-Musica-v1
           - Qwen3.5-27B-NaNovel-Derestricted
           - Qwen3.5-27B-NaNovel-Derestricted-Lite
@@ -1857,8 +1886,12 @@ endpoints:
           - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted-Lite
           - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted
           - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted-Lite
+          - Qwen3.5-27B-Omnimerge-v2-Derestricted
+          - Qwen3.5-27B-Omnimerge-v2-Derestricted-Lite
           - Qwen3.5-27B-Queen-Derestricted
           - Qwen3.5-27B-Queen-Derestricted-Lite
+          - Qwen3.5-27B-QuettaLLMs-Koreasoner-V3-Derestricted
+          - Qwen3.5-27B-QuettaLLMs-Koreasoner-V3-Derestricted-Lite
           - Qwen3.5-27B-RpRMax-v1
           - Qwen3.5-27B-Vivid-Durian
           - Qwen3.5-27B-Writer-Derestricted
@@ -2050,8 +2083,6 @@ endpoints:
           - ernie-5.1:thinking
           - ernie-x1.1-preview
           - exa-answer
-          - exa-research
-          - exa-research-pro
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
@@ -2215,7 +2246,6 @@ endpoints:
           - nousresearch/hermes-4-70b
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
-          - nvidia/Llama-3_3-Nemotron-Super-49B-v1_5
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
@@ -2327,6 +2357,7 @@ endpoints:
           - qwen3.7-plus:thinking
           - qwen3.8-max-preview
           - sakana/fugu-ultra
+          - sakana/fugu-ultra-v1.1
           - sarvam-105b
           - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2591,6 +2622,8 @@ endpoints:
           - anthropic/claude-opus-4.7-fast
           - anthropic/claude-opus-4.8
           - anthropic/claude-opus-4.8-fast
+          - anthropic/claude-opus-5
+          - anthropic/claude-opus-5-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.6
