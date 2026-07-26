@@ -669,7 +669,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
-          - gemma-4-26b-a4b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -826,7 +825,6 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
-          - ling-2-6-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -887,7 +885,6 @@ endpoints:
           - mercury
           - mercury-coder
           - mimo-2-flash
-          - mimo-v2-5
           - mimo-v2-flash
           - minimax
           - minimax-01
@@ -1043,7 +1040,6 @@ endpoints:
           - qwen-3-5-27b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
-          - qwen-3-5-flash-02-23
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
@@ -1720,6 +1716,7 @@ endpoints:
           - anthropic/claude-opus-4.7:thinking
           - anthropic/claude-opus-4.8
           - anthropic/claude-opus-4.8:thinking
+          - anthropic/claude-opus-5
           - anthropic/claude-opus-latest
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
@@ -1742,6 +1739,7 @@ endpoints:
           - bytedance/doubao-seed-2.1-pro
           - bytedance/doubao-seed-2.1-turbo
           - bytedance/doubao-seed-character
+          - celeris-1
           - chutesai/Mistral-Small-3.2-24B-Instruct-2506
           - claude-haiku-4-5-20251001
           - claude-haiku-4-5-20251001-thinking
@@ -2087,6 +2085,8 @@ endpoints:
           - qwen3.5-omni-flash
           - qwen3.5-omni-plus
           - qwen3.6-max-preview
+          - qwen3.7-flash
+          - qwen3.7-flash:thinking
           - qwen3.7-max
           - qwen3.7-max:thinking
           - qwen3.7-plus
