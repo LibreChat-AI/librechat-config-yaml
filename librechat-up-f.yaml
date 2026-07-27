@@ -1543,6 +1543,24 @@ endpoints:
       titleConvo: true
       titleModel: "current_model"
 
+    # GreenPT
+    # https://docs.greenpt.ai
+    # Model list: https://api.greenpt.ai/v1/models
+    - name: "GreenPT"
+      iconURL: "https://docs.greenpt.ai/logo/mark.svg"
+      apiKey: "user_provided"
+      baseURL: "https://api.greenpt.ai/v1"
+      models:
+        default:
+          - glm-5.2
+          - kimi-k2.7-code
+        fetch: false
+      titleConvo: true
+      titleModel: "glm-5.2"
+      summarize: false
+      summaryModel: "glm-5.2"
+      modelDisplayLabel: "GreenPT"
+
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"
