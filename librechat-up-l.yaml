@@ -661,7 +661,6 @@ endpoints:
           - gemini-3-pro-image
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
-          - gemini-flash-latest
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -673,7 +672,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
-          - gemma-4-26b-a4b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -830,7 +828,6 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
-          - ling-2-6-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -891,7 +888,6 @@ endpoints:
           - mercury
           - mercury-coder
           - mimo-2-flash
-          - mimo-v2-5
           - mimo-v2-flash
           - minimax
           - minimax-01
@@ -1047,12 +1043,10 @@ endpoints:
           - qwen-3-5-27b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
-          - qwen-3-5-flash-02-23
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
-          - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1114,7 +1108,6 @@ endpoints:
           - tongyi-deepresearch-30b-a3b
           - trinity-large
           - trinity-large-preview
-          - trinity-large-thinking
           - trinity-mini
           - ui-tars-1-5-7b
           - ultra-fast
@@ -1365,7 +1358,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
-          - unsloth/DeepSeek-R1-GGUF
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
@@ -2233,7 +2225,6 @@ endpoints:
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
           - nvidia/embed-qa-4
-          - nvidia/ising-calibration-1-35b-a3b
           - nvidia/ising-calibration-1.5-31b
           - nvidia/llama-3.1-nemoguard-8b-content-safety
           - nvidia/llama-3.1-nemoguard-8b-topic-control
@@ -2273,6 +2264,7 @@ endpoints:
           - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
+          - nvidia/riva-translate-4b-instruct-v2
           - nvidia/vila
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
@@ -2476,9 +2468,7 @@ endpoints:
           - openai/gpt-4o-2024-11-20
           - openai/gpt-4o-mini
           - openai/gpt-4o-mini-2024-07-18
-          - openai/gpt-4o-search-preview
           - openai/gpt-5
-          - openai/gpt-5-chat
           - openai/gpt-5-codex
           - openai/gpt-5-image
           - openai/gpt-5-image-mini
@@ -2587,6 +2577,7 @@ endpoints:
           - qwen/qwen3.6-flash
           - qwen/qwen3.6-max-preview
           - qwen/qwen3.6-plus
+          - qwen/qwen3.7-flash
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
           - '---SAO10K---'
