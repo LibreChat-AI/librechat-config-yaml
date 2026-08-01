@@ -794,7 +794,6 @@ endpoints:
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
           - gemini-3-pro-v1
-          - gemini-flash-latest
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -806,7 +805,6 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
-          - gemma-4-26b-a4b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -926,12 +924,14 @@ endpoints:
           - gpt-image-1-mini
           - gpt-image-2
           - gpt-image-2-2026-04-21
+          - gpt-live-transcribe
           - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
           - gpt-oss-20b
           - gpt-oss-safeguard-20b
+          - gpt-transcribe
           - granite-4-0-h-micro
           - grok-3
           - grok-3-beta
@@ -993,7 +993,6 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
-          - ling-2-6-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1061,7 +1060,6 @@ endpoints:
           - mercury
           - mercury-coder
           - mimo-2-flash
-          - mimo-v2-5
           - mimo-v2-flash
           - minimax
           - minimax-01
@@ -1229,12 +1227,10 @@ endpoints:
           - qwen-3-5-27b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
-          - qwen-3-5-flash-02-23
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
-          - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1278,6 +1274,7 @@ endpoints:
           - qwen-vl-max
           - qwen-vl-plus
           - qwq-32b
+          - ra-gpt-5-6-sol
           - reasoners
           - recraft-v3
           - recraft-v3-al-0
@@ -1368,7 +1365,6 @@ endpoints:
           - tongyi-deepresearch-30b-a3b
           - trinity-large
           - trinity-large-preview
-          - trinity-large-thinking
           - trinity-mini
           - tts
           - tts-1-1106
@@ -1478,6 +1474,7 @@ endpoints:
       models:
         default:
           - accounts/fireworks/models/deepseek-v4-flash
+          - accounts/fireworks/models/deepseek-v4-flash-0731
           - accounts/fireworks/models/deepseek-v4-pro
           - accounts/fireworks/models/glm-5p2
           - accounts/fireworks/models/gpt-oss-120b
@@ -1630,7 +1627,6 @@ endpoints:
           - google/gemma-2-2b-it
           - google/gemma-7b-it
           - mattshumer/Reflection-Llama-3.1-70B
-          - meta-llama/Llama-2-13b-chat-hf
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
           - meta-llama/Llama-3.1-8B-Instruct
@@ -1943,6 +1939,7 @@ endpoints:
           - TEE/kimi-k2.5
           - TEE/kimi-k2.5-thinking
           - TEE/kimi-k2.6
+          - TEE/kimi-k3
           - TEE/llama3-3-70b
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
@@ -2077,6 +2074,7 @@ endpoints:
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2:thinking
           - deepseek/deepseek-v4-flash
+          - deepseek/deepseek-v4-flash-0731
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-cheaper
@@ -2397,6 +2395,8 @@ endpoints:
           - tencent/Hunyuan-MT-7B
           - tencent/hy3
           - thedrummer/skyfall-36b-v2
+          - thinkingmachines/Inkling-Small
+          - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
           - undi95/remm-slerp-l2-13b
@@ -2613,30 +2613,21 @@ endpoints:
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
           - anthropic/claude-fable-5
-          - anthropic/claude-fable-5:batch
           - anthropic/claude-haiku-4.5
-          - anthropic/claude-haiku-4.5:batch
           - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
-          - anthropic/claude-opus-4.1:batch
           - anthropic/claude-opus-4.5
-          - anthropic/claude-opus-4.5:batch
           - anthropic/claude-opus-4.6
-          - anthropic/claude-opus-4.6:batch
           - anthropic/claude-opus-4.7
           - anthropic/claude-opus-4.7-fast
-          - anthropic/claude-opus-4.7:batch
           - anthropic/claude-opus-4.8
           - anthropic/claude-opus-4.8-fast
-          - anthropic/claude-opus-4.8:batch
           - anthropic/claude-opus-5
           - anthropic/claude-opus-5-fast
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
-          - anthropic/claude-sonnet-4.5:batch
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-5
-          - anthropic/claude-sonnet-5:batch
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
@@ -2658,19 +2649,16 @@ endpoints:
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
           - deepseek/deepseek-v4-flash
+          - deepseek/deepseek-v4-flash-0731
           - deepseek/deepseek-v4-pro
           - '---GOOGLE---'
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-lite
-          - google/gemini-2.5-flash-lite:batch
-          - google/gemini-2.5-flash:batch
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-2.5-pro-preview-05-06
-          - google/gemini-2.5-pro:batch
           - google/gemini-3-flash-preview
-          - google/gemini-3-flash-preview:batch
           - google/gemini-3-pro-image
           - google/gemini-3-pro-image-preview
           - google/gemini-3.1-flash-image
@@ -2678,16 +2666,11 @@ endpoints:
           - google/gemini-3.1-flash-lite
           - google/gemini-3.1-flash-lite-image
           - google/gemini-3.1-flash-lite-preview
-          - google/gemini-3.1-flash-lite:batch
           - google/gemini-3.1-pro-preview
           - google/gemini-3.1-pro-preview-customtools
-          - google/gemini-3.1-pro-preview:batch
           - google/gemini-3.5-flash
           - google/gemini-3.5-flash-lite
-          - google/gemini-3.5-flash-lite:batch
-          - google/gemini-3.5-flash:batch
           - google/gemini-3.6-flash
-          - google/gemini-3.6-flash:batch
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
@@ -2723,10 +2706,8 @@ endpoints:
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m3
-          - minimax/minimax-m3:batch
           - '---MISTRALAI---'
           - mistralai/codestral-2508
-          - mistralai/devstral-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
@@ -2782,41 +2763,31 @@ endpoints:
           - openai/gpt-5-image
           - openai/gpt-5-image-mini
           - openai/gpt-5-mini
-          - openai/gpt-5-mini:batch
           - openai/gpt-5-nano
-          - openai/gpt-5-nano:batch
           - openai/gpt-5-pro
           - openai/gpt-5.1
-          - openai/gpt-5.1-chat
           - openai/gpt-5.1-codex
           - openai/gpt-5.1-codex-max
           - openai/gpt-5.1-codex-mini
-          - openai/gpt-5.1:batch
           - openai/gpt-5.2
           - openai/gpt-5.2-chat
           - openai/gpt-5.2-codex
           - openai/gpt-5.2-pro
-          - openai/gpt-5.2:batch
           - openai/gpt-5.3-chat
           - openai/gpt-5.3-codex
           - openai/gpt-5.4
           - openai/gpt-5.4-image-2
           - openai/gpt-5.4-mini
-          - openai/gpt-5.4-mini:batch
           - openai/gpt-5.4-nano
-          - openai/gpt-5.4-nano:batch
           - openai/gpt-5.4-pro
-          - openai/gpt-5.4:batch
           - openai/gpt-5.5
           - openai/gpt-5.5-pro
-          - openai/gpt-5.5:batch
           - openai/gpt-5.6-luna
           - openai/gpt-5.6-luna-pro
           - openai/gpt-5.6-sol
           - openai/gpt-5.6-sol-pro
           - openai/gpt-5.6-terra
           - openai/gpt-5.6-terra-pro
-          - openai/gpt-5:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -2963,6 +2934,7 @@ endpoints:
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - thinkingmachines/inkling
+          - thinkingmachines/inkling-small
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - writer/palmyra-x5
