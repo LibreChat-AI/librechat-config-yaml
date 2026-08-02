@@ -784,6 +784,7 @@ endpoints:
           - gemini-3-pro-image-preview
           - gemini-3-pro-preview
           - gemini-3-pro-v1
+          - gemini-flash-latest
           - gemini-pro
           - gemini-pro-vision
           - gemma-2
@@ -795,6 +796,7 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
+          - gemma-4-26b-a4b-it
           - gen-fill
           - giant-context
           - glm-4-32b
@@ -914,14 +916,12 @@ endpoints:
           - gpt-image-1-mini
           - gpt-image-2
           - gpt-image-2-2026-04-21
-          - gpt-live-transcribe
           - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
           - gpt-oss-20b
           - gpt-oss-safeguard-20b
-          - gpt-transcribe
           - granite-4-0-h-micro
           - grok-3
           - grok-3-beta
@@ -983,6 +983,7 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
+          - ling-2-6-1t
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1050,6 +1051,7 @@ endpoints:
           - mercury
           - mercury-coder
           - mimo-2-flash
+          - mimo-v2-5
           - mimo-v2-flash
           - minimax
           - minimax-01
@@ -1217,10 +1219,12 @@ endpoints:
           - qwen-3-5-27b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
+          - qwen-3-5-flash-02-23
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
           - qwen-3-6-max-preview
+          - qwen-3-7-plus
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1264,7 +1268,6 @@ endpoints:
           - qwen-vl-max
           - qwen-vl-plus
           - qwq-32b
-          - ra-gpt-5-6-sol
           - reasoners
           - recraft-v3
           - recraft-v3-al-0
@@ -1355,6 +1358,7 @@ endpoints:
           - tongyi-deepresearch-30b-a3b
           - trinity-large
           - trinity-large-preview
+          - trinity-large-thinking
           - trinity-mini
           - tts
           - tts-1-1106
@@ -1534,7 +1538,6 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
-          - HuggingFaceH4/zephyr-7b-alpha
           - HuggingFaceH4/zephyr-7b-beta
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
@@ -1584,6 +1587,7 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openchat/openchat_3.5
+          - prism-ml/Ternary-Bonsai-27B-gguf
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.5
@@ -1880,7 +1884,6 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
-          - TEE/qwen3-30b-a3b-instruct-2507
           - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
@@ -2012,6 +2015,7 @@ endpoints:
           - deepseek/deepseek-v3.2:thinking
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash-0731
+          - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-cheaper
@@ -2877,6 +2881,7 @@ endpoints:
           - writer/palmyra-x5
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
+          - ~deepseek/deepseek-v4-flash-latest
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
           - ~moonshotai/kimi-latest
