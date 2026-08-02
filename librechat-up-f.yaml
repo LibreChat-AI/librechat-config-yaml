@@ -1590,7 +1590,6 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/minimax-m2.5
           - TEE/qwen2.5-vl-72b-instruct
-          - TEE/qwen3-30b-a3b-instruct-2507
           - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
@@ -1719,6 +1718,7 @@ endpoints:
           - deepseek/deepseek-v3.2:thinking
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash-0731
+          - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-cheaper
@@ -2586,6 +2586,7 @@ endpoints:
           - writer/palmyra-x5
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
+          - ~deepseek/deepseek-v4-flash-latest
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
           - ~moonshotai/kimi-latest
