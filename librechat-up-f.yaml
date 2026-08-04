@@ -2298,6 +2298,7 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
+          - qwen3.8-max
           - qwen3.8-max-preview
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
@@ -2791,6 +2792,7 @@ endpoints:
           - qwen/qwen3.7-flash
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
+          - qwen/qwen3.8-max
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
