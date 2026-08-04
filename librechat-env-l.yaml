@@ -1284,6 +1284,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3-0324
           - deepseek-ai/DeepSeek-V3.2
           - deepseek-ai/DeepSeek-V4-Flash
+          - deepseek-ai/DeepSeek-V4-Flash-0731
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
@@ -1308,7 +1309,6 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
-          - openchat/openchat_3.5
           - prism-ml/Ternary-Bonsai-27B-gguf
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
@@ -2037,6 +2037,7 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
+          - qwen3.8-max
           - qwen3.8-max-preview
           - qwq-32b
           - sakana/fugu-ultra
@@ -2532,6 +2533,7 @@ endpoints:
           - qwen/qwen3.7-flash
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
+          - qwen/qwen3.8-max
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
