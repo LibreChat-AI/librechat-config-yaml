@@ -1944,7 +1944,6 @@ endpoints:
           - azure-gpt-4o-mini
           - azure-o1
           - azure-o3-mini
-          - baidu/ernie-4.5-vl-28b-a3b
           - baseten/Kimi-K2-Instruct-FP4
           - brave
           - brave-pro
@@ -2140,6 +2139,8 @@ endpoints:
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
           - meta/muse-spark-1.1
+          - meta/muse-spark-1.2
+          - meta/muse-spark-1.2-contributor
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
           - minimax/minimax-latest
@@ -2264,6 +2265,7 @@ endpoints:
           - perplexity-academic-researcher
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
+          - pokee-isaac
           - poolside/laguna-m.1
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
@@ -2626,6 +2628,7 @@ endpoints:
           - '---INCLUSIONAI---'
           - inclusionai/ling-2.6-1t
           - inclusionai/ling-2.6-flash
+          - inclusionai/ling-3.0-flash
           - inclusionai/ring-2.6-1t
           - '---KWAIPILOT---'
           - kwaipilot/kat-coder-air-v2.5
@@ -2861,6 +2864,7 @@ endpoints:
           - mancer/weaver
           - meituan/longcat-2.0
           - meta/muse-spark-1.1
+          - meta/muse-spark-1.2
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
