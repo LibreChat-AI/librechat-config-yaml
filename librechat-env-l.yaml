@@ -2420,8 +2420,7 @@ endpoints:
           - bigcode/starcoder2-15b
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
-          - deepseek-ai/deepseek-v4-flash
-          - deepseek-ai/deepseek-v4-pro
+          - deepseek-ai/deepseek-v4-flash-0731
           - google/codegemma-1.1-7b
           - google/codegemma-7b
           - google/deplot
@@ -2453,7 +2452,6 @@ endpoints:
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
-          - mistralai/mistral-medium-3.5-128b
           - mistralai/mistral-nemotron
           - mistralai/mixtral-8x22b-v0.1
           - moonshotai/kimi-k2.6
