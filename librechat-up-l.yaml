@@ -2174,6 +2174,8 @@ endpoints:
           - inclusionai/ling-2.6-flash
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash:thinking
+          - inclusionai/ling-3.0-tiny
+          - inclusionai/ling-3.0-tiny:thinking
           - inclusionai/ring-2.6-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
