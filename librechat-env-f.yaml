@@ -1866,6 +1866,7 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
+          - meta/muse-glimmer-30b
           - meta/muse-spark-1.1
           - meta/muse-spark-1.2
           - meta/muse-spark-1.2-contributor
@@ -2045,6 +2046,7 @@ endpoints:
           - qwq-32b
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
+          - sakana/sakana-namazu
           - sarvam-105b
           - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2077,6 +2079,8 @@ endpoints:
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
           - upstage/solar-pro-3
+          - upstage/solar-pro4
+          - upstage/solar-pro4:thinking
           - venice-uncensored
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
@@ -2212,6 +2216,7 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
+          - nvidia/nemotron-3.5-lightning-30b-a3b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-mini-4b-instruct
@@ -2261,11 +2266,13 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.0-tiny:free
+          - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
           - nvidia/nemotron-3.5-content-safety:free
+          - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-nano-12b-v2-vl:free
           - nvidia/nemotron-nano-9b-v2:free
           - openai/gpt-oss-20b:free
@@ -2314,6 +2321,7 @@ endpoints:
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
+          - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
           - bytedance-seed/seed-2.0-mini
           - '---COHERE---'
@@ -2442,6 +2450,7 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3-ultra-550b-a55b:batch
+          - nvidia/nemotron-3.5-lightning
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
@@ -2670,6 +2679,7 @@ endpoints:
           - relace/relace-apply-3
           - relace/relace-search
           - sakana/fugu-ultra
+          - sakana/sakana-namazu
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - undi95/remm-slerp-l2-13b
