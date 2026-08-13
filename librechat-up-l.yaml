@@ -1313,7 +1313,6 @@ endpoints:
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
           - MiniMaxAI/MiniMax-M2.7
-          - Nanbeige/Nanbeige4.1-3B
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -1534,26 +1533,16 @@ endpoints:
           - Gemma-4-31B-Dark-Gemistry
           - Gemma-4-31B-DarkIdol
           - Gemma-4-31B-Fabled
-          - Gemma-4-31B-Garnet
           - Gemma-4-31B-GarnetV2
-          - Gemma-4-31B-Gembrain
           - Gemma-4-31B-Gembrain-X-Core
           - Gemma-4-31B-Gembrain-uncensored-heretic
-          - Gemma-4-31B-Gemopus
-          - Gemma-4-31B-Gemsicle
-          - Gemma-4-31B-Glamour
-          - Gemma-4-31B-Gutenberg
           - Gemma-4-31B-Isometry-RP
           - Gemma-4-31B-K1-v5
-          - Gemma-4-31B-Melinoe
           - Gemma-4-31B-Mero-Artemis-v0.3.1
           - Gemma-4-31B-MeroMero
-          - Gemma-4-31B-Musica-v1
           - Gemma-4-31B-Novelist
-          - Gemma-4-31B-Pantheon-Reasoning-1.1
           - Gemma-4-31B-Queen
           - Gemma-4-31B-SDFT-Heretic-RP
-          - Gemma-4-31B-Sphinsikus-Chronist
           - Gemma-4-31B-StyleTune
           - Gryphe/MythoMax-L2-13b
           - LLM360/K2-Think
@@ -1576,51 +1565,11 @@ endpoints:
           - Qwen/Qwen3-VL-235B-A22B-Instruct
           - Qwen/Qwen3.6-35B-A3B
           - Qwen/Qwen3.6-35B-A3B:thinking
-          - Qwen3.5-27B-Anko
           - Qwen3.5-27B-Blossom-V6.4-Derestricted
-          - Qwen3.5-27B-Blossom-V6.4-Derestricted-Lite
-          - Qwen3.5-27B-BlueStar-Derestricted
-          - Qwen3.5-27B-BlueStar-Derestricted-Lite
-          - Qwen3.5-27B-BlueStar-v2-Derestricted
-          - Qwen3.5-27B-BlueStar-v2-Derestricted-Lite
           - Qwen3.5-27B-BlueStar-v3-Derestricted
-          - Qwen3.5-27B-BlueStar-v3-Derestricted-Lite
           - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted
           - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted-Lite
-          - Qwen3.5-27B-Dark-Nexus-v3.0-Derestricted
-          - Qwen3.5-27B-Dark-Nexus-v3.0-Derestricted-Lite
-          - Qwen3.5-27B-Derestricted
-          - Qwen3.5-27B-Derestricted-Aconite-v0
-          - Qwen3.5-27B-Enteles-v0-Derestricted
-          - Qwen3.5-27B-Enteles-v0-Derestricted-Lite
-          - Qwen3.5-27B-Infracelestial
-          - Qwen3.5-27B-Marvin-DPO-V2-Derestricted
-          - Qwen3.5-27B-Marvin-DPO-V2-Derestricted-Lite
-          - Qwen3.5-27B-Marvin-V2-Derestricted
-          - Qwen3.5-27B-Marvin-V2-Derestricted-Lite
-          - Qwen3.5-27B-Melinoe-Derestricted
-          - Qwen3.5-27B-Melinoe-Derestricted-Lite
-          - Qwen3.5-27B-Musica-v1
-          - Qwen3.5-27B-NaNovel-Derestricted
-          - Qwen3.5-27B-NaNovel-Derestricted-Lite
-          - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted
-          - Qwen3.5-27B-Omega-Evolution-v2.0-Derestricted-Lite
-          - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted
-          - Qwen3.5-27B-Omega-Evolution-v2.2-Derestricted-Lite
-          - Qwen3.5-27B-Omnimerge-v2-Derestricted
-          - Qwen3.5-27B-Omnimerge-v2-Derestricted-Lite
           - Qwen3.5-27B-Queen-Derestricted
-          - Qwen3.5-27B-Queen-Derestricted-Lite
-          - Qwen3.5-27B-QuettaLLMs-Koreasoner-V3-Derestricted
-          - Qwen3.5-27B-QuettaLLMs-Koreasoner-V3-Derestricted-Lite
-          - Qwen3.5-27B-RpRMax-v1
-          - Qwen3.5-27B-Vivid-Durian
-          - Qwen3.5-27B-Writer-Derestricted
-          - Qwen3.5-27B-Writer-Derestricted-Lite
-          - Qwen3.5-27B-Writer-V2-Derestricted
-          - Qwen3.5-27B-Writer-V2-Derestricted-Lite
-          - Qwen3.5-27B-earica-Derestricted
-          - Qwen3.5-27B-earica-Derestricted-Lite
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
           - Salesforce/Llama-xLAM-2-70b-fc-r
           - Sao10K/L3-8B-Stheno-v3.2
@@ -1717,6 +1666,8 @@ endpoints:
           - brave
           - brave-pro
           - brave-research
+          - bytedance-seed/seed-2-1-turbo
+          - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
           - bytedance/doubao-seed-2.1-pro
           - bytedance/doubao-seed-2.1-turbo
@@ -1785,6 +1736,8 @@ endpoints:
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
+          - deepseek/deepseek-v4-pro-0813
+          - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro-cheaper
           - deepseek/deepseek-v4-pro-cheaper:thinking
           - deepseek/deepseek-v4-pro:thinking
@@ -1901,6 +1854,7 @@ endpoints:
           - linkup-research-low
           - linkup-research-medium
           - linkup-research-xhigh
+          - liquid/lfm-2.5-2.6b:free
           - longcat-2.0
           - longcat-2.0:thinking
           - meganova-ai/manta-flash-1.0
@@ -1979,6 +1933,8 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b:thinking
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3-ultra-550b-a55b:thinking
+          - nvidia/nemotron-3.5-lightning
+          - nvidia/nemotron-3.5-lightning:thinking
           - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo-preview
@@ -2088,12 +2044,10 @@ endpoints:
           - qwen3.7-plus
           - qwen3.7-plus:thinking
           - qwen3.8-max
-          - qwen3.8-max-preview
           - qwen3.8-max:thinking
           - qwq-32b
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
-          - sakana/sakana-namazu
           - sarvam-105b
           - sarvam-30b
           - shisa-ai/shisa-v2-llama3.3-70b
@@ -2133,6 +2087,7 @@ endpoints:
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
           - x-ai/grok-4.5
+          - x-ai/grok-4.6
           - x-ai/grok-build-0.1
           - x-ai/grok-latest
           - xiaomi/mimo-v2.5
@@ -2368,6 +2323,7 @@ endpoints:
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
           - bytedance-seed/seed-1.6-flash
+          - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
           - bytedance-seed/seed-2.0-mini
@@ -2389,6 +2345,7 @@ endpoints:
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash-0731
           - deepseek/deepseek-v4-pro
+          - deepseek/deepseek-v4-pro-0813
           - '---GOOGLE---'
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
@@ -2653,6 +2610,7 @@ endpoints:
           - qwen/qwen3.7-flash
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
+          - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-max
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
@@ -2676,6 +2634,7 @@ endpoints:
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
           - x-ai/grok-4.5
+          - x-ai/grok-4.6
           - x-ai/grok-build-0.1
           - '---Z-AI---'
           - z-ai/glm-4.5
