@@ -1888,7 +1888,7 @@ endpoints:
           - TEE/kimi-k2.6
           - TEE/kimi-k3
           - TEE/llama3-3-70b
-          - TEE/minimax-m2.5
+          - TEE/muse-glimmer-30b
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
@@ -2100,6 +2100,7 @@ endpoints:
           - google/gemini-3.5-flash-lite
           - google/gemini-3.5-flash-thinking
           - google/gemini-3.6-flash
+          - google/gemini-3.7-flash
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
@@ -2122,8 +2123,6 @@ endpoints:
           - inclusionai/ling-2.6-flash
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash:thinking
-          - inclusionai/ling-3.0-tiny
-          - inclusionai/ling-3.0-tiny:thinking
           - inclusionai/ring-2.6-1t
           - inflatebot/MN-12B-Mag-Mell-R1
           - inflection/inflection-3-pi
@@ -2557,7 +2556,6 @@ endpoints:
           - cohere/north-mini-code:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - inclusionai/ling-3.0-tiny:free
           - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-30b-a3b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
@@ -2665,6 +2663,8 @@ endpoints:
           - google/gemini-3.5-flash:batch
           - google/gemini-3.6-flash
           - google/gemini-3.6-flash:batch
+          - google/gemini-3.7-flash
+          - google/gemini-3.7-flash:batch
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
