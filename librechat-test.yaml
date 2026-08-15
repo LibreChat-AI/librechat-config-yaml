@@ -1476,6 +1476,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v4-flash
           - accounts/fireworks/models/deepseek-v4-flash-0731
           - accounts/fireworks/models/deepseek-v4-pro
+          - accounts/fireworks/models/deepseek-v4-pro-0813
           - accounts/fireworks/models/glm-5p2
           - accounts/fireworks/models/gpt-oss-120b
           - accounts/fireworks/models/gpt-oss-20b
@@ -1487,6 +1488,7 @@ endpoints:
           - accounts/fireworks/models/minimax-m3
           - accounts/fireworks/models/muse-glimmer-30b
           - accounts/fireworks/models/nemotron-3-ultra-nvfp4
+          - accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b
           - accounts/fireworks/models/qwen3-embedding-8b
           - accounts/fireworks/models/qwen3-reranker-8b
           - accounts/fireworks/models/qwen3p7-plus
@@ -1912,7 +1914,6 @@ endpoints:
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
           - aion-labs/aion-2.0
-          - aion-labs/aion-2.5
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
           - aion-labs/aion-rp-llama-3.1-8b
