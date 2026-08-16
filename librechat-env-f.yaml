@@ -1511,7 +1511,6 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-235B-A22B-Instruct-2507
-          - Qwen/Qwen3-235B-A22B-Instruct-2507-TEE
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Next-80B-A3B-Instruct
@@ -1550,6 +1549,7 @@ endpoints:
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2.6
+          - TEE/kimi-k2.7-code
           - TEE/kimi-k3
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
@@ -1695,6 +1695,7 @@ endpoints:
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1
           - dmind/dmind-1-mini
+          - dots-studio/dots-3-note-preview:free
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -2083,6 +2084,8 @@ endpoints:
           - zai-org/glm-5.1:thinking
           - zai-org/glm-5.2
           - zai-org/glm-5.2:thinking
+          - zai-org/glm-5.3
+          - zai-org/glm-5.3:thinking
           - zai-org/glm-5:thinking
           - zai-org/glm-latest
         fetch: false
@@ -2216,6 +2219,7 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - cohere/north-mini-code:free
+          - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
