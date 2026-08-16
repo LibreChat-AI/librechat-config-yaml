@@ -1477,7 +1477,6 @@ endpoints:
       baseURL: "https://api.fireworks.ai/inference/v1"
       models:
         default:
-          - accounts/fireworks/models/deepseek-v4-flash
           - accounts/fireworks/models/deepseek-v4-flash-0731
           - accounts/fireworks/models/deepseek-v4-pro
           - accounts/fireworks/models/deepseek-v4-pro-0813
@@ -1496,6 +1495,7 @@ endpoints:
           - accounts/fireworks/models/qwen3-embedding-8b
           - accounts/fireworks/models/qwen3-reranker-8b
           - accounts/fireworks/models/qwen3p7-plus
+          - accounts/fireworks/models/qwen3p8-2p4t-a95b
           - accounts/fireworks/models/qwen3p8-max
           - accounts/fireworks/routers/glm-5p2-fast
           - accounts/fireworks/routers/kimi-k2p6-turbo
@@ -1854,7 +1854,6 @@ endpoints:
           - NousResearch/Hermes-4-70B:thinking
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-235B-A22B-Instruct-2507
-          - Qwen/Qwen3-235B-A22B-Instruct-2507-TEE
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-8B
           - Qwen/Qwen3-Next-80B-A3B-Instruct
@@ -1893,6 +1892,7 @@ endpoints:
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2.6
+          - TEE/kimi-k2.7-code
           - TEE/kimi-k3
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
@@ -2040,6 +2040,7 @@ endpoints:
           - deepseek/deepseek-v4-pro-cheaper:thinking
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1-mini
+          - dots-studio/dots-3-note-preview:free
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -2427,6 +2428,8 @@ endpoints:
           - zai-org/glm-5.1:thinking
           - zai-org/glm-5.2
           - zai-org/glm-5.2:thinking
+          - zai-org/glm-5.3
+          - zai-org/glm-5.3:thinking
           - zai-org/glm-5:thinking
           - zai-org/glm-latest
         fetch: false
@@ -2560,6 +2563,7 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - cohere/north-mini-code:free
+          - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
@@ -2907,6 +2911,7 @@ endpoints:
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
           - qwen/qwen3.8-2.4t-a95b
+          - qwen/qwen3.8-27b
           - qwen/qwen3.8-max
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
