@@ -1871,9 +1871,10 @@ endpoints:
           - Steelskull/L3.3-MS-Evayale-70B
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
-          - TEE/deepseek-v3.1
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
+          - TEE/deepseek-v4-pro-0813
+          - TEE/deepseek-v4-pro-0813:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -2023,19 +2024,15 @@ endpoints:
           - deepseek/deepseek-v3.2:thinking
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash-0731
-          - deepseek/deepseek-v4-flash-0731-cheaper
-          - deepseek/deepseek-v4-flash-0731-cheaper:thinking
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:thinking
-          - deepseek/deepseek-v4-pro-cheaper
-          - deepseek/deepseek-v4-pro-cheaper:thinking
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1-mini
-          - dots-studio/dots-3-note-preview:free
+          - dots-studio/dots-3-note-preview
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -2319,12 +2316,15 @@ endpoints:
           - qwen3-max-2026-01-23
           - qwen3-vl-235b-a22b-instruct-original
           - qwen3-vl-235b-a22b-thinking
+          - qwen3.5-0.8b
           - qwen3.5-122b-a10b
           - qwen3.5-122b-a10b:thinking
           - qwen3.5-27b
           - qwen3.5-27b:thinking
+          - qwen3.5-2b
           - qwen3.5-35b-a3b
           - qwen3.5-35b-a3b:thinking
+          - qwen3.5-4b
           - qwen3.5-flash
           - qwen3.5-flash:thinking
           - qwen3.5-omni-flash
@@ -2336,6 +2336,8 @@ endpoints:
           - qwen3.7-max:thinking
           - qwen3.7-plus
           - qwen3.7-plus:thinking
+          - qwen3.8-27b
+          - qwen3.8-27b:thinking
           - qwen3.8-max
           - qwen3.8-max:thinking
           - sakana/fugu-ultra
@@ -2573,6 +2575,7 @@ endpoints:
           - openai/gpt-oss-20b:free
           - poolside/laguna-s-2.1:free
           - poolside/laguna-xs-2.1:free
+          - z-ai/glm-5.2:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
