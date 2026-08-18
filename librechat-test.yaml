@@ -1581,8 +1581,6 @@ endpoints:
           - canopylabs/orpheus-v1-english
           - groq/compound
           - groq/compound-mini
-          - llama-3.1-8b-instant
-          - llama-3.3-70b-versatile
           - meta-llama/llama-prompt-guard-2-22m
           - meta-llama/llama-prompt-guard-2-86m
           - openai/gpt-oss-120b
@@ -2038,7 +2036,6 @@ endpoints:
           - doubao-1.5-vision-pro-32k
           - doubao-seed-1-6-250615
           - doubao-seed-1-6-flash-250615
-          - doubao-seed-1-8-251215
           - doubao-seed-2-0-code-preview-260215
           - doubao-seed-2-0-lite-260215
           - doubao-seed-2-0-mini-260215
@@ -2168,8 +2165,6 @@ endpoints:
           - minimax/minimax-m2.7-turbo
           - minimax/minimax-m3
           - minimax/minimax-m3:thinking
-          - mirothinker-1-7-deepresearch
-          - mirothinker-1-7-deepresearch-mini
           - mistral-code-agent-latest
           - mistral-code-latest
           - mistral-small-31-24b-instruct
@@ -2354,9 +2349,6 @@ endpoints:
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
-          - step-2-16k-exp
-          - step-2-mini
-          - step-3
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
