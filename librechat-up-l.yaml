@@ -1580,8 +1580,6 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
-          - TEE/deepseek-v4-pro-0813
-          - TEE/deepseek-v4-pro-0813:thinking
           - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -2656,7 +2654,6 @@ endpoints:
           - ~anthropic/claude-opus-latest
           - ~anthropic/claude-sonnet-latest
           - '---OTHERS---'
-          - ai21/jamba-large-1.7
           - allenai/olmo-3-32b-think
           - anthracite-org/magnum-v4-72b
           - arcee-ai/trinity-large-thinking
@@ -2669,7 +2666,6 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.1-8b
           - inception/mercury-2
-          - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
@@ -2701,6 +2697,7 @@ endpoints:
           - ~openai/gpt-latest
           - ~openai/gpt-mini-latest
           - ~x-ai/grok-latest
+          - ~z-ai/glm-latest
         fetch: false
       dropParams:
         - "stop"
