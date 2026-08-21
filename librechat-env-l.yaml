@@ -2208,6 +2208,8 @@ endpoints:
           - openai/o4-mini
           - openai/o4-mini-deep-research
           - openai/o4-mini-high
+          - ornith-ai/ornith-1.5-35b-a3b
+          - ornith-ai/ornith-1.5-35b-a3b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perplexity-academic-researcher
@@ -2411,6 +2413,7 @@ endpoints:
           - mistralai/mistral-nemotron
           - mistralai/mixtral-8x22b-v0.1
           - moonshotai/kimi-k2.6
+          - moonshotai/kimi-k3
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
@@ -2644,6 +2647,7 @@ endpoints:
           - mistralai/codestral-2508
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
+          - mistralai/ministral-8b
           - mistralai/ministral-8b-2512
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
@@ -2843,6 +2847,8 @@ endpoints:
           - sao10k/l3.3-euryale-70b
           - '---TENCENT---'
           - tencent/hunyuan-a13b-instruct
+          - tencent/hy-mt2-1.8b
+          - tencent/hy-mt2-30b-a3b
           - tencent/hy3
           - tencent/hy3-preview
           - '---THEDRUMMER---'
@@ -2894,6 +2900,7 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.1-8b
           - inception/mercury-2
+          - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
@@ -2910,6 +2917,7 @@ endpoints:
           - relace/relace-search
           - sakana/fugu-ultra
           - sakana/sakana-namazu
+          - stealth/ox-alpha
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - undi95/remm-slerp-l2-13b
