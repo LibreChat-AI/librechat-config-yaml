@@ -2102,6 +2102,7 @@ endpoints:
           - google/gemini-pro-latest
           - google/gemma-4-26b-a4b-it
           - google/gemma-4-26b-a4b-it:thinking
+          - google/gemma-4-26b-a4b-uncensored
           - google/gemma-4-31b-it
           - google/gemma-4-31b-it:thinking
           - hermes-high
@@ -2920,6 +2921,7 @@ endpoints:
           - tencent/hunyuan-a13b-instruct
           - tencent/hy-mt2-1.8b
           - tencent/hy-mt2-30b-a3b
+          - tencent/hy-mt2-7b
           - tencent/hy3
           - tencent/hy3-preview
           - '---THEDRUMMER---'
