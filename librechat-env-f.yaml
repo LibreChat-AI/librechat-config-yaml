@@ -1769,6 +1769,7 @@ endpoints:
           - Gemma-4-31B-K1-v5
           - Gemma-4-31B-Mero-Artemis-v0.3.1
           - Gemma-4-31B-MeroMero
+          - Gemma-4-31B-MeroMero-v2
           - Gemma-4-31B-Novelist
           - Gemma-4-31B-Queen
           - Gemma-4-31B-SDFT-Heretic-RP
@@ -1857,7 +1858,6 @@ endpoints:
           - alibaba/qwen3.6-flash
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
-          - amazon/nova-micro-v1
           - amazon/nova-pro-v1
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
@@ -2214,6 +2214,7 @@ endpoints:
           - openai/o4-mini-high
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
+          - ornith-ai/ornith-1.5-9b
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perplexity-academic-researcher
