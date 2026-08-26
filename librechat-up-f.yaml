@@ -576,7 +576,6 @@ endpoints:
           - claude-4-sonnet
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
-          - claude-haiku-latest
           - claude-instant-v1
           - claude-opus
           - claude-opus-4
@@ -630,7 +629,6 @@ endpoints:
           - deepseek-3-2
           - deepseek-3-2-exp
           - deepseek-4-flash
-          - deepseek-4-pro
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
@@ -655,7 +653,6 @@ endpoints:
           - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
           - deepseek-v4-flash
-          - deepseek-v4-pro
           - devstral
           - devstral-2512
           - devstral-medium
@@ -1239,7 +1236,6 @@ endpoints:
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
           - qwen-3-6-35b-a3b
-          - qwen-3-6-max-preview
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -2240,6 +2236,8 @@ endpoints:
           - qwen/qwen3.6-35b-a3b-uncensored:thinking
           - qwen/qwen3.8-27b-obliterated
           - qwen/qwen3.8-27b-obliterated:thinking
+          - qwen/qwen3.8-27b-uncensored
+          - qwen/qwen3.8-27b-uncensored:thinking
           - qwen25-vl-72b-instruct
           - qwen3-30b-a3b-instruct-2507
           - qwen3-coder-30b-a3b-instruct
@@ -2374,7 +2372,6 @@ endpoints:
           - adept/fuyu-8b
           - ai21labs/jamba-1.5-large-instruct
           - aisingapore/sea-lion-7b-instruct
-          - baai/bge-m3
           - bigcode/starcoder2-15b
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
@@ -2432,11 +2429,9 @@ endpoints:
           - nvidia/llama-3.2-nv-embedqa-1b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1
           - nvidia/llama-3.3-nemotron-super-49b-v1.5
-          - nvidia/llama-nemotron-embed-1b-v2
           - nvidia/llama-nemotron-embed-vl-1b-v2
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
-          - nvidia/nemoretriever-parse
           - nvidia/nemotron-3-embed-1b
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
@@ -2451,9 +2446,6 @@ endpoints:
           - nvidia/nemotron-nano-3-30b-a3b
           - nvidia/nemotron-parse
           - nvidia/neva-22b
-          - nvidia/nv-embed-v1
-          - nvidia/nv-embedcode-7b-v1
-          - nvidia/nv-embedqa-e5-v5
           - nvidia/nv-embedqa-mistral-7b-v2
           - nvidia/nvclip
           - nvidia/nvidia-nemotron-nano-9b-v2
@@ -2466,7 +2458,6 @@ endpoints:
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
           - stepfun-ai/step-3.7-flash
-          - thinkingmachines/inkling
           - writer/palmyra-creative-122b
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
@@ -2492,6 +2483,8 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
+          - minimax/minimax-m2.7:free
+          - minimax/minimax-m3:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2604,7 +2597,6 @@ endpoints:
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
           - google/gemma-3-4b-it
-          - google/gemma-3n-e4b-it
           - google/gemma-4-26b-a4b-it
           - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
@@ -2790,7 +2782,6 @@ endpoints:
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-plus
           - qwen/qwen-plus-2025-07-28
-          - qwen/qwen-plus-2025-07-28:thinking
           - qwen/qwen2.5-vl-72b-instruct
           - qwen/qwen3-14b
           - qwen/qwen3-235b-a22b
