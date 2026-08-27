@@ -738,7 +738,6 @@ endpoints:
           - gpt-5-5
           - gpt-5-5-2026-04-23
           - gpt-5-5-pro
-          - gpt-5-5-pro-2026-04-23
           - gpt-5-6-luna
           - gpt-5-6-sol
           - gpt-5-6-terra
@@ -757,7 +756,6 @@ endpoints:
           - gpt-5-search-api-2025-10-14
           - gpt-audio
           - gpt-audio-mini
-          - gpt-mini-latest
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
@@ -943,7 +941,6 @@ endpoints:
           - nemotron-nano-3-30b
           - nemotron-nano-9b-2
           - nemotron-nano-9b-v2
-          - nex-n2-pro
           - noromaid-20b
           - nova-2-lite
           - nova-2-lite-v1
@@ -1241,6 +1238,7 @@ endpoints:
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
           - qwen/qwen3.6-27b
+          - qwen/qwen3.8-27b
         fetch: false
       titleConvo: true
       titleModel: "mixtral-8x7b-32768"
@@ -1471,6 +1469,8 @@ endpoints:
           - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.6-Derestricted-v5
           - GalrionSoftworks/MN-LooseCannon-12B-v1
+          - Gemma-4-26B-A4B-MeroMero
+          - Gemma-4-26B-A4B-MeroMero:thinking
           - Gemma-4-31B-Agares-v1
           - Gemma-4-31B-Animus-V14.1
           - Gemma-4-31B-AssGuard
@@ -1577,6 +1577,7 @@ endpoints:
           - alibaba/qwen3.6-27b
           - alibaba/qwen3.6-27b:thinking
           - alibaba/qwen3.6-flash
+          - alibaba/qwen3.8-flash
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-pro-v1
@@ -1967,6 +1968,7 @@ endpoints:
           - qwen/qwen3.5-plus-thinking
           - qwen/qwen3.6-35b-a3b-uncensored
           - qwen/qwen3.6-35b-a3b-uncensored:thinking
+          - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-27b-obliterated
           - qwen/qwen3.8-27b-obliterated:thinking
           - qwen/qwen3.8-27b-uncensored
@@ -2016,7 +2018,6 @@ endpoints:
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
-          - stealth/ox-alpha
           - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
@@ -2058,6 +2059,7 @@ endpoints:
           - z-ai/glm-4.6
           - z-ai/glm-4.6:thinking
           - z-ai/glm-5-turbo
+          - z-ai/glm-5.3-flash
           - z-ai/glm-5v-turbo
           - z-ai/glm-5v-turbo:thinking
           - zai-org/GLM-4.5-Air
@@ -2110,6 +2112,7 @@ endpoints:
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-v4-flash-0731
+          - deepseek-ai/deepseek-v4-pro-0813
           - google/codegemma-1.1-7b
           - google/codegemma-7b
           - google/deplot
@@ -2124,13 +2127,8 @@ endpoints:
           - ibm/granite-34b-code-instruct
           - ibm/granite-8b-code-instruct
           - meta/codellama-70b
-          - meta/llama-3.1-70b-instruct
-          - meta/llama-3.1-8b-instruct
           - meta/llama-3.2-11b-vision-instruct
-          - meta/llama-3.2-1b-instruct
-          - meta/llama-3.2-3b-instruct
           - meta/llama-3.2-90b-vision-instruct
-          - meta/llama-3.3-70b-instruct
           - meta/llama-guard-4-12b
           - meta/llama2-70b
           - meta/muse-glimmer-30b
@@ -2155,14 +2153,10 @@ endpoints:
           - nvidia/llama-3.1-nemoguard-8b-topic-control
           - nvidia/llama-3.1-nemotron-51b-instruct
           - nvidia/llama-3.1-nemotron-70b-instruct
-          - nvidia/llama-3.1-nemotron-nano-8b-v1
-          - nvidia/llama-3.1-nemotron-nano-vl-8b-v1
           - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.1-nemotron-ultra-253b-v1
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v1
-          - nvidia/llama-3.3-nemotron-super-49b-v1
-          - nvidia/llama-3.3-nemotron-super-49b-v1.5
           - nvidia/llama-nemotron-embed-vl-1b-v2
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
@@ -2175,14 +2169,11 @@ endpoints:
           - nvidia/nemotron-3.5-lightning-30b-a3b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
-          - nvidia/nemotron-mini-4b-instruct
-          - nvidia/nemotron-nano-12b-v2-vl
           - nvidia/nemotron-nano-3-30b-a3b
           - nvidia/nemotron-parse
           - nvidia/neva-22b
           - nvidia/nv-embedqa-mistral-7b-v2
           - nvidia/nvclip
-          - nvidia/nvidia-nemotron-nano-9b-v2
           - nvidia/riva-translate-4b-instruct
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/riva-translate-4b-instruct-v2
@@ -2561,6 +2552,7 @@ endpoints:
           - qwen/qwen3.7-plus
           - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-27b
+          - qwen/qwen3.8-flash
           - qwen/qwen3.8-max
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
@@ -2601,8 +2593,8 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
-          - z-ai/glm-5.2:batch
           - z-ai/glm-5.3
+          - z-ai/glm-5.3-flash
           - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
@@ -2639,7 +2631,6 @@ endpoints:
           - relace/relace-search
           - sakana/fugu-ultra
           - sakana/sakana-namazu
-          - stealth/ox-alpha
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - undi95/remm-slerp-l2-13b
