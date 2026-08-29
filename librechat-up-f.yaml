@@ -1469,6 +1469,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v4-pro
           - accounts/fireworks/models/deepseek-v4-pro-0813
           - accounts/fireworks/models/glm-5p2
+          - accounts/fireworks/models/glm-5p3
           - accounts/fireworks/models/glm-5p3-flash
           - accounts/fireworks/models/gpt-oss-120b
           - accounts/fireworks/models/gpt-oss-20b
@@ -1797,7 +1798,6 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
-          - TEE/gemma-3-27b-it
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
           - TEE/gemma4-31b
@@ -1807,6 +1807,7 @@ endpoints:
           - TEE/glm-5.1-thinking
           - TEE/glm-5.2
           - TEE/glm-5.2:thinking
+          - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
           - TEE/gpt-oss-20b
           - TEE/kimi-k2.6
@@ -1815,7 +1816,6 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
           - TEE/qwen2.5-vl-72b-instruct
-          - TEE/qwen3.5-122b-a10b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
@@ -1837,6 +1837,8 @@ endpoints:
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
+          - abliterated-model
+          - abliterated-model-large
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
@@ -2027,10 +2029,23 @@ endpoints:
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
           - google/gemma-4-26b-a4b-it
+          - google/gemma-4-26b-a4b-it-chimerax
+          - google/gemma-4-26b-a4b-it-darksoul
+          - google/gemma-4-26b-a4b-it-luminous
+          - google/gemma-4-26b-a4b-it-moonlight
+          - google/gemma-4-26b-a4b-it-musica
+          - google/gemma-4-26b-a4b-it-opusdistill
+          - google/gemma-4-26b-a4b-it-shadowsiren
           - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-26b-a4b-uncensored
           - google/gemma-4-26b-a4b-uncensored:thinking
           - google/gemma-4-31b-it
+          - google/gemma-4-31b-it-darkidol
+          - google/gemma-4-31b-it-fabled
+          - google/gemma-4-31b-it-garnet
+          - google/gemma-4-31b-it-gembrain
+          - google/gemma-4-31b-it-isometry
+          - google/gemma-4-31b-it-novelist
           - google/gemma-4-31b-it:thinking
           - hermes-high
           - hermes-low
@@ -2046,7 +2061,6 @@ endpoints:
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash:thinking
           - inflatebot/MN-12B-Mag-Mell-R1
-          - inflection/inflection-3-pi
           - inflection/inflection-3-productivity
           - jamba-large
           - jamba-large-1.6
@@ -2238,6 +2252,7 @@ endpoints:
           - qwen/qwen3.6-35b-a3b-uncensored
           - qwen/qwen3.6-35b-a3b-uncensored:thinking
           - qwen/qwen3.8-2.4t-a95b
+          - qwen/qwen3.8-27b-fable
           - qwen/qwen3.8-27b-obliterated
           - qwen/qwen3.8-27b-obliterated:thinking
           - qwen/qwen3.8-27b-uncensored
@@ -2292,6 +2307,7 @@ endpoints:
           - stepfun/step-3.7-flash:thinking
           - tencent/Hunyuan-MT-7B
           - tencent/hy3
+          - tencent/hy4-preview
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
@@ -2451,7 +2467,6 @@ endpoints:
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
-          - stepfun-ai/step-3.7-flash
           - writer/palmyra-creative-122b
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
@@ -2554,9 +2569,11 @@ endpoints:
           - deepseek/deepseek-v3.2-exp
           - deepseek/deepseek-v4-flash
           - deepseek/deepseek-v4-flash-0731
+          - deepseek/deepseek-v4-flash-0731:batch
           - deepseek/deepseek-v4-flash-vision-exp
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
+          - deepseek/deepseek-v4-pro-0813:batch
           - '---GOOGLE---'
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
@@ -2594,6 +2611,7 @@ endpoints:
           - google/gemma-3-4b-it
           - google/gemma-4-26b-a4b-it
           - google/gemma-4-31b-it
+          - google/gemma-4-31b-it:batch
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
           - '---KWAIPILOT---'
@@ -2602,6 +2620,7 @@ endpoints:
           - kwaipilot/kat-coder-pro-v2.5
           - '---META---'
           - meta/muse-glimmer-30b
+          - meta/muse-glimmer-30b:batch
           - meta/muse-spark-1.1
           - meta/muse-spark-1.2
           - meta/muse-spark-1.2-contributor
@@ -2626,20 +2645,26 @@ endpoints:
           - minimax/minimax-m3:batch
           - '---MISTRALAI---'
           - mistralai/codestral-2508
+          - mistralai/codestral-2508:batch
           - mistralai/devstral-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
+          - mistralai/ministral-8b-2512:batch
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2512
+          - mistralai/mistral-large-2512:batch
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
+          - mistralai/mistral-medium-3-5:batch
           - mistralai/mistral-medium-3.1
+          - mistralai/mistral-medium-3.1:batch
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
           - mistralai/mistral-small-24b-instruct-2501
           - mistralai/mistral-small-2603
+          - mistralai/mistral-small-2603:batch
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mixtral-8x22b-instruct
@@ -2652,6 +2677,7 @@ endpoints:
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-k3
+          - moonshotai/kimi-k3:batch
           - '---NOUSRESEARCH---'
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
@@ -2712,7 +2738,9 @@ endpoints:
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
           - openai/gpt-oss-120b
+          - openai/gpt-oss-120b:batch
           - openai/gpt-oss-20b
+          - openai/gpt-oss-20b:batch
           - openai/gpt-oss-safeguard-20b
           - openai/o1
           - openai/o1-pro
@@ -2771,6 +2799,7 @@ endpoints:
           - qwen/qwen3.5-35b-a3b
           - qwen/qwen3.5-397b-a17b
           - qwen/qwen3.5-9b
+          - qwen/qwen3.5-9b:batch
           - qwen/qwen3.5-flash-02-23
           - qwen/qwen3.5-plus-02-15
           - qwen/qwen3.5-plus-20260420
@@ -2783,6 +2812,7 @@ endpoints:
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
           - qwen/qwen3.8-2.4t-a95b
+          - qwen/qwen3.8-2.4t-a95b:batch
           - qwen/qwen3.8-27b
           - qwen/qwen3.8-flash
           - qwen/qwen3.8-max
@@ -2797,6 +2827,7 @@ endpoints:
           - tencent/hy-mt2-7b
           - tencent/hy3
           - tencent/hy3-preview
+          - tencent/hy4-preview
           - '---THEDRUMMER---'
           - thedrummer/cydonia-24b-v4.1
           - thedrummer/skyfall-36b-v2
@@ -2804,6 +2835,7 @@ endpoints:
           - '---THINKINGMACHINES---'
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
+          - thinkingmachines/inkling-small:batch
           - thinkingmachines/inkling:batch
           - '---X-AI---'
           - x-ai/grok-4.20
@@ -2826,6 +2858,7 @@ endpoints:
           - z-ai/glm-5.2
           - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
+          - z-ai/glm-5.3-flash:batch
           - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
@@ -2833,10 +2866,8 @@ endpoints:
           - ~anthropic/claude-opus-latest
           - ~anthropic/claude-sonnet-latest
           - '---OTHERS---'
-          - allenai/olmo-3-32b-think
           - anthracite-org/magnum-v4-72b
           - arcee-ai/trinity-large-thinking
-          - arcee-ai/virtuoso-large
           - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
