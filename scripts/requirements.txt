@@ -22,7 +22,7 @@ pydantic==2.13.4
     # via -r requirements.in
 pydantic-core==2.46.4
     # via pydantic
-python-dotenv==1.2.2
+python-dotenv==1.2.3
     # via -r requirements.in
 ruamel-yaml==0.19.1
     # via -r requirements.in
