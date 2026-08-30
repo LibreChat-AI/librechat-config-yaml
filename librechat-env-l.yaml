@@ -1257,7 +1257,6 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
-          - MiniMaxAI/MiniMax-M2.7
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -1309,6 +1308,7 @@ endpoints:
           - zai-org/GLM-5
           - zai-org/GLM-5.1
           - zai-org/GLM-5.2
+          - zai-org/GLM-5.3
           - zai-org/GLM-5.3-Flash
         fetch: false
       titleConvo: true
@@ -1568,8 +1568,8 @@ endpoints:
           - Tongyi-Zhiwen/QwenLong-L1-32B
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
-          - abliterated-model
-          - abliterated-model-large
+          - abliteration-ai/abliterated-model
+          - abliteration-ai/abliterated-model-large
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
@@ -1686,7 +1686,6 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
           - dmind/dmind-1
-          - dmind/dmind-1-mini
           - dots-studio/dots-3-note-preview
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
@@ -1728,21 +1727,31 @@ endpoints:
           - gemini-3-pro-image-preview
           - gemini-exp-1206
           - gemma-4-12b-it
+          - gemma-4-26b-a4b-it-chimerax
+          - gemma-4-26b-a4b-it-darksoul
+          - gemma-4-26b-a4b-it-luminous
+          - gemma-4-26b-a4b-it-moonlight
+          - gemma-4-26b-a4b-it-musica
+          - gemma-4-26b-a4b-it-opusdistill
+          - gemma-4-26b-a4b-it-shadowsiren
+          - gemma-4-26b-a4b-uncensored
+          - gemma-4-26b-a4b-uncensored:thinking
+          - gemma-4-31b-it-darkidol
+          - gemma-4-31b-it-fabled
+          - gemma-4-31b-it-garnet
+          - gemma-4-31b-it-gembrain
+          - gemma-4-31b-it-gemsicle
+          - gemma-4-31b-it-isometry
+          - gemma-4-31b-it-novelist
           - gemma-4-e2b-it
           - gemma-4-e4b-it
-          - glm-4
-          - glm-4-air
           - glm-4-air-0111
-          - glm-4-airx
-          - glm-4-flash
           - glm-4-long
-          - glm-4-plus
           - glm-4-plus-0111
           - glm-4.1v-thinking-flash
           - glm-4.1v-thinking-flashx
           - glm-z1-air
           - glm-z1-airx
-          - glm-zero-preview
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
           - google/gemini-3.1-flash-lite
@@ -1760,23 +1769,8 @@ endpoints:
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
           - google/gemma-4-26b-a4b-it
-          - google/gemma-4-26b-a4b-it-chimerax
-          - google/gemma-4-26b-a4b-it-darksoul
-          - google/gemma-4-26b-a4b-it-luminous
-          - google/gemma-4-26b-a4b-it-moonlight
-          - google/gemma-4-26b-a4b-it-musica
-          - google/gemma-4-26b-a4b-it-opusdistill
-          - google/gemma-4-26b-a4b-it-shadowsiren
           - google/gemma-4-26b-a4b-it:thinking
-          - google/gemma-4-26b-a4b-uncensored
-          - google/gemma-4-26b-a4b-uncensored:thinking
           - google/gemma-4-31b-it
-          - google/gemma-4-31b-it-darkidol
-          - google/gemma-4-31b-it-fabled
-          - google/gemma-4-31b-it-garnet
-          - google/gemma-4-31b-it-gembrain
-          - google/gemma-4-31b-it-isometry
-          - google/gemma-4-31b-it-novelist
           - google/gemma-4-31b-it:thinking
           - hermes-high
           - hermes-low
@@ -1787,23 +1781,14 @@ endpoints:
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
-          - hunyuan-turbos-20250226
           - ibm-granite/granite-4.1-8b
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash:thinking
           - inflatebot/MN-12B-Mag-Mell-R1
-          - inflection/inflection-3-productivity
-          - jamba-large
-          - jamba-large-1.6
-          - jamba-large-1.7
-          - jamba-mini
-          - jamba-mini-1.6
-          - jamba-mini-1.7
           - kimi-k2-instruct-fast
           - kwaipilot/kat-coder-air-v2.5
           - kwaipilot/kat-coder-pro-v2
           - kwaipilot/kat-coder-pro-v2.5
-          - learnlm-1.5-pro-experimental
           - linkup-research-high
           - linkup-research-low
           - linkup-research-medium
@@ -1943,8 +1928,6 @@ endpoints:
           - openai/o4-mini-high
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
-          - ornith-ai/ornith-1.5-397b
-          - ornith-ai/ornith-1.5-397b:thinking
           - ornith-ai/ornith-1.5-9b
           - ornith-ai/ornith-1.5-9b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
@@ -2030,7 +2013,6 @@ endpoints:
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
-          - step-r1-v-mini
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
@@ -2065,47 +2047,46 @@ endpoints:
           - xiaomi/mimo-v2.5-pro:thinking
           - xiaomi/mimo-v2.5:thinking
           - yi-large
-          - yi-lightning
           - yi-medium-200k
+          - z-ai/GLM-4.5-Air
+          - z-ai/GLM-4.5-Air:thinking
+          - z-ai/GLM-4.5:thinking
+          - z-ai/GLM-4.6-turbo
+          - z-ai/GLM-4.6-turbo:thinking
+          - z-ai/GLM-5-NVFP4-TEE
+          - z-ai/glm-4.5
           - z-ai/glm-4.5v
           - z-ai/glm-4.5v:thinking
           - z-ai/glm-4.6
+          - z-ai/glm-4.6-original
           - z-ai/glm-4.6:thinking
+          - z-ai/glm-4.6v
+          - z-ai/glm-4.6v-flash-original
+          - z-ai/glm-4.6v-original
+          - z-ai/glm-4.7
+          - z-ai/glm-4.7-flash
+          - z-ai/glm-4.7-flash-original
+          - z-ai/glm-4.7-flash-original:thinking
+          - z-ai/glm-4.7-flash:thinking
+          - z-ai/glm-4.7-original
+          - z-ai/glm-4.7-original:thinking
+          - z-ai/glm-4.7:thinking
+          - z-ai/glm-5
+          - z-ai/glm-5-original
+          - z-ai/glm-5-original:thinking
           - z-ai/glm-5-turbo
+          - z-ai/glm-5.1
+          - z-ai/glm-5.1:thinking
+          - z-ai/glm-5.2
+          - z-ai/glm-5.2:thinking
+          - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash-uncensored
+          - z-ai/glm-5.3:thinking
+          - z-ai/glm-5:thinking
           - z-ai/glm-5v-turbo
           - z-ai/glm-5v-turbo:thinking
-          - zai-org/GLM-4.5-Air
-          - zai-org/GLM-4.5-Air:thinking
-          - zai-org/GLM-4.5:thinking
-          - zai-org/GLM-4.6-turbo
-          - zai-org/GLM-4.6-turbo:thinking
-          - zai-org/GLM-5-NVFP4-TEE
-          - zai-org/glm-4.5
-          - zai-org/glm-4.6-original
-          - zai-org/glm-4.6v
-          - zai-org/glm-4.6v-flash-original
-          - zai-org/glm-4.6v-original
-          - zai-org/glm-4.7
-          - zai-org/glm-4.7-flash
-          - zai-org/glm-4.7-flash-original
-          - zai-org/glm-4.7-flash-original:thinking
-          - zai-org/glm-4.7-flash:thinking
-          - zai-org/glm-4.7-original
-          - zai-org/glm-4.7-original:thinking
-          - zai-org/glm-4.7:thinking
-          - zai-org/glm-5
-          - zai-org/glm-5-original
-          - zai-org/glm-5-original:thinking
-          - zai-org/glm-5.1
-          - zai-org/glm-5.1:thinking
-          - zai-org/glm-5.2
-          - zai-org/glm-5.2:thinking
-          - zai-org/glm-5.3
-          - zai-org/glm-5.3:thinking
-          - zai-org/glm-5:thinking
-          - zai-org/glm-latest
+          - z-ai/glm-latest
         fetch: false
       titleConvo: true
       titleModel: "current_model"
