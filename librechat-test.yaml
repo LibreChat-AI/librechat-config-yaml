@@ -1475,7 +1475,6 @@ endpoints:
           - accounts/fireworks/models/glm-5p3
           - accounts/fireworks/models/glm-5p3-flash
           - accounts/fireworks/models/gpt-oss-120b
-          - accounts/fireworks/models/gpt-oss-20b
           - accounts/fireworks/models/inkling
           - accounts/fireworks/models/kimi-k2p6
           - accounts/fireworks/models/kimi-k2p7-code
@@ -1491,8 +1490,6 @@ endpoints:
           - accounts/fireworks/models/qwen3p8-2p4t-a95b
           - accounts/fireworks/models/qwen3p8-max
           - accounts/fireworks/routers/glm-5p2-fast
-          - accounts/fireworks/routers/kimi-k2p6-turbo
-          - accounts/fireworks/routers/kimi-k2p7-code-fast
           - accounts/fireworks/routers/kimi-k3-fast
         fetch: false
       titleConvo: true
@@ -1972,7 +1969,6 @@ endpoints:
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
           - claude-opus-4-1-thinking:1024
-          - claude-opus-4-1-thinking:32000
           - claude-opus-4-1-thinking:32768
           - claude-opus-4-1-thinking:8192
           - claude-opus-4-20250514
@@ -1980,7 +1976,6 @@ endpoints:
           - claude-opus-4-5-20251101:thinking
           - claude-opus-4-thinking
           - claude-opus-4-thinking:1024
-          - claude-opus-4-thinking:32000
           - claude-opus-4-thinking:32768
           - claude-opus-4-thinking:8192
           - claude-sonnet-4-20250514
