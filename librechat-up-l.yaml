@@ -1551,7 +1551,6 @@ endpoints:
           - NousResearch/Hermes-4-70B:thinking
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-Coder-32B-Instruct
-          - Qwen/Qwen3-235B-A22B
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-235B-A22B-Thinking-2507
           - Qwen/Qwen3-8B
@@ -1674,7 +1673,6 @@ endpoints:
           - claude-opus-4-1-20250805
           - claude-opus-4-1-thinking
           - claude-opus-4-1-thinking:1024
-          - claude-opus-4-1-thinking:32000
           - claude-opus-4-1-thinking:32768
           - claude-opus-4-1-thinking:8192
           - claude-opus-4-20250514
@@ -1682,7 +1680,6 @@ endpoints:
           - claude-opus-4-5-20251101:thinking
           - claude-opus-4-thinking
           - claude-opus-4-thinking:1024
-          - claude-opus-4-thinking:32000
           - claude-opus-4-thinking:32768
           - claude-opus-4-thinking:8192
           - claude-sonnet-4-20250514
