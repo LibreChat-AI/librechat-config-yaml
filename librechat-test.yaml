@@ -1335,7 +1335,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Pro
           - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
-          - google/gemma-7b-it
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
@@ -1641,6 +1640,7 @@ endpoints:
           - anthracite-org/magnum-v2-72b
           - anthracite-org/magnum-v4-72b
           - anthropic/claude-fable-5
+          - anthropic/claude-fable-5.1
           - anthropic/claude-fable-latest
           - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4.6
@@ -1740,7 +1740,6 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
-          - dmind/dmind-1
           - dots-studio/dots-3-note-preview
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
@@ -1838,6 +1837,7 @@ endpoints:
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
           - ibm-granite/granite-4.1-8b
           - ibm-granite/granite-4.2-8b
+          - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash:thinking
           - inflatebot/MN-12B-Mag-Mell-R1
@@ -2213,7 +2213,6 @@ endpoints:
           - nvidia/llama3-chatqa-1.5-70b
           - nvidia/mistral-nemo-minitron-8b-8k-instruct
           - nvidia/nemotron-3-embed-1b
-          - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
@@ -2286,6 +2285,7 @@ endpoints:
           - '---ANTHROPIC---'
           - anthropic/claude-3-haiku
           - anthropic/claude-fable-5
+          - anthropic/claude-fable-5.1
           - anthropic/claude-fable-5:batch
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:batch
@@ -2297,13 +2297,10 @@ endpoints:
           - anthropic/claude-opus-4.6
           - anthropic/claude-opus-4.6:batch
           - anthropic/claude-opus-4.7
-          - anthropic/claude-opus-4.7-fast
           - anthropic/claude-opus-4.7:batch
           - anthropic/claude-opus-4.8
-          - anthropic/claude-opus-4.8-fast
           - anthropic/claude-opus-4.8:batch
           - anthropic/claude-opus-5
-          - anthropic/claude-opus-5-fast
           - anthropic/claude-opus-5:batch
           - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
@@ -2412,26 +2409,21 @@ endpoints:
           - minimax/minimax-m3:batch
           - '---MISTRALAI---'
           - mistralai/codestral-2508
-          - mistralai/codestral-2508:batch
           - mistralai/devstral-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
-          - mistralai/ministral-8b-2512:batch
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2512
-          - mistralai/mistral-large-2512:batch
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
           - mistralai/mistral-medium-3-5:batch
           - mistralai/mistral-medium-3.1
-          - mistralai/mistral-medium-3.1:batch
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
           - mistralai/mistral-small-24b-instruct-2501
           - mistralai/mistral-small-2603
-          - mistralai/mistral-small-2603:batch
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mixtral-8x22b-instruct
@@ -2669,6 +2661,7 @@ endpoints:
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
           - gryphe/mythomax-l2-13b
           - inception/mercury-2
+          - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
           - kwaipilot/kat-coder-pro-v2
           - kwaipilot/kat-coder-pro-v2.5
@@ -2704,6 +2697,7 @@ endpoints:
           - ~openai/gpt-latest
           - ~openai/gpt-mini-latest
           - ~x-ai/grok-latest
+          - ~z-ai/glm-flash-latest
           - ~z-ai/glm-latest
         fetch: false
       dropParams:
