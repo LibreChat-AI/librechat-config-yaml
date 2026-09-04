@@ -1676,7 +1676,6 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
-          - dots-studio/dots-3-note-preview
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -1740,7 +1739,6 @@ endpoints:
           - glm-4-plus-0111
           - glm-4.1v-thinking-flash
           - glm-4.1v-thinking-flashx
-          - glm-z1-air
           - glm-z1-airx
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
@@ -1853,7 +1851,6 @@ endpoints:
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-405b:thinking
-          - nousresearch/hermes-4-70b
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
@@ -2154,7 +2151,6 @@ endpoints:
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/riva-translate-4b-instruct-v2
           - nvidia/vila
-          - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
@@ -2377,6 +2373,7 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
+          - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
@@ -2559,6 +2556,7 @@ endpoints:
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
+          - x-ai/grok-4.3:batch
           - x-ai/grok-4.5
           - x-ai/grok-4.6
           - x-ai/grok-build-0.1
@@ -2593,6 +2591,7 @@ endpoints:
           - inception/mercury-2
           - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
+          - inclusionai/ling-3.0-flash-fin
           - kwaipilot/kat-coder-pro-v2
           - kwaipilot/kat-coder-pro-v2.5
           - mancer/weaver
