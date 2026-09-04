@@ -970,7 +970,6 @@ endpoints:
           - l3-8b-lunaris-v1-turbo
           - l3-euryale-70b
           - l3-lunaris-8b
-          - laguna-m-1
           - large-context
           - learnlm-1-5-pro-experimental
           - lfm-2-2-6b
@@ -1469,6 +1468,7 @@ endpoints:
           - accounts/fireworks/models/qwen3p8-2p4t-a95b
           - accounts/fireworks/models/qwen3p8-max
           - accounts/fireworks/routers/glm-5p2-fast
+          - accounts/fireworks/routers/glm-5p3-fast
           - accounts/fireworks/routers/kimi-k3-fast
         fetch: false
       titleConvo: true
@@ -1957,7 +1957,6 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
-          - dots-studio/dots-3-note-preview
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -2020,7 +2019,6 @@ endpoints:
           - glm-4-plus-0111
           - glm-4.1v-thinking-flash
           - glm-4.1v-thinking-flashx
-          - glm-z1-air
           - glm-z1-airx
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
@@ -2137,7 +2135,6 @@ endpoints:
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
           - nousresearch/hermes-4-405b:thinking
-          - nousresearch/hermes-4-70b
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
@@ -2195,6 +2192,8 @@ endpoints:
           - openai/o4-mini-high
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
+          - ornith-ai/ornith-1.5-9b
+          - ornith-ai/ornith-1.5-9b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perplexity-academic-researcher
@@ -2225,6 +2224,8 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-plus
           - qwen/qwen3.5-plus-thinking
+          - qwen/qwen3.6-35b-a3b-uncensored
+          - qwen/qwen3.6-35b-a3b-uncensored:thinking
           - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-27b-fable
           - qwen/qwen3.8-27b-obliterated
@@ -2430,7 +2431,6 @@ endpoints:
           - nvidia/riva-translate-4b-instruct-v1.1
           - nvidia/riva-translate-4b-instruct-v2
           - nvidia/vila
-          - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
@@ -2653,7 +2653,7 @@ endpoints:
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
-          - nvidia/nemotron-3-ultra-550b-a55b:batch
+          - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
@@ -2870,6 +2870,7 @@ endpoints:
           - inception/mercury-2
           - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
+          - inclusionai/ling-3.0-flash-fin
           - kwaipilot/kat-coder-pro-v2
           - kwaipilot/kat-coder-pro-v2.5
           - mancer/weaver
