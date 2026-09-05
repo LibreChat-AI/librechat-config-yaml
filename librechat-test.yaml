@@ -910,6 +910,7 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
+          - gpt-6-astra
           - gpt-audio
           - gpt-audio-1-5
           - gpt-audio-2025-08-28
@@ -1860,7 +1861,6 @@ endpoints:
           - Sao10K/L3.3-70B-Euryale-v2.3
           - Steelskull/L3.3-Cu-Mai-R1-70b
           - Steelskull/L3.3-Electra-R1-70b
-          - Steelskull/L3.3-MS-Evayale-70B
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.2
@@ -1883,6 +1883,7 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
           - TEE/qwen2.5-vl-72b-instruct
+          - TEE/qwen3-8b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
@@ -2113,7 +2114,6 @@ endpoints:
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
-          - ibm-granite/granite-4.1-8b
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
@@ -2240,6 +2240,8 @@ endpoints:
           - openai/gpt-5.6-sol-pro
           - openai/gpt-5.6-terra
           - openai/gpt-5.6-terra-pro
+          - openai/gpt-6-astra
+          - openai/gpt-6-astra-pro
           - openai/gpt-chat-latest
           - openai/gpt-latest
           - openai/gpt-oss-120b
@@ -2342,6 +2344,8 @@ endpoints:
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
+          - synth-2.5-flash
+          - synth-2.5-pro
           - tencent/hy3
           - tencent/hy4-preview
           - thedrummer/skyfall-36b-v2
@@ -2524,6 +2528,7 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.0-flash-fin:free
+          - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
           - minimax/minimax-m2.7:free
           - minimax/minimax-m3:free
@@ -2647,10 +2652,6 @@ endpoints:
           - google/gemma-4-31b-it:batch
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
-          - '---IBM-GRANITE---'
-          - ibm-granite/granite-4.0-h-micro
-          - ibm-granite/granite-4.1-8b
-          - ibm-granite/granite-4.2-8b
           - '---META---'
           - meta/muse-glimmer-30b
           - meta/muse-glimmer-30b:batch
@@ -2790,6 +2791,10 @@ endpoints:
           - openai/gpt-5.6-terra-pro:batch
           - openai/gpt-5.6-terra:batch
           - openai/gpt-5:batch
+          - openai/gpt-6-astra
+          - openai/gpt-6-astra-pro
+          - openai/gpt-6-astra-pro:batch
+          - openai/gpt-6-astra:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -2900,6 +2905,7 @@ endpoints:
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
+          - x-ai/grok-4.3:batch
           - x-ai/grok-4.5
           - x-ai/grok-4.6
           - x-ai/grok-build-0.1
@@ -2931,6 +2937,8 @@ endpoints:
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
           - gryphe/mythomax-l2-13b
+          - ibm-granite/granite-4.0-h-micro
+          - ibm-granite/granite-4.2-8b
           - inception/mercury-2
           - inception/mercury-2.5-preview
           - inclusionai/ling-3.0-flash
