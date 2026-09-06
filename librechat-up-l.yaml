@@ -1844,7 +1844,6 @@ endpoints:
           - MiniMax-M2
           - MiniMaxAI/MiniMax-M1-80k
           - NeverSleep/Lumimaid-v0.2-70B
-          - NousResearch/Hermes-4-70B:thinking
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-235B-A22B-Instruct-2507
           - Qwen/Qwen3-235B-A22B-Thinking-2507
@@ -2884,7 +2883,7 @@ endpoints:
           - qwen/qwen3.8-2.4t-a95b:batch
           - qwen/qwen3.8-27b
           - qwen/qwen3.8-flash
-          - qwen/qwen3.8-max
+          - qwen/qwen3.8-max-0902
           - '---SAO10K---'
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
