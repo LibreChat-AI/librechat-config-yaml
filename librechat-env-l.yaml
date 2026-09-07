@@ -1830,6 +1830,7 @@ endpoints:
           - THUDM/GLM-Z1-9B-0414
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Anubis-70B-v1.1
+          - TheDrummer/Artemis-v1.1
           - TheDrummer/Cydonia-24B-v2
           - TheDrummer/Cydonia-24B-v4
           - TheDrummer/Cydonia-24B-v4.1
@@ -2476,7 +2477,6 @@ endpoints:
           - poolside/laguna-xs-2.1:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
-          - z-ai/glm-5.2:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
