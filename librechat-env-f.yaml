@@ -1819,7 +1819,6 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
           - TEE/qwen2.5-vl-72b-instruct
-          - TEE/qwen3-8b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
@@ -1954,6 +1953,7 @@ endpoints:
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash-vision-exp
+          - deepseek/deepseek-v4-flash-vision-exp-uncensored
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
@@ -2205,6 +2205,7 @@ endpoints:
           - pokee-isaac
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
+          - poolside/laguna-xs-2.1
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
@@ -2467,8 +2468,6 @@ endpoints:
           - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
-          - minimax/minimax-m2.7:free
-          - minimax/minimax-m3:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
