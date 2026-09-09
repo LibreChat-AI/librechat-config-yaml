@@ -1521,6 +1521,7 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/muse-glimmer-30b
           - TEE/qwen2.5-vl-72b-instruct
+          - TEE/qwen3-8b
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
@@ -1658,6 +1659,7 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
+          - deepseek/deepseek-v4.1-flash
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
@@ -1826,8 +1828,6 @@ endpoints:
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
           - nex-agi/deepseek-v3.1-nex-n1
-          - nex-agi/nex-n2-mini
-          - nex-agi/nex-n2-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -1835,7 +1835,6 @@ endpoints:
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
-          - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b:thinking
           - nvidia/nemotron-3-ultra-550b-a55b
@@ -1903,7 +1902,6 @@ endpoints:
           - pokee-isaac
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
-          - poolside/laguna-xs-2.1
           - qvq-max
           - qwen-3.6-plus
           - qwen-long
@@ -2012,8 +2010,6 @@ endpoints:
           - xiaomi/mimo-v2.5-pro-crof:thinking
           - xiaomi/mimo-v2.5-pro:thinking
           - xiaomi/mimo-v2.5:thinking
-          - yi-large
-          - yi-medium-200k
           - z-ai/GLM-4.5-Air
           - z-ai/GLM-4.5-Air:thinking
           - z-ai/GLM-4.5:thinking
@@ -2168,6 +2164,8 @@ endpoints:
           - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
+          - nex-agi/nex-n2.5-mini:free
+          - nex-agi/nex-n2.5-pro:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2242,6 +2240,7 @@ endpoints:
           - deepseek/deepseek-v4-flash-0731
           - deepseek/deepseek-v4-flash-0731:batch
           - deepseek/deepseek-v4-flash-vision-exp
+          - deepseek/deepseek-v4-flash-vision-exp:batch
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:batch
@@ -2556,9 +2555,11 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
+          - z-ai/glm-5.2:batch
           - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
+          - z-ai/glm-5.3:batch
           - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
           - ~anthropic/claude-fable-latest
@@ -2575,7 +2576,7 @@ endpoints:
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2
-          - inception/mercury-2.5-preview
+          - inception/mercury-2.5
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-fin
           - kwaipilot/kat-coder-pro-v2
@@ -2586,8 +2587,6 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
-          - nex-agi/nex-n2-mini
-          - nex-agi/nex-n2-pro
           - perceptron/perceptron-mk1
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
