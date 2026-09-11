@@ -542,6 +542,7 @@ endpoints:
           - claude-3-sonnet-20240229-v1
           - claude-4-opus
           - claude-4-sonnet
+          - claude-fable-5
           - claude-haiku-4-5
           - claude-haiku-4-5-20251001-v1
           - claude-instant-v1
@@ -559,6 +560,7 @@ endpoints:
           - claude-opus-4-7-fast
           - claude-opus-4-8
           - claude-opus-4-8-fast
+          - claude-opus-5
           - claude-sonnet
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -566,6 +568,7 @@ endpoints:
           - claude-sonnet-4-5
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
+          - claude-sonnet-5
           - claude-v2
           - codegemma-7b-it
           - codellama-7b-instruct-solidity
@@ -590,6 +593,7 @@ endpoints:
           - deepseek-3-2
           - deepseek-3-2-exp
           - deepseek-4-flash
+          - deepseek-4-pro
           - deepseek-chat-v3-0324
           - deepseek-chat-v3-1
           - deepseek-ocr
@@ -613,7 +617,12 @@ endpoints:
           - deepseek-v3-2-exp
           - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
+          - deepseek-v4-1-flash
           - deepseek-v4-flash
+          - deepseek-v4-flash-0731
+          - deepseek-v4-flash-vision-exp
+          - deepseek-v4-pro
+          - deepseek-v4-pro-0813
           - devstral
           - devstral-2512
           - devstral-medium
@@ -648,6 +657,8 @@ endpoints:
           - gemini-3-1-pro
           - gemini-3-1-pro-preview
           - gemini-3-1-pro-preview-customtools
+          - gemini-3-5-flash
+          - gemini-3-7-flash
           - gemini-3-flash
           - gemini-3-flash-preview
           - gemini-3-pro
@@ -665,6 +676,11 @@ endpoints:
           - gemma-3-4b-it
           - gemma-3n-e2b-it
           - gemma-3n-e4b-it
+          - gemma-4-26b-a4b-it
+          - gemma-4-31b-it
+          - gemma-4-31b-it-turbo
+          - gemma-4-31b-it-ultra
+          - gemma-4-e4b-it
           - giant-context
           - glm-4-32b
           - glm-4-5
@@ -675,6 +691,10 @@ endpoints:
           - glm-4-7
           - glm-4-7-flash
           - glm-5
+          - glm-5-1
+          - glm-5-2
+          - glm-5-3
+          - glm-5-3-flash
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -762,12 +782,17 @@ endpoints:
           - gpt-6-astra
           - gpt-audio
           - gpt-audio-mini
+          - gpt-live-1
           - gpt-oss-120b
           - gpt-oss-120b-1
           - gpt-oss-120b-turbo
+          - gpt-oss-120b-ultra
           - gpt-oss-20b
           - gpt-oss-safeguard-20b
           - granite-4-0-h-micro
+          - granite-4-2-30b
+          - granite-4-2-3b
+          - granite-4-2-8b
           - grok-3
           - grok-3-beta
           - grok-3-mini
@@ -790,8 +815,11 @@ endpoints:
           - hermes-4-70b
           - hunter-alpha
           - hunyuan-a13b-instruct
+          - hy-3
           - inflection-3-pi
           - inflection-3-productivity
+          - inkling
+          - inkling-small
           - intellect-3
           - internvl-3-78b
           - jamba-1-5-large-v1
@@ -802,9 +830,12 @@ endpoints:
           - kimi-k2-0905
           - kimi-k2-5
           - kimi-k2-5-turbo
+          - kimi-k2-6
+          - kimi-k2-7-code
           - kimi-k2-instruct
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
+          - kimi-k3
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -820,6 +851,9 @@ endpoints:
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
           - lfm-2-8b-a1b
+          - ling-3-0-flash
+          - ling-3-0-flash-fin
+          - ling-3-0-flash-vl
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -880,6 +914,8 @@ endpoints:
           - mercury
           - mercury-coder
           - mimo-2-flash
+          - mimo-v2-5
+          - mimo-v2-5-pro
           - mimo-v2-flash
           - minimax
           - minimax-01
@@ -887,7 +923,9 @@ endpoints:
           - minimax-m2
           - minimax-m2-1
           - minimax-m2-5
+          - minimax-m2-7-turbo
           - minimax-m2-her
+          - minimax-m3
           - ministral-14b-2512
           - ministral-3-14b-instruct
           - ministral-3-3b-instruct
@@ -936,11 +974,13 @@ endpoints:
           - morph-v3-fast
           - morph-v3-large
           - multimodal
+          - muse-glimmer-30b
           - mythomax
           - mythomax-l2-13b
           - mythomax-l2-13b-turbo
           - nemotron-3-nano-30b-a3b
           - nemotron-4-340b-instruct
+          - nemotron-content-safety-3-5
           - nemotron-nano-12b-2-vl
           - nemotron-nano-12b-v2-vl
           - nemotron-nano-3-30b
@@ -960,7 +1000,9 @@ endpoints:
           - nova-reel
           - nova-reel-v1
           - nova-sonic-v1
+          - nvidia-nemotron-3-5-lightning
           - nvidia-nemotron-3-super-120b-a12b
+          - nvidia-nemotron-3-ultra-550b-a55b
           - nvidia-nemotron-nano-12b-v2-vl
           - nvidia-nemotron-nano-9b-v2
           - o1
@@ -1032,11 +1074,17 @@ endpoints:
           - qwen-3-4b
           - qwen-3-5-122b-a10b
           - qwen-3-5-27b
+          - qwen-3-5-35b-a3b
           - qwen-3-5-397b-a17b
           - qwen-3-5-9b
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
+          - qwen-3-6-27b
           - qwen-3-6-35b-a3b
+          - qwen-3-7-max
+          - qwen-3-8-2-4t-a95b
+          - qwen-3-8-27b
+          - qwen-3-8-max
           - qwen-3-8b
           - qwen-3-coder
           - qwen-3-coder-30b-a3b-instruct
@@ -1078,8 +1126,10 @@ endpoints:
           - seed-1-6
           - seed-1-6-flash
           - seed-1-8
+          - seed-2-0-code
           - seed-2-0-lite
           - seed-2-0-mini
+          - seed-2-0-pro
           - seed-2-mini
           - shisa-2-llama-3-3-70b
           - shisa-v2-llama-3-3-70b
@@ -1095,6 +1145,7 @@ endpoints:
           - spotlight
           - step-3
           - step-3-5-flash
+          - step-3-7-flash
           - test123
           - tongyi-deepresearch-30b-a3b
           - trinity-large
@@ -1726,7 +1777,6 @@ endpoints:
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash-vision-exp
-          - deepseek/deepseek-v4-flash-vision-exp-uncensored
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
@@ -1836,7 +1886,6 @@ endpoints:
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
           - inflatebot/MN-12B-Mag-Mell-R1
-          - k2-horizon-7b
           - kimi-k2-instruct-fast
           - linkup-research-high
           - linkup-research-low
@@ -1970,8 +2019,6 @@ endpoints:
           - openai/o4-mini-high
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
-          - ornith-ai/ornith-1.5-9b
-          - ornith-ai/ornith-1.5-9b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perplexity-academic-researcher
@@ -2002,8 +2049,6 @@ endpoints:
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-plus
           - qwen/qwen3.5-plus-thinking
-          - qwen/qwen3.6-35b-a3b-uncensored
-          - qwen/qwen3.6-35b-a3b-uncensored:thinking
           - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-27b-fable
           - qwen/qwen3.8-27b-obliterated
@@ -2241,6 +2286,7 @@ endpoints:
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
+          - inclusionai/ling-3.0-flash-vl:free
           - liquid/lfm-2.5-2.6b:free
           - nex-agi/nex-n2.5-mini:free
           - nex-agi/nex-n2.5-pro:free
@@ -2322,6 +2368,7 @@ endpoints:
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
           - deepseek/deepseek-v4-pro-0813:batch
+          - deepseek/deepseek-v4.1-flash
           - '---GOOGLE---'
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
