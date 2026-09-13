@@ -1681,6 +1681,7 @@ endpoints:
           - Qwen/Qwen3-Coder-480B-A35B-Instruct
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
+          - TokenRhythm/NeoHorse-1-4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
@@ -1691,7 +1692,6 @@ endpoints:
           - deepseek-ai/DeepSeek-V4-Flash
           - deepseek-ai/DeepSeek-V4-Flash-0731
           - deepseek-ai/DeepSeek-V4-Pro
-          - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
@@ -1927,6 +1927,7 @@ endpoints:
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.2
           - TEE/deepseek-v4-flash
+          - TEE/deepseek-v4.1-flash
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
           - TEE/gemma4-31b
@@ -2030,9 +2031,6 @@ endpoints:
           - auto-model-premium
           - auto-model-standard
           - baseten/Kimi-K2-Instruct-FP4
-          - brave
-          - brave-pro
-          - brave-research
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
@@ -2091,7 +2089,6 @@ endpoints:
           - ernie-5.1
           - ernie-5.1:thinking
           - ernie-x1.1-preview
-          - exa-answer
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
@@ -2177,6 +2174,8 @@ endpoints:
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
+          - inference-net/schematron-v2-small
+          - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - kimi-k2-instruct-fast
           - lightonai/LightOnOCR-2-1B
@@ -2321,7 +2320,6 @@ endpoints:
           - ornith-ai/ornith-1.5-35b-a3b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
-          - perplexity-academic-researcher
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
@@ -2404,11 +2402,6 @@ endpoints:
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
-          - sofya-research
-          - sonar
-          - sonar-deep-research
-          - sonar-pro
-          - sonar-reasoning-pro
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
@@ -3034,6 +3027,8 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2
           - inception/mercury-2.5
+          - inference-net/schematron-v2-small
+          - inference-net/schematron-v2-turbo
           - kwaipilot/kat-coder-pro-v2
           - kwaipilot/kat-coder-pro-v2.5
           - mancer/weaver
