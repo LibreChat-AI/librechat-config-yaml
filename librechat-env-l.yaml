@@ -1277,6 +1277,7 @@ endpoints:
           - qwen-3-7-max
           - qwen-3-8-2-4t-a95b
           - qwen-3-8-27b
+          - qwen-3-8-flash
           - qwen-3-8-max
           - qwen-3-8b
           - qwen-3-asr-0-6b
@@ -1604,6 +1605,7 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
+          - Edge0/Edge0-35B-A3B-preview
           - HuggingFaceH4/zephyr-7b-beta
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
@@ -1979,8 +1981,6 @@ endpoints:
           - claw-medium
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
-          - crofai/greg-2-super
-          - crofai/greg-2-ultra
           - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
           - deepseek-ai/DeepSeek-R1-0528
@@ -2371,8 +2371,6 @@ endpoints:
           - x-ai/grok-latest
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
-          - xiaomi/mimo-v2.5-pro-crof
-          - xiaomi/mimo-v2.5-pro-crof:thinking
           - xiaomi/mimo-v2.5-pro:thinking
           - xiaomi/mimo-v2.5:thinking
           - z-ai/GLM-4.5-Air
@@ -2432,7 +2430,6 @@ endpoints:
           - databricks/dbrx-instruct
           - deepseek-ai/deepseek-coder-6.7b-instruct
           - deepseek-ai/deepseek-v4-flash-0731
-          - deepseek-ai/deepseek-v4-pro-0813
           - google/codegemma-1.1-7b
           - google/codegemma-7b
           - google/deplot
@@ -2619,7 +2616,6 @@ endpoints:
           - google/gemini-2.5-flash:batch
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
-          - google/gemini-2.5-pro-preview-05-06
           - google/gemini-2.5-pro:batch
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview:batch
@@ -2737,7 +2733,6 @@ endpoints:
           - openai/gpt-3.5-turbo:batch
           - openai/gpt-4
           - openai/gpt-4-turbo
-          - openai/gpt-4-turbo-preview
           - openai/gpt-4-turbo:batch
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
@@ -2946,6 +2941,10 @@ endpoints:
           - ~anthropic/claude-haiku-latest
           - ~anthropic/claude-opus-latest
           - ~anthropic/claude-sonnet-latest
+          - '---~DEEPSEEK---'
+          - ~deepseek/deepseek-flash-latest
+          - ~deepseek/deepseek-pro-latest
+          - ~deepseek/deepseek-v4-flash-latest
           - '---~OPENAI---'
           - ~openai/gpt-astra-latest
           - ~openai/gpt-luna-latest
@@ -2988,7 +2987,6 @@ endpoints:
           - writer/palmyra-x5
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
-          - ~deepseek/deepseek-v4-flash-latest
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
           - ~moonshotai/kimi-latest
