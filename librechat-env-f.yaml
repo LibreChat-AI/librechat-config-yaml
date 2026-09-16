@@ -1291,7 +1291,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openai/gpt-oss-safeguard-20b
-          - qwen/qwen3.6-27b
           - qwen/qwen3.8-27b
         fetch: false
       titleConvo: true
@@ -1327,11 +1326,9 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - deepseek-ai/DeepSeek-V3.2
-          - deepseek-ai/DeepSeek-V4-Flash
-          - deepseek-ai/DeepSeek-V4-Flash-0731
-          - deepseek-ai/DeepSeek-V4-Pro
+          - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
+          - google/gemma-7b-it
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
@@ -1680,7 +1677,6 @@ endpoints:
           - claw-medium
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
-          - deepclaude
           - deepcogito/cogito-v1-preview-qwen-32B
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3.1
@@ -1769,8 +1765,6 @@ endpoints:
           - gemma-4-31b-it-gemsicle
           - gemma-4-31b-it-isometry
           - gemma-4-31b-it-novelist
-          - gemma-4-e2b-it
-          - gemma-4-e4b-it
           - glm-4-air-0111
           - glm-4-long
           - glm-4-plus-0111
@@ -1987,17 +1981,14 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-235b-a22b-thinking
-          - qwen/qwen3.5-0.8b
           - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-122b-a10b:thinking
           - qwen/qwen3.5-27b
           - qwen/qwen3.5-27b:thinking
-          - qwen/qwen3.5-2b
           - qwen/qwen3.5-35b-a3b
           - qwen/qwen3.5-35b-a3b:thinking
           - qwen/qwen3.5-397b-a17b
           - qwen/qwen3.5-397b-a17b:thinking
-          - qwen/qwen3.5-4b
           - qwen/qwen3.5-9b
           - qwen/qwen3.5-flash
           - qwen/qwen3.5-flash:thinking
@@ -2202,6 +2193,7 @@ endpoints:
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
+          - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - zyphra/zamba2-7b-instruct
         fetch: false
@@ -2239,6 +2231,7 @@ endpoints:
           - poolside/laguna-xs-2.1:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
+          - z-ai/glm-5.2:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2347,7 +2340,6 @@ endpoints:
           - google/gemma-3-4b-it
           - google/gemma-4-26b-a4b-it
           - google/gemma-4-31b-it
-          - google/gemma-4-31b-it:batch
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
           - '---INCLUSIONAI---'
@@ -2506,7 +2498,6 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-120b:batch
           - openai/gpt-oss-20b
-          - openai/gpt-oss-20b:batch
           - openai/gpt-oss-safeguard-20b
           - openai/o1
           - openai/o1-pro
@@ -2609,7 +2600,6 @@ endpoints:
           - '---THINKINGMACHINES---'
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
-          - thinkingmachines/inkling-small:batch
           - thinkingmachines/inkling:batch
           - '---X-AI---'
           - x-ai/grok-4.20
