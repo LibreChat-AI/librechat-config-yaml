@@ -2960,6 +2960,7 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - stealth/union-alpha
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - undi95/remm-slerp-l2-13b
