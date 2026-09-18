@@ -1688,15 +1688,14 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
+          - XHToken/Spark-X2.5-4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - dphn/dolphin-2.5-mixtral-8x7b
           - google/gemma-2-2b-it
-          - google/gemma-7b-it
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
@@ -1944,7 +1943,6 @@ endpoints:
           - TEE/glm-5.3
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
-          - TEE/gpt-oss-20b
           - TEE/kimi-k2.6
           - TEE/kimi-k2.7-code
           - TEE/kimi-k3
@@ -1956,7 +1954,6 @@ endpoints:
           - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
-          - TEE/qwen3.6-35b-a3b-uncensored
           - TEE/qwen3.8-27b
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
@@ -2124,8 +2121,6 @@ endpoints:
           - gemma-4-26b-a4b-it-musica
           - gemma-4-26b-a4b-it-opusdistill
           - gemma-4-26b-a4b-it-shadowsiren
-          - gemma-4-26b-a4b-uncensored
-          - gemma-4-26b-a4b-uncensored:thinking
           - gemma-4-31b-it-darkidol
           - gemma-4-31b-it-fabled
           - gemma-4-31b-it-garnet
@@ -2186,7 +2181,6 @@ endpoints:
           - meganova-ai/manta-pro-1.0
           - mercury-2
           - mercury-coder-small
-          - meta-llama/llama-3.1-405b-instruct
           - meta-llama/llama-3.1-8b-instruct
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.3-70b-instruct
@@ -2391,6 +2385,7 @@ endpoints:
           - qwen/qwen3.8-max
           - qwen/qwen3.8-max-0902
           - qwen/qwen3.8-max:thinking
+          - qwen/qwen3.8-omni-flash
           - qwen3-vl-235b-a22b-instruct-original
           - sakana/fugu-max
           - sakana/fugu-ultra
@@ -2398,6 +2393,7 @@ endpoints:
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
+          - slowburn/gemma4-31b-splituntied
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
@@ -2597,6 +2593,7 @@ endpoints:
           - nvidia/nemotron-3.5-lightning:free
           - poolside/laguna-s-2.1:free
           - poolside/laguna-xs-2.1:free
+          - qwen/qwen3.8-27b:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
           - z-ai/glm-5.2:free
@@ -3038,9 +3035,9 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
-          - stealth/union-alpha
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
+          - unbiased/pareto
           - undi95/remm-slerp-l2-13b
           - upstage/solar-pro-3
           - upstage/solar-pro4
