@@ -1829,7 +1829,6 @@ endpoints:
           - Gemma-4-31B-Gembrain-uncensored-heretic
           - Gemma-4-31B-Isometry-RP
           - Gemma-4-31B-K1-v5
-          - Gemma-4-31B-Mero-Artemis-v0.3.1
           - Gemma-4-31B-MeroMero
           - Gemma-4-31B-MeroMero-v2
           - Gemma-4-31B-MeroMero-v2:thinking
@@ -2144,7 +2143,6 @@ endpoints:
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
           - mistralai/mistral-large
-          - mistralai/mistral-large-3-675b-instruct-2512
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-medium-3.5
@@ -2249,6 +2247,7 @@ endpoints:
           - pokee-isaac
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
+          - prism-ml/ternary-bonsai-2-27b
           - qvq-max
           - qwen/qwen-2.5-72b-instruct
           - qwen/qwen-long
@@ -2340,6 +2339,8 @@ endpoints:
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
+          - typesafe/jev-1.13
+          - unbiased/pareto
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
@@ -2397,6 +2398,7 @@ endpoints:
           - z-ai/glm-5v-turbo
           - z-ai/glm-5v-turbo:thinking
           - z-ai/glm-latest
+          - ~typesafe/jev-latest
         fetch: false
       titleConvo: true
       titleModel: "current_model"
@@ -2508,6 +2510,7 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - cohere/north-mini-code:free
+          - deepseek/deepseek-v4-flash-0731:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
@@ -2679,7 +2682,6 @@ endpoints:
           - mistralai/ministral-8b-2512:batch
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
-          - mistralai/mistral-large-2512
           - mistralai/mistral-large-2512:batch
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
@@ -2962,6 +2964,7 @@ endpoints:
           - perceptron/perceptron-mk1
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
+          - prism-ml/ternary-bonsai-2-27b
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
