@@ -1,6 +1,6 @@
 # LibreChat YAML Configuration Manager
 
-Automated tool for maintaining LibreChat YAML configurations with up-to-date model lists from 20+ AI providers.
+Automated tool for maintaining LibreChat YAML configurations with up-to-date model lists from 21+ AI providers.
 
 ## Quick Start
 
@@ -95,6 +95,7 @@ This repository includes automated daily model updates via GitHub Actions.
    DEEPSEEK_API_KEY
    FIREWORKS_API_KEY
    GLHF_API_KEY
+   GREENPT_API_KEY
    GROQ_API_KEY
    HUGGINGFACE_TOKEN
    HYPERBOLIC_API_KEY
@@ -193,6 +194,7 @@ librechat-config-yaml/
 │   ├── fireworks.py           # Fetch models from Fireworks
 │   ├── github.py              # Fetch models from Github Models
 │   ├── glhf.py                # Fetch models from GLHF.chat
+│   ├── greenpt.py             # Fetch chat models from GreenPT
 │   ├── groq.py                # Fetch models from Groq
 │   ├── huggingface.py         # Fetch models from HuggingFace
 │   ├── hyperbolic.py          # Fetch models from Hyperbolic
@@ -235,6 +237,7 @@ The tool can update model lists from:
 - Fireworks
 - Github Models
 - GLHF.chat
+- GreenPT
 - Groq
 - HuggingFace
 - Hyperbolic
@@ -255,7 +258,7 @@ The provider scripts have been analyzed against their official API documentation
 
 | Status | Count | Providers |
 |--------|-------|-----------|
-| ✅ Validated | 11 | Cohere, DeepSeek, Fireworks, GitHub, Groq, HuggingFace, Mistral, NVIDIA, OpenRouter, TogetherAI, xAI |
+| ✅ Validated | 12 | Cohere, DeepSeek, Fireworks, GitHub, GreenPT, Groq, HuggingFace, Mistral, NVIDIA, OpenRouter, TogetherAI, xAI |
 | ⚠️ Issues Found | 4 | APIpie (minor), NanoGPT, Perplexity, SambaNova |
 | ❓ Cannot Verify | 5 | 302.AI, GLHF, Hyperbolic, Kluster, Unify |
 
@@ -277,6 +280,7 @@ These scripts have been verified against official API documentation and use prop
 | DeepSeek | [`deepseek.py`](deepseek.py) | `https://api.deepseek.com/models` |
 | Fireworks | [`fireworks.py`](fireworks.py) | `https://api.fireworks.ai/inference/v1/models` |
 | GitHub | [`github.py`](github.py) | `https://models.inference.ai.azure.com/models` |
+| GreenPT | [`greenpt.py`](providers/greenpt.py) | `https://api.greenpt.ai/v1/models` |
 | Groq | [`groq.py`](groq.py) | `https://api.groq.com/openai/v1/models` |
 | HuggingFace | [`huggingface.py`](huggingface.py) | `https://huggingface.co/api/models` |
 | Mistral | [`mistral.py`](mistral.py) | `https://api.mistral.ai/v1/models` |
@@ -317,6 +321,7 @@ Most provider scripts require valid API keys for testing:
 | DeepSeek | ✅ Yes | - |
 | Fireworks | ✅ Yes | - |
 | GitHub | ✅ Yes | Uses `GITHUB_TOKEN` |
+| GreenPT | ✅ Yes | Create a key at `account.greenpt.ai/api/keys` |
 | Groq | ✅ Yes | Free tier available |
 | HuggingFace | ✅ Yes | Free tier available |
 | Mistral | ✅ Yes | - |
