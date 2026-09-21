@@ -1648,6 +1648,7 @@ endpoints:
           - openai/gpt-oss-120b
           - openai/gpt-oss-20b
           - openbmb/MiniCPM5-2B
+          - prism-ml/Ternary-Bonsai-2-27B-gguf
           - prism-ml/Ternary-Bonsai-27B-gguf
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
@@ -1860,7 +1861,6 @@ endpoints:
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
           - TEE/deepseek-v3.2
-          - TEE/deepseek-v4-flash
           - TEE/deepseek-v4.1-flash
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
@@ -2334,6 +2334,7 @@ endpoints:
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
+          - stepfun/step-5-preview
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2344,6 +2345,7 @@ endpoints:
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
           - typesafe/jev-1.13
+          - typesafe/jev-latest
           - unbiased/pareto
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
@@ -2380,8 +2382,6 @@ endpoints:
           - z-ai/glm-4.6v-original
           - z-ai/glm-4.7
           - z-ai/glm-4.7-flash
-          - z-ai/glm-4.7-flash-original
-          - z-ai/glm-4.7-flash-original:thinking
           - z-ai/glm-4.7-flash:thinking
           - z-ai/glm-4.7-original
           - z-ai/glm-4.7-original:thinking
@@ -2403,7 +2403,6 @@ endpoints:
           - z-ai/glm-5v-turbo
           - z-ai/glm-5v-turbo:thinking
           - z-ai/glm-latest
-          - ~typesafe/jev-latest
         fetch: false
       titleConvo: true
       titleModel: "current_model"
@@ -2515,7 +2514,6 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - cohere/north-mini-code:free
-          - deepseek/deepseek-v4-flash-0731:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
