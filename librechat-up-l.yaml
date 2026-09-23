@@ -22,6 +22,15 @@ interface:
       - You are responsible for your use of generated outputs.
       - Misuse, abuse, or unlawful activity is prohibited.
       - Continued use means you accept the full terms linked above.
+  # Scheduled chats (opt-in feature). Tighter than the defaults (10 / 60 / 5)
+  # because demo users are anonymous and every run spends provider credits.
+  schedules:
+    use: true
+    create: true
+    maxPerUser: 3
+    minIntervalMinutes: 60
+    autoDisableAfterFailures: 3
+    fireConcurrency: 3
 
 registration:
   socialLogins:
