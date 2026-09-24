@@ -576,6 +576,7 @@ endpoints:
           - claude-opus-4-8
           - claude-opus-4-8-fast
           - claude-opus-5
+          - claude-opus-5-5
           - claude-sonnet
           - claude-sonnet-4
           - claude-sonnet-4-20250514
@@ -1529,6 +1530,7 @@ endpoints:
           - accounts/fireworks/models/deepseek-v4-pro
           - accounts/fireworks/models/deepseek-v4-pro-0813
           - accounts/fireworks/models/deepseek-v4p1-flash
+          - accounts/fireworks/models/ember-1
           - accounts/fireworks/models/glm-5p2
           - accounts/fireworks/models/glm-5p3
           - accounts/fireworks/models/glm-5p3-flash
@@ -1911,6 +1913,8 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
+          - aion-labs/aion-3.5
+          - aion-labs/aion-3.5-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
@@ -2332,6 +2336,7 @@ endpoints:
           - qwen/qwen3.8-flash
           - qwen/qwen3.8-max
           - qwen/qwen3.8-max-0902
+          - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-max:thinking
           - qwen/qwen3.8-omni-flash
           - qwen3-vl-235b-a22b-instruct-original
@@ -2344,6 +2349,7 @@ endpoints:
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
+          - stealth/space-bunny-alpha
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
@@ -2365,6 +2371,8 @@ endpoints:
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
+          - upstage/solar-mini4
+          - upstage/solar-mini4:thinking
           - upstage/solar-pro-3
           - upstage/solar-pro4
           - upstage/solar-pro4:thinking
@@ -2536,7 +2544,6 @@ endpoints:
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
-          - inclusionai/ling-3.0-flash-vl:free
           - liquid/lfm-2.5-2.6b:free
           - nex-agi/nex-n2.5-mini:free
           - nex-agi/nex-n2.5-pro:free
@@ -2555,6 +2562,8 @@ endpoints:
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
+          - aion-labs/aion-3.5
+          - aion-labs/aion-3.5-mini
           - aion-labs/aion-rp-llama-3.1-8b
           - '---AMAZON---'
           - amazon/nova-2-lite-v1
@@ -2693,7 +2702,6 @@ endpoints:
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/codestral-2508:batch
-          - mistralai/devstral-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
@@ -2820,6 +2828,7 @@ endpoints:
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
           - openai/gpt-oss-120b
+          - openai/gpt-oss-120b:batch
           - openai/gpt-oss-20b
           - openai/gpt-oss-20b:batch
           - openai/gpt-oss-safeguard-20b
@@ -2898,6 +2907,7 @@ endpoints:
           - qwen/qwen3.8-27b
           - qwen/qwen3.8-flash
           - qwen/qwen3.8-max-0902
+          - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-omni-flash
           - '---SAKANA---'
           - sakana/fugu-max
@@ -2920,6 +2930,10 @@ endpoints:
           - thedrummer/cydonia-24b-v4.1
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
+          - '---UPSTAGE---'
+          - upstage/solar-mini4
+          - upstage/solar-pro-3
+          - upstage/solar-pro4
           - '---X-AI---'
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
@@ -2951,6 +2965,7 @@ endpoints:
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
           - z-ai/glm-5.3-flashx
+          - z-ai/glm-5.3-prime
           - z-ai/glm-5.3:batch
           - z-ai/glm-5v-turbo
           - '---~ANTHROPIC---'
@@ -2998,14 +3013,13 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - stealth/space-bunny-alpha
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - unbiased/pareto
           - undi95/remm-slerp-l2-13b
-          - upstage/solar-pro-3
-          - upstage/solar-pro4
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
