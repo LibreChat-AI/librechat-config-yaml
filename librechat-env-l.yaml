@@ -1726,6 +1726,7 @@ endpoints:
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
+          - fireworks/ember-1
           - free-model
           - gemini-2.0-pro-exp-02-05
           - gemini-2.0-pro-reasoner
@@ -1813,6 +1814,7 @@ endpoints:
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - kimi-k2-instruct-fast
+          - kitani/clover-1-150b
           - lightonai/LightOnOCR-2-1B
           - liquid/lfm-2.5-2.6b:free
           - longcat-2.0
@@ -1879,7 +1881,6 @@ endpoints:
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
-          - nano/lumen-stealth
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
@@ -2400,12 +2401,14 @@ endpoints:
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/codestral-2508:batch
+          - mistralai/devstral-2512
           - mistralai/ministral-14b-2512
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
           - mistralai/ministral-8b-2512:batch
           - mistralai/mistral-large
           - mistralai/mistral-large-2407
+          - mistralai/mistral-large-2512
           - mistralai/mistral-large-2512:batch
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
@@ -2687,6 +2690,7 @@ endpoints:
           - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
+          - fireworks/ember-1
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.2-8b
@@ -2701,8 +2705,6 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
-          - nex-agi/nex-n2.5-mini
-          - nex-agi/nex-n2.5-pro
           - perceptron/perceptron-mk1
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
