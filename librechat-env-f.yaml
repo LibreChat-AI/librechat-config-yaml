@@ -980,6 +980,7 @@ endpoints:
           - hunter-alpha
           - hunyuan-a13b-instruct
           - hy-3
+          - hy-4-preview
           - inflection-3-pi
           - inflection-3-productivity
           - inkling
@@ -1168,6 +1169,7 @@ endpoints:
           - nano-banana-v1
           - nano-banana-v2
           - nemotron-3-5-asr-streaming-multilingual-0-6b
+          - nemotron-3-diarization
           - nemotron-3-diarization-preview
           - nemotron-3-embed-1b-bf16
           - nemotron-3-embed-1b-nvfp-4
@@ -1892,6 +1894,7 @@ endpoints:
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
+          - TEE/qwen3.8-27b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
           - THUDM/GLM-Z1-9B-0414
@@ -2264,6 +2267,7 @@ endpoints:
           - ornith-ai/ornith-1.5-35b-a3b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
+          - perceptron/perceptron-mk1.5
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
@@ -2392,6 +2396,7 @@ endpoints:
           - xiaomi/mimo-v2.5-pro:thinking
           - xiaomi/mimo-v2.5:thinking
           - xiaomi/mimo-v2.6-flash
+          - xiaomi/mimo-v2.6-flash-uncensored
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
           - z-ai/GLM-4.5-Air
@@ -2547,8 +2552,6 @@ endpoints:
           - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
-          - nex-agi/nex-n2.5-mini:free
-          - nex-agi/nex-n2.5-pro:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2559,7 +2562,6 @@ endpoints:
           - qwen/qwen3.8-27b:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
-          - z-ai/glm-5.2:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -3009,6 +3011,7 @@ endpoints:
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - perceptron/perceptron-mk1
+          - perceptron/perceptron-mk1.5
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
@@ -3021,6 +3024,7 @@ endpoints:
           - stepfun/step-3.7-flash
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
+          - typesafe/jev-router
           - unbiased/pareto
           - undi95/remm-slerp-l2-13b
           - writer/palmyra-x5
