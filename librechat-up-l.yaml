@@ -1361,7 +1361,6 @@ endpoints:
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.1
           - MiniMaxAI/MiniMax-M2.5
-          - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -2141,6 +2140,7 @@ endpoints:
           - xiaomi/mimo-v2.6-flash
           - xiaomi/mimo-v2.6-flash-abliterated
           - xiaomi/mimo-v2.6-flash-uncensored
+          - xiaomi/mimo-v2.6-flash-uncensored:thinking
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
           - z-ai/GLM-4.5-Air
@@ -2175,6 +2175,7 @@ endpoints:
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash-cybersecurity
           - z-ai/glm-5.3-flash-uncensored
+          - z-ai/glm-5.3-uncensored
           - z-ai/glm-5.3:thinking
           - z-ai/glm-5:thinking
           - z-ai/glm-5v-turbo
