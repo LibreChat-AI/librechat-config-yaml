@@ -1626,7 +1626,6 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
-          - XHToken/Spark-X2.5-4B
           - XingChen-AGI/Xing4.0-29B-A4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -2396,6 +2395,7 @@ endpoints:
           - xiaomi/mimo-v2.5:thinking
           - xiaomi/mimo-v2.6-flash
           - xiaomi/mimo-v2.6-flash-uncensored
+          - xiaomi/mimo-v2.6-flash-uncensored:thinking
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
           - z-ai/GLM-4.5-Air
@@ -2429,6 +2429,7 @@ endpoints:
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash-cybersecurity
           - z-ai/glm-5.3-flash-uncensored
+          - z-ai/glm-5.3-uncensored
           - z-ai/glm-5.3:thinking
           - z-ai/glm-5:thinking
           - z-ai/glm-5v-turbo
@@ -2575,7 +2576,6 @@ endpoints:
           - amazon/nova-premier-v1
           - amazon/nova-pro-v1
           - '---ANTHROPIC---'
-          - anthropic/claude-3-haiku
           - anthropic/claude-fable-5
           - anthropic/claude-fable-5.1
           - anthropic/claude-fable-5.1:batch
