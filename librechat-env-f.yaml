@@ -1627,6 +1627,7 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
+          - XHToken/Spark-X2.5-4B
           - XingChen-AGI/Xing4.0-29B-A4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -2123,6 +2124,7 @@ endpoints:
           - liquid/lfm-2.5-2.6b
           - longcat-2.0
           - longcat-2.0:thinking
+          - longcat-2.5-preview
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
@@ -2191,8 +2193,6 @@ endpoints:
           - nanogpt/coding-router:low
           - nanogpt/coding-router:max
           - nanogpt/coding-router:medium
-          - nex-agi/nex-n2.5-mini
-          - nex-agi/nex-n2.5-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
