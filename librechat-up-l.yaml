@@ -1712,6 +1712,8 @@ endpoints:
           - anthropic/claude-sonnet-4:thinking:64000
           - anthropic/claude-sonnet-4:thinking:8192
           - anthropic/claude-sonnet-5
+          - anthropic/claude-sonnet-5.5
+          - anthropic/claude-sonnet-5.5:thinking
           - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
@@ -1846,6 +1848,7 @@ endpoints:
           - google/gemma-4-31b-it
           - google/gemma-4-31b-it:thinking
           - google/gemma4-31b-splituntied
+          - heabsy/cyberheabsy
           - hermes-high
           - hermes-low
           - hermes-medium
@@ -1933,6 +1936,8 @@ endpoints:
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
           - nex-agi/deepseek-v3.1-nex-n1
+          - nex-agi/nex-n2.5-mini
+          - nex-agi/nex-n2.5-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -2228,7 +2233,6 @@ endpoints:
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
-          - mistralai/mistral-nemotron
           - mistralai/mixtral-8x22b-v0.1
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k3
@@ -2295,7 +2299,6 @@ endpoints:
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - inclusionai/ling-3.0-flash-fin:free
           - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
@@ -2348,6 +2351,8 @@ endpoints:
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:batch
           - anthropic/claude-sonnet-5
+          - anthropic/claude-sonnet-5.5
+          - anthropic/claude-sonnet-5.5:batch
           - anthropic/claude-sonnet-5:batch
           - '---BYTEDANCE-SEED---'
           - bytedance-seed/seed-1.6
@@ -2368,7 +2373,6 @@ endpoints:
           - deepseek/deepseek-chat-v3.1
           - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
-          - deepseek/deepseek-r1-distill-llama-70b
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2-exp
@@ -2755,6 +2759,8 @@ endpoints:
           - microsoft/wizardlm-2-8x22b
           - morph/morph-v3-fast
           - morph/morph-v3-large
+          - nex-agi/nex-n2.5-mini
+          - nex-agi/nex-n2.5-pro
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
           - poolside/laguna-s-2.1
@@ -2796,12 +2802,18 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default:
-          - r1-1776
-          - sonar
-          - sonar-deep-research
-          - sonar-pro
-          - sonar-reasoning
-          - sonar-reasoning-pro
+          - anthropic/claude-fable-5
+          - anthropic/claude-fable-5-1
+          - anthropic/claude-haiku-4-5
+          - anthropic/claude-opus-4-5
+          - anthropic/claude-opus-4-6
+          - anthropic/claude-opus-4-7
+          - anthropic/claude-opus-4-8
+          - anthropic/claude-opus-5
+          - anthropic/claude-opus-5-5
+          - anthropic/claude-sonnet-4-5
+          - anthropic/claude-sonnet-4-6
+          - anthropic/claude-sonnet-5
         fetch: false # fetching list of models is not supported
       titleConvo: true
       titleModel: "current_model"
