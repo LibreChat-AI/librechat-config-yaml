@@ -776,6 +776,7 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
+          - gpt-6-1-sol
           - gpt-6-astra
           - gpt-6-luna
           - gpt-6-sol
@@ -1943,6 +1944,8 @@ endpoints:
           - openai/gpt-6-luna-pro
           - openai/gpt-6-sol
           - openai/gpt-6-sol-pro
+          - openai/gpt-6.1-sol
+          - openai/gpt-6.1-sol-pro
           - openai/gpt-astra-latest
           - openai/gpt-chat-latest
           - openai/gpt-latest
@@ -2531,6 +2534,10 @@ endpoints:
           - openai/gpt-6-sol-pro
           - openai/gpt-6-sol-pro:batch
           - openai/gpt-6-sol:batch
+          - openai/gpt-6.1-sol
+          - openai/gpt-6.1-sol-pro
+          - openai/gpt-6.1-sol-pro:batch
+          - openai/gpt-6.1-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -2766,6 +2773,7 @@ endpoints:
           - anthropic/claude-sonnet-4-5
           - anthropic/claude-sonnet-4-6
           - anthropic/claude-sonnet-5
+          - anthropic/claude-sonnet-5-5
         fetch: false # fetching list of models is not supported
       titleConvo: true
       titleModel: "llama-3.1-sonar-small-128k-chat"
