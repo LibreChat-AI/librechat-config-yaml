@@ -933,6 +933,7 @@ endpoints:
           - gpt-5-pro-2025-10-06
           - gpt-5-search-api
           - gpt-5-search-api-2025-10-14
+          - gpt-6-1-sol
           - gpt-6-astra
           - gpt-6-luna
           - gpt-6-sol
@@ -1994,7 +1995,6 @@ endpoints:
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:thinking
           - anthropic/claude-haiku-latest
-          - anthropic/claude-opus-4
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.1:thinking
           - anthropic/claude-opus-4.1:thinking:1024
@@ -2011,10 +2011,6 @@ endpoints:
           - anthropic/claude-opus-4.7:thinking
           - anthropic/claude-opus-4.8
           - anthropic/claude-opus-4.8:thinking
-          - anthropic/claude-opus-4:thinking
-          - anthropic/claude-opus-4:thinking:1024
-          - anthropic/claude-opus-4:thinking:32768
-          - anthropic/claude-opus-4:thinking:8192
           - anthropic/claude-opus-5
           - anthropic/claude-opus-5.5
           - anthropic/claude-opus-latest
@@ -2312,6 +2308,8 @@ endpoints:
           - openai/gpt-6-luna-pro
           - openai/gpt-6-sol
           - openai/gpt-6-sol-pro
+          - openai/gpt-6.1-sol
+          - openai/gpt-6.1-sol-pro
           - openai/gpt-astra-latest
           - openai/gpt-chat-latest
           - openai/gpt-latest
@@ -2898,6 +2896,10 @@ endpoints:
           - openai/gpt-6-sol-pro
           - openai/gpt-6-sol-pro:batch
           - openai/gpt-6-sol:batch
+          - openai/gpt-6.1-sol
+          - openai/gpt-6.1-sol-pro
+          - openai/gpt-6.1-sol-pro:batch
+          - openai/gpt-6.1-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
