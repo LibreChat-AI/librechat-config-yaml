@@ -585,6 +585,7 @@ endpoints:
           - claude-sonnet-4-5-20250929
           - claude-sonnet-4-6
           - claude-sonnet-5
+          - claude-sonnet-5-5
           - claude-v2
           - clip-vit-b-32
           - clip-vit-b-32-multilingual-v1
@@ -2114,6 +2115,7 @@ endpoints:
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
+          - inclusionai/ling-3.1-flash
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
