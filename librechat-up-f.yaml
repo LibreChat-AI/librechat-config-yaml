@@ -1885,7 +1885,6 @@ endpoints:
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
-          - TEE/qwen3.8-27b-uncensored
           - THUDM/GLM-4-32B-0414
           - THUDM/GLM-4-9B-0414
           - THUDM/GLM-Z1-9B-0414
@@ -2112,6 +2111,9 @@ endpoints:
           - kitani/clover-1-150b
           - lightonai/LightOnOCR-2-1B
           - liquid/lfm-2.5-2.6b
+          - llmtech/decider-0.8b-fp8
+          - llmtech/decider-2b-fp8
+          - llmtech/decider-4b-nvfp4
           - longcat-2.0
           - longcat-2.0:thinking
           - longcat-2.5-preview
@@ -2365,6 +2367,7 @@ endpoints:
           - typesafe/jev-1.13
           - typesafe/jev-latest
           - unbiased/pareto
+          - unbiased/pareto-26.10-preview
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
@@ -2540,6 +2543,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - apodex/apodex-1.1-mini:free
           - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
@@ -2826,8 +2830,6 @@ endpoints:
           - openai/gpt-6-sol:batch
           - openai/gpt-6.1-sol
           - openai/gpt-6.1-sol-pro
-          - openai/gpt-6.1-sol-pro:batch
-          - openai/gpt-6.1-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -3026,6 +3028,7 @@ endpoints:
           - thinkingmachines/inkling-small
           - typesafe/jev-router
           - unbiased/pareto
+          - unbiased/pareto-26.10-preview
           - undi95/remm-slerp-l2-13b
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
@@ -3365,6 +3368,7 @@ endpoints:
           - grok-imagine-image-quality
           - grok-imagine-video
           - grok-imagine-video-1.5
+          - grok-imagine-video-1.5-lite
         fetch: false
       titleConvo: true
       titleMethod: "completion"
