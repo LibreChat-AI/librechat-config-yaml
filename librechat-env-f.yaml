@@ -617,6 +617,7 @@ endpoints:
           - deepseek-v3-2-speciale
           - deepseek-v3-p-dp
           - deepseek-v4-1-flash
+          - deepseek-v4-1-flash-turbo
           - deepseek-v4-flash
           - deepseek-v4-flash-0731
           - deepseek-v4-flash-vision-exp
@@ -1316,6 +1317,7 @@ endpoints:
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.5
+          - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -1823,6 +1825,7 @@ endpoints:
           - kimi-k2-instruct-fast
           - kitani/clover-1-150b
           - lightonai/LightOnOCR-2-1B
+          - liquid/d1
           - liquid/lfm-2.5-2.6b:free
           - llmtech/decider-0.8b-fp8
           - llmtech/decider-2b-fp8
@@ -2388,6 +2391,7 @@ endpoints:
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-fin
           - inclusionai/ling-3.0-flash-vl
+          - inclusionai/ling-3.1-flash
           - '---META---'
           - meta/muse-glimmer-30b
           - meta/muse-spark-1.1
@@ -2458,6 +2462,7 @@ endpoints:
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning
+          - nvidia/switchyard
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
