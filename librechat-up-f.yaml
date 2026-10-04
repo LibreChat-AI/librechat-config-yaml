@@ -1573,6 +1573,8 @@ endpoints:
           - accounts/fireworks/routers/glm-5p2-fast
           - accounts/fireworks/routers/glm-5p3-fast
           - accounts/fireworks/routers/kimi-k3-fast
+          - auto
+          - firerouter/auto
         fetch: false
       titleConvo: true
       titleModel: "accounts/fireworks/models/llama-v2-7b-chat"
@@ -1973,6 +1975,7 @@ endpoints:
           - claw-high
           - claw-low
           - claw-medium
+          - cloudflare/clef
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
           - deepcogito/cogito-v1-preview-qwen-32B
@@ -2109,7 +2112,6 @@ endpoints:
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - kimi-k2-instruct-fast
-          - kitani/clover-1-150b
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
           - liquid/lfm-2.5-2.6b
@@ -2346,6 +2348,7 @@ endpoints:
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
+          - sakana/sakana-namazu
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
