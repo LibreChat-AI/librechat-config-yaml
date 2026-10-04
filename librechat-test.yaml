@@ -1380,7 +1380,6 @@ endpoints:
           - Qwen/Qwen2.5-Coder-32B-Instruct
           - Qwen/Qwen3-0.6B
           - Qwen/Qwen3-8B
-          - Qwen/Qwen3-Coder-480B-A35B-Instruct
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
@@ -1740,6 +1739,7 @@ endpoints:
           - claw-high
           - claw-low
           - claw-medium
+          - cloudflare/clef
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
           - deepcogito/cogito-v1-preview-qwen-32B
@@ -1879,7 +1879,6 @@ endpoints:
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - kimi-k2-instruct-fast
-          - kitani/clover-1-150b
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
           - liquid/lfm-2.5-2.6b:free
@@ -2114,6 +2113,7 @@ endpoints:
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
+          - sakana/sakana-namazu
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
