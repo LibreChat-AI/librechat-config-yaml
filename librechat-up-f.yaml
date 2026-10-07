@@ -1848,6 +1848,7 @@ endpoints:
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
           - mistralai/mistral-large
+          - mistralai/mistral-large-4
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-medium-3.5
@@ -2044,7 +2045,6 @@ endpoints:
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
-          - sakana/sakana-namazu
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
@@ -2366,6 +2366,7 @@ endpoints:
           - google/gemini-3.7-flash:batch
           - google/gemini-3.8-flash
           - google/gemini-3.8-flash:batch
+          - google/gemini-nano-banana-2.1
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
@@ -2416,6 +2417,7 @@ endpoints:
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2512
           - mistralai/mistral-large-2512:batch
+          - mistralai/mistral-large-4-0
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
           - mistralai/mistral-medium-3-5:batch
@@ -2707,7 +2709,6 @@ endpoints:
           - inception/mercury-2.5
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
-          - kwaipilot/kat-coder-pro-v2.5
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
