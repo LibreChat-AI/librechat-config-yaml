@@ -2221,6 +2221,7 @@ endpoints:
           - mistralai/ministral-3b-2512
           - mistralai/ministral-8b-2512
           - mistralai/mistral-large
+          - mistralai/mistral-large-4
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3.1
           - mistralai/mistral-medium-3.5
@@ -2419,14 +2420,12 @@ endpoints:
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
-          - sakana/sakana-namazu
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
           - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
-          - stealth/space-bunny-alpha
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
@@ -2740,6 +2739,7 @@ endpoints:
           - google/gemini-3.7-flash:batch
           - google/gemini-3.8-flash
           - google/gemini-3.8-flash:batch
+          - google/gemini-nano-banana-2.1
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
@@ -2790,6 +2790,7 @@ endpoints:
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2512
           - mistralai/mistral-large-2512:batch
+          - mistralai/mistral-large-4-0
           - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
           - mistralai/mistral-medium-3-5:batch
