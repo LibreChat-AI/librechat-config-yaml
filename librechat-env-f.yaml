@@ -1923,6 +1923,7 @@ endpoints:
           - anthropic/claude-fable-latest
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:thinking
+          - anthropic/claude-haiku-5.5
           - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.1:thinking
@@ -1997,6 +1998,8 @@ endpoints:
           - deepseek/deepseek-v3.2
           - deepseek/deepseek-v3.2:thinking
           - deepseek/deepseek-v4-flash
+          - deepseek/deepseek-v4-flash-0423
+          - deepseek/deepseek-v4-flash-0423:thinking
           - deepseek/deepseek-v4-flash-0731
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
@@ -2011,8 +2014,6 @@ endpoints:
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
           - doubao-1.5-vision-pro-32k
-          - doubao-seed-1-6-250615
-          - doubao-seed-1-6-flash-250615
           - doubao-seed-2-0-code-preview-260215
           - doubao-seed-2-0-lite-260215
           - doubao-seed-2-0-mini-260215
@@ -2020,7 +2021,6 @@ endpoints:
           - ernie-5.0-thinking-preview
           - ernie-5.1
           - ernie-5.1:thinking
-          - ernie-x1.1-preview
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
@@ -2592,6 +2592,8 @@ endpoints:
           - anthropic/claude-fable-5:batch
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:batch
+          - anthropic/claude-haiku-5.5
+          - anthropic/claude-haiku-5.5:batch
           - anthropic/claude-opus-4.1
           - anthropic/claude-opus-4.1:batch
           - anthropic/claude-opus-4.5
@@ -3019,7 +3021,6 @@ endpoints:
           - inception/mercury-2.5
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
-          - kwaipilot/kat-coder-pro-v2.5
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
