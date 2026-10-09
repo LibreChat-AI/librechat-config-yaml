@@ -1968,6 +1968,7 @@ endpoints:
           - claw-low
           - claw-medium
           - cloudflare/clef
+          - cloudflare/clef-flash
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
           - deepcogito/cogito-v1-preview-qwen-32B
@@ -2041,6 +2042,7 @@ endpoints:
           - gemma-4-12b-it-semancer
           - gemma-4-12b-it-station-keeper
           - gemma-4-26b-a4b-it-chimerax
+          - gemma-4-26b-a4b-it-chimeraxheretic
           - gemma-4-26b-a4b-it-darksoul
           - gemma-4-26b-a4b-it-luminous
           - gemma-4-26b-a4b-it-moonlight
@@ -2054,6 +2056,7 @@ endpoints:
           - gemma-4-31b-it-gemsicle
           - gemma-4-31b-it-isometry
           - gemma-4-31b-it-novelist
+          - gemma-4-31b-it-scarlet
           - glm-4-air-0111
           - glm-4-long
           - glm-4-plus-0111
@@ -2259,6 +2262,7 @@ endpoints:
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
+          - perplexity/pplx-decider-v1.1-27b
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
@@ -2552,7 +2556,6 @@ endpoints:
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - inclusionai/ling-3.0-flash-sante:free
           - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
@@ -2681,6 +2684,7 @@ endpoints:
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-fin
+          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.1-flash
           - '---META---'
@@ -2839,6 +2843,8 @@ endpoints:
           - openai/gpt-6-sol:batch
           - openai/gpt-6.1-sol
           - openai/gpt-6.1-sol-pro
+          - openai/gpt-6.1-sol-pro:batch
+          - openai/gpt-6.1-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
@@ -2933,6 +2939,10 @@ endpoints:
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
           - sao10k/l3.3-euryale-70b
+          - '---STEPFUN---'
+          - stepfun/step-3.5-flash
+          - stepfun/step-3.7-flash
+          - stepfun/step-5-preview
           - '---TENCENT---'
           - tencent/hunyuan-a13b-instruct
           - tencent/hy-mt2-1.8b
@@ -3001,7 +3011,6 @@ endpoints:
           - '---OTHERS---'
           - anthracite-org/magnum-v4-72b
           - arcee-ai/trinity-large-thinking
-          - baidu/ernie-4.5-vl-424b-a47b
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
           - fireworks/ember-1
@@ -3029,8 +3038,6 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
-          - stepfun/step-3.5-flash
-          - stepfun/step-3.7-flash
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - typesafe/jev-router
