@@ -1391,6 +1391,7 @@ endpoints:
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
           - google/gemma-2-2b-it
+          - jialinyyzz/humanizer
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
           - meta-llama/Llama-2-7b-chat-hf
@@ -1413,7 +1414,6 @@ endpoints:
           - openai/gpt-oss-20b
           - openbmb/MiniCPM5-2B
           - prism-ml/Ternary-Bonsai-2-27B-gguf
-          - prism-ml/Ternary-Bonsai-27B-gguf
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.7
@@ -1729,6 +1729,7 @@ endpoints:
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
           - asi1-mini
+          - ateron/gemma-4-dark-thoughts-v2-31b
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1770,6 +1771,7 @@ endpoints:
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash-vision-exp
+          - deepseek/deepseek-v4-flash-vision-exp-cybersecurity
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
@@ -1852,6 +1854,7 @@ endpoints:
           - google/gemini-3.6-flash
           - google/gemini-3.7-flash
           - google/gemini-3.8-flash
+          - google/gemini-4-argon
           - google/gemini-flash-1.5
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
@@ -1956,9 +1959,12 @@ endpoints:
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
+          - nbeerbower/gemma4-gutenberg-31b
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - nimbz/gemma-4-giftige-blume-31b-v2
+          - nimbz/schattenblume-31b
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -2139,6 +2145,7 @@ endpoints:
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
+          - subq/subq-snap-preview
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2329,7 +2336,6 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - apodex/apodex-1.1-mini:free
           - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
@@ -2450,6 +2456,8 @@ endpoints:
           - google/gemini-3.7-flash:batch
           - google/gemini-3.8-flash
           - google/gemini-3.8-flash:batch
+          - google/gemini-4-argon
+          - google/gemini-4-argon:batch
           - google/gemini-nano-banana-2.1
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
@@ -2461,8 +2469,6 @@ endpoints:
           - google/lyria-3-pro-preview
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
-          - inclusionai/ling-3.0-flash-fin
-          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.1-flash
           - '---META---'
@@ -2789,6 +2795,7 @@ endpoints:
           - inception/mercury-2.5
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
+          - liquid/lfm-2.5-24b-a2b
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
@@ -2806,16 +2813,19 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - scaledown/extract
+          - scaledown/summarize
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - typesafe/jev-router
-          - unbiased/pareto
           - unbiased/pareto-26.10-preview
+          - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
           - ~moonshotai/kimi-latest
+          - ~unbiased/pareto-latest
           - ~x-ai/grok-latest
           - ~z-ai/glm-flash-latest
           - ~z-ai/glm-latest
