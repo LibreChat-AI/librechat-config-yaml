@@ -858,6 +858,7 @@ endpoints:
           - ling-3-0-flash
           - ling-3-0-flash-fin
           - ling-3-0-flash-vl
+          - ling-3-1-flash
           - llama-2-13b
           - llama-2-13b-chat-hf
           - llama-2-13b-tiefighter
@@ -1317,7 +1318,6 @@ endpoints:
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.5
-          - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -1606,7 +1606,6 @@ endpoints:
           - TheDrummer/Cydonia-24B-v4.3
           - TheDrummer/Magidonia-24B-v4.3
           - TheDrummer/Rocinante-12B-v1.1
-          - TheDrummer/Skyfall-31B-v4.2
           - TheDrummer/UnslopNemo-12B-v4.1
           - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
@@ -1673,7 +1672,6 @@ endpoints:
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
           - asi1-mini
-          - ateron/gemma-4-dark-thoughts-v2-31b
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1687,6 +1685,7 @@ endpoints:
           - claw-medium
           - cloudflare/clef
           - cloudflare/clef-flash
+          - cloudflare/clef-omni
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
           - deepcogito/cogito-v1-preview-qwen-32B
@@ -1833,6 +1832,7 @@ endpoints:
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
           - liquid/lfm-2.5-2.6b:free
+          - liquid/lfm-2.5-24b-a2b
           - llmtech/decider-0.8b-fp8
           - llmtech/decider-2b-fp8
           - llmtech/decider-4b-nvfp4
@@ -1903,12 +1903,9 @@ endpoints:
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
-          - nbeerbower/gemma4-gutenberg-31b
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
-          - nimbz/gemma-4-giftige-blume-31b-v2
-          - nimbz/schattenblume-31b
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -2081,7 +2078,6 @@ endpoints:
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
-          - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
           - stealth/space-bunny-alpha
@@ -2101,8 +2097,8 @@ endpoints:
           - thinkingmachines/inkling:thinking
           - typesafe/jev-1.13
           - typesafe/jev-latest
-          - unbiased/pareto
           - unbiased/pareto-26.10-preview
+          - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
