@@ -1204,6 +1204,7 @@ endpoints:
           - nova-reel-v1
           - nova-sonic-v1
           - nvidia-nemotron-3-5-lightning
+          - nvidia-nemotron-3-5-super-vl
           - nvidia-nemotron-3-super-120b-a12b
           - nvidia-nemotron-3-ultra-550b-a55b
           - nvidia-nemotron-nano-12b-v2-vl
@@ -1423,6 +1424,7 @@ endpoints:
           - step-3
           - step-3-5-flash
           - step-3-7-flash
+          - step-5-preview
           - test123
           - text-2-vec-base-chinese
           - text-embedding-3-large
@@ -1913,6 +1915,8 @@ endpoints:
           - aion-labs/aion-3.5
           - aion-labs/aion-3.5-mini
           - aion-labs/aion-rp-llama-3.1-8b
+          - aisingapore/Gemma-SEA-LION-v4-27B-IT
+          - aisingapore/Qwen-SEA-LION-v4-32B-IT
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-pro-v1
@@ -2006,7 +2010,6 @@ endpoints:
           - deepseek/deepseek-v4-flash-0731:thinking
           - deepseek/deepseek-v4-flash-latest
           - deepseek/deepseek-v4-flash-vision-exp
-          - deepseek/deepseek-v4-flash-vision-exp-cybersecurity
           - deepseek/deepseek-v4-flash:thinking
           - deepseek/deepseek-v4-pro
           - deepseek/deepseek-v4-pro-0813
@@ -2051,6 +2054,7 @@ endpoints:
           - gemini-exp-1206
           - gemma-4-12b-it
           - gemma-4-12b-it-semancer
+          - gemma-4-12b-it-starry-ocean
           - gemma-4-12b-it-station-keeper
           - gemma-4-26b-a4b-it-chimerax
           - gemma-4-26b-a4b-it-chimeraxheretic
@@ -2215,6 +2219,7 @@ endpoints:
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning
           - nvidia/nemotron-3.5-lightning:thinking
+          - nvidia/nemotron-3.5-super-vl
           - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
           - openai/gpt-4.1
@@ -2364,6 +2369,8 @@ endpoints:
           - qwen/qwen3.8-max:thinking
           - qwen/qwen3.8-omni-flash
           - qwen3-vl-235b-a22b-instruct-original
+          - reka/reka-edge-2603
+          - reka/reka-flash-3
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
@@ -2372,11 +2379,13 @@ endpoints:
           - shisa-ai/shisa-v2.1-llama3.3-70b
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
+          - speakleash/Bielik-11B-v3.0-Instruct
           - stepfun-ai/step-3.5-flash
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
           - subq/subq-snap-preview
+          - swiss-ai/apertus-v1.5-8b
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2387,7 +2396,9 @@ endpoints:
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
           - typesafe/jev-1.13
+          - typesafe/jev-1.14
           - typesafe/jev-latest
+          - ultramarine-1-flash
           - unbiased/pareto-26.10-preview
           - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
@@ -2506,7 +2517,6 @@ endpoints:
           - mistralai/mistral-large-2-instruct
           - mistralai/mixtral-8x22b-v0.1
           - moonshotai/kimi-k2.6
-          - moonshotai/kimi-k3
           - nv-mistralai/mistral-nemo-12b-instruct
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
@@ -2529,6 +2539,7 @@ endpoints:
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning-30b-a3b
+          - nvidia/nemotron-3.5-super-vl-120b-a12b
           - nvidia/nemotron-4-340b-instruct
           - nvidia/nemotron-4-340b-reward
           - nvidia/nemotron-nano-3-30b-a3b
@@ -2543,6 +2554,7 @@ endpoints:
           - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
+          - stepfun-ai/step-5-preview
           - writer/palmyra-creative-122b
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
@@ -2576,6 +2588,7 @@ endpoints:
           - nvidia/nemotron-3-ultra-550b-a55b:free
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-3.5-lightning:free
+          - nvidia/nemotron-3.5-super-vl:free
           - poolside/laguna-s-2.1:free
           - poolside/laguna-xs-2.1:free
           - thinkingmachines/inkling-small:free
@@ -2616,7 +2629,6 @@ endpoints:
           - anthropic/claude-opus-5.5
           - anthropic/claude-opus-5.5:batch
           - anthropic/claude-opus-5:batch
-          - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.5:batch
           - anthropic/claude-sonnet-4.6
@@ -2708,6 +2720,7 @@ endpoints:
           - meta/muse-spark-1.2-contributor
           - meta/muse-spark-1.3
           - meta/muse-spark-1.3-contributor
+          - meta/muse-spark-open
           - meta/muse-wonder
           - '---META-LLAMA---'
           - meta-llama/llama-3.1-70b-instruct
@@ -2773,6 +2786,7 @@ endpoints:
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
           - nvidia/nemotron-3.5-lightning
+          - nvidia/nemotron-3.5-super-vl
           - nvidia/switchyard
           - '---OPENAI---'
           - openai/gpt-3.5-turbo
@@ -3030,6 +3044,8 @@ endpoints:
           - meituan/longcat-2.0
           - microsoft/phi-4
           - microsoft/wizardlm-2-8x22b
+          - moondream/moondream3-preview
+          - moondream/moondream3.1-9b-a2b
           - morph/morph-v3-fast
           - morph/morph-v3-large
           - nex-agi/nex-n2.5-mini
@@ -3048,7 +3064,6 @@ endpoints:
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - typesafe/jev-router
-          - unbiased/pareto-26.10-preview
           - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
           - writer/palmyra-x5
