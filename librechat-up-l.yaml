@@ -1367,6 +1367,7 @@ endpoints:
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
           - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.5
+          - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
           - Qwen/Qwen2.5-7B-Instruct
@@ -1395,7 +1396,6 @@ endpoints:
           - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
-          - microsoft/Phi-3-mini-4k-instruct
           - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
           - mistralai/Mistral-7B-Instruct-v0.1
@@ -1782,6 +1782,8 @@ endpoints:
           - ernie-5.0-thinking-preview
           - ernie-5.1
           - ernie-5.1:thinking
+          - eu-jev/eu-jeff-1.0.0
+          - eu-jev/eu-jeff-latest
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
@@ -1860,6 +1862,7 @@ endpoints:
           - google/gemma-4-31b-it:thinking
           - google/gemma4-31b-splituntied
           - heabsy/cyberheabsy
+          - heabsy/qwen3.8-27b-uncensored-fast
           - hermes-high
           - hermes-low
           - hermes-medium
@@ -1906,6 +1909,7 @@ endpoints:
           - meta/muse-spark-1.2-contributor
           - meta/muse-spark-1.3
           - meta/muse-spark-1.3-contributor
+          - meta/muse-spark-open
           - meta/muse-wonder
           - microsoft/wizardlm-2-8x22b
           - minimax/minimax-01
@@ -1942,6 +1946,8 @@ endpoints:
           - mistralai/mistral-small-4-119b-2603:thinking
           - mistralai/mixtral-8x22b-instruct-v0.1
           - mlabonne/NeuralDaredevil-8B-abliterated
+          - moondream/moondream3-preview
+          - moondream/moondream3.1-9b-a2b
           - moonshotai/Kimi-K2-Instruct-0905
           - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2-instruct-0711
@@ -2124,6 +2130,7 @@ endpoints:
           - qwen/qwen3.8-omni-flash
           - qwen3-vl-235b-a22b-instruct-original
           - qwq-32b
+          - reflection/beam-1.0
           - reka/reka-edge-2603
           - reka/reka-flash-3
           - sakana/fugu-max
@@ -2146,6 +2153,7 @@ endpoints:
           - synth-2.5-pro
           - tencent/hy3
           - tencent/hy4-preview
+          - thedrummer/orion-26b-a4b-v1.1
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
@@ -2350,6 +2358,7 @@ endpoints:
           - poolside/laguna-xs-2.1:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
+          - xingchen-agi/xing4.0-29b-a4b:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2699,6 +2708,7 @@ endpoints:
           - qwen/qwen3.7-flash
           - qwen/qwen3.7-max
           - qwen/qwen3.7-plus
+          - qwen/qwen3.7-plus:batch
           - qwen/qwen3.8-2.4t-a95b
           - qwen/qwen3.8-27b
           - qwen/qwen3.8-flash
@@ -2788,6 +2798,7 @@ endpoints:
           - arcee-ai/trinity-large-thinking
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
+          - elorian/glimpse
           - fireworks/ember-1
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
@@ -2812,6 +2823,7 @@ endpoints:
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
+          - reflection/beam-1.0-501b-a23b
           - rekaai/reka-edge
           - rekaai/reka-flash-3
           - relace/relace-apply-3
