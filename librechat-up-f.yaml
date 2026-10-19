@@ -1553,6 +1553,7 @@ endpoints:
       models:
         default:
           - accounts/fireworks/models/deepseek-v4p1-flash
+          - accounts/fireworks/models/deepseek-v4p1-flash-1017
           - accounts/fireworks/models/ember-1
           - accounts/fireworks/models/glm-5p3
           - accounts/fireworks/models/glm-5p3-flash
@@ -1942,16 +1943,10 @@ endpoints:
           - anthropic/claude-opus-5
           - anthropic/claude-opus-5.5
           - anthropic/claude-opus-latest
-          - anthropic/claude-sonnet-4
           - anthropic/claude-sonnet-4.5
           - anthropic/claude-sonnet-4.5:thinking
           - anthropic/claude-sonnet-4.6
           - anthropic/claude-sonnet-4.6:thinking
-          - anthropic/claude-sonnet-4:thinking
-          - anthropic/claude-sonnet-4:thinking:1024
-          - anthropic/claude-sonnet-4:thinking:32768
-          - anthropic/claude-sonnet-4:thinking:64000
-          - anthropic/claude-sonnet-4:thinking:8192
           - anthropic/claude-sonnet-5
           - anthropic/claude-sonnet-5.5
           - anthropic/claude-sonnet-5.5:thinking
@@ -2404,7 +2399,7 @@ endpoints:
           - typesafe/jev-1.14
           - typesafe/jev-latest
           - ultramarine-1-flash
-          - unbiased/pareto-26.10-preview
+          - unbiased/pareto-26.10
           - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
           - universal-summarizer
