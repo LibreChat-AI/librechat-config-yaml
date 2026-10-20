@@ -1373,7 +1373,6 @@ endpoints:
       models:
         default:
           - CohereLabs/c4ai-command-r-plus
-          - Edge0/Edge0-35B-A3B-preview
           - HuggingFaceH4/zephyr-7b-beta
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
           - MiniMaxAI/MiniMax-M2
@@ -1388,6 +1387,7 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
+          - XHToken/Spark-X2.5-4B
           - XingChen-AGI/Xing4.0-29B-A4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -1407,6 +1407,7 @@ endpoints:
           - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
+          - microsoft/Phi-3-mini-4k-instruct
           - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
           - mistralai/Mistral-7B-Instruct-v0.1
@@ -1882,6 +1883,7 @@ endpoints:
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2.5-preview
+          - inception/mercury-3
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
@@ -1929,6 +1931,7 @@ endpoints:
           - minimax/minimax-m2.7
           - minimax/minimax-m2.7
           - minimax/minimax-m3
+          - minimax/minimax-m3.1-flash
           - minimax/minimax-m3:thinking
           - mistral-code-agent-latest
           - mistral-code-latest
@@ -2356,6 +2359,7 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
+          - minimax/minimax-m3.1-flash:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2428,7 +2432,6 @@ endpoints:
           - deepseek/deepseek-chat
           - deepseek/deepseek-chat-v3-0324
           - deepseek/deepseek-chat-v3.1
-          - deepseek/deepseek-r1
           - deepseek/deepseek-r1-0528
           - deepseek/deepseek-v3.1-terminus
           - deepseek/deepseek-v3.2
@@ -2484,6 +2487,10 @@ endpoints:
           - google/gemma-4-31b-it
           - google/lyria-3-clip-preview
           - google/lyria-3-pro-preview
+          - '---INCEPTION---'
+          - inception/mercury-2
+          - inception/mercury-2.5
+          - inception/mercury-3
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
@@ -2729,10 +2736,6 @@ endpoints:
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v2
           - sakana/sakana-namazu
-          - '---SAO10K---'
-          - sao10k/l3-lunaris-8b
-          - sao10k/l3.1-euryale-70b
-          - sao10k/l3.3-euryale-70b
           - '---STEPFUN---'
           - stepfun/step-3.5-flash
           - stepfun/step-3.7-flash
@@ -2812,15 +2815,12 @@ endpoints:
           - gryphe/mythomax-l2-13b
           - ibm-granite/granite-4.0-h-micro
           - ibm-granite/granite-4.2-8b
-          - inception/mercury-2
-          - inception/mercury-2.5
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - liquid/lfm-2.5-24b-a2b
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
-          - microsoft/wizardlm-2-8x22b
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
           - morph/morph-v3-fast
@@ -2837,6 +2837,8 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - sao10k/l3-lunaris-8b
+          - sao10k/l3.1-euryale-70b
           - scaledown/extract
           - scaledown/summarize
           - thinkingmachines/inkling
