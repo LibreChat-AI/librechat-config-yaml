@@ -1692,6 +1692,7 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
+          - XHToken/Spark-X2.5-4B
           - XingChen-AGI/Xing4.0-29B-A4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -1723,7 +1724,6 @@ endpoints:
           - openai/gpt-oss-20b
           - openbmb/MiniCPM5-2B
           - prism-ml/Ternary-Bonsai-2-27B-gguf
-          - prism-ml/Ternary-Bonsai-27B-gguf
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.7
@@ -2057,10 +2057,6 @@ endpoints:
           - deepseek-ai/deepseek-v3.2-exp-thinking
           - deepseek-chat
           - deepseek-chat-cheaper
-          - deepseek-r1
-          - deepseek-r1-sambanova
-          - deepseek-reasoner
-          - deepseek-reasoner-cheaper
           - deepseek-v3-0324
           - deepseek/deepseek-latest
           - deepseek/deepseek-v3.2
@@ -2614,6 +2610,8 @@ endpoints:
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-content-safety
+          - nvidia/nemotron-3.5-embed-1b
+          - nvidia/nemotron-3.5-embed-8b
           - nvidia/nemotron-3.5-lightning-30b-a3b
           - nvidia/nemotron-3.5-super-vl-120b-a12b
           - nvidia/nemotron-4-340b-instruct
@@ -2748,10 +2746,8 @@ endpoints:
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-lite
           - google/gemini-2.5-flash-lite:batch
-          - google/gemini-2.5-flash:batch
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
-          - google/gemini-2.5-pro:batch
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview:batch
           - google/gemini-3-pro-image
