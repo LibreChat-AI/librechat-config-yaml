@@ -43,6 +43,7 @@ Contributions are welcome!
 | Provider | URL |
 |----------|-----|
 | 302.AI | https://302.ai/ |
+| Ace Data Cloud | https://platform.acedata.cloud/console/applications?utm_source=librechat&utm_medium=referral&utm_campaign=evergreen&utm_content=provider_catalog_api_key |
 | APIpie | https://apipie.ai/dashboard/profile/api-keys |
 | Cohere | https://dashboard.cohere.com/api-keys |
 | DeepSeek | https://platform.deepseek.com/api_keys |
