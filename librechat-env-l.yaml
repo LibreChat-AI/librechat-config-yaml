@@ -1330,7 +1330,6 @@ endpoints:
           - Qwen/Qwen3-Coder-Next
           - TinyLlama/TinyLlama-1.1B-Chat-v1.0
           - TokenRhythm/NeoHorse-1-4B
-          - XHToken/Spark-X2.5-4B
           - XingChen-AGI/Xing4.0-29B-A4B
           - deepseek-ai/DeepSeek-R1
           - deepseek-ai/DeepSeek-R1-0528
@@ -1672,6 +1671,7 @@ endpoints:
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
           - asi1-mini
+          - ateron/gemma-4-dark-thoughts-v2-31b
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1910,9 +1910,12 @@ endpoints:
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-k3
           - moonshotai/kimi-latest
+          - nbeerbower/gemma4-gutenberg-31b
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - nimbz/gemma-4-giftige-blume-31b-v2
+          - nimbz/schattenblume-31b
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/hermes-4-405b
@@ -1988,12 +1991,13 @@ endpoints:
           - openai/o3-pro-2025-06-10
           - openai/o4-mini
           - openai/o4-mini-high
+          - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
           - pamanseau/OpenReasoning-Nemotron-32B
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
-          - perplexity/pplx-decider-v1.1-27b
+          - perplexity/pplx-decider-v1.2
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
@@ -2089,6 +2093,7 @@ endpoints:
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
+          - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
           - speakleash/Bielik-11B-v3.0-Instruct
@@ -2104,6 +2109,7 @@ endpoints:
           - tencent/hy3
           - tencent/hy4-preview
           - thedrummer/orion-26b-a4b-v1.1
+          - thedrummer/skyfall-31b-v4.2
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
@@ -2309,6 +2315,7 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl:free
           - poolside/laguna-s-2.1:free
           - poolside/laguna-xs-2.1:free
+          - recursive/flint-v1.0:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
           - xingchen-agi/xing4.0-29b-a4b:free
@@ -2389,7 +2396,6 @@ endpoints:
           - google/gemini-2.5-flash
           - google/gemini-2.5-flash-image
           - google/gemini-2.5-flash-lite
-          - google/gemini-2.5-flash-lite:batch
           - google/gemini-2.5-pro
           - google/gemini-2.5-pro-preview
           - google/gemini-3-flash-preview
