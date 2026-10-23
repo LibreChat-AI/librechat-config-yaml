@@ -2053,6 +2053,9 @@ endpoints:
           - cloudflare/clef-omni
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
+          - decision-large
+          - decision-medium
+          - decision-small
           - deepcogito/cogito-v1-preview-qwen-32B
           - deepseek-ai/DeepSeek-R1-0528
           - deepseek-ai/DeepSeek-V3.1
@@ -2668,7 +2671,6 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
-          - minimax/minimax-m3.1-flash:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2829,6 +2831,7 @@ endpoints:
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m3
+          - minimax/minimax-m3.1-flash
           - '---MISTRALAI---'
           - mistralai/codestral-2508
           - mistralai/codestral-2508:batch
