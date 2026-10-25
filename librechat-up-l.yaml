@@ -2005,6 +2005,7 @@ endpoints:
           - aion-labs/aion-rp-llama-3.1-8b
           - aisingapore/Gemma-SEA-LION-v4-27B-IT
           - aisingapore/Qwen-SEA-LION-v4-32B-IT
+          - aleph-alpha/kolibri-1
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-pro-v1
@@ -2100,6 +2101,8 @@ endpoints:
           - deepseek/deepseek-v4.1-flash
           - deepseek/deepseek-v4.1-flash-1017
           - deepseek/deepseek-v4.1-flash-1017:thinking
+          - deepseek/deepseek-v4.1-flash-uncensored
+          - deepseek/deepseek-v4.1-flash-uncensored:thinking
           - deepseek/deepseek-v4.1-flash:thinking
           - doubao-1.5-pro-256k
           - doubao-1.5-pro-32k
@@ -2289,6 +2292,8 @@ endpoints:
           - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-k2.7-code-highspeed
           - moonshotai/kimi-k3
+          - moonshotai/kimi-k3.1-pro
+          - moonshotai/kimi-k3.1-pro-highspeed
           - moonshotai/kimi-latest
           - nano-gpt-help
           - nanogpt/coding-router
@@ -2533,6 +2538,7 @@ endpoints:
           - xiaomi/mimo-v2.6-flash-uncensored:thinking
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
+          - xingchen-agi/xing4.0-29b-a4b
           - z-ai/GLM-4.5-Air
           - z-ai/GLM-4.5-Air:thinking
           - z-ai/GLM-4.5:thinking
@@ -2901,11 +2907,8 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl
           - nvidia/switchyard
           - '---OPENAI---'
-          - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
           - openai/gpt-3.5-turbo-16k
-          - openai/gpt-3.5-turbo-instruct
-          - openai/gpt-3.5-turbo:batch
           - openai/gpt-4
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo:batch
@@ -3147,6 +3150,7 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
+          - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
           - mancer/weaver
           - meituan/longcat-2.0
