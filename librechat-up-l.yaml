@@ -1672,6 +1672,7 @@ endpoints:
           - aion-labs/aion-rp-llama-3.1-8b
           - aisingapore/Gemma-SEA-LION-v4-27B-IT
           - aisingapore/Qwen-SEA-LION-v4-32B-IT
+          - aleph-alpha/kolibri-1
           - amazon/nova-2-lite-v1
           - amazon/nova-lite-v1
           - amazon/nova-pro-v1
@@ -2577,11 +2578,8 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl
           - nvidia/switchyard
           - '---OPENAI---'
-          - openai/gpt-3.5-turbo
           - openai/gpt-3.5-turbo-0613
           - openai/gpt-3.5-turbo-16k
-          - openai/gpt-3.5-turbo-instruct
-          - openai/gpt-3.5-turbo:batch
           - openai/gpt-4
           - openai/gpt-4-turbo
           - openai/gpt-4-turbo:batch
@@ -2823,6 +2821,7 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
+          - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
           - mancer/weaver
           - meituan/longcat-2.0
