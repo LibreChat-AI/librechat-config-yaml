@@ -2081,7 +2081,11 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
           - deepseek/deepseek-v4.1-flash
+          - deepseek/deepseek-v4.1-flash-0910-uncensored
+          - deepseek/deepseek-v4.1-flash-0910-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017
+          - deepseek/deepseek-v4.1-flash-1017-uncensored
+          - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
           - deepseek/deepseek-v4.1-flash-uncensored
           - deepseek/deepseek-v4.1-flash-uncensored:thinking
@@ -2300,7 +2304,6 @@ endpoints:
           - nvidia/nemotron-3.5-lightning
           - nvidia/nemotron-3.5-lightning:thinking
           - nvidia/nemotron-3.5-super-vl
-          - openai/gpt-3.5-turbo
           - openai/gpt-4-turbo
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
@@ -2341,6 +2344,7 @@ endpoints:
           - openai/gpt-6.1-sol
           - openai/gpt-6.1-sol-pro
           - openai/gpt-6.1-terra
+          - openai/gpt-6.1-terra-pro
           - openai/gpt-astra-latest
           - openai/gpt-chat-latest
           - openai/gpt-latest
@@ -2394,8 +2398,6 @@ endpoints:
           - qwen/qwen3-coder-30b-a3b-instruct
           - qwen/qwen3-coder-flash
           - qwen/qwen3-coder-next
-          - qwen/qwen3-max
-          - qwen/qwen3-max-2026-01-23
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
@@ -2470,6 +2472,7 @@ endpoints:
           - stepfun/step-5-preview
           - subq/subq-snap-1.1
           - subq/subq-snap-preview
+          - surogate/rune-26b-a4b
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2675,7 +2678,6 @@ endpoints:
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
-          - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-3.5-lightning:free
@@ -2963,6 +2965,8 @@ endpoints:
           - openai/gpt-6.1-sol-pro:batch
           - openai/gpt-6.1-sol:batch
           - openai/gpt-6.1-terra
+          - openai/gpt-6.1-terra-pro
+          - openai/gpt-6.1-terra-pro:batch
           - openai/gpt-6.1-terra:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
@@ -3139,6 +3143,7 @@ endpoints:
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
+          - prism-ml/ternary-bonsai-2-9b
           - reflection/beam-1.0-501b-a23b
           - rekaai/reka-edge
           - rekaai/reka-flash-3
