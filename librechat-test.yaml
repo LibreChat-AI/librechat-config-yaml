@@ -1773,7 +1773,11 @@ endpoints:
           - deepseek/deepseek-v4-pro-0813:thinking
           - deepseek/deepseek-v4-pro:thinking
           - deepseek/deepseek-v4.1-flash
+          - deepseek/deepseek-v4.1-flash-0910-uncensored
+          - deepseek/deepseek-v4.1-flash-0910-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017
+          - deepseek/deepseek-v4.1-flash-1017-uncensored
+          - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
           - deepseek/deepseek-v4.1-flash-uncensored
           - deepseek/deepseek-v4.1-flash-uncensored:thinking
@@ -2161,6 +2165,7 @@ endpoints:
           - stepfun/step-5-preview
           - subq/subq-snap-1.1
           - subq/subq-snap-preview
+          - surogate/rune-26b-a4b
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2367,7 +2372,6 @@ endpoints:
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
-          - nvidia/nemotron-3-super-120b-a12b:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-3.5-lightning:free
@@ -2833,6 +2837,7 @@ endpoints:
           - poolside/laguna-s-2.1
           - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
+          - prism-ml/ternary-bonsai-2-9b
           - reflection/beam-1.0-501b-a23b
           - rekaai/reka-edge
           - rekaai/reka-flash-3
