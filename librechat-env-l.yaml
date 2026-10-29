@@ -1209,6 +1209,7 @@ endpoints:
           - nova-sonic-v1
           - nvidia-nemotron-3-5-lightning
           - nvidia-nemotron-3-5-super-vl
+          - nvidia-nemotron-3-5-transcribe-30b-a4b
           - nvidia-nemotron-3-super-120b-a12b
           - nvidia-nemotron-3-ultra-550b-a55b
           - nvidia-nemotron-nano-12b-v2-vl
@@ -1899,9 +1900,6 @@ endpoints:
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
-          - THUDM/GLM-4-32B-0414
-          - THUDM/GLM-4-9B-0414
-          - THUDM/GLM-Z1-9B-0414
           - TheDrummer/Anubis-70B-v1
           - TheDrummer/Anubis-70B-v1.1
           - TheDrummer/Artemis-v1.1
@@ -2026,9 +2024,6 @@ endpoints:
           - deepseek/deepseek-v4.1-flash-uncensored
           - deepseek/deepseek-v4.1-flash-uncensored:thinking
           - deepseek/deepseek-v4.1-flash:thinking
-          - doubao-1.5-pro-256k
-          - doubao-1.5-pro-32k
-          - doubao-1.5-vision-pro-32k
           - doubao-seed-2-0-code-preview-260215
           - doubao-seed-2-0-lite-260215
           - doubao-seed-2-0-mini-260215
@@ -2084,12 +2079,7 @@ endpoints:
           - gemma-4-31b-it-isometry
           - gemma-4-31b-it-novelist
           - gemma-4-31b-it-scarlet
-          - glm-4-air-0111
           - glm-4-long
-          - glm-4-plus-0111
-          - glm-4.1v-thinking-flash
-          - glm-4.1v-thinking-flashx
-          - glm-z1-airx
           - google/diffusiongemma
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
@@ -2589,7 +2579,6 @@ endpoints:
           - writer/palmyra-fin-70b-32k
           - writer/palmyra-med-70b
           - writer/palmyra-med-70b-32k
-          - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - zyphra/zamba2-7b-instruct
         fetch: false
@@ -2821,7 +2810,6 @@ endpoints:
           - openai/gpt-3.5-turbo-0613
           - openai/gpt-3.5-turbo-16k
           - openai/gpt-4
-          - openai/gpt-4-turbo
           - openai/gpt-4-turbo:batch
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
@@ -2912,16 +2900,10 @@ endpoints:
           - openai/gpt-oss-20b
           - openai/gpt-oss-20b:batch
           - openai/gpt-oss-safeguard-20b
-          - openai/o1
-          - openai/o1-pro
           - openai/o3
-          - openai/o3-mini
-          - openai/o3-mini-high
           - openai/o3-mini:batch
           - openai/o3-pro
           - openai/o3:batch
-          - openai/o4-mini
-          - openai/o4-mini-high
           - openai/o4-mini:batch
           - '---OPENROUTER---'
           - openrouter/auto-beta
@@ -2952,7 +2934,6 @@ endpoints:
           - qwen/qwen3-coder-flash
           - qwen/qwen3-coder-next
           - qwen/qwen3-next-80b-a3b-instruct
-          - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-30b-a3b-instruct
           - qwen/qwen3-vl-30b-a3b-thinking
@@ -3074,6 +3055,7 @@ endpoints:
           - morph/morph-v3-large
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
           - poolside/laguna-s-2.1
