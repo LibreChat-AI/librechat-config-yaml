@@ -2233,6 +2233,7 @@ endpoints:
           - mistralai/mistral-7b-instruct-v0.3
           - mistralai/mistral-large
           - mistralai/mistral-large-2-instruct
+          - mistralai/mistral-large-4-1t-a52b
           - mistralai/mixtral-8x22b-v0.1
           - moonshotai/kimi-k2.6
           - nv-mistralai/mistral-nemo-12b-instruct
@@ -2682,10 +2683,6 @@ endpoints:
           - thedrummer/cydonia-24b-v4.1
           - thedrummer/skyfall-36b-v2
           - thedrummer/unslopnemo-12b
-          - '---UPSTAGE---'
-          - upstage/solar-mini4
-          - upstage/solar-pro-3
-          - upstage/solar-pro4
           - '---X-AI---'
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
@@ -2778,6 +2775,8 @@ endpoints:
           - unbiased/pareto-26.10
           - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
+          - upstage/solar-mini4
+          - upstage/solar-pro4
           - writer/palmyra-x5
           - ~google/gemini-flash-latest
           - ~google/gemini-pro-latest
