@@ -1126,13 +1126,11 @@ endpoints:
           - mistral-7b-instruct-0-1
           - mistral-7b-instruct-0-2
           - mistral-7b-instruct-0-3
-          - mistral-7b-instruct-v0
           - mistral-7b-instruct-v0-1
           - mistral-7b-instruct-v0-2
           - mistral-7b-instruct-v0-3
           - mistral-large
           - mistral-large-2402-v1
-          - mistral-large-2407
           - mistral-large-2411
           - mistral-large-2512
           - mistral-large-3-675b-instruct
@@ -2289,6 +2287,7 @@ endpoints:
           - openai/o3-pro-2025-06-10
           - openai/o4-mini
           - openai/o4-mini-high
+          - orca/orcacyber-zero-1.5
           - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
