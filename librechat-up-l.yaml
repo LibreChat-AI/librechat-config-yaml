@@ -592,7 +592,6 @@ endpoints:
           - claude-3-haiku-20240307
           - claude-3-haiku-20240307-v1
           - claude-3-sonnet-20240229-v1
-          - claude-4-opus
           - claude-4-sonnet
           - claude-fable-5
           - claude-haiku-4-5
@@ -717,8 +716,6 @@ endpoints:
           - ernie-4-5-21b-a3b
           - ernie-4-5-21b-a3b-thinking
           - ernie-4-5-300b-a47b
-          - ernie-4-5-vl-28b-a3b
-          - ernie-4-5-vl-424b-a47b
           - expand
           - fibo
           - fibo-edit
@@ -1010,8 +1007,6 @@ endpoints:
           - grok-4-20-multi-agent
           - grok-4-20-multi-agent-beta
           - grok-4-fast
-          - grok-code-fast
-          - grok-code-fast-1
           - gte-base
           - gte-large
           - healer-alpha
@@ -1059,7 +1054,6 @@ endpoints:
           - l3-lunaris-8b
           - large-context
           - learnlm-1-5-pro-experimental
-          - lfm-2-2-6b
           - lfm-2-24b-a2b
           - lfm-2-5-1-2b-instruct
           - lfm-2-5-1-2b-thinking
@@ -1360,7 +1354,6 @@ endpoints:
           - qwen-3-tts-voicedesign
           - qwen-3-vl-235b-a22b
           - qwen-3-vl-235b-a22b-instruct
-          - qwen-3-vl-235b-a22b-thinking
           - qwen-3-vl-30b-a3b-instruct
           - qwen-3-vl-30b-a3b-thinking
           - qwen-3-vl-32b-instruct
@@ -2202,6 +2195,7 @@ endpoints:
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - jaredpalmer/kev-4b
+          - jaredpalmer/kev-9b
           - kimi-k2-instruct-fast
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
@@ -2380,6 +2374,8 @@ endpoints:
           - pokee-isaac
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
+          - pqhaz/DeepSeek-V4.1-Flash-1017-heretic
+          - pqhaz/DeepSeek-V4.1-Flash-1017-heretic:thinking
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
           - qwen/qwen-2.5-72b-instruct
@@ -2684,8 +2680,6 @@ endpoints:
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-3.5-super-vl:free
-          - poolside/laguna-s-2.1:free
-          - poolside/laguna-xs-2.1:free
           - recursive/flint-v1.0:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
@@ -3131,8 +3125,6 @@ endpoints:
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
-          - poolside/laguna-s-2.1
-          - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
           - reflection/beam-1.0-501b-a23b
