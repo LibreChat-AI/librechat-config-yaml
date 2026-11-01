@@ -966,6 +966,7 @@ endpoints:
           - mistral-small-3-1-24b-instruct
           - mistral-small-3-1-24b-instruct-2503
           - mistral-small-3-2-24b-instruct
+          - mistral-small-3-2-24b-instruct-2506
           - mistral-small-creative
           - mixtral-8x22b-instruct
           - mixtral-8x22b-instruct-v0-1
@@ -2049,6 +2050,8 @@ endpoints:
           - pokee-isaac
           - poolside/laguna-s-2.1
           - poolside/laguna-s-2.1:thinking
+          - pqhaz/DeepSeek-V4.1-Flash-1017-heretic
+          - pqhaz/DeepSeek-V4.1-Flash-1017-heretic:thinking
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
           - qwen/qwen-2.5-72b-instruct
@@ -2357,8 +2360,6 @@ endpoints:
           - nvidia/nemotron-3.5-content-safety:free
           - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-3.5-super-vl:free
-          - poolside/laguna-s-2.1:free
-          - poolside/laguna-xs-2.1:free
           - recursive/flint-v1.0:free
           - thinkingmachines/inkling-small:free
           - thinkingmachines/inkling:free
@@ -2804,8 +2805,6 @@ endpoints:
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
-          - poolside/laguna-s-2.1
-          - poolside/laguna-xs-2.1
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
           - reflection/beam-1.0-501b-a23b
