@@ -1694,7 +1694,6 @@ endpoints:
           - CohereLabs/c4ai-command-r-plus
           - HuggingFaceH4/zephyr-7b-beta
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
-          - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.5
           - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
