@@ -692,7 +692,6 @@ endpoints:
           - glm-5-1
           - glm-5-2
           - glm-5-3
-          - glm-5-3-flash
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -1310,7 +1309,6 @@ endpoints:
           - CohereLabs/c4ai-command-r-plus
           - HuggingFaceH4/zephyr-7b-beta
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
-          - MiniMaxAI/MiniMax-M2
           - MiniMaxAI/MiniMax-M2.5
           - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
@@ -1991,8 +1989,6 @@ endpoints:
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
-          - poolside/laguna-s-2.1
-          - poolside/laguna-s-2.1:thinking
           - pqhaz/DeepSeek-V4.1-Flash-1017-heretic
           - pqhaz/DeepSeek-V4.1-Flash-1017-heretic:thinking
           - prism-ml/ternary-bonsai-2-27b
