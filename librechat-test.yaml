@@ -696,6 +696,7 @@ endpoints:
           - glm-5-1
           - glm-5-2
           - glm-5-3
+          - glm-5-3-flash
           - glm-5-turbo
           - goliath-120b
           - gpt-3-5-turbo
@@ -1878,9 +1879,6 @@ endpoints:
           - liquid/d1
           - liquid/lfm-2.5-2.6b:free
           - liquid/lfm-2.5-24b-a2b
-          - llmtech/decider-0.8b-fp8
-          - llmtech/decider-2b-fp8
-          - llmtech/decider-4b-nvfp4
           - longcat-2.0
           - longcat-2.0:thinking
           - meganova-ai/manta-flash-1.0
@@ -1972,7 +1970,6 @@ endpoints:
           - nvidia/nemotron-3.5-lightning
           - nvidia/nemotron-3.5-lightning:thinking
           - nvidia/nemotron-3.5-super-vl
-          - openai/gpt-4-turbo
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
@@ -2027,12 +2024,10 @@ endpoints:
           - openai/o1
           - openai/o1-pro
           - openai/o3
-          - openai/o3-mini
-          - openai/o3-mini-high
           - openai/o3-mini-low
           - openai/o3-pro-2025-06-10
-          - openai/o4-mini
-          - openai/o4-mini-high
+          - orca/orcacyber-minimax-m3.1-flash
+          - orca/orcacyber-qwen3.8-flash-next
           - orca/orcacyber-zero-1.5
           - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
@@ -2227,6 +2222,7 @@ endpoints:
           - z-ai/glm-5.3-flash-apex-abliterated
           - z-ai/glm-5.3-flash-cybersecurity
           - z-ai/glm-5.3-flash-uncensored
+          - z-ai/glm-5.3-flashx-legal
           - z-ai/glm-5.3-uncensored
           - z-ai/glm-5.3:thinking
           - z-ai/glm-5:thinking
@@ -2541,10 +2537,6 @@ endpoints:
           - moonshotai/kimi-k3
           - moonshotai/kimi-k3.1-pro
           - moonshotai/kimi-k3:batch
-          - '---NOUSRESEARCH---'
-          - nousresearch/hermes-3-llama-3.1-405b
-          - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/hermes-4-405b
           - '---NVIDIA---'
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
@@ -2759,6 +2751,7 @@ endpoints:
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
           - z-ai/glm-5.3-flashx
+          - z-ai/glm-5.3-flashx-legal
           - z-ai/glm-5.3-prime
           - z-ai/glm-5.3:batch
           - z-ai/glm-5v-turbo
@@ -2798,6 +2791,7 @@ endpoints:
           - morph/morph-v3-large
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - nousresearch/hermes-4-405b
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
