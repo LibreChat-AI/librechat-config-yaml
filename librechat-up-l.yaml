@@ -2051,9 +2051,6 @@ endpoints:
           - claw-high
           - claw-low
           - claw-medium
-          - cloudflare/clef
-          - cloudflare/clef-flash
-          - cloudflare/clef-omni
           - cohere/command-r-plus-08-2024
           - command-a-reasoning-08-2025
           - deepcogito/cogito-v1-preview-qwen-32B
@@ -2100,8 +2097,6 @@ endpoints:
           - ernie-5.0-thinking-preview
           - ernie-5.1
           - ernie-5.1:thinking
-          - eu-jev/eu-jeff-1.0.0
-          - eu-jev/eu-jeff-latest
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
           - fastgpt
           - featherless-ai/Qwerky-72B
@@ -2193,16 +2188,10 @@ endpoints:
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
-          - jaredpalmer/kev-4b
-          - jaredpalmer/kev-9b
           - kimi-k2-instruct-fast
           - lightonai/LightOnOCR-2-1B
-          - liquid/d1
           - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
-          - llmtech/decider-0.8b-fp8
-          - llmtech/decider-2b-fp8
-          - llmtech/decider-4b-nvfp4
           - longcat-2.0
           - longcat-2.0:thinking
           - meganova-ai/manta-flash-1.0
@@ -2228,7 +2217,6 @@ endpoints:
           - minimax/minimax-01
           - minimax/minimax-latest
           - minimax/minimax-m2
-          - minimax/minimax-m2-her
           - minimax/minimax-m2.1
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
@@ -2299,7 +2287,6 @@ endpoints:
           - nvidia/nemotron-3.5-lightning
           - nvidia/nemotron-3.5-lightning:thinking
           - nvidia/nemotron-3.5-super-vl
-          - openai/gpt-4-turbo
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
           - openai/gpt-4.1-nano
@@ -2332,7 +2319,6 @@ endpoints:
           - openai/gpt-6-astra
           - openai/gpt-6-astra-pro
           - openai/gpt-6-luna
-          - openai/gpt-6-luna-decisions
           - openai/gpt-6-luna-pro
           - openai/gpt-6-sol
           - openai/gpt-6-sol-pro
@@ -2352,12 +2338,10 @@ endpoints:
           - openai/o1
           - openai/o1-pro
           - openai/o3
-          - openai/o3-mini
-          - openai/o3-mini-high
           - openai/o3-mini-low
           - openai/o3-pro-2025-06-10
-          - openai/o4-mini
-          - openai/o4-mini-high
+          - orca/orcacyber-minimax-m3.1-flash
+          - orca/orcacyber-qwen3.8-flash-next
           - orca/orcacyber-zero-1.5
           - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
@@ -2367,12 +2351,9 @@ endpoints:
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
-          - perplexity/pplx-decider-v1.2
           - phi-4-mini-instruct
           - phi-4-multimodal-instruct
           - pokee-isaac
-          - poolside/laguna-s-2.1
-          - poolside/laguna-s-2.1:thinking
           - pqhaz/DeepSeek-V4.1-Flash-1017-heretic
           - pqhaz/DeepSeek-V4.1-Flash-1017-heretic:thinking
           - prism-ml/ternary-bonsai-2-27b
@@ -2467,9 +2448,6 @@ endpoints:
           - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
-          - subq/subq-snap-1.1
-          - subq/subq-snap-preview
-          - surogate/rune-26b-a4b
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
@@ -2479,9 +2457,6 @@ endpoints:
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
-          - typesafe/jev-1.13
-          - typesafe/jev-1.14
-          - typesafe/jev-latest
           - unbiased/pareto-26.10
           - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
@@ -2495,9 +2470,6 @@ endpoints:
           - upstage/solar-pro4
           - upstage/solar-pro4:thinking
           - venice-uncensored
-          - vllm-sr/decision-large
-          - vllm-sr/decision-medium
-          - vllm-sr/decision-small
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
           - x-ai/grok-4.3
@@ -2550,6 +2522,7 @@ endpoints:
           - z-ai/glm-5.3-flash-apex-abliterated
           - z-ai/glm-5.3-flash-cybersecurity
           - z-ai/glm-5.3-flash-uncensored
+          - z-ai/glm-5.3-flashx-legal
           - z-ai/glm-5.3-uncensored
           - z-ai/glm-5.3:thinking
           - z-ai/glm-5:thinking
@@ -2864,10 +2837,6 @@ endpoints:
           - moonshotai/kimi-k3
           - moonshotai/kimi-k3.1-pro
           - moonshotai/kimi-k3:batch
-          - '---NOUSRESEARCH---'
-          - nousresearch/hermes-3-llama-3.1-405b
-          - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/hermes-4-405b
           - '---NVIDIA---'
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
@@ -3082,6 +3051,7 @@ endpoints:
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
           - z-ai/glm-5.3-flashx
+          - z-ai/glm-5.3-flashx-legal
           - z-ai/glm-5.3-prime
           - z-ai/glm-5.3:batch
           - z-ai/glm-5v-turbo
@@ -3121,6 +3091,7 @@ endpoints:
           - morph/morph-v3-large
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - nousresearch/hermes-4-405b
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
           - perceptron/perceptron-mk1.5
@@ -3479,7 +3450,6 @@ endpoints:
           - grok-build-0.1
           - grok-imagine-image
           - grok-imagine-image-2.0
-          - grok-imagine-image-quality
           - grok-imagine-video
           - grok-imagine-video-1.5
           - grok-imagine-video-1.5-lite
