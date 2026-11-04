@@ -1582,6 +1582,7 @@ endpoints:
           - accounts/fireworks/models/qwen3p8-2p4t-a95b
           - accounts/fireworks/models/qwen3p8-max
           - accounts/fireworks/routers/deepseek-v4p1-flash-1017-spot
+          - accounts/fireworks/routers/deepseek-v4p1-flash-1017-ultrafast
           - accounts/fireworks/routers/deepseek-v4p1-flash-spot
           - accounts/fireworks/routers/glm-5p2-fast
           - accounts/fireworks/routers/glm-5p3-fast
@@ -1724,7 +1725,6 @@ endpoints:
           - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
-          - microsoft/bitnet-b1.58-2B-4T
           - microsoft/phi-4
           - mistralai/Mistral-7B-Instruct-v0.1
           - mistralai/Mistral-7B-Instruct-v0.2
@@ -2359,7 +2359,6 @@ endpoints:
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
           - qwen/qwen-2.5-72b-instruct
-          - qwen/qwen-long
           - qwen/qwen-max
           - qwen/qwen-plus
           - qwen/qwen-turbo
@@ -2441,6 +2440,8 @@ endpoints:
           - sarvam-105b
           - shisa-ai/shisa-v2-llama3.3-70b
           - shisa-ai/shisa-v2.1-llama3.3-70b
+          - sicariussicariistuff/assistant-pepe-32b
+          - soob3123/GrayLine-Qwen3-8B
           - soob3123/Veiled-Calla-12B
           - soob3123/amoral-gemma3-27B-v2
           - speakleash/bielik-11b-v3.0-instruct
@@ -3027,7 +3028,9 @@ endpoints:
           - x-ai/grok-4.3:batch
           - x-ai/grok-4.5
           - x-ai/grok-4.6
+          - x-ai/grok-4.6:batch
           - x-ai/grok-4.7
+          - x-ai/grok-4.7:batch
           - x-ai/grok-build-0.1
           - '---XIAOMI---'
           - xiaomi/mimo-v2.5
@@ -3106,6 +3109,7 @@ endpoints:
           - sao10k/l3.1-euryale-70b
           - scaledown/extract
           - scaledown/summarize
+          - stealth/crouton-alpha
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - typesafe/jev-router
