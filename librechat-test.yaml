@@ -841,6 +841,7 @@ endpoints:
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
           - kimi-k3
+          - kimi-k3-1-pro
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
           - l3-1-euryale-70b
@@ -1632,10 +1633,8 @@ endpoints:
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
           - TEE/kimi-k2.6
-          - TEE/kimi-k2.7-code
           - TEE/kimi-k3
           - TEE/llama3-3-70b
-          - TEE/nemotron-3.5-lightning
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
@@ -1955,9 +1954,6 @@ endpoints:
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
-          - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/hermes-4-405b
-          - nousresearch/hermes-4-405b:thinking
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
@@ -2121,6 +2117,7 @@ endpoints:
           - reflection/beam-1.0
           - reka/reka-edge-2603
           - reka/reka-flash-3
+          - ricursiveai/ripple-65b-preview
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
@@ -2143,6 +2140,7 @@ endpoints:
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
+          - tencent/hy4
           - tencent/hy4-preview
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
@@ -2352,8 +2350,6 @@ endpoints:
           - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-3.5-super-vl:free
           - recursive/flint-v1.0:free
-          - thinkingmachines/inkling-small:free
-          - thinkingmachines/inkling:free
           - xingchen-agi/xing4.0-29b-a4b:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
@@ -2804,6 +2800,7 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - ricursiveai/ripple-65b-preview
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
           - scaledown/extract
