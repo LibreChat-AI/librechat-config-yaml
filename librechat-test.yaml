@@ -955,6 +955,8 @@ endpoints:
           - gpt-image-2-5-flare-2026-09-08
           - gpt-image-2-5-sunburst
           - gpt-image-2-5-sunburst-2026-09-08
+          - gpt-image-2-6-flare
+          - gpt-image-2-6-sunburst
           - gpt-live-1
           - gpt-live-transcribe
           - gpt-oss-120b
@@ -1016,6 +1018,7 @@ endpoints:
           - kimi-k2-instruct-0905
           - kimi-k2-thinking
           - kimi-k3
+          - kimi-k3-1-pro
           - kokoro-82m
           - l3-1-70b-euryale-v2-2
           - l3-1-70b-hanami-x1
@@ -1178,6 +1181,7 @@ endpoints:
           - nano-banana-pro
           - nano-banana-v1
           - nano-banana-v2
+          - nemo-3-asr-streaming
           - nemotron-3-5-asr-streaming-multilingual-0-6b
           - nemotron-3-5-embed-1b-bf16
           - nemotron-3-5-embed-8b-bf16
@@ -1944,10 +1948,8 @@ endpoints:
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
           - TEE/kimi-k2.6
-          - TEE/kimi-k2.7-code
           - TEE/kimi-k3
           - TEE/llama3-3-70b
-          - TEE/nemotron-3.5-lightning
           - TEE/qwen2.5-vl-72b-instruct
           - TEE/qwen3.5-27b
           - TEE/qwen3.5-397b-a17b
@@ -2438,6 +2440,7 @@ endpoints:
           - synth-2.5-flash
           - synth-2.5-pro
           - tencent/hy3
+          - tencent/hy4
           - tencent/hy4-preview
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
@@ -2640,8 +2643,6 @@ endpoints:
           - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-3.5-super-vl:free
           - recursive/flint-v1.0:free
-          - thinkingmachines/inkling-small:free
-          - thinkingmachines/inkling:free
           - xingchen-agi/xing4.0-29b-a4b:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
@@ -3002,6 +3003,7 @@ endpoints:
           - tencent/hy-mt2-7b
           - tencent/hy3
           - tencent/hy3-preview
+          - tencent/hy4
           - tencent/hy4-preview
           - '---THEDRUMMER---'
           - thedrummer/cydonia-24b-v4.1
@@ -3091,6 +3093,7 @@ endpoints:
           - rekaai/reka-flash-3
           - relace/relace-apply-3
           - relace/relace-search
+          - ricursiveai/ripple-65b-preview
           - sao10k/l3-lunaris-8b
           - sao10k/l3.1-euryale-70b
           - scaledown/extract
