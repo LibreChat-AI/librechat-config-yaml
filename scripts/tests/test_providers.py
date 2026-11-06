@@ -133,6 +133,70 @@ class TestGroqFetcher:
 
 
 # ---------------------------------------------------------------------------
+# GreenPT
+# ---------------------------------------------------------------------------
+
+class TestGreenPTFetcher:
+    def _make(self):
+        from providers.greenpt import GreenPTFetcher
+        return GreenPTFetcher()
+
+    def test_greenpt_provider_name(self):
+        from providers.greenpt import GreenPTFetcher
+        assert GreenPTFetcher.provider_name == "GreenPT"
+
+    def test_greenpt_no_api_key(self, monkeypatch):
+        monkeypatch.delenv("GREENPT_API_KEY", raising=False)
+        with patch("providers.greenpt.load_dotenv"):
+            result = self._make().fetch_models()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "GREENPT_API_KEY" in result.error_message
+
+    def test_greenpt_fetches_chat_models(self, monkeypatch):
+        from providers.greenpt import GreenPTFetcher
+        monkeypatch.setenv("GREENPT_API_KEY", "test-key")
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {
+            "data": [
+                {"id": "glm-5.2"},
+                {"id": "kimi-k2.7-code"},
+                {"id": "green-embedding"},
+                {"id": "green-rerank"},
+                {"id": "green-s-pro"},
+            ]
+        }
+
+        with patch("providers.greenpt.load_dotenv"), \
+             patch.object(GreenPTFetcher, "_http_get", return_value=mock_resp):
+            result = self._make().run()
+
+        assert result.status == FetchStatus.SUCCESS
+        assert result.models == ["glm-5.2", "kimi-k2.7-code"]
+
+    def test_greenpt_post_process_features_flagships(self):
+        models = ["other-model", "kimi-k2.7-code", "glm-5.2", "other-model"]
+        assert self._make().post_process(models) == [
+            "glm-5.2",
+            "kimi-k2.7-code",
+            "other-model",
+        ]
+
+    def test_greenpt_fetch_malformed_response(self, monkeypatch):
+        from providers.greenpt import GreenPTFetcher
+        monkeypatch.setenv("GREENPT_API_KEY", "test-key")
+        mock_resp = MagicMock()
+        mock_resp.json.return_value = {"models": []}
+
+        with patch("providers.greenpt.load_dotenv"), \
+             patch.object(GreenPTFetcher, "_http_get", return_value=mock_resp):
+            result = self._make().fetch_models()
+
+        assert result.status == FetchStatus.PARSE_ERROR
+        assert "data" in result.error_message
+
+
+# ---------------------------------------------------------------------------
 # 302AI
 # ---------------------------------------------------------------------------
 
@@ -1206,7 +1270,7 @@ def _reload_all_providers():
         "providers.sambanova", "providers.perplexity", "providers.togetherai",
         "providers.cohere", "providers.unify", "providers.huggingface",
         "providers.ai302", "providers.deepseek", "providers.fireworks",
-        "providers.glhf", "providers.kluster", "providers.mistral",
+        "providers.glhf", "providers.greenpt", "providers.kluster", "providers.mistral",
         "providers.hyperbolic", "providers.xai",
     ]
 
@@ -1218,12 +1282,12 @@ def _reload_all_providers():
 
 
 class TestRegistration:
-    def test_all_20_providers_registered(self):
-        """All 20 providers must be discoverable."""
+    def test_all_21_providers_registered(self):
+        """All 21 providers must be discoverable."""
         registry = _reload_all_providers()
         expected = {
             "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
-            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Github Models", "glhf.chat", "GreenPT", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
             "Unify", "xai",
@@ -1235,7 +1299,7 @@ class TestRegistration:
 
     def test_registry_count(self):
         registry = _reload_all_providers()
-        assert len(registry) == 20
+        assert len(registry) == 21
 
 
 class TestNoDuplicates:
@@ -1274,7 +1338,7 @@ class TestAllProviderNames:
         # These are the exact YAML endpoint names from the config files
         expected_names = {
             "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
-            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Github Models", "glhf.chat", "GreenPT", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
             "Unify", "xai",
