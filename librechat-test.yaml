@@ -1685,7 +1685,6 @@ endpoints:
           - CohereLabs/c4ai-command-r-plus
           - HuggingFaceH4/zephyr-7b-beta
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
-          - MiniMaxAI/MiniMax-M2.5
           - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -2261,9 +2260,6 @@ endpoints:
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
-          - nousresearch/hermes-3-llama-3.1-70b
-          - nousresearch/hermes-4-405b
-          - nousresearch/hermes-4-405b:thinking
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
@@ -2328,6 +2324,7 @@ endpoints:
           - openai/o3
           - openai/o3-mini-low
           - openai/o3-pro-2025-06-10
+          - orca/orcacyber-k3.1-pro
           - orca/orcacyber-minimax-m3.1-flash
           - orca/orcacyber-qwen3.8-flash-next
           - orca/orcacyber-zero-1.5
@@ -2422,6 +2419,7 @@ endpoints:
           - reflection/beam-1.0
           - reka/reka-edge-2603
           - reka/reka-flash-3
+          - ricursiveai/ripple-65b-preview
           - sakana/fugu-max
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v1.1
@@ -2554,7 +2552,6 @@ endpoints:
           - ibm/granite-34b-code-instruct
           - ibm/granite-8b-code-instruct
           - meta/codellama-70b
-          - meta/llama-3.2-11b-vision-instruct
           - meta/llama-3.2-90b-vision-instruct
           - meta/llama-guard-4-12b
           - meta/llama2-70b
@@ -2749,6 +2746,8 @@ endpoints:
           - google/gemini-4-argon
           - google/gemini-4-argon:batch
           - google/gemini-nano-banana-2.1
+          - google/gemini-omni-1.1-flash
+          - google/gemini-omni-1.2-flash
           - google/gemma-2-27b-it
           - google/gemma-3-12b-it
           - google/gemma-3-27b-it
@@ -2764,6 +2763,7 @@ endpoints:
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
+          - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
           - '---META---'
           - meta/muse-glimmer-30b
@@ -2784,11 +2784,7 @@ endpoints:
           - meta-llama/llama-4-scout
           - meta-llama/llama-guard-4-12b
           - '---MINIMAX---'
-          - minimax/minimax-01
           - minimax/minimax-m1
-          - minimax/minimax-m2
-          - minimax/minimax-m2-her
-          - minimax/minimax-m2.1
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m3
@@ -2934,6 +2930,7 @@ endpoints:
           - openai/o4-mini:batch
           - '---OPENROUTER---'
           - openrouter/auto-beta
+          - openrouter/auto-code
           - openrouter/bodybuilder
           - openrouter/free
           - openrouter/fusion
