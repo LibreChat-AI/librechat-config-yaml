@@ -1621,6 +1621,7 @@ endpoints:
           - CohereLabs/c4ai-command-r-plus
           - HuggingFaceH4/zephyr-7b-beta
           - JonathanColetti/Qwen3.8-27B-Uncensored-GGUF
+          - LiquidAI/LFM3-1.7B
           - OBLITERATUS/Qwen3.8-27B-OBLITERATED
           - Qwen/QwQ-32B
           - Qwen/QwQ-32B-Preview
@@ -1647,7 +1648,6 @@ endpoints:
           - meta-llama/Llama-3.2-1B-Instruct
           - meta-llama/Llama-3.2-3B-Instruct
           - meta-llama/Llama-3.3-70B-Instruct
-          - meta-llama/Meta-Llama-3-70B-Instruct
           - meta-llama/Meta-Llama-3-8B-Instruct
           - microsoft/Phi-3-mini-128k-instruct
           - microsoft/phi-4
@@ -2106,6 +2106,8 @@ endpoints:
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
+          - inclusionai/ling-3.0-tiny
+          - inclusionai/ling-3.0-tiny:thinking
           - inclusionai/ling-3.1-flash
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
@@ -2114,6 +2116,7 @@ endpoints:
           - lightonai/LightOnOCR-2-1B
           - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
+          - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
           - meganova-ai/manta-flash-1.0
@@ -2375,6 +2378,7 @@ endpoints:
           - tencent/hy3
           - tencent/hy4
           - tencent/hy4-preview
+          - thedrummer/artemis-31b-v1.2
           - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
@@ -2412,6 +2416,7 @@ endpoints:
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
           - xingchen-agi/xing4.0-29b-a4b
+          - xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic
           - z-ai/GLM-4.5-Air
           - z-ai/GLM-4.5-Air:thinking
           - z-ai/GLM-4.5:thinking
@@ -2569,6 +2574,7 @@ endpoints:
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - liquid/lfm-2.5-2.6b:free
+          - liquid/lfm-3-1.7b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
           - nvidia/nemotron-3.5-lightning:free
@@ -2700,6 +2706,10 @@ endpoints:
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
+          - '---LIQUID---'
+          - liquid/lfm-2.5-2.6b
+          - liquid/lfm-2.5-24b-a2b
+          - liquid/lfm-3-1.7b
           - '---META---'
           - meta/muse-glimmer-30b
           - meta/muse-glimmer-30b:batch
@@ -3010,8 +3020,6 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
-          - liquid/lfm-2.5-2.6b
-          - liquid/lfm-2.5-24b-a2b
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
