@@ -49,6 +49,7 @@ Contributions are welcome!
 | FireworksAI | https://fireworks.ai/ |
 | Github Models | https://github.com |
 | glhf.chat | https://glhf.chat |
+| GreenPT | https://account.greenpt.ai/api/keys |
 | groq | https://console.groq.com/keys |
 | HuggingFace | https://huggingface.co/settings/tokens |
 | Hyperbolic | https://app.hyperbolic.xyz/ |
