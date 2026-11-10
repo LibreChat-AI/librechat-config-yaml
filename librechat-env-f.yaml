@@ -1577,9 +1577,8 @@ endpoints:
           - TEE/gpt-oss-120b
           - TEE/kimi-k2.6
           - TEE/kimi-k3
+          - TEE/kimi-k3.1-pro
           - TEE/llama3-3-70b
-          - TEE/qwen2.5-vl-72b-instruct
-          - TEE/qwen3.5-397b-a17b
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
@@ -1599,7 +1598,6 @@ endpoints:
           - abliteration-ai/abliterated-model-large
           - abliteration-ai/abliterated-model-large-flash
           - abliteration-ai/abliterated-model-large-v2
-          - agnes-3.0-flash
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
           - aion-labs/aion-3.0-mini
@@ -1616,6 +1614,7 @@ endpoints:
           - anthracite-org/magnum-v4-72b
           - anthropic/claude-fable-5
           - anthropic/claude-fable-5.1
+          - anthropic/claude-fable-5.2
           - anthropic/claude-fable-latest
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:thinking
@@ -1655,13 +1654,10 @@ endpoints:
           - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
           - arcee-ai/trinity-large-thinking
-          - asi1-mini
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
-          - bytedance/doubao-seed-2.1-pro
-          - bytedance/doubao-seed-2.1-turbo
           - bytedance/doubao-seed-character
           - celeris-1
           - claw-high
@@ -1714,9 +1710,6 @@ endpoints:
           - doubao-seed-2-0-mini-260215
           - doubao-seed-2-0-pro-260215
           - elorian/glimpse
-          - ernie-5.0-thinking-preview
-          - ernie-5.1
-          - ernie-5.1:thinking
           - eu-jev/eu-jeff-1.0.0
           - eu-jev/eu-jeff-latest
           - failspy/Meta-Llama-3-70B-Instruct-abliterated-v3.5
@@ -1765,7 +1758,6 @@ endpoints:
           - gemma-4-31b-it-isometry
           - gemma-4-31b-it-novelist
           - gemma-4-31b-it-scarlet
-          - glm-4-long
           - google/diffusiongemma
           - google/gemini-3-flash-preview
           - google/gemini-3-flash-preview-thinking
@@ -1966,7 +1958,11 @@ endpoints:
           - openai/o3
           - openai/o3-mini-low
           - openai/o3-pro-2025-06-10
+          - orca/orcacyber-flash-1.0
+          - orca/orcacyber-flash-1.0:thinking
+          - orca/orcacyber-glm-5.3-flash
           - orca/orcacyber-k3.1-pro
+          - orca/orcacyber-mimo-flash
           - orca/orcacyber-minimax-m3.1-flash
           - orca/orcacyber-qwen3.8-flash-next
           - orca/orcacyber-zero-1.5
@@ -2297,6 +2293,7 @@ endpoints:
           - nvidia/nemotron-3.5-lightning:free
           - nvidia/nemotron-3.5-super-vl:free
           - recursive/flint-v1.0:free
+          - thinkingmachines/inkling-2-small:free
           - xingchen-agi/xing4.0-29b-a4b:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
@@ -2315,6 +2312,8 @@ endpoints:
           - anthropic/claude-fable-5
           - anthropic/claude-fable-5.1
           - anthropic/claude-fable-5.1:batch
+          - anthropic/claude-fable-5.2
+          - anthropic/claude-fable-5.2:batch
           - anthropic/claude-fable-5:batch
           - anthropic/claude-haiku-4.5
           - anthropic/claude-haiku-4.5:batch
@@ -2425,6 +2424,7 @@ endpoints:
           - liquid/lfm-2.5-24b-a2b
           - liquid/lfm-3-1.7b
           - '---META---'
+          - meta/muse-ember
           - meta/muse-glimmer-30b
           - meta/muse-glimmer-30b:batch
           - meta/muse-spark-1.1
@@ -2444,7 +2444,6 @@ endpoints:
           - meta-llama/llama-4-scout
           - meta-llama/llama-guard-4-12b
           - '---MINIMAX---'
-          - minimax/minimax-m1
           - minimax/minimax-m2.5
           - minimax/minimax-m2.7
           - minimax/minimax-m3
@@ -2487,6 +2486,10 @@ endpoints:
           - morph/morph-v3-fast:batch
           - morph/morph-v3-large
           - morph/morph-v3-large:batch
+          - '---NEX-AGI---'
+          - nex-agi/nex-n2.5-mini
+          - nex-agi/nex-n2.5-pro
+          - nex-agi/nex-n2.6
           - '---NVIDIA---'
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
@@ -2649,6 +2652,7 @@ endpoints:
           - qwen/qwen3.8-27b:batch
           - qwen/qwen3.8-flash
           - qwen/qwen3.8-max-0902
+          - qwen/qwen3.8-max-0902:batch
           - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-omni-flash
           - '---SAKANA---'
@@ -2745,8 +2749,6 @@ endpoints:
           - microsoft/phi-4
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
-          - nex-agi/nex-n2.5-mini
-          - nex-agi/nex-n2.5-pro
           - nousresearch/hermes-4-405b
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
@@ -2763,7 +2765,6 @@ endpoints:
           - sao10k/l3.1-euryale-70b
           - scaledown/extract
           - scaledown/summarize
-          - stealth/crouton-alpha
           - typesafe/jev-router
           - unbiased/pareto-26.10
           - unbiased/pareto-26.9
