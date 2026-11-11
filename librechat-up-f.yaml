@@ -1638,7 +1638,6 @@ endpoints:
           - anthropic/claude-sonnet-5.5:thinking
           - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
-          - arcee-ai/trinity-large-thinking
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1758,6 +1757,7 @@ endpoints:
           - google/gemini-3.7-flash
           - google/gemini-3.8-flash
           - google/gemini-4-argon
+          - google/gemini-4-carbon
           - google/gemini-flash-1.5
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
@@ -1872,9 +1872,11 @@ endpoints:
           - moonshotai/kimi-k3.1-pro
           - moonshotai/kimi-k3.1-pro-highspeed
           - moonshotai/kimi-latest
+          - nace-ai/drex-max-finance
           - nex-agi/deepseek-v3.1-nex-n1
           - nex-agi/nex-n2.5-mini
           - nex-agi/nex-n2.5-pro
+          - nex-agi/nex-n2.6
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
           - nvidia/Llama-3.3-Nemotron-Super-49B-v1
@@ -2279,7 +2281,6 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl:free
           - recursive/flint-v1.0:free
           - thinkingmachines/inkling-2-small:free
-          - xingchen-agi/xing4.0-29b-a4b:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2388,6 +2389,8 @@ endpoints:
           - google/gemini-3.8-flash:batch
           - google/gemini-4-argon
           - google/gemini-4-argon:batch
+          - google/gemini-4-carbon
+          - google/gemini-4-carbon:batch
           - google/gemini-nano-banana-2.1
           - google/gemini-omni-1.1-flash
           - google/gemini-omni-1.2-flash
@@ -2597,7 +2600,6 @@ endpoints:
           - perplexity/sonar-reasoning-pro
           - '---QWEN---'
           - qwen/qwen-2.5-72b-instruct
-          - qwen/qwen-2.5-7b-instruct
           - qwen/qwen-2.5-coder-32b-instruct
           - qwen/qwen-plus
           - qwen/qwen2.5-vl-72b-instruct
@@ -2721,6 +2723,8 @@ endpoints:
           - ~openai/gpt-terra-latest
           - '---OTHERS---'
           - anthracite-org/magnum-v4-72b
+          - baidu/ernie-5.5-flash-preview
+          - baidu/ernie-light-dt-1.0-intl
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
           - elorian/glimpse
@@ -2729,11 +2733,13 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
+          - kt/midm-k-3.0-pro
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
+          - motif-technologies/motif-3
           - nousresearch/hermes-4-405b
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
@@ -2783,6 +2789,7 @@ endpoints:
         default:
           - anthropic/claude-fable-5
           - anthropic/claude-fable-5-1
+          - anthropic/claude-fable-5-2
           - anthropic/claude-haiku-5-5
           - anthropic/claude-opus-5
           - anthropic/claude-opus-5-5
