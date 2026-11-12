@@ -1351,6 +1351,7 @@ endpoints:
           - openai/gpt-oss-20b
           - openbmb/MiniCPM5-2B
           - prism-ml/Ternary-Bonsai-2-27B-gguf
+          - xtools-at/DeepSeek-V4-Pro-Qwen3.5-9B-UNCENSORED-heretic
           - yuxinlu1/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
           - yuxinlu1/gemma-4-12B-coder-fable5-composer2.5-v1-GGUF
           - zai-org/GLM-4.7
@@ -1653,6 +1654,7 @@ endpoints:
           - anthropic/claude-sonnet-5.5:thinking
           - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
+          - baidu/ernie-light-dt-1.0-intl
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1827,6 +1829,7 @@ endpoints:
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
           - meta-llama/llama-4-scout
+          - meta/muse-ember
           - meta/muse-glimmer-30b
           - meta/muse-spark-1.1
           - meta/muse-spark-1.2
@@ -2284,6 +2287,7 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
+          - baidu/ernie-5.5-flash-preview:free
           - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
@@ -2343,10 +2347,7 @@ endpoints:
           - anthropic/claude-sonnet-5.5:batch
           - anthropic/claude-sonnet-5:batch
           - '---BYTEDANCE-SEED---'
-          - bytedance-seed/seed-1.6
-          - bytedance-seed/seed-1.6-flash
           - bytedance-seed/seed-2-1-turbo
-          - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
           - bytedance-seed/seed-2.0-mini
           - '---COHERE---'
@@ -2483,6 +2484,7 @@ endpoints:
           - moonshotai/kimi-k2.7-code
           - moonshotai/kimi-k3
           - moonshotai/kimi-k3.1-pro
+          - moonshotai/kimi-k3.1-pro:batch
           - moonshotai/kimi-k3:batch
           - '---MORPH---'
           - morph/morph-v3-fast
@@ -2683,6 +2685,10 @@ endpoints:
           - thinkingmachines/inkling
           - thinkingmachines/inkling-small
           - thinkingmachines/inkling-small:batch
+          - '---UNBIASED---'
+          - unbiased/pareto-26.10
+          - unbiased/pareto-26.10-preview
+          - unbiased/pareto-26.9
           - '---X-AI---'
           - x-ai/grok-4.20
           - x-ai/grok-4.20-multi-agent
@@ -2738,7 +2744,6 @@ endpoints:
           - ~openai/gpt-terra-latest
           - '---OTHERS---'
           - anthracite-org/magnum-v4-72b
-          - baidu/ernie-5.5-flash-preview
           - baidu/ernie-light-dt-1.0-intl
           - bytedance/ui-tars-1.5-7b
           - cognitivecomputations/dolphin-mistral-24b-venice-edition
@@ -2772,8 +2777,6 @@ endpoints:
           - scaledown/extract
           - scaledown/summarize
           - typesafe/jev-router
-          - unbiased/pareto-26.10
-          - unbiased/pareto-26.9
           - undi95/remm-slerp-l2-13b
           - upstage/solar-mini4
           - upstage/solar-pro4
@@ -2802,13 +2805,9 @@ endpoints:
       baseURL: "https://api.perplexity.ai/"
       models:
         default:
-          - anthropic/claude-fable-5
-          - anthropic/claude-fable-5-1
           - anthropic/claude-fable-5-2
           - anthropic/claude-haiku-5-5
-          - anthropic/claude-opus-5
           - anthropic/claude-opus-5-5
-          - anthropic/claude-sonnet-5
           - anthropic/claude-sonnet-5-5
         fetch: false # fetching list of models is not supported
       titleConvo: true
