@@ -563,7 +563,6 @@ endpoints:
           - claude-opus-4-7
           - claude-opus-4-7-fast
           - claude-opus-4-8
-          - claude-opus-4-8-fast
           - claude-opus-5
           - claude-opus-5-5
           - claude-sonnet
@@ -829,6 +828,7 @@ endpoints:
           - inflection-3-pi
           - inflection-3-productivity
           - inkling
+          - inkling-2-small
           - inkling-small
           - intellect-3
           - internvl-3-78b
@@ -1091,6 +1091,7 @@ endpoints:
           - qwen-3-5-9b
           - qwen-3-5-plus
           - qwen-3-5-plus-02-15
+          - qwen-3-6-27b
           - qwen-3-6-35b-a3b
           - qwen-3-7-max
           - qwen-3-8-2-4t-a95b
@@ -2039,7 +2040,6 @@ endpoints:
           - speakleash/bielik-11b-v3.0-instruct
           - stealth/space-bunny-alpha
           - stepfun-ai/step-3.5-flash
-          - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
           - subq/subq-snap-1.1
@@ -2247,13 +2247,12 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - apodex/apodex-1.1-mini:free
           - baidu/ernie-5.5-flash-preview:free
           - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - liquid/lfm-2.5-2.6b:free
+          - inclusionai/ling-3.2-flash:free
           - liquid/lfm-3-1.7b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2384,15 +2383,9 @@ endpoints:
           - google/lyria-3-pro-preview
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
-          - inclusionai/ling-3.0-flash-fin
-          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
-          - '---LIQUID---'
-          - liquid/lfm-2.5-2.6b
-          - liquid/lfm-2.5-24b-a2b
-          - liquid/lfm-3-1.7b
           - '---META---'
           - meta/muse-ember
           - meta/muse-glimmer-30b
@@ -2721,6 +2714,8 @@ endpoints:
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - kt/midm-k-3.0-pro
+          - liquid/lfm-2.5-24b-a2b
+          - liquid/lfm-3-1.7b
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
