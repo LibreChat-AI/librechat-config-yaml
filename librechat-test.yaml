@@ -998,6 +998,7 @@ endpoints:
           - inflection-3-pi
           - inflection-3-productivity
           - inkling
+          - inkling-2-small
           - inkling-small
           - intellect-3
           - internvl-3-78b
@@ -2119,6 +2120,7 @@ endpoints:
           - google/gemini-3.8-flash
           - google/gemini-4-argon
           - google/gemini-4-carbon
+          - google/gemini-4-hydrogen
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
           - google/gemini-pro-latest
@@ -2411,7 +2413,6 @@ endpoints:
           - soob3123/Veiled-Calla-12B
           - speakleash/bielik-11b-v3.0-instruct
           - stepfun-ai/step-3.5-flash
-          - stepfun-ai/step-3.5-flash-2603
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
           - synth-2.5-flash
@@ -2609,13 +2610,12 @@ endpoints:
         default:
           - openrouter/auto
           - '---FREE---'
-          - apodex/apodex-1.1-mini:free
           - baidu/ernie-5.5-flash-preview:free
           - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
-          - liquid/lfm-2.5-2.6b:free
+          - inclusionai/ling-3.2-flash:free
           - liquid/lfm-3-1.7b:free
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free
           - nvidia/nemotron-3-ultra-550b-a55b:free
@@ -2746,15 +2746,9 @@ endpoints:
           - google/lyria-3-pro-preview
           - '---INCLUSIONAI---'
           - inclusionai/ling-3.0-flash
-          - inclusionai/ling-3.0-flash-fin
-          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
-          - '---LIQUID---'
-          - liquid/lfm-2.5-2.6b
-          - liquid/lfm-2.5-24b-a2b
-          - liquid/lfm-3-1.7b
           - '---META---'
           - meta/muse-ember
           - meta/muse-glimmer-30b
@@ -3083,6 +3077,8 @@ endpoints:
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - kt/midm-k-3.0-pro
+          - liquid/lfm-2.5-24b-a2b
+          - liquid/lfm-3-1.7b
           - mancer/weaver
           - meituan/longcat-2.0
           - microsoft/phi-4
