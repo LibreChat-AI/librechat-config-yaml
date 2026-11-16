@@ -2886,7 +2886,6 @@ endpoints:
           - qwen/qwen3-next-80b-a3b-instruct
           - qwen/qwen3-vl-235b-a22b-instruct
           - qwen/qwen3-vl-30b-a3b-instruct
-          - qwen/qwen3-vl-30b-a3b-thinking
           - qwen/qwen3-vl-8b-instruct
           - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-27b
@@ -2917,12 +2916,7 @@ endpoints:
           - sakana/fugu-ultra
           - sakana/fugu-ultra-v2
           - sakana/sakana-namazu
-          - '---STEPFUN---'
-          - stepfun/step-3.5-flash
-          - stepfun/step-3.7-flash
-          - stepfun/step-5-preview
           - '---TENCENT---'
-          - tencent/hunyuan-a13b-instruct
           - tencent/hy-mt2-1.8b
           - tencent/hy-mt2-30b-a3b
           - tencent/hy-mt2-7b
@@ -2972,7 +2966,6 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
-          - z-ai/glm-5.2:batch
           - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
@@ -3032,6 +3025,8 @@ endpoints:
           - sao10k/l3.1-euryale-70b
           - scaledown/extract
           - scaledown/summarize
+          - stepfun/step-3.7-flash
+          - stepfun/step-5-preview
           - typesafe/jev-router
           - undi95/remm-slerp-l2-13b
           - upstage/solar-mini4
