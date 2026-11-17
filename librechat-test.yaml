@@ -1944,6 +1944,7 @@ endpoints:
           - TEE/glm-5.3
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
+          - TEE/inkling-2-small
           - TEE/kimi-k2.6
           - TEE/kimi-k3
           - TEE/kimi-k3.1-pro
@@ -2062,6 +2063,8 @@ endpoints:
           - deepseek/deepseek-v4.1-flash-0910-uncensored
           - deepseek/deepseek-v4.1-flash-0910-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017
+          - deepseek/deepseek-v4.1-flash-1017-abliterated
+          - deepseek/deepseek-v4.1-flash-1017-abliterated:thinking
           - deepseek/deepseek-v4.1-flash-1017-uncensored
           - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
@@ -2140,6 +2143,7 @@ endpoints:
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
+          - hyperresearch/ousia-1
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2.5-preview
           - inception/mercury-3
@@ -2159,6 +2163,8 @@ endpoints:
           - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
+          - lyber/deepseek-v4.1-flash-1017-abliterated
+          - lyber/kimi-k3.1-pro-abliterated
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
           - meganova-ai/manta-pro-1.0
@@ -2396,6 +2402,8 @@ endpoints:
           - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-max:thinking
           - qwen/qwen3.8-omni-flash
+          - qwen/qwen4-max
+          - qwen/qwen4-max:thinking
           - qwen3-vl-235b-a22b-instruct-original
           - reflection/beam-1.0
           - reka/reka-edge-2603
@@ -2979,6 +2987,7 @@ endpoints:
           - qwen/qwen3.8-max-0902:batch
           - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-omni-flash
+          - qwen/qwen4-max
           - '---SAKANA---'
           - sakana/fugu-max
           - sakana/fugu-ultra
@@ -2991,6 +3000,7 @@ endpoints:
           - tencent/hy3
           - tencent/hy3-preview
           - tencent/hy4
+          - tencent/hy4-flash
           - tencent/hy4-preview
           - '---THEDRUMMER---'
           - thedrummer/cydonia-24b-v4.1
@@ -3034,6 +3044,7 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
+          - z-ai/glm-5.2:batch
           - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
