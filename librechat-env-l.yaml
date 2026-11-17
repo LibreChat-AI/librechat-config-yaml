@@ -1572,6 +1572,7 @@ endpoints:
           - TEE/glm-5.3
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
+          - TEE/inkling-2-small
           - TEE/kimi-k2.6
           - TEE/kimi-k3
           - TEE/kimi-k3.1-pro
@@ -1695,6 +1696,8 @@ endpoints:
           - deepseek/deepseek-v4.1-flash-0910-uncensored
           - deepseek/deepseek-v4.1-flash-0910-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017
+          - deepseek/deepseek-v4.1-flash-1017-abliterated
+          - deepseek/deepseek-v4.1-flash-1017-abliterated:thinking
           - deepseek/deepseek-v4.1-flash-1017-uncensored
           - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
@@ -1777,6 +1780,7 @@ endpoints:
           - huihui-ai/DeepSeek-R1-Distill-Qwen-32B-abliterated
           - huihui-ai/Llama-3.3-70B-Instruct-abliterated
           - huihui-ai/Qwen2.5-32B-Instruct-abliterated
+          - hyperresearch/ousia-1
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2.5-preview
           - inception/mercury-3
@@ -1792,6 +1796,8 @@ endpoints:
           - jaredpalmer/kev-4b
           - jaredpalmer/kev-9b
           - kimi-k2-instruct-fast
+          - kitani/clover-2
+          - kitani/clover-2:thinking
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
           - liquid/lfm-2.5-2.6b:free
@@ -1799,7 +1805,6 @@ endpoints:
           - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
-          - lyber/deepseek-v4.1-flash-1017-abliterated
           - lyber/kimi-k3.1-pro-abliterated
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
@@ -2039,6 +2044,8 @@ endpoints:
           - qwen/qwen3.8-max-prime
           - qwen/qwen3.8-max:thinking
           - qwen/qwen3.8-omni-flash
+          - qwen/qwen4-max
+          - qwen/qwen4-max:thinking
           - qwen3-vl-235b-a22b-instruct-original
           - qwq-32b
           - reflection/beam-1.0
@@ -2166,12 +2173,9 @@ endpoints:
       models:
         default:
           - bigcode/starcoder2-15b
-          - deepseek-ai/deepseek-v4.1-flash
           - google/gemma-3-12b-it
           - google/gemma-3-4b-it
           - google/gemma-4-31b-it
-          - meta/llama-3.2-90b-vision-instruct
-          - meta/llama-guard-4-12b
           - meta/muse-glimmer-30b
           - minimaxai/minimax-m3.1-flash
           - mistralai/mistral-large-4-1t-a52b
@@ -2179,12 +2183,10 @@ endpoints:
           - nvidia/cosmos-reason2-8b
           - nvidia/embed-qa-4
           - nvidia/ising-calibration-1.5-31b
-          - nvidia/llama-3.1-nemoguard-8b-content-safety
           - nvidia/llama-3.1-nemoguard-8b-topic-control
           - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v1
-          - nvidia/llama-nemotron-embed-vl-1b-v2
           - nvidia/nemotron-3-embed-1b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-ultra-550b-a55b
@@ -2194,8 +2196,6 @@ endpoints:
           - nvidia/nemotron-3.5-embed-8b
           - nvidia/nemotron-3.5-lightning-30b-a3b
           - nvidia/nemotron-3.5-super-vl-120b-a12b
-          - nvidia/nemotron-parse
-          - nvidia/nemotron-parse-2.0
           - nvidia/nv-embedqa-mistral-7b-v2
           - nvidia/nvclip
           - nvidia/riva-translate-4b-instruct-v2
@@ -2603,6 +2603,7 @@ endpoints:
           - tencent/hy3
           - tencent/hy3-preview
           - tencent/hy4
+          - tencent/hy4-flash
           - tencent/hy4-preview
           - '---THEDRUMMER---'
           - thedrummer/cydonia-24b-v4.1
@@ -2646,6 +2647,7 @@ endpoints:
           - z-ai/glm-5-turbo
           - z-ai/glm-5.1
           - z-ai/glm-5.2
+          - z-ai/glm-5.2:batch
           - z-ai/glm-5.3
           - z-ai/glm-5.3-flash
           - z-ai/glm-5.3-flash:batch
