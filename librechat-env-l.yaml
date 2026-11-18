@@ -2093,13 +2093,14 @@ endpoints:
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
           - kimi-k2-instruct-fast
+          - kitani/clover-2
+          - kitani/clover-2:thinking
           - lightonai/LightOnOCR-2-1B
           - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
           - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
-          - lyber/deepseek-v4.1-flash-1017-abliterated
           - lyber/kimi-k3.1-pro-abliterated
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
@@ -2232,6 +2233,10 @@ endpoints:
           - openai/gpt-6.1-sol-pro
           - openai/gpt-6.1-terra
           - openai/gpt-6.1-terra-pro
+          - openai/gpt-6.2-astra
+          - openai/gpt-6.2-astra-pro
+          - openai/gpt-6.2-sol
+          - openai/gpt-6.2-sol-pro
           - openai/gpt-astra-latest
           - openai/gpt-chat-latest
           - openai/gpt-latest
@@ -2854,6 +2859,14 @@ endpoints:
           - openai/gpt-6.1-terra-pro
           - openai/gpt-6.1-terra-pro:batch
           - openai/gpt-6.1-terra:batch
+          - openai/gpt-6.2-astra
+          - openai/gpt-6.2-astra-pro
+          - openai/gpt-6.2-astra-pro:batch
+          - openai/gpt-6.2-astra:batch
+          - openai/gpt-6.2-sol
+          - openai/gpt-6.2-sol-pro
+          - openai/gpt-6.2-sol-pro:batch
+          - openai/gpt-6.2-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
