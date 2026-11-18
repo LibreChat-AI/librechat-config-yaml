@@ -1568,10 +1568,7 @@ endpoints:
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
           - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
-          - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
-          - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.6-Derestricted-v5
-          - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-4-26B-A4B-MeroMero
           - Gemma-4-26B-A4B-MeroMero:thinking
           - Gemma-4-31B-Agares-v1
@@ -1598,7 +1595,6 @@ endpoints:
           - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Meta-Llama-3-1-8B-Instruct-FP8
-          - NeverSleep/Lumimaid-v0.2-70B
           - Qwen/QwQ-32B-Preview
           - Qwen3.5-27B-Blossom-V6.4-Derestricted
           - Qwen3.5-27B-BlueStar-v3-Derestricted
@@ -1606,10 +1602,6 @@ endpoints:
           - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted-Lite
           - Qwen3.5-27B-Queen-Derestricted
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
-          - Salesforce/Llama-xLAM-2-70b-fc-r
-          - Sao10K/L3-8B-Stheno-v3.2
-          - Sao10K/L3.1-70B-Euryale-v2.2
-          - Sao10K/L3.1-70B-Hanami-x1
           - Sao10K/L3.3-70B-Euryale-v2.3
           - Steelskull/L3.3-Cu-Mai-R1-70b
           - Steelskull/L3.3-Electra-R1-70b
@@ -1637,17 +1629,6 @@ endpoints:
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
-          - TheDrummer/Anubis-70B-v1
-          - TheDrummer/Anubis-70B-v1.1
-          - TheDrummer/Artemis-v1.1
-          - TheDrummer/Cydonia-24B-v2
-          - TheDrummer/Cydonia-24B-v4
-          - TheDrummer/Cydonia-24B-v4.1
-          - TheDrummer/Cydonia-24B-v4.3
-          - TheDrummer/Magidonia-24B-v4.3
-          - TheDrummer/Rocinante-12B-v1.1
-          - TheDrummer/UnslopNemo-12B-v4.1
-          - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
           - abliteration-ai/abliterated-model
           - abliteration-ai/abliterated-model-large
@@ -1841,6 +1822,7 @@ endpoints:
           - ibm-granite/granite-4.2-8b
           - inception/mercury-2.5-preview
           - inception/mercury-3
+          - inception/mercury-decide
           - inclusionai/ling-3.0-flash
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
@@ -1852,6 +1834,7 @@ endpoints:
           - inflatebot/MN-12B-Mag-Mell-R1
           - jaredpalmer/kev-4b
           - jaredpalmer/kev-9b
+          - jiunsong/supergemma4-26b-uncensored
           - kimi-k2-instruct-fast
           - kitani/clover-2
           - kitani/clover-2:thinking
@@ -1862,6 +1845,7 @@ endpoints:
           - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
+          - lyber/deepseek-v4.1-flash-1017-abliterated
           - lyber/kimi-k3.1-pro-abliterated
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
@@ -1994,6 +1978,10 @@ endpoints:
           - openai/gpt-6.1-sol-pro
           - openai/gpt-6.1-terra
           - openai/gpt-6.1-terra-pro
+          - openai/gpt-6.2-astra
+          - openai/gpt-6.2-astra-pro
+          - openai/gpt-6.2-sol
+          - openai/gpt-6.2-sol-pro
           - openai/gpt-astra-latest
           - openai/gpt-chat-latest
           - openai/gpt-latest
@@ -2085,7 +2073,6 @@ endpoints:
           - qwen/qwen3.8-27b-darkidol
           - qwen/qwen3.8-27b-fable
           - qwen/qwen3.8-27b-fimi
-          - qwen/qwen3.8-27b-hemmingway
           - qwen/qwen3.8-27b-kimiko
           - qwen/qwen3.8-27b-kiwen
           - qwen/qwen3.8-27b-novelist
@@ -2131,8 +2118,6 @@ endpoints:
           - tencent/hy3
           - tencent/hy4
           - tencent/hy4-preview
-          - thedrummer/artemis-31b-v1.2
-          - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
@@ -2142,7 +2127,6 @@ endpoints:
           - typesafe/jev-latest
           - unbiased/pareto-26.10
           - unbiased/pareto-26.9
-          - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
@@ -2237,6 +2221,7 @@ endpoints:
           - meta/muse-glimmer-30b
           - minimaxai/minimax-m3.1-flash
           - mistralai/mistral-large-4-1t-a52b
+          - moonshotai/kimi-k3.1-pro
           - nvidia/ai-synthetic-video-detector
           - nvidia/cosmos-reason2-8b
           - nvidia/embed-qa-4
@@ -2578,6 +2563,14 @@ endpoints:
           - openai/gpt-6.1-terra-pro
           - openai/gpt-6.1-terra-pro:batch
           - openai/gpt-6.1-terra:batch
+          - openai/gpt-6.2-astra
+          - openai/gpt-6.2-astra-pro
+          - openai/gpt-6.2-astra-pro:batch
+          - openai/gpt-6.2-astra:batch
+          - openai/gpt-6.2-sol
+          - openai/gpt-6.2-sol-pro
+          - openai/gpt-6.2-sol-pro:batch
+          - openai/gpt-6.2-sol:batch
           - openai/gpt-audio
           - openai/gpt-audio-mini
           - openai/gpt-chat-latest
