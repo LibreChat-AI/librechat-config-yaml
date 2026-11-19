@@ -1218,11 +1218,11 @@ def _reload_all_providers():
 
 
 class TestRegistration:
-    def test_all_20_providers_registered(self):
-        """All 20 providers must be discoverable."""
+    def test_all_21_providers_registered(self):
+        """All 21 providers must be discoverable."""
         registry = _reload_all_providers()
         expected = {
-            "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
+            "302AI", "APIpie", "Ace Data Cloud", "cohere", "deepseek", "Fireworks",
             "Github Models", "glhf.chat", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
@@ -1235,7 +1235,7 @@ class TestRegistration:
 
     def test_registry_count(self):
         registry = _reload_all_providers()
-        assert len(registry) == 20
+        assert len(registry) == 21
 
 
 class TestNoDuplicates:
@@ -1273,7 +1273,7 @@ class TestAllProviderNames:
         registry = _reload_all_providers()
         # These are the exact YAML endpoint names from the config files
         expected_names = {
-            "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
+            "302AI", "APIpie", "Ace Data Cloud", "cohere", "deepseek", "Fireworks",
             "Github Models", "glhf.chat", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",

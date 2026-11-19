@@ -502,6 +502,19 @@ endpoints:
       summaryModel: "gpt-4o-mini"
       modelDisplayLabel: "302AI"
 
+    # Ace Data Cloud: https://platform.acedata.cloud/console/applications
+    # Public catalog metadata is refreshed by scripts/providers/acedata.py.
+    - name: "Ace Data Cloud"
+      apiKey: "${ACEDATACLOUD_API_KEY}"
+      baseURL: "https://api.acedata.cloud/v1"
+      models:
+        default: ["gpt-4.1-mini"]
+        fetch: true
+      titleConvo: false
+      summarize: false
+      modelDisplayLabel: "Ace Data Cloud"
+      iconURL: "https://raw.githubusercontent.com/LibreChat-AI/librechat-config-yaml/main/icons/acedata.png"
+
     # APIpie
     # https://apipie.ai/dashboard/
     # Script to fetch models: https://github.com/LibreChat-AI/librechat-config-yaml/blob/main/scripts/apipie.py

@@ -355,3 +355,7 @@ When adding new providers:
 3. Add any required API keys to `.env.example`
 4. Document the API endpoint and any authentication requirements
 5. Prefer official APIs over web scraping when available
+
+### Ace Data Cloud
+
+`providers/acedata.py` reads the public `/api/v1/models/catalog/` metadata and keeps only `modality=chat`. Media models are excluded. No CI secret is needed for this public GET. Inference and authenticated `/v1/models` still require the user's own API token; public catalog visibility grants no API permission. Each YAML enables per-user live fetching and retains a small bootstrap model list.
