@@ -1520,7 +1520,6 @@ endpoints:
           - Gemma-4-31B-SDFT-Heretic-RP
           - Gemma-4-31B-StyleTune
           - Gryphe/MythoMax-L2-13b
-          - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Meta-Llama-3-1-8B-Instruct-FP8
           - Qwen/QwQ-32B-Preview
@@ -1667,6 +1666,7 @@ endpoints:
           - deepseek/deepseek-v4.1-flash-1017-uncensored
           - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
+          - deepseek/deepseek-v4.1-flash-abliterated
           - deepseek/deepseek-v4.1-flash-uncensored
           - deepseek/deepseek-v4.1-flash-uncensored:thinking
           - deepseek/deepseek-v4.1-flash:thinking
@@ -1762,6 +1762,7 @@ endpoints:
           - inflatebot/MN-12B-Mag-Mell-R1
           - jaredpalmer/kev-4b
           - jaredpalmer/kev-9b
+          - jcartu/deepseek-v4.1-flash-1017-abliterated-lossless-csf
           - jiunsong/supergemma4-26b-uncensored
           - kimi-k2-instruct-fast
           - kitani/clover-2
@@ -1854,7 +1855,6 @@ endpoints:
           - nex-agi/nex-n2.6
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
-          - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b:thinking
@@ -1924,16 +1924,19 @@ endpoints:
           - openai/o3-pro-2025-06-10
           - orca/orcacyber-flash-1.0
           - orca/orcacyber-flash-1.0:thinking
+          - orca/orcacyber-glm-5.3
           - orca/orcacyber-glm-5.3-flash
+          - orca/orcacyber-hy4
           - orca/orcacyber-k3.1-pro
           - orca/orcacyber-mimo-flash
           - orca/orcacyber-minimax-m3.1-flash
           - orca/orcacyber-qwen3.8-flash-next
+          - orca/orcacyber-ultra-1.0
+          - orca/orcacyber-zero-1.0
           - orca/orcacyber-zero-1.5
           - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
-          - pamanseau/OpenReasoning-Nemotron-32B
           - paperinstruments/ultramarine-1-flash
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
@@ -1964,9 +1967,7 @@ endpoints:
           - qwen/qwen3-coder-flash
           - qwen/qwen3-coder-next
           - qwen/qwen3-next-80b-a3b-instruct
-          - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
-          - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-122b-a10b:thinking
           - qwen/qwen3.5-27b
@@ -2046,6 +2047,7 @@ endpoints:
           - tencent/hy3
           - tencent/hy4
           - tencent/hy4-preview
+          - thedrummer/artemis-31b-v1.2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
@@ -2061,7 +2063,6 @@ endpoints:
           - unsloth/gemma-3-4b-it
           - upstage/solar-mini4
           - upstage/solar-mini4:thinking
-          - upstage/solar-pro-3
           - upstage/solar-pro4
           - upstage/solar-pro4:thinking
           - venice-uncensored
@@ -2086,7 +2087,6 @@ endpoints:
           - xiaomi/mimo-v2.6-flash-uncensored:thinking
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
-          - xingchen-agi/xing4.0-29b-a4b
           - xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic
           - z-ai/GLM-4.5-Air
           - z-ai/GLM-4.5-Air:thinking
@@ -2117,7 +2117,9 @@ endpoints:
           - z-ai/glm-5.2
           - z-ai/glm-5.2:thinking
           - z-ai/glm-5.3
+          - z-ai/glm-5.3-abliterated
           - z-ai/glm-5.3-flash
+          - z-ai/glm-5.3-flash-abliterated
           - z-ai/glm-5.3-flash-apex
           - z-ai/glm-5.3-flash-apex-abliterated
           - z-ai/glm-5.3-flash-cybersecurity
@@ -2170,7 +2172,6 @@ endpoints:
           - nvidia/nv-embedqa-mistral-7b-v2
           - nvidia/nvclip
           - nvidia/riva-translate-4b-instruct-v2
-          - openai/gpt-oss-20b
           - poolside/laguna-xs-2.1
           - snowflake/arctic-embed-l
           - stepfun-ai/step-5-preview
@@ -2313,6 +2314,8 @@ endpoints:
           - google/gemini-4-carbon:batch
           - google/gemini-4-hydrogen
           - google/gemini-4-hydrogen:batch
+          - google/gemini-4-neon
+          - google/gemini-4-neon:batch
           - google/gemini-nano-banana-2.1
           - google/gemini-omni-1.1-flash
           - google/gemini-omni-1.2-flash
