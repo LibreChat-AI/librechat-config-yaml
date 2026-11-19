@@ -1817,10 +1817,7 @@ endpoints:
           - EVA-UNIT-01/EVA-LLaMA-3.33-70B-v0.1
           - EVA-UNIT-01/EVA-Qwen2.5-32B-v0.2
           - EVA-UNIT-01/EVA-Qwen2.5-72B-v0.2
-          - Envoid/Llama-3.05-NT-Storybreaker-Ministral-70B
-          - Envoid/Llama-3.05-Nemotron-Tenyxchat-Storybreaker-70B
           - GLM-4.6-Derestricted-v5
-          - GalrionSoftworks/MN-LooseCannon-12B-v1
           - Gemma-4-26B-A4B-MeroMero
           - Gemma-4-26B-A4B-MeroMero:thinking
           - Gemma-4-31B-Agares-v1
@@ -1844,57 +1841,32 @@ endpoints:
           - Gemma-4-31B-SDFT-Heretic-RP
           - Gemma-4-31B-StyleTune
           - Gryphe/MythoMax-L2-13b
-          - LLM360/K2-Think
           - LatitudeGames/Wayfarer-Large-70B-Llama-3.3
           - Meta-Llama-3-1-8B-Instruct-FP8
-          - NeverSleep/Lumimaid-v0.2-70B
           - Qwen3.5-27B-Blossom-V6.4-Derestricted
           - Qwen3.5-27B-BlueStar-v3-Derestricted
           - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted
           - Qwen3.5-27B-Claude-4.6-Opus-Reasoning-Distilled-Derestricted-Lite
           - Qwen3.5-27B-Queen-Derestricted
           - ReadyArt/MS3.2-The-Omega-Directive-24B-Unslop-v2.0
-          - Salesforce/Llama-xLAM-2-70b-fc-r
-          - Sao10K/L3-8B-Stheno-v3.2
-          - Sao10K/L3.1-70B-Euryale-v2.2
-          - Sao10K/L3.1-70B-Hanami-x1
           - Sao10K/L3.3-70B-Euryale-v2.3
           - Steelskull/L3.3-Cu-Mai-R1-70b
           - Steelskull/L3.3-Electra-R1-70b
           - Steelskull/L3.3-MS-Nevoria-70b
           - Steelskull/L3.3-Nevoria-R1-70b
-          - TEE/deepseek-v3.2
           - TEE/deepseek-v4.1-flash
           - TEE/gemma-4-26b-a4b-uncensored
           - TEE/gemma-4-31b-it
           - TEE/gemma4-31b
           - TEE/gemma4-31b:thinking
-          - TEE/glm-5.1
-          - TEE/glm-5.1-thinking
-          - TEE/glm-5.2
-          - TEE/glm-5.2:thinking
           - TEE/glm-5.3
           - TEE/glm-5.3-flash
           - TEE/gpt-oss-120b
           - TEE/inkling-2-small
-          - TEE/kimi-k2.6
-          - TEE/kimi-k3
           - TEE/kimi-k3.1-pro
           - TEE/llama3-3-70b
-          - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
-          - TheDrummer/Anubis-70B-v1
-          - TheDrummer/Anubis-70B-v1.1
-          - TheDrummer/Artemis-v1.1
-          - TheDrummer/Cydonia-24B-v2
-          - TheDrummer/Cydonia-24B-v4
-          - TheDrummer/Cydonia-24B-v4.1
-          - TheDrummer/Cydonia-24B-v4.3
-          - TheDrummer/Magidonia-24B-v4.3
-          - TheDrummer/Rocinante-12B-v1.1
-          - TheDrummer/UnslopNemo-12B-v4.1
-          - VongolaChouko/Starcannon-Unleashed-12B-v1.0
           - abacusai/Dracarys-72B-Instruct
           - abliteration-ai/abliterated-model
           - abliteration-ai/abliterated-model-large
@@ -2063,7 +2035,6 @@ endpoints:
           - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-31b-it
           - google/gemma-4-31b-it:thinking
-          - google/gemma4-31b-splituntied
           - heabsy/cyberheabsy
           - heabsy/qwen3.8-27b-uncensored-fast
           - hermes-high
@@ -2088,6 +2059,8 @@ endpoints:
           - inference-net/schematron-v2-small
           - inference-net/schematron-v2-turbo
           - inflatebot/MN-12B-Mag-Mell-R1
+          - jcartu/deepseek-v4.1-flash-1017-abliterated-lossless-csf
+          - jiunsong/supergemma4-26b-uncensored
           - kimi-k2-instruct-fast
           - kitani/clover-2
           - kitani/clover-2:thinking
@@ -2097,6 +2070,7 @@ endpoints:
           - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
+          - lyber/deepseek-v4.1-flash-1017-abliterated
           - lyber/kimi-k3.1-pro-abliterated
           - meganova-ai/manta-flash-1.0
           - meganova-ai/manta-mini-1.0
@@ -2180,7 +2154,6 @@ endpoints:
           - nex-agi/nex-n2.6
           - nothingiisreal/L3.1-70B-Celeste-V0.1-BF16
           - nvidia/Llama-3.1-Nemotron-70B-Instruct-HF
-          - nvidia/Llama-3.3-Nemotron-Super-49B-v1
           - nvidia/nemotron-3-nano-30b-a3b
           - nvidia/nemotron-3-super-120b-a12b
           - nvidia/nemotron-3-super-120b-a12b:thinking
@@ -2247,16 +2220,19 @@ endpoints:
           - openai/o3-pro-2025-06-10
           - orca/orcacyber-flash-1.0
           - orca/orcacyber-flash-1.0:thinking
+          - orca/orcacyber-glm-5.3
           - orca/orcacyber-glm-5.3-flash
+          - orca/orcacyber-hy4
           - orca/orcacyber-k3.1-pro
           - orca/orcacyber-mimo-flash
           - orca/orcacyber-minimax-m3.1-flash
           - orca/orcacyber-qwen3.8-flash-next
+          - orca/orcacyber-ultra-1.0
+          - orca/orcacyber-zero-1.0
           - orca/orcacyber-zero-1.5
           - ornith-ai/ornith-1.5-122b
           - ornith-ai/ornith-1.5-35b-a3b
           - ornith-ai/ornith-1.5-35b-a3b:thinking
-          - pamanseau/OpenReasoning-Nemotron-32B
           - paperinstruments/ultramarine-1-flash
           - particle-ai/particle-1
           - perceptron/perceptron-mk1
@@ -2286,9 +2262,7 @@ endpoints:
           - qwen/qwen3-coder-flash
           - qwen/qwen3-coder-next
           - qwen/qwen3-next-80b-a3b-instruct
-          - qwen/qwen3-next-80b-a3b-thinking
           - qwen/qwen3-vl-235b-a22b-instruct
-          - qwen/qwen3-vl-235b-a22b-thinking
           - qwen/qwen3.5-122b-a10b
           - qwen/qwen3.5-122b-a10b:thinking
           - qwen/qwen3.5-27b
@@ -2323,7 +2297,6 @@ endpoints:
           - qwen/qwen3.8-27b-darkidol
           - qwen/qwen3.8-27b-fable
           - qwen/qwen3.8-27b-fimi
-          - qwen/qwen3.8-27b-hemmingway
           - qwen/qwen3.8-27b-kimiko
           - qwen/qwen3.8-27b-kiwen
           - qwen/qwen3.8-27b-novelist
@@ -2364,22 +2337,18 @@ endpoints:
           - tencent/hy3
           - tencent/hy4
           - tencent/hy4-preview
-          - thedrummer/artemis-31b-v1.2
-          - thedrummer/skyfall-36b-v2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
           - thinkingmachines/inkling:thinking
           - unbiased/pareto-26.10
           - unbiased/pareto-26.9
-          - undi95/remm-slerp-l2-13b
           - universal-summarizer
           - unsloth/gemma-3-12b-it
           - unsloth/gemma-3-27b-it
           - unsloth/gemma-3-4b-it
           - upstage/solar-mini4
           - upstage/solar-mini4:thinking
-          - upstage/solar-pro-3
           - upstage/solar-pro4
           - upstage/solar-pro4:thinking
           - venice-uncensored
@@ -2401,7 +2370,6 @@ endpoints:
           - xiaomi/mimo-v2.6-flash-uncensored:thinking
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
-          - xingchen-agi/xing4.0-29b-a4b
           - xtools-at/deepseek-v4-pro-qwen3.5-9b-uncensored-heretic
           - z-ai/GLM-4.5-Air
           - z-ai/GLM-4.5-Air:thinking
@@ -2677,6 +2645,8 @@ endpoints:
           - google/gemini-4-carbon:batch
           - google/gemini-4-hydrogen
           - google/gemini-4-hydrogen:batch
+          - google/gemini-4-neon
+          - google/gemini-4-neon:batch
           - google/gemini-nano-banana-2.1
           - google/gemini-omni-1.1-flash
           - google/gemini-omni-1.2-flash
