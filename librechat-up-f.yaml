@@ -1867,6 +1867,7 @@ endpoints:
           - TEE/llama3-3-70b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
+          - TheDrummer/Artemis-v1.1
           - abacusai/Dracarys-72B-Instruct
           - abliteration-ai/abliterated-model
           - abliteration-ai/abliterated-model-large
@@ -1972,6 +1973,7 @@ endpoints:
           - deepseek/deepseek-v4.1-flash-1017-uncensored
           - deepseek/deepseek-v4.1-flash-1017-uncensored:thinking
           - deepseek/deepseek-v4.1-flash-1017:thinking
+          - deepseek/deepseek-v4.1-flash-abliterated
           - deepseek/deepseek-v4.1-flash-uncensored
           - deepseek/deepseek-v4.1-flash-uncensored:thinking
           - deepseek/deepseek-v4.1-flash:thinking
@@ -2336,7 +2338,9 @@ endpoints:
           - synth-2.5-pro
           - tencent/hy3
           - tencent/hy4
+          - tencent/hy4-flash
           - tencent/hy4-preview
+          - thedrummer/artemis-31b-v1.2
           - thinkingmachines/Inkling-Small
           - thinkingmachines/Inkling-Small:thinking
           - thinkingmachines/inkling
@@ -2399,7 +2403,9 @@ endpoints:
           - z-ai/glm-5.2
           - z-ai/glm-5.2:thinking
           - z-ai/glm-5.3
+          - z-ai/glm-5.3-abliterated
           - z-ai/glm-5.3-flash
+          - z-ai/glm-5.3-flash-abliterated
           - z-ai/glm-5.3-flash-apex
           - z-ai/glm-5.3-flash-apex-abliterated
           - z-ai/glm-5.3-flash-cybersecurity
@@ -2535,7 +2541,6 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl:free
           - particle-ai/particle-1:free
           - recursive/flint-v1.0:free
-          - thinkingmachines/inkling-2-small:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -3358,7 +3363,6 @@ endpoints:
           - grok-4.5
           - grok-4.6
           - grok-4.7
-          - grok-build-0.1
           - grok-imagine-image
           - grok-imagine-image-2.0
           - grok-imagine-video
