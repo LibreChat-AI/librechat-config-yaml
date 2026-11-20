@@ -1556,6 +1556,7 @@ endpoints:
           - TEE/qwen3.6-27b
           - TEE/qwen3.6-35b-a3b
           - TEE/qwen3.8-27b
+          - TheDrummer/Artemis-v1.1
           - abacusai/Dracarys-72B-Instruct
           - abliteration-ai/abliterated-model
           - abliteration-ai/abliterated-model-large
@@ -2046,6 +2047,7 @@ endpoints:
           - synth-2.5-pro
           - tencent/hy3
           - tencent/hy4
+          - tencent/hy4-flash
           - tencent/hy4-preview
           - thedrummer/artemis-31b-v1.2
           - thinkingmachines/Inkling-Small
@@ -2145,6 +2147,7 @@ endpoints:
       models:
         default:
           - bigcode/starcoder2-15b
+          - fastino/gliner2-pii
           - google/gemma-3-12b-it
           - google/gemma-3-4b-it
           - google/gemma-4-31b-it
@@ -2192,7 +2195,6 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - baidu/ernie-5.5-flash-preview:free
-          - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
@@ -2204,7 +2206,6 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl:free
           - particle-ai/particle-1:free
           - recursive/flint-v1.0:free
-          - thinkingmachines/inkling-2-small:free
           - '---AION-LABS---'
           - aion-labs/aion-2.0
           - aion-labs/aion-3.0
@@ -2346,7 +2347,6 @@ endpoints:
           - '---META-LLAMA---'
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
-          - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
@@ -2379,6 +2379,7 @@ endpoints:
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mixtral-8x22b-instruct
+          - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
           - moonshotai/kimi-k2
@@ -2609,7 +2610,6 @@ endpoints:
           - x-ai/grok-4.6:batch
           - x-ai/grok-4.7
           - x-ai/grok-4.7:batch
-          - x-ai/grok-build-0.1
           - '---XIAOMI---'
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
