@@ -2041,6 +2041,7 @@ endpoints:
           - google/gemma-4-26b-a4b-it:thinking
           - google/gemma-4-31b-it
           - google/gemma-4-31b-it:thinking
+          - google/gemma4-31b-splituntied
           - heabsy/cyberheabsy
           - heabsy/qwen3.8-27b-uncensored-fast
           - hermes-high
@@ -2073,7 +2074,6 @@ endpoints:
           - lightonai/LightOnOCR-2-1B
           - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
-          - liquid/lfm-3-1.7b
           - longcat-2.0
           - longcat-2.0:thinking
           - lyber/deepseek-v4.1-flash-1017-abliterated
@@ -2321,6 +2321,7 @@ endpoints:
           - qwen/qwen4-max
           - qwen/qwen4-max:thinking
           - qwen3-vl-235b-a22b-instruct-original
+          - radixark/daisyrose-27b
           - reflection/beam-1.0
           - reka/reka-edge-2603
           - reka/reka-flash-3
@@ -2533,7 +2534,6 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - baidu/ernie-5.5-flash-preview:free
-          - cohere/north-mini-code:free
           - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
@@ -2686,7 +2686,6 @@ endpoints:
           - '---META-LLAMA---'
           - meta-llama/llama-3.1-70b-instruct
           - meta-llama/llama-3.1-8b-instruct
-          - meta-llama/llama-3.2-1b-instruct
           - meta-llama/llama-3.2-3b-instruct
           - meta-llama/llama-3.3-70b-instruct
           - meta-llama/llama-4-maverick
@@ -2719,6 +2718,7 @@ endpoints:
           - mistralai/mistral-small-3.1-24b-instruct
           - mistralai/mistral-small-3.2-24b-instruct
           - mistralai/mixtral-8x22b-instruct
+          - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
           - moonshotai/kimi-k2
@@ -2922,7 +2922,6 @@ endpoints:
           - tencent/hy-mt2-30b-a3b
           - tencent/hy-mt2-7b
           - tencent/hy3
-          - tencent/hy3-preview
           - tencent/hy4
           - tencent/hy4-flash
           - tencent/hy4-preview
@@ -2949,7 +2948,6 @@ endpoints:
           - x-ai/grok-4.6:batch
           - x-ai/grok-4.7
           - x-ai/grok-4.7:batch
-          - x-ai/grok-build-0.1
           - '---XIAOMI---'
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
