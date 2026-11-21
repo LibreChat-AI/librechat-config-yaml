@@ -1634,6 +1634,8 @@ endpoints:
           - anthropic/claude-sonnet-5:thinking
           - anthropic/claude-sonnet-latest
           - baidu/ernie-light-dt-1.0-intl
+          - baselabs/bison-1
+          - baselabs/groundhog-1
           - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
@@ -1742,6 +1744,7 @@ endpoints:
           - google/gemini-4-argon
           - google/gemini-4-carbon
           - google/gemini-4-hydrogen
+          - google/gemini-4-neon
           - google/gemini-flash-1.5
           - google/gemini-flash-latest
           - google/gemini-flash-lite-latest
@@ -1786,7 +1789,7 @@ endpoints:
           - kitani/clover-2:thinking
           - lightonai/LightOnOCR-2-1B
           - liquid/d1
-          - liquid/lfm-2.5-2.6b:free
+          - liquid/lfm-2.5-2.6b
           - liquid/lfm-2.5-24b-a2b
           - liquid/lfm-3-1.7b
           - longcat-2.0
@@ -2038,6 +2041,7 @@ endpoints:
           - qwen/qwen4-max:thinking
           - qwen3-vl-235b-a22b-instruct-original
           - qwq-32b
+          - radixark/daisyrose-27b
           - reflection/beam-1.0
           - reka/reka-edge-2603
           - reka/reka-flash-3
@@ -2211,7 +2215,6 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - baidu/ernie-5.5-flash-preview:free
-          - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.2-flash:free
@@ -2599,7 +2602,6 @@ endpoints:
           - tencent/hy-mt2-30b-a3b
           - tencent/hy-mt2-7b
           - tencent/hy3
-          - tencent/hy3-preview
           - tencent/hy4
           - tencent/hy4-flash
           - tencent/hy4-preview
@@ -2609,6 +2611,7 @@ endpoints:
           - thedrummer/unslopnemo-12b
           - '---THINKINGMACHINES---'
           - thinkingmachines/inkling
+          - thinkingmachines/inkling-2-mini
           - thinkingmachines/inkling-2-small
           - thinkingmachines/inkling-small
           - thinkingmachines/inkling-small:batch
@@ -2683,7 +2686,6 @@ endpoints:
           - liquid/lfm-2.5-24b-a2b
           - liquid/lfm-3-1.7b
           - mancer/weaver
-          - meituan/longcat-2.0
           - microsoft/phi-4
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
@@ -2694,6 +2696,7 @@ endpoints:
           - perceptron/perceptron-mk1.5
           - prism-ml/ternary-bonsai-2-27b
           - prism-ml/ternary-bonsai-2-9b
+          - radixark/daisyrose-27b
           - reflection/beam-1.0-501b-a23b
           - rekaai/reka-edge
           - rekaai/reka-flash-3
