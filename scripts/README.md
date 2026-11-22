@@ -358,4 +358,6 @@ When adding new providers:
 
 ### Ace Data Cloud
 
-`providers/acedata.py` reads the public `/api/v1/models/catalog/` metadata and keeps only `modality=chat`. Media models are excluded. No CI secret is needed for this public GET. Inference and authenticated `/v1/models` still require the user's own API token; public catalog visibility grants no API permission. Each YAML enables per-user live fetching and retains a small bootstrap model list.
+`providers/acedata.py` reads the public `/api/v1/models/catalog/` metadata and generates two protocol-compatible lists: **Ace Data Cloud** for Chat Completions and **Ace Data Cloud Messages** for native Anthropic Messages. Only `modality=chat` models with an explicit matching endpoint are included; image-capable chat models remain available. No CI secret is needed for this public GET. The existing daily update workflow refreshes both lists and sets `fetch: false` so LibreChat does not replace typed lists with the gateway's untyped media/embedding IDs. Inference requires the selected user or configured environment API token; public visibility grants no API permission.
+
+The Messages configuration uses `provider: anthropic`, the root URL `https://api.acedata.cloud`, and `authScheme: bearer`. It requires runtime support tracked in https://github.com/LibreChat-AI/LibreChat/issues/18721; do not deploy this configuration on a runtime that ignores `authScheme`. The source change remains a draft until that dependency and the public endpoint metadata are released.

@@ -1,15 +1,23 @@
 from __future__ import annotations
 
 import httpx
-from pydantic import BaseModel, ConfigDict, ValidationError
+from pydantic import BaseModel, ConfigDict, Field, ValidationError
 
 from .base import BaseFetcher, FetchResult, FetchStatus
+
+
+class CatalogEndpoint(BaseModel):
+    protocol: str
+    path: str
+    base_url: str
+    auth: str
 
 
 class CatalogModel(BaseModel):
     model_config = ConfigDict(extra="allow")
     id: str
     modality: str
+    endpoints: list[CatalogEndpoint] = Field(default_factory=list)
 
 
 class CatalogResponse(BaseModel):
@@ -21,6 +29,9 @@ class AceDataCloudFetcher(BaseFetcher):
     """Read only public chat catalog metadata; never send a generation request."""
 
     provider_name = "Ace Data Cloud"
+    protocol = "chat_completions"
+    endpoint_path = "/v1/chat/completions"
+    base_url = "https://api.acedata.cloud/v1"
 
     def get_api_key(self):
         # The catalog is public. Actual inference and /v1/models require a user key.
@@ -30,7 +41,14 @@ class AceDataCloudFetcher(BaseFetcher):
         try:
             response = self._http_get("https://platform.acedata.cloud/api/v1/models/catalog/")
             catalog = CatalogResponse.model_validate(response.json())
-            models = [item.id for item in catalog.items if item.modality == "chat" and item.id.strip()]
+            models = [
+                item.id for item in catalog.items
+                if item.modality == "chat" and item.id.strip() and any(
+                    endpoint.protocol == self.protocol and endpoint.path == self.endpoint_path
+                    and endpoint.base_url == self.base_url and endpoint.auth == "bearer"
+                    for endpoint in item.endpoints
+                )
+            ]
             return FetchResult(
                 provider_name=self.provider_name,
                 models=models,
@@ -47,3 +65,12 @@ class AceDataCloudFetcher(BaseFetcher):
 
     def post_process(self, models: list[str]) -> list[str]:
         return sorted(set(models))
+
+
+class AceDataCloudMessagesFetcher(AceDataCloudFetcher):
+    """Generate the separate native Messages endpoint's compatible model list."""
+
+    provider_name = "Ace Data Cloud Messages"
+    protocol = "messages"
+    endpoint_path = "/v1/messages"
+    base_url = "https://api.acedata.cloud"
