@@ -2041,7 +2041,6 @@ endpoints:
           - soob3123/Veiled-Calla-12B
           - speakleash/bielik-11b-v3.0-instruct
           - stealth/space-bunny-alpha
-          - stepfun-ai/step-3.5-flash
           - stepfun/step-3.7-flash:thinking
           - stepfun/step-5-preview
           - subq/subq-snap-1.1
