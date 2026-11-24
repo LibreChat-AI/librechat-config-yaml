@@ -3,7 +3,7 @@ from unittest.mock import Mock, patch
 import httpx
 import pytest
 
-from providers.acedata import AceDataCloudFetcher, AceDataCloudMessagesFetcher
+from providers.acedata import AceDataCloudFetcher
 from providers.base import FetchStatus
 
 
@@ -60,5 +60,3 @@ def test_protocol_lists_keep_messages_only_models_out_of_chat_and_preserve_image
     ]}
     with patch.object(AceDataCloudFetcher, "_http_get", return_value=response):
         assert AceDataCloudFetcher().run().models == ["both", "gpt-4o-image"]
-        assert AceDataCloudMessagesFetcher().run().models == ["both", "messages-only"]
-    assert AceDataCloudMessagesFetcher().get_api_key() is None

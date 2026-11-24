@@ -65,12 +65,3 @@ class AceDataCloudFetcher(BaseFetcher):
 
     def post_process(self, models: list[str]) -> list[str]:
         return sorted(set(models))
-
-
-class AceDataCloudMessagesFetcher(AceDataCloudFetcher):
-    """Generate the separate native Messages endpoint's compatible model list."""
-
-    provider_name = "Ace Data Cloud Messages"
-    protocol = "messages"
-    endpoint_path = "/v1/messages"
-    base_url = "https://api.acedata.cloud"

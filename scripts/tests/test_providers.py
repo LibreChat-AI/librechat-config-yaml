@@ -1222,7 +1222,7 @@ class TestRegistration:
         """All 22 providers must be discoverable."""
         registry = _reload_all_providers()
         expected = {
-            "302AI", "APIpie", "Ace Data Cloud", "Ace Data Cloud Messages", "cohere", "deepseek", "Fireworks",
+            "302AI", "APIpie", "Ace Data Cloud", "cohere", "deepseek", "Fireworks",
             "Github Models", "glhf.chat", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
@@ -1273,7 +1273,7 @@ class TestAllProviderNames:
         registry = _reload_all_providers()
         # These are the exact YAML endpoint names from the config files
         expected_names = {
-            "302AI", "APIpie", "Ace Data Cloud", "Ace Data Cloud Messages", "cohere", "deepseek", "Fireworks",
+            "302AI", "APIpie", "Ace Data Cloud", "cohere", "deepseek", "Fireworks",
             "Github Models", "glhf.chat", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
