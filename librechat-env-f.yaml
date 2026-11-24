@@ -1601,11 +1601,6 @@ endpoints:
           - anthropic/claude-haiku-5.5
           - anthropic/claude-haiku-latest
           - anthropic/claude-opus-4
-          - anthropic/claude-opus-4.1
-          - anthropic/claude-opus-4.1:thinking
-          - anthropic/claude-opus-4.1:thinking:1024
-          - anthropic/claude-opus-4.1:thinking:32768
-          - anthropic/claude-opus-4.1:thinking:8192
           - anthropic/claude-opus-4.5
           - anthropic/claude-opus-4.5:thinking
           - anthropic/claude-opus-4.6
@@ -1636,7 +1631,6 @@ endpoints:
           - baidu/ernie-light-dt-1.0-intl
           - baselabs/bison-1
           - baselabs/groundhog-1
-          - baseten/Kimi-K2-Instruct-FP4
           - bytedance-seed/seed-2-1-turbo
           - bytedance-seed/seed-2.0-code
           - bytedance-seed/seed-2.0-lite
@@ -1784,7 +1778,6 @@ endpoints:
           - jaredpalmer/kev-9b
           - jcartu/deepseek-v4.1-flash-1017-abliterated-lossless-csf
           - jiunsong/supergemma4-26b-uncensored
-          - kimi-k2-instruct-fast
           - kitani/clover-2
           - kitani/clover-2:thinking
           - lightonai/LightOnOCR-2-1B
@@ -1840,7 +1833,6 @@ endpoints:
           - mistralai/mistral-large
           - mistralai/mistral-large-4
           - mistralai/mistral-medium-3
-          - mistralai/mistral-medium-3.1
           - mistralai/mistral-medium-3.5
           - mistralai/mistral-medium-3.5:thinking
           - mistralai/mistral-nemo-instruct-2407
@@ -1856,8 +1848,6 @@ endpoints:
           - moondream/moondream3.1-9b-a2b
           - moonshotai/Kimi-K2-Instruct-0905
           - moonshotai/kimi-k2-instruct
-          - moonshotai/kimi-k2-instruct-0711
-          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
@@ -1886,7 +1876,6 @@ endpoints:
           - nvidia/nemotron-3.5-super-vl
           - openai/gpt-4.1
           - openai/gpt-4.1-mini
-          - openai/gpt-4.1-nano
           - openai/gpt-4o
           - openai/gpt-4o-2024-08-06
           - openai/gpt-4o-2024-11-20
@@ -1947,10 +1936,14 @@ endpoints:
           - orca/orcacyber-glm-5.3
           - orca/orcacyber-glm-5.3-flash
           - orca/orcacyber-hy4
+          - orca/orcacyber-hy4-flash
+          - orca/orcacyber-inkling-2-mini
           - orca/orcacyber-k3.1-pro
+          - orca/orcacyber-ling-3.2-flash
           - orca/orcacyber-mimo-flash
           - orca/orcacyber-minimax-m3.1-flash
           - orca/orcacyber-qwen3.8-flash-next
+          - orca/orcacyber-step-5-preview
           - orca/orcacyber-ultra-1.0
           - orca/orcacyber-zero-1.0
           - orca/orcacyber-zero-1.5
@@ -2096,7 +2089,6 @@ endpoints:
           - x-ai/grok-4.5
           - x-ai/grok-4.6
           - x-ai/grok-4.7
-          - x-ai/grok-build-0.1
           - x-ai/grok-latest
           - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.5-pro
@@ -2181,7 +2173,6 @@ endpoints:
           - nvidia/llama-3.1-nemotron-safety-guard-8b-v3
           - nvidia/llama-3.2-nemoretriever-1b-vlm-embed-v1
           - nvidia/llama-3.2-nv-embedqa-1b-v1
-          - nvidia/nemotron-3-embed-1b
           - nvidia/nemotron-3-nano-omni-30b-a3b-reasoning
           - nvidia/nemotron-3-ultra-550b-a55b
           - nvidia/nemotron-3.5-bolt-e4b
@@ -2401,9 +2392,6 @@ endpoints:
           - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
-          - moonshotai/kimi-k2
-          - moonshotai/kimi-k2-0905
-          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
@@ -2631,7 +2619,6 @@ endpoints:
           - x-ai/grok-4.7:batch
           - '---XIAOMI---'
           - xiaomi/mimo-v2.5
-          - xiaomi/mimo-v2.5-pro
           - xiaomi/mimo-v2.6-flash
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
