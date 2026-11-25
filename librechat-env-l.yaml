@@ -1540,6 +1540,7 @@ endpoints:
           - accounts/fireworks/models/glm-5p3
           - accounts/fireworks/models/glm-5p3-flash
           - accounts/fireworks/models/gpt-oss-120b
+          - accounts/fireworks/models/hy4-flash
           - accounts/fireworks/models/inkling
           - accounts/fireworks/models/kimi-k3
           - accounts/fireworks/models/minimax-m3
@@ -2128,8 +2129,6 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
-          - moonshotai/Kimi-K2-Instruct-0905
-          - moonshotai/kimi-k2-instruct
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
@@ -2526,7 +2525,6 @@ endpoints:
           - openrouter/auto
           - '---FREE---'
           - baidu/ernie-5.5-flash-preview:free
-          - dots-studio/dots-3-note-preview:free
           - google/gemma-4-26b-a4b-it:free
           - google/gemma-4-31b-it:free
           - inclusionai/ling-3.2-flash:free
@@ -2699,10 +2697,8 @@ endpoints:
           - mistralai/mistral-large-2407
           - mistralai/mistral-large-2512
           - mistralai/mistral-large-4-0
-          - mistralai/mistral-medium-3
           - mistralai/mistral-medium-3-5
           - mistralai/mistral-medium-3-5:batch
-          - mistralai/mistral-medium-3.1
           - mistralai/mistral-nemo
           - mistralai/mistral-saba
           - mistralai/mistral-small-24b-instruct-2501
@@ -2713,9 +2709,6 @@ endpoints:
           - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
-          - moonshotai/kimi-k2
-          - moonshotai/kimi-k2-0905
-          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
@@ -2942,8 +2935,8 @@ endpoints:
           - x-ai/grok-4.7
           - x-ai/grok-4.7:batch
           - '---XIAOMI---'
-          - xiaomi/mimo-v2.5
           - xiaomi/mimo-v2.6-flash
+          - xiaomi/mimo-v2.6-flash-mopd
           - xiaomi/mimo-v2.6-pro
           - xiaomi/mimo-v2.6-pro-ultraspeed
           - '---Z-AI---'
