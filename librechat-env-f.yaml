@@ -1543,6 +1543,7 @@ endpoints:
           - accounts/fireworks/models/gpt-oss-120b
           - accounts/fireworks/models/hy4-flash
           - accounts/fireworks/models/inkling
+          - accounts/fireworks/models/inkling-2-mini
           - accounts/fireworks/models/kimi-k3
           - accounts/fireworks/models/minimax-m3
           - accounts/fireworks/models/minimax-m3p1-flash
@@ -1644,7 +1645,6 @@ endpoints:
           - deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
           - deepseek-ai/DeepSeek-V3
           - deepseek-ai/DeepSeek-V3-0324
-          - google/gemma-2-2b-it
           - jialinyyzz/humanizer
           - mattshumer/Reflection-Llama-3.1-70B
           - meta-llama/Llama-2-70b-chat-hf
@@ -2058,6 +2058,7 @@ endpoints:
           - inception/mercury-2.5-preview
           - inception/mercury-3
           - inclusionai/ling-3.0-flash
+          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
           - inclusionai/ling-3.0-tiny
@@ -2134,6 +2135,7 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
+          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
@@ -2670,6 +2672,7 @@ endpoints:
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
+          - inclusionai/lingsante-3.1-air-vl
           - '---META---'
           - meta/muse-ember
           - meta/muse-glimmer-30b
@@ -2721,6 +2724,8 @@ endpoints:
           - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
+          - moonshotai/kimi-k2
+          - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
