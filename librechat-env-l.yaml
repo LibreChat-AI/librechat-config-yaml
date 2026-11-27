@@ -1765,6 +1765,7 @@ endpoints:
           - inception/mercury-3
           - inception/mercury-decide
           - inclusionai/ling-3.0-flash
+          - inclusionai/ling-3.0-flash-sante
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-flash:thinking
           - inclusionai/ling-3.0-tiny
@@ -1846,6 +1847,7 @@ endpoints:
           - mlabonne/NeuralDaredevil-8B-abliterated
           - moondream/moondream3-preview
           - moondream/moondream3.1-9b-a2b
+          - moonshotai/kimi-k2-thinking
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.5:thinking
           - moonshotai/kimi-k2.6
@@ -2342,6 +2344,7 @@ endpoints:
           - inclusionai/ling-3.0-flash-vl
           - inclusionai/ling-3.0-tiny
           - inclusionai/ling-3.1-flash
+          - inclusionai/lingsante-3.1-air-vl
           - '---META---'
           - meta/muse-ember
           - meta/muse-glimmer-30b
@@ -2393,6 +2396,8 @@ endpoints:
           - mistralai/pixtral-large-2502
           - mistralai/voxtral-small-24b-2507
           - '---MOONSHOTAI---'
+          - moonshotai/kimi-k2
+          - moonshotai/kimi-k2-0905
           - moonshotai/kimi-k2.5
           - moonshotai/kimi-k2.6
           - moonshotai/kimi-k2.7-code
