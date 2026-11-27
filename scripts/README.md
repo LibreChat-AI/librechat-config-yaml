@@ -95,6 +95,7 @@ This repository includes automated daily model updates via GitHub Actions.
    DEEPSEEK_API_KEY
    FIREWORKS_API_KEY
    GLHF_API_KEY
+   GMI_API_KEY
    GROQ_API_KEY
    HUGGINGFACE_TOKEN
    HYPERBOLIC_API_KEY
