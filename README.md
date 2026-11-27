@@ -49,6 +49,7 @@ Contributions are welcome!
 | FireworksAI | https://fireworks.ai/ |
 | Github Models | https://github.com |
 | glhf.chat | https://glhf.chat |
+| GMI Cloud | https://console.gmicloud.ai/ |
 | groq | https://console.groq.com/keys |
 | HuggingFace | https://huggingface.co/settings/tokens |
 | Hyperbolic | https://app.hyperbolic.xyz/ |
@@ -62,3 +63,7 @@ Contributions are welcome!
 | TogetherAI | https://www.together.ai/ |
 | Unify | https://unify.ai/ |
 | X.AI (Grok) | https://api.x.ai/ |
+
+For GMI Cloud, create an Inference Engine API key in the console. Set `GMI_API_KEY` in the
+LibreChat server environment with an `env` config, or enter the key in the GMI Cloud endpoint
+settings with an `up` config.

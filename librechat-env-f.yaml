@@ -1596,6 +1596,20 @@ endpoints:
       titleConvo: true
       titleModel: "gpt-4o-mini"
 
+    # GMI Cloud
+    - name: "GMI Cloud"
+      iconURL: "https://avatars.githubusercontent.com/u/150495434?v=4"
+      apiKey: "${GMI_API_KEY}"
+      baseURL: "https://api.gmi-serving.com/v1"
+      models:
+        default:
+          - Qwen/Qwen3.8-Flash
+          - deepseek-ai/DeepSeek-V4-Flash-0731
+        fetch: false
+      titleConvo: true
+      titleModel: "current_model"
+      modelDisplayLabel: "GMI Cloud"
+
     # groq
     # Model list: https://console.groq.com/settings/limits
     - name: "groq"

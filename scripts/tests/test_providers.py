@@ -6,6 +6,9 @@ import inspect
 import re
 from unittest.mock import MagicMock, patch
 
+import httpx
+import pytest
+
 from providers.base import FetchStatus, get_registry
 
 
@@ -1190,6 +1193,87 @@ class TestHuggingFaceFetcher:
 
 
 # ---------------------------------------------------------------------------
+# GMI Cloud
+# ---------------------------------------------------------------------------
+
+class TestGMICloudFetcher:
+    def test_requires_api_key(self, monkeypatch):
+        from providers.gmicloud import GMICloudFetcher
+
+        monkeypatch.delenv("GMI_API_KEY", raising=False)
+        with patch("providers.gmicloud.load_dotenv"):
+            result = GMICloudFetcher().run()
+
+        assert result.status == FetchStatus.AUTH_ERROR
+        assert "GMI_API_KEY" in result.error_message
+
+    def test_returns_sorted_unique_chat_models(self, monkeypatch):
+        from providers.gmicloud import GMICloudFetcher
+
+        monkeypatch.setenv("GMI_API_KEY", "test-key")
+        response = httpx.Response(200, json={"data": [
+            {"id": "deepseek-ai/DeepSeek-V4-Flash-0731", "object": "model"},
+            {"id": "", "object": "Qwen/Qwen3.8-Flash"},
+            {"id": "deepseek-ai/DeepSeek-V4-Flash-0731", "is_free": True},
+            {"id": "openai/gpt-image-2"},
+            {"id": "ByteDance/Seedance-2.5"},
+            {"id": "Qwen/Qwen3-Embedding-8B"},
+            {"id": "minimax-tts-speech-2.8-hd"},
+            {"id": "model", "object": "model"},
+            {"id": "google/gemini-3.8-flash", "object": "model"},
+        ]})
+        with patch("providers.gmicloud.load_dotenv"), \
+             patch.object(GMICloudFetcher, "_http_get", return_value=response) as http_get:
+            result = GMICloudFetcher().run()
+
+        http_get.assert_called_once_with(
+            "https://api.gmi-serving.com/v1/models",
+            headers={"Authorization": "Bearer test-key", "Accept": "application/json"},
+        )
+        assert result.status == FetchStatus.SUCCESS
+        assert result.models == [
+            "Qwen/Qwen3.8-Flash",
+            "deepseek-ai/DeepSeek-V4-Flash-0731",
+            "google/gemini-3.8-flash",
+        ]
+        assert result.model_count == 3
+
+    @pytest.mark.parametrize("payload, expected", [
+        (b"not JSON", FetchStatus.PARSE_ERROR),
+        (b'{"data": {}}', FetchStatus.PARSE_ERROR),
+        (b'{"data": [{"id": "openai/text-embedding-3-small"}]}', FetchStatus.EMPTY),
+    ])
+    def test_unusable_catalog(self, payload, expected):
+        from providers.gmicloud import GMICloudFetcher
+
+        response = httpx.Response(200, content=payload)
+        with patch.object(GMICloudFetcher, "get_api_key", return_value="test-key"), \
+             patch.object(GMICloudFetcher, "_http_get", return_value=response):
+            result = GMICloudFetcher().run()
+
+        assert result.status == expected
+        assert result.models == []
+
+    @pytest.mark.parametrize("code, expected", [
+        (401, FetchStatus.AUTH_ERROR),
+        (403, FetchStatus.AUTH_ERROR),
+        (503, FetchStatus.NETWORK_ERROR),
+    ])
+    def test_http_status(self, code, expected):
+        from providers.gmicloud import GMICloudFetcher
+
+        request = httpx.Request("GET", "https://api.gmi-serving.com/v1/models")
+        response = httpx.Response(code, request=request)
+        error = httpx.HTTPStatusError("request failed", request=request, response=response)
+        with patch.object(GMICloudFetcher, "get_api_key", return_value="test-key"), \
+             patch.object(GMICloudFetcher, "_http_get", side_effect=error):
+            result = GMICloudFetcher().run()
+
+        assert result.status == expected
+        assert result.models == []
+
+
+# ---------------------------------------------------------------------------
 # Registration
 # ---------------------------------------------------------------------------
 
@@ -1207,7 +1291,7 @@ def _reload_all_providers():
         "providers.cohere", "providers.unify", "providers.huggingface",
         "providers.ai302", "providers.deepseek", "providers.fireworks",
         "providers.glhf", "providers.kluster", "providers.mistral",
-        "providers.hyperbolic", "providers.xai",
+        "providers.hyperbolic", "providers.xai", "providers.gmicloud",
     ]
 
     modules = [importlib.import_module(name) for name in provider_module_names]
@@ -1218,12 +1302,12 @@ def _reload_all_providers():
 
 
 class TestRegistration:
-    def test_all_20_providers_registered(self):
-        """All 20 providers must be discoverable."""
+    def test_all_providers_registered(self):
+        """All providers must be discoverable."""
         registry = _reload_all_providers()
         expected = {
             "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
-            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Github Models", "glhf.chat", "GMI Cloud", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
             "Unify", "xai",
@@ -1235,7 +1319,7 @@ class TestRegistration:
 
     def test_registry_count(self):
         registry = _reload_all_providers()
-        assert len(registry) == 20
+        assert len(registry) == 21
 
 
 class TestNoDuplicates:
@@ -1274,7 +1358,7 @@ class TestAllProviderNames:
         # These are the exact YAML endpoint names from the config files
         expected_names = {
             "302AI", "APIpie", "cohere", "deepseek", "Fireworks",
-            "Github Models", "glhf.chat", "groq", "HuggingFace",
+            "Github Models", "glhf.chat", "GMI Cloud", "groq", "HuggingFace",
             "Hyperbolic", "Kluster", "Mistral", "NanoGPT", "Nvidia",
             "OpenRouter", "Perplexity", "SambaNova", "together.ai",
             "Unify", "xai",
