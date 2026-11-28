@@ -355,3 +355,9 @@ When adding new providers:
 3. Add any required API keys to `.env.example`
 4. Document the API endpoint and any authentication requirements
 5. Prefer official APIs over web scraping when available
+
+### Ace Data Cloud
+
+`providers/acedata.py` reads the public catalog to list models that publish Chat Completions through Ace Data Cloud. The daily workflow refreshes the list. LibreChat uses `fetch: false` to retain the protocol-specific model list. Set an Ace Data Cloud API token for inference, using your own account access.
+
+The native Messages endpoint requires runtime support tracked in [LibreChat #18721](https://github.com/LibreChat-AI/LibreChat/issues/18721). This configuration contains the Chat Completions endpoint.
